@@ -1,0 +1,13 @@
+id,label,type
+tax,税収,revenue_item
+bonds,国債,revenue_item
+other_revenue,その他収入,revenue_item
+revenue_total,収入,revenue_total
+spending_total,支出,spending_total
+social_security,社会保障,spending_item
+debt_service,国債費,spending_item
+local_allocation,地方交付税交付金,spending_item
+public_works,公共事業,spending_item
+defense,防衛,spending_item
+education,教育・科学,spending_item
+other_spending,その他支出,spending_item

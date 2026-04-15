@@ -1,0 +1,18 @@
+source,target,value
+
+# 収入
+tax,revenue_total,600
+bonds,revenue_total,700
+other_revenue,revenue_total,200
+
+# 収入 = 支出
+revenue_total,spending_total,1500
+
+# 支出
+spending_total,social_security,500
+spending_total,debt_service,400
+spending_total,local_allocation,150
+spending_total,public_works,100
+spending_total,defense,200
+spending_total,education,50
+spending_total,other_spending,100

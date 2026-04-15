@@ -1,0 +1,121 @@
+{
+  "nodes": [
+    {
+      "id": "tax",
+      "label": "税収",
+      "type": "revenue_item"
+    },
+    {
+      "id": "bonds",
+      "label": "国債",
+      "type": "revenue_item"
+    },
+    {
+      "id": "other_revenue",
+      "label": "その他収入",
+      "type": "revenue_item"
+    },
+    {
+      "id": "revenue_total",
+      "label": "収入",
+      "type": "revenue_total"
+    },
+    {
+      "id": "spending_total",
+      "label": "支出",
+      "type": "spending_total"
+    },
+    {
+      "id": "social_security",
+      "label": "社会保障",
+      "type": "spending_item"
+    },
+    {
+      "id": "debt_service",
+      "label": "国債費",
+      "type": "spending_item"
+    },
+    {
+      "id": "local_allocation",
+      "label": "地方交付税交付金",
+      "type": "spending_item"
+    },
+    {
+      "id": "public_works",
+      "label": "公共事業",
+      "type": "spending_item"
+    },
+    {
+      "id": "defense",
+      "label": "防衛",
+      "type": "spending_item"
+    },
+    {
+      "id": "education",
+      "label": "教育・科学",
+      "type": "spending_item"
+    },
+    {
+      "id": "other_spending",
+      "label": "その他支出",
+      "type": "spending_item"
+    }
+  ],
+  "links": [
+    {
+      "source": "tax",
+      "target": "revenue_total",
+      "value": 600.0
+    },
+    {
+      "source": "bonds",
+      "target": "revenue_total",
+      "value": 700.0
+    },
+    {
+      "source": "other_revenue",
+      "target": "revenue_total",
+      "value": 200.0
+    },
+    {
+      "source": "revenue_total",
+      "target": "spending_total",
+      "value": 1500.0
+    },
+    {
+      "source": "spending_total",
+      "target": "social_security",
+      "value": 500.0
+    },
+    {
+      "source": "spending_total",
+      "target": "debt_service",
+      "value": 400.0
+    },
+    {
+      "source": "spending_total",
+      "target": "local_allocation",
+      "value": 150.0
+    },
+    {
+      "source": "spending_total",
+      "target": "public_works",
+      "value": 100.0
+    },
+    {
+      "source": "spending_total",
+      "target": "defense",
+      "value": 200.0
+    },
+    {
+      "source": "spending_total",
+      "target": "education",
+      "value": 50.0
+    },
+    {
+      "source": "spending_total",
+      "target": "other_spending",
+      "value": 100.0
+    }
+  ]
+}
