@@ -7,8 +7,12 @@ import {
   type SankeyLink,
   type SankeyNode,
 } from "d3-sankey";
-import { useEffect, useRef } from "react";
-import { ChartColors, Colors } from "@/styles/colors";
+import { useEffect, useRef, useState } from "react";
+import {
+  Colors,
+  getGovernmentSpendingChartColors,
+  type ColorMode,
+} from "@/styles/colors";
 
 /*
 =========================
@@ -54,15 +58,6 @@ type LayoutLink = SankeyLink<GovernmentSpendingNode, GovernmentSpendingLink>;
 =========================
 */
 
-const GOVERNMENT_SPENDING_COLORS = ChartColors.governmentSpending;
-
-const NODE_FILL_COLORS: Record<NodeType, string> = {
-  revenue_item: GOVERNMENT_SPENDING_COLORS.revenue.item,
-  revenue_total: GOVERNMENT_SPENDING_COLORS.revenue.total,
-  spending_total: GOVERNMENT_SPENDING_COLORS.spending.total,
-  spending_item: GOVERNMENT_SPENDING_COLORS.spending.item,
-};
-
 // ノードをどの列に置くか（左→右）
 const NODE_COLUMNS: Record<NodeType, number> = {
   revenue_item: 0,
@@ -76,11 +71,6 @@ const NODE_COLUMNS: Record<NodeType, number> = {
 ユーティリティ関数
 ========================= 
 */
-
-// ノードの色をtypeから決定
-function getNodeFill(type: string): string {
-  return NODE_FILL_COLORS[type as NodeType] ?? GOVERNMENT_SPENDING_COLORS.revenue.item;
-}
 
 // sankey内部では source/target が文字列→オブジェクトに変わるので安全にtype取得
 function getEndpointType(endpoint: string | number | LayoutNode): string {
@@ -99,8 +89,44 @@ function getEndpointType(endpoint: string | number | LayoutNode): string {
 export default function SankeyChart({ data }: { data: GovernmentSpendingData }) {
   const ref = useRef<SVGSVGElement | null>(null); // SVGを直接D3で操作するための参照
 
+  /*
+  =========================
+  Color Mode
+  =========================
+  */
+  const [colorMode, setColorMode] = useState<ColorMode>("light");
+
+  useEffect(() => {
+    const mediaQuery = window.matchMedia("(prefers-color-scheme: dark)");
+
+    const updateColorMode = () => {
+      setColorMode(mediaQuery.matches ? "dark" : "light");
+    };
+
+    updateColorMode();
+    mediaQuery.addEventListener("change", updateColorMode);
+
+    return () => {
+      mediaQuery.removeEventListener("change", updateColorMode);
+    };
+  }, []);
+
   useEffect(() => {
     if (!data) return; // データなければ何もしない
+
+    // 色を取得
+    const colors = getGovernmentSpendingChartColors(colorMode);
+    const nodeFillColors: Record<NodeType, string> = {
+      revenue_item: colors.revenue.item,
+      revenue_total: colors.revenue.total,
+      spending_total: colors.spending.total,
+      spending_item: colors.spending.item,
+    };
+
+    // ノードの色をtypeから決定
+    const getNodeFill = (type: string): string => {
+      return nodeFillColors[type as NodeType] ?? colors.revenue.item;
+    };
 
     const width = 800;
     const height = 500;
@@ -114,7 +140,6 @@ export default function SankeyChart({ data }: { data: GovernmentSpendingData }) 
     Sankeyレイアウト設定
     =========================
     */
-
     const sankeyGenerator = sankey<
       GovernmentSpendingData,
       GovernmentSpendingNode,
@@ -155,9 +180,9 @@ export default function SankeyChart({ data }: { data: GovernmentSpendingData }) 
 
         // 色分け
         if (sourceType.startsWith("revenue")) {
-          return GOVERNMENT_SPENDING_COLORS.revenue.item;
+          return colors.revenue.item;
         }
-        return GOVERNMENT_SPENDING_COLORS.spending.item;
+        return colors.spending.item;
       })
       .attr("stroke-width", (d: LayoutLink) => Math.max(1, d.width ?? 0)) // 太さ＝量
       .attr("fill", "none")
@@ -168,7 +193,7 @@ export default function SankeyChart({ data }: { data: GovernmentSpendingData }) 
         if (sourceType === "revenue_total" && targetType === "spending_total") {
           return 0;
         }
-        return 0.45;
+        return colors.linkOpacity;
       });
 
     /*
@@ -201,13 +226,14 @@ export default function SankeyChart({ data }: { data: GovernmentSpendingData }) 
       .attr("y", (d: LayoutNode) => ((d.y0 ?? 0) + (d.y1 ?? 0)) / 2)
       .attr("dy", "0.35em")
       .attr("text-anchor", "end")
+      .attr("fill", colors.label)
       .text((d: LayoutNode) => d.label)
       // 左半分のノードだけ右側にラベル出す（見やすさ調整）
       .filter((d: LayoutNode) => (d.x0 ?? 0) < width / 2)
       .attr("x", (d: LayoutNode) => (d.x1 ?? 0) + 6)
       .attr("text-anchor", "start");
 
-  }, [data]); // dataが変わったら再描画
+  }, [data, colorMode]); // dataまたは配色が変わったら再描画
 
   // ReactはSVGの枠だけ持つ（中身はD3が直接操作）
   return <svg ref={ref} width={800} height={500} />;
