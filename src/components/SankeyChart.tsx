@@ -1,5 +1,10 @@
 "use client"; // ← Next.js(App Router)でクライアントコンポーネントとして実行
 
+import {
+  Colors,
+  getGovernmentSpendingChartColors,
+  type ColorMode,
+} from "@/styles/colors";
 import * as d3 from "d3";
 import {
   sankey,
@@ -8,11 +13,6 @@ import {
   type SankeyNode,
 } from "d3-sankey";
 import { useEffect, useRef, useState } from "react";
-import {
-  Colors,
-  getGovernmentSpendingChartColors,
-  type ColorMode,
-} from "@/styles/colors";
 
 /*
 =========================
@@ -80,6 +80,12 @@ function getEndpointType(endpoint: string | number | LayoutNode): string {
   return "";
 }
 
+function formatNodeValue(value: number | undefined): string {
+  return new Intl.NumberFormat("ja-JP", {
+    maximumFractionDigits: 1, // 小数点1桁まで
+  }).format(value ?? 0);
+}
+
 /*
 =========================
 メインコンポーネント
@@ -111,8 +117,13 @@ export default function SankeyChart({ data }: { data: GovernmentSpendingData }) 
     };
   }, []);
 
+  /*
+  =========================
+  Sankeyレイアウト設定
+  =========================
+  */
   useEffect(() => {
-    if (!data) return; // データなければ何もしない
+    if (!data) return;
 
     // 色を取得
     const colors = getGovernmentSpendingChartColors(colorMode);
@@ -122,6 +133,8 @@ export default function SankeyChart({ data }: { data: GovernmentSpendingData }) 
       spending_total: colors.spending.total,
       spending_item: colors.spending.item,
     };
+    const nodeLabelFill =
+      colorMode === "dark" ? Colors.grey[900] : Colors.grey[50];
 
     // ノードの色をtypeから決定
     const getNodeFill = (type: string): string => {
@@ -129,7 +142,11 @@ export default function SankeyChart({ data }: { data: GovernmentSpendingData }) 
     };
 
     const width = 800;
-    const height = 500;
+    const height = 400;
+
+    //ノードの文字表示
+    const getNodeLabelPadding = (type: NodeType) =>
+      type === "revenue_total" || type === "spending_total" ? 8 : 20;
 
     // SVG取得＆初期化（再描画のため全削除）
     const svg = d3.select(ref.current);
@@ -146,7 +163,7 @@ export default function SankeyChart({ data }: { data: GovernmentSpendingData }) 
       GovernmentSpendingLink
     >()
       .nodeId((d) => d.id) // ノード識別キー
-      .nodeWidth(20) // ノードの横幅
+      .nodeWidth(100) // ノードの横幅
       .nodePadding(10) // ノード間の縦間隔
       .nodeSort(null) // 自動ソートしない（順序固定）
       .nodeAlign((node) => NODE_COLUMNS[node.type] ?? 0) // typeで列位置決定
@@ -156,6 +173,24 @@ export default function SankeyChart({ data }: { data: GovernmentSpendingData }) 
     const graph = sankeyGenerator({
       nodes: data.nodes.map((d) => ({ ...d })), // 元データ破壊防止
       links: data.links.map((d) => ({ ...d })),
+    });
+
+    const WIDE = 60; // 個別にノードの幅を修正する
+    const SHIFT = 200; // 支出を左に寄せる
+
+    graph.nodes.forEach((node) => {
+      // 収入と支出のノード幅狭める
+      if (node.type === "revenue_total") {
+        node.x1 = (node.x0 ?? 0) + WIDE;
+      }
+      if (node.type === "spending_total") {
+        node.x0 = (node.x1 ?? 0) - WIDE;
+      }
+      // 右半分を左にずらす（収入・支出の間を狭める）
+      if (node.type === "spending_total" || node.type === "spending_item") {
+        node.x0 = (node.x0 ?? 0) - SHIFT;
+        node.x1 = (node.x1 ?? 0) - SHIFT;
+      }
     });
 
     /*
@@ -222,16 +257,66 @@ export default function SankeyChart({ data }: { data: GovernmentSpendingData }) 
       .selectAll("text")
       .data(graph.nodes)
       .join("text")
-      .attr("x", (d: LayoutNode) => (d.x0 ?? 0) - 6) // 基本は左側
+      // ノード内の左端に少し余白を取って配置
+      .attr("x", (d: LayoutNode) => (d.x0 ?? 0) + getNodeLabelPadding(d.type))
       .attr("y", (d: LayoutNode) => ((d.y0 ?? 0) + (d.y1 ?? 0)) / 2)
-      .attr("dy", "0.35em")
-      .attr("text-anchor", "end")
-      .attr("fill", colors.label)
-      .text((d: LayoutNode) => d.label)
-      // 左半分のノードだけ右側にラベル出す（見やすさ調整）
-      .filter((d: LayoutNode) => (d.x0 ?? 0) < width / 2)
-      .attr("x", (d: LayoutNode) => (d.x1 ?? 0) + 6)
-      .attr("text-anchor", "start");
+      .attr("text-anchor", "start") // 横方向の左揃え
+      .attr("dominant-baseline", "middle") // 縦方向の中央揃え
+      .attr("fill", nodeLabelFill) // 文字色
+      .attr("font-weight", 700)
+      .attr("pointer-events", "none")
+      // ノードごとの処理
+      .each(function (d: LayoutNode) {
+        const text = d3.select(this);
+        const textNode = text.node();
+        if (!(textNode instanceof SVGTextElement)) return;
+
+        const nodeWidth = (d.x1 ?? 0) - (d.x0 ?? 0);
+        const nodeHeight = (d.y1 ?? 0) - (d.y0 ?? 0);
+        const labelPadding = getNodeLabelPadding(d.type);
+        const labelX = (d.x0 ?? 0) + labelPadding;
+        const maxWidth = nodeWidth - labelPadding * 2; // 左右余白
+
+        const valueText = formatNodeValue(d.value);
+
+        // 小さいノード(1行)
+        if (nodeHeight < 30) {
+          let label = `${valueText} ${d.label}`;
+
+          text
+            .attr("font-size", 14)
+            .text(label);
+          // 幅に収まるまで削る
+          while (textNode.getComputedTextLength() > maxWidth && label.length > 0) {
+            label = label.slice(0, -1);
+            text.text(label + "…");
+          }
+          return;
+        }
+
+        // 大きいノード(2行)
+        // 値
+        text
+          .append("tspan")
+          .attr("font-size", 20)
+          .attr("x", labelX)
+          .attr("dy", "-0.25em")
+          .text(valueText);
+
+        // 下段：label（幅フィット）
+        let label = d.label;
+        const labelTspan = text.append("tspan")
+          .attr("font-size", 14)
+          .attr("x", labelX)
+          .attr("dy", "1.2em")
+          .attr("font-weight", 500)
+          .text(label);
+
+        while (labelTspan.node()!.getComputedTextLength() > maxWidth && label.length > 0) {
+          label = label.slice(0, -1);
+          labelTspan.text(label + "…");
+        }
+      });
 
   }, [data, colorMode]); // dataまたは配色が変わったら再描画
 
