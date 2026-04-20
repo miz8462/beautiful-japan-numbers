@@ -6,9 +6,9 @@ export default function Home() {
       <main className={styles.main}>
         <section className={styles.intro}>
           <p className={styles.eyebrow}>Public data, made readable</p>
-          <h1>Beautiful Japan Numbers</h1>
+          <h1>美しい日本の数字</h1>
           <p>
-            日本の数字を、流れと関係が見えるかたちで眺めるための小さな可視化集です。
+            日本に関する統計データを、流れと関係が見えるかたちで眺めます
           </p>
         </section>
 
