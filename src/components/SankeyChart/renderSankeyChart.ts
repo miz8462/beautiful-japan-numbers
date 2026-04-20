@@ -6,9 +6,12 @@ import {
 import * as d3 from "d3";
 import { sankeyLinkHorizontal } from "d3-sankey";
 import {
+  CHART_BACKGROUND_COLOR,
   HIGHLIGHT_COLOR,
   ITEM_NODE_LABEL_PADDING,
   PARENT_HIGHLIGHT_COLOR,
+  SVG_HEIGHT,
+  SVG_WIDTH,
   TOTAL_NODE_LABEL_PADDING,
 } from "./constants";
 import { formatNodePercent, formatNodeValue } from "./formatters";
@@ -35,6 +38,10 @@ export function renderSankeyChart(
   data: GovernmentSpendingData,
   colorMode: ColorMode,
 ) {
+  /*
+   * 配色と小さな描画ヘルパー
+   * この関数内のselection更新から同じ色計算を使えるようにまとめておく
+   */
   const colors = getGovernmentSpendingChartColors(colorMode);
   const nodeFillColors: Record<NodeType, string> = {
     revenue_item: colors.revenue.item,
@@ -71,12 +78,25 @@ export function renderSankeyChart(
       ? TOTAL_NODE_LABEL_PADDING
       : ITEM_NODE_LABEL_PADDING;
 
+  /*
+   * SVGの初期化とSankeyレイアウト計算
+   * ReactではなくD3がSVG内を管理するため、再描画時は中身を作り直す
+   */
   const svg = d3.select(svgElement);
   svg.selectAll("*").remove();
+  svg
+    .append("rect")
+    .attr("width", SVG_WIDTH)
+    .attr("height", SVG_HEIGHT)
+    .attr("fill", CHART_BACKGROUND_COLOR);
 
   const graph = createGovernmentSpendingLayout(data);
   const totalValueBySide = getTotalValueBySide(graph.nodes);
 
+  /*
+   * 初期描画
+   * リンク、ノード、親ノード内ハイライト用レイヤー、ラベルを順に積む
+   */
   const linkSelection = svg.append("g")
     .selectAll("path")
     .data(graph.links)
@@ -118,14 +138,24 @@ export function renderSankeyChart(
       renderNodeLabel(d3.select<SVGTextElement, LayoutNode>(this), d, getNodeLabelPadding(d.type));
     });
 
+  /*
+   * 詳細パネル
+   * SVG全体の右上に常時表示し、ホバー状態に応じてテキストだけ差し替える
+   */
   const { panelLabel, panelValue } = renderInfoPanel(svg, colorMode);
 
+  // ホバーしていない時も、詳細パネルの存在が分かる状態にしておく
   const showDefaultPanel = () => {
     panelLabel.text("詳細");
     panelValue.text("ノードにカーソルを合わせてください");
   };
 
+  /*
+   * ホバー解除
+   * 元の色に戻す
+   */
   const resetHighlight = () => {
+    // 親ノード上に重ねた部分ハイライトは、mouseleaveで必ず消す
     segmentLayer.selectAll("rect").remove();
 
     nodeSelection
@@ -140,12 +170,17 @@ export function renderSankeyChart(
     showDefaultPanel();
   };
 
+  /*
+   * ホバー中の強調表示
+   * 関係する要素だけ黄色にする
+   */
   const showHighlight = (hoveredNode: LayoutNode) => {
     const { ancestorSegmentLinks, brightNodes, connectedLinks, connectedNodes } =
       getConnectedItems(hoveredNode);
     const hoveredSide = getNodeSide(hoveredNode);
     const segmentData = getAncestorSegmentData(ancestorSegmentLinks, hoveredSide);
 
+    // 関係ないノードは元の色のまま、関係するノードだけ黄色へ変える。
     nodeSelection
       .attr("fill", (d: LayoutNode) => {
         if (brightNodes.has(d)) {
@@ -158,6 +193,7 @@ export function renderSankeyChart(
       })
       .attr("opacity", 1);
 
+    // 関係ないリンクも薄くせず、通常色を維持する。
     linkSelection
       .attr("stroke", (d: LayoutLink) =>
         connectedLinks.has(d) ? HIGHLIGHT_COLOR : getDefaultLinkStroke(d),
@@ -166,6 +202,7 @@ export function renderSankeyChart(
         return connectedLinks.has(d) ? 0.95 : getDefaultLinkOpacity(d);
       });
 
+    // 親ノード全体は薄い黄色、子に対応する部分だけ濃い黄色を重ねる。
     segmentLayer
       .selectAll<SVGRectElement, SegmentDatum>("rect")
       .data(segmentData, (d) => d.key)
@@ -190,6 +227,9 @@ export function renderSankeyChart(
     );
   };
 
+  /*
+   * カーソルをノードに合わせると色を変更
+   */
   showDefaultPanel();
 
   nodeSelection

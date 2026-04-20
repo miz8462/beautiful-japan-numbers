@@ -16,6 +16,7 @@ export function renderNodeLabel(
   const maxWidth = nodeWidth - labelPadding * 2;
   const valueText = formatNodeValue(node.value);
 
+  // 高さが足りないノードは1行にまとめて、収まるところまで省略する。
   if (nodeHeight < 30) {
     let label = `${valueText} ${node.label}`;
     text.attr("font-size", 14).text(label);
@@ -27,6 +28,7 @@ export function renderNodeLabel(
     return;
   }
 
+  // 通常サイズのノードは、値とラベルを2行に分ける。
   text
     .append("tspan")
     .attr("font-size", 20)

@@ -1,3 +1,4 @@
+// 入力データの値を、Sankey上で使う短い日本語表記に寄せる。
 export function formatNodeValue(value: number | undefined): string {
   return new Intl.NumberFormat("ja-JP", {
     maximumFractionDigits: 1,

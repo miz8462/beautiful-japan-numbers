@@ -1,5 +1,6 @@
 import type { ConnectedItems, LayoutLink, LayoutNode, NodeSide, SegmentDatum } from "./types";
 
+// d3-sankeyのsource/targetは、レイアウト前後で文字列とノード参照が混ざる。
 export function getEndpointType(endpoint: string | number | LayoutNode): string {
   if (typeof endpoint === "object" && endpoint !== null && "type" in endpoint) {
     return endpoint.type;
@@ -18,6 +19,7 @@ export function getNodeSide(node: LayoutNode): NodeSide {
   return node.type.startsWith("revenue") ? "revenue" : "spending";
 }
 
+// 収入と支出は視覚上つながっているが、ホバー探索では完全に切り離す。
 export function isCentralLink(link: LayoutLink): boolean {
   return (
     getEndpointType(link.source) === "revenue_total" &&
@@ -32,6 +34,7 @@ export function getConnectedItems(hoveredNode: LayoutNode): ConnectedItems {
   const brightNodes = new Set<LayoutNode>([hoveredNode]);
   const ancestorSegmentLinks = new Set<LayoutLink>();
 
+  // 収入側は「子 -> 親」、支出側は「親 -> 子」という向きでデータが流れる。
   const isSameSideLink = (link: LayoutLink) => {
     const sourceNode = getEndpointNode(link.source);
     const targetNode = getEndpointNode(link.target);
@@ -57,6 +60,7 @@ export function getConnectedItems(hoveredNode: LayoutNode): ConnectedItems {
   const getChildNode = (link: LayoutLink) =>
     hoveredSide === "revenue" ? getEndpointNode(link.source) : getEndpointNode(link.target);
 
+  // 親は薄い黄色にし、子に対応する親内の帯だけ濃い黄色で重ねる。
   const addAncestors = (node: LayoutNode) => {
     getParentLinks(node).forEach((link) => {
       connectedLinks.add(link);
@@ -70,6 +74,7 @@ export function getConnectedItems(hoveredNode: LayoutNode): ConnectedItems {
     });
   };
 
+  // 選択ノードとその子孫はすべて濃い黄色にする。
   const addDescendants = (node: LayoutNode) => {
     getChildLinks(node).forEach((link) => {
       connectedLinks.add(link);
@@ -93,6 +98,7 @@ export function getAncestorSegmentData(
   ancestorSegmentLinks: Set<LayoutLink>,
   hoveredSide: NodeSide,
 ): SegmentDatum[] {
+  // 親ノード上に重ねる濃い黄色の帯を、リンクの接続位置と太さから作る。
   return Array.from(ancestorSegmentLinks).flatMap((link) => {
     const parentNode =
       hoveredSide === "revenue" ? getEndpointNode(link.target) : getEndpointNode(link.source);

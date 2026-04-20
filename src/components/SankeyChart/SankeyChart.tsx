@@ -10,6 +10,7 @@ export default function SankeyChart({ data }: { data: GovernmentSpendingData }) 
   const ref = useRef<SVGSVGElement | null>(null);
   const [colorMode, setColorMode] = useState<ColorMode>("light");
 
+  // SVG内の配色だけをOSテーマに追従させる。
   useEffect(() => {
     const mediaQuery = window.matchMedia("(prefers-color-scheme: dark)");
 
@@ -28,6 +29,7 @@ export default function SankeyChart({ data }: { data: GovernmentSpendingData }) 
   useEffect(() => {
     if (!data || !ref.current) return;
 
+    // SVG配下はD3が管理するため、React側は再描画の入口だけを持つ。
     renderSankeyChart(ref.current, data, colorMode);
   }, [data, colorMode]);
 
