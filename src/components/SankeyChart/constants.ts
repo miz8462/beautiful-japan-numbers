@@ -3,7 +3,7 @@ import type { NodeType } from "./types";
 // SVG全体は右側の詳細パネル分だけチャート本体より広く取る。
 export const CHART_WIDTH = 1200;
 export const CHART_HEIGHT = 400;
-export const CHART_TOP = 128;
+export const CHART_TOP = 64;
 export const SVG_WIDTH = 1520;
 export const SVG_HEIGHT = 560;
 export const CHART_BACKGROUND_COLOR = "#1b1b1b";

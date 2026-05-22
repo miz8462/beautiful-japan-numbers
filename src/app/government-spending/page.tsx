@@ -8,6 +8,13 @@ export default function Page() {
     <div>
       <h1>政府支出</h1>
       <SankeyChart data={data} />
+      <a
+        href="https://www.mof.go.jp/policy/budget/reference/statistics/data.htm"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        出典：財務省「予算・決算 統計表一覧」↗
+      </a>
     </div>
   );
 }

@@ -7,7 +7,7 @@ export type SankeyInfoPanelState = {
 
 export const DEFAULT_SANKEY_INFO_PANEL: SankeyInfoPanelState = {
   title: "詳細",
-  subtitle: "万=1万円 / 億=1億円 / 兆=1兆円",
+  subtitle: "",
 };
 
 export function SankeyInfoPanel({ state }: { state: SankeyInfoPanelState }) {
