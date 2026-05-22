@@ -2,10 +2,12 @@ import type { SankeyLink, SankeyNode } from "d3-sankey";
 
 // typeは配置列と配色の両方に使うため、文字列をここで固定する。
 export type NodeType =
+  | "revenue_detail"
   | "revenue_item"
   | "revenue_total"
   | "spending_total"
-  | "spending_item";
+  | "spending_item"
+  | "spending_detail";
 
 export type GovernmentSpendingNode = {
   [key: string]: string;

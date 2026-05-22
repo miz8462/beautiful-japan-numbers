@@ -27,6 +27,26 @@ export function isCentralLink(link: LayoutLink): boolean {
   );
 }
 
+function getNodeDepth(type: string): number {
+  if (type.endsWith("_detail")) return 0;
+  if (type.endsWith("_item")) return 1;
+  return 2;
+}
+
+// リンクホバー時は、階層の深い方（detail/item）を起点にハイライトする。
+export function getLinkHoverNode(link: LayoutLink): LayoutNode | null {
+  const sourceNode = getEndpointNode(link.source);
+  const targetNode = getEndpointNode(link.target);
+
+  if (!sourceNode || !targetNode || isCentralLink(link)) {
+    return null;
+  }
+
+  return getNodeDepth(sourceNode.type) < getNodeDepth(targetNode.type)
+    ? sourceNode
+    : targetNode;
+}
+
 export function getConnectedItems(hoveredNode: LayoutNode): ConnectedItems {
   const hoveredSide = getNodeSide(hoveredNode);
   const connectedNodes = new Set<LayoutNode>([hoveredNode]);
@@ -98,18 +118,23 @@ export function getAncestorSegmentData(
   ancestorSegmentLinks: Set<LayoutLink>,
   hoveredSide: NodeSide,
 ): SegmentDatum[] {
-  // 親ノード上に重ねる濃い黄色の帯を、リンクの接続位置と太さから作る。
+  // 親ノード上に重ねる濃い黄色の帯を、リンク端の y0/y1 と width から作る。
   return Array.from(ancestorSegmentLinks).flatMap((link) => {
     const parentNode =
       hoveredSide === "revenue" ? getEndpointNode(link.target) : getEndpointNode(link.source);
     if (!parentNode) return [];
 
-    const segmentCenterY = hoveredSide === "revenue" ? link.y1 : link.y0;
-    const segmentHeight = Math.max(1, link.width ?? 0);
+    const linkCenterY = hoveredSide === "revenue" ? link.y1 : link.y0;
+    const halfWidth = Math.max(0.5, (link.width ?? 0) / 2);
     const parentY0 = parentNode.y0 ?? 0;
     const parentY1 = parentNode.y1 ?? 0;
-    const y = Math.max(parentY0, (segmentCenterY ?? parentY0) - segmentHeight / 2);
-    const height = Math.min(segmentHeight, parentY1 - y);
+
+    const segmentTop = (linkCenterY ?? parentY0) - halfWidth;
+    const segmentBottom = (linkCenterY ?? parentY0) + halfWidth;
+    const y = Math.max(parentY0, segmentTop);
+    const bottom = Math.min(parentY1, segmentBottom);
+    const height = bottom - y;
+
     if (height <= 0) return [];
 
     return [{

@@ -1,33 +1,53 @@
 {
   "nodes": [
     {
-      "id": "tax",
-      "label": "税収",
+      "id": "tax_stamp",
+      "label": "租税及び印紙収入",
+      "type": "revenue_item"
+    },
+    {
+      "id": "misc_revenue",
+      "label": "雑収入",
       "type": "revenue_item"
     },
     {
       "id": "bonds",
-      "label": "国債",
+      "label": "公債金",
       "type": "revenue_item"
     },
     {
       "id": "other_revenue",
-      "label": "その他収入",
+      "label": "その他歳入",
       "type": "revenue_item"
     },
     {
+      "id": "government_business",
+      "label": "官業益金及び官業収入",
+      "type": "revenue_detail"
+    },
+    {
+      "id": "government_assets",
+      "label": "政府資産整理収入",
+      "type": "revenue_detail"
+    },
+    {
       "id": "revenue_total",
-      "label": "収入",
+      "label": "歳入",
       "type": "revenue_total"
     },
     {
       "id": "spending_total",
-      "label": "支出",
+      "label": "歳出",
       "type": "spending_total"
     },
     {
       "id": "social_security",
-      "label": "社会保障",
+      "label": "社会保障関係費",
+      "type": "spending_item"
+    },
+    {
+      "id": "education_science",
+      "label": "文教及び科学振興費",
       "type": "spending_item"
     },
     {
@@ -41,81 +61,171 @@
       "type": "spending_item"
     },
     {
-      "id": "public_works",
-      "label": "公共事業",
-      "type": "spending_item"
-    },
-    {
       "id": "defense",
-      "label": "防衛",
+      "label": "防衛関係費",
       "type": "spending_item"
     },
     {
-      "id": "education",
-      "label": "教育・科学",
+      "id": "public_works",
+      "label": "公共事業関係費",
       "type": "spending_item"
     },
     {
-      "id": "other_spending",
-      "label": "その他支出",
+      "id": "food_stability",
+      "label": "食料安定供給関係費",
       "type": "spending_item"
+    },
+    {
+      "id": "other_matters",
+      "label": "その他の事項経費",
+      "type": "spending_item"
+    },
+    {
+      "id": "other_spending_group",
+      "label": "その他歳出",
+      "type": "spending_item"
+    },
+    {
+      "id": "pension",
+      "label": "恩給関係費",
+      "type": "spending_detail"
+    },
+    {
+      "id": "local_special_grants",
+      "label": "地方特例交付金",
+      "type": "spending_detail"
+    },
+    {
+      "id": "economic_cooperation",
+      "label": "経済協力費",
+      "type": "spending_detail"
+    },
+    {
+      "id": "sme_measures",
+      "label": "中小企業対策費",
+      "type": "spending_detail"
+    },
+    {
+      "id": "energy_measures",
+      "label": "エネルギー対策費",
+      "type": "spending_detail"
+    },
+    {
+      "id": "reserve_fund",
+      "label": "予備費",
+      "type": "spending_detail"
     }
   ],
   "links": [
     {
-      "source": "tax",
+      "source": "tax_stamp",
       "target": "revenue_total",
-      "value": 600.0
+      "value": 77819000.0
+    },
+    {
+      "source": "misc_revenue",
+      "target": "revenue_total",
+      "value": 8389166.0
     },
     {
       "source": "bonds",
       "target": "revenue_total",
-      "value": 700.0
+      "value": 28647072.0
     },
     {
       "source": "other_revenue",
       "target": "revenue_total",
-      "value": 200.0
+      "value": 342607.0
+    },
+    {
+      "source": "government_business",
+      "target": "other_revenue",
+      "value": 51780.0
+    },
+    {
+      "source": "government_assets",
+      "target": "other_revenue",
+      "value": 290827.0
     },
     {
       "source": "revenue_total",
       "target": "spending_total",
-      "value": 1500.0
+      "value": 115197845.0
     },
     {
       "source": "spending_total",
       "target": "social_security",
-      "value": 500.0
+      "value": 38293827.507
+    },
+    {
+      "source": "spending_total",
+      "target": "education_science",
+      "value": 5656011.619
     },
     {
       "source": "spending_total",
       "target": "debt_service",
-      "value": 400.0
+      "value": 28217876.364
     },
     {
       "source": "spending_total",
       "target": "local_allocation",
-      "value": 150.0
-    },
-    {
-      "source": "spending_total",
-      "target": "public_works",
-      "value": 100.0
+      "value": 18679237.15
     },
     {
       "source": "spending_total",
       "target": "defense",
-      "value": 200.0
+      "value": 8669056.598
     },
     {
       "source": "spending_total",
-      "target": "education",
-      "value": 50.0
+      "target": "public_works",
+      "value": 6085752.0
     },
     {
       "source": "spending_total",
-      "target": "other_spending",
-      "value": 100.0
+      "target": "food_stability",
+      "value": 1260866.065
+    },
+    {
+      "source": "spending_total",
+      "target": "other_matters",
+      "value": 5854297.9
+    },
+    {
+      "source": "spending_total",
+      "target": "other_spending_group",
+      "value": 2480920.045
+    },
+    {
+      "source": "other_spending_group",
+      "target": "pension",
+      "value": 62253.707
+    },
+    {
+      "source": "other_spending_group",
+      "target": "local_special_grants",
+      "value": 193600.0
+    },
+    {
+      "source": "other_spending_group",
+      "target": "economic_cooperation",
+      "value": 505018.304
+    },
+    {
+      "source": "other_spending_group",
+      "target": "sme_measures",
+      "value": 169461.468
+    },
+    {
+      "source": "other_spending_group",
+      "target": "energy_measures",
+      "value": 811103.878
+    },
+    {
+      "source": "other_spending_group",
+      "target": "reserve_fund",
+      "value": 739482.688
     }
   ]
 }

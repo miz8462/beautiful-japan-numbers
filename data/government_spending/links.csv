@@ -1,18 +1,29 @@
 source,target,value
 
-# 収入
-tax,revenue_total,600
-bonds,revenue_total,700
-other_revenue,revenue_total,200
+# 歳入
+tax_stamp,revenue_total,77819000
+misc_revenue,revenue_total,8389166
+bonds,revenue_total,28647072
+other_revenue,revenue_total,342607
+government_business,other_revenue,51780
+government_assets,other_revenue,290827
 
-# 収入 = 支出
-revenue_total,spending_total,1500
+# 歳入 = 歳出
+revenue_total,spending_total,115197845
 
-# 支出
-spending_total,social_security,500
-spending_total,debt_service,400
-spending_total,local_allocation,150
-spending_total,public_works,100
-spending_total,defense,200
-spending_total,education,50
-spending_total,other_spending,100
+# 歳出
+spending_total,social_security,38293827.507
+spending_total,education_science,5656011.619
+spending_total,debt_service,28217876.364
+spending_total,local_allocation,18679237.15
+spending_total,defense,8669056.598
+spending_total,public_works,6085752
+spending_total,food_stability,1260866.065
+spending_total,other_matters,5854297.9
+spending_total,other_spending_group,2480920.045
+other_spending_group,pension,62253.707
+other_spending_group,local_special_grants,193600
+other_spending_group,economic_cooperation,505018.304
+other_spending_group,sme_measures,169461.468
+other_spending_group,energy_measures,811103.878
+other_spending_group,reserve_fund,739482.688

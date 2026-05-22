@@ -1,37 +1,54 @@
 "use client";
 
-import { type ColorMode } from "@/styles/colors";
 import { useEffect, useRef, useState } from "react";
-import { SVG_HEIGHT, SVG_WIDTH } from "./constants";
+import { INFO_PANEL_RIGHT, INFO_PANEL_TOP, SVG_HEIGHT, SVG_WIDTH } from "./constants";
 import { renderSankeyChart } from "./renderSankeyChart";
+import {
+  DEFAULT_SANKEY_INFO_PANEL,
+  SankeyInfoPanel,
+  type SankeyInfoPanelState,
+} from "./SankeyInfoPanel";
+import { usePreferredColorMode } from "./usePreferredColorMode";
 import type { GovernmentSpendingData } from "./types";
 
 export default function SankeyChart({ data }: { data: GovernmentSpendingData }) {
   const ref = useRef<SVGSVGElement | null>(null);
-  const [colorMode, setColorMode] = useState<ColorMode>("light");
-
-  // SVG内の配色だけをOSテーマに追従させる。
-  useEffect(() => {
-    const mediaQuery = window.matchMedia("(prefers-color-scheme: dark)");
-
-    const updateColorMode = () => {
-      setColorMode(mediaQuery.matches ? "dark" : "light");
-    };
-
-    updateColorMode();
-    mediaQuery.addEventListener("change", updateColorMode);
-
-    return () => {
-      mediaQuery.removeEventListener("change", updateColorMode);
-    };
-  }, []);
+  const colorMode = usePreferredColorMode();
+  const [panelState, setPanelState] = useState<SankeyInfoPanelState>(DEFAULT_SANKEY_INFO_PANEL);
 
   useEffect(() => {
     if (!data || !ref.current) return;
 
-    // SVG配下はD3が管理するため、React側は再描画の入口だけを持つ。
-    renderSankeyChart(ref.current, data, colorMode);
+    const cleanup = renderSankeyChart(ref.current, data, colorMode, setPanelState);
+    return cleanup;
   }, [data, colorMode]);
 
-  return <svg ref={ref} width={SVG_WIDTH} height={SVG_HEIGHT} />;
+  return (
+    <>
+      <div
+        style={{
+          position: "fixed",
+          top: INFO_PANEL_TOP,
+          right: INFO_PANEL_RIGHT,
+          zIndex: 20,
+          pointerEvents: "none",
+        }}
+      >
+        <SankeyInfoPanel state={panelState} />
+      </div>
+      <div
+        style={{
+          overflowX: "auto",
+          width: "100%",
+        }}
+      >
+        <svg
+          ref={ref}
+          width={SVG_WIDTH}
+          height={SVG_HEIGHT}
+          style={{ display: "block", maxWidth: "none" }}
+        />
+      </div>
+    </>
+  );
 }
