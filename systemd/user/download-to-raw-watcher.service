@@ -1,0 +1,13 @@
+[Unit]
+Description=Watch Downloads and copy Excel files to data/raw
+After=default.target
+
+[Service]
+Type=simple
+WorkingDirectory=/home/mizki/projects/beautiful-japan-numbers
+ExecStart=/home/mizki/projects/beautiful-japan-numbers/venv/bin/python /home/mizki/projects/beautiful-japan-numbers/scripts/ingest/download_to_raw_watcher.py
+Restart=always
+RestartSec=3
+
+[Install]
+WantedBy=default.target

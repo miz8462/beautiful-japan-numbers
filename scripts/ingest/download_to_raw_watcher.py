@@ -9,7 +9,6 @@ import time
 import logging
 import subprocess
 from pathlib import Path
-from datetime import datetime
 
 from watchdog.observers import Observer
 from watchdog.events import FileSystemEventHandler
@@ -29,17 +28,18 @@ FILE_PATTERNS = [
 ]
 
 LOG_FILE = Path("logs/watcher.log")
+DEDUP_WINDOW_SECONDS = 120
 # ──────────────────────────────────────────
 
-logging.basicConfig(
-    level=logging.INFO,
-    format="%(asctime)s [%(levelname)s] %(message)s",
-    handlers=[
-        logging.FileHandler(LOG_FILE, encoding="utf-8"),
-        logging.StreamHandler(),
-    ],
-)
+LOG_FILE.parent.mkdir(parents=True, exist_ok=True)
 log = logging.getLogger(__name__)
+log.setLevel(logging.INFO)
+log.propagate = False
+
+if not log.handlers:
+    handler = logging.FileHandler(LOG_FILE, encoding="utf-8")
+    handler.setFormatter(logging.Formatter("%(asctime)s [%(levelname)s] %(message)s"))
+    log.addHandler(handler)
 
 
 def matches_pattern(path: Path) -> bool:
@@ -63,12 +63,17 @@ def wait_for_complete(path: Path, timeout: int = 30) -> bool:
 
 
 def archive_name(src: Path) -> Path:
-    """タイムスタンプ付きのファイル名を生成（上書き防止）"""
-    ts = datetime.now().strftime("%Y%m%d_%H%M%S")
+    dest = DEST_DIR / src.name
+    if not dest.exists():
+        return dest
     stem = src.stem
     suffix = src.suffix
-    return DEST_DIR / f"{stem}_{ts}{suffix}"
-
+    counter = 1
+    while True:
+        dest = DEST_DIR / f"{stem}({counter}){suffix}"
+        if not dest.exists():
+            return dest
+        counter += 1
 
 def sync_to_gdrive(file_path: Path):
     """rclone で Google Drive に単一ファイルを同期"""
@@ -90,6 +95,9 @@ def sync_to_gdrive(file_path: Path):
 
 
 class ExcelHandler(FileSystemEventHandler):
+    def __init__(self):
+        self._processed_signatures: dict[tuple[str, int, int], float] = {}
+
     def on_created(self, event):
         if event.is_directory:
             return
@@ -104,11 +112,24 @@ class ExcelHandler(FileSystemEventHandler):
         if not matches_pattern(path):
             return
 
-        log.info(f"新しいファイルを検出: {path.name}")
-
         if not wait_for_complete(path):
             log.warning(f"ダウンロード完了を確認できませんでした: {path.name}")
             return
+
+        try:
+            stat = path.stat()
+        except FileNotFoundError:
+            log.warning(f"ファイルが見つかりません: {path.name}")
+            return
+
+        self._forget_old_signatures()
+        signature = (str(path.resolve()), stat.st_mtime_ns, stat.st_size)
+        if signature in self._processed_signatures:
+            log.info(f"重複イベントをスキップ: {path.name}")
+            return
+        self._processed_signatures[signature] = time.monotonic()
+
+        log.info(f"新しいファイルを検出: {path.name}")
 
         dest = archive_name(path)
         try:
@@ -119,6 +140,16 @@ class ExcelHandler(FileSystemEventHandler):
             return
 
         sync_to_gdrive(dest)
+
+    def _forget_old_signatures(self):
+        now = time.monotonic()
+        expired = [
+            signature
+            for signature, processed_at in self._processed_signatures.items()
+            if now - processed_at > DEDUP_WINDOW_SECONDS
+        ]
+        for signature in expired:
+            del self._processed_signatures[signature]
 
 
 def main():
