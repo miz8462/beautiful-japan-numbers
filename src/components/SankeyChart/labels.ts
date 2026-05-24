@@ -169,6 +169,13 @@ export function renderNodeLabel(
       .attr("font-size", 14)
       .attr("font-weight", 700);
 
+    // Special case for nodes that should always show value only
+    if (node.id === "misc_revenue" || node.id === "reserve_fund") {
+      console.log("Special case triggered for node:", node.id, node.label);
+      truncateToWidth(text, valueText, maxWidth);
+      return;
+    }
+
     if (preferLabelOnly || labelFits) {
       truncateToWidth(text, node.label, maxWidth);
       return;
@@ -187,6 +194,19 @@ export function renderNodeLabel(
       .attr("font-size", 14)
       .attr("font-weight", 500);
     truncateToWidth(text, node.label, maxWidth);
+    return;
+  }
+
+  // Special case for nodes that should always show value only due to narrow space
+  if (node.id === "misc_revenue" || node.id === "reserve_fund") {
+    text
+      .attr("text-anchor", "start")
+      .attr("dominant-baseline", "central")
+      .attr("x", labelX)
+      .attr("y", ((node.y0 ?? 0) + (node.y1 ?? 0)) / 2)
+      .attr("font-size", 14)
+      .attr("font-weight", 700);
+    truncateToWidth(text, valueText, maxWidth);
     return;
   }
 

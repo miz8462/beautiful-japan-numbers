@@ -25,8 +25,8 @@ import {
   isCentralLink,
 } from "./graphHelpers";
 import { createTextMeasurer, getLabelHitExtension, renderNodeLabel } from "./labels";
-import { DEFAULT_SANKEY_INFO_PANEL, type SankeyInfoPanelState } from "./SankeyInfoPanel";
 import { createGovernmentSpendingLayout, getTotalValueBySide } from "./layout";
+import { DEFAULT_SANKEY_INFO_PANEL, type SankeyInfoPanelState } from "./SankeyInfoPanel";
 import type {
   GovernmentSpendingData,
   LayoutLink,
@@ -348,6 +348,11 @@ export function renderSankeyChart(
       return;
     }
 
+    // Reset before showing new highlight
+    if (activeHoverId !== null) {
+      resetVisuals();
+    }
+
     activeHoverId = node.id;
     showHighlight(node);
   };
@@ -411,7 +416,9 @@ export function renderSankeyChart(
       hoverFrameId = null;
     }
 
-    clearHover();
+    if (activeHoverId !== null) {
+      clearHover();
+    }
   };
 
   svgElement.addEventListener("pointerenter", onPointerEnter);
