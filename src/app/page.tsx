@@ -17,6 +17,11 @@ export default function Home() {
             政府支出を見る
           </a>
         </nav>
+        <nav className={styles.links} aria-label="Available visualizations">
+          <a className={styles.primary} href="/population">
+            人口変化を見る
+          </a>
+        </nav>
       </main>
     </div>
   );

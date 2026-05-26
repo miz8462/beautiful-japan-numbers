@@ -1,0 +1,91 @@
+"use client";
+
+import { ResponsiveLine } from "@nivo/line";
+
+const data = [
+  {
+    id: "出生数",
+    data: [
+      { x: "2000", y: 119 },
+      { x: "2003", y: 112 },
+      { x: "2006", y: 109 },
+      { x: "2007", y: 109 },
+      { x: "2009", y: 107 },
+      { x: "2012", y: 103 },
+      { x: "2015", y: 101 },
+      { x: "2018", y: 92 },
+      { x: "2021", y: 81 },
+      { x: "2023", y: 73 },
+    ],
+  },
+  {
+    id: "死亡数",
+    data: [
+      { x: "2000", y: 96 },
+      { x: "2003", y: 100 },
+      { x: "2006", y: 108 },
+      { x: "2007", y: 110 },
+      { x: "2009", y: 114 },
+      { x: "2012", y: 125 },
+      { x: "2015", y: 130 },
+      { x: "2018", y: 136 },
+      { x: "2021", y: 144 },
+      { x: "2023", y: 159 },
+    ],
+  },
+];
+
+export default function BirthDeathChart() {
+  return (
+    <div style={{ height: 240 }}>
+      <ResponsiveLine
+        data={data}
+        margin={{ top: 10, right: 20, bottom: 40, left: 48 }}
+        xScale={{ type: "point" }}
+        yScale={{ type: "linear", min: 60, max: 180 }}
+        axisBottom={{ tickSize: 0, tickPadding: 10 }}
+        axisLeft={{
+          tickSize: 0,
+          tickPadding: 10,
+          format: (v) => `${v}万`,
+        }}
+        lineWidth={2}
+        pointSize={0}
+        pointColor={{ from: "color" }}
+        pointBorderWidth={0}
+        enableGridX={false}
+        gridYValues={5}
+        theme={{
+          background: "transparent",
+          grid: { line: { stroke: "#e0e0e0", strokeWidth: 1 } },
+          axis: { ticks: { text: { fontSize: 11, fill: "#999" } } },
+        }}
+        colors={["#60a5fa", "#f87171"]}
+        useMesh={false}
+        tooltip={({ point }) => (
+          <div style={{
+            background: "#fff",
+            border: "0.5px solid #ddd",
+            padding: "6px 10px",
+            fontSize: 12,
+          }}>
+            {point.seriesId}　{point.data.xFormatted}年：{point.data.yFormatted}万人
+          </div>
+        )}
+        isInteractive={true}
+        legends={[
+          {
+            anchor: "top-right",
+            direction: "row",
+            itemWidth: 60,
+            itemHeight: 16,
+            symbolSize: 8,
+            symbolShape: "square",
+            itemsSpacing: 8,
+            translateY: -8,
+          },
+        ]}
+      />
+    </div>
+  );
+}
