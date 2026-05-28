@@ -13,15 +13,15 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Beautiful Japan Numbers",
-  description: "Visual stories from Japan's public data.",
+  title: "美しい日本の数字",
+  description: "この国のデータをわかりやすく",
 
   icons: {
     icon: "/favicon.ico",
-    apple: "/apple-touch-icon.png",
+    apple: "/apple-icon.png",
   },
 
-  manifest: "/site.webmanifest",
+  manifest: "/manifest.json",
 
   themeColor: "#5BBEE4",
 
