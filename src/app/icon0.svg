@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="64" height="64" viewBox="0 0 64 64" fill="none" id="svg4" sodipodi:docname="icon.svg" inkscape:version="1.4.4 (dcaf3e7, 2026-05-05)" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:svg="http://www.w3.org/2000/svg"><metadata><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/"><rdf:Description><dc:creator>RealFaviconGenerator</dc:creator><dc:source>https://realfavicongenerator.net</dc:source></rdf:Description></rdf:RDF></metadata><defs id="defs4">
+    <inkscape:path-effect effect="fillet_chamfer" id="path-effect6" is_visible="true" lpeversion="1" nodesatellites_param="F,0,0,1,0,0,0,1 @ F,0,0,1,0,0,0,1 @ F,0,0,1,0,0,0,1 @ F,0,0,1,0,0,0,1 @ F,0,0,1,0,0,0,1 @ F,0,0,1,0,0,0,1 @ F,0,0,1,0,0,0,1 @ F,0,0,1,0,0,0,1 @ F,0,0,1,0,0,0,1 @ F,0,0,1,0,0,0,1 @ F,0,0,1,0,0,0,1 @ F,0,0,1,0,0,0,1 @ F,0,0,1,0,0,0,1 @ F,0,0,1,0,0,0,1 @ F,0,0,1,0,0,0,1 @ F,0,0,1,0,0,0,1" radius="0" unit="px" method="auto" mode="F" chamfer_steps="1" flexible="false" use_knot_distance="true" apply_no_radius="true" apply_with_radius="true" only_selected="false" hide_knots="false"></inkscape:path-effect>
+    <inkscape:path-effect effect="fillet_chamfer" id="path-effect5" is_visible="true" lpeversion="1" nodesatellites_param="F,0,0,1,0,0,0,1 @ F,0,0,1,0,0,0,1 @ F,0,0,1,0,0,0,1 @ F,0,0,1,0,0,0,1 @ F,0,0,1,0,0,0,1 @ F,0,0,1,0,0,0,1 @ F,0,0,1,0,0,0,1 @ F,0,0,1,0,0,0,1 @ F,0,0,1,0,0,0,1 @ F,0,0,1,0,0,0,1 @ F,0,0,1,0,0,0,1 @ F,0,0,1,0,0,0,1 @ F,0,0,1,0,0,0,1 @ F,0,0,1,0,0,0,1 @ F,0,0,1,0,0,0,1" radius="0" unit="px" method="auto" mode="F" chamfer_steps="1" flexible="false" use_knot_distance="true" apply_no_radius="true" apply_with_radius="true" only_selected="false" hide_knots="false"></inkscape:path-effect>
+  </defs><sodipodi:namedview id="namedview4" pagecolor="#ffffff" bordercolor="#000000" borderopacity="0.25" inkscape:showpageshadow="2" inkscape:pageopacity="0.0" inkscape:pagecheckerboard="0" inkscape:deskcolor="#d1d1d1" showgrid="false" showguides="true" inkscape:zoom="8" inkscape:cx="19.6875" inkscape:cy="35" inkscape:window-width="1536" inkscape:window-height="827" inkscape:window-x="0" inkscape:window-y="0" inkscape:window-maximized="1" inkscape:current-layer="g6"></sodipodi:namedview><style id="style1">
+    .bg {
+      fill: white;
+    }
+
+    .main {
+      fill: #5BBEE4;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      .bg {
+        fill: #111111;
+      }
+
+      .main {
+        fill: #6FD0F5;
+      }
+    }
+  </style><g id="g8">
+    <g id="g7">
+      <rect class="bg" width="64" height="64" rx="14" id="rect1"></rect>
+      <g id="g6">
+        <rect class="main" x="6.5629997" y="38.383278" width="8.4370861" height="17.616722" rx="2" id="rect2"></rect>
+        <rect class="main" x="17" y="50.75" width="11" height="5" rx="2" id="rect3"></rect>
+        <path class="main" d="m 38,28 c 0,-1.1046 0.8954,-2 2,-2 h 6 c 1.1046,0 2,0.8954 2,2 v 25.5 c 0,0.5523 -0.138075,1.138075 -0.5,1.5 -0.361925,0.361925 -0.9477,0.5 -1.5,0.5 0,0 -11.933538,-0.07447 -13,0 -1.066462,0.07447 -2,-0.99041 -2,-2 V 49 H 20 c -1.1046,0 -2,-0.8954 -2,-2 v -7 c 0,-1.1046 0.8954,-2 2,-2 h 18 z" id="path3" sodipodi:nodetypes="ssssssczzssscscs"></path>
+        <rect class="main" x="38.5" y="8.125" width="17.5" height="15.75" rx="2" id="rect4"></rect>
+      </g>
+    </g>
+  </g></svg>

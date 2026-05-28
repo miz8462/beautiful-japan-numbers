@@ -15,6 +15,19 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Beautiful Japan Numbers",
   description: "Visual stories from Japan's public data.",
+
+  icons: {
+    icon: "/favicon.ico",
+    apple: "/apple-touch-icon.png",
+  },
+
+  manifest: "/site.webmanifest",
+
+  themeColor: "#5BBEE4",
+
+  appleWebApp: {
+    title: "BJN",
+  },
 };
 
 export default function RootLayout({
