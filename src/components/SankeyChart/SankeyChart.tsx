@@ -24,10 +24,10 @@ export default function SankeyChart({ data }: { data: GovernmentSpendingData }) 
   }, [data, colorMode]);
 
   return (
-    <>
+    <div style={{ position: "relative", width: "100%" }}>
       <div
         style={{
-          position: "fixed",
+          position: "absolute",
           top: INFO_PANEL_TOP,
           right: INFO_PANEL_RIGHT,
           zIndex: 20,
@@ -46,9 +46,9 @@ export default function SankeyChart({ data }: { data: GovernmentSpendingData }) 
           ref={ref}
           width={SVG_WIDTH}
           height={SVG_HEIGHT}
-          style={{ display: "block", maxWidth: "none" }}
+          style={{ display: "block", maxWidth: "none", minWidth: 480 }}
         />
       </div>
-    </>
+    </div>
   );
 }

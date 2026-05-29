@@ -31,24 +31,26 @@ export default function ComponentsChart() {
           {
             axis: "y",
             value: 0,
-            lineStyle: { stroke: "#aaa", strokeWidth: 1 },
+            lineStyle: { stroke: "#AAAAAA", strokeWidth: 1 },
           },
         ]}
-        colors={["#60a5fa", "#f87171"]}
+        colors={["#2E9E6E", "#F06449"]}
         borderRadius={2}
         enableLabel={false}
         enableGridX={false}
         theme={{
           background: "transparent",
-          grid: { line: { stroke: "#e0e0e0", strokeWidth: 1 } },
-          axis: { ticks: { text: { fontSize: 11, fill: "#999" } } },
+          grid: { line: { stroke: "#E0E0E0", strokeWidth: 1 } },
+          axis: { ticks: { text: { fontSize: 11, fill: "#888888" } } },
         }}
         tooltip={({ id, value, indexValue }) => (
           <div style={{
-            background: "#fff",
-            border: "0.5px solid #ddd",
+            background: "#FFFFFF",
+            border: "1px solid #E0E0E0",
             padding: "6px 10px",
             fontSize: 12,
+            color: "#1A1A1A",
+            lineHeight: 1.6,
           }}>
             {indexValue}年　{id}：{value}万人
           </div>

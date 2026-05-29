@@ -39,7 +39,7 @@ export default function TotalPopChart() {
           tickPadding: 10,
           format: (v) => `${(v / 10000).toFixed(1)}億`,
         }}
-        colors={["#60a5fa"]}
+        colors={["#5BBEE4"]}
         lineWidth={2}
         pointSize={0}
         pointBorderWidth={0}
@@ -47,17 +47,19 @@ export default function TotalPopChart() {
         gridYValues={5}
         theme={{
           background: "transparent",
-          grid: { line: { stroke: "#e0e0e0", strokeWidth: 1 } },
-          axis: { ticks: { text: { fontSize: 11, fill: "#999" } } },
+          grid: { line: { stroke: "#E0E0E0", strokeWidth: 1 } },
+          axis: { ticks: { text: { fontSize: 11, fill: "#888888" } } },
         }}
         areaOpacity={0.05}
         useMesh={true}
         tooltip={({ point }) => (
           <div style={{
-            background: "#fff",
-            border: "0.5px solid #ddd",
+            background: "#FFFFFF",
+            border: "1px solid #E0E0E0",
             padding: "6px 10px",
             fontSize: 12,
+            color: "#1A1A1A",
+            lineHeight: 1.6,
           }}>
             {point.data.xFormatted}年：{Number(point.data.y).toLocaleString()}万人
           </div>

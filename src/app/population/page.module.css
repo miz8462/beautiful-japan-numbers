@@ -1,0 +1,266 @@
+.page {
+  padding: 64px 0 0;
+  background: var(--color-background);
+}
+
+.header {
+  max-width: 720px;
+  margin-bottom: 48px;
+}
+
+.topic {
+  display: inline-flex;
+  align-items: center;
+  min-height: 28px;
+  margin-bottom: 16px;
+  border-radius: 9999px;
+  padding: 6px 16px;
+  color: #ffffff;
+  background: var(--color-brand);
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1.4;
+  letter-spacing: 0.06em;
+}
+
+.header h1 {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+.lead {
+  margin-top: 16px;
+  color: var(--color-text-secondary);
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.sourceLabel {
+  margin-top: 4px;
+  color: var(--color-text-muted);
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+.kpiSection {
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(320px, 0.8fr);
+  gap: 24px;
+  margin-bottom: 64px;
+}
+
+.kpiMain,
+.kpiCard,
+.chartCard {
+  border: 1px solid var(--color-border);
+  border-radius: 4px;
+  background: #ffffff;
+}
+
+.kpiMain {
+  padding: 24px;
+}
+
+.kpiMain h2 {
+  margin-bottom: 12px;
+  color: var(--color-text-secondary);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.8;
+  letter-spacing: 0.04em;
+}
+
+.kpiValue {
+  color: var(--color-text-primary);
+  font-family: var(--font-data);
+  font-size: 36px;
+  font-feature-settings: "tnum" 1, "lnum" 1;
+  font-variant-numeric: tabular-nums lining-nums;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+}
+
+.kpiCaption {
+  margin-top: 12px;
+  color: var(--color-text-muted);
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+.kpiGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+}
+
+.kpiCard {
+  padding: 16px;
+}
+
+.kpiCard p {
+  color: var(--color-text-muted);
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+.kpiCard strong {
+  display: block;
+  margin-top: 4px;
+  color: var(--color-text-primary);
+  font-family: var(--font-data);
+  font-size: 22px;
+  font-feature-settings: "tnum" 1, "lnum" 1;
+  font-variant-numeric: tabular-nums lining-nums;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.charts {
+  display: grid;
+  gap: 48px;
+}
+
+.chartSection {
+  display: grid;
+  gap: 4px;
+}
+
+.statHeadline {
+  max-width: 720px;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: 0;
+}
+
+.chartCard {
+  margin-top: 12px;
+  padding: 16px;
+}
+
+.chartScroll {
+  min-width: 480px;
+}
+
+
+.cityBars {
+  display: grid;
+  gap: 16px;
+}
+
+.cityBarRow {
+  display: grid;
+  grid-template-columns: 88px minmax(260px, 1fr) 72px;
+  gap: 16px;
+  align-items: center;
+}
+
+.cityName {
+  color: var(--color-text-secondary);
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1.4;
+  letter-spacing: 0.06em;
+  text-align: right;
+}
+
+.cityBarTrack {
+  position: relative;
+  height: 32px;
+  overflow: hidden;
+  border: 1px solid var(--color-border);
+  border-radius: 4px;
+  background: var(--color-background-section);
+}
+
+.cityBarFill {
+  height: 100%;
+  opacity: 0.32;
+}
+
+.cityPopulation {
+  position: absolute;
+  top: 50%;
+  right: 12px;
+  color: var(--color-text-secondary);
+  font-family: var(--font-data);
+  font-size: 12px;
+  font-feature-settings: "tnum" 1, "lnum" 1;
+  font-variant-numeric: tabular-nums lining-nums;
+  line-height: 1.6;
+  transform: translateY(-50%);
+}
+
+.cityYears {
+  color: var(--color-text-primary);
+  font-family: var(--font-data);
+  font-size: 18px;
+  font-feature-settings: "tnum" 1, "lnum" 1;
+  font-variant-numeric: tabular-nums lining-nums;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+.cityYears span {
+  color: var(--color-text-muted);
+  font-family: var(--font-body);
+  font-size: 12px;
+  font-weight: 400;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .kpiCard,
+  .chartCard {
+    transition: box-shadow 200ms ease, transform 200ms ease;
+  }
+
+  .kpiCard:hover,
+  .chartCard:hover {
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+    transform: translateY(-2px);
+  }
+}
+
+@media (max-width: 1023px) {
+  .kpiSection {
+    grid-template-columns: 1fr;
+  }
+
+  .kpiGrid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 767px) {
+  .page {
+    padding-top: 48px;
+  }
+
+  .header h1 {
+    font-size: 22px;
+  }
+
+  .kpiSection {
+    margin-bottom: 48px;
+  }
+
+  .kpiGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .statHeadline {
+    font-size: 18px;
+  }
+
+  .chartCard {
+    overflow-x: auto;
+    padding: 16px;
+  }
+
+  .cityBarRow {
+    grid-template-columns: 76px minmax(240px, 1fr) 64px;
+    gap: 12px;
+  }
+}

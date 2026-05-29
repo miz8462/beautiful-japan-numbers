@@ -1,6 +1,8 @@
 "use client";
 
 import dynamic from "next/dynamic";
+import type { ReactNode } from "react";
+import styles from "./page.module.css";
 
 const CityBars = dynamic(() => import("./charts/CityBars"), { ssr: false });
 const TotalPopChart = dynamic(() => import("./charts/TotalPopChart"), { ssr: false });
@@ -10,14 +12,14 @@ const ComponentsChart = dynamic(() => import("./charts/ComponentsChart"), { ssr:
 function ChartCard({ title, source, children }: {
   title: string;
   source: string;
-  children: React.ReactNode;
+  children: ReactNode;
 }) {
   return (
-    <section className="mb-16">
-      <h2 className="text-sm font-medium mb-1">{title}</h2>
-      <p className="text-xs text-gray-400 mb-4">出典：{source}</p>
-      <div className="bg-gray-50 rounded-xl p-6">
-        {children}
+    <section className={styles.chartSection}>
+      <h2 className={styles.statHeadline}>{title}</h2>
+      <p className={styles.sourceLabel}>Source: {source}</p>
+      <div className={styles.chartCard}>
+        <div className={styles.chartScroll}>{children}</div>
       </div>
     </section>
   );
@@ -25,10 +27,13 @@ function ChartCard({ title, source, children }: {
 
 export default function PopulationCharts() {
   return (
-    <>
-      <section className="mb-16">
+    <div className={styles.charts}>
+      <ChartCard
+        title="年間59万人の減少は、仙台市の人口規模なら約1.9年分に相当"
+        source="各市人口は2024年推計値"
+      >
         <CityBars />
-      </section>
+      </ChartCard>
 
       <ChartCard
         title="2008年をピークに、日本の総人口は減少し続けている"
@@ -45,11 +50,11 @@ export default function PopulationCharts() {
       </ChartCard>
 
       <ChartCard
-        title="年間人口変化：自然増減と社会増減の内訳"
+        title="人口変化は、自然減を社会増が一部補う構図が続く"
         source="総務省統計局"
       >
         <ComponentsChart />
       </ChartCard>
-    </>
+    </div>
   );
 }
