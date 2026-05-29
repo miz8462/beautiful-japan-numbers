@@ -7,8 +7,8 @@ export const metadata: Metadata = {
   description: "この国のデータをわかりやすく",
 
   icons: {
-    icon: "/favicon.ico",
-    apple: "/apple-icon.png",
+    icon: "/icons/favicon.ico",
+    apple: "/icons/apple-icon.png",
   },
 
   manifest: "/manifest.json",

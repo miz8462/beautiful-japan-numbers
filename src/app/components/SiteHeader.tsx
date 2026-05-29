@@ -17,7 +17,7 @@ export function SiteHeader() {
             alt=""
             aria-hidden="true"
             height={20}
-            src="../icons/icon.svg"
+            src="/icons/icon.svg"
             width={20}
           />
           <span>美しい日本の数字</span>
