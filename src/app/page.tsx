@@ -4,21 +4,11 @@ export default function Home() {
   return (
     <main className={styles.page}>
       <section className={styles.hero}>
-        <div className="container">
-          <p className={styles.eyebrow}>Public data, made readable</p>
-          <h1>美しい日本の数字</h1>
-          <p className={styles.lead}>
-            日本に関する統計データを、流れと関係が見えるかたちで眺めます。
-            非党派的で、出典に戻れる市民データメディアです。
+        <div className="card-container">
+          <p className={styles.headline}>
+            偏見やイメージではなく、信頼できるデータから、日本の今を見つめよう。
           </p>
-          <div className={styles.actions}>
-            <a className="button-primary" href="/government-spending">
-              政府支出を見る
-            </a>
-            <a className="button-secondary" href="/population">
-              人口変化を見る
-            </a>
-          </div>
+
         </div>
       </section>
 

@@ -1,4 +1,4 @@
-import SankeyChart, { type GovernmentSpendingData } from "@/components/SankeyChart";
+import SankeyChart, { type GovernmentSpendingData } from "@/app/government-spending/SankeyChart";
 import governmentSpendingData from "../../../public/data/government-spending.json";
 import styles from "./page.module.css";
 

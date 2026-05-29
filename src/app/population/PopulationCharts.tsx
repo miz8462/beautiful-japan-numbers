@@ -29,7 +29,7 @@ export default function PopulationCharts() {
   return (
     <div className={styles.charts}>
       <ChartCard
-        title="年間59万人の減少は、仙台市の人口規模なら約1.9年分に相当"
+        title="年間58万人の減少は、仙台市の人口規模なら約1.9年分に相当"
         source="各市人口は2024年推計値"
       >
         <CityBars />

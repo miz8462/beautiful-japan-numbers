@@ -1,4 +1,4 @@
-import type { ColorMode } from "@/styles/colors";
+import type { ColorMode } from "@/app/government-spending/SankeyChart/colors";
 import { useSyncExternalStore } from "react";
 
 const COLOR_SCHEME_QUERY = "(prefers-color-scheme: dark)";

@@ -1,26 +1,18 @@
 .page {
   background: var(--color-background);
+  padding: 0 5rem;
 }
 
 .hero {
-  padding: 96px 0 64px;
-  border-bottom: 1px solid var(--color-border);
+  padding: 40px 0 0;
 }
 
-.eyebrow {
-  display: inline-flex;
-  align-items: center;
-  min-height: 28px;
-  margin-bottom: 16px;
-  border: 1px solid var(--color-border);
-  border-radius: 9999px;
-  padding: 6px 16px;
-  color: var(--color-text-primary);
-  background: var(--color-background-section);
-  font-size: 13px;
-  font-weight: 500;
-  line-height: 1.4;
-  letter-spacing: 0.06em;
+.headline {
+  padding: 5rem 4rem;
+  font-size: 3rem;
+  font-weight: 00;
+  line-height: 1.2;
+  letter-spacing: -0.03em;
 }
 
 .hero h1 {
@@ -126,8 +118,18 @@
 }
 
 @media (max-width: 767px) {
+  .page {
+    padding: 2rem;
+  }
+
   .hero {
     padding: 64px 0 48px;
+  }
+
+  .headline {
+    padding:
+      2rem 0.5rem;
+    font-size: 1.5rem;
   }
 
   .hero h1 {

@@ -16,7 +16,7 @@
 - **Text Muted** (`#888888`): 更新日・バイライン
 - **Border** (`#E0E0E0`): カード枠・区切り線
 - **Background** (`#FFFFFF`): ページ背景
-- **Background Section** (`#F7F7F7`): セクション帯・テーブルヘッダー
+- **Background Section** (`#F7F7F3`): セクション帯・テーブルヘッダー
 
 ### Data Visualization
 - Primary `#5BBEE4` / Secondary `#F06449` / Tertiary `#2E9E6E` / Reference `#AAAAAA`

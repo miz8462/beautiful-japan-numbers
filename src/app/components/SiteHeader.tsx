@@ -1,14 +1,9 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
-
-const links = [
-  { href: "/", label: "ホーム" },
-  { href: "/government-spending", label: "政府支出" },
-  { href: "/population", label: "人口" },
-];
 
 export function SiteHeader() {
   const pathname = usePathname();
@@ -18,7 +13,14 @@ export function SiteHeader() {
     <header className="site-header"   >
       <nav className="site-nav container" aria-label="主要ナビゲーション">
         <Link className="site-brand" href="/" onClick={() => setIsOpen(false)}>
-          美しい日本の数字
+          <Image
+            alt=""
+            aria-hidden="true"
+            height={20}
+            src="../icons/icon.svg"
+            width={20}
+          />
+          <span>美しい日本の数字</span>
         </Link>
         <button
           aria-expanded={isOpen}
@@ -31,19 +33,6 @@ export function SiteHeader() {
           <span />
           <span />
         </button>
-        <div className="site-nav-links" data-open={isOpen}>
-          {links.map((link) => (
-            <Link
-              aria-current={pathname === link.href ? "page" : undefined}
-              className="site-nav-link"
-              href={link.href}
-              key={link.href}
-              onClick={() => setIsOpen(false)}
-            >
-              {link.label}
-            </Link>
-          ))}
-        </div>
       </nav>
     </header>
   );

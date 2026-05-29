@@ -2,7 +2,7 @@ import {
   Colors,
   getGovernmentSpendingChartColors,
   type ColorMode,
-} from "@/styles/colors";
+} from "@/app/government-spending/SankeyChart/colors";
 import * as d3 from "d3";
 import { sankeyLinkHorizontal } from "d3-sankey";
 import {
