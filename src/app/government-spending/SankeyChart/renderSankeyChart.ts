@@ -25,7 +25,7 @@ import {
   isCentralLink,
 } from "./graphHelpers";
 import { createTextMeasurer, getLabelHitExtension, renderNodeLabel } from "./labels";
-import { createGovernmentSpendingLayout, getTotalValueBySide } from "./layout";
+import { createGovernmentSpendingLayout, getTotalValueBySide } from "./sankey-layout";
 import { DEFAULT_SANKEY_INFO_PANEL, type SankeyInfoPanelState } from "./SankeyInfoPanel";
 import type {
   GovernmentSpendingData,
