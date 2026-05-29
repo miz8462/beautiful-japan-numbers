@@ -35,11 +35,6 @@ export default function RootLayout({
         <footer className="site-footer">
           <div className="container site-footer-grid">
             <section>
-              <h2>トピック</h2>
-              <a href="/government-spending">政府支出</a>
-              <a href="/population">人口変化</a>
-            </section>
-            <section>
               <h2>リソース</h2>
               <a href="https://www.mof.go.jp/policy/budget/reference/statistics/data.htm">
                 財務省 統計表

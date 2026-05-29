@@ -74,7 +74,6 @@ table td,
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 24px;
 }
 
 .site-header {
@@ -211,8 +210,9 @@ a:focus-visible {
 }
 
 .site-footer-grid {
+  padding: 0 5rem;
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 24px;
 }
 
