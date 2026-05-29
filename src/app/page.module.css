@@ -1,16 +1,13 @@
-.page {
-  background: var(--color-background);
-  padding: 0 5rem;
-}
-
 .hero {
-  padding: 40px 0 0;
+  padding: 5rem 5rem;
+  display: inline-flex;
+  align-items: center;
+  min-height: 28px;
 }
 
 .headline {
-  padding: 5rem 4rem;
   font-size: 3rem;
-  font-weight: 00;
+  font-weight: 500;
   line-height: 1.2;
   letter-spacing: -0.03em;
 }
@@ -70,24 +67,6 @@
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 24px;
-}
-
-.card {
-  display: flex;
-  min-height: 184px;
-  flex-direction: column;
-  border: 1px solid var(--color-border);
-  border-radius: 4px;
-  padding: 16px;
-  background: #ffffff;
-  transition: box-shadow 200ms ease, transform 200ms ease;
-}
-
-.cardLabel {
-  margin-bottom: 12px;
-  color: var(--color-text-muted);
-  font-size: 12px;
-  line-height: 1.6;
 }
 
 .card h3 {

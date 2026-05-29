@@ -1,69 +1,118 @@
-# DESIGN.md — USAFacts インスパイア 市民データメディア（日本語版）
+# DESIGN.md — Civic Data Media Design System
 
-> ブランドカラー `#5BBEE4`。非党派的・信頼・データジャーナリズム UI。
-
----
-
-## 1. Color Palette & Roles
-
-### Brand
-- **Civic Sky** (`#5BBEE4`): アクティブ状態・CTA・チップ選択のみ。広面積に使わない
-- **Civic Sky Dark** (`#3A9DC4`): ホバー・押下
-
-### Neutral
-- **Text Primary** (`#1A1A1A`): 見出し・本文
-- **Text Secondary** (`#555555`): キャプション・出典
-- **Text Muted** (`#888888`): 更新日・バイライン
-- **Border** (`#E0E0E0`): カード枠・区切り線
-- **Background** (`#FFFFFF`): ページ背景
-- **Background Section** (`#F7F7F3`): セクション帯・テーブルヘッダー
-
-### Data Visualization
-- Primary `#5BBEE4` / Secondary `#F06449` / Tertiary `#2E9E6E` / Reference `#AAAAAA`
-- Positive `#2E7D4F` / Negative `#C0392B`
+> ブランドカラー `#5BBEE4`。
+> 非党派的・信頼・データジャーナリズム UI。
+> 「主張」ではなく「発見」を提示する。
 
 ---
 
-## 2. Typography
+# 1. Color Palette & Roles
 
-### font-family
+## Brand
+
+* **Civic Sky** (`#5BBEE4`)
+
+  * アクティブ状態・CTA・選択状態のみ
+  * 広面積背景には使用しない
+
+* **Civic Sky Dark** (`#3A9DC4`)
+
+  * hover / active / focus 補助
+
+---
+
+## Neutral
+
+| Role               | Color     |
+| ------------------ | --------- |
+| Text Primary       | `#1A1A1A` |
+| Text Secondary     | `#555555` |
+| Text Muted         | `#888888` |
+| Border             | `#E0E0E0` |
+| Background         | `#FFFFFF` |
+| Background Section | `#F7F7F3` |
+
+---
+
+## Data Visualization
+
+| Role      | Color     |
+| --------- | --------- |
+| Primary   | `#5BBEE4` |
+| Secondary | `#F06449` |
+| Tertiary  | `#2E9E6E` |
+| Reference | `#AAAAAA` |
+| Positive  | `#2E7D4F` |
+| Negative  | `#C0392B` |
+
+---
+
+# 2. Typography
+
+## Font Family
+
+### 本文・UI
 
 ```css
-/* 本文・UI（和文を必ず先頭に） */
 font-family:
-  "Noto Sans JP", "ヒラギノ角ゴ ProN W3", "游ゴシック体", "メイリオ",
-  "Helvetica Neue", Arial, sans-serif;
-
-/* 数値・チャートラベル */
-font-family: "Roboto Mono", "SFMono-Regular", Consolas, monospace;
+  "Noto Sans JP",
+  "ヒラギノ角ゴ ProN W3",
+  "游ゴシック体",
+  "メイリオ",
+  "Helvetica Neue",
+  Arial,
+  sans-serif;
 ```
 
-### Type Scale
-
-| Role | Size | Weight | Line Height | Letter Spacing |
-|------|------|--------|-------------|----------------|
-| Hero | 40px | 700 | 1.3 | −0.01em + `palt` |
-| H1 | 32px | 700 | 1.4 | −0.01em + `palt` |
-| H2 Stat Headline | 22px | 700 | 1.5 | 0 |
-| H2 Section | 20px | 700 | 1.5 | 0 |
-| Body | 16px | 400 | 1.8 | 0.04em |
-| Caption / Body Small | 14px | 400 | 1.8 | 0.04em |
-| Label / Chip | 13px | 500 | 1.4 | 0.06em |
-| Source Citation | 12px | 400 | 1.6 | 0.04em |
-| Data Value (KPI) | 36px | 700 | 1.2 | −0.02em |
-
-### 日本語ルール
+### 数値・チャートラベル
 
 ```css
-body, p, li, td {
+font-family:
+  "Roboto Mono",
+  "SFMono-Regular",
+  Consolas,
+  monospace;
+```
+
+---
+
+## Type Scale
+
+| Role             | Size | Weight | Line Height |
+| ---------------- | ---- | ------ | ----------- |
+| Hero             | 40px | 00    | 1.3         |
+| H1               | 32px | 700    | 1.4         |
+| H2 Stat Headline | 22px | 700    | 1.5         |
+| H2 Section       | 20px | 700    | 1.5         |
+| Body             | 16px | 400    | 1.8         |
+| Caption          | 14px | 400    | 1.8         |
+| Label / Chip     | 13px | 500    | 1.4         |
+| Source Citation  | 12px | 400    | 1.6         |
+| KPI Value        | 36px | 700    | 1.2         |
+
+---
+
+## Japanese Typography Rules
+
+```css
+body,
+p,
+li,
+td {
   word-break: normal;
   line-break: strict;
   hanging-punctuation: first last;
 }
-h1, h2, h3 {
+
+h1,
+h2,
+h3 {
   font-feature-settings: "palt" 1, "kern" 1;
 }
-.data, table td, .chart-label {
+
+.data,
+table td,
+.chart-label {
   font-feature-settings: "tnum" 1, "lnum" 1;
   font-variant-numeric: tabular-nums lining-nums;
 }
@@ -71,93 +120,257 @@ h1, h2, h3 {
 
 ---
 
-## 3. Components
+# 3. Radius System
 
-### Navigation
-- 高さ 56px、sticky、`border-bottom: 1px solid #E0E0E0`
-- リンク: 14px / 500 / `#555555`、アクティブ: `#5BBEE4` + `border-bottom: 2px solid #5BBEE4`
-
-### Topic Chips
-```
-通常: bg #F7F7F7, border 1px solid #E0E0E0, color #1A1A1A
-選択: bg #5BBEE4, color #FFFFFF
-radius 9999px, padding 6px 16px, font 500 13px / 0.06em
-```
-
-### Buttons
-```
-Primary:   bg #5BBEE4, color #FFFFFF, radius 4px, padding 10px 20px
-Secondary: bg transparent, border 1.5px solid #5BBEE4, color #5BBEE4
-Hover:     #3A9DC4 / rgba(91,190,228,0.08)
-Focus:     box-shadow 0 0 0 3px rgba(91,190,228,0.30)
-```
-
-### Cards
-```
-bg #FFFFFF, border 1px solid #E0E0E0, radius 4px, padding 16px
-Hover: box-shadow 0 2px 12px rgba(0,0,0,0.08), translateY(-2px), 200ms
-```
-
-### Stat Headline（最重要パターン）
-チャート直前に発見文 → Source → チャートの順を必ず守る。
-```
-.stat-headline: font 700 22px, color #1A1A1A, line-height 1.5
-.source-label:  font 400 12px, color #888888, margin-top 4px
-例) "2024年、成人の73%が「まあまあやれている」と回答"
-例) "Source: 厚生労働省"
-```
-
-### Data Table
 ```css
-thead th { background: #F7F7F7; font: 600 13px; border-bottom: 2px solid #5BBEE4; }
-tbody td  { border-bottom: 1px solid #F0F0F0; font-feature-settings: "tnum" 1, "lnum" 1; }
-tr:hover  { background: rgba(91,190,228,0.05); }
-td.numeric { text-align: right; }
+--radius-sharp: 0px;
+--radius-sm: 6px;
+--radius-md: 10px;
+--radius-pill: 9999px;
 ```
 
-### Footer
+| Token  | Usage          |
+| ------ | -------------- |
+| Sharp  | table, divider |
+| Small  | button, input  |
+| Medium | card, modal    |
+| Pill   | chip, tag      |
+
+---
+
+# 4. Components
+
+## Navigation
+
+* 高さ 56px
+* sticky
+* `border-bottom: 1px solid #E0E0E0`
+
+```css
+font-size: 14px;
+font-weight: 500;
+color: #555555;
 ```
-bg #1A1A1A, text #FFFFFF / rgba(255,255,255,0.6)
-列構成: トピック | リソース | SNSアイコン | 著作権・利用規約
+
+### Active
+
+```css
+color: #5BBEE4;
+border-bottom: 2px solid #5BBEE4;
 ```
 
 ---
 
-## 4. Layout
+## Topic Chips
 
-- Spacing: `4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 96px`
-- Container: max-width 1200px、padding 24px
-- 記事本文: max-width 720px（1行40〜60字）
-- カードグリッド: 3列、gap 24px
+### Default
 
----
+```css
+background: #F7F7F7;
+border: 1px solid #E0E0E0;
+color: #1A1A1A;
+border-radius: 9999px;
+padding: 6px 16px;
+```
 
-## 5. Responsive
+### Selected
 
-| Breakpoint | Width | 変化 |
-|------------|-------|------|
-| Mobile | ≤ 767px | 1列・ハンバーガーナビ・Hero 28px・padding 16px |
-| Tablet | 768–1023px | 2列カード |
-| Desktop | ≥ 1024px | 3列・max-width 1200px |
-
-- 本文 16px 固定（iOS Safari ズーム防止）
-- Hero 40→28px / H1 32→22px / H2 22→18px
-- チャート: `overflow-x: auto`、最小幅 480px
-- タッチターゲット 44×44px 以上（`::after { inset: -8px }` で拡張）
-- Hover スタイルは `@media (hover: hover)` で囲む
+```css
+background: #5BBEE4;
+color: #FFFFFF;
+```
 
 ---
 
-## 6. Do's and Don'ts
+## Buttons
 
-### Do
-- Stat Headline → Source → チャートの順を守る
-- 数値に `"tnum" 1, "lnum" 1`、見出しに `"palt" 1` を設定
-- 本文: `line-height 1.8`、`word-break: normal`、`line-break: strict`
+### Primary
 
-### Don't
-- `#5BBEE4` を背景として広面積に使わない
-- `word-break: break-all`（禁則処理が壊れる）
-- `border-radius` に中途半端な値（カード 4px・チップ 9999px のみ）
-- フォントスタックで和文フォントの前に欧文フォントを置かない
-- テキストに純黒 `#000000` を使わない
+```css
+background: #5BBEE4;
+color: #FFFFFF;
+border-radius: 6px;
+padding: 10px 20px;
+```
+
+### Secondary
+
+```css
+background: transparent;
+border: 1.5px solid #5BBEE4;
+color: #5BBEE4;
+```
+
+### Interaction
+
+```css
+hover: #3A9DC4;
+focus: box-shadow 0 0 0 3px rgba(91,190,228,0.30);
+```
+
+---
+
+## Cards
+
+```css
+background: #FFFFFF;
+border: 1px solid #E0E0E0;
+border-radius: 10px;
+padding: 16px;
+```
+
+### Hover
+
+```css
+box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+transform: translateY(-2px);
+transition: 200ms ease-out;
+```
+
+---
+
+## Stat Headline
+
+チャート直前に配置する。
+
+順序：
+
+1. 発見文
+2. Source
+3. Chart
+
+### Example
+
+```txt
+2024年、成人の73%が「まあまあやれている」と回答
+Source: 厚生労働省「国民生活基礎調査」(2024)
+```
+
+---
+
+## Data Table
+
+```css
+thead th {
+  background: #F7F7F3;
+  border-bottom: 2px solid #5BBEE4;
+  font-weight: 600;
+  font-size: 13px;
+}
+
+tbody td {
+  border-bottom: 1px solid #F0F0F0;
+}
+
+tr:hover {
+  background: rgba(91,190,228,0.05);
+}
+
+td.numeric {
+  text-align: right;
+}
+```
+
+---
+
+## Footer
+
+```css
+background: #1A1A1A;
+color: rgba(255,255,255,0.6);
+```
+
+構成：
+
+* トピック
+* リソース
+* SNS
+* 著作権・利用規約
+
+---
+
+# 5. Layout
+
+| Rule              | Value  |
+| ----------------- | ------ |
+| Max Width         | 1200px |
+| Container Padding | 24px   |
+| Article Width     | 720px  |
+| Grid Gap          | 24px   |
+
+Spacing Scale:
+
+```txt
+4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 96px
+```
+
+---
+
+# 6. Responsive
+
+| Breakpoint | Width      |
+| ---------- | ---------- |
+| Mobile     | ≤ 767px    |
+| Tablet     | 768–1023px |
+| Desktop    | ≥ 1024px   |
+
+---
+
+## Mobile Rules
+
+* Hero: 40 → 28px
+* H1: 32 → 22px
+* H2: 22 → 18px
+* Body: 16px fixed
+* Charts: `overflow-x: auto`
+* Minimum chart width: 480px
+* Touch target: minimum 44×44px
+
+```css
+@media (hover: hover) {
+  /* hover styles */
+}
+```
+
+---
+
+# 7. Data Visualization Principles
+
+* 装飾より比較可能性を優先
+* 3D表現禁止
+* グラデーション多用禁止
+* 円グラフは最小限
+* 軸は可能な限りゼロ起点
+* 単位・出典を必須表示
+* 色だけで情報を区別しない
+* アニメーションは意味がある場合のみ
+
+---
+
+# 8. Editorial Principles
+
+* データと解釈を分離する
+* 見出しで断定しすぎない
+* 単一指標で社会を評価しない
+* 比較時は定義差異を明示する
+* 「主張」ではなく「発見」を提示する
+
+---
+
+# 9. Do's and Don'ts
+
+## Do
+
+* Stat Headline → Source → Chart の順を守る
+* 数値に `"tnum"` を適用
+* 見出しに `"palt"` を適用
+* 本文 line-height は 1.8
+
+---
+
+## Don't
+
+* `#5BBEE4` を広面積背景に使わない
+* `word-break: break-all` を使わない
+* フォントスタックで欧文フォントを先頭に置かない
+* 純黒 `#000000` を使わない

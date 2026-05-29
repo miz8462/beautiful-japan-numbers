@@ -1,4 +1,5 @@
 import SankeyChart, { type GovernmentSpendingData } from "@/app/government-spending/SankeyChart";
+import { Page } from "@/components/layout/Page";
 import governmentSpendingData from "../../../public/data/government-spending.json";
 import styles from "./page.module.css";
 
@@ -6,11 +7,11 @@ export const metadata = {
   title: "政府支出 | 美しい日本の数字",
 };
 
-export default function Page() {
+export default function GovernmentSpendingPage() {
   const data = governmentSpendingData as GovernmentSpendingData;
 
   return (
-    <main className={styles.page}>
+    <Page>
       <div className="container">
         <header className={styles.header}>
           <p className={styles.topic}>政府支出</p>
@@ -44,6 +45,6 @@ export default function Page() {
           </p>
         </section>
       </div>
-    </main>
+    </Page>
   );
 }

@@ -1,3 +1,4 @@
+import { Page } from "@/components/layout/Page";
 import PopulationCharts from "./PopulationCharts";
 import styles from "./page.module.css";
 
@@ -7,7 +8,7 @@ export const metadata = {
 
 export default function PopulationPage() {
   return (
-    <main className={styles.page}>
+    <Page>
       <div className="container">
         <header className={styles.header}>
           <p className={styles.topic}>人口</p>
@@ -43,6 +44,6 @@ export default function PopulationPage() {
 
         <PopulationCharts />
       </div>
-    </main>
+    </Page>
   );
 }

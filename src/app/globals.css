@@ -77,22 +77,11 @@ table td,
   padding: 0 24px;
 }
 
-.card-container {
-  display: inline-flex;
-  align-items: center;
-  min-height: 28px;
-  margin-bottom: 16px;
-  border-radius: 10px;
-  padding: 6px 16px;
-  color: var(--color-text-primary);
-  background: var(--color-background-section);
-}
-
 .site-header {
   position: sticky;
   top: 0;
   z-index: 50;
-  height: 72px;
+  height: 112px;
   background: rgba(255, 255, 255, 0.96);
   backdrop-filter: blur(12px);
 }
