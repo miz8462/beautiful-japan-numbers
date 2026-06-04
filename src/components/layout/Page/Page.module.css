@@ -1,4 +1,5 @@
 .page {
   background: var(--color-background);
-  padding: 0 5rem;
+  --page-padding: 5rem;
+  padding-inline: var(--page-padding);
 }

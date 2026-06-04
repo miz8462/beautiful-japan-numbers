@@ -21,13 +21,13 @@ export default function Home() {
           </div>
           <div className={styles.grid}>
             <TopicCard
-              href="/government-spending"
+              href="/articles/government-spending"
               label="Government spending"
               title="政府支出"
               description="歳入から歳出までの流れを、主要項目ごとの関係で確認します。"
             />
             <TopicCard
-              href="/population"
+              href="/articles/population"
               label="Population"
               title="人口変化"
               description="総人口、出生数、死亡数、国際移動の変化を並べて確認します。"

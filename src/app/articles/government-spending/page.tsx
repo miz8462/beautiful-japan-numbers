@@ -1,6 +1,6 @@
-import SankeyChart, { type GovernmentSpendingData } from "@/app/government-spending/SankeyChart";
+import SankeyChart, { type GovernmentSpendingData } from "@/app/articles/government-spending/SankeyChart";
 import { Page } from "@/components/layout/Page";
-import governmentSpendingData from "../../../public/data/government-spending.json";
+import governmentSpendingData from "@/data/government-spending.json";
 import styles from "./page.module.css";
 
 export const metadata = {
@@ -27,23 +27,21 @@ export default function GovernmentSpendingPage() {
             <h2 className={styles.statHeadline} id="government-spending-headline">
               2024年度、一般会計の歳入と歳出の関係を主要項目ごとに可視化
             </h2>
-            <p className={styles.sourceLabel}>Source: 財務省「予算・決算 統計表一覧」</p>
+            <p className={styles.sourceLabel}>Source:
+              <a
+                href="https://www.mof.go.jp/policy/budget/reference/statistics/data.htm"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                財務省「予算・決算 統計表一覧」
+              </a>
+            </p>
           </div>
-
-          <div className={styles.chartBand}>
-            <SankeyChart data={data} />
-          </div>
-
-          <p className={styles.sourceNote}>
-            <a
-              href="https://www.mof.go.jp/policy/budget/reference/statistics/data.htm"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              財務省「予算・決算 統計表一覧」を開く
-            </a>
-          </p>
         </section>
+      </div>
+
+      <div className={styles.chartBand}>
+        <SankeyChart data={data} />
       </div>
     </Page>
   );

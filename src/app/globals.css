@@ -1,7 +1,7 @@
 :root {
   --color-brand: #5bbee4;
   --color-brand-dark: #3a9dc4;
-  --color-text-primary: #1a1a1a;
+  --color-text-primary: #222222;
   --color-text-secondary: #555555;
   --color-text-muted: #888888;
   --color-border: #e0e0e0;
@@ -258,10 +258,6 @@ a:focus-visible {
 }
 
 @media (max-width: 767px) {
-  .container {
-    padding: 0 16px;
-  }
-
   .site-brand {
     font-size: 14px;
   }
