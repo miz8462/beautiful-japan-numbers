@@ -8,20 +8,20 @@ import {
   SankeyInfoPanel,
   type SankeyInfoPanelState,
 } from "./SankeyInfoPanel";
-import { usePreferredColorMode } from "./usePreferredColorMode";
 import type { GovernmentSpendingData } from "./types";
 
 export default function SankeyChart({ data }: { data: GovernmentSpendingData }) {
+  // DOMを直接操作
   const ref = useRef<SVGSVGElement | null>(null);
-  const colorMode = usePreferredColorMode();
+  // 右上の情報パネル
   const [panelState, setPanelState] = useState<SankeyInfoPanelState>(DEFAULT_SANKEY_INFO_PANEL);
 
   useEffect(() => {
     if (!data || !ref.current) return;
 
-    const cleanup = renderSankeyChart(ref.current, data, colorMode, setPanelState);
+    const cleanup = renderSankeyChart(ref.current, data, setPanelState);
     return cleanup;
-  }, [data, colorMode]);
+  }, [data]);
 
   return (
     <div style={{ position: "relative", width: "100%" }}>

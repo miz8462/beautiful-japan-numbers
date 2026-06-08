@@ -25,12 +25,14 @@ export default function GovernmentSpendingPage() {
         <section className={styles.visualization} aria-labelledby="government-spending-headline">
           <div className={styles.articleColumn}>
             <h2 className={styles.statHeadline} id="government-spending-headline">
-              2024年度、一般会計の歳入と歳出の関係を主要項目ごとに可視化
+              2024年度、一般会計の歳入と歳出の流れ
             </h2>
-            <p className={styles.sourceLabel}>Source:
+            <p className={styles.sourceLabel}>出典:{' '} {/* スペースの書き方 */}
               <a
                 href="https://www.mof.go.jp/policy/budget/reference/statistics/data.htm"
+                // クリックすると新しいタブが開く
                 target="_blank"
+                // フィッシングなどの対策。_blank を使うときは必ず指定する
                 rel="noopener noreferrer"
               >
                 財務省「予算・決算 統計表一覧」

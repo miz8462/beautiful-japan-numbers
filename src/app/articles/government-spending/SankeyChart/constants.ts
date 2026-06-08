@@ -14,7 +14,7 @@ export const INFO_PANEL_TOP = 16;
 export const INFO_PANEL_RIGHT = 16;
 
 // ホバー時は「選択中」と「選択中の親」を色の濃淡で分ける。
-export const HIGHLIGHT_COLOR = "#facc15";
+export const HIGHLIGHT_COLOR = "#d4a017 ";
 export const PARENT_HIGHLIGHT_COLOR = "#fde68a";
 // 黄色ハイライト上でも読めるラベル色
 export const HIGHLIGHT_LABEL_FILL = "#171717";

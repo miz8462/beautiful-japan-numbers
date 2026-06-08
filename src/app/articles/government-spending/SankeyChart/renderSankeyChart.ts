@@ -1,7 +1,6 @@
 import {
   Colors,
   getGovernmentSpendingChartColors,
-  type ColorMode,
 } from "@/app/articles/government-spending/SankeyChart/colors";
 import * as d3 from "d3";
 import { sankeyLinkHorizontal } from "d3-sankey";
@@ -132,10 +131,9 @@ function resolveHoverFromClientPoint(
 export function renderSankeyChart(
   svgElement: SVGSVGElement,
   data: GovernmentSpendingData,
-  colorMode: ColorMode,
   onPanelUpdate: (state: SankeyInfoPanelState) => void,
 ): () => void {
-  const colors = getGovernmentSpendingChartColors(colorMode);
+  const colors = getGovernmentSpendingChartColors();
   const nodeFillColors: Record<NodeType, string> = {
     revenue_detail: colors.revenue.detail,
     revenue_item: colors.revenue.item,
@@ -144,8 +142,7 @@ export function renderSankeyChart(
     spending_item: colors.spending.item,
     spending_detail: colors.spending.detail,
   };
-  const nodeLabelFill = colorMode === "dark" ? Colors.grey[900] : Colors.grey[50];
-
+  const nodeLabelFill = Colors.grey[50];
   const getNodeFill = (type: string): string => {
     return nodeFillColors[type as NodeType] ?? colors.revenue.item;
   };
@@ -173,73 +170,82 @@ export function renderSankeyChart(
       ? TOTAL_NODE_LABEL_PADDING
       : ITEM_NODE_LABEL_PADDING;
 
+  // 描画開始
   const svg = d3.select(svgElement);
   svg.selectAll("*").remove();
+  // 背景
   svg
     .append("rect")
     .attr("class", "chart-background")
     .attr("width", SVG_WIDTH)
     .attr("height", SVG_HEIGHT)
     .attr("fill", CHART_BACKGROUND_COLOR)
-    .style("pointer-events", "none");
+    .style("pointer-events", "none"); // ホバー判定しないように
 
   const graph = createGovernmentSpendingLayout(data);
   const totalValueBySide = getTotalValueBySide(graph.nodes);
   const textMeasurer = createTextMeasurer(svg);
 
-  const linkLayer = svg.append("g").attr("class", "links");
+  // 描画するレイヤー
+  const linkLayer = svg.append("g").attr("class", "links"); // gタグはhtmlのdiv
   const nodeLayer = svg.append("g").attr("class", "nodes");
   const linkHitLayer = svg.append("g").attr("class", "link-hits");
   const segmentLayer = svg.append("g").attr("class", "segments").attr("pointer-events", "none");
   const labelLayer = svg.append("g").attr("class", "labels");
 
+  // リンク
   const linkSelection = linkLayer
-    .selectAll<SVGPathElement, LayoutLink>("path")
+    .selectAll<SVGPathElement, LayoutLink>("path") // pathは線を描くsvgのタグ
     .data(graph.links)
     .join("path")
-    .attr("d", sankeyLinkHorizontal())
-    .attr("stroke", getDefaultLinkStroke)
-    .attr("stroke-width", (d: LayoutLink) => Math.max(1, d.width ?? 0))
+    .attr("d", sankeyLinkHorizontal()) // dはパスの属性。パスの形を計算
+    .attr("stroke", getDefaultLinkStroke) // 線の色
+    .attr("stroke-width", (d: LayoutLink) => Math.max(1, d.width ?? 0)) // 線の太さ
     .attr("fill", "none")
     .attr("opacity", getDefaultLinkOpacity)
     .style("pointer-events", "none");
 
+  // ホバー判定
   linkHitLayer
     .selectAll<SVGPathElement, LayoutLink>("path")
-    .data(graph.links.filter((link) => !isCentralLink(link)))
+    .data(graph.links.filter((link) => !isCentralLink(link))) // 歳入と歳出のリンクはホバー対象外
     .join("path")
     .attr("class", "link-hit")
     .attr("d", sankeyLinkHorizontal())
     .attr("stroke", "transparent")
-    .attr("stroke-width", LINK_HIT_STROKE_WIDTH)
+    .attr("stroke-width", LINK_HIT_STROKE_WIDTH) // 実際より太い当たり判定
     .attr("fill", "none")
     .attr("pointer-events", "stroke")
-    .style("cursor", "pointer");
+    .style("cursor", "pointer"); // ホバーするとポインタを矢印から指に
 
+  // ノード
   const nodeGroupSelection = nodeLayer
     .selectAll<SVGGElement, LayoutNode>("g.node")
     .data(graph.nodes)
-    .join("g")
+    .join("g") // ひとつのノード
     .attr("class", "node")
     .style("cursor", "pointer");
 
   const nodeRectSelection = nodeGroupSelection
-    .append("rect")
+    .append("rect") // 各<g>の中にrectを追加
     .attr("x", (d: LayoutNode) => d.x0 ?? 0)
     .attr("y", (d: LayoutNode) => d.y0 ?? 0)
     .attr("height", (d: LayoutNode) => (d.y1 ?? 0) - (d.y0 ?? 0))
     .attr("width", (d: LayoutNode) => (d.x1 ?? 0) - (d.x0 ?? 0))
-    .attr("fill", (d: LayoutNode) => getNodeFill(d.type));
+    .attr("fill", (d: LayoutNode) => getNodeFill(d.type)); // 色
 
+  // ラベル
   const labelSelection = labelLayer
     .selectAll<SVGTextElement, LayoutNode>("text")
     .data(graph.nodes)
-    .join("text")
-    .attr("fill", nodeLabelFill)
+    .join("text") // 各<g>の中にtextを追加(rectと同じ)
+    .attr("fill", nodeLabelFill) // 文字色
     .attr("font-weight", 700)
     .style("cursor", "pointer")
-    .style("pointer-events", "all")
+    .style("pointer-events", "all") 
     .each(function (d: LayoutNode) {
+      // thisはtext要素
+      // dはノードのデータ
       if (!(this instanceof SVGTextElement)) return;
 
       renderNodeLabel(
@@ -250,10 +256,12 @@ export function renderSankeyChart(
       );
     });
 
+  // 右上の詳細パネル
   const showDefaultPanel = () => {
     onPanelUpdate(DEFAULT_SANKEY_INFO_PANEL);
   };
 
+  // ホバーが外れたとき元に戻す
   const resetVisuals = () => {
     segmentLayer.selectAll("rect").remove();
 
@@ -273,15 +281,17 @@ export function renderSankeyChart(
     showDefaultPanel();
   };
 
+  // ホバー時に色を変える
   const showHighlight = (hoveredNode: LayoutNode) => {
     const { ancestorSegmentLinks, brightNodes, connectedLinks, connectedNodes } =
       getConnectedItems(hoveredNode);
-    const hoveredSide = getNodeSide(hoveredNode);
+    const hoveredSide = getNodeSide(hoveredNode); // 歳入or歳出
     const segmentData = getAncestorSegmentData(ancestorSegmentLinks, hoveredSide);
     const segmentParentIds = new Set(segmentData.map((segment) => segment.node.id));
     const isRelated = (node: LayoutNode) =>
       brightNodes.has(node) || connectedNodes.has(node);
 
+    // ノードの色を変える
     nodeRectSelection.attr("fill", (d: LayoutNode) => {
       if (brightNodes.has(d)) {
         return HIGHLIGHT_COLOR;
@@ -292,6 +302,7 @@ export function renderSankeyChart(
       return getNodeFill(d.type);
     });
 
+    // リンクの色を変える
     linkSelection
       .attr("stroke", (d: LayoutLink) =>
         connectedLinks.has(d) ? HIGHLIGHT_COLOR : getDefaultLinkStroke(d),
@@ -300,6 +311,7 @@ export function renderSankeyChart(
         connectedLinks.has(d) ? 0.95 : getDefaultLinkOpacity(d),
       );
 
+    // 色を変えるセグメント
     segmentLayer
       .selectAll<SVGRectElement, SegmentDatum>("rect")
       .data(segmentData, (d) => d.key)
@@ -310,10 +322,7 @@ export function renderSankeyChart(
       .attr("width", (d) => ((d.node.x1 ?? 0) - (d.node.x0 ?? 0)))
       .attr("fill", HIGHLIGHT_COLOR);
 
-    labelSelection.attr("fill", (d: LayoutNode) =>
-      isRelated(d) ? HIGHLIGHT_LABEL_FILL : nodeLabelFill,
-    );
-
+    // 右上の詳細パネルの更新
     onPanelUpdate({
       title: hoveredNode.label,
       subtitle: `${formatNodeValue(hoveredNode.value)}円・全体の${formatNodePercent(
@@ -325,9 +334,9 @@ export function renderSankeyChart(
 
   showDefaultPanel();
 
-  let activeHoverId: string | null = null;
-  let pointerInsideChart = false;
-  let latestClientX = 0;
+  let activeHoverId: string | null = null; // ホバーノードのID
+  let pointerInsideChart = false; // ポインタがSVG領域内にあるかどうか
+  let latestClientX = 0; 
   let latestClientY = 0;
   let hoverFrameId: number | null = null;
 
@@ -336,7 +345,9 @@ export function renderSankeyChart(
     resetHighlight();
   };
 
+  // ホバー対象が変わったとき
   const applyHoverTarget = (node: LayoutNode | null) => {
+    // ノードの上にいない場合
     if (!node) {
       if (activeHoverId !== null) {
         clearHover();
@@ -344,11 +355,12 @@ export function renderSankeyChart(
       return;
     }
 
+    // 同じノードにいる場合。なにもしない
     if (activeHoverId === node.id) {
       return;
     }
 
-    // Reset before showing new highlight
+    // 別のノードに移動した場合
     if (activeHoverId !== null) {
       resetVisuals();
     }
@@ -367,9 +379,11 @@ export function renderSankeyChart(
     );
   };
 
+  // 実際のホバー処理
   const syncHoverFromLatestPointer = () => {
     hoverFrameId = null;
 
+    // ポインタがチャートの外
     if (!pointerInsideChart || !isPointerOverSvg()) {
       if (!isPointerOverSvg()) {
         pointerInsideChart = false;
@@ -381,8 +395,9 @@ export function renderSankeyChart(
       return;
     }
 
+    // ポインタがチャートの内
     applyHoverTarget(
-      resolveHoverFromClientPoint(
+      resolveHoverFromClientPoint( // ノードを特定
         latestClientX,
         latestClientY,
         svgElement,
@@ -392,6 +407,7 @@ export function renderSankeyChart(
     );
   };
 
+  // マウスを動かすと発火。座標の上書き、rFAの予約チェック
   const scheduleHoverSync = (event: PointerEvent) => {
     latestClientX = event.clientX;
     latestClientY = event.clientY;
@@ -400,6 +416,9 @@ export function renderSankeyChart(
       return;
     }
 
+    // rFA(次の画面を描画するタイミングで引数の関数を実行)
+    // scheduleHoverはマウスの移動に合わせて発火する関数なので画面更新より多く発火する
+    // なので、重い処理は引数であるsyncHoverにまかせる
     hoverFrameId = requestAnimationFrame(syncHoverFromLatestPointer);
   };
 
@@ -421,6 +440,7 @@ export function renderSankeyChart(
     }
   };
 
+  // イベントリスナー
   svgElement.addEventListener("pointerenter", onPointerEnter);
   svgElement.addEventListener("pointerleave", onPointerLeave);
   svgElement.addEventListener("pointermove", scheduleHoverSync);
@@ -430,9 +450,11 @@ export function renderSankeyChart(
     scheduleHoverSync(event);
   };
 
+  // マウスが素早くSVG外にでた場合、イベントが途切れハイライトが残らないように
   window.addEventListener("pointermove", onWindowPointerMove);
 
   return () => {
+    // クリーンナップ
     window.removeEventListener("pointermove", onWindowPointerMove);
     svgElement.removeEventListener("pointerenter", onPointerEnter);
     svgElement.removeEventListener("pointerleave", onPointerLeave);
