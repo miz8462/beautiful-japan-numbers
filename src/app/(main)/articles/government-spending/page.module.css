@@ -41,10 +41,6 @@
   gap: 16px;
 }
 
-.articleColumn {
-  max-width: 720px;
-}
-
 .statHeadline {
   font-size: 22px;
   font-weight: 700;

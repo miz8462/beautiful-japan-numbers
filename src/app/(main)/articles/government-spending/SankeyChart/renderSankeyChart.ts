@@ -1,18 +1,17 @@
 import {
   Colors,
   getGovernmentSpendingChartColors,
-} from "@/app/articles/government-spending/SankeyChart/colors";
+} from "@/app/(main)/articles/government-spending/SankeyChart/colors";
 import * as d3 from "d3";
 import { sankeyLinkHorizontal } from "d3-sankey";
 import {
   CHART_BACKGROUND_COLOR,
   HIGHLIGHT_COLOR,
-  HIGHLIGHT_LABEL_FILL,
   ITEM_NODE_LABEL_PADDING,
   PARENT_HIGHLIGHT_COLOR,
   SVG_HEIGHT,
   SVG_WIDTH,
-  TOTAL_NODE_LABEL_PADDING,
+  TOTAL_NODE_LABEL_PADDING
 } from "./constants";
 import { formatNodePercent, formatNodeValue } from "./formatters";
 import {
@@ -242,7 +241,7 @@ export function renderSankeyChart(
     .attr("fill", nodeLabelFill) // 文字色
     .attr("font-weight", 700)
     .style("cursor", "pointer")
-    .style("pointer-events", "all") 
+    .style("pointer-events", "all")
     .each(function (d: LayoutNode) {
       // thisはtext要素
       // dはノードのデータ
@@ -336,7 +335,7 @@ export function renderSankeyChart(
 
   let activeHoverId: string | null = null; // ホバーノードのID
   let pointerInsideChart = false; // ポインタがSVG領域内にあるかどうか
-  let latestClientX = 0; 
+  let latestClientX = 0;
   let latestClientY = 0;
   let hoverFrameId: number | null = null;
 

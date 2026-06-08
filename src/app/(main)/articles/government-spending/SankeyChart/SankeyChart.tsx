@@ -10,10 +10,8 @@ import {
 } from "./SankeyInfoPanel";
 import type { GovernmentSpendingData } from "./types";
 
-export default function SankeyChart({ data }: { data: GovernmentSpendingData }) {
-  // DOMを直接操作
+export default function SankeyChart({ data }: { data: GovernmentSpendingData; }) {
   const ref = useRef<SVGSVGElement | null>(null);
-  // 右上の情報パネル
   const [panelState, setPanelState] = useState<SankeyInfoPanelState>(DEFAULT_SANKEY_INFO_PANEL);
 
   useEffect(() => {
@@ -27,7 +25,7 @@ export default function SankeyChart({ data }: { data: GovernmentSpendingData }) 
     <div style={{ position: "relative", width: "100%" }}>
       <div
         style={{
-          position: "absolute",
+          position: "fixed",
           top: INFO_PANEL_TOP,
           right: INFO_PANEL_RIGHT,
           zIndex: 20,
