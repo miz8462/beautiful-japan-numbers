@@ -27,8 +27,10 @@ export default function TotalPopChart() {
       <ResponsiveLine
         data={data}
         margin={{ top: 10, right: 20, bottom: 40, left: 56 }}
-        xScale={{ type: "point" }}
+        // スケール設定。時系列なのでlinear
+        xScale={{ type: "linear", min: 1980, max: 2024 }}
         yScale={{ type: "linear", min: 11000, max: 13000 }}
+        // 軸設定
         axisBottom={{
           tickSize: 0,
           tickPadding: 10,
@@ -37,14 +39,34 @@ export default function TotalPopChart() {
         axisLeft={{
           tickSize: 0,
           tickPadding: 10,
+          tickValues: [11000, 12000, 13000],
           format: (v) => `${(v / 10000).toFixed(1)}億`,
         }}
+        layers={[
+          "grid",
+          "axes",
+          "lines",
+          "mesh",
+          // ピークをドットで表現
+          ({ points }) => {
+            const peak = points.find((p) => String(p.data.x) === "2008");
+            if (!peak) return null;
+            return (
+              <circle
+                cx={peak.x}
+                cy={peak.y}
+                r={4}
+                fill="#F06449"
+              />
+            );
+          },
+        ]}
         colors={["#5BBEE4"]}
         lineWidth={2}
         pointSize={0}
         pointBorderWidth={0}
         enableGridX={false}
-        gridYValues={5}
+        gridYValues={[11000, 12000, 13000]}
         theme={{
           background: "transparent",
           grid: { line: { stroke: "#E0E0E0", strokeWidth: 1 } },
@@ -60,8 +82,10 @@ export default function TotalPopChart() {
             fontSize: 12,
             color: "#1A1A1A",
             lineHeight: 1.6,
+            whiteSpace: "nowrap",
           }}>
-            {point.data.xFormatted}年：{Number(point.data.y).toLocaleString()}万人
+            <div>{point.data.xFormatted}年</div>
+            <div>{Number(point.data.y).toLocaleString()}万人</div>
           </div>
         )}
         isInteractive={true}

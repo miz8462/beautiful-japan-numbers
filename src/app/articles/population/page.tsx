@@ -12,18 +12,17 @@ export default function PopulationPage() {
       <div className="container">
         <header className={styles.header}>
           <p className={styles.topic}>人口</p>
-          <h1>日本はどれくらいのスピードで人口が減っているか？</h1>
+          <h1>日本の人口はどれくらいのペースで減っているか？</h1>
           <p className={styles.lead}>
             総人口、出生数、死亡数、国際移動の変化を並べて、人口減少の速度と内訳を確認します。
           </p>
-          <p className={styles.sourceLabel}>Source: 総務省統計局、厚生労働省</p>
+          <p className={styles.sourceLabel}>出典: 総務省統計局、厚生労働省</p>
         </header>
 
         <section className={styles.kpiSection} aria-labelledby="population-kpi">
           <div className={styles.kpiMain}>
             <h2 id="population-kpi">年間人口減少数（2024年）</h2>
             <p className={styles.kpiValue}>−58万人</p>
-            <p className={styles.kpiCaption}>1日あたり約1,600人 ／ 1時間あたり約67人</p>
           </div>
 
           <div className={styles.kpiGrid}>

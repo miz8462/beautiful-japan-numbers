@@ -47,6 +47,7 @@ export default function BirthDeathChart() {
         axisLeft={{
           tickSize: 0,
           tickPadding: 10,
+          tickValues: [60, 80, 100, 120, 140, 160, 180],
           format: (v) => `${v}万`,
         }}
         lineWidth={2}
@@ -54,7 +55,7 @@ export default function BirthDeathChart() {
         pointColor={{ from: "color" }}
         pointBorderWidth={0}
         enableGridX={false}
-        gridYValues={5}
+        gridYValues={[60, 80, 100, 120, 140, 160, 180]}
         theme={{
           background: "transparent",
           grid: { line: { stroke: "#E0E0E0", strokeWidth: 1 } },
@@ -75,16 +76,29 @@ export default function BirthDeathChart() {
           </div>
         )}
         isInteractive={true}
-        legends={[
-          {
-            anchor: "top-right",
-            direction: "row",
-            itemWidth: 60,
-            itemHeight: 16,
-            symbolSize: 8,
-            symbolShape: "square",
-            itemsSpacing: 8,
-            translateY: -8,
+        layers={[
+          "grid",
+          "axes",
+          "lines",
+          "mesh",
+          ({ series }) => {
+            return (
+              <>
+                {series.map((serie) => {
+                  const lastPoint = serie.data[serie.data.length - 1];
+                  return (
+                    <text
+                      key={serie.id}
+                      x={lastPoint.position.x - 30}
+                      y={lastPoint.position.y - 12}
+                      fontSize={11}
+                    >
+                      {serie.id}
+                    </text>
+                  );
+                })}
+              </>
+            );
           },
         ]}
       />
