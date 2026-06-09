@@ -4,11 +4,6 @@ import { ArticleTags } from "@/components/ui/ArticleTag/ArticleTags";
 import PopulationCharts from "./PopulationCharts";
 import styles from "./page.module.css";
 
-
-export const metadata = {
-  title: "人口変化 | 美しい日本の数字",
-};
-
 const article = articles.find((a) => a.href === "/articles/population");
 
 export default function PopulationPage() {

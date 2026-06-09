@@ -1,10 +1,35 @@
 import type { Metadata, Viewport } from "next";
 import { SiteHeader } from "@/app/(main)/components/SiteHeader";
 import "./globals.css";
+import { SITE_URL } from "../../lib/site";
 
 export const metadata: Metadata = {
-  title: "美しい日本の数字",
+  title: {
+    default: "美しい日本の数字",
+    template: "%s | 美しい日本の数字",
+  },
   description: "この国のデータをわかりやすく",
+
+  metadataBase: new URL(SITE_URL),
+
+  alternates: {
+    canonical: "/",
+  },
+
+  openGraph: {
+    type: "website",
+    locale: "ja_JP",
+    siteName: "美しい日本の数字",
+    title: "美しい日本の数字",
+    description: "偏見やイメージではなく、信頼できるデータで、日本を正しく見る。数字は、嘘をつかない。",
+    url: "/",
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "美しい日本の数字",
+    description: "偏見やイメージではなく、信頼できるデータで、日本を正しく見る。数字は、嘘をつかない。",
+  },
 
   icons: {
     icon: "/icons/favicon.ico",

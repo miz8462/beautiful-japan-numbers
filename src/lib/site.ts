@@ -1,0 +1,1 @@
+export const SITE_URL = "https://beautiful-japan-numbers.vercel.app";

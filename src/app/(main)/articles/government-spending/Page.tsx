@@ -4,11 +4,6 @@ import { ArticleTags } from "@/components/ui/ArticleTag/ArticleTags";
 import governmentSpendingData from "@/data/government-spending.json";
 import styles from "./page.module.css";
 
-
-export const metadata = {
-  title: "政府支出 | 美しい日本の数字",
-};
-
 export default function GovernmentSpendingPage() {
   const data = governmentSpendingData as GovernmentSpendingData;
 

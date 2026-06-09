@@ -21,3 +21,11 @@ export const articles = [
     tags: ["population"] as Tag[],
   },
 ];
+
+export function getArticleBySlug(slug: string) {
+  return articles.find((a) => a.href === `/articles/${slug}`)
+}
+
+export function getAllSlugs() {
+  return articles.map((a) => a.href.replace('/articles/', ''))
+}
