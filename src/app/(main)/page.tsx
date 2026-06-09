@@ -1,6 +1,7 @@
 import { Page } from "@/components/layout/Page";
 import { Surface } from "@/components/layout/Surface/index";
 import { TopicCard } from "@/components/ui/TopicCard";
+import { articles } from "./articles";
 import styles from "./page.module.css";
 
 export default function Home() {
@@ -20,18 +21,9 @@ export default function Home() {
             <h2>トピック</h2>
           </div>
           <div className={styles.grid}>
-            <TopicCard
-              href="/articles/government-spending"
-              label="Government spending"
-              title="政府支出"
-              description="歳入から歳出までの流れを、主要項目ごとの関係で確認します。"
-            />
-            <TopicCard
-              href="/articles/population"
-              label="Population"
-              title="人口変化"
-              description="総人口、出生数、死亡数、国際移動の変化を並べて確認します。"
-            />
+            {articles.map((article) => (
+              <TopicCard key={article.href} {...article} />
+            ))}
           </div>
         </div>
       </section>

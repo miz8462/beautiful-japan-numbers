@@ -1,7 +1,9 @@
 import SankeyChart, { type GovernmentSpendingData } from "@/app/(main)/articles/government-spending/SankeyChart";
 import { Page } from "@/components/layout/Page";
+import { ArticleTags } from "@/components/ui/ArticleTag/ArticleTags";
 import governmentSpendingData from "@/data/government-spending.json";
 import styles from "./page.module.css";
+
 
 export const metadata = {
   title: "政府支出 | 美しい日本の数字",
@@ -14,7 +16,7 @@ export default function GovernmentSpendingPage() {
     <Page>
       <div className="container">
         <header className={styles.header}>
-          <p className={styles.topic}>政府支出</p>
+          <ArticleTags tags={["governmentSpending"]} />
           <h1>政府支出の流れ</h1>
           <p className={styles.lead}>
             国の一般会計について、歳入から歳出までのつながりをサンキー図で確認します。

@@ -1,17 +1,22 @@
+import { articles } from "@/app/(main)/articles";
 import { Page } from "@/components/layout/Page";
+import { ArticleTags } from "@/components/ui/ArticleTag/ArticleTags";
 import PopulationCharts from "./PopulationCharts";
 import styles from "./page.module.css";
+
 
 export const metadata = {
   title: "人口変化 | 美しい日本の数字",
 };
+
+const article = articles.find((a) => a.href === "/articles/population");
 
 export default function PopulationPage() {
   return (
     <Page>
       <div className="container">
         <header className={styles.header}>
-          <p className={styles.topic}>人口</p>
+          <ArticleTags tags={["population"]} />
           <h1>日本の人口はどれくらいのペースで減っているか？</h1>
           <p className={styles.lead}>
             総人口、出生数、死亡数、国際移動の変化を並べて、人口減少の速度と内訳を確認します。

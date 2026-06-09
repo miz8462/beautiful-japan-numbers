@@ -8,21 +8,6 @@
   margin-bottom: 64px;
 }
 
-.topic {
-  display: inline-flex;
-  align-items: center;
-  min-height: 28px;
-  margin-bottom: 16px;
-  border-radius: 9999px;
-  padding: 6px 16px;
-  color: #ffffff;
-  background: var(--color-brand);
-  font-size: 13px;
-  font-weight: 500;
-  line-height: 1.4;
-  letter-spacing: 0.06em;
-}
-
 .header h1 {
   font-size: 32px;
   font-weight: 700;
