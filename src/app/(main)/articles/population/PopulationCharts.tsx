@@ -9,15 +9,22 @@ const TotalPopChart = dynamic(() => import("./charts/TotalPopChart"), { ssr: fal
 const BirthDeathChart = dynamic(() => import("./charts/BirthDeathChart"), { ssr: false });
 const NaturalSocialChart = dynamic(() => import("./charts/NaturalSocialChart"), { ssr: false });
 
-function ChartSection({ title, source, children }: {
+function ChartSection({ title, source, sourceUrl, children }: {
   title: string;
-  source: string;
+  source?: string;
+  sourceUrl?: string;
   children: ReactNode;
 }) {
   return (
     <section className={styles.chartSection}>
       <h2 className={styles.statHeadline}>{title}</h2>
-      <p className={styles.sourceLabel}>出典: {source}</p>
+      {source && (
+        <p className={styles.sourceLabel}>出典:{" "}
+          <a href={sourceUrl} target="_blank" rel="noopener noreferrer">
+            {source}
+          </a>
+        </p>
+      )}
       <div className={styles.chartCard}>
         <div className={styles.chartScroll}>{children}</div>
       </div>
@@ -30,28 +37,26 @@ export default function PopulationCharts() {
     <div className={styles.charts}>
       <ChartSection
         title="年間58万人の減少は、仙台市の人口規模なら約1.9年分に相当"
-        source="各市人口は2024年推計値"
+        source="総務省 住民基本台帳"
+        sourceUrl="https://www.soumu.go.jp/main_sosiki/jichi_gyousei/daityo/jinkou_jinkoudoutai-setaisuu.html"
       >
         <CityBars />
       </ChartSection>
 
       <ChartSection
         title="2008年をピークに、日本の総人口は減少し続けている"
-        source="総務省統計局"
       >
         <TotalPopChart />
       </ChartSection>
 
       <ChartSection
         title="2007年以降、死亡数が出生数を上回り続けている"
-        source="厚生労働省"
       >
         <BirthDeathChart />
       </ChartSection>
 
       <ChartSection
         title="人口変化は、自然減を社会増が一部補う構図が続く"
-        source="総務省統計局"
       >
         <NaturalSocialChart />
       </ChartSection>

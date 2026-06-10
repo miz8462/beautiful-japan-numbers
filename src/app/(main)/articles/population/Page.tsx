@@ -1,5 +1,4 @@
 import { articles } from "@/app/(main)/articles";
-import { Page } from "@/components/layout/Page";
 import { ArticleTags } from "@/components/ui/ArticleTag/ArticleTags";
 import PopulationCharts from "./PopulationCharts";
 import styles from "./page.module.css";
@@ -16,7 +15,15 @@ export default function PopulationPage() {
           <p className={styles.lead}>
             総人口、出生数、死亡数、国際移動の変化を並べて、人口減少の速度と内訳を確認します。
           </p>
-          <p className={styles.sourceLabel}>出典: 総務省統計局、厚生労働省</p>
+          <p className={styles.sourceLabel}>
+            <a
+              href="https://www.stat.go.jp/data/jinsui/2.html"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              出典: 総務省統計局、厚生労働省
+            </a>
+          </p>
         </header>
 
         <section className={styles.kpiSection} aria-labelledby="population-kpi">
@@ -40,7 +47,6 @@ export default function PopulationPage() {
             </div>
           </div>
         </section>
-
         <PopulationCharts />
       </div>
     </div>

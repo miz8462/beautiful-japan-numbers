@@ -28,7 +28,6 @@ fi
 
 echo ""
 echo "=== ディレクトリの作成 ==="
-mkdir -p "$PROJECT_DIR/data/raw"
 mkdir -p "$PROJECT_DIR/logs"
 echo "✓ data/raw, logs を作成"
 
@@ -36,9 +35,9 @@ echo ""
 echo "=== systemd サービスの登録 ==="
 SERVICE_DIR="$HOME/.config/systemd/user"
 mkdir -p "$SERVICE_DIR"
-sed "s|%i|$(whoami)|g" "$PROJECT_DIR/mof-watcher@.service" \
+sed "s|%i|$(whoami)|g" "$PROJECT_DIR/gdrive-watcher@.service" \
     | sed "s|/home/$(whoami)/mof_project|$PROJECT_DIR|g" \
-    > "$SERVICE_DIR/mof-watcher.service"
+    > "$SERVICE_DIR/gdrive-watcher.service"
 
 systemctl --user daemon-reload
 systemctl --user enable mof-watcher.service

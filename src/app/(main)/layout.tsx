@@ -2,6 +2,7 @@ import { SiteHeader } from "@/app/(main)/components/SiteHeader";
 import { SITE_URL } from "@/lib/site";
 import { GoogleAnalytics } from '@next/third-parties/google';
 import type { Metadata, Viewport } from "next";
+import { SiteFooter } from "./components/SiteFooter";
 import "./globals.css";
 
 
@@ -59,24 +60,7 @@ export default function RootLayout({
       <body>
         <SiteHeader />
         {children}
-        <footer className="site-footer">
-          <div className="container site-footer-grid">
-            <section>
-              <h2>リソース</h2>
-              <a href="https://www.mof.go.jp/policy/budget/reference/statistics/data.htm">
-                財務省 統計表
-              </a>
-            </section>
-            <section>
-              <h2>SNS</h2>
-              <p>準備中</p>
-            </section>
-            <section>
-              <h2>美しい日本の数字</h2>
-              <p>© 2026 Beautiful Japan Numbers</p>
-            </section>
-          </div>
-        </footer>
+        <SiteFooter />
         <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GA_ID!} />
       </body>
     </html>

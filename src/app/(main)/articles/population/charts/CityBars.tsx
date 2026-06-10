@@ -2,15 +2,15 @@
 
 import styles from "../page.module.css";
 
-const ANNUAL_DECREASE = 59;
+const ANNUAL_DECREASE = 58;
 
 const cities = [
-  { name: "仙台市", pop: 110, color: "#F06449" },
-  { name: "広島市", pop: 120, color: "#2E9E6E" },
-  { name: "福岡市", pop: 162, color: "#5BBEE4" },
-  { name: "札幌市", pop: 197, color: "#F06449" },
-  { name: "名古屋市", pop: 233, color: "#2E9E6E" },
-  { name: "大阪市", pop: 275, color: "#5BBEE4" },
+  { name: "仙台市", pop: 106, color: "#F06449" },
+  { name: "広島市", pop: 117, color: "#2E9E6E" },
+  { name: "福岡市", pop: 160, color: "#5BBEE4" },
+  { name: "札幌市", pop: 195, color: "#F06449" },
+  { name: "名古屋市", pop: 230, color: "#2E9E6E" },
+  { name: "大阪市", pop: 277, color: "#5BBEE4" },
   { name: "東京23区", pop: 973, color: "#D4A017" },
 ];
 
