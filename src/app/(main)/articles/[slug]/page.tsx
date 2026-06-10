@@ -1,7 +1,9 @@
 import { getAllSlugs, getArticleBySlug } from "@/app/(main)/articles";
+import { ArticleShell } from "@/components/layout/ArticleShell";
+import { Page } from "@/components/layout/Page";
+import { notFound } from "next/navigation";
 import GovernmentSpendingPage from "../government-spending/Page";
 import PopulationPage from "../population/Page";
-import { notFound } from "next/navigation";
 
 type Props = { params: Promise<{ slug: string }> }
 
@@ -10,9 +12,9 @@ const pages: Record<string, React.ComponentType> = {
   "population": PopulationPage,
 };
 
-  export function generateStaticParams() {
-    return getAllSlugs().map((slug) => ({ slug }));
-  }
+export function generateStaticParams() {
+  return getAllSlugs().map((slug) => ({ slug }));
+}
 
 export async function generateMetadata({ params }: Props) {
   const { slug } = await params;
@@ -27,5 +29,11 @@ export default async function ArticlePage({ params }: Props) {
   const { slug } = await params;
   const PageComponent = pages[slug];
   if (!PageComponent) notFound();
-  return <PageComponent />;
+  const article = getArticleBySlug(slug);
+  return (
+    <Page>
+      <ArticleShell title={article?.title ?? ""}>
+        <PageComponent />
+      </ArticleShell></Page>
+  );
 }

@@ -1,0 +1,30 @@
+.footer {
+  display: flex;
+  justify-content: flex-start;
+  gap: 10px;
+  padding-top: 24px;
+  margin-top: 24px;
+  border-top: 0.5px solid var(--color-border-tertiary);
+}
+
+.roundBtn {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: opacity 0.15s;
+  color: #ffffff;
+}
+
+.roundBtn:hover {
+  opacity: 0.85;
+}
+
+.x        { background: #000000; }
+.line     { background: #06C755; }
+.facebook { background: #1877F2; }
+.copy     { background: #888780; color: #ffffff; }

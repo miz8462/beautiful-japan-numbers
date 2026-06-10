@@ -8,7 +8,7 @@ const article = articles.find((a) => a.href === "/articles/population");
 
 export default function PopulationPage() {
   return (
-    <Page>
+    <div>
       <div className="container">
         <header className={styles.header}>
           <ArticleTags tags={["population"]} />
@@ -43,6 +43,6 @@ export default function PopulationPage() {
 
         <PopulationCharts />
       </div>
-    </Page>
+    </div>
   );
 }

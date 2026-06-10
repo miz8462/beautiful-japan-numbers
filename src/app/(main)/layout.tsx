@@ -1,7 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import { SiteHeader } from "@/app/(main)/components/SiteHeader";
 import "./globals.css";
-import { SITE_URL } from "../../lib/site";
+import { SITE_URL } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: {
