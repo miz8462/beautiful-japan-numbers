@@ -3,3 +3,9 @@
   --page-padding: 5rem;
   padding-inline: var(--page-padding);
 }
+
+@media (max-width: 767px) {
+  .page {
+    --page-padding: 1.25rem; /* 20px */
+  }
+}

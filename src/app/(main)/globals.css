@@ -77,8 +77,10 @@ table td,
 }
 
 .site-header {
-  position: sticky;
+  position: fixed;
   top: 0;
+  left: 0;
+  right: 0;
   z-index: 50;
   height: 112px;
   background: rgba(255, 255, 255, 0.96);
@@ -302,6 +304,7 @@ a:focus-visible {
   }
 
   .site-footer-grid {
+    padding-inline: 1.25rem;
     grid-template-columns: 1fr;
     gap: 24px;
   }
