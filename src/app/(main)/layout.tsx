@@ -1,7 +1,9 @@
-import type { Metadata, Viewport } from "next";
 import { SiteHeader } from "@/app/(main)/components/SiteHeader";
-import "./globals.css";
 import { SITE_URL } from "@/lib/site";
+import { GoogleAnalytics } from '@next/third-parties/google';
+import type { Metadata, Viewport } from "next";
+import "./globals.css";
+
 
 export const metadata: Metadata = {
   title: {
@@ -21,14 +23,14 @@ export const metadata: Metadata = {
     locale: "ja_JP",
     siteName: "美しい日本の数字",
     title: "美しい日本の数字",
-    description: "偏見やイメージではなく、信頼できるデータで、日本を正しく見る。数字は、嘘をつかない。",
+    description: "偏見やイメージではなく、信頼できるデータから、日本の今を見つめよう。",
     url: "/",
   },
 
   twitter: {
     card: "summary_large_image",
     title: "美しい日本の数字",
-    description: "偏見やイメージではなく、信頼できるデータで、日本を正しく見る。数字は、嘘をつかない。",
+    description: "偏見やイメージではなく、信頼できるデータから、日本の今を見つめよう。",
   },
 
   icons: {
@@ -75,6 +77,7 @@ export default function RootLayout({
             </section>
           </div>
         </footer>
+        <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GA_ID!} />
       </body>
     </html>
   );
