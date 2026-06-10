@@ -6,6 +6,12 @@ export function generateStaticParams() {
   return Object.keys(TAG_LABELS).map((slug) => ({ slug }));
 }
 
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params;
+  const label = TAG_LABELS[slug as Tag];
+  return { title: label };
+}
+
 export default async function TopicPage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
   const tag = slug as Tag;
