@@ -29,26 +29,25 @@ fi
 echo ""
 echo "=== ディレクトリの作成 ==="
 mkdir -p "$PROJECT_DIR/logs"
-echo "✓ data/raw, logs を作成"
+echo "✓ logs を作成"
 
 echo ""
 echo "=== systemd サービスの登録 ==="
 SERVICE_DIR="$HOME/.config/systemd/user"
 mkdir -p "$SERVICE_DIR"
-sed "s|%i|$(whoami)|g" "$PROJECT_DIR/gdrive-watcher@.service" \
-    | sed "s|/home/$(whoami)/mof_project|$PROJECT_DIR|g" \
-    > "$SERVICE_DIR/gdrive-watcher.service"
+cp "$PROJECT_DIR/gdrive-watcher.service" "$SERVICE_DIR/gdrive-watcher.service"
+sed -i "s|/home/mizki/projects/beautiful-japan-numbers|$PROJECT_DIR|g" "$SERVICE_DIR/gdrive-watcher.service"
 
 systemctl --user daemon-reload
-systemctl --user enable mof-watcher.service
-systemctl --user start  mof-watcher.service
+systemctl --user enable gdrive-watcher.service
+systemctl --user start  gdrive-watcher.service
 echo "✓ サービス登録・起動完了"
 
 echo ""
 echo "============================================"
 echo "セットアップ完了！"
 echo ""
-echo "状態確認:  systemctl --user status mof-watcher"
+echo "状態確認:  systemctl --user status gdrive-watcher"
 echo "ログ確認:  tail -f $PROJECT_DIR/logs/watcher.log"
-echo "停止:      systemctl --user stop mof-watcher"
+echo "停止:      systemctl --user stop gdrive-watcher"
 echo "============================================"

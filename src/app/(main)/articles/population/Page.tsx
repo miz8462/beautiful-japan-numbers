@@ -21,7 +21,7 @@ export default function PopulationPage() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              出典: 総務省統計局、厚生労働省
+              出典: 総務省統計局 人口推計 
             </a>
           </p>
         </header>

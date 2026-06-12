@@ -1,6 +1,7 @@
 "use client";
 
 import { ResponsiveLine } from "@nivo/line";
+import { ArticleChartCanvas } from "@/components/ui/ArticleChart";
 
 const data = [
   {
@@ -23,7 +24,7 @@ const data = [
 
 export default function TotalPopChart() {
   return (
-    <div style={{ height: 260 }}>
+    <ArticleChartCanvas height={260} mobileHeight={220}>
       <ResponsiveLine
         data={data}
         margin={{ top: 10, right: 20, bottom: 40, left: 56 }}
@@ -90,6 +91,6 @@ export default function TotalPopChart() {
         )}
         isInteractive={true}
       />
-    </div>
+    </ArticleChartCanvas>
   );
 }

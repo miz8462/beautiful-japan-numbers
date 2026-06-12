@@ -1,6 +1,7 @@
 "use client";
 
 import { ResponsiveBar } from "@nivo/bar";
+import { ArticleChartCanvas } from "@/components/ui/ArticleChart";
 
 const data = [
   { year: "2010", 自然減: -6, 社会増: 2 },
@@ -13,7 +14,7 @@ const data = [
 
 export default function NaturalSocialChart() {
   return (
-    <div style={{ height: 260 }}>
+    <ArticleChartCanvas height={260} mobileHeight={240}>
       <ResponsiveBar
         data={data}
         keys={["社会増", "自然減"]}
@@ -88,6 +89,6 @@ export default function NaturalSocialChart() {
           },
         ]}
       />
-    </div>
+    </ArticleChartCanvas>
   );
 }

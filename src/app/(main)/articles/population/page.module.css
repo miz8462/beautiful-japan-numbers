@@ -28,16 +28,15 @@
   line-height: 1.6;
 }
 
-  .kpiSection {
-    display: grid;
-    grid-template-columns: 1fr;  /* 縦積みに */
-    gap: 24px;
-    margin-bottom: 64px;
-  }
+.kpiSection {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+  margin-bottom: 64px;
+}
 
 .kpiMain,
-.kpiCard,
-.chartCard {
+.kpiCard {
   border-radius: 4px;
   background: #ffffff;
 }
@@ -75,7 +74,7 @@
 
 .kpiGrid {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));  /* 横3列に */
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 12px;
 }
 
@@ -105,37 +104,15 @@
   gap: 48px;
 }
 
-.chartSection {
-  display: grid;
-  gap: 4px;
-}
-
-.statHeadline {
-  max-width: 720px;
-  font-size: 22px;
-  font-weight: 700;
-  line-height: 1.5;
-  letter-spacing: 0;
-}
-
-.chartCard {
-  margin-top: 12px;
-  padding: 16px;
-}
-
-.chartScroll {
-  min-width: 480px;
-}
-
-
 .cityBars {
   display: grid;
+  min-width: 0;
   gap: 16px;
 }
 
 .cityBarRow {
   display: grid;
-  grid-template-columns: 88px minmax(260px, 1fr) 72px;
+  grid-template-columns: 88px minmax(0, 1fr) 72px;
   gap: 16px;
   align-items: center;
 }
@@ -152,6 +129,7 @@
 .cityBarTrack {
   position: relative;
   height: 32px;
+  min-width: 0;
   overflow: hidden;
   border: 1px solid var(--color-border);
   border-radius: 4px;
@@ -194,14 +172,8 @@
 }
 
 @media (hover: hover) and (pointer: fine) {
-  .kpiCard,
-  .chartCard {
+  .kpiCard {
     transition: box-shadow 200ms ease, transform 200ms ease;
-  }
-
-  .chartCard:hover {
-    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
-    transform: translateY(-2px);
   }
 }
 
@@ -222,17 +194,21 @@
     grid-template-columns: 1fr;
   }
 
-  .statHeadline {
-    font-size: 18px;
-  }
-
-  .chartCard {
-    overflow-x: auto;
-    padding: 16px;
-  }
-
   .cityBarRow {
-    grid-template-columns: 76px minmax(240px, 1fr) 64px;
-    gap: 12px;
+    grid-template-columns: 64px minmax(0, 1fr) 52px;
+    gap: 8px;
+  }
+
+  .cityName {
+    font-size: 12px;
+  }
+
+  .cityPopulation {
+    right: 8px;
+    font-size: 11px;
+  }
+
+  .cityYears {
+    font-size: 15px;
   }
 }

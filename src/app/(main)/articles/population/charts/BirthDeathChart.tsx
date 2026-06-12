@@ -1,6 +1,7 @@
 "use client";
 
 import { ResponsiveLine } from "@nivo/line";
+import { ArticleChartCanvas } from "@/components/ui/ArticleChart";
 
 const data = [
   {
@@ -37,7 +38,7 @@ const data = [
 
 export default function BirthDeathChart() {
   return (
-    <div style={{ height: 240 }}>
+    <ArticleChartCanvas height={240} mobileHeight={220}>
       <ResponsiveLine
         data={data}
         margin={{ top: 10, right: 20, bottom: 40, left: 48 }}
@@ -102,6 +103,6 @@ export default function BirthDeathChart() {
           },
         ]}
       />
-    </div>
+    </ArticleChartCanvas>
   );
 }
