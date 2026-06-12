@@ -1,5 +1,5 @@
+import { getArticleBySlug } from "@/app/(main)/articles/articles";
 import { ImageResponse } from "next/og";
-import { getArticleBySlug } from "@/app/(main)/articles";
 
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";

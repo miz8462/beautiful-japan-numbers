@@ -1,31 +1,15 @@
-import { articles } from "@/app/(main)/articles";
-import { ArticleTags } from "@/components/ui/ArticleTag/ArticleTags";
+import { articles } from "@/app/(main)/articles/articles";
+import { ArticleHeader } from "@/components/ui/ArticleHeader/ArticleHeader";
 import PopulationCharts from "./PopulationCharts";
 import styles from "./page.module.css";
 
-const article = articles.find((a) => a.href === "/articles/population");
-
 export default function PopulationPage() {
+  const article = articles.find((a) => a.href === "/articles/population");
+  if (!article) return null;
   return (
     <div>
       <div className="container">
-        <header className={styles.header}>
-          <ArticleTags tags={["population"]} />
-          <h1>日本の人口はどれくらいのペースで減っているか？</h1>
-          <p className={styles.lead}>
-            総人口、出生数、死亡数、国際移動の変化を並べて、人口減少の速度と内訳を確認します。
-          </p>
-          <p className={styles.sourceLabel}>
-            <a
-              href="https://www.stat.go.jp/data/jinsui/2.html"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              出典: 総務省統計局 人口推計 
-            </a>
-          </p>
-        </header>
-
+        <ArticleHeader article={article} />
         <section className={styles.kpiSection} aria-labelledby="population-kpi">
           <div className={styles.kpiMain}>
             <h2 id="population-kpi">年間人口減少数（2024年）</h2>

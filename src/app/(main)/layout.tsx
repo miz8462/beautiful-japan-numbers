@@ -1,8 +1,8 @@
-import { SiteHeader } from "@/app/(main)/components/SiteHeader";
+import { SiteHeader } from "@/app/(main)/components/SiteHeader/SiteHeader";
 import { SITE_URL } from "@/lib/site";
 import { GoogleAnalytics } from '@next/third-parties/google';
 import type { Metadata, Viewport } from "next";
-import { SiteFooter } from "./components/SiteFooter";
+import { SiteFooter } from "./components/SiteFooter/SiteFooter";
 import "./globals.css";
 
 

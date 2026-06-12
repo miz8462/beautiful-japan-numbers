@@ -1,6 +1,6 @@
-import { MetadataRoute } from "next";
+import { articles } from "@/app/(main)/articles/articles";
 import { SITE_URL } from "@/lib/site";
-import { articles } from "@/app/(main)/articles";
+import { MetadataRoute } from "next";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const articleRoutes = articles.map((article) => ({

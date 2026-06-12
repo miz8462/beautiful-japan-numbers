@@ -1,9 +1,9 @@
-import styles from "./Page.module.css";
+import styles from "./PageLayout.module.css";
 
 type Props = {
   children: React.ReactNode;
 };
 
-export function Page({ children }: Props) {
+export function PageLayout({ children }: Props) {
   return <main className={styles.page}>{children}</main>;
 }

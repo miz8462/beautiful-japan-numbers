@@ -1,6 +1,5 @@
-// components/ui/ArticleTags.tsx
-import { TAG_LABELS, type Tag } from "@/app/(main)/articles";
-import styles from "./AritcleTag.module.css"
+import { TAG_LABELS, type Tag } from "@/app/(main)/articles/articles";
+import styles from "./AritcleTag.module.css";
 
 export function ArticleTags({ tags }: { tags: Tag[] }) {
   return (

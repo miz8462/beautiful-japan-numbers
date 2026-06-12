@@ -1,0 +1,72 @@
+.siteFooter {
+  margin-top: 96px;
+  padding: 48px 0;
+  color: #ffffff;
+  background: var(--color-text-primary);
+}
+
+.siteFooterInner {
+  padding-inline: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.siteFooterCopy {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+.siteFooterGrid {
+  padding: 0 5rem;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.siteFooter h2 {
+  margin-bottom: 12px;
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1.4;
+  letter-spacing: 0.06em;
+}
+
+.siteFooter a,
+.siteFooter p {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+.siteFooter a {
+  display: block;
+  width: fit-content;
+  margin-top: 8px;
+}
+
+.siteFooter h2+a {
+  margin-top: 0;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .siteFooterX:hover {
+    color: #ffffff;
+    background: rgba(255, 255, 255, 0.1);
+  }
+}
+
+@media (max-width: 767px) {
+  .siteFooter {
+    margin-top: 64px;
+    padding: 32px 0;
+  }
+
+  .siteFooterGrid {
+    padding-inline: 1.25rem;
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+}

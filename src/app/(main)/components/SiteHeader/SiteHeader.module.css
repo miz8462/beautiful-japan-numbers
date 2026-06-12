@@ -1,0 +1,140 @@
+.siteHeader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 50;
+  height: 112px;
+  background: rgba(255, 255, 255, 0.96);
+  backdrop-filter: blur(12px);
+}
+
+/* 上部のブランドカラーバー */
+.siteHeader::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 8px;
+  background: var(--color-brand);
+}
+
+.siteNav {
+  display: flex;
+  height: 56px;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+}
+
+.siteBrand {
+  display: inline-flex;
+  align-items: center;
+  gap: 2px;
+  padding-top: 20px;
+  color: var(--color-text-primary);
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+.siteNavLinks {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  gap: 24px;
+}
+
+.site-menu-button {
+  position: absolute;
+  right: 0;
+  display: none;
+  width: 44px;
+  height: 44px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 5px;
+  border: 0;
+  background: #ffffff;
+}
+
+.site-menu-button span {
+  width: 18px;
+  height: 2px;
+  background: var(--color-text-primary);
+}
+
+.siteNavLink {
+  position: relative;
+  display: flex;
+  min-height: 44px;
+  align-items: center;
+  color: var(--color-text-secondary);
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+}
+
+.siteNavLink::after {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  background: transparent;
+  content: "";
+}
+
+.siteNavLink[aria-current="page"] {
+  color: var(--color-brand);
+}
+
+.siteNavLink[aria-current="page"]::after {
+  background: var(--color-brand);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .siteNavLink:hover {
+    color: var(--color-brand-dark);
+  }
+}
+
+@media (max-width: 767px) {
+  .siteBrand {
+    font-size: 14px;
+  }
+
+  .siteNav {
+    gap: 16px;
+  }
+
+  .siteMenuButton {
+    display: flex;
+  }
+
+  .siteNavLinks {
+    position: absolute;
+    top: 56px;
+    right: 16px;
+    display: none;
+    width: min(220px, calc(100vw - 32px));
+    height: auto;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    border: 1px solid var(--color-border);
+    border-radius: 4px;
+    background: #ffffff;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+  }
+
+  .siteNavLinks[data-open="true"] {
+    display: flex;
+  }
+
+  .siteNavLink {
+    min-height: 44px;
+    padding: 0 16px;
+    font-size: 13px;
+  }
+}

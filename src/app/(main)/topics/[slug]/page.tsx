@@ -1,5 +1,5 @@
-import { articles, TAG_LABELS, type Tag } from "@/app/(main)/articles";
-import { Page } from "@/components/layout/Page";
+import { articles, TAG_LABELS, type Tag } from "@/app/(main)/articles/articles";
+import { PageLayout } from "@/components/layout/Page";
 import { TopicCard } from "@/components/ui/TopicCard";
 
 export function generateStaticParams() {
@@ -19,7 +19,7 @@ export default async function TopicPage({ params }: { params: Promise<{ slug: st
   const filtered = articles.filter((a) => a.tags.includes(tag));
 
   return (
-    <Page>
+    <PageLayout>
       <div className="container">
         <header>
           <h1>{label}</h1>
@@ -30,6 +30,6 @@ export default async function TopicPage({ params }: { params: Promise<{ slug: st
           ))}
         </div>
       </div>
-    </Page>
+    </PageLayout>
   );
 }

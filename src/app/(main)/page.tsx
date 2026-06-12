@@ -1,12 +1,12 @@
-import { Page } from "@/components/layout/Page";
+import { PageLayout } from "@/components/layout/Page";
 import { Surface } from "@/components/layout/Surface/index";
 import { TopicCard } from "@/components/ui/TopicCard";
-import { articles } from "./articles";
+import { articles } from "./articles/articles";
 import styles from "./page.module.css";
 
 export default function Home() {
   return (
-    <Page>
+    <PageLayout>
       <Surface>
         <section className={styles.hero}>
           <p className={styles.headline}>
@@ -27,6 +27,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-    </Page>
+    </PageLayout>
   );
 }

@@ -3,6 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
+import styles from "./SiteHeader.module.css";
 
 export function SiteHeader() {
   const [isOpen, setIsOpen] = useState(false);
@@ -29,12 +30,12 @@ export function SiteHeader() {
   }, []);
 
   return (
-    <header className="site-header" style={{
+    <header className={styles.siteHeader} style={{
       transform: hidden ? "translateY(-100%)" : "translateY(0)",
       transition: "transform 300ms ease",
     }}  >
-      <nav className="site-nav container" aria-label="主要ナビゲーション">
-        <Link className="site-brand" href="/" onClick={() => setIsOpen(false)}>
+      <nav className={`${styles.siteNav} container`} aria-label="主要ナビゲーション">
+        <Link className={styles.siteBrand} href="/" onClick={() => setIsOpen(false)}>
           <Image
             alt=""
             aria-hidden="true"

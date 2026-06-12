@@ -1,6 +1,6 @@
-import { getAllSlugs, getArticleBySlug } from "@/app/(main)/articles";
+import { getAllSlugs, getArticleBySlug } from "@/app/(main)/articles/articles";
 import { ArticleShell } from "@/components/layout/ArticleShell";
-import { Page } from "@/components/layout/Page";
+import { PageLayout } from "@/components/layout/Page";
 import { notFound } from "next/navigation";
 import GovernmentSpendingPage from "../government-spending/Page";
 import PopulationPage from "../population/Page";
@@ -31,9 +31,10 @@ export default async function ArticlePage({ params }: Props) {
   if (!PageComponent) notFound();
   const article = getArticleBySlug(slug);
   return (
-    <Page>
+    <PageLayout>
       <ArticleShell title={article?.title ?? ""}>
         <PageComponent />
-      </ArticleShell></Page>
+      </ArticleShell>
+    </PageLayout>
   );
 }
