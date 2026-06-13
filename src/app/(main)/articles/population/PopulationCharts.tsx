@@ -14,7 +14,7 @@ export default function PopulationCharts() {
     <div className={styles.charts}>
       <ArticleChart
         title="年間58万人の減少は、仙台市の人口規模なら約1.9年分に相当"
-        source="総務省 住民基本台帳"
+        source="総務省 住民基本台帳(2024)"
         sourceUrl="https://www.soumu.go.jp/main_sosiki/jichi_gyousei/daityo/jinkou_jinkoudoutai-setaisuu.html"
       >
         <CityBars />

@@ -1,9 +1,9 @@
-export type Tag = "population" | "governmentSpending";
-
-export const TAG_LABELS: Record<Tag, string> = {
+export const TAG_LABELS = {
   population: "人口",
   governmentSpending: "財政",
 };
+
+export type Tag = keyof typeof TAG_LABELS;
 
 export type Article = {
   href: string;
