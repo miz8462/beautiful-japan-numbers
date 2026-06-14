@@ -13,7 +13,6 @@ export function SiteHeader() {
   useEffect(() => {
     const handleScroll = () => {
       const currentY = window.scrollY;
-      console.log("currentY:", currentY, "lastScrollY:", lastScrollY.current);
 
       if (currentY < lastScrollY.current) {
         // 上スクロール → 必ず表示

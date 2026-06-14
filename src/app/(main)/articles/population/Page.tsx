@@ -13,7 +13,7 @@ export default function PopulationPage() {
         <section className={styles.kpiSection} aria-labelledby="population-kpi">
           <div className={styles.kpiMain}>
             <h2 id="population-kpi">年間人口減少数（2024年）</h2>
-            <p className={styles.kpiValue}>−58万人</p>
+            <p className={styles.kpiValue}>-58万人</p>
           </div>
 
           <div className={styles.kpiGrid}>

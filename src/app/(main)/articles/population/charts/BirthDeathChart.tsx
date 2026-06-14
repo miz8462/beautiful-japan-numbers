@@ -1,7 +1,7 @@
 "use client";
 
-import { ResponsiveLine } from "@nivo/line";
 import { ArticleChartCanvas } from "@/components/ui/ArticleChart";
+import { ResponsiveLine } from "@nivo/line";
 
 const data = [
   {
@@ -42,7 +42,7 @@ export default function BirthDeathChart() {
       <ResponsiveLine
         data={data}
         margin={{ top: 10, right: 20, bottom: 40, left: 48 }}
-        xScale={{ type: "point" }}
+        xScale={{ type: "linear", min: 2000, max: 2023 }}
         yScale={{ type: "linear", min: 60, max: 180 }}
         axisBottom={{ tickSize: 0, tickPadding: 10 }}
         axisLeft={{
@@ -60,10 +60,10 @@ export default function BirthDeathChart() {
         theme={{
           background: "transparent",
           grid: { line: { stroke: "#E0E0E0", strokeWidth: 1 } },
-          axis: { ticks: { text: { fontSize: 11, fill: "#888888" } } },
+          axis: { ticks: { text: { fontSize: 11, fill: "var(--color-text-muted)" } } },
         }}
-        colors={["#5BBEE4", "#F06449"]}
-        useMesh={false}
+        colors={["var(--color-brand)", "var(--color-accent)"]}
+        useMesh={true}
         tooltip={({ point }) => (
           <div style={{
             background: "#FFFFFF",
@@ -72,8 +72,10 @@ export default function BirthDeathChart() {
             fontSize: 12,
             color: "#1A1A1A",
             lineHeight: 1.6,
+            whiteSpace: "nowrap",
           }}>
-            {point.seriesId}　{point.data.xFormatted}年：{point.data.yFormatted}万人
+            {point.data.xFormatted}年<br/>
+            {point.seriesId}：{point.data.yFormatted}万人
           </div>
         )}
         isInteractive={true}
@@ -93,6 +95,7 @@ export default function BirthDeathChart() {
                       x={lastPoint.position.x - 30}
                       y={lastPoint.position.y - 12}
                       fontSize={11}
+                      fill={"var(  --color-text-secondary)"}
                     >
                       {serie.id}
                     </text>

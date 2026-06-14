@@ -1,7 +1,7 @@
 "use client";
 
-import { ResponsiveLine } from "@nivo/line";
 import { ArticleChartCanvas } from "@/components/ui/ArticleChart";
+import { ResponsiveLine } from "@nivo/line";
 
 const data = [
   {
@@ -33,7 +33,7 @@ export default function TotalPopChart() {
         yScale={{ type: "linear", min: 11000, max: 13000 }}
         // 軸設定
         axisBottom={{
-          tickSize: 0,
+          tickSize: 0, //tickはグラフのメモリ
           tickPadding: 10,
           tickRotation: 0,
         }}
@@ -47,7 +47,7 @@ export default function TotalPopChart() {
           "grid",
           "axes",
           "lines",
-          "mesh",
+          "mesh", // ホバー検出用の透明で見えない範囲
           // ピークをドットで表現
           ({ points }) => {
             const peak = points.find((p) => String(p.data.x) === "2008");
@@ -62,12 +62,12 @@ export default function TotalPopChart() {
             );
           },
         ]}
-        colors={["#5BBEE4"]}
+        colors={["var(--color-brand)"]}
         lineWidth={2}
         pointSize={0}
         pointBorderWidth={0}
         enableGridX={false}
-        gridYValues={[11000, 12000, 13000]}
+        gridYValues={[11000, 12000, 13000]} //gridはグラフ内の線。tickは目盛り
         theme={{
           background: "transparent",
           grid: { line: { stroke: "#E0E0E0", strokeWidth: 1 } },
@@ -85,9 +85,8 @@ export default function TotalPopChart() {
             lineHeight: 1.6,
             whiteSpace: "nowrap",
           }}>
-            <div>{point.data.xFormatted}年</div>
-            <div>{Number(point.data.y).toLocaleString()}万人</div>
-          </div>
+            {point.data.xFormatted}年<br/>
+            {Number(point.data.y).toLocaleString()}万人</div>
         )}
         isInteractive={true}
       />

@@ -1,7 +1,7 @@
 "use client";
 
-import { ResponsiveBar } from "@nivo/bar";
 import { ArticleChartCanvas } from "@/components/ui/ArticleChart";
+import { ResponsiveBar } from "@nivo/bar";
 
 const data = [
   { year: "2010", 自然減: -6, 社会増: 2 },
@@ -53,11 +53,12 @@ export default function NaturalSocialChart() {
             padding: "6px 10px",
             fontSize: 12,
             color: "#1A1A1A",
-            lineHeight: 1.6, whiteSpace: "nowrap",
+            lineHeight: 1.6,
+            whiteSpace: "nowrap",
 
           }}>
-            <div>{indexValue}年</div>
-            <div>{id}：{value}万人</div>
+            {indexValue}年<br/>
+            {id}：{value}万人
           </div>
         )}
         layers={[
