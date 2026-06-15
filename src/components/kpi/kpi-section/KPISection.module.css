@@ -1,0 +1,25 @@
+.kpiSection {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+  margin: 64px 0;
+}
+
+.kpiMain,
+.kpiCard {
+  border-radius: 4px;
+  background: #ffffff;
+}
+
+.kpiMain {
+  padding: 24px;
+}
+
+.kpiMain h2 {
+  margin-bottom: 12px;
+  color: var(--color-text-secondary);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.8;
+  letter-spacing: 0.04em;
+}

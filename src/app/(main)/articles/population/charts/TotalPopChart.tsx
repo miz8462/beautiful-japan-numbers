@@ -1,6 +1,6 @@
 "use client";
 
-import { ArticleChartCanvas } from "@/components/ui/ArticleChart";
+import { ArticleChartCanvas } from "@/components/article/article-chart";
 import { ResponsiveLine } from "@nivo/line";
 
 const data = [
@@ -62,7 +62,7 @@ export default function TotalPopChart() {
             );
           },
         ]}
-        colors={["var(--color-brand)"]}
+        colors={["#5bbee4"]}
         lineWidth={2}
         pointSize={0}
         pointBorderWidth={0}
@@ -85,7 +85,7 @@ export default function TotalPopChart() {
             lineHeight: 1.6,
             whiteSpace: "nowrap",
           }}>
-            {point.data.xFormatted}年<br/>
+            {point.data.xFormatted}年<br />
             {Number(point.data.y).toLocaleString()}万人</div>
         )}
         isInteractive={true}

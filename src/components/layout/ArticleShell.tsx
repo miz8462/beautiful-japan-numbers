@@ -1,5 +1,5 @@
 "use client";
-import { ShareButtons } from "@/components/ui/ShareButtons/ShareButtons";
+import { ShareButtons } from "@/components/ui/share-buttons/ShareButtons";
 
 type Props = {
   title: string;
@@ -11,7 +11,7 @@ export function ArticleShell({ title, children }: Props) {
     <div>
       {children}
       <div className="container">
-        <ShareButtons title={title}/>
+        <ShareButtons title={title} />
       </div>
     </div>
   );

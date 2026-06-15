@@ -1,0 +1,25 @@
+{
+  "election": { "kai": 51, "year": 2026, "date": "2026-02-08" },
+  "sources": [
+    "https://www.jcp.or.jp/akahata/aik25/2026-02-15/2026021502_02_0.php (小選挙区死票)",
+    "https://zeimo.jp/article/72735 (比例代表 政党別得票・議席)"
+  ],
+  "singleMemberDistrict": {
+    "deadVotes": 27350000,
+    "totalVotesEstimate": 56979167,
+    "deadVoteRate": 0.48,
+    "note": "全289選挙区で、当選者以外の候補への得票の合計。totalVotesEstimateはdeadVotes/0.48から逆算した推計値"
+  },
+  "proportional": {
+    "totalVotes": 57259949,
+    "deadVotes": 3012052,
+    "deadVoteRate": 0.0526,
+    "zeroSeatParties": [
+      { "name": "社民党", "votes": 728601 },
+      { "name": "日本保守党", "votes": 1455563 },
+      { "name": "減税ゆうこく連", "votes": 814874 },
+      { "name": "安楽死制度を考える会", "votes": 13014 }
+    ],
+    "note": "死票は、獲得議席数が0だった政党への投票の合計"
+  }
+}

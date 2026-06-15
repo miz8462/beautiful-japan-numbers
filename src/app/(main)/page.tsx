@@ -1,6 +1,6 @@
 import { PageLayout } from "@/components/layout/Page";
 import { Surface } from "@/components/layout/Surface/index";
-import { TopicCard } from "@/components/ui/TopicCard";
+import { TopicCard } from "@/components/ui/topic-card";
 import { articles } from "./articles/articles";
 import styles from "./page.module.css";
 

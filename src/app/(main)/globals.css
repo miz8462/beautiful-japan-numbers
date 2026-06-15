@@ -4,12 +4,43 @@
   --color-text-primary: #222222;
   --color-text-secondary: #555555;
   --color-text-muted: #888888;
-  --color-accent: #F06449;
+  --color-accent: #f06449;
   --color-border: #e0e0e0;
   --color-background: #ffffff;
-  --color-background-section: #F7F7F3;
+  --color-background-section: #f7f7f3;
   --font-body: "Noto Sans JP", "ヒラギノ角ゴ ProN W3", "游ゴシック体", "メイリオ", "Helvetica Neue", Arial, sans-serif;
   --font-data: "Roboto Mono", "SFMono-Regular", Consolas, monospace;
+}
+
+.text-primary {
+  color: var(--color-text-primary);
+}
+
+.text-secondary {
+  color: var(--color-text-secondary);
+}
+
+.text-muted {
+  color: var(--color-text-muted);
+}
+
+.text-brand {
+  color: var(--color-brand);
+}
+
+.text-accent {
+  color: var(--color-accent);
+}
+.bg-primary {
+  background: var(--color-background);
+}
+
+.bg-section {
+  background: var(--color-background-section);
+}
+
+.bg-brand {
+  background: var(--color-brand);
 }
 
 html {

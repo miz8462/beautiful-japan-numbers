@@ -1,6 +1,6 @@
 import { articles, TAG_LABELS, type Tag } from "@/app/(main)/articles/articles";
 import { PageLayout } from "@/components/layout/Page";
-import { TopicCard } from "@/components/ui/TopicCard";
+import { TopicCard } from "@/components/ui/topic-card";
 
 export function generateStaticParams() {
   return Object.keys(TAG_LABELS).map((slug) => ({ slug }));

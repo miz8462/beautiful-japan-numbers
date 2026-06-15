@@ -1,7 +1,7 @@
 "use client";
 
+import { ArticleChart } from "@/components/article/article-chart";
 import dynamic from "next/dynamic";
-import { ArticleChart } from "@/components/ui/ArticleChart";
 import styles from "./page.module.css";
 
 const CityBars = dynamic(() => import("./charts/CityBars"), { ssr: false });

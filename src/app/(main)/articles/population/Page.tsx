@@ -1,7 +1,17 @@
 import { articles } from "@/app/(main)/articles/articles";
-import { ArticleHeader } from "@/components/ui/ArticleHeader/ArticleHeader";
+import { ArticleHeader } from "@/components/article/article-header/ArticleHeader";
+import { KPICard, KPIGrid, KPIPrimary, KPISection } from "@/components/kpi";
 import PopulationCharts from "./PopulationCharts";
-import styles from "./page.module.css";
+
+const data = {
+  title: "年間人口減少数（2024年）",
+  main: "-58万人",
+  cards: [
+    { label: "出生数", value: "68万人" },
+    { label: "死亡数", value: "160万人" },
+    { label: "社会増（国際移動）", value: "+34万人" },
+  ],
+};
 
 export default function PopulationPage() {
   const article = articles.find((a) => a.href === "/articles/population");
@@ -10,27 +20,18 @@ export default function PopulationPage() {
     <div>
       <div className="container">
         <ArticleHeader article={article} />
-        <section className={styles.kpiSection} aria-labelledby="population-kpi">
-          <div className={styles.kpiMain}>
-            <h2 id="population-kpi">年間人口減少数（2024年）</h2>
-            <p className={styles.kpiValue}>-58万人</p>
-          </div>
-
-          <div className={styles.kpiGrid}>
-            <div className={styles.kpiCard}>
-              <p>出生数</p>
-              <strong>68万人</strong>
-            </div>
-            <div className={styles.kpiCard}>
-              <p>死亡数</p>
-              <strong>160万人</strong>
-            </div>
-            <div className={styles.kpiCard}>
-              <p>社会増（国際移動）</p>
-              <strong>+34万人</strong>
-            </div>
-          </div>
-        </section>
+        <KPISection title={data.title}>
+          <KPIPrimary value={data.main} />
+          <KPIGrid>
+            {data.cards.map((card) => (
+              <KPICard
+                key={card.label}
+                label={card.label}
+                value={card.value}
+              />
+            ))}
+          </KPIGrid>
+        </KPISection>
         <PopulationCharts />
       </div>
     </div>

@@ -1,5 +1,5 @@
-import { XIcon } from "@/components/ui/ShareButtons/ShareButtons";
-import buttonStyles from "@/components/ui/ShareButtons/ShareButtons.module.css";
+import { XIcon } from "@/components/ui/share-buttons/ShareButtons";
+import buttonStyles from "@/components/ui/share-buttons/ShareButtons.module.css";
 import styles from "./SiteFooter.module.css";
 
 export function SiteFooter() {

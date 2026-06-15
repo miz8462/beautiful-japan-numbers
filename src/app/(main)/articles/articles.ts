@@ -1,6 +1,7 @@
 export const TAG_LABELS = {
   population: "人口",
   governmentSpending: "財政",
+  election: "選挙",
 };
 
 export type Tag = keyof typeof TAG_LABELS;
@@ -17,6 +18,16 @@ export type Article = {
 };
 
 export const articles: Article[] = [
+  {
+    href: "/articles/voter-turnout",
+    publishedAt: "2026-06-15",
+    label: "Voter turnout",
+    title: "投票率",
+    description: "衆議院議員総選挙の投票率を、全体と年代別の推移で確認します。",
+    tags: ["election"] as Tag[],
+    sourceUrl: "https://www.soumu.go.jp/senkyo/senkyo_s/data/index.html",
+    sourceLabel: "出典: 総務省 選挙関連資料",
+  },
   {
     href: "/articles/government-spending",
     publishedAt: "2026-06-13",

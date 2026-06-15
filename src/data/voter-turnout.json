@@ -1,0 +1,166 @@
+{
+  "source": "総務省 衆議院議員総選挙における年代別投票率（抽出）の推移 https://www.soumu.go.jp/main_content/000255967.pdf",
+  "note": "10代の値は第48回(2017)・第49回(2021)・第50回(2024)のみ存在(18歳選挙権施行は2016年のため)",
+  "elections": [
+    {
+      "kai": 31,
+      "year": 1967,
+      "overall": 73.99,
+      "age10s": null,
+      "age20s": 66.69,
+      "age60s": 77.08
+    },
+    {
+      "kai": 32,
+      "year": 1969,
+      "overall": 68.51,
+      "age10s": null,
+      "age20s": 59.61,
+      "age60s": 77.70
+    },
+    {
+      "kai": 33,
+      "year": 1972,
+      "overall": 71.76,
+      "age10s": null,
+      "age20s": 61.89,
+      "age60s": 82.34
+    },
+    {
+      "kai": 34,
+      "year": 1976,
+      "overall": 73.45,
+      "age10s": null,
+      "age20s": 63.50,
+      "age60s": 84.13
+    },
+    {
+      "kai": 35,
+      "year": 1979,
+      "overall": 68.01,
+      "age10s": null,
+      "age20s": 57.83,
+      "age60s": 80.97
+    },
+    {
+      "kai": 36,
+      "year": 1980,
+      "overall": 74.57,
+      "age10s": null,
+      "age20s": 63.13,
+      "age60s": 84.84
+    },
+    {
+      "kai": 37,
+      "year": 1983,
+      "overall": 67.94,
+      "age10s": null,
+      "age20s": 54.07,
+      "age60s": 82.43
+    },
+    {
+      "kai": 38,
+      "year": 1986,
+      "overall": 71.40,
+      "age10s": null,
+      "age20s": 56.86,
+      "age60s": 85.66
+    },
+    {
+      "kai": 39,
+      "year": 1990,
+      "overall": 73.31,
+      "age10s": null,
+      "age20s": 57.76,
+      "age60s": 87.21
+    },
+    {
+      "kai": 40,
+      "year": 1993,
+      "overall": 67.26,
+      "age10s": null,
+      "age20s": 47.46,
+      "age60s": 83.38
+    },
+    {
+      "kai": 41,
+      "year": 1996,
+      "overall": 59.65,
+      "age10s": null,
+      "age20s": 36.42,
+      "age60s": 77.25
+    },
+    {
+      "kai": 42,
+      "year": 2000,
+      "overall": 62.49,
+      "age10s": null,
+      "age20s": 38.35,
+      "age60s": 79.23
+    },
+    {
+      "kai": 43,
+      "year": 2003,
+      "overall": 59.86,
+      "age10s": null,
+      "age20s": 35.62,
+      "age60s": 77.89
+    },
+    {
+      "kai": 44,
+      "year": 2005,
+      "overall": 67.51,
+      "age10s": null,
+      "age20s": 46.20,
+      "age60s": 83.08
+    },
+    {
+      "kai": 45,
+      "year": 2009,
+      "overall": 69.28,
+      "age10s": null,
+      "age20s": 49.45,
+      "age60s": 84.15
+    },
+    {
+      "kai": 46,
+      "year": 2012,
+      "overall": 59.32,
+      "age10s": null,
+      "age20s": 37.89,
+      "age60s": 74.93
+    },
+    {
+      "kai": 47,
+      "year": 2014,
+      "overall": 52.66,
+      "age10s": null,
+      "age20s": 32.58,
+      "age60s": 68.28
+    },
+    {
+      "kai": 48,
+      "year": 2017,
+      "overall": 53.68,
+      "age10s": 40.49,
+      "age20s": 33.85,
+      "age60s": 72.04
+    },
+    {
+      "kai": 49,
+      "year": 2021,
+      "overall": 55.93,
+      "age10s": 43.23,
+      "age20s": 36.50,
+      "age60s": 71.38
+    },
+    {
+      "kai": 50,
+      "year": 2024,
+      "overall": 53.85,
+      "age10s": 39.43,
+      "age20s": 34.62,
+      "age60s": 68.02
+    }
+  ]
+}

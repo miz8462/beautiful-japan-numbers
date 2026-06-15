@@ -1,0 +1,18 @@
+.kpiValue {
+  color: var(--color-text-primary);
+  font-family: var(--font-data);
+  font-size: 72px;
+  font-feature-settings: "tnum" 1, "lnum" 1;
+  font-variant-numeric: tabular-nums lining-nums;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+}
+
+.kpiCaption {
+  margin-top: 12px;
+  color: var(--color-text-muted);
+  font-size: 14px;
+  line-height: 1.8;
+}
+

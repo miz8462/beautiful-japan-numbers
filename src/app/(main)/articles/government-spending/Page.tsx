@@ -1,5 +1,5 @@
 import SankeyChart, { type GovernmentSpendingData } from "@/app/(main)/articles/government-spending/SankeyChart";
-import { ArticleHeader } from "@/components/ui/ArticleHeader/ArticleHeader";
+import { ArticleHeader } from "@/components/article/article-header/ArticleHeader";
 import governmentSpendingData from "@/data/government-spending.json";
 import { articles } from "../articles";
 import styles from "./page.module.css";

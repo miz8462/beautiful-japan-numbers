@@ -1,7 +1,7 @@
 import type { Article } from "@/app/(main)/articles/articles";
-import { ArticleTags } from "@/components/ui/ArticleTag/ArticleTags";
+import { ArticleTags } from "@/components/article/article-tag/ArticleTags";
 import { FiCalendar } from "react-icons/fi";
-import { ArticleSource } from "../ArticleSource/ArticleSource";
+import { ArticleSource } from "../article-source/ArticleSource";
 import styles from "./ArticleHeader.module.css";
 
 export function ArticleHeader({ article }: { article: Article }) {

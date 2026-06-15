@@ -1,6 +1,6 @@
 "use client";
 
-import { ArticleChartCanvas } from "@/components/ui/ArticleChart";
+import { ArticleChartCanvas } from "@/components/article/article-chart";
 import { ResponsiveBar } from "@nivo/bar";
 
 const data = [
@@ -57,7 +57,7 @@ export default function NaturalSocialChart() {
             whiteSpace: "nowrap",
 
           }}>
-            {indexValue}年<br/>
+            {indexValue}年<br />
             {id}：{value}万人
           </div>
         )}

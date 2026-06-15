@@ -1,6 +1,6 @@
 "use client";
 
-import { ArticleChartCanvas } from "@/components/ui/ArticleChart";
+import { ArticleChartCanvas } from "@/components/article/article-chart";
 import { ResponsiveLine } from "@nivo/line";
 
 const data = [
@@ -74,7 +74,7 @@ export default function BirthDeathChart() {
             lineHeight: 1.6,
             whiteSpace: "nowrap",
           }}>
-            {point.data.xFormatted}年<br/>
+            {point.data.xFormatted}年<br />
             {point.seriesId}：{point.data.yFormatted}万人
           </div>
         )}
@@ -95,7 +95,7 @@ export default function BirthDeathChart() {
                       x={lastPoint.position.x - 30}
                       y={lastPoint.position.y - 12}
                       fontSize={11}
-                      fill={"var(  --color-text-secondary)"}
+                      fill={"#555555"}
                     >
                       {serie.id}
                     </text>
