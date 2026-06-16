@@ -25,10 +25,9 @@ export function ArticleChart({ title, source, sourceUrl, children }: ArticleChar
       <h2 className={styles.heading}>{title}</h2>
       {source && (
         <p className={styles.source}>
-          出典:{" "}
           {sourceUrl ? (
             <a href={sourceUrl} target="_blank" rel="noopener noreferrer">
-              {source}
+              出典：{source}
             </a>
           ) : (
             source

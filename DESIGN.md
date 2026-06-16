@@ -1,6 +1,6 @@
 # DESIGN.md — Civic Data Media Design System
 
-> ブランドカラー `#5BBEE4`。
+> ブランドカラー `#5bbee4`。
 > 非党派的・信頼・データジャーナリズム UI。
 > 「主張」ではなく「発見」を提示する。
 
@@ -10,12 +10,12 @@
 
 ## Brand
 
-* **Civic Sky** (`#5BBEE4`)
+* **Civic Sky** (`#5bbee4`)
 
   * アクティブ状態・CTA・選択状態
   * ヘッダー上部のブランドバー
 
-* **Civic Sky Dark** (`#3A9DC4`)
+* **Civic Sky Dark** (`#3a9dc4`)
 
   * hover / active / focus 補助
 
@@ -28,9 +28,9 @@
 | Text Primary       | `#222222` |
 | Text Secondary     | `#555555` |
 | Text Muted         | `#888888` |
-| Border             | `#E0E0E0` |
-| Background         | `#FFFFFF` |
-| Background Section | `#F7F7F3` |
+| Border             | `#e0e0e0` |
+| Background         | `#ffffff` |
+| Background Section | `#f7f7f3` |
 
 ---
 
@@ -38,12 +38,12 @@
 
 | Role      | Color     |
 | --------- | --------- |
-| Primary   | `#5BBEE4` |
-| Secondary | `#F06449` |
-| Tertiary  | `#2E9E6E` |
-| Reference | `#AAAAAA` |
-| Positive  | `#2E7D4F` |
-| Negative  | `#C0392B` |
+| Primary   | `#5bbee4` |
+| Secondary | `#f06449` |
+| Tertiary  | `#2e9e6e` |
+| Reference | `#aaaaaa` |
+| Positive  | `#2e7d4f` |
+| Negative  | `#c0392b` |
 
 ---
 
@@ -161,10 +161,10 @@ color: #555555;
 ### Active
 
 ```css
-color: #5BBEE4;
+color: #5bbee4;
 ::after {
   height: 2px;
-  background: #5BBEE4;
+  background: #5bbee4;
 }
 ```
 
@@ -175,8 +175,8 @@ color: #5BBEE4;
 ### Current
 
 ```css
-background: #5BBEE4;
-color: #FFFFFF;
+background: #5bbee4;
+color: #ffffff;
 border-radius: 9999px;
 padding: 6px 16px;
 font-size: 13px;
@@ -210,23 +210,23 @@ letter-spacing: 0.04em;
 ### Primary
 
 ```css
-background: #5BBEE4;
-color: #FFFFFF;
-border: 1.5px solid #5BBEE4;
+background: #5bbee4;
+color: #ffffff;
+border: 1.5px solid #5bbee4;
 ```
 
 ### Secondary
 
 ```css
 background: transparent;
-border: 1.5px solid #5BBEE4;
-color: #5BBEE4;
+border: 1.5px solid #5bbee4;
+color: #5bbee4;
 ```
 
 ### Interaction
 
 ```css
-primary hover: #3A9DC4;
+primary hover: #3a9dc4;
 secondary hover: rgba(91,190,228,0.08);
 focus: box-shadow 0 0 0 3px rgba(91,190,228,0.30);
 ```
@@ -238,8 +238,8 @@ focus: box-shadow 0 0 0 3px rgba(91,190,228,0.30);
 ### Topic Card
 
 ```css
-background: #FFFFFF;
-border: 1px solid #E0E0E0;
+background: #ffffff;
+border: 1px solid #e0e0e0;
 border-radius: 4px;
 padding: 16px;
 min-height: 184px;
@@ -248,7 +248,7 @@ min-height: 184px;
 ### Article Chart Card
 
 ```css
-background: #FFFFFF;
+background: #ffffff;
 border-radius: 4px;
 padding: 16px;
 overflow: hidden;
@@ -257,7 +257,7 @@ overflow: hidden;
 ### Surface
 
 ```css
-background: #F7F7F3;
+background: #f7f7f3;
 border-radius: 10px;
 ```
 
@@ -313,13 +313,13 @@ width: 40px;
 height: 40px;
 border-radius: 50%;
 border: 2px solid;
-color: #FFFFFF;
+color: #ffffff;
 ```
 
 | Service  | Background |
 | -------- | ---------- |
 | X        | `#000000`  |
-| LINE     | `#06C755`  |
+| LINE     | `#06c755`  |
 | Facebook | `#1877F2`  |
 | Copy     | `#888780`  |
 
@@ -412,3 +412,89 @@ Spacing Scale:
 * `word-break: break-all` を使わない
 * フォントスタックで欧文フォントを先頭に置かない
 * 主要 UI の背景に純黒 `#000000` を使わない（X ブランドボタンを除く）
+
+# 10. Naming Conventions
+
+## Directories
+
+### ディレクトリ名は小文字の kebab-case を使用する。
+
+* components/
+* components/kpi/
+* components/article-header/
+* app/population/
+
+### 禁止:
+
+* KPI/
+* ArticleHeader/
+* article_header/
+* React Components
+
+## React コンポーネント名は PascalCase を使用する。
+
+* export function KPICard() {}
+* export function KPISection() {}
+* export function ArticleHeader() {}
+* Component Files
+
+## React コンポーネントファイル名はコンポーネント名と一致させる。
+
+* KPICard.tsx
+* KPIGrid.tsx
+* KPIPrimary.tsx
+* KPISection.tsx
+
+## 禁止:
+
+* kpi-card.tsx
+* kpicard.tsx
+* kpiCard.tsx
+* CSS Modules
+
+## CSS Module ファイル名は対応するコンポーネント名と一致させる。
+
+* KPICard.module.css
+* KPIGrid.module.css
+* KPIPrimary.module.css
+* KPISection.module.css
+* Variables
+
+## 変数名・関数名は camelCase を使用する。
+
+* populationData
+* articleList
+* chartOptions
+* Types
+
+## TypeScript の型・インターフェースは PascalCase を使用する。
+
+* type PopulationData = {}
+* type KPIItem = {}
+
+* interface ArticleMetadata {}
+
+## Constants
+
+### 共有定数は UPPER_SNAKE_CASE を使用する。
+
+* MAX_ARTICLE_WIDTH
+* DEFAULT_PAGE_SIZE
+* CHART_ANIMATION_DURATION
+
+## CSS Classes
+
+### CSS Modules のクラス名は camelCase を使用する。
+
+* .kpiCard {}
+* .kpiGrid {}
+* .articleHeader {}
+* .chartContainer {}
+
+## Color Values
+
+### カラーコードは小文字で記述する。
+
+* #5bbee4
+* #ffffff
+* #e0e0e0
