@@ -1,21 +1,21 @@
-import { articles, TAG_LABELS, type Tag } from "@/app/(main)/articles/articles";
+import { articles, TAGS, type Tag } from "@/app/(main)/articles/articles";
 import { PageLayout } from "@/components/layout/Page";
 import { TopicCard } from "@/components/ui/topic-card";
 
 export function generateStaticParams() {
-  return Object.keys(TAG_LABELS).map((slug) => ({ slug }));
+  return Object.keys(TAGS).map((slug) => ({ slug }));
 }
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
-  const label = TAG_LABELS[slug as Tag];
+  const label = TAGS[slug as Tag];
   return { title: label };
 }
 
 export default async function TopicPage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
   const tag = slug as Tag;
-  const label = TAG_LABELS[tag];
+  const label = TAGS[tag].label;
   const filtered = articles.filter((a) => a.tags.includes(tag));
 
   return (

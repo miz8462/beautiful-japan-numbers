@@ -1,5 +1,6 @@
 "use client";
 
+import { ArticleSource } from "@/components/article/article-source/ArticleSource";
 import deadVoteData from "@/data/dead-votes-2026.json";
 import { ResponsiveWaffle } from "@nivo/waffle";
 import styles from "./DeadVoteChart.module.css";
@@ -109,8 +110,22 @@ export default function DeadVoteChart() {
           議席に反映された票
         </span>
       </div>
-
-    {/* TODO: 中選挙区制も比較する */}
+      <div className={styles.referenceBlock}>
+        <div className={styles.referenceNote}>
+          <p className="text-secondary">参考：93年、中選挙区時代{" "}
+            <span className={styles.notice}>
+              ※中選挙区では一選挙区あたり3−5人当選する
+            </span>
+          </p>
+          <ArticleSource href="https://go2senkyo.com/shugiin/17789" label="出典：選挙ドットコム 第40回衆議院議員選挙" />
+        </div>
+        <div className={styles.singleChartWrap}>
+          <WaffleBlock
+            title="中選挙区"
+            deadRate={0.247}
+          />
+        </div>
+      </div>
     </div>
   );
 }

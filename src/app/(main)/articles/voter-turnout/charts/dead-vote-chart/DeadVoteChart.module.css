@@ -9,6 +9,32 @@
   gap: 24px;
 }
 
+.referenceBlock {
+  margin-top: 2rem;
+}
+
+.referenceNote p {
+  margin: 0;
+}
+
+.referenceNote p+p {
+  margin-top: 4px;
+}
+
+.notice {
+  font-size: 11;
+  color: var(--color-text-muted);
+}
+
+.singleChartWrap {
+  display: flex;
+  justify-content: left;
+}
+
+.singleChartWrap .block {
+  flex: 0 1 calc((100% - 24px) / 2);
+}
+
 @media (max-width: 767px) {
   .charts {
     flex-direction: column;
