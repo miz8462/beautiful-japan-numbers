@@ -1,0 +1,1423 @@
+{
+  "election": {
+    "kai": 40,
+    "year": 1993,
+    "system": "中選挙区制"
+  },
+  "source": "https://go2senkyo.com/shugiin/17789 (各選挙区ページの候補者別得票数より算出)",
+  "note": "死票率 = 落選者得票合計 / 総有効票。当選者の得票合計を総有効票から差し引いて算出。全国129選挙区のうち、現時点で集計済みの都道府県のみ収録(進行中)。",
+  "byPrefecture": {
+    "北海道": {
+      "districts": [
+        {
+          "name": "北海道1区",
+          "numElected": 6,
+          "electedVotes": 921191,
+          "deadVotes": 262758,
+          "totalVotes": 1183949,
+          "deadVoteRate": 0.2219
+        },
+        {
+          "name": "北海道2区",
+          "numElected": 4,
+          "electedVotes": 299392.66,
+          "deadVotes": 82901.33,
+          "totalVotes": 382293.99,
+          "deadVoteRate": 0.2169
+        },
+        {
+          "name": "北海道3区",
+          "numElected": 3,
+          "electedVotes": 184112,
+          "deadVotes": 78550,
+          "totalVotes": 262662,
+          "deadVoteRate": 0.2991
+        },
+        {
+          "name": "北海道4区",
+          "numElected": 5,
+          "electedVotes": 411994,
+          "deadVotes": 118736,
+          "totalVotes": 530730,
+          "deadVoteRate": 0.2237
+        },
+        {
+          "name": "北海道5区",
+          "numElected": 5,
+          "electedVotes": 462694,
+          "deadVotes": 161386,
+          "totalVotes": 624080,
+          "deadVoteRate": 0.2586
+        }
+      ],
+      "totalVotes": 2983714.99,
+      "electedVotes": 2279383.66,
+      "deadVotes": 704331.33,
+      "deadVoteRate": 0.2361
+    },
+    "青森県": {
+      "districts": [
+        {
+          "name": "青森1区",
+          "numElected": 4,
+          "electedVotes": 362445,
+          "deadVotes": 89700,
+          "totalVotes": 452145,
+          "deadVoteRate": 0.1984
+        },
+        {
+          "name": "青森2区",
+          "numElected": 3,
+          "electedVotes": 228230,
+          "deadVotes": 54040,
+          "totalVotes": 282270,
+          "deadVoteRate": 0.1914
+        }
+      ],
+      "totalVotes": 734415,
+      "electedVotes": 590675,
+      "deadVotes": 143740,
+      "deadVoteRate": 0.1957
+    },
+    "岩手県": {
+      "districts": [
+        {
+          "name": "岩手1区",
+          "numElected": 4,
+          "electedVotes": 318634,
+          "deadVotes": 130875,
+          "totalVotes": 449509,
+          "deadVoteRate": 0.2912
+        },
+        {
+          "name": "岩手2区",
+          "numElected": 3,
+          "electedVotes": 272673,
+          "deadVotes": 76335,
+          "totalVotes": 349008,
+          "deadVoteRate": 0.2187
+        }
+      ],
+      "totalVotes": 798517,
+      "electedVotes": 591307,
+      "deadVotes": 207210,
+      "deadVoteRate": 0.2595
+    },
+    "宮城県": {
+      "districts": [
+        {
+          "name": "宮城1区",
+          "numElected": 5,
+          "electedVotes": 615596,
+          "deadVotes": 190807,
+          "totalVotes": 806403,
+          "deadVoteRate": 0.2366
+        },
+        {
+          "name": "宮城2区",
+          "numElected": 3,
+          "electedVotes": 176064,
+          "deadVotes": 134603,
+          "totalVotes": 310667,
+          "deadVoteRate": 0.4333
+        }
+      ],
+      "totalVotes": 1117070,
+      "electedVotes": 791660,
+      "deadVotes": 325410,
+      "deadVoteRate": 0.2913
+    },
+    "秋田県": {
+      "districts": [
+        {
+          "name": "秋田1区",
+          "numElected": 4,
+          "electedVotes": 294530,
+          "deadVotes": 100628,
+          "totalVotes": 395158,
+          "deadVoteRate": 0.2547
+        },
+        {
+          "name": "秋田2区",
+          "numElected": 3,
+          "electedVotes": 213192,
+          "deadVotes": 90286,
+          "totalVotes": 303478,
+          "deadVoteRate": 0.2975
+        }
+      ],
+      "totalVotes": 698636,
+      "electedVotes": 507722,
+      "deadVotes": 190914,
+      "deadVoteRate": 0.2733
+    },
+    "山形県": {
+      "districts": [
+        {
+          "name": "山形1区",
+          "numElected": 4,
+          "electedVotes": 331374.53,
+          "deadVotes": 81800.43,
+          "totalVotes": 413174.96,
+          "deadVoteRate": 0.198
+        },
+        {
+          "name": "山形2区",
+          "numElected": 3,
+          "electedVotes": 267094,
+          "deadVotes": 23690,
+          "totalVotes": 290784,
+          "deadVoteRate": 0.0815
+        }
+      ],
+      "totalVotes": 703958.96,
+      "electedVotes": 598468.53,
+      "deadVotes": 105490.43,
+      "deadVoteRate": 0.1499
+    },
+    "福島県": {
+      "districts": [
+        {
+          "name": "福島1区",
+          "numElected": 4,
+          "electedVotes": 254640.17,
+          "deadVotes": 164998.81,
+          "totalVotes": 419638.98,
+          "deadVoteRate": 0.3932
+        },
+        {
+          "name": "福島2区",
+          "numElected": 5,
+          "electedVotes": 314539,
+          "deadVotes": 119682,
+          "totalVotes": 434221,
+          "deadVoteRate": 0.2756
+        },
+        {
+          "name": "福島3区",
+          "numElected": 3,
+          "electedVotes": 227160,
+          "deadVotes": 71399,
+          "totalVotes": 298559,
+          "deadVoteRate": 0.2391
+        }
+      ],
+      "totalVotes": 1152418.98,
+      "electedVotes": 796339.17,
+      "deadVotes": 356079.81,
+      "deadVoteRate": 0.309
+    },
+    "茨城県": {
+      "districts": [
+        {
+          "name": "茨城1区",
+          "numElected": 4,
+          "electedVotes": 436306,
+          "deadVotes": 103713,
+          "totalVotes": 540019,
+          "deadVoteRate": 0.1921
+        },
+        {
+          "name": "茨城2区",
+          "numElected": 3,
+          "electedVotes": 263761,
+          "deadVotes": 69583,
+          "totalVotes": 333344,
+          "deadVoteRate": 0.2087
+        },
+        {
+          "name": "茨城3区",
+          "numElected": 5,
+          "electedVotes": 435859,
+          "deadVotes": 79852,
+          "totalVotes": 515711,
+          "deadVoteRate": 0.1548
+        }
+      ],
+      "totalVotes": 1389074,
+      "electedVotes": 1135926,
+      "deadVotes": 253148,
+      "deadVoteRate": 0.1822
+    },
+    "栃木県": {
+      "districts": [
+        {
+          "name": "栃木1区",
+          "numElected": 5,
+          "electedVotes": 471558.98,
+          "deadVotes": 57683,
+          "totalVotes": 529241.98,
+          "deadVoteRate": 0.109
+        },
+        {
+          "name": "栃木2区",
+          "numElected": 5,
+          "electedVotes": 292427,
+          "deadVotes": 157296,
+          "totalVotes": 449723,
+          "deadVoteRate": 0.3498
+        }
+      ],
+      "totalVotes": 978964.98,
+      "electedVotes": 763985.98,
+      "deadVotes": 214979,
+      "deadVoteRate": 0.2196
+    },
+    "群馬県": {
+      "districts": [
+        {
+          "name": "群馬1区",
+          "numElected": 3,
+          "electedVotes": 219758,
+          "deadVotes": 128954,
+          "totalVotes": 348712,
+          "deadVoteRate": 0.3698
+        },
+        {
+          "name": "群馬2区",
+          "numElected": 3,
+          "electedVotes": 212150,
+          "deadVotes": 93436,
+          "totalVotes": 305586,
+          "deadVoteRate": 0.3058
+        },
+        {
+          "name": "群馬3区",
+          "numElected": 4,
+          "electedVotes": 302365,
+          "deadVotes": 90926,
+          "totalVotes": 393291,
+          "deadVoteRate": 0.2312
+        }
+      ],
+      "totalVotes": 1047589,
+      "electedVotes": 734273,
+      "deadVotes": 313316,
+      "deadVoteRate": 0.2991
+    },
+    "埼玉県": {
+      "districts": [
+        {
+          "name": "埼玉1区",
+          "numElected": 4,
+          "electedVotes": 396848,
+          "deadVotes": 199979,
+          "totalVotes": 596827,
+          "deadVoteRate": 0.3351
+        },
+        {
+          "name": "埼玉2区",
+          "numElected": 5,
+          "electedVotes": 612236,
+          "deadVotes": 152867,
+          "totalVotes": 765103,
+          "deadVoteRate": 0.1998
+        },
+        {
+          "name": "埼玉3区",
+          "numElected": 3,
+          "electedVotes": 240478,
+          "deadVotes": 88598,
+          "totalVotes": 329076,
+          "deadVoteRate": 0.2692
+        },
+        {
+          "name": "埼玉4区",
+          "numElected": 4,
+          "electedVotes": 491524,
+          "deadVotes": 217564,
+          "totalVotes": 709088,
+          "deadVoteRate": 0.3068
+        },
+        {
+          "name": "埼玉5区",
+          "numElected": 4,
+          "electedVotes": 372598,
+          "deadVotes": 229017,
+          "totalVotes": 601615,
+          "deadVoteRate": 0.3807
+        }
+      ],
+      "totalVotes": 3001709,
+      "electedVotes": 2113684,
+      "deadVotes": 888025,
+      "deadVoteRate": 0.2958
+    },
+    "東京都": {
+      "districts": [
+        {
+          "name": "東京1区",
+          "numElected": 3,
+          "electedVotes": 138590,
+          "deadVotes": 80733,
+          "totalVotes": 219323,
+          "deadVoteRate": 0.3681
+        },
+        {
+          "name": "東京2区",
+          "numElected": 5,
+          "electedVotes": 370410,
+          "deadVotes": 115389,
+          "totalVotes": 485799,
+          "deadVoteRate": 0.2375
+        },
+        {
+          "name": "東京3区",
+          "numElected": 4,
+          "electedVotes": 321948,
+          "deadVotes": 166386,
+          "totalVotes": 488334,
+          "deadVoteRate": 0.3407
+        },
+        {
+          "name": "東京4区",
+          "numElected": 5,
+          "electedVotes": 362244,
+          "deadVotes": 137462,
+          "totalVotes": 499706,
+          "deadVoteRate": 0.2751
+        },
+        {
+          "name": "東京5区",
+          "numElected": 3,
+          "electedVotes": 211616,
+          "deadVotes": 209863,
+          "totalVotes": 421479,
+          "deadVoteRate": 0.4979
+        },
+        {
+          "name": "東京6区",
+          "numElected": 4,
+          "electedVotes": 274160,
+          "deadVotes": 111475,
+          "totalVotes": 385635,
+          "deadVoteRate": 0.2891
+        },
+        {
+          "name": "東京7区",
+          "numElected": 4,
+          "electedVotes": 542719,
+          "deadVotes": 212821,
+          "totalVotes": 755540,
+          "deadVoteRate": 0.2817
+        },
+        {
+          "name": "東京8区",
+          "numElected": 2,
+          "electedVotes": 147609,
+          "deadVotes": 59019,
+          "totalVotes": 206628,
+          "deadVoteRate": 0.2856
+        },
+        {
+          "name": "東京9区",
+          "numElected": 4,
+          "electedVotes": 278093,
+          "deadVotes": 130973,
+          "totalVotes": 409066,
+          "deadVoteRate": 0.3202
+        },
+        {
+          "name": "東京10区",
+          "numElected": 5,
+          "electedVotes": 533345,
+          "deadVotes": 168041,
+          "totalVotes": 701386,
+          "deadVoteRate": 0.2396
+        },
+        {
+          "name": "東京11区",
+          "numElected": 5,
+          "electedVotes": 723543,
+          "deadVotes": 253133,
+          "totalVotes": 976676,
+          "deadVoteRate": 0.2592
+        }
+      ],
+      "totalVotes": 5549572,
+      "electedVotes": 3904277,
+      "deadVotes": 1645295,
+      "deadVoteRate": 0.2965
+    },
+    "千葉県": {
+      "districts": [
+        {
+          "name": "千葉1区",
+          "numElected": 5,
+          "electedVotes": 647451.9,
+          "deadVotes": 207699.08,
+          "totalVotes": 855150.98,
+          "deadVoteRate": 0.2429
+        },
+        {
+          "name": "千葉2区",
+          "numElected": 4,
+          "electedVotes": 276830,
+          "deadVotes": 160952.0,
+          "totalVotes": 437781.99999999994,
+          "deadVoteRate": 0.3677
+        },
+        {
+          "name": "千葉3区",
+          "numElected": 5,
+          "electedVotes": 388586,
+          "deadVotes": 33072,
+          "totalVotes": 421658,
+          "deadVoteRate": 0.0784
+        },
+        {
+          "name": "千葉4区",
+          "numElected": 5,
+          "electedVotes": 653579,
+          "deadVotes": 181325,
+          "totalVotes": 834904,
+          "deadVoteRate": 0.2172
+        }
+      ],
+      "totalVotes": 2549494.98,
+      "electedVotes": 1966446.9,
+      "deadVotes": 583048.08,
+      "deadVoteRate": 0.2287
+    },
+    "神奈川県": {
+      "districts": [
+        {
+          "name": "神奈川1区",
+          "numElected": 4,
+          "electedVotes": 354221,
+          "deadVotes": 290400.99,
+          "totalVotes": 644621.99,
+          "deadVoteRate": 0.4505
+        },
+        {
+          "name": "神奈川2区",
+          "numElected": 5,
+          "electedVotes": 654535,
+          "deadVotes": 252625,
+          "totalVotes": 907160,
+          "deadVoteRate": 0.2785
+        },
+        {
+          "name": "神奈川3区",
+          "numElected": 5,
+          "electedVotes": 569119,
+          "deadVotes": 223349,
+          "totalVotes": 792468,
+          "deadVoteRate": 0.2818
+        },
+        {
+          "name": "神奈川4区",
+          "numElected": 5,
+          "electedVotes": 638454,
+          "deadVotes": 248722,
+          "totalVotes": 887176,
+          "deadVoteRate": 0.2804
+        },
+        {
+          "name": "神奈川5区",
+          "numElected": 3,
+          "electedVotes": 410059,
+          "deadVotes": 126078,
+          "totalVotes": 536137,
+          "deadVoteRate": 0.2352
+        }
+      ],
+      "totalVotes": 3767562.99,
+      "electedVotes": 2626388,
+      "deadVotes": 1141174.99,
+      "deadVoteRate": 0.3029
+    },
+    "新潟県": {
+      "districts": [
+        {
+          "name": "新潟1区",
+          "numElected": 3,
+          "electedVotes": 289245,
+          "deadVotes": 85155,
+          "totalVotes": 374400,
+          "deadVoteRate": 0.2274
+        },
+        {
+          "name": "新潟2区",
+          "numElected": 3,
+          "electedVotes": 220273,
+          "deadVotes": 109183,
+          "totalVotes": 329456,
+          "deadVoteRate": 0.3314
+        },
+        {
+          "name": "新潟3区",
+          "numElected": 5,
+          "electedVotes": 343427,
+          "deadVotes": 124634,
+          "totalVotes": 468061,
+          "deadVoteRate": 0.2663
+        },
+        {
+          "name": "新潟4区",
+          "numElected": 2,
+          "electedVotes": 135900,
+          "deadVotes": 116501,
+          "totalVotes": 252401,
+          "deadVoteRate": 0.4616
+        }
+      ],
+      "totalVotes": 1424318,
+      "electedVotes": 988845,
+      "deadVotes": 435473,
+      "deadVoteRate": 0.3057
+    },
+    "富山県": {
+      "districts": [
+        {
+          "name": "富山1区",
+          "numElected": 3,
+          "electedVotes": 241572,
+          "deadVotes": 118761,
+          "totalVotes": 360333,
+          "deadVoteRate": 0.3296
+        },
+        {
+          "name": "富山2区",
+          "numElected": 3,
+          "electedVotes": 236043,
+          "deadVotes": 63628,
+          "totalVotes": 299671,
+          "deadVoteRate": 0.2123
+        }
+      ],
+      "totalVotes": 660004,
+      "electedVotes": 477615,
+      "deadVotes": 182389,
+      "deadVoteRate": 0.2763
+    },
+    "石川県": {
+      "districts": [
+        {
+          "name": "石川1区",
+          "numElected": 3,
+          "electedVotes": 349017,
+          "deadVotes": 28256,
+          "totalVotes": 377273,
+          "deadVoteRate": 0.0749
+        },
+        {
+          "name": "石川2区",
+          "numElected": 2,
+          "electedVotes": 148302,
+          "deadVotes": 44021,
+          "totalVotes": 192323,
+          "deadVoteRate": 0.2289
+        }
+      ],
+      "totalVotes": 569596,
+      "electedVotes": 497319,
+      "deadVotes": 72277,
+      "deadVoteRate": 0.1269
+    },
+    "福井県": {
+      "districts": [
+        {
+          "name": "福井県(全県1区)",
+          "numElected": 4,
+          "electedVotes": 367871,
+          "deadVotes": 100373,
+          "totalVotes": 468244,
+          "deadVoteRate": 0.2144
+        }
+      ],
+      "totalVotes": 468244,
+      "electedVotes": 367871,
+      "deadVotes": 100373,
+      "deadVoteRate": 0.2144
+    },
+    "山梨県": {
+      "districts": [
+        {
+          "name": "山梨県(全県1区)",
+          "numElected": 5,
+          "electedVotes": 380399,
+          "deadVotes": 114793,
+          "totalVotes": 495192,
+          "deadVoteRate": 0.2318
+        }
+      ],
+      "totalVotes": 495192,
+      "electedVotes": 380399,
+      "deadVotes": 114793,
+      "deadVoteRate": 0.2318
+    },
+    "長野県": {
+      "districts": [
+        {
+          "name": "長野1区",
+          "numElected": 3,
+          "electedVotes": 255969,
+          "deadVotes": 86662,
+          "totalVotes": 342631,
+          "deadVoteRate": 0.2529
+        },
+        {
+          "name": "長野2区",
+          "numElected": 3,
+          "electedVotes": 242390,
+          "deadVotes": 44611,
+          "totalVotes": 287001,
+          "deadVoteRate": 0.1554
+        },
+        {
+          "name": "長野3区",
+          "numElected": 3,
+          "electedVotes": 249632,
+          "deadVotes": 105653,
+          "totalVotes": 355285,
+          "deadVoteRate": 0.2974
+        },
+        {
+          "name": "長野4区",
+          "numElected": 3,
+          "electedVotes": 241018,
+          "deadVotes": 47357,
+          "totalVotes": 288375,
+          "deadVoteRate": 0.1642
+        }
+      ],
+      "totalVotes": 1273292,
+      "electedVotes": 989009,
+      "deadVotes": 284283,
+      "deadVoteRate": 0.2233
+    },
+    "岐阜県": {
+      "districts": [
+        {
+          "name": "岐阜1区",
+          "numElected": 5,
+          "electedVotes": 517646,
+          "deadVotes": 181183,
+          "totalVotes": 698829,
+          "deadVoteRate": 0.2593
+        },
+        {
+          "name": "岐阜2区",
+          "numElected": 4,
+          "electedVotes": 353776,
+          "deadVotes": 90800,
+          "totalVotes": 444576,
+          "deadVoteRate": 0.2042
+        }
+      ],
+      "totalVotes": 1143405,
+      "electedVotes": 871422,
+      "deadVotes": 271983,
+      "deadVoteRate": 0.2379
+    },
+    "静岡県": {
+      "districts": [
+        {
+          "name": "静岡1区",
+          "numElected": 5,
+          "electedVotes": 570580,
+          "deadVotes": 209714,
+          "totalVotes": 780294,
+          "deadVoteRate": 0.2688
+        },
+        {
+          "name": "静岡2区",
+          "numElected": 5,
+          "electedVotes": 500206.76,
+          "deadVotes": 115533.20000000001,
+          "totalVotes": 615739.96,
+          "deadVoteRate": 0.1876
+        },
+        {
+          "name": "静岡3区",
+          "numElected": 4,
+          "electedVotes": 459747,
+          "deadVotes": 102997,
+          "totalVotes": 562744,
+          "deadVoteRate": 0.183
+        }
+      ],
+      "totalVotes": 1958777.96,
+      "electedVotes": 1530533.76,
+      "deadVotes": 428244.2,
+      "deadVoteRate": 0.2186
+    },
+    "愛知県": {
+      "districts": [
+        {
+          "name": "愛知1区",
+          "numElected": 4,
+          "electedVotes": 295685,
+          "deadVotes": 160197,
+          "totalVotes": 455882,
+          "deadVoteRate": 0.3514
+        },
+        {
+          "name": "愛知2区",
+          "numElected": 4,
+          "electedVotes": 540593,
+          "deadVotes": 165921.02,
+          "totalVotes": 706514.02,
+          "deadVoteRate": 0.2348
+        },
+        {
+          "name": "愛知3区",
+          "numElected": 3,
+          "electedVotes": 391873,
+          "deadVotes": 122707.0,
+          "totalVotes": 514580.0,
+          "deadVoteRate": 0.2385
+        },
+        {
+          "name": "愛知4区",
+          "numElected": 4,
+          "electedVotes": 500408,
+          "deadVotes": 136460,
+          "totalVotes": 636868,
+          "deadVoteRate": 0.2143
+        },
+        {
+          "name": "愛知5区",
+          "numElected": 3,
+          "electedVotes": 245858,
+          "deadVotes": 98924,
+          "totalVotes": 344782,
+          "deadVoteRate": 0.2869
+        },
+        {
+          "name": "愛知6区",
+          "numElected": 4,
+          "electedVotes": 358492,
+          "deadVotes": 132498,
+          "totalVotes": 490990,
+          "deadVoteRate": 0.2699
+        }
+      ],
+      "totalVotes": 3149616.02,
+      "electedVotes": 2332909,
+      "deadVotes": 816707.02,
+      "deadVoteRate": 0.2593
+    },
+    "三重県": {
+      "districts": [
+        {
+          "name": "三重1区",
+          "numElected": 5,
+          "electedVotes": 567934,
+          "deadVotes": 127052,
+          "totalVotes": 694986,
+          "deadVoteRate": 0.1828
+        },
+        {
+          "name": "三重2区",
+          "numElected": 3,
+          "electedVotes": 248797,
+          "deadVotes": 80039,
+          "totalVotes": 328836,
+          "deadVoteRate": 0.2434
+        }
+      ],
+      "totalVotes": 1023822,
+      "electedVotes": 816731,
+      "deadVotes": 207091,
+      "deadVoteRate": 0.2023
+    },
+    "滋賀県": {
+      "districts": [
+        {
+          "name": "滋賀県(全県1区)",
+          "numElected": 5,
+          "electedVotes": 546020,
+          "deadVotes": 106056,
+          "totalVotes": 652076,
+          "deadVoteRate": 0.1626
+        }
+      ],
+      "totalVotes": 652076,
+      "electedVotes": 546020,
+      "deadVotes": 106056,
+      "deadVoteRate": 0.1626
+    },
+    "京都府": {
+      "districts": [
+        {
+          "name": "京都1区",
+          "numElected": 5,
+          "electedVotes": 288416,
+          "deadVotes": 94167,
+          "totalVotes": 382583,
+          "deadVoteRate": 0.2461
+        },
+        {
+          "name": "京都2区",
+          "numElected": 5,
+          "electedVotes": 637403,
+          "deadVotes": 203981,
+          "totalVotes": 841384,
+          "deadVoteRate": 0.2424
+        }
+      ],
+      "totalVotes": 1223967,
+      "electedVotes": 925819,
+      "deadVotes": 298148,
+      "deadVoteRate": 0.2436
+    },
+    "大阪府": {
+      "districts": [
+        {
+          "name": "大阪1区",
+          "numElected": 3,
+          "electedVotes": 234797,
+          "deadVotes": 77967,
+          "totalVotes": 312764,
+          "deadVoteRate": 0.2493
+        },
+        {
+          "name": "大阪2区",
+          "numElected": 5,
+          "electedVotes": 463151,
+          "deadVotes": 69240,
+          "totalVotes": 532391,
+          "deadVoteRate": 0.1301
+        },
+        {
+          "name": "大阪3区",
+          "numElected": 5,
+          "electedVotes": 664705,
+          "deadVotes": 148454,
+          "totalVotes": 813159,
+          "deadVoteRate": 0.1826
+        },
+        {
+          "name": "大阪4区",
+          "numElected": 4,
+          "electedVotes": 517354,
+          "deadVotes": 206739,
+          "totalVotes": 724093,
+          "deadVoteRate": 0.2855
+        },
+        {
+          "name": "大阪5区",
+          "numElected": 5,
+          "electedVotes": 629438,
+          "deadVotes": 115428,
+          "totalVotes": 744866,
+          "deadVoteRate": 0.155
+        },
+        {
+          "name": "大阪6区",
+          "numElected": 3,
+          "electedVotes": 231390.0,
+          "deadVotes": 99425.79,
+          "totalVotes": 330815.79,
+          "deadVoteRate": 0.3005
+        },
+        {
+          "name": "大阪7区",
+          "numElected": 3,
+          "electedVotes": 347370.93,
+          "deadVotes": 220958.07,
+          "totalVotes": 568328.9999999999,
+          "deadVoteRate": 0.3888
+        }
+      ],
+      "totalVotes": 4026417.79,
+      "electedVotes": 3088205.93,
+      "deadVotes": 938211.86,
+      "deadVoteRate": 0.233
+    },
+    "兵庫県": {
+      "districts": [
+        {
+          "name": "兵庫1区",
+          "numElected": 5,
+          "electedVotes": 452307,
+          "deadVotes": 237618,
+          "totalVotes": 689925,
+          "deadVoteRate": 0.3444
+        },
+        {
+          "name": "兵庫2区",
+          "numElected": 5,
+          "electedVotes": 720203,
+          "deadVotes": 182177,
+          "totalVotes": 902380,
+          "deadVoteRate": 0.2019
+        },
+        {
+          "name": "兵庫3区",
+          "numElected": 3,
+          "electedVotes": 326615,
+          "deadVotes": 112942.98999999999,
+          "totalVotes": 439557.99,
+          "deadVoteRate": 0.2569
+        },
+        {
+          "name": "兵庫4区",
+          "numElected": 4,
+          "electedVotes": 291142.95,
+          "deadVotes": 167831.03,
+          "totalVotes": 458973.98,
+          "deadVoteRate": 0.3657
+        },
+        {
+          "name": "兵庫5区",
+          "numElected": 2,
+          "electedVotes": 136553,
+          "deadVotes": 55394,
+          "totalVotes": 191947,
+          "deadVoteRate": 0.2886
+        }
+      ],
+      "totalVotes": 2682783.97,
+      "electedVotes": 1926820.95,
+      "deadVotes": 755963.02,
+      "deadVoteRate": 0.2818
+    },
+    "奈良県": {
+      "districts": [
+        {
+          "name": "奈良県(全県1区)",
+          "numElected": 5,
+          "electedVotes": 548645,
+          "deadVotes": 193854,
+          "totalVotes": 742499,
+          "deadVoteRate": 0.2611
+        }
+      ],
+      "totalVotes": 742499,
+      "electedVotes": 548645,
+      "deadVotes": 193854,
+      "deadVoteRate": 0.2611
+    },
+    "和歌山県": {
+      "districts": [
+        {
+          "name": "和歌山1区",
+          "numElected": 3,
+          "electedVotes": 232058,
+          "deadVotes": 117082,
+          "totalVotes": 349140,
+          "deadVoteRate": 0.3353
+        },
+        {
+          "name": "和歌山2区",
+          "numElected": 2,
+          "electedVotes": 187335,
+          "deadVotes": 83900,
+          "totalVotes": 271235,
+          "deadVoteRate": 0.3093
+        }
+      ],
+      "totalVotes": 620375,
+      "electedVotes": 419393,
+      "deadVotes": 200982,
+      "deadVoteRate": 0.324
+    },
+    "鳥取県": {
+      "districts": [
+        {
+          "name": "鳥取県(全県1区)",
+          "numElected": 4,
+          "electedVotes": 314823,
+          "deadVotes": 24579,
+          "totalVotes": 339402,
+          "deadVoteRate": 0.0724
+        }
+      ],
+      "totalVotes": 339402,
+      "electedVotes": 314823,
+      "deadVotes": 24579,
+      "deadVoteRate": 0.0724
+    },
+    "島根県": {
+      "districts": [
+        {
+          "name": "島根県(全県1区)",
+          "numElected": 5,
+          "electedVotes": 368477,
+          "deadVotes": 115771,
+          "totalVotes": 484248,
+          "deadVoteRate": 0.2391
+        }
+      ],
+      "totalVotes": 484248,
+      "electedVotes": 368477,
+      "deadVotes": 115771,
+      "deadVoteRate": 0.2391
+    },
+    "岡山県": {
+      "districts": [
+        {
+          "name": "岡山1区",
+          "numElected": 5,
+          "electedVotes": 422126,
+          "deadVotes": 84234,
+          "totalVotes": 506360,
+          "deadVoteRate": 0.1664
+        },
+        {
+          "name": "岡山2区",
+          "numElected": 5,
+          "electedVotes": 452024,
+          "deadVotes": 79061,
+          "totalVotes": 531085,
+          "deadVoteRate": 0.1489
+        }
+      ],
+      "totalVotes": 1037445,
+      "electedVotes": 874150,
+      "deadVotes": 163295,
+      "deadVoteRate": 0.1574
+    },
+    "広島県": {
+      "districts": [
+        {
+          "name": "広島1区",
+          "numElected": 4,
+          "electedVotes": 428468,
+          "deadVotes": 179876,
+          "totalVotes": 608344,
+          "deadVoteRate": 0.2957
+        },
+        {
+          "name": "広島2区",
+          "numElected": 4,
+          "electedVotes": 314732,
+          "deadVotes": 74121,
+          "totalVotes": 388853,
+          "deadVoteRate": 0.1906
+        },
+        {
+          "name": "広島3区",
+          "numElected": 5,
+          "electedVotes": 423489,
+          "deadVotes": 72787,
+          "totalVotes": 496276,
+          "deadVoteRate": 0.1467
+        }
+      ],
+      "totalVotes": 1493473,
+      "electedVotes": 1166689,
+      "deadVotes": 326784,
+      "deadVoteRate": 0.2188
+    },
+    "山口県": {
+      "districts": [
+        {
+          "name": "山口1区",
+          "numElected": 4,
+          "electedVotes": 279878,
+          "deadVotes": 123698,
+          "totalVotes": 403576,
+          "deadVoteRate": 0.3065
+        },
+        {
+          "name": "山口2区",
+          "numElected": 5,
+          "electedVotes": 398684,
+          "deadVotes": 80306,
+          "totalVotes": 478990,
+          "deadVoteRate": 0.1677
+        }
+      ],
+      "totalVotes": 882566,
+      "electedVotes": 678562,
+      "deadVotes": 204004,
+      "deadVoteRate": 0.2311
+    },
+    "徳島県": {
+      "districts": [
+        {
+          "name": "徳島県(全県1区)",
+          "numElected": 5,
+          "electedVotes": 318935,
+          "deadVotes": 124033,
+          "totalVotes": 442968,
+          "deadVoteRate": 0.28
+        }
+      ],
+      "totalVotes": 442968,
+      "electedVotes": 318935,
+      "deadVotes": 124033,
+      "deadVoteRate": 0.28
+    },
+    "香川県": {
+      "districts": [
+        {
+          "name": "香川1区",
+          "numElected": 3,
+          "electedVotes": 205671,
+          "deadVotes": 66832,
+          "totalVotes": 272503,
+          "deadVoteRate": 0.2453
+        },
+        {
+          "name": "香川2区",
+          "numElected": 3,
+          "electedVotes": 206198.03999999998,
+          "deadVotes": 53304.95,
+          "totalVotes": 259502.99,
+          "deadVoteRate": 0.2054
+        }
+      ],
+      "totalVotes": 532005.99,
+      "electedVotes": 411869.04,
+      "deadVotes": 120136.95,
+      "deadVoteRate": 0.2258
+    },
+    "愛媛県": {
+      "districts": [
+        {
+          "name": "愛媛1区",
+          "numElected": 3,
+          "electedVotes": 201397,
+          "deadVotes": 62706,
+          "totalVotes": 264103,
+          "deadVoteRate": 0.2374
+        },
+        {
+          "name": "愛媛2区",
+          "numElected": 3,
+          "electedVotes": 221695,
+          "deadVotes": 76768,
+          "totalVotes": 298463,
+          "deadVoteRate": 0.2572
+        },
+        {
+          "name": "愛媛3区",
+          "numElected": 3,
+          "electedVotes": 199853,
+          "deadVotes": 57446,
+          "totalVotes": 257299,
+          "deadVoteRate": 0.2233
+        }
+      ],
+      "totalVotes": 819865,
+      "electedVotes": 622945,
+      "deadVotes": 196920,
+      "deadVoteRate": 0.2402
+    },
+    "高知県": {
+      "districts": [
+        {
+          "name": "高知県(全県1区)",
+          "numElected": 5,
+          "electedVotes": 318227,
+          "deadVotes": 124341,
+          "totalVotes": 442568,
+          "deadVoteRate": 0.281
+        }
+      ],
+      "totalVotes": 442568,
+      "electedVotes": 318227,
+      "deadVotes": 124341,
+      "deadVoteRate": 0.281
+    },
+    "福岡県": {
+      "districts": [
+        {
+          "name": "福岡1区",
+          "numElected": 6,
+          "electedVotes": 894156.97,
+          "deadVotes": 72472,
+          "totalVotes": 966628.97,
+          "deadVoteRate": 0.075
+        },
+        {
+          "name": "福岡2区",
+          "numElected": 5,
+          "electedVotes": 459956,
+          "deadVotes": 64652,
+          "totalVotes": 524608,
+          "deadVoteRate": 0.1232
+        },
+        {
+          "name": "福岡3区",
+          "numElected": 5,
+          "electedVotes": 378083.94,
+          "deadVotes": 89846,
+          "totalVotes": 467929.94,
+          "deadVoteRate": 0.192
+        },
+        {
+          "name": "福岡4区",
+          "numElected": 4,
+          "electedVotes": 324411,
+          "deadVotes": 112383,
+          "totalVotes": 436794,
+          "deadVoteRate": 0.2573
+        }
+      ],
+      "totalVotes": 2395960.91,
+      "electedVotes": 2056607.91,
+      "deadVotes": 339353,
+      "deadVoteRate": 0.1416
+    },
+    "佐賀県": {
+      "districts": [
+        {
+          "name": "佐賀県(全県1区)",
+          "numElected": 5,
+          "electedVotes": 379986,
+          "deadVotes": 120186,
+          "totalVotes": 500172,
+          "deadVoteRate": 0.2403
+        }
+      ],
+      "totalVotes": 500172,
+      "electedVotes": 379986,
+      "deadVotes": 120186,
+      "deadVoteRate": 0.2403
+    },
+    "長崎県": {
+      "districts": [
+        {
+          "name": "長崎1区",
+          "numElected": 5,
+          "electedVotes": 394419,
+          "deadVotes": 80363,
+          "totalVotes": 474782,
+          "deadVoteRate": 0.1693
+        },
+        {
+          "name": "長崎2区",
+          "numElected": 4,
+          "electedVotes": 249092,
+          "deadVotes": 105757,
+          "totalVotes": 354849,
+          "deadVoteRate": 0.298
+        }
+      ],
+      "totalVotes": 829631,
+      "electedVotes": 643511,
+      "deadVotes": 186120,
+      "deadVoteRate": 0.2243
+    },
+    "熊本県": {
+      "districts": [
+        {
+          "name": "熊本1区",
+          "numElected": 5,
+          "electedVotes": 535636.4199999999,
+          "deadVotes": 102430.54000000001,
+          "totalVotes": 638066.96,
+          "deadVoteRate": 0.1605
+        },
+        {
+          "name": "熊本2区",
+          "numElected": 4,
+          "electedVotes": 353780,
+          "deadVotes": 72023,
+          "totalVotes": 425803,
+          "deadVoteRate": 0.1691
+        }
+      ],
+      "totalVotes": 1063869.96,
+      "electedVotes": 889416.42,
+      "deadVotes": 174453.54,
+      "deadVoteRate": 0.164
+    },
+    "大分県": {
+      "districts": [
+        {
+          "name": "大分1区",
+          "numElected": 4,
+          "electedVotes": 381208.97,
+          "deadVotes": 65098,
+          "totalVotes": 446306.97,
+          "deadVoteRate": 0.1459
+        },
+        {
+          "name": "大分2区",
+          "numElected": 2,
+          "electedVotes": 168029,
+          "deadVotes": 88269,
+          "totalVotes": 256298,
+          "deadVoteRate": 0.3444
+        }
+      ],
+      "totalVotes": 702604.97,
+      "electedVotes": 549237.97,
+      "deadVotes": 153367,
+      "deadVoteRate": 0.2183
+    },
+    "宮崎県": {
+      "districts": [
+        {
+          "name": "宮崎1区",
+          "numElected": 3,
+          "electedVotes": 325000,
+          "deadVotes": 87452,
+          "totalVotes": 412452,
+          "deadVoteRate": 0.212
+        },
+        {
+          "name": "宮崎2区",
+          "numElected": 2,
+          "electedVotes": 145795,
+          "deadVotes": 108475,
+          "totalVotes": 254270,
+          "deadVoteRate": 0.4266
+        }
+      ],
+      "totalVotes": 666722,
+      "electedVotes": 470795,
+      "deadVotes": 195927,
+      "deadVoteRate": 0.2939
+    },
+    "鹿児島県": {
+      "districts": [
+        {
+          "name": "鹿児島1区",
+          "numElected": 4,
+          "electedVotes": 316833,
+          "deadVotes": 191814,
+          "totalVotes": 508647,
+          "deadVoteRate": 0.3771
+        },
+        {
+          "name": "鹿児島2区",
+          "numElected": 3,
+          "electedVotes": 209937,
+          "deadVotes": 53429,
+          "totalVotes": 263366,
+          "deadVoteRate": 0.2029
+        },
+        {
+          "name": "鹿児島3区",
+          "numElected": 2,
+          "electedVotes": 142972,
+          "deadVotes": 61203,
+          "totalVotes": 204175,
+          "deadVoteRate": 0.2998
+        }
+      ],
+      "totalVotes": 976188,
+      "electedVotes": 669742,
+      "deadVotes": 306446,
+      "deadVoteRate": 0.3139
+    },
+    "沖縄県": {
+      "districts": [
+        {
+          "name": "沖縄県(全県1区)",
+          "numElected": 5,
+          "electedVotes": 489191,
+          "deadVotes": 118188,
+          "totalVotes": 607379,
+          "deadVoteRate": 0.1946
+        }
+      ],
+      "totalVotes": 607379,
+      "electedVotes": 489191,
+      "deadVotes": 118188,
+      "deadVoteRate": 0.1946
+    }
+  },
+  "totalVotes": 62804152.45,
+  "electedVotes": 47331258.22,
+  "deadVotes": 15472894.23,
+  "deadVoteRate": 0.2464
+}

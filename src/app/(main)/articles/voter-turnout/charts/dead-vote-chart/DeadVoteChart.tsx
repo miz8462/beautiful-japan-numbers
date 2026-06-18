@@ -2,6 +2,7 @@
 
 import { ArticleSource } from "@/components/article/article-source/ArticleSource";
 import deadVoteData from "@/data/dead-votes-2026.json";
+import deadVoteData1993 from "@/data/dead-votes-1993.json";
 import { ResponsiveWaffle } from "@nivo/waffle";
 import styles from "./DeadVoteChart.module.css";
 
@@ -41,13 +42,7 @@ function buildData(deadRate: number): WaffleDatum[] {
   ];
 }
 
-function WaffleBlock({
-  title,
-  deadRate,
-}: {
-  title: string;
-  deadRate: number;
-}) {
+function WaffleBlock({ title, deadRate }: { title: string; deadRate: number }) {
   const data = buildData(deadRate);
 
   return (
@@ -67,9 +62,7 @@ function WaffleBlock({
           motionStagger={1}
           isInteractive={false}
         />
-        <div className={styles.centerLabel}>
-          {(deadRate * 100).toFixed(1)}%
-        </div>
+        <div className={styles.centerLabel}>{(deadRate * 100).toFixed(1)}%</div>
       </div>
     </div>
   );
@@ -77,21 +70,17 @@ function WaffleBlock({
 
 export default function DeadVoteChart() {
   const { singleMemberDistrict, proportional } = deadVoteData;
+  const multiMemberDistrict = deadVoteData1993;
 
   const smdRate = singleMemberDistrict.deadVoteRate;
   const propRate = proportional.deadVoteRate;
+  const mmdRate = multiMemberDistrict.deadVoteRate;
 
   return (
     <div className={styles.container}>
       <div className={styles.charts}>
-        <WaffleBlock
-          title="小選挙区"
-          deadRate={smdRate}
-        />
-        <WaffleBlock
-          title="比例代表"
-          deadRate={propRate}
-        />
+        <WaffleBlock title="小選挙区" deadRate={smdRate} />
+        <WaffleBlock title="比例代表" deadRate={propRate} />
       </div>
 
       <div className={styles.legend}>
@@ -112,18 +101,19 @@ export default function DeadVoteChart() {
       </div>
       <div className={styles.referenceBlock}>
         <div className={styles.referenceNote}>
-          <p className="text-secondary">参考：93年、中選挙区時代{" "}
+          <p className="text-secondary" style={{ fontSize: 18 }}>
+            参考：93年、中選挙区時代{" "}
             <span className={styles.notice}>
               ※中選挙区では一選挙区あたり3−5人当選する
             </span>
           </p>
-          <ArticleSource href="https://go2senkyo.com/shugiin/17789" label="出典：選挙ドットコム 第40回衆議院議員選挙" />
+          <ArticleSource
+            href="https://go2senkyo.com/shugiin/17789"
+            label="出典：選挙ドットコム 第40回衆議院議員選挙"
+          />
         </div>
         <div className={styles.singleChartWrap}>
-          <WaffleBlock
-            title="中選挙区"
-            deadRate={0.247}
-          />
+          <WaffleBlock title="中選挙区" deadRate={mmdRate} />
         </div>
       </div>
     </div>

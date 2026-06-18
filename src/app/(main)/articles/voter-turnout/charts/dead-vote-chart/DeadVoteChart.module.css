@@ -17,7 +17,7 @@
   margin: 0;
 }
 
-.referenceNote p+p {
+.referenceNote p + p {
   margin-top: 4px;
 }
 
@@ -68,7 +68,6 @@
   min-width: 0;
 }
 
-
 .centerLabel {
   position: absolute;
   inset: 0;
@@ -86,7 +85,9 @@
   font-size: 20px;
   font-weight: 700;
   color: var(--color-text-secondary);
-  font-feature-settings: "tnum" 1, "lnum" 1;
+  font-feature-settings:
+    "tnum" 1,
+    "lnum" 1;
   font-variant-numeric: tabular-nums lining-nums;
 }
 
