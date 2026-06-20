@@ -1,0 +1,602 @@
+{
+    "metadata": {
+        "source": "総務省「衆議院議員総選挙・最高裁判所裁判官国民審査結果調」各回",
+        "notes": {
+            "age": "第23〜49回は小選挙区＋比例代表の計。第50・51回は小選挙区のみ（比例代表の年齢別データ未公表）。",
+            "female": "第22〜51回。第41回以降は小選挙区・比例代表の合計値。",
+            "age_brackets": "25〜29歳 / 30〜39歳 / 40〜49歳 / 50〜59歳 / 60〜69歳 / 70歳以上"
+        }
+    },
+    "female": [
+        {
+            "election": 22,
+            "year": 1946,
+            "female_candidates": 79,
+            "female_winners": 39,
+            "total_winners": 464,
+            "win_rate": 49.4
+        },
+        {
+            "election": 23,
+            "year": 1947,
+            "female_candidates": 85,
+            "female_winners": 15,
+            "total_winners": 466,
+            "win_rate": 17.6
+        },
+        {
+            "election": 24,
+            "year": 1949,
+            "female_candidates": 44,
+            "female_winners": 12,
+            "total_winners": 466,
+            "win_rate": 27.3
+        },
+        {
+            "election": 25,
+            "year": 1952,
+            "female_candidates": 24,
+            "female_winners": 9,
+            "total_winners": 466,
+            "win_rate": 37.5
+        },
+        {
+            "election": 26,
+            "year": 1953,
+            "female_candidates": 22,
+            "female_winners": 9,
+            "total_winners": 466,
+            "win_rate": 40.9
+        },
+        {
+            "election": 27,
+            "year": 1955,
+            "female_candidates": 23,
+            "female_winners": 8,
+            "total_winners": 467,
+            "win_rate": 34.8
+        },
+        {
+            "election": 28,
+            "year": 1958,
+            "female_candidates": 19,
+            "female_winners": 11,
+            "total_winners": 467,
+            "win_rate": 57.9
+        },
+        {
+            "election": 29,
+            "year": 1960,
+            "female_candidates": 21,
+            "female_winners": 7,
+            "total_winners": 467,
+            "win_rate": 33.3
+        },
+        {
+            "election": 30,
+            "year": 1963,
+            "female_candidates": 18,
+            "female_winners": 7,
+            "total_winners": 467,
+            "win_rate": 38.9
+        },
+        {
+            "election": 31,
+            "year": 1967,
+            "female_candidates": 15,
+            "female_winners": 7,
+            "total_winners": 486,
+            "win_rate": 46.7
+        },
+        {
+            "election": 32,
+            "year": 1969,
+            "female_candidates": 21,
+            "female_winners": 8,
+            "total_winners": 486,
+            "win_rate": 38.1
+        },
+        {
+            "election": 33,
+            "year": 1972,
+            "female_candidates": 20,
+            "female_winners": 7,
+            "total_winners": 491,
+            "win_rate": 35.0
+        },
+        {
+            "election": 34,
+            "year": 1976,
+            "female_candidates": 25,
+            "female_winners": 6,
+            "total_winners": 511,
+            "win_rate": 24.0
+        },
+        {
+            "election": 35,
+            "year": 1979,
+            "female_candidates": 23,
+            "female_winners": 11,
+            "total_winners": 511,
+            "win_rate": 47.8
+        },
+        {
+            "election": 36,
+            "year": 1980,
+            "female_candidates": 28,
+            "female_winners": 9,
+            "total_winners": 511,
+            "win_rate": 32.1
+        },
+        {
+            "election": 37,
+            "year": 1983,
+            "female_candidates": 28,
+            "female_winners": 8,
+            "total_winners": 511,
+            "win_rate": 28.6
+        },
+        {
+            "election": 38,
+            "year": 1986,
+            "female_candidates": 35,
+            "female_winners": 7,
+            "total_winners": 512,
+            "win_rate": 20.0
+        },
+        {
+            "election": 39,
+            "year": 1990,
+            "female_candidates": 66,
+            "female_winners": 12,
+            "total_winners": 512,
+            "win_rate": 18.2
+        },
+        {
+            "election": 40,
+            "year": 1993,
+            "female_candidates": 70,
+            "female_winners": 14,
+            "total_winners": 511,
+            "win_rate": 20.0
+        },
+        {
+            "election": 41,
+            "year": 1996,
+            "female_candidates": 153,
+            "female_winners": 23,
+            "total_winners": 500,
+            "win_rate": 15.0
+        },
+        {
+            "election": 42,
+            "year": 2000,
+            "female_candidates": 202,
+            "female_winners": 35,
+            "total_winners": 480,
+            "win_rate": 17.3
+        },
+        {
+            "election": 43,
+            "year": 2003,
+            "female_candidates": 149,
+            "female_winners": 34,
+            "total_winners": 480,
+            "win_rate": 22.8
+        },
+        {
+            "election": 44,
+            "year": 2005,
+            "female_candidates": 147,
+            "female_winners": 43,
+            "total_winners": 480,
+            "win_rate": 29.3
+        },
+        {
+            "election": 45,
+            "year": 2009,
+            "female_candidates": 229,
+            "female_winners": 54,
+            "total_winners": 480,
+            "win_rate": 23.6
+        },
+        {
+            "election": 46,
+            "year": 2012,
+            "female_candidates": 225,
+            "female_winners": 38,
+            "total_winners": 480,
+            "win_rate": 16.9
+        },
+        {
+            "election": 47,
+            "year": 2014,
+            "female_candidates": 198,
+            "female_winners": 45,
+            "total_winners": 475,
+            "win_rate": 22.7
+        },
+        {
+            "election": 48,
+            "year": 2017,
+            "female_candidates": 210,
+            "female_winners": 47,
+            "total_winners": 465,
+            "win_rate": 22.4
+        },
+        {
+            "election": 49,
+            "year": 2021,
+            "female_candidates": 186,
+            "female_winners": 45,
+            "total_winners": 465,
+            "win_rate": 24.2
+        },
+        {
+            "election": 50,
+            "year": 2024,
+            "female_candidates": 314,
+            "female_winners": 73,
+            "total_winners": 465,
+            "win_rate": 23.2
+        },
+        {
+            "election": 51,
+            "year": 2026,
+            "female_candidates": 313,
+            "female_winners": 68,
+            "total_winners": 465,
+            "win_rate": 21.7
+        }
+    ],
+    "age": [
+        {
+            "election": 23,
+            "year": 1947,
+            "scope": "total",
+            "u30": 3,
+            "30s": 64,
+            "40s": 168,
+            "50s": 173,
+            "60s": 47,
+            "o70": 11,
+            "total": 466
+        },
+        {
+            "election": 24,
+            "year": 1949,
+            "scope": "total",
+            "u30": 1,
+            "30s": 59,
+            "40s": 178,
+            "50s": 159,
+            "60s": 59,
+            "o70": 10,
+            "total": 466
+        },
+        {
+            "election": 25,
+            "year": 1952,
+            "scope": "total",
+            "u30": 1,
+            "30s": 28,
+            "40s": 151,
+            "50s": 193,
+            "60s": 79,
+            "o70": 14,
+            "total": 466
+        },
+        {
+            "election": 26,
+            "year": 1953,
+            "scope": "total",
+            "u30": null,
+            "30s": 25,
+            "40s": 159,
+            "50s": 196,
+            "60s": 77,
+            "o70": 9,
+            "total": 466
+        },
+        {
+            "election": 27,
+            "year": 1955,
+            "scope": "total",
+            "u30": null,
+            "30s": 29,
+            "40s": 134,
+            "50s": 193,
+            "60s": 97,
+            "o70": 14,
+            "total": 467
+        },
+        {
+            "election": 28,
+            "year": 1958,
+            "scope": "total",
+            "u30": 1,
+            "30s": 18,
+            "40s": 128,
+            "50s": 201,
+            "60s": 93,
+            "o70": 26,
+            "total": 467
+        },
+        {
+            "election": 29,
+            "year": 1960,
+            "scope": "total",
+            "u30": 1,
+            "30s": 16,
+            "40s": 106,
+            "50s": 198,
+            "60s": 117,
+            "o70": 29,
+            "total": 467
+        },
+        {
+            "election": 30,
+            "year": 1963,
+            "scope": "total",
+            "u30": 4,
+            "30s": 13,
+            "40s": 91,
+            "50s": 196,
+            "60s": 129,
+            "o70": 34,
+            "total": 467
+        },
+        {
+            "election": 31,
+            "year": 1967,
+            "scope": "total",
+            "u30": 4,
+            "30s": 26,
+            "40s": 111,
+            "50s": 168,
+            "60s": 139,
+            "o70": 38,
+            "total": 486
+        },
+        {
+            "election": 32,
+            "year": 1969,
+            "scope": "total",
+            "u30": 4,
+            "30s": 39,
+            "40s": 107,
+            "50s": 160,
+            "60s": 135,
+            "o70": 41,
+            "total": 486
+        },
+        {
+            "election": 33,
+            "year": 1972,
+            "scope": "total",
+            "u30": 1,
+            "30s": 30,
+            "40s": 117,
+            "50s": 155,
+            "60s": 143,
+            "o70": 45,
+            "total": 491
+        },
+        {
+            "election": 34,
+            "year": 1976,
+            "scope": "total",
+            "u30": 3,
+            "30s": 37,
+            "40s": 113,
+            "50s": 193,
+            "60s": 123,
+            "o70": 42,
+            "total": 511
+        },
+        {
+            "election": 35,
+            "year": 1979,
+            "scope": "total",
+            "u30": 1,
+            "30s": 26,
+            "40s": 105,
+            "50s": 195,
+            "60s": 144,
+            "o70": 40,
+            "total": 511
+        },
+        {
+            "election": 36,
+            "year": 1980,
+            "scope": "total",
+            "u30": 1,
+            "30s": 35,
+            "40s": 97,
+            "50s": 196,
+            "60s": 137,
+            "o70": 45,
+            "total": 511
+        },
+        {
+            "election": 37,
+            "year": 1983,
+            "scope": "total",
+            "u30": null,
+            "30s": 28,
+            "40s": 104,
+            "50s": 210,
+            "60s": 117,
+            "o70": 52,
+            "total": 511
+        },
+        {
+            "election": 38,
+            "year": 1986,
+            "scope": "total",
+            "u30": 1,
+            "30s": 21,
+            "40s": 106,
+            "50s": 185,
+            "60s": 151,
+            "o70": 48,
+            "total": 512
+        },
+        {
+            "election": 39,
+            "year": 1990,
+            "scope": "total",
+            "u30": null,
+            "30s": 26,
+            "40s": 123,
+            "50s": 161,
+            "60s": 163,
+            "o70": 39,
+            "total": 512
+        },
+        {
+            "election": 40,
+            "year": 1993,
+            "scope": "total",
+            "u30": 5,
+            "30s": 47,
+            "40s": 134,
+            "50s": 158,
+            "60s": 132,
+            "o70": 35,
+            "total": 511
+        },
+        {
+            "election": 41,
+            "year": 1996,
+            "scope": "total",
+            "u30": null,
+            "30s": 53,
+            "40s": 112,
+            "50s": 168,
+            "60s": 118,
+            "o70": 49,
+            "total": 500
+        },
+        {
+            "election": 42,
+            "year": 2000,
+            "scope": "total",
+            "u30": 5,
+            "30s": 44,
+            "40s": 102,
+            "50s": 188,
+            "60s": 96,
+            "o70": 45,
+            "total": 480
+        },
+        {
+            "election": 43,
+            "year": 2003,
+            "scope": "total",
+            "u30": 5,
+            "30s": 54,
+            "40s": 112,
+            "50s": 169,
+            "60s": 119,
+            "o70": 21,
+            "total": 480
+        },
+        {
+            "election": 44,
+            "year": 2005,
+            "scope": "total",
+            "u30": 4,
+            "30s": 53,
+            "40s": 137,
+            "50s": 156,
+            "60s": 111,
+            "o70": 19,
+            "total": 480
+        },
+        {
+            "election": 45,
+            "year": 2009,
+            "scope": "total",
+            "u30": 4,
+            "30s": 74,
+            "40s": 126,
+            "50s": 131,
+            "60s": 123,
+            "o70": 22,
+            "total": 480
+        },
+        {
+            "election": 46,
+            "year": 2012,
+            "scope": "total",
+            "u30": 8,
+            "30s": 64,
+            "40s": 133,
+            "50s": 142,
+            "60s": 112,
+            "o70": 21,
+            "total": 480
+        },
+        {
+            "election": 47,
+            "year": 2014,
+            "scope": "total",
+            "u30": 1,
+            "30s": 52,
+            "40s": 131,
+            "50s": 152,
+            "60s": 110,
+            "o70": 29,
+            "total": 475
+        },
+        {
+            "election": 48,
+            "year": 2017,
+            "scope": "total",
+            "u30": null,
+            "30s": 33,
+            "40s": 125,
+            "50s": 154,
+            "60s": 114,
+            "o70": 39,
+            "total": 465
+        },
+        {
+            "election": 49,
+            "year": 2021,
+            "scope": "total",
+            "u30": 1,
+            "30s": 22,
+            "40s": 119,
+            "50s": 160,
+            "60s": 121,
+            "o70": 42,
+            "total": 465
+        },
+        {
+            "election": 50,
+            "year": 2024,
+            "scope": "smd_only",
+            "u30": 1,
+            "30s": 12,
+            "40s": 60,
+            "50s": 102,
+            "60s": 82,
+            "o70": 32,
+            "total": 289
+        },
+        {
+            "election": 51,
+            "year": 2026,
+            "scope": "smd_only",
+            "u30": 1,
+            "30s": 17,
+            "40s": 76,
+            "50s": 79,
+            "60s": 82,
+            "o70": 34,
+            "total": 289
+        }
+    ]
+}

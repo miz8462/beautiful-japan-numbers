@@ -2,7 +2,7 @@ import type { CSSProperties, ReactNode } from "react";
 import styles from "./ArticleChart.module.css";
 
 type ArticleChartProps = {
-  title: string;
+  title: ReactNode;
   source?: string;
   sourceUrl?: string;
   children: ReactNode;

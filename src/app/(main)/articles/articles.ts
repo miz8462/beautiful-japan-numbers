@@ -11,14 +11,9 @@ export type Domain =
   | "environment"
   | "time";
 
-export type Theme =
-  | "structure"
-  | "future"
-  | "participation"
-  | "stability";
+export type Theme = "structure" | "future" | "participation" | "stability";
 
 export type Tag = keyof typeof TAGS;
-
 
 // ======================
 // ② タグ定義（データ）
@@ -44,7 +39,6 @@ export const TAGS = {
   },
 } as const;
 
-
 // ======================
 // ③ 記事型
 // ======================
@@ -60,12 +54,23 @@ export type Article = {
   sourceLabel: string;
 };
 
-
 // ======================
 // ④ 記事データ
 // ======================
 
 export const articles: Article[] = [
+  {
+    href: "/articles/diet-members",
+    publishedAt: "2026-06-19",
+    label: "Diet members",
+    title: "国会議員の女性比率と年齢はどう変わった？",
+    description:
+      "衆議院議員選挙の当選者の年齢構成と女性議員比率・男女別の当選率の推移を整理し、国会の“姿”がどのように変化してきたのかを可視化します。",
+    tags: ["election"],
+    sourceUrl: "https://www.soumu.go.jp/senkyo/senkyo_s/data/index.html",
+    sourceLabel: "出典: 総務省「衆議院議員総選挙結果調」",
+  },
+
   {
     href: "/articles/voter-turnout",
     publishedAt: "2026-06-16",
@@ -86,7 +91,8 @@ export const articles: Article[] = [
     description:
       "歳入から歳出までの流れを追い、社会保障・防衛・公共事業など主要項目の構造をひも解きます。",
     tags: ["governmentSpending"],
-    sourceUrl: "https://www.mof.go.jp/policy/budget/reference/statistics/data.htm",
+    sourceUrl:
+      "https://www.mof.go.jp/policy/budget/reference/statistics/data.htm",
     sourceLabel: "出典: 財務省「予算・決算 統計表一覧」",
   },
 
@@ -102,7 +108,6 @@ export const articles: Article[] = [
     sourceLabel: "出典: 総務省統計局 人口推計",
   },
 ];
-
 
 // ======================
 // ⑤ ユーティリティ

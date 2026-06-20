@@ -374,7 +374,7 @@ Spacing Scale:
 
 # 7. Data Visualization Principles
 
-* 装飾より比較可能性を優先
+* 装飾より比較可能性を優
 * 3D表現禁止
 * グラデーション多用禁止
 * 円グラフは最小限
@@ -382,6 +382,8 @@ Spacing Scale:
 * 単位・出典を必須表示
 * 色だけで情報を区別しない
 * アニメーションは意味がある場合、または操作状態のフィードバックに限る
+* 折れ線グラフのポイントは非表示（pointSize: 0）
+* 折れ線グラフのシリーズラベルはチャート内の線の右端に直接表示し、凡例（legend）は使わない
 
 ---
 
@@ -451,6 +453,10 @@ Spacing Scale:
 * kpicard.tsx
 * kpiCard.tsx
 * CSS Modules
+
+## Styling
+
+* スタイルはCSS Modulesで記述し、グローバルスタイルは globals.css の :root 変数とベーススタイルのみに限定する
 
 ## CSS Module ファイル名は対応するコンポーネント名と一致させる。
 
