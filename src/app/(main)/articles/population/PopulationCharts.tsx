@@ -22,21 +22,27 @@ export default function PopulationCharts() {
 
       <ArticleChart
         title="2008年をピークに、日本の総人口は減少し続けている"
+        source="出典: 総務省統計局 人口推計"
+        sourceUrl="https://www.stat.go.jp/data/jinsui/2.html"
       >
         <TotalPopChart />
       </ArticleChart>
 
       <ArticleChart
         title="2007年以降、死亡数が出生数を上回り続けている"
+        source="出典: 総務省統計局 人口推計"
+        sourceUrl="https://www.stat.go.jp/data/jinsui/2.html"
       >
         <BirthDeathChart />
       </ArticleChart>
 
       <ArticleChart
         title="人口変化は、自然減を社会増が一部補う構図が続く"
+        source="出典: 総務省統計局 人口推計"
+        sourceUrl="https://www.stat.go.jp/data/jinsui/2.html"
       >
         <NaturalSocialChart />
       </ArticleChart>
-    </div>
+    </div >
   );
 }

@@ -15,7 +15,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
 export default async function TopicPage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
   const tag = slug as Tag;
-  const label = TAGS[tag].label;
+  const label = TAGS[tag];
   const filtered = articles.filter((a) => a.tags.includes(tag));
 
   return (

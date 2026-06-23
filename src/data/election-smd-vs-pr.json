@@ -1,0 +1,16 @@
+{
+  "note": "民主系：1996年旧民主党、2000-2014年民主党、2017年立憲民主党+希望の党合算、2021-2024年立憲民主党、2026年中道改革連合。pr_rateは比例代表の全国総得票率（%）、smd_rateは小選挙区の総定数に対する当選割合（%）。",
+  "elections": [
+    { "year": 1996, "jimin": { "smd_rate": 56.33, "pr_rate": 32.76 }, "minshu": { "smd_rate":  5.67, "pr_rate": 16.10 } },
+    { "year": 2000, "jimin": { "smd_rate": 59.00, "pr_rate": 28.31 }, "minshu": { "smd_rate": 26.67, "pr_rate": 25.18 } },
+    { "year": 2003, "jimin": { "smd_rate": 56.00, "pr_rate": 34.96 }, "minshu": { "smd_rate": 35.00, "pr_rate": 37.39 } },
+    { "year": 2005, "jimin": { "smd_rate": 73.00, "pr_rate": 38.16 }, "minshu": { "smd_rate": 17.33, "pr_rate": 31.02 } },
+    { "year": 2009, "jimin": { "smd_rate": 21.33, "pr_rate": 26.73 }, "minshu": { "smd_rate": 73.67, "pr_rate": 42.41 } },
+    { "year": 2012, "jimin": { "smd_rate": 79.00, "pr_rate": 27.62 }, "minshu": { "smd_rate":  9.00, "pr_rate": 16.00 } },
+    { "year": 2014, "jimin": { "smd_rate": 75.60, "pr_rate": 33.11 }, "minshu": { "smd_rate": 12.88, "pr_rate": 18.33 } },
+    { "year": 2017, "jimin": { "smd_rate": 75.43, "pr_rate": 33.28 }, "minshu": { "smd_rate": 12.46, "pr_rate": 37.24 } },
+    { "year": 2021, "jimin": { "smd_rate": 65.40, "pr_rate": 34.66 }, "minshu": { "smd_rate": 19.72, "pr_rate": 20.00 } },
+    { "year": 2024, "jimin": { "smd_rate": 45.67, "pr_rate": 26.73 }, "minshu": { "smd_rate": 35.99, "pr_rate": 21.06 } },
+    { "year": 2026, "jimin": { "smd_rate": 86.16, "pr_rate": 36.72 }, "minshu": { "smd_rate":  2.42, "pr_rate": 18.23 } }
+  ]
+}

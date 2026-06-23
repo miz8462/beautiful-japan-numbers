@@ -281,8 +281,6 @@ transition: box-shadow 200ms ease, transform 200ms ease;
 2. Source
 3. Chart
 
-Source がページヘッダー側にある場合、チャート直前の Source は省略されることがある。
-
 ### Example
 
 ```txt
@@ -384,6 +382,7 @@ Spacing Scale:
 * アニメーションは意味がある場合、または操作状態のフィードバックに限る
 * 折れ線グラフのポイントは非表示（pointSize: 0）
 * 折れ線グラフのシリーズラベルはチャート内の線の右端に直接表示し、凡例（legend）は使わない
+* 利用ライブラリはNivo
 
 ---
 

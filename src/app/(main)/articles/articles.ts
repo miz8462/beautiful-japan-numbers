@@ -1,46 +1,18 @@
 // ======================
-// ① 設計レイヤー（固定）
+// タグ定義（データ）
 // ======================
 
-export type Domain =
-  | "politics"
-  | "society"
-  | "information"
-  | "system"
-  | "economy"
-  | "environment"
-  | "time";
-
-export type Theme = "structure" | "future" | "participation" | "stability";
+export const TAGS = {
+  politics: "政治",
+  economy: "経済",
+  society: "社会",
+  environment: "環境",
+} as const;
 
 export type Tag = keyof typeof TAGS;
 
 // ======================
-// ② タグ定義（データ）
-// ======================
-
-export const TAGS = {
-  population: {
-    label: "人口",
-    domain: ["society"] as Domain[],
-    theme: ["future"] as Theme[],
-  },
-
-  governmentSpending: {
-    label: "財政",
-    domain: ["politics", "economy"] as Domain[],
-    theme: ["structure"] as Theme[],
-  },
-
-  election: {
-    label: "選挙",
-    domain: ["politics"] as Domain[],
-    theme: ["participation"] as Theme[],
-  },
-} as const;
-
-// ======================
-// ③ 記事型
+// 記事型
 // ======================
 
 export type Article = {
@@ -55,10 +27,22 @@ export type Article = {
 };
 
 // ======================
-// ④ 記事データ
+// 記事データ
 // ======================
 
 export const articles: Article[] = [
+  {
+    href: "/articles/election-smd-vs-pr",
+    publishedAt: "2026-06-23",
+    label: "Election system",
+    title: "比例での政党への投票率は小選挙区での結果にどれほど反映されているか？",
+    description:
+      "衆議院選挙において小選挙区の獲得議席割合と比例代表の得票率がどれほど乖離しているかを、自民党と民主・立憲系それぞれの推移を通じて可視化します。",
+    tags: ["politics"],
+    sourceUrl: "https://www.soumu.go.jp/senkyo/senkyo_s/data/index.html",
+    sourceLabel: "出典: 総務省「衆議院議員総選挙結果調」",
+  },
+
   {
     href: "/articles/diet-members",
     publishedAt: "2026-06-19",
@@ -66,7 +50,7 @@ export const articles: Article[] = [
     title: "国会議員の女性比率と年齢はどう変わった？",
     description:
       "衆議院議員選挙の当選者の年齢構成と女性議員比率・男女別の当選率の推移を整理し、国会の“姿”がどのように変化してきたのかを可視化します。",
-    tags: ["election"],
+    tags: ["politics"],
     sourceUrl: "https://www.soumu.go.jp/senkyo/senkyo_s/data/index.html",
     sourceLabel: "出典: 総務省「衆議院議員総選挙結果調」",
   },
@@ -78,7 +62,7 @@ export const articles: Article[] = [
     title: "選挙の投票率ってどれくらい？",
     description:
       "衆議院選挙の投票率を全体・年代別に整理し、どこで“投票が失われているのか”を可視化します。",
-    tags: ["election"],
+    tags: ["politics"],
     sourceUrl: "https://www.soumu.go.jp/senkyo/senkyo_s/data/index.html",
     sourceLabel: "出典: 総務省 選挙関連資料",
   },
@@ -90,7 +74,7 @@ export const articles: Article[] = [
     title: "税金はどこへ消えているのか？",
     description:
       "歳入から歳出までの流れを追い、社会保障・防衛・公共事業など主要項目の構造をひも解きます。",
-    tags: ["governmentSpending"],
+    tags: ["politics", "economy"],
     sourceUrl:
       "https://www.mof.go.jp/policy/budget/reference/statistics/data.htm",
     sourceLabel: "出典: 財務省「予算・決算 統計表一覧」",
@@ -103,14 +87,14 @@ export const articles: Article[] = [
     title: "人口はどれだけ減ってるの？",
     description:
       "総人口・出生・死亡・国際移動の変化を並べ、人口減少の“中身”を分解して見ていきます。",
-    tags: ["population"],
+    tags: ["society"],
     sourceUrl: "https://www.stat.go.jp/data/jinsui/2.html",
     sourceLabel: "出典: 総務省統計局 人口推計",
   },
 ];
 
 // ======================
-// ⑤ ユーティリティ
+// ユーティリティ
 // ======================
 
 export function getArticleBySlug(slug: string) {

@@ -9,7 +9,7 @@ export function ArticleTags({ tags }: { tags: Tag[] }) {
 
         return (
           <a key={tag} href={`/topics/${tag}`} className={styles.topic}>
-            {data.label}
+            {data}
           </a>
         );
       })}
