@@ -3,7 +3,8 @@
 import { ArticleChart } from "@/components/article/article-chart";
 import dynamic from "next/dynamic";
 import styles from "./page.module.css";
-import GapChart from "./GapChart/GapChart";
+import GapChart from "./SmdPrGapChart/SmdPrGapChart";
+import SmdGapVsPrGapChart from "./SmdGapVsPrGapChart/SmdGapVsPrGapChart";
 
 const SmdVsPrChart = dynamic(
   () => import("@/app/(main)/articles/election-smd-vs-pr/SmdVsPrChart/SmdVsPrChart"),
@@ -27,6 +28,14 @@ export default function ElectionSmdVsPrCharts() {
         sourceUrl="https://www.soumu.go.jp/senkyo/senkyo_s/data/index.html"
       >
         <GapChart />
+      </ArticleChart>
+
+      <ArticleChart
+        title="小選挙区獲得議席割合の差、比例得票率の差"
+        source="総務省「衆議院議員総選挙結果調」"
+        sourceUrl="https://www.soumu.go.jp/senkyo/senkyo_s/data/index.html"
+      >
+        <SmdGapVsPrGapChart />
       </ArticleChart>
     </div>
   );

@@ -2,7 +2,7 @@
 
 import { ResponsiveBar } from "@nivo/bar";
 import electionData from "@/data/election-smd-vs-pr.json";
-import styles from "./GapChart.module.css";
+import styles from "./SmdPrGapChart.module.css";
 
 // ─── カラー定数 ────────────────────────────────────────────────
 const LDP_COLOR = "#e05a2b";
@@ -89,8 +89,8 @@ export default function GapChart() {
           indexBy="year"
           groupMode="grouped"
           margin={{ top: 24, right: 16, bottom: 40, left: 52 }}
-          padding={0.25}
-          innerPadding={3}
+          padding={0.4}
+          innerPadding={2}
           borderRadius={1}
           valueScale={{ type: "linear", min: -40, max: 60 }}
           indexScale={{ type: "band", round: true }}
