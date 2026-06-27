@@ -32,6 +32,17 @@ export type Article = {
 
 export const articles: Article[] = [
   {
+    href: "/articles/political-party-changes",
+    publishedAt: "2026-06-27",
+    label: "Political Parties",
+    title: "近年の政党再編はどのように進んできたか？",
+    description:
+      "主要政党の結党・解散・合流・分裂の歴史を可視化し、政治勢力の変遷を俯瞰します。",
+    tags: ["politics"],
+    sourceUrl: "",
+    sourceLabel: "出典: 各種報道および党史をもとに作成",
+  },
+  {
     href: "/articles/election-smd-vs-pr",
     publishedAt: "2026-06-23",
     label: "Election system",
@@ -92,6 +103,7 @@ export const articles: Article[] = [
     sourceLabel: "出典: 総務省統計局 人口推計",
   },
 ];
+
 
 // ======================
 // ユーティリティ

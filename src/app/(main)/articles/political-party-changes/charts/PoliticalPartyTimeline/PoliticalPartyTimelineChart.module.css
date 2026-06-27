@@ -1,0 +1,20 @@
+.container {
+  width: 100%;
+  position: relative;
+  font-family: var(--font-noto-sans-jp), sans-serif;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.chartLabel {
+  font-family: var(--font-roboto-mono), monospace;
+  font-variant-numeric: tabular-nums lining-nums;
+  font-feature-settings: "tnum" 1, "lnum" 1;
+}
+
+.verticalText {
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  letter-spacing: 2px;
+  user-select: none;
+}

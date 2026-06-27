@@ -1,0 +1,251 @@
+{
+  "legend": {
+    "LDP": "Liberal Democratic Party (自民党)",
+    "JSP": "Japan Socialist Party (社会党)",
+    "Komeito": "Komeito (公明党)",
+    "JCP": "Japanese Communist Party (共産党)",
+    "DSP": "Democratic Socialist Party (民社党)",
+    "DPJ": "Democratic Party of Japan (民主党)",
+    "CDP": "Constitutional Democratic Party (立憲民主党)",
+    "Ishin": "Japan Innovation Party (日本維新の会)",
+    "DPFP": "Democratic Party For the People (国民民主党)",
+    "NFP": "New Frontier Party (新進党)",
+    "SDP": "Social Democratic Party (社民党)",
+    "Shinsei": "Renewal Party (新生党, 1993)",
+    "Sakigake": "New Party Sakigake (新党さきがけ, 1993)",
+    "Liberal": "Liberal Party (自由党, 小沢一郎系, 1998-2003)",
+    "Kibō": "Party of Hope (希望の党, 2017)",
+    "Minshinto": "Democratic Party (民進党, 2016-2018)",
+    "JNP": "Japan New Party (日本新党, 1993)",
+    "others": "その他 / 無所属 (Others / Independents)",
+    "CRA": "Centrist Reform Alliance (中道改革連合, 2026)",
+    "Sansei": "Sanseitō (参政党)",
+    "Mirai": "Team Mirai (チームみらい)",
+    "Reiwa": "Reiwa Shinsengumi (れいわ新選組)",
+    "Genzei": "Genzei Japan - Yukoku Alliance (減税日本・ゆうこく連合)",
+    "Conservative": "Conservative Party of Japan (日本保守党)"
+  },
+  "shugiin": {
+    "1990 (39th)": {
+      "total_seats": 512,
+      "LDP": 275,
+      "JSP": 136,
+      "Komeito": 45,
+      "JCP": 16,
+      "DSP": 14,
+      "others": 26
+    },
+    "1993 (40th)": {
+      "total_seats": 511,
+      "LDP": 223,
+      "JSP": 70,
+      "Shinsei": 55,
+      "Komeito": 51,
+      "JNP": 35,
+      "Sakigake": 13,
+      "DSP": 15,
+      "others": 49
+    },
+    "1996 (41st)": {
+      "total_seats": 500,
+      "LDP": 239,
+      "NFP": 156,
+      "DPJ": 52,
+      "JCP": 26,
+      "SDP": 15,
+      "Sakigake": 2,
+      "others": 10
+    },
+    "2000 (42nd)": {
+      "total_seats": 480,
+      "LDP": 233,
+      "DPJ": 127,
+      "Komeito": 31,
+      "Liberal": 22,
+      "JCP": 20,
+      "others": 47
+    },
+    "2003 (43rd)": {
+      "total_seats": 480,
+      "LDP": 237,
+      "DPJ": 177,
+      "Komeito": 34,
+      "others": 32
+    },
+    "2005 (44th)": {
+      "total_seats": 480,
+      "LDP": 296,
+      "DPJ": 113,
+      "Komeito": 31,
+      "others": 40
+    },
+    "2009 (45th)": {
+      "total_seats": 480,
+      "DPJ": 308,
+      "LDP": 119,
+      "Komeito": 21,
+      "others": 32
+    },
+    "2012 (46th)": {
+      "total_seats": 480,
+      "LDP": 294,
+      "DPJ": 57,
+      "Ishin": 54,
+      "others": 75
+    },
+    "2014 (47th)": {
+      "total_seats": 475,
+      "LDP": 291,
+      "DPJ": 73,
+      "Ishin": 41,
+      "Komeito": 35,
+      "others": 35
+    },
+    "2017 (48th)": {
+      "total_seats": 465,
+      "LDP": 284,
+      "CDP": 55,
+      "Kibō": 50,
+      "Komeito": 29,
+      "Minshinto": 0,
+      "others": 47
+    },
+    "2021 (49th)": {
+      "total_seats": 465,
+      "LDP": 261,
+      "CDP": 96,
+      "Ishin": 41,
+      "Komeito": 32,
+      "DPFP": 11,
+      "others": 24
+    },
+    "2024 (50th)": {
+      "total_seats": 465,
+      "LDP": 191,
+      "CDP": 148,
+      "Ishin": 38,
+      "DPFP": 28,
+      "Komeito": 24,
+      "others": 36
+    },
+    "2026 (51st)": {
+      "total_seats": 465,
+      "LDP": 316,
+      "Ishin": 36,
+      "CRA": 49,
+      "DPFP": 28,
+      "Sansei": 15,
+      "Mirai": 11,
+      "JCP": 4,
+      "Reiwa": 1,
+      "Genzei": 1,
+      "others": 4
+    }
+  },
+  "sangiin": {
+    "1992 (16th)": {
+      "total_seats": 252,
+      "LDP": 107,
+      "JSP": 71,
+      "Komeito": 24,
+      "JCP": 11,
+      "others": 39
+    },
+    "1995 (17th)": {
+      "total_seats": 252,
+      "LDP": 111,
+      "NFP": 57,
+      "JSP": 37,
+      "Sakigake": 3,
+      "others": 44
+    },
+    "1998 (18th)": {
+      "total_seats": 252,
+      "LDP": 103,
+      "DPJ": 47,
+      "JCP": 23,
+      "Komeito": 22,
+      "Liberal": 12,
+      "others": 45
+    },
+    "2001 (19th)": {
+      "total_seats": 247,
+      "LDP": 111,
+      "DPJ": 59,
+      "Komeito": 23,
+      "Liberal": 8,
+      "others": 46
+    },
+    "2004 (20th)": {
+      "total_seats": 242,
+      "LDP": 115,
+      "DPJ": 82,
+      "Komeito": 24,
+      "others": 21
+    },
+    "2007 (21st)": {
+      "total_seats": 242,
+      "DPJ": 109,
+      "LDP": 83,
+      "Komeito": 21,
+      "others": 29
+    },
+    "2010 (22nd)": {
+      "total_seats": 242,
+      "DPJ": 106,
+      "LDP": 84,
+      "Komeito": 19,
+      "others": 33
+    },
+    "2013 (23rd)": {
+      "total_seats": 242,
+      "LDP": 115,
+      "DPJ": 59,
+      "Ishin": 9,
+      "Komeito": 20,
+      "others": 39
+    },
+    "2016 (24th)": {
+      "total_seats": 242,
+      "LDP": 121,
+      "DPJ": 32,
+      "Ishin": 12,
+      "Komeito": 25,
+      "Minshinto": 0,
+      "others": 52
+    },
+    "2019 (25th)": {
+      "total_seats": 245,
+      "LDP": 113,
+      "CDP": 32,
+      "Ishin": 16,
+      "Komeito": 28,
+      "DPFP": 6,
+      "others": 50
+    },
+    "2022 (26th)": {
+      "total_seats": 248,
+      "LDP": 119,
+      "CDP": 39,
+      "Komeito": 27,
+      "Ishin": 21,
+      "DPFP": 10,
+      "others": 32
+    },
+    "2025 (27th)": {
+      "total_seats": 248,
+      "LDP": 101,
+      "CDP": 38,
+      "DPFP": 22,
+      "Komeito": 21,
+      "Ishin": 19,
+      "Sansei": 15,
+      "JCP": 7,
+      "Reiwa": 6,
+      "Conservative": 2,
+      "SDP": 2,
+      "Mirai": 1,
+      "others": 14
+    }
+  }
+}
