@@ -32,6 +32,18 @@ export type Article = {
 
 export const articles: Article[] = [
   {
+    href: "/articles/inflation-overview",
+    publishedAt: "2026-06-29",
+    label: "Inflation",
+    title: "物価はどれくらい上がっているのか？",
+    description:
+      "消費者物価指数の水準と前年比を、総合・コア・コアコアの3系列で可視化します。",
+    tags: ["economy"],
+    sourceUrl:
+      "https://www.e-stat.go.jp/stat-search/files?toukei=00200573&tstat=000001150147",
+    sourceLabel: "出典: 総務省統計局「消費者物価指数」2020年基準",
+  },
+  {
     href: "/articles/political-party-changes",
     publishedAt: "2026-06-27",
     label: "Political Parties",

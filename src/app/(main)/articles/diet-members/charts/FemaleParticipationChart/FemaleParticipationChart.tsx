@@ -3,6 +3,7 @@
 import { ArticleChartCanvas } from "@/components/article/article-chart";
 import dietData from "@/data/diet-menbers.json";
 import { ResponsiveLine } from "@nivo/line";
+import styles from "./FemaleParticipationChart.module.css";
 
 const TOTAL_CANDIDATES: Record<number, number> = {
   22: 2770, 23: 1590, 24: 1364, 25: 1242, 26: 1027, 27: 1017, 28: 951, 29: 940, 30: 917,
@@ -113,15 +114,15 @@ export default function FemaleParticipationChart() {
         tooltip={({ point }) => {
           const d = point.data as any;
           return (
-            <div style={{ background: "#fff", border: "1px solid #e0e0e0", borderRadius: 4, boxShadow: "0 2px 10px rgba(0,0,0,0.08)", color: "#222", fontSize: 12, lineHeight: 1.6, padding: "8px 10px", whiteSpace: "nowrap" }}>
+            <div className={styles.tooltip}>
               <strong style={{ color: point.seriesColor }}>{point.seriesId}</strong><br />
               {d.x}年（第{d.election}回）<br />
               {point.data.yFormatted}%
               {point.seriesId === "女性議員の割合" && (
-                <span style={{ fontSize: 11, color: "#555", marginLeft: 4 }}>（{d.female_winners}人 / {d.total_winners}人）</span>
+                <span className={styles.tooltipSub}>（{d.female_winners}人 / {d.total_winners}人）</span>
               )}
               {point.seriesId === "女性候補者の割合" && (
-                <span style={{ fontSize: 11, color: "#555", marginLeft: 4 }}>（{d.female_candidates}人 / {d.total_candidates}人）</span>
+                <span className={styles.tooltipSub}>（{d.female_candidates}人 / {d.total_candidates}人）</span>
               )}
             </div>
           );
