@@ -38,18 +38,19 @@
   border-radius: 8px;
 }
 
+/* モバイル基準: 列幅を固定し、品目名は折り返し可（狭いので折り返してほしい） */
 .table {
   width: 100%;
   table-layout: fixed;
   border-collapse: collapse;
-  font-size: 15px;
+  font-size: 16px;
   line-height: 1.4;
   letter-spacing: 0;
 }
 
 .table th,
 .table td {
-  padding: 10px 6px;
+  padding: 12px 8px;
   border-bottom: 1px solid var(--color-border);
   vertical-align: middle;
 }
@@ -72,9 +73,6 @@
   border-bottom: 0;
 }
 
-/* 列の位置指定は左から(順位・品目名)、右から(変化率・指数)で揃える。
-   4列(2020年比較)・5列(1990年比較)どちらでも崩れないようにするため。 */
-
 .table th:nth-child(1),
 .table td:nth-child(1) {
   width: 28px;
@@ -84,14 +82,14 @@
 .table td:nth-child(2) {
   width: auto;
   min-width: 0;
-  padding-right: 4px; /* 品目名と指数を近づける */
+  padding-right: 4px;
 }
 
 .table th:nth-last-child(2),
 .table td:nth-last-child(2) {
   width: 68px;
-  padding-left: 4px;   /* 品目名側との距離を詰める */
-  padding-right: 18px; /* 変化率列との距離をしっかり空ける */
+  padding-left: 4px;
+  padding-right: 18px;
 }
 
 .table th:nth-last-child(1),
@@ -110,7 +108,7 @@
   color: var(--color-text-primary);
   font-weight: 600;
   text-align: left;
-  white-space: normal;
+  white-space: normal; /* モバイル: 余裕がないので折り返す */
   word-break: normal;
   overflow-wrap: break-word;
 }
@@ -139,40 +137,39 @@
   line-height: 1.6;
 }
 
+/* Desktop: 上昇/下降を横並びにし、品目名は「余裕があれば1行」にする */
 @media (min-width: 1024px) {
   .tables {
     grid-template-columns: 1fr 1fr;
     gap: 24px;
     align-items: start;
   }
-}
-
-@media (max-width: 767px) {
-  .wrapper {
-    gap: 16px;
-  }
-
-  .title {
-    font-size: 18px;
-  }
-
-  .tables {
-    gap: 24px;
-  }
 
   .table {
-    font-size: 16px;
+    table-layout: auto; /* 列幅を内容ベースで決めさせる */
+    font-size: 15px;
   }
 
   .table th,
   .table td {
-    padding: 12px 8px;
+    padding: 10px 6px;
   }
 
-  .tableScroll {
-    margin-inline: -16px;
-    border-right: 0;
-    border-left: 0;
-    border-radius: 0;
+  .name {
+    white-space: nowrap; /* 余裕があるので折り返さない */
+  }
+
+  /* auto layoutでも数値列が無駄に広がらないよう上限を設ける */
+  .table th:nth-last-child(2),
+  .table td:nth-last-child(2) {
+    width: 68px;
+    padding-left: 4px;
+    padding-right: 18px;
+  }
+
+  .table th:nth-last-child(1),
+  .table td:nth-last-child(1) {
+    width: 76px;
+    padding-left: 4px;
   }
 }
