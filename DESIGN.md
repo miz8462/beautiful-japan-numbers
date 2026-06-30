@@ -15,7 +15,7 @@
   * アクティブ状態・CTA・選択状態
   * ヘッダー上部のブランドバー
 
-* **Civic Sky Dark** (`#3a9dc4`)
+* **Civic Sky Dark** (`#1e7aa8`)
 
   * hover / active / focus 補助
 
@@ -185,7 +185,7 @@ line-height: 1.4;
 letter-spacing: 0.06em;
 ```
 
-Default / unselected chip state is not currently implemented.
+タグはDomain/Themeを統合済みの4種（politics / economy / society / environment）のみを使用する。`TAGS.politics`のように、タグキーから表示ラベル文字列を直接返すフラット構造を用いる。
 
 ---
 
@@ -226,7 +226,7 @@ color: #5bbee4;
 ### Interaction
 
 ```css
-primary hover: #3a9dc4;
+primary hover: #1e7aa8;
 secondary hover: rgba(91,190,228,0.08);
 focus: box-shadow 0 0 0 3px rgba(91,190,228,0.30);
 ```
@@ -268,6 +268,43 @@ box-shadow: 0 2px 12px rgba(0,0,0,0.08);
 transform: translateY(-2px);
 transition: box-shadow 200ms ease, transform 200ms ease;
 ```
+
+---
+
+## Tables
+
+ランキング表・データ一覧表（品目別価格指数ランキングなど）に使用する。
+
+```css
+/* テーブル全体 */
+width: 100%;
+border-collapse: collapse;
+font-size: 14px;
+
+/* ヘッダー行 */
+th {
+  background: #f7f7f3;
+  color: #555555;
+  font-weight: 500;
+  text-align: left;
+  padding: 10px 12px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+/* データ行 */
+td {
+  padding: 10px 12px;
+  border-bottom: 1px solid #e0e0e0;
+  font-feature-settings: "tnum" 1, "lnum" 1;
+  font-variant-numeric: tabular-nums lining-nums;
+}
+
+/* zebra stripingは使わず、border-bottomのみで行を区切る */
+```
+
+* 数値の正負はData Visualizationセクションの`Positive`(`#2e7d4f`) / `Negative`(`#c0392b`)を文字色として流用する。背景色や太字での強調は行わない。
+* 順位・品目名・基準値・最新値・変化率のように列数が多い表は、モバイルでは`overflow-x: auto`でテーブルごと横スクロールさせる。列を間引いたり改行で縦積みにはしない。
+* テーブル内では装飾（影、角丸の多用）を避け、Radius Systemの`--radius-sharp`（0px）を基本とする。
 
 ---
 
@@ -360,6 +397,7 @@ Spacing Scale:
 * Charts: `overflow: hidden`
 * Chart canvas: `min-width: 0`
 * Sankey SVG: `min-width: 480px`
+* Table: `overflow-x: auto`（テーブルごと横スクロール、列の間引きはしない）
 * Touch target: minimum 44×44px
 
 ```css
@@ -372,7 +410,7 @@ Spacing Scale:
 
 # 7. Data Visualization Principles
 
-* 装飾より比較可能性を優
+* 装飾より比較可能性を優先
 * 3D表現禁止
 * グラデーション多用禁止
 * 円グラフは最小限
@@ -382,7 +420,9 @@ Spacing Scale:
 * アニメーションは意味がある場合、または操作状態のフィードバックに限る
 * 折れ線グラフのポイントは非表示（pointSize: 0）
 * 折れ線グラフのシリーズラベルはチャート内の線の右端に直接表示し、凡例（legend）は使わない
-* 利用ライブラリはNivo
+* 利用ライブラリはNivoを基本とする
+* Nivoで表現できない構造（政党系譜図、ネットワーク図など複雑なルーティングを要するもの）は、SVGカスタム実装を許容する。その場合も色・フォントはCSS変数（本ドキュメントのカラーパレット・タイポグラフィ）を流用し、独自の値を持ち込まない
+* SVGカスタム実装では「動作する結果」を最優先する。実装方式（draw.io書き出し、React/TSX手書きなど）は手段であり、固定しない
 
 ---
 
@@ -394,6 +434,22 @@ Spacing Scale:
 * 比較時は定義差異を明示する
 * 「主張」ではなく「発見」を提示する
 
+## チャートタイトルの文体
+
+過度な解釈を避け、データをそのまま示すシンプルな記述にする。
+
+* OK: 「女性候補者・議員の割合の推移」
+* NG: 「女性の社会進出は進んでいる」
+
+タイトルは観測されたデータの内容を述べるに留め、解釈・評価・トレンドの是非はStat Headlineの発見文や本文側で扱う。
+
+## 出典表記のルール
+
+記事内で使用するデータソースの構成によって、表記位置を分岐する。
+
+* **同一ソースのみで構成される記事**：ページ冒頭に一行でまとめて表記し、各チャート直下の個別表記は省略する。
+* **複数ソースが混在する記事**：各チャート直下にのみ個別表記し、ページ冒頭のまとめは行わない。
+
 ---
 
 # 9. Do's and Don'ts
@@ -401,7 +457,7 @@ Spacing Scale:
 ## Do
 
 * Stat Headline → Source → Chart の順を守る
-* Source がページヘッダー側にある場合は、チャート直前の Source を省略できる
+* Source がページヘッダー側にある場合は、チャート直前の Source を省略できる（「出典表記のルール」のうち同一ソース記事の場合）
 * 数値に `"tnum"` を適用
 * 見出しに `"palt"` を適用
 * 本文 line-height は 1.8
@@ -503,3 +559,11 @@ Spacing Scale:
 * #5bbee4
 * #ffffff
 * #e0e0e0
+
+## 記事・チャートのファイル構成
+
+* 記事: `src/app/(main)/articles/<slug>/page.tsx`
+* チャート（CSS不要）: `articles/<slug>/chart/ChartName.tsx`
+* チャート（CSS必要）: `articles/<slug>/chart/chart-name/ChartName.tsx` + `ChartName.module.css`
+
+チャートが複数ある記事では、`chart/`配下にコンポーネント単位でこの規則を個別に適用する（記事全体で1つのkebab-caseフォルダにまとめない）。

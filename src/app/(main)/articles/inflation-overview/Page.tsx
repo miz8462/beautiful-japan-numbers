@@ -1,14 +1,23 @@
 import { articles } from "@/app/(main)/articles/articles";
-import { ArticleChart } from "@/components/article/article-chart";
-import { ArticleHeader } from "@/components/article/article-header/ArticleHeader";
 import { CpiIndexChart } from "@/app/(main)/articles/inflation-overview/charts/CpiIndexChart";
 import { CpiYoyChart } from "@/app/(main)/articles/inflation-overview/charts/CpiYoyChart";
+import {
+  type PriceRankingComparison
+} from "@/app/(main)/articles/inflation-overview/charts/PriceRankingTable/PriceRankingTable";
+import { ArticleChart } from "@/components/article/article-chart";
+import { ArticleHeader } from "@/components/article/article-header/ArticleHeader";
 import cpiData from "@/data/cpi-japan.json";
+import priceRankingData from "@/data/price-ranking.json";
 import type { CpiJson } from "@/types/cpi";
+import { PriceRankingTable } from "./charts/PriceRankingTable/PriceRankingTable";
 import styles from "./page.module.css";
 
 const data = cpiData as CpiJson;
-
+const priceRanking = priceRankingData as {
+  latestYear: number;
+  comparison2020: PriceRankingComparison;
+  comparison1990: PriceRankingComparison;
+};
 export default function InflationOverviewPage() {
   const article = articles.find((a) => a.href === "/articles/inflation-overview");
   if (!article) return null;
@@ -38,6 +47,7 @@ export default function InflationOverviewPage() {
             </div>
           </dl>
         </ArticleChart>
+
         <ArticleChart
           title="インフレ率の推移（前年比、1990〜2025年）"
           source={data.meta.source}
@@ -45,6 +55,17 @@ export default function InflationOverviewPage() {
         >
           <CpiYoyChart data={data.yoy} />
         </ArticleChart>
+
+        <PriceRankingTable
+          data={priceRanking.comparison2020}
+          title="品目別の物価上昇・下降ランキング2020-2025 (2020年の物価指数を100とする)"
+          latestYear={priceRanking.latestYear}
+        />
+
+        <PriceRankingTable
+          data={priceRankingData.comparison1990}
+          title="35年間の物価変動ランキング1990-2025 (2020年の物価指数を100とする)"
+        />
       </div>
     </div>
   );

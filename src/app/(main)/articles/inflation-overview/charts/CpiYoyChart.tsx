@@ -2,8 +2,8 @@
 
 import { ArticleChartCanvas } from "@/components/article/article-chart";
 import type { CpiDataPoint } from "@/types/cpi";
-import { ResponsiveBar } from "@nivo/bar";
 import type { BarCustomLayerProps, BarDatum } from "@nivo/bar";
+import { ResponsiveBar } from "@nivo/bar";
 
 type Props = {
   data: CpiDataPoint[];
@@ -22,7 +22,7 @@ const annotations = [
   { year: 2014, label: "消費税 5→8%", color: "#9ca3af", labelY: 48 },
   { year: 2019, label: "消費税 8→10%", color: "#9ca3af", labelY: 48 },
   { year: 2020, label: "コロナ禍", color: "#f97316", labelY: 30 },
-  { year: 2022, label: "ウクライナ侵攻", color: "#9ca3af", labelY: 12 },
+  { year: 2022, label: " ウクライナ侵攻", color: "#9ca3af", labelY: 12 },
 ];
 
 const tickYears = ["1990", "1995", "2000", "2005", "2010", "2015", "2020", "2025"];
@@ -60,12 +60,11 @@ function AnnotationLayer({ xScale, innerHeight }: BarCustomLayerProps<CpiBarDatu
               y1={0}
               y2={innerHeight}
               stroke={color}
-              strokeWidth={year === 2014 ? 1.4 : 1}
               strokeDasharray="4 3"
-              opacity={year === 2014 ? 0.82 : 0.6}
+              opacity={0.6}
             />
             <text
-              x={x}
+              x={x + 4}
               y={labelY}
               fontSize={10}
               fill={color}
@@ -151,7 +150,7 @@ export function CpiYoyChart({ data }: Props) {
           >
             {indexValue}年
             <br />
-            総合: {Number(datum.total).toFixed(1)}%
+            {Number(datum.total).toFixed(1)}%
           </div>
         )}
         isInteractive={true}

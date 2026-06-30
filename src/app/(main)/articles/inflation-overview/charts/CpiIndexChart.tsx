@@ -2,12 +2,12 @@
 
 import { ArticleChartCanvas } from "@/components/article/article-chart";
 import type { CpiDataPoint } from "@/types/cpi";
-import { ResponsiveLine } from "@nivo/line";
 import type {
   ComputedSeries,
   LineCustomSvgLayerProps,
   LineSeries,
 } from "@nivo/line";
+import { ResponsiveLine } from "@nivo/line";
 
 type Props = {
   data: CpiDataPoint[];
@@ -81,12 +81,11 @@ function AnnotationLayer({ xScale, innerHeight }: LineCustomSvgLayerProps<CpiLin
               y1={0}
               y2={innerHeight}
               stroke={color}
-              strokeWidth={year === 2014 ? 1.4 : 1}
               strokeDasharray="4 3"
-              opacity={year === 2014 ? 0.82 : 0.6}
+              opacity={0.6}
             />
             <text
-              x={x}
+              x={x + 4}
               y={labelY}
               fontSize={10}
               fill={color}

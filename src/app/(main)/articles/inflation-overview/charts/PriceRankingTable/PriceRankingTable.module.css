@@ -1,0 +1,178 @@
+.wrapper {
+  display: grid;
+  gap: 20px;
+}
+
+.title {
+  margin: 0;
+  color: var(--color-text-primary);
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.4;
+  letter-spacing: 0;
+}
+
+.tables {
+  display: grid;
+  gap: 28px;
+}
+
+.tableSection {
+  display: grid;
+  gap: 10px;
+  min-width: 0;
+}
+
+.tableTitle {
+  margin: 0;
+  color: var(--color-text-primary);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.4;
+  letter-spacing: 0;
+}
+
+.tableScroll {
+  overflow-x: auto;
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+}
+
+.table {
+  width: 100%;
+  table-layout: fixed;
+  border-collapse: collapse;
+  font-size: 15px;
+  line-height: 1.4;
+  letter-spacing: 0;
+}
+
+.table th,
+.table td {
+  padding: 10px 6px;
+  border-bottom: 1px solid var(--color-border);
+  vertical-align: middle;
+}
+
+.table thead th {
+  background: var(--color-background-section);
+  color: var(--color-text-muted);
+  font-size: 12px;
+  font-weight: 700;
+  text-align: right;
+  white-space: nowrap;
+}
+
+.table thead th:nth-child(2) {
+  text-align: left;
+}
+
+.table tbody tr:last-child th,
+.table tbody tr:last-child td {
+  border-bottom: 0;
+}
+
+/* 列の位置指定は左から(順位・品目名)、右から(変化率・指数)で揃える。
+   4列(2020年比較)・5列(1990年比較)どちらでも崩れないようにするため。 */
+
+.table th:nth-child(1),
+.table td:nth-child(1) {
+  width: 28px;
+}
+
+.table th:nth-child(2),
+.table td:nth-child(2) {
+  width: auto;
+  min-width: 0;
+  padding-right: 4px; /* 品目名と指数を近づける */
+}
+
+.table th:nth-last-child(2),
+.table td:nth-last-child(2) {
+  width: 68px;
+  padding-left: 4px;   /* 品目名側との距離を詰める */
+  padding-right: 18px; /* 変化率列との距離をしっかり空ける */
+}
+
+.table th:nth-last-child(1),
+.table td:nth-last-child(1) {
+  width: 76px;
+  padding-left: 4px;
+}
+
+.rank {
+  color: var(--color-text-muted);
+  text-align: right;
+  white-space: nowrap;
+}
+
+.name {
+  color: var(--color-text-primary);
+  font-weight: 600;
+  text-align: left;
+  white-space: normal;
+  word-break: normal;
+  overflow-wrap: break-word;
+}
+
+.value {
+  color: var(--color-text-primary);
+  font-variant-numeric: tabular-nums;
+  text-align: right;
+  white-space: nowrap;
+}
+
+.positive {
+  color: #1e7aa8;
+  font-weight: 700;
+}
+
+.negative {
+  color: #c2413b;
+  font-weight: 700;
+}
+
+.note {
+  margin: 0;
+  color: var(--color-text-muted);
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+@media (min-width: 1024px) {
+  .tables {
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    align-items: start;
+  }
+}
+
+@media (max-width: 767px) {
+  .wrapper {
+    gap: 16px;
+  }
+
+  .title {
+    font-size: 18px;
+  }
+
+  .tables {
+    gap: 24px;
+  }
+
+  .table {
+    font-size: 16px;
+  }
+
+  .table th,
+  .table td {
+    padding: 12px 8px;
+  }
+
+  .tableScroll {
+    margin-inline: -16px;
+    border-right: 0;
+    border-left: 0;
+    border-radius: 0;
+  }
+}

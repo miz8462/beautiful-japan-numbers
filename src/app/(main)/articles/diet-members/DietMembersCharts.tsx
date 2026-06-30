@@ -6,7 +6,6 @@ import styles from "./page.module.css";
 import FemaleParticipationChart from "./charts/FemaleParticipationChart/FemaleParticipationChart";
 import FemaleWinRateChart from "./charts/FemaleWinRateChart/FemaleWinRateChart";
 
-const FemaleRatioChart = dynamic(() => import("./charts/FemaleParticipationChart/FemaleParticipationChart"), { ssr: false });
 const AgeStructureChart = dynamic(() => import("./charts/AgeStructureChart/AgeStructureChart"), { ssr: false });
 
 export default function DietMembersCharts() {
