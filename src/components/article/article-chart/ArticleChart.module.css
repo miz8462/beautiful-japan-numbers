@@ -34,6 +34,7 @@
   width: 100%;
   min-width: 0;
   height: var(--article-chart-height, 260px);
+  line-height: 0;
 }
 
 @media (hover: hover) and (pointer: fine) {

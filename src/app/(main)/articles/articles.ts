@@ -31,6 +31,17 @@ export type Article = {
 // ======================
 
 export const articles: Article[] = [
+   {
+    href: "/articles/savings",
+    publishedAt: "2026-07-03",
+    label: "Savings",
+    title: "日本人はどれだけ貯金しているのか？",
+    description:
+      "家計の貯蓄率の年度推移と、年齢階級別の貯蓄・負債残高を可視化します。",
+    tags: ["economy"],
+    sourceUrl: "",
+    sourceLabel: "",
+  },
   {
     href: "/articles/inflation-overview",
     publishedAt: "2026-06-29",
@@ -102,7 +113,6 @@ export const articles: Article[] = [
       "https://www.mof.go.jp/policy/budget/reference/statistics/data.htm",
     sourceLabel: "出典: 財務省「予算・決算 統計表一覧」",
   },
-
   {
     href: "/articles/population",
     label: "Population",
