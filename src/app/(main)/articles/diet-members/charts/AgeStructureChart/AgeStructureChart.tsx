@@ -2,6 +2,7 @@
 
 import { ArticleChartCanvas } from "@/components/article/article-chart";
 import dietData from "@/data/diet-menbers.json";
+import { formatYearShort } from "@/lib/chart-format";
 import { ResponsiveBar } from "@nivo/bar";
 import styles from "./AgeStructureChart.module.css";
 
@@ -53,11 +54,24 @@ const colorMap: Record<string, string> = {
   "70歳以上": "#c0392b",
 };
 
-// 軸のラベル表示用（重なりを避けるために3回おきに間引き）
-const tickValues = data
-  .filter((_, idx) => idx % 3 === 0 || idx === data.length - 1)
-  .map((d) => d.year);
+// 軸のラベル表示用（重なりを避けるために間引き、末尾は近すぎる場合前の目盛りを除外）
+const MIN_YEAR_GAP = 3; // 最低限空けたい年数の間隔
 
+const tickValues = (() => {
+  const filtered = data
+    .filter((_, idx) => idx % 3 === 0 || idx === data.length - 1)
+    .map((d) => d.year);
+
+  if (filtered.length >= 2) {
+    const last = Number(filtered[filtered.length - 1]);
+    const secondLast = Number(filtered[filtered.length - 2]);
+    if (last - secondLast < MIN_YEAR_GAP) {
+      filtered.splice(filtered.length - 2, 1);
+    }
+  }
+
+  return filtered;
+})();
 export default function AgeStructureChart() {
   return (
     <div>
@@ -89,6 +103,7 @@ export default function AgeStructureChart() {
             tickPadding: 10,
             tickRotation: 0,
             tickValues: tickValues,
+            format: (v) => formatYearShort(v, v === tickValues[0]),
           }}
           axisLeft={{
             tickSize: 0,

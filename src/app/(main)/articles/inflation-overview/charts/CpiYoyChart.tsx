@@ -1,6 +1,7 @@
 "use client";
 
 import { ArticleChartCanvas } from "@/components/article/article-chart";
+import { formatYearShort } from "@/lib/chart-format";
 import type { CpiDataPoint } from "@/types/cpi";
 import type { BarCustomLayerProps, BarDatum } from "@nivo/bar";
 import { ResponsiveBar } from "@nivo/bar";
@@ -22,7 +23,7 @@ const annotations = [
   { year: 2014, label: "消費税 5→8%", color: "#9ca3af", labelY: 48 },
   { year: 2019, label: "消費税 8→10%", color: "#9ca3af", labelY: 48 },
   { year: 2020, label: "コロナ禍", color: "#f97316", labelY: 30 },
-  { year: 2022, label: " ウクライナ侵攻", color: "#9ca3af", labelY: 12 },
+  { year: 2022, label: "ウクライナ侵攻", color: "#9ca3af", labelY: 12 },
 ];
 
 const tickYears = ["1990", "1995", "2000", "2005", "2010", "2015", "2020", "2025"];
@@ -112,7 +113,7 @@ export function CpiYoyChart({ data }: Props) {
           tickSize: 0,
           tickPadding: 10,
           tickValues: tickYears,
-          format: (value) => `${value}`,
+          format: (value) => formatYearShort(value, value === tickYears[0]),
         }}
         axisLeft={{
           tickSize: 0,

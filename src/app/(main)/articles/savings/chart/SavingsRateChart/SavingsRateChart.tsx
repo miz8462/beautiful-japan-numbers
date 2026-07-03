@@ -3,7 +3,9 @@
 import { ResponsiveLine } from "@nivo/line";
 import savingsData from "@/data/savings-rate.json";
 import { ArticleChartCanvas } from "@/components/article/article-chart";
+import { formatYearShort } from "@/lib/chart-format";
 import styles from "./SavingsRateChart.module.css";
+import { useMediaQuery } from "@mui/material";
 
 // ─── Nivo Theme ──────────────────────────────────────────────────
 const nivoTheme = {
@@ -58,6 +60,7 @@ export function SavingsRateChart() {
             tickSize: 0,
             tickPadding: 10,
             tickValues: [1995, 2000, 2005, 2010, 2015, 2020, 2024],
+            format: (v) => formatYearShort(v, v === 1995),
           }}
           axisLeft={{
             tickSize: 0,
@@ -77,16 +80,16 @@ export function SavingsRateChart() {
               value: 2009,
               lineStyle: { stroke: "#bbbbbb", strokeWidth: 1.5, strokeDasharray: "4 4" },
               legend: "東日本大震災",
-              legendPosition: "top-right",
-              textStyle: { fontSize: 12, fill: "#868484ff" }
+              legendPosition: "top",
+              textStyle: { fontSize: 10, fill: "#868484ff" }
             },
             {
               axis: "x",
               value: 2020,
               lineStyle: { stroke: "#bbbbbb", strokeWidth: 1.5, strokeDasharray: "4 4" },
               legend: "コロナ禍",
-              legendPosition: "top-right",
-              textStyle: { fontSize: 12, fill: "#868484ff" }
+              legendPosition: "top",
+              textStyle: { fontSize: 10, fill: "#868484ff" }
             },
           ]}
           layers={[

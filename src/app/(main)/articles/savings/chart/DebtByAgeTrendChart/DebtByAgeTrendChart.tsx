@@ -3,7 +3,9 @@
 import { ResponsiveLine } from "@nivo/line";
 import savingsAgeData from "@/data/savings-by-age.json";
 import { ArticleChartCanvas } from "@/components/article/article-chart";
+import { formatYearShort } from "@/lib/chart-format";
 import styles from "./DebtByAgeTrendChart.module.css";
+import { useMediaQuery } from "@mui/material";
 
 // ─── Nivo テーマ設定 ──────────────────────────────────────────
 const nivoTheme = {
@@ -26,10 +28,10 @@ const nivoTheme = {
 // ─── 年齢階級の定義とデータ抽出 ────────────────────────────────
 const ageGroups = {
   under29: "29歳以下",
-  "30s": "30～39歳",
-  "40s": "40～49歳",
-  "50s": "50～59歳",
-  "60s": "60～69歳",
+  "30s": "30代",
+  "40s": "40代",
+  "50s": "50代",
+  "60s": "60代",
   "70plus": "70歳以上",
 };
 
@@ -61,7 +63,7 @@ export function DebtByAgeTrendChart() {
             tickSize: 0,
             tickPadding: 10,
             tickValues: [2002, 2005, 2010, 2015, 2020, 2025],
-            format: (v) => `${v}年`,
+            format: (v) => formatYearShort(v, v === 2002),
           }}
           axisLeft={{
             tickSize: 0,
@@ -85,7 +87,7 @@ export function DebtByAgeTrendChart() {
               <g>
                 {series.map((serie: any) => {
                   const isHighlighted =
-                    serie.id === "29歳以下" || serie.id === "30～39歳";
+                    serie.id === "29歳以下" || serie.id === "30代";
                   const points = serie.data.map((d: any) => ({
                     x: d.position.x,
                     y: d.position.y,
@@ -93,7 +95,7 @@ export function DebtByAgeTrendChart() {
                   const color =
                     serie.id === "29歳以下"
                       ? "#c0392b"
-                      : serie.id === "30～39歳"
+                      : serie.id === "30代"
                         ? "#e67e22"
                         : "#d0d0d0";
                   return (
@@ -112,7 +114,7 @@ export function DebtByAgeTrendChart() {
             // ラベル描画のカスタムレイヤー：29歳以下、30代のみ右端にインライン表示
             ({ series }: any) => {
               const targets = series.filter(
-                (s: any) => s.id === "29歳以下" || s.id === "30～39歳"
+                (s: any) => s.id === "29歳以下" || s.id === "30代"
               );
               return (
                 <g>

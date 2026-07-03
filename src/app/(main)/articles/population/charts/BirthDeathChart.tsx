@@ -1,6 +1,7 @@
 "use client";
 
 import { ArticleChartCanvas } from "@/components/article/article-chart";
+import { formatYearShort } from "@/lib/chart-format";
 import { ResponsiveLine } from "@nivo/line";
 
 const data = [
@@ -44,7 +45,12 @@ export default function BirthDeathChart() {
         margin={{ top: 10, right: 20, bottom: 40, left: 48 }}
         xScale={{ type: "linear", min: 2000, max: 2023 }}
         yScale={{ type: "linear", min: 60, max: 180 }}
-        axisBottom={{ tickSize: 0, tickPadding: 10 }}
+        axisBottom={{
+          tickSize: 0,
+          tickPadding: 10,
+          tickValues: [2000, 2005, 2010, 2015, 2020, 2023],
+          format: (v) => formatYearShort(v, v === 2000),
+        }}
         axisLeft={{
           tickSize: 0,
           tickPadding: 10,

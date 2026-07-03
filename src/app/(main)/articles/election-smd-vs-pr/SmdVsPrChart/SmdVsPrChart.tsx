@@ -3,6 +3,7 @@
 import { ResponsiveBar } from "@nivo/bar";
 import electionData from "@/data/election-smd-vs-pr.json";
 import styles from "./SmdVsPrChart.module.css";
+import { formatYearShort } from "@/lib/chart-format";
 
 // ─── カラー定数 ────────────────────────────────────────────────
 const LDP_SOLID = "#e05a2b";
@@ -107,7 +108,7 @@ function ChartBlock({ label, party }: ChartBlockProps) {
           axisBottom={{
             tickSize: 0,
             tickPadding: 8,
-            format: (v) => String(v),
+            format: (v) => formatYearShort(v, v === '1996'),
           }}
           axisLeft={{
             tickSize: 0,
@@ -118,7 +119,7 @@ function ChartBlock({ label, party }: ChartBlockProps) {
           gridYValues={[0, 25, 50, 75, 100]}
           enableLabel={false}
           isInteractive={true}
-          tooltip={({value, indexValue }) => {
+          tooltip={({ value, indexValue }) => {
             return (
               <div style={{
                 background: "#FFFFFF",

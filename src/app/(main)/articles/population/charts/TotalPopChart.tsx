@@ -1,6 +1,7 @@
 "use client";
 
 import { ArticleChartCanvas } from "@/components/article/article-chart";
+import { formatYearShort } from "@/lib/chart-format";
 import { ResponsiveLine } from "@nivo/line";
 
 const data = [
@@ -36,6 +37,8 @@ export default function TotalPopChart() {
           tickSize: 0, //tickはグラフのメモリ
           tickPadding: 10,
           tickRotation: 0,
+          tickValues: [1980, 1990, 2000, 2010, 2020, 2024],
+          format: (v) => formatYearShort(v, v === 1980),
         }}
         axisLeft={{
           tickSize: 0,

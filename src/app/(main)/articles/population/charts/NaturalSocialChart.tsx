@@ -1,6 +1,7 @@
 "use client";
 
 import { ArticleChartCanvas } from "@/components/article/article-chart";
+import { formatYearShort } from "@/lib/chart-format";
 import { ResponsiveBar } from "@nivo/bar";
 
 const data = [
@@ -22,7 +23,11 @@ export default function NaturalSocialChart() {
         margin={{ top: 10, right: 20, bottom: 40, left: 56 }}
         groupMode="stacked"
         valueScale={{ type: "linear", min: -100, max: 40 }}
-        axisBottom={{ tickSize: 0, tickPadding: 10 }}
+        axisBottom={{
+          tickSize: 0,
+          tickPadding: 10,
+          format: (v) => formatYearShort(v, v === "2010"),
+        }}
         axisLeft={{
           tickSize: 0,
           tickPadding: 10,

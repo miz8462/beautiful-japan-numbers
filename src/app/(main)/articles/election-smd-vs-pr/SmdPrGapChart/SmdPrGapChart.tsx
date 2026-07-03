@@ -3,6 +3,7 @@
 import { ResponsiveBar } from "@nivo/bar";
 import electionData from "@/data/election-smd-vs-pr.json";
 import styles from "./SmdPrGapChart.module.css";
+import { formatYearShort } from "@/lib/chart-format";
 
 // ─── カラー定数 ────────────────────────────────────────────────
 const LDP_COLOR = "#e05a2b";
@@ -102,7 +103,7 @@ export default function GapChart() {
           axisBottom={{
             tickSize: 0,
             tickPadding: 8,
-            format: (v) => String(v),
+            format: (v) => formatYearShort(v, v === '1996'),
           }}
           axisLeft={{
             tickSize: 0,

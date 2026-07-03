@@ -567,3 +567,6 @@ Spacing Scale:
 * チャート（CSS必要）: `articles/<slug>/chart/chart-name/ChartName.tsx` + `ChartName.module.css`
 
 チャートが複数ある記事では、`chart/`配下にコンポーネント単位でこの規則を個別に適用する（記事全体で1つのkebab-caseフォルダにまとめない）。
+
+### 年表記
+軸ラベルなどスペースが限られる場所では、一番左の数値（1995のように四桁）で、それ以外の数値は西暦の下二桁の省略表記（例: 02, 25）を使用する。`src/lib/chart-format.ts`の`formatYearShort()`を使うこと。ツールチップなど詳細情報の文脈ではフル表記（2002年）を用いる。

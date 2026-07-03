@@ -3,6 +3,7 @@
 
 import { ArticleChartCanvas } from "@/components/article/article-chart";
 import dietData from "@/data/diet-menbers.json";
+import { formatYearShort } from "@/lib/chart-format";
 import { ResponsiveLine } from "@nivo/line";
 import styles from "./FemaleWinRateChart.module.css";
 
@@ -91,8 +92,8 @@ export default function FemaleWinRateChart() {
                     yScale={{ type: "linear", min: 0, max: 70 }}
                     axisBottom={{
                         tickSize: 0, tickPadding: 10,
-                        tickValues: [1946, 1960, 1980, 2000, 2020, 2026],
-                        format: (v) => `${v}`,
+                        tickValues: [1946, 1960, 1980, 2000, 2020],
+                        format: (v) => formatYearShort(v, v === 1946),
                     }}
                     axisLeft={{
                         tickSize: 0, tickPadding: 10,

@@ -1,6 +1,8 @@
 "use client";
 
 import { ArticleChartCanvas } from "@/components/article/article-chart";
+import { useMediaQuery } from "@/hooks/use-media-query";
+import { formatYearShort } from "@/lib/chart-format";
 import type { CpiDataPoint } from "@/types/cpi";
 import type {
   ComputedSeries,
@@ -32,12 +34,12 @@ const labels: Record<CpiSeriesId, string> = {
 };
 
 const annotations = [
-  { year: 1997, label: "消費税 3→5%", color: "#9ca3af", labelY: 48 },
-  { year: 2008, label: "リーマンショック", color: "#9ca3af", labelY: 48 },
-  { year: 2014, label: "消費税 5→8%", color: "#9ca3af", labelY: 48 },
-  { year: 2019, label: "消費税 8→10%", color: "#9ca3af", labelY: 48 },
-  { year: 2020, label: "コロナ禍", color: "#f97316", labelY: 30 },
-  { year: 2022, label: "ウクライナ侵攻", color: "#9ca3af", labelY: 12 },
+  { year: 1997, label: "消費税 3→5%", color: "#9ca3af", labelY: 48, showOnMobile: false },
+  { year: 2008, label: "リーマンショック", color: "#9ca3af", labelY: 48, showOnMobile: true },
+  { year: 2014, label: "消費税 5→8%", color: "#9ca3af", labelY: 48, showOnMobile: false },
+  { year: 2019, label: "消費税 8→10%", color: "#9ca3af", labelY: 48, showOnMobile: false },
+  { year: 2020, label: "コロナ禍", color: "#f97316", labelY: 30, showOnMobile: true },
+  { year: 2022, label: "ウクライナ侵攻", color: "#9ca3af", labelY: 12, showOnMobile: true },
 ];
 
 const tickYears = [1990, 1995, 2000, 2005, 2010, 2015, 2020, 2025];
@@ -119,7 +121,7 @@ export function CpiIndexChart({ data }: Props) {
           tickSize: 0,
           tickPadding: 10,
           tickValues: tickYears,
-          format: (value) => `${value}`,
+          format: (v) => formatYearShort(v, v === tickYears[0]),
         }}
         axisLeft={{
           tickSize: 0,

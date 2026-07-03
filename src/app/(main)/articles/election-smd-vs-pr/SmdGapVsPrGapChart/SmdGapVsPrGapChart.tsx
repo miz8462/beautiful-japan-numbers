@@ -3,6 +3,7 @@
 import { ResponsiveBar } from "@nivo/bar";
 import electionData from "@/data/election-smd-vs-pr.json";
 import styles from "./SmdGapVsPrGapChart.module.css";
+import { formatYearShort } from "@/lib/chart-format";
 
 // ─── カラー定数 ────────────────────────────────────────────────
 const SMD_COLOR = "#e05a2b";
@@ -110,7 +111,7 @@ export default function SmdGapVsPrGapChart() {
                         axisBottom={{
                             tickSize: 0,
                             tickPadding: 8,
-                            format: (v) => String(v),
+                            format: (v) => formatYearShort(v, v === '1996'),
                         }}
                         axisLeft={{
                             tickSize: 0,
