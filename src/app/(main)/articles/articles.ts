@@ -31,6 +31,18 @@ export type Article = {
 // ======================
 
 export const articles: Article[] = [
+  {
+    href: "/articles/disposable-income",
+    publishedAt: "2026-07-04",
+    label: "Disposable Income",
+    title: "実質可処分所得は30年でどう変わったか？",
+    description:
+      "勤労者世帯の可処分所得について、名目値と実質値（2020年基準）の推移を比較し、物価上昇によって家計の実質的な購買力がどれほど目減りしてきたかを可視化します。",
+    tags: ["economy"],
+    sourceUrl:
+      "https://www.stat.go.jp/data/kakei/longtime/index.html",
+    sourceLabel: "総務省統計局「家計調査」二人以上の世帯のうち勤労者世帯",
+  },
    {
     href: "/articles/savings",
     publishedAt: "2026-07-03",
