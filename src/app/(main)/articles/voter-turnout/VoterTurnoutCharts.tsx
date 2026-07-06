@@ -3,7 +3,7 @@
 import { ArticleChart } from "@/components/article/article-chart";
 import dynamic from "next/dynamic";
 import styles from "./page.module.css";
-import DeadVoteChart from "./charts/dead-vote-chart/DeadVoteChart";
+import DeadVoteChart from "./charts/DeadVote/DeadVoteChart";
 
 const TurnoutLineChart = dynamic(() => import("./charts/TurnoutLineChart"), { ssr: false });
 

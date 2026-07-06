@@ -2,7 +2,6 @@
 
 import { ArticleChartCanvas } from "@/components/article/article-chart";
 import turnoutData from "@/data/voter-turnout.json";
-import { formatYearShort } from "@/lib/chart-format";
 import { ResponsiveLine } from "@nivo/line";
 
 type TurnoutKey = "overall" | "age10s" | "age20s" | "age60s";

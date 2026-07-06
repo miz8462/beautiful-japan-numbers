@@ -3,10 +3,10 @@
 import { ArticleChart } from "@/components/article/article-chart";
 import dynamic from "next/dynamic";
 import styles from "./page.module.css";
-import FemaleParticipationChart from "./charts/FemaleParticipationChart/FemaleParticipationChart";
-import FemaleWinRateChart from "./charts/FemaleWinRateChart/FemaleWinRateChart";
+import FemaleParticipationChart from "./charts/FemaleParticipation/FemaleParticipationChart";
+import FemaleWinRateChart from "./charts/FemaleWinRate/FemaleWinRateChart";
 
-const AgeStructureChart = dynamic(() => import("./charts/AgeStructureChart/AgeStructureChart"), { ssr: false });
+const AgeStructureChart = dynamic(() => import("./charts/AgeStructure/AgeStructureChart"), { ssr: false });
 
 export default function DietMembersCharts() {
   return (

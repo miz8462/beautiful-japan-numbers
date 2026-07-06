@@ -1,9 +1,9 @@
 import { articles } from "@/app/(main)/articles/articles";
 import { ArticleChart } from "@/components/article/article-chart";
 import { ArticleHeader } from "@/components/article/article-header/ArticleHeader";
-import { DisposableIncomeRealVsNominalChart } from "./chart/disposable-income-real-vs-nominal/DisposableIncomeRealVsNominalChart";
-import { NonConsumptionBurdenRateChart } from "./chart/nonconsumption-burden-rate/NonConsumptionBurdenRateChart";
-import IncomeChart from "./chart/IncomeChart";
+import { DisposableIncomeRealVsNominalChart } from "./charts/DisposableIncomeRealVsNominal/DisposableIncomeRealVsNominalChart";
+import { NonConsumptionBurdenRateChart } from "./charts/NonconsumptionBurdenRate/NonConsumptionBurdenRateChart";
+import IncomeChart from "./charts/IncomeChart";
 import styles from "./page.module.css";
 
 export default function DisposableIncomePage() {

@@ -45,6 +45,24 @@
 | Positive  | `#2e7d4f` |
 | Negative  | `#c0392b` |
 
+### 10系列カテゴリカルパレット
+
+費目別シェアなど、順序よりも分類の識別を優先する10系列チャートでは以下を使用する。
+Civic Sky系だけに寄せると判別性が落ちるため、ブランド色を主系列に残しつつ、暖色・緑・紫・中立色を混ぜる。
+
+| Category | Color |
+| -------- | ----- |
+| Civic Sky | `#5bbee4` |
+| Civic Sky Dark | `#1e7aa8` |
+| Coral | `#f06449` |
+| Green | `#2e9e6e` |
+| Gold | `#f2b134` |
+| Purple | `#7b6fd6` |
+| Rose | `#c06c84` |
+| Olive | `#8fbf67` |
+| Brown Gray | `#7a5c58` |
+| Neutral | `#aaaaaa` |
+
 ### 系列カラーの使い分け
 
 * 単一系列のチャート：Primary（`#5bbee4`）
@@ -573,6 +591,6 @@ Spacing Scale:
 
 * 記事: `src/app/(main)/articles/<slug>/page.tsx`
 * チャート（CSS不要）: `articles/<slug>/chart/ChartName.tsx`
-* チャート（CSS必要）: `articles/<slug>/chart/chart-name/ChartName.tsx` + `ChartName.module.css`
+* チャート（CSS必要）: `articles/<slug>/chart/ChartName/ChartName.tsx` + `ChartName.module.css`
 
 チャートが複数ある記事では、`chart/`配下にコンポーネント単位でこの規則を個別に適用する（記事全体で1つのkebab-caseフォルダにまとめない）。

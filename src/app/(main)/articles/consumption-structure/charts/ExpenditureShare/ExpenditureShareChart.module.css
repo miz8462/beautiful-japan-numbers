@@ -1,0 +1,54 @@
+.wrapper {
+  min-width: 0;
+}
+
+.unitNote {
+  display: block;
+  margin-bottom: 12px;
+  color: var(--color-text-muted);
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+.tooltip {
+  display: grid;
+  gap: 4px;
+  padding: 8px 10px;
+  border: 1px solid var(--color-border);
+  background: #ffffff;
+  color: var(--color-text-primary);
+  font-size: 12px;
+  line-height: 1.6;
+  white-space: nowrap;
+  transform: translate(100px, 70%);
+  pointer-events: none;
+}
+
+.tooltipYear {
+  color: var(--color-text-secondary);
+  font-weight: 700;
+}
+
+.tooltipRows {
+  display: grid;
+  gap: 2px;
+}
+
+.tooltipRow {
+  display: grid;
+  grid-template-columns: 10px 1fr auto;
+  align-items: center;
+  gap: 6px;
+}
+
+.tooltipDot {
+  width: 8px;
+  height: 8px;
+  border-radius: 9999px;
+}
+
+.tooltipValue {
+  margin-left: 8px;
+  font-family: var(--font-data);
+  font-weight: 700;
+}

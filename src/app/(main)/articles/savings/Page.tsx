@@ -1,9 +1,9 @@
 import { articles } from "@/app/(main)/articles/articles";
 import { ArticleChart } from "@/components/article/article-chart";
 import { ArticleHeader } from "@/components/article/article-header/ArticleHeader";
-import { SavingsRateChart } from "./chart/SavingsRateChart/SavingsRateChart";
-import { SavingsDebtByAgeChart } from "./chart/SavingsDebtByAgeChart/SavingsDebtByAgeChart";
-import { DebtByAgeTrendChart } from "./chart/DebtByAgeTrendChart/DebtByAgeTrendChart";
+import { SavingsRateChart } from "./chart/SavingsRate/SavingsRateChart";
+import { SavingsDebtByAgeChart } from "./chart/SavingsDebtByAge/SavingsDebtByAgeChart";
+import { DebtByAgeTrendChart } from "./chart/DebtByAgeTrend/DebtByAgeTrendChart";
 import styles from "./page.module.css";
 
 export default function SavingsPage() {

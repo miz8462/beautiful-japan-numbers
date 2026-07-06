@@ -9,9 +9,22 @@
   transition: box-shadow 200ms ease, transform 200ms ease;
 }
 
+.cardHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .cardLabel {
   margin-bottom: 12px;
   color: var(--color-text-muted);
   font-size: 12px;
+  line-height: 1.6;
+}
+
+.cardDate{
+  margin-bottom: 12px;
+  color: var(--color-text-muted);
+  font-size: 11px;
   line-height: 1.6;
 }

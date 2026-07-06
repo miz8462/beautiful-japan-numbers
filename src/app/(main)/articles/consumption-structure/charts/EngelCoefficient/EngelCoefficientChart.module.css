@@ -1,0 +1,35 @@
+.wrapper {
+  min-width: 0;
+}
+
+.wrapper p {
+  color: var(--color-text-secondary);
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.unitNote {
+  display: block;
+  margin-bottom: 12px;
+  color: var(--color-text-muted);
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+.tooltip {
+  display: grid;
+  gap: 2px;
+  padding: 8px 10px;
+  border: 1px solid var(--color-border);
+  background: #ffffff;
+  font-size: 12px;
+  line-height: 1.6;
+  white-space: nowrap;
+  color: var(--color-text-secondary);
+  font-weight: 700;
+}
+
+.tooltip strong {
+  font-family: var(--font-data);
+  color: #5bbee4;
+}

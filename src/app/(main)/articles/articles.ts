@@ -32,6 +32,18 @@ export type Article = {
 
 export const articles: Article[] = [
   {
+    href: "/articles/consumption-structure",
+    publishedAt: "2026-07-06",
+    label: "Consumption",
+    title: "消費支出の構造はどう変わったか？",
+    description:
+      "二人以上の世帯の消費支出について、費目別シェアとエンゲル係数の推移を可視化し、家計の使い道の変化を見ます。",
+    tags: ["economy"],
+    sourceUrl: "https://www.stat.go.jp/data/kakei/longtime/index.html",
+    sourceLabel:
+      "出典: 総務省統計局「家計調査」家計収支編 二人以上の世帯 用途分類",
+  },
+  {
     href: "/articles/disposable-income",
     publishedAt: "2026-07-04",
     label: "Disposable Income",
@@ -43,7 +55,7 @@ export const articles: Article[] = [
       "https://www.stat.go.jp/data/kakei/longtime/index.html",
     sourceLabel: "総務省統計局「家計調査」二人以上の世帯のうち勤労者世帯",
   },
-   {
+  {
     href: "/articles/savings",
     publishedAt: "2026-07-03",
     label: "Savings",
@@ -112,7 +124,17 @@ export const articles: Article[] = [
     sourceUrl: "https://www.soumu.go.jp/senkyo/senkyo_s/data/index.html",
     sourceLabel: "出典: 総務省 選挙関連資料",
   },
-
+  {
+    href: "/articles/population",
+    label: "Population",
+    publishedAt: "2026-06-13",
+    title: "人口はどれだけ減ってるの？",
+    description:
+      "総人口・出生・死亡・国際移動の変化を並べ、人口減少の“中身”を分解して見ていきます。",
+    tags: ["society"],
+    sourceUrl: "https://www.stat.go.jp/data/jinsui/2.html",
+    sourceLabel: "出典: 総務省統計局 人口推計",
+  },
   {
     href: "/articles/government-spending",
     publishedAt: "2026-06-13",
@@ -124,17 +146,6 @@ export const articles: Article[] = [
     sourceUrl:
       "https://www.mof.go.jp/policy/budget/reference/statistics/data.htm",
     sourceLabel: "出典: 財務省「予算・決算 統計表一覧」",
-  },
-  {
-    href: "/articles/population",
-    label: "Population",
-    publishedAt: "2026-06-13",
-    title: "人口はどれだけ減ってるの？",
-    description:
-      "総人口・出生・死亡・国際移動の変化を並べ、人口減少の“中身”を分解して見ていきます。",
-    tags: ["society"],
-    sourceUrl: "https://www.stat.go.jp/data/jinsui/2.html",
-    sourceLabel: "出典: 総務省統計局 人口推計",
   },
 ];
 
