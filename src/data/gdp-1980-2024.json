@@ -1,0 +1,1058 @@
+{
+  "metadata": {
+    "title": "日本GDP長期時系列（完全版・内訳含む）",
+    "description": "1980年度～2024年度の名目・実質GDP（支出側・4大項目内訳＋構成比）を連結。",
+    "sources": [
+      {
+        "period": "1980-1993",
+        "source": "内閣府「国民経済計算年次推計」2015年基準（gaku-jfy_2780.csv / gaku-mfy_2780.csv）",
+        "baseYear": "2015暦年連鎖価格"
+      },
+      {
+        "period": "1994-2024",
+        "source": "内閣府「国民経済計算年次推計」2020年基準（gdp-long-term.json）",
+        "baseYear": "2020暦年連鎖価格（連鎖方式）"
+      }
+    ],
+    "unit": "10億円（名目・実質とも）",
+    "note": "1994年度はJSON（2020年基準）の値を採用。基準改定のため1993年度以前と1994年度以降の水準値は直接比較できない。1993年度以前のnominalSharesは名目GDP比から算出。",
+    "realBasis": "1993年度以前：2015年基準、1994年度以降：2020年基準"
+  },
+  "data": [
+    {
+      "year": 1980,
+      "nominalGdp": 261681.3,
+      "realGdp": 276175.4,
+      "nominal": {
+        "privateConsumption": 133943.4,
+        "governmentConsumption": 37416.0,
+        "grossCapitalFormation": 91789.7,
+        "netExports": -1358.2
+      },
+      "real": {
+        "privateConsumption": 155467.8,
+        "governmentConsumption": 45187.8,
+        "grossCapitalFormation": 94578.7,
+        "netExports": -5046.3
+      },
+      "nominalShares": {
+        "privateConsumption": 51.19,
+        "governmentConsumption": 14.30,
+        "grossCapitalFormation": 35.08,
+        "netExports": -0.52
+      }
+    },
+    {
+      "year": 1981,
+      "nominalGdp": 278399.5,
+      "realGdp": 287369.4,
+      "nominal": {
+        "privateConsumption": 142341.3,
+        "governmentConsumption": 40230.3,
+        "grossCapitalFormation": 94078.2,
+        "netExports": 1749.7
+      },
+      "real": {
+        "privateConsumption": 160415.4,
+        "governmentConsumption": 47771.8,
+        "grossCapitalFormation": 96819.6,
+        "netExports": -3637.4
+      },
+      "nominalShares": {
+        "privateConsumption": 51.13,
+        "governmentConsumption": 14.45,
+        "grossCapitalFormation": 33.79,
+        "netExports": 0.63
+      }
+    },
+    {
+      "year": 1982,
+      "nominalGdp": 291413.0,
+      "realGdp": 296682.1,
+      "nominal": {
+        "privateConsumption": 152629.8,
+        "governmentConsumption": 42286.3,
+        "grossCapitalFormation": 94455.3,
+        "netExports": 2041.6
+      },
+      "real": {
+        "privateConsumption": 167699.2,
+        "governmentConsumption": 49654.2,
+        "grossCapitalFormation": 95954.5,
+        "netExports": -2534.6
+      },
+      "nominalShares": {
+        "privateConsumption": 52.38,
+        "governmentConsumption": 14.51,
+        "grossCapitalFormation": 32.41,
+        "netExports": 0.70
+      }
+    },
+    {
+      "year": 1983,
+      "nominalGdp": 305549.0,
+      "realGdp": 308171.7,
+      "nominal": {
+        "privateConsumption": 160319.1,
+        "governmentConsumption": 44222.8,
+        "grossCapitalFormation": 95838.6,
+        "netExports": 5168.5
+      },
+      "real": {
+        "privateConsumption": 173114.2,
+        "governmentConsumption": 51780.0,
+        "grossCapitalFormation": 96442.0,
+        "netExports": -1121.0
+      },
+      "nominalShares": {
+        "privateConsumption": 52.47,
+        "governmentConsumption": 14.47,
+        "grossCapitalFormation": 31.37,
+        "netExports": 1.69
+      }
+    },
+    {
+      "year": 1984,
+      "nominalGdp": 324344.9,
+      "realGdp": 321870.5,
+      "nominal": {
+        "privateConsumption": 168197.1,
+        "governmentConsumption": 46111.9,
+        "grossCapitalFormation": 101748.8,
+        "netExports": 8287.1
+      },
+      "real": {
+        "privateConsumption": 178650.6,
+        "governmentConsumption": 53034.3,
+        "grossCapitalFormation": 100940.7,
+        "netExports": 61.2
+      },
+      "nominalShares": {
+        "privateConsumption": 51.86,
+        "governmentConsumption": 14.22,
+        "grossCapitalFormation": 31.37,
+        "netExports": 2.55
+      }
+    },
+    {
+      "year": 1985,
+      "nominalGdp": 345766.3,
+      "realGdp": 339278.4,
+      "nominal": {
+        "privateConsumption": 178128.8,
+        "governmentConsumption": 48252.9,
+        "grossCapitalFormation": 108177.8,
+        "netExports": 11206.8
+      },
+      "real": {
+        "privateConsumption": 186373.1,
+        "governmentConsumption": 53907.0,
+        "grossCapitalFormation": 100147.1,
+        "netExports": 1850.5
+      },
+      "nominalShares": {
+        "privateConsumption": 51.52,
+        "governmentConsumption": 13.95,
+        "grossCapitalFormation": 31.29,
+        "netExports": 3.24
+      }
+    },
+    {
+      "year": 1986,
+      "nominalGdp": 360006.6,
+      "realGdp": 348561.4,
+      "nominal": {
+        "privateConsumption": 184764.8,
+        "governmentConsumption": 50183.9,
+        "grossCapitalFormation": 111372.1,
+        "netExports": 13445.8
+      },
+      "real": {
+        "privateConsumption": 193062.4,
+        "governmentConsumption": 55800.8,
+        "grossCapitalFormation": 111658.1,
+        "netExports": -1220.0
+      },
+      "nominalShares": {
+        "privateConsumption": 51.32,
+        "governmentConsumption": 13.94,
+        "grossCapitalFormation": 30.94,
+        "netExports": 3.73
+      }
+    },
+    {
+      "year": 1987,
+      "nominalGdp": 381354.9,
+      "realGdp": 369418.9,
+      "nominal": {
+        "privateConsumption": 194405.2,
+        "governmentConsumption": 52282.2,
+        "grossCapitalFormation": 125644.2,
+        "netExports": 9023.3
+      },
+      "real": {
+        "privateConsumption": 202149.7,
+        "governmentConsumption": 57885.1,
+        "grossCapitalFormation": 120958.8,
+        "netExports": -4394.0
+      },
+      "nominalShares": {
+        "privateConsumption": 50.98,
+        "governmentConsumption": 13.71,
+        "grossCapitalFormation": 32.95,
+        "netExports": 2.37
+      }
+    },
+    {
+      "year": 1988,
+      "nominalGdp": 407504.2,
+      "realGdp": 392189.2,
+      "nominal": {
+        "privateConsumption": 205920.7,
+        "governmentConsumption": 54510.1,
+        "grossCapitalFormation": 139485.0,
+        "netExports": 7588.4
+      },
+      "real": {
+        "privateConsumption": 212997.6,
+        "governmentConsumption": 59857.6,
+        "grossCapitalFormation": 131180.5,
+        "netExports": -7970.7
+      },
+      "nominalShares": {
+        "privateConsumption": 50.53,
+        "governmentConsumption": 13.38,
+        "grossCapitalFormation": 34.23,
+        "netExports": 1.86
+      }
+    },
+    {
+      "year": 1989,
+      "nominalGdp": 434826.4,
+      "realGdp": 407922.9,
+      "nominal": {
+        "privateConsumption": 219342.7,
+        "governmentConsumption": 58046.7,
+        "grossCapitalFormation": 152257.7,
+        "netExports": 5179.3
+      },
+      "real": {
+        "privateConsumption": 221680.5,
+        "governmentConsumption": 61390.3,
+        "grossCapitalFormation": 141817.6,
+        "netExports": -10966.0
+      },
+      "nominalShares": {
+        "privateConsumption": 50.44,
+        "governmentConsumption": 13.35,
+        "grossCapitalFormation": 35.02,
+        "netExports": 1.19
+      }
+    },
+    {
+      "year": 1990,
+      "nominalGdp": 470873.7,
+      "realGdp": 430861.9,
+      "nominal": {
+        "privateConsumption": 236712.8,
+        "governmentConsumption": 62617.4,
+        "grossCapitalFormation": 167616.7,
+        "netExports": 3926.8
+      },
+      "real": {
+        "privateConsumption": 232745.6,
+        "governmentConsumption": 63821.1,
+        "grossCapitalFormation": 149589.4,
+        "netExports": -11098.5
+      },
+      "nominalShares": {
+        "privateConsumption": 50.27,
+        "governmentConsumption": 13.30,
+        "grossCapitalFormation": 35.60,
+        "netExports": 0.83
+      }
+    },
+    {
+      "year": 1991,
+      "nominalGdp": 496058.5,
+      "realGdp": 441677.9,
+      "nominal": {
+        "privateConsumption": 249178.1,
+        "governmentConsumption": 66412.6,
+        "grossCapitalFormation": 172180.4,
+        "netExports": 8287.4
+      },
+      "real": {
+        "privateConsumption": 238272.6,
+        "governmentConsumption": 66070.5,
+        "grossCapitalFormation": 149468.7,
+        "netExports": -9056.2
+      },
+      "nominalShares": {
+        "privateConsumption": 50.23,
+        "governmentConsumption": 13.39,
+        "grossCapitalFormation": 34.71,
+        "netExports": 1.67
+      }
+    },
+    {
+      "year": 1992,
+      "nominalGdp": 505820.5,
+      "realGdp": 444297.2,
+      "nominal": {
+        "privateConsumption": 256952.6,
+        "governmentConsumption": 70290.3,
+        "grossCapitalFormation": 168409.2,
+        "netExports": 10658.4
+      },
+      "real": {
+        "privateConsumption": 241711.3,
+        "governmentConsumption": 67957.7,
+        "grossCapitalFormation": 143645.3,
+        "netExports": -6878.6
+      },
+      "nominalShares": {
+        "privateConsumption": 50.80,
+        "governmentConsumption": 13.90,
+        "grossCapitalFormation": 33.29,
+        "netExports": 2.11
+      }
+    },
+    {
+      "year": 1993,
+      "nominalGdp": 504509.6,
+      "realGdp": 440841.6,
+      "nominal": {
+        "privateConsumption": 263834.3,
+        "governmentConsumption": 72813.6,
+        "grossCapitalFormation": 158040.8,
+        "netExports": 10442.5
+      },
+      "real": {
+        "privateConsumption": 245598.1,
+        "governmentConsumption": 70090.9,
+        "grossCapitalFormation": 142267.7,
+        "netExports": -7148.3
+      },
+      "nominalShares": {
+        "privateConsumption": 52.30,
+        "governmentConsumption": 14.43,
+        "grossCapitalFormation": 31.33,
+        "netExports": 2.07
+      }
+    },
+    {
+      "year": 1994,
+      "nominalGdp": 522040.3,
+      "realGdp": 465176.6,
+      "nominal": {
+        "privateConsumption": 269951.8,
+        "governmentConsumption": 76272.7,
+        "grossCapitalFormation": 167102.9,
+        "netExports": 8712.8
+      },
+      "real": {
+        "privateConsumption": 255634.8,
+        "governmentConsumption": 72334.6,
+        "grossCapitalFormation": 153125.3,
+        "netExports": -6983.7
+      },
+      "nominalShares": {
+        "privateConsumption": 51.71,
+        "governmentConsumption": 14.61,
+        "grossCapitalFormation": 32.01,
+        "netExports": 1.67
+      }
+    },
+    {
+      "year": 1995,
+      "nominalGdp": 534706.2,
+      "realGdp": 479193.3,
+      "nominal": {
+        "privateConsumption": 275413.6,
+        "governmentConsumption": 79020.5,
+        "grossCapitalFormation": 174882.7,
+        "netExports": 5389.5
+      },
+      "real": {
+        "privateConsumption": 261873.6,
+        "governmentConsumption": 74770.5,
+        "grossCapitalFormation": 162314.2,
+        "netExports": -11720.3
+      },
+      "nominalShares": {
+        "privateConsumption": 51.51,
+        "governmentConsumption": 14.78,
+        "grossCapitalFormation": 32.71,
+        "netExports": 1.01
+      }
+    },
+    {
+      "year": 1996,
+      "nominalGdp": 549359.0,
+      "realGdp": 493548.5,
+      "nominal": {
+        "privateConsumption": 282686.8,
+        "governmentConsumption": 81822.7,
+        "grossCapitalFormation": 183225.8,
+        "netExports": 1623.7
+      },
+      "real": {
+        "privateConsumption": 268009.7,
+        "governmentConsumption": 76420.1,
+        "grossCapitalFormation": 170306.0,
+        "netExports": -13817.3
+      },
+      "nominalShares": {
+        "privateConsumption": 51.46,
+        "governmentConsumption": 14.89,
+        "grossCapitalFormation": 33.35,
+        "netExports": 0.30
+      }
+    },
+    {
+      "year": 1997,
+      "nominalGdp": 552260.7,
+      "realGdp": 493791.4,
+      "nominal": {
+        "privateConsumption": 283687.6,
+        "governmentConsumption": 83267.1,
+        "grossCapitalFormation": 178477.4,
+        "netExports": 6828.7
+      },
+      "real": {
+        "privateConsumption": 265043.0,
+        "governmentConsumption": 77404.5,
+        "grossCapitalFormation": 167270.0,
+        "netExports": -9267.3
+      },
+      "nominalShares": {
+        "privateConsumption": 51.37,
+        "governmentConsumption": 15.08,
+        "grossCapitalFormation": 32.32,
+        "netExports": 1.24
+      }
+    },
+    {
+      "year": 1998,
+      "nominalGdp": 540956.7,
+      "realGdp": 486711.2,
+      "nominal": {
+        "privateConsumption": 283687.0,
+        "governmentConsumption": 84271.0,
+        "grossCapitalFormation": 163463.3,
+        "netExports": 9535.4
+      },
+      "real": {
+        "privateConsumption": 266059.2,
+        "governmentConsumption": 78880.9,
+        "grossCapitalFormation": 156275.3,
+        "netExports": -7485.6
+      },
+      "nominalShares": {
+        "privateConsumption": 52.44,
+        "governmentConsumption": 15.58,
+        "grossCapitalFormation": 30.22,
+        "netExports": 1.76
+      }
+    },
+    {
+      "year": 1999,
+      "nominalGdp": 536862.4,
+      "realGdp": 489947.8,
+      "nominal": {
+        "privateConsumption": 285678.1,
+        "governmentConsumption": 86016.0,
+        "grossCapitalFormation": 157351.8,
+        "netExports": 7816.4
+      },
+      "real": {
+        "privateConsumption": 269798.8,
+        "governmentConsumption": 81890.7,
+        "grossCapitalFormation": 152608.5,
+        "netExports": -8169.4
+      },
+      "nominalShares": {
+        "privateConsumption": 53.21,
+        "governmentConsumption": 16.02,
+        "grossCapitalFormation": 29.31,
+        "netExports": 1.46
+      }
+    },
+    {
+      "year": 2000,
+      "nominalGdp": 545844.5,
+      "realGdp": 503719.9,
+      "nominal": {
+        "privateConsumption": 286969.1,
+        "governmentConsumption": 89462.5,
+        "grossCapitalFormation": 163188.2,
+        "netExports": 6224.7
+      },
+      "real": {
+        "privateConsumption": 273755.7,
+        "governmentConsumption": 84946.9,
+        "grossCapitalFormation": 159495.6,
+        "netExports": -9230.5
+      },
+      "nominalShares": {
+        "privateConsumption": 52.57,
+        "governmentConsumption": 16.39,
+        "grossCapitalFormation": 29.90,
+        "netExports": 1.14
+      }
+    },
+    {
+      "year": 2001,
+      "nominalGdp": 535398.7,
+      "realGdp": 499552.5,
+      "nominal": {
+        "privateConsumption": 287976.2,
+        "governmentConsumption": 92428.8,
+        "grossCapitalFormation": 151193.0,
+        "netExports": 3800.8
+      },
+      "real": {
+        "privateConsumption": 279071.6,
+        "governmentConsumption": 86844.9,
+        "grossCapitalFormation": 150315.5,
+        "netExports": -11084.3
+      },
+      "nominalShares": {
+        "privateConsumption": 53.79,
+        "governmentConsumption": 17.26,
+        "grossCapitalFormation": 28.24,
+        "netExports": 0.71
+      }
+    },
+    {
+      "year": 2002,
+      "nominalGdp": 530547.3,
+      "realGdp": 503795.1,
+      "nominal": {
+        "privateConsumption": 287292.6,
+        "governmentConsumption": 92647.5,
+        "grossCapitalFormation": 144025.6,
+        "netExports": 6581.6
+      },
+      "real": {
+        "privateConsumption": 281929.0,
+        "governmentConsumption": 88288.7,
+        "grossCapitalFormation": 146229.4,
+        "netExports": -8284.3
+      },
+      "nominalShares": {
+        "privateConsumption": 54.15,
+        "governmentConsumption": 17.46,
+        "grossCapitalFormation": 27.15,
+        "netExports": 1.24
+      }
+    },
+    {
+      "year": 2003,
+      "nominalGdp": 532411.1,
+      "realGdp": 513186.3,
+      "nominal": {
+        "privateConsumption": 287135.3,
+        "governmentConsumption": 93350.0,
+        "grossCapitalFormation": 142319.1,
+        "netExports": 9606.6
+      },
+      "real": {
+        "privateConsumption": 284486.3,
+        "governmentConsumption": 90159.6,
+        "grossCapitalFormation": 147075.4,
+        "netExports": -4795.5
+      },
+      "nominalShares": {
+        "privateConsumption": 53.93,
+        "governmentConsumption": 17.53,
+        "grossCapitalFormation": 26.73,
+        "netExports": 1.80
+      }
+    },
+    {
+      "year": 2004,
+      "nominalGdp": 534603.2,
+      "realGdp": 521191.1,
+      "nominal": {
+        "privateConsumption": 288469.9,
+        "governmentConsumption": 93650.9,
+        "grossCapitalFormation": 143058.3,
+        "netExports": 9424.1
+      },
+      "real": {
+        "privateConsumption": 287390.8,
+        "governmentConsumption": 90901.3,
+        "grossCapitalFormation": 149214.0,
+        "netExports": -3747.6
+      },
+      "nominalShares": {
+        "privateConsumption": 53.96,
+        "governmentConsumption": 17.52,
+        "grossCapitalFormation": 26.76,
+        "netExports": 1.76
+      }
+    },
+    {
+      "year": 2005,
+      "nominalGdp": 538872.4,
+      "realGdp": 532960.1,
+      "nominal": {
+        "privateConsumption": 291702.7,
+        "governmentConsumption": 94090.7,
+        "grossCapitalFormation": 145971.8,
+        "netExports": 7107.2
+      },
+      "real": {
+        "privateConsumption": 292907.2,
+        "governmentConsumption": 91329.1,
+        "grossCapitalFormation": 152541.2,
+        "netExports": -1862.4
+      },
+      "nominalShares": {
+        "privateConsumption": 54.13,
+        "governmentConsumption": 17.46,
+        "grossCapitalFormation": 27.09,
+        "netExports": 1.32
+      }
+    },
+    {
+      "year": 2006,
+      "nominalGdp": 542815.7,
+      "realGdp": 541175.1,
+      "nominal": {
+        "privateConsumption": 293739.0,
+        "governmentConsumption": 93567.8,
+        "grossCapitalFormation": 147740.1,
+        "netExports": 7768.8
+      },
+      "real": {
+        "privateConsumption": 295145.5,
+        "governmentConsumption": 91908.8,
+        "grossCapitalFormation": 153819.0,
+        "netExports": 1500.4
+      },
+      "nominalShares": {
+        "privateConsumption": 54.11,
+        "governmentConsumption": 17.24,
+        "grossCapitalFormation": 27.22,
+        "netExports": 1.43
+      }
+    },
+    {
+      "year": 2007,
+      "nominalGdp": 543816.0,
+      "realGdp": 547465.7,
+      "nominal": {
+        "privateConsumption": 295478.4,
+        "governmentConsumption": 94841.4,
+        "grossCapitalFormation": 144674.8,
+        "netExports": 8821.4
+      },
+      "real": {
+        "privateConsumption": 297017.4,
+        "governmentConsumption": 93456.9,
+        "grossCapitalFormation": 150410.4,
+        "netExports": 6594.6
+      },
+      "nominalShares": {
+        "privateConsumption": 54.33,
+        "governmentConsumption": 17.44,
+        "grossCapitalFormation": 26.60,
+        "netExports": 1.62
+      }
+    },
+    {
+      "year": 2008,
+      "nominalGdp": 522471.7,
+      "realGdp": 529271.9,
+      "nominal": {
+        "privateConsumption": 290691.7,
+        "governmentConsumption": 94172.2,
+        "grossCapitalFormation": 138563.0,
+        "netExports": -955.2
+      },
+      "real": {
+        "privateConsumption": 291957.4,
+        "governmentConsumption": 92986.0,
+        "grossCapitalFormation": 143235.8,
+        "netExports": 1619.1
+      },
+      "nominalShares": {
+        "privateConsumption": 55.64,
+        "governmentConsumption": 18.02,
+        "grossCapitalFormation": 26.52,
+        "netExports": -0.18
+      }
+    },
+    {
+      "year": 2009,
+      "nominalGdp": 500842.0,
+      "realGdp": 512960.9,
+      "nominal": {
+        "privateConsumption": 283680.6,
+        "governmentConsumption": 95454.1,
+        "grossCapitalFormation": 116712.7,
+        "netExports": 4994.5
+      },
+      "real": {
+        "privateConsumption": 291615.6,
+        "governmentConsumption": 95342.0,
+        "grossCapitalFormation": 123035.0,
+        "netExports": 2575.1
+      },
+      "nominalShares": {
+        "privateConsumption": 56.64,
+        "governmentConsumption": 19.06,
+        "grossCapitalFormation": 23.30,
+        "netExports": 1.00
+      }
+    },
+    {
+      "year": 2010,
+      "nominalGdp": 509179.4,
+      "realGdp": 530503.7,
+      "nominal": {
+        "privateConsumption": 284989.7,
+        "governmentConsumption": 97458.3,
+        "grossCapitalFormation": 121356.1,
+        "netExports": 5375.3
+      },
+      "real": {
+        "privateConsumption": 296820.6,
+        "governmentConsumption": 97817.6,
+        "grossCapitalFormation": 128667.9,
+        "netExports": 6727.9
+      },
+      "nominalShares": {
+        "privateConsumption": 55.97,
+        "governmentConsumption": 19.14,
+        "grossCapitalFormation": 23.83,
+        "netExports": 1.06
+      }
+    },
+    {
+      "year": 2011,
+      "nominalGdp": 504204.7,
+      "realGdp": 533130.1,
+      "nominal": {
+        "privateConsumption": 285474.7,
+        "governmentConsumption": 99088.1,
+        "grossCapitalFormation": 124816.5,
+        "netExports": -5174.7
+      },
+      "real": {
+        "privateConsumption": 298461.8,
+        "governmentConsumption": 99691.1,
+        "grossCapitalFormation": 132686.1,
+        "netExports": 2020.4
+      },
+      "nominalShares": {
+        "privateConsumption": 56.62,
+        "governmentConsumption": 19.65,
+        "grossCapitalFormation": 24.76,
+        "netExports": -1.03
+      }
+    },
+    {
+      "year": 2012,
+      "nominalGdp": 504538.3,
+      "realGdp": 537234.5,
+      "nominal": {
+        "privateConsumption": 288824.0,
+        "governmentConsumption": 99874.0,
+        "grossCapitalFormation": 125181.2,
+        "netExports": -9340.9
+      },
+      "real": {
+        "privateConsumption": 304389.6,
+        "governmentConsumption": 101185.0,
+        "grossCapitalFormation": 133488.0,
+        "netExports": -1841.7
+      },
+      "nominalShares": {
+        "privateConsumption": 57.25,
+        "governmentConsumption": 19.80,
+        "grossCapitalFormation": 24.81,
+        "netExports": -1.85
+      }
+    },
+    {
+      "year": 2013,
+      "nominalGdp": 519154.2,
+      "realGdp": 552541.2,
+      "nominal": {
+        "privateConsumption": 298156.4,
+        "governmentConsumption": 101361.0,
+        "grossCapitalFormation": 134153.4,
+        "netExports": -14516.7
+      },
+      "real": {
+        "privateConsumption": 313403.5,
+        "governmentConsumption": 102929.7,
+        "grossCapitalFormation": 140604.1,
+        "netExports": -3886.2
+      },
+      "nominalShares": {
+        "privateConsumption": 57.43,
+        "governmentConsumption": 19.52,
+        "grossCapitalFormation": 25.84,
+        "netExports": -2.80
+      }
+    },
+    {
+      "year": 2014,
+      "nominalGdp": 533746.1,
+      "realGdp": 554399.3,
+      "nominal": {
+        "privateConsumption": 297973.1,
+        "governmentConsumption": 104156.8,
+        "grossCapitalFormation": 141078.5,
+        "netExports": -9462.3
+      },
+      "real": {
+        "privateConsumption": 306277.9,
+        "governmentConsumption": 103866.3,
+        "grossCapitalFormation": 144892.4,
+        "netExports": -143.4
+      },
+      "nominalShares": {
+        "privateConsumption": 55.83,
+        "governmentConsumption": 19.51,
+        "grossCapitalFormation": 26.43,
+        "netExports": -1.77
+      }
+    },
+    {
+      "year": 2015,
+      "nominalGdp": 551944.9,
+      "realGdp": 564372.7,
+      "nominal": {
+        "privateConsumption": 300746.1,
+        "governmentConsumption": 105878.3,
+        "grossCapitalFormation": 146440.0,
+        "netExports": -1119.5
+      },
+      "real": {
+        "privateConsumption": 308835.5,
+        "governmentConsumption": 105802.4,
+        "grossCapitalFormation": 149701.7,
+        "netExports": 316.2
+      },
+      "nominalShares": {
+        "privateConsumption": 54.49,
+        "governmentConsumption": 19.18,
+        "grossCapitalFormation": 26.53,
+        "netExports": -0.20
+      }
+    },
+    {
+      "year": 2016,
+      "nominalGdp": 556273.3,
+      "realGdp": 567875.0,
+      "nominal": {
+        "privateConsumption": 299393.2,
+        "governmentConsumption": 106537.5,
+        "grossCapitalFormation": 145914.4,
+        "netExports": 4428.2
+      },
+      "real": {
+        "privateConsumption": 307905.0,
+        "governmentConsumption": 106806.1,
+        "grossCapitalFormation": 149465.1,
+        "netExports": 3605.4
+      },
+      "nominalShares": {
+        "privateConsumption": 53.82,
+        "governmentConsumption": 19.15,
+        "grossCapitalFormation": 26.23,
+        "netExports": 0.80
+      }
+    },
+    {
+      "year": 2017,
+      "nominalGdp": 567668.1,
+      "realGdp": 578152.5,
+      "nominal": {
+        "privateConsumption": 304003.8,
+        "governmentConsumption": 107690.8,
+        "grossCapitalFormation": 151933.4,
+        "netExports": 4040.0
+      },
+      "real": {
+        "privateConsumption": 310839.3,
+        "governmentConsumption": 107388.3,
+        "grossCapitalFormation": 153747.6,
+        "netExports": 6006.7
+      },
+      "nominalShares": {
+        "privateConsumption": 53.55,
+        "governmentConsumption": 18.97,
+        "grossCapitalFormation": 26.76,
+        "netExports": 0.71
+      }
+    },
+    {
+      "year": 2018,
+      "nominalGdp": 569944.4,
+      "realGdp": 581443.5,
+      "nominal": {
+        "privateConsumption": 306140.0,
+        "governmentConsumption": 108873.9,
+        "grossCapitalFormation": 155684.2,
+        "netExports": -753.7
+      },
+      "real": {
+        "privateConsumption": 311043.5,
+        "governmentConsumption": 108485.8,
+        "grossCapitalFormation": 156576.4,
+        "netExports": 5230.9
+      },
+      "nominalShares": {
+        "privateConsumption": 53.71,
+        "governmentConsumption": 19.10,
+        "grossCapitalFormation": 27.32,
+        "netExports": -0.13
+      }
+    },
+    {
+      "year": 2019,
+      "nominalGdp": 570618.9,
+      "realGdp": 575935.3,
+      "nominal": {
+        "privateConsumption": 304925.0,
+        "governmentConsumption": 111884.0,
+        "grossCapitalFormation": 155870.7,
+        "netExports": -2060.8
+      },
+      "real": {
+        "privateConsumption": 306364.9,
+        "governmentConsumption": 111124.3,
+        "grossCapitalFormation": 155779.7,
+        "netExports": 2765.1
+      },
+      "nominalShares": {
+        "privateConsumption": 53.44,
+        "governmentConsumption": 19.61,
+        "grossCapitalFormation": 27.32,
+        "netExports": -0.36
+      }
+    },
+    {
+      "year": 2020,
+      "nominalGdp": 554342.3,
+      "realGdp": 554311.1,
+      "nominal": {
+        "privateConsumption": 292198.6,
+        "governmentConsumption": 113808.5,
+        "grossCapitalFormation": 148742.7,
+        "netExports": -407.5
+      },
+      "real": {
+        "privateConsumption": 292164.6,
+        "governmentConsumption": 114003.3,
+        "grossCapitalFormation": 149040.4,
+        "netExports": -861.5
+      },
+      "nominalShares": {
+        "privateConsumption": 52.71,
+        "governmentConsumption": 20.53,
+        "grossCapitalFormation": 26.83,
+        "netExports": -0.07
+      }
+    },
+    {
+      "year": 2021,
+      "nominalGdp": 576554.0,
+      "realGdp": 576079.7,
+      "nominal": {
+        "privateConsumption": 305141.9,
+        "governmentConsumption": 119065.0,
+        "grossCapitalFormation": 159001.7,
+        "netExports": -6654.7
+      },
+      "real": {
+        "privateConsumption": 300310.8,
+        "governmentConsumption": 118298.3,
+        "grossCapitalFormation": 153717.9,
+        "netExports": 3822.7
+      },
+      "nominalShares": {
+        "privateConsumption": 52.93,
+        "governmentConsumption": 20.65,
+        "grossCapitalFormation": 27.58,
+        "netExports": -1.15
+      }
+    },
+    {
+      "year": 2022,
+      "nominalGdp": 591651.3,
+      "realGdp": 584335.1,
+      "nominal": {
+        "privateConsumption": 323865.2,
+        "governmentConsumption": 122377.4,
+        "grossCapitalFormation": 168270.8,
+        "netExports": -22862.1
+      },
+      "real": {
+        "privateConsumption": 307682.3,
+        "governmentConsumption": 119708.7,
+        "grossCapitalFormation": 156070.4,
+        "netExports": 1616.1
+      },
+      "nominalShares": {
+        "privateConsumption": 54.74,
+        "governmentConsumption": 20.68,
+        "grossCapitalFormation": 28.44,
+        "netExports": -3.86
+      }
+    },
+    {
+      "year": 2023,
+      "nominalGdp": 619390.4,
+      "realGdp": 584048.6,
+      "nominal": {
+        "privateConsumption": 330876.2,
+        "governmentConsumption": 123448.0,
+        "grossCapitalFormation": 171120.8,
+        "netExports": -6054.6
+      },
+      "real": {
+        "privateConsumption": 304655.5,
+        "governmentConsumption": 118757.2,
+        "grossCapitalFormation": 153472.5,
+        "netExports": 6725.8
+      },
+      "nominalShares": {
+        "privateConsumption": 53.42,
+        "governmentConsumption": 19.93,
+        "grossCapitalFormation": 27.63,
+        "netExports": -0.98
+      }
+    },
+    {
+      "year": 2024,
+      "nominalGdp": 642414.7,
+      "realGdp": 586857.8,
+      "nominal": {
+        "privateConsumption": 340363.7,
+        "governmentConsumption": 129100.3,
+        "grossCapitalFormation": 178747.9,
+        "netExports": -5797.2
+      },
+      "real": {
+        "privateConsumption": 305271.4,
+        "governmentConsumption": 121489.3,
+        "grossCapitalFormation": 155081.5,
+        "netExports": 5329.3
+      },
+      "nominalShares": {
+        "privateConsumption": 52.98,
+        "governmentConsumption": 20.10,
+        "grossCapitalFormation": 27.82,
+        "netExports": -0.90
+      }
+    }
+  ]
+}

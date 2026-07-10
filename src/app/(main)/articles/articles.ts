@@ -32,6 +32,16 @@ export type Article = {
 
 export const articles: Article[] = [
   {
+    href: "/articles/gdp-long-term",
+    publishedAt: "2026-07-06",
+    label: "GDP",
+    title: "GDPの長期推移",
+    description: "1980年度以降の名目GDPと実質GDPの長期推移を可視化し、バブル崩壊後の変化を分析します。",
+    tags: ["economy"],
+    sourceUrl: "https://www.esri.cao.go.jp/jp/sna/kakuhou/kakuhou_top.html",
+    sourceLabel: "出典: 内閣府「国民経済計算年次推計」",
+  },
+  {
     href: "/articles/consumption-structure",
     publishedAt: "2026-07-06",
     label: "Consumption",
@@ -53,7 +63,7 @@ export const articles: Article[] = [
     tags: ["economy"],
     sourceUrl:
       "https://www.stat.go.jp/data/kakei/longtime/index.html",
-    sourceLabel: "総務省統計局「家計調査」二人以上の世帯のうち勤労者世帯",
+    sourceLabel: "総務省統計局「家計調査」",
   },
   {
     href: "/articles/savings",
