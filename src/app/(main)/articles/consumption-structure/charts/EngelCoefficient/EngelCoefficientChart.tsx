@@ -61,6 +61,34 @@ export function EngelCoefficientChart() {
           pointBorderWidth={0}
           enableGridX={false}
           gridYValues={yTickValues}
+          markers={[
+            {
+              axis: "y",
+              value: 25,
+              lineStyle: {
+                stroke: "#e0b400",
+                strokeWidth: 1.5,
+                strokeDasharray: "4 4",
+              },
+              legend: "25%",
+              legendPosition: "right",
+              legendOrientation: "horizontal",
+              textStyle: { fill: "#e0b400", fontSize: 10 },
+            },
+            {
+              axis: "y",
+              value: 30,
+              lineStyle: {
+                stroke: "#c0392b",
+                strokeWidth: 1.5,
+                strokeDasharray: "4 4",
+              },
+              legend: "30%",
+              legendPosition: "right",
+              legendOrientation: "horizontal",
+              textStyle: { fill: "#c0392b", fontSize: 10 },
+            },
+          ]}
           theme={{
             background: "transparent",
             text: {

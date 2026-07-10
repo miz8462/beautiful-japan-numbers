@@ -113,9 +113,9 @@ function AnnotationLayer({
   innerHeight,
 }: LineCustomSvgLayerProps<GdpLineSeries>) {
   const annotations = [
-    { year: 1980, label: "1980年度\n（開始）", color: "#9ca3af", labelY: innerHeight - 20 },
-    { year: 1994, label: "1994年度\n（基準改定）", color: "#9ca3af", labelY: innerHeight - 20 },
-    { year: 2020, label: "2020年度\n（物価上昇・円安）", color: "#f06449", labelY: innerHeight - 20 },
+    { year: 1990, label: "バブル崩壊(「失われた30年」の始まり)", color: "#9ca3af", labelY: innerHeight - 20 },
+    { year: 2008, label: "リーマンショック", color: "#9ca3af", labelY: innerHeight - 20 },
+    { year: 2020, label: "コロナ", color: "#9ca3af", labelY: innerHeight - 20 },
   ];
 
   return (

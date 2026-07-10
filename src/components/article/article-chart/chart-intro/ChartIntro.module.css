@@ -1,0 +1,11 @@
+.intro {
+  font-size: 1.0625rem;
+  line-height: 1.8;
+  color: #4a4a4a;
+  max-width: 1000px;
+  margin: 0 18px 20px;
+}
+
+.intro p+p {
+  margin-top: 0.5em;
+}

@@ -9,12 +9,12 @@ import styles from "./ExpenditureShareChart.module.css";
 
 type CategoryKey =
   | "food"
+  | "transport_comm"
   | "housing"
   | "utilities"
   | "furniture"
   | "clothing"
   | "medical"
-  | "transport_comm"
   | "education"
   | "culture_recreation"
   | "other";
@@ -29,12 +29,12 @@ const categoryKeys: CategoryKey[] = [
   "other",
   "culture_recreation",
   "education",
-  "transport_comm",
   "medical",
   "clothing",
   "furniture",
   "utilities",
   "housing",
+  "transport_comm",
   "food",
 ];
 
@@ -53,15 +53,15 @@ const labels: Record<CategoryKey, string> = {
 
 const colors: Record<CategoryKey, string> = {
   food: "#5bbee4",
-  housing: "#7a5c58",
-  utilities: "#f2b134",
-  furniture: "#8fbf67",
-  clothing: "#c06c84",
-  medical: "#2e9e6e",
   transport_comm: "#1e7aa8",
-  education: "#7b6fd6",
-  culture_recreation: "#f06449",
-  other: "#aaaaaa",
+  housing: "#c7c7c7",
+  utilities: "#d4d4d4",
+  furniture: "#bdbdbd",
+  clothing: "#cfcfcf",
+  medical: "#b8b8b8",
+  education: "#dcdcdc",
+  culture_recreation: "#c2c2c2",
+  other: "#e2e2e2",
 };
 
 const tickYears = ["2000", "2005", "2010", "2015", "2020", "2025"];

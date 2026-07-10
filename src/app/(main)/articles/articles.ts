@@ -32,6 +32,17 @@ export type Article = {
 
 export const articles: Article[] = [
   {
+    href: "/articles/gini-coefficient",
+    publishedAt: "2026-07-10",
+    label: "Gini Coefficient",
+    title: "日本の所得格差はどうなっているのか？",
+    description:
+      "当初所得と再分配所得のジニ係数の推移から、日本の所得格差の現状と、社会保障や税による再分配機能の改善度を可視化します。",
+    tags: ["economy", "society"],
+    sourceUrl: "https://www.e-stat.go.jp/statistics/00450422",
+    sourceLabel: "出典: 厚生労働省「所得再分配調査」",
+  },
+  {
     href: "/articles/gdp-long-term",
     publishedAt: "2026-07-06",
     label: "GDP",

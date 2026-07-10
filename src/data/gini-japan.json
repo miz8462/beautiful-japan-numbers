@@ -1,0 +1,28 @@
+{
+  "source": "厚生労働省「所得再分配調査」",
+  "sourceUrl": "https://www.e-stat.go.jp/statistics/00450422",
+  "unit": "世帯単位（非等価所得）",
+  "note": "所得再分配調査は3年ごとに実施。1962〜2021年度は厚労省各年報告書に基づく梅原英治（2019）の集計値、2023年度は令和5年所得再分配調査報告書（厚生労働省）の値。",
+  "series": [
+    { "year": 1962, "initialIncomeGini": 0.3904, "redistributedIncomeGini": 0.3442, "improvementRate": 11.8 },
+    { "year": 1967, "initialIncomeGini": 0.3749, "redistributedIncomeGini": 0.3176, "improvementRate": 15.3 },
+    { "year": 1972, "initialIncomeGini": 0.3538, "redistributedIncomeGini": 0.3136, "improvementRate": 11.4 },
+    { "year": 1975, "initialIncomeGini": 0.3747, "redistributedIncomeGini": 0.3455, "improvementRate": 7.8 },
+    { "year": 1978, "initialIncomeGini": 0.3652, "redistributedIncomeGini": 0.3381, "improvementRate": 7.4 },
+    { "year": 1981, "initialIncomeGini": 0.3491, "redistributedIncomeGini": 0.3143, "improvementRate": 10.0 },
+    { "year": 1984, "initialIncomeGini": 0.3975, "redistributedIncomeGini": 0.3426, "improvementRate": 13.8 },
+    { "year": 1987, "initialIncomeGini": 0.4039, "redistributedIncomeGini": 0.3382, "improvementRate": 16.3 },
+    { "year": 1990, "initialIncomeGini": 0.4334, "redistributedIncomeGini": 0.3643, "improvementRate": 15.9 },
+    { "year": 1993, "initialIncomeGini": 0.4394, "redistributedIncomeGini": 0.3645, "improvementRate": 17.0 },
+    { "year": 1996, "initialIncomeGini": 0.4412, "redistributedIncomeGini": 0.3606, "improvementRate": 18.3 },
+    { "year": 1999, "initialIncomeGini": 0.4720, "redistributedIncomeGini": 0.3814, "improvementRate": 19.2 },
+    { "year": 2002, "initialIncomeGini": 0.4983, "redistributedIncomeGini": 0.3812, "improvementRate": 23.5 },
+    { "year": 2005, "initialIncomeGini": 0.5263, "redistributedIncomeGini": 0.3873, "improvementRate": 26.4 },
+    { "year": 2008, "initialIncomeGini": 0.5318, "redistributedIncomeGini": 0.3758, "improvementRate": 29.3 },
+    { "year": 2011, "initialIncomeGini": 0.5536, "redistributedIncomeGini": 0.3791, "improvementRate": 31.5 },
+    { "year": 2014, "initialIncomeGini": 0.5704, "redistributedIncomeGini": 0.3759, "improvementRate": 34.1 },
+    { "year": 2017, "initialIncomeGini": 0.5594, "redistributedIncomeGini": 0.3721, "improvementRate": 33.5 },
+    { "year": 2021, "initialIncomeGini": 0.5700, "redistributedIncomeGini": 0.3813, "improvementRate": 33.1 },
+    { "year": 2023, "initialIncomeGini": 0.5855, "redistributedIncomeGini": 0.3825, "improvementRate": 34.7 }
+  ]
+}
