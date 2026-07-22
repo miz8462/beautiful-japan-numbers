@@ -3,13 +3,13 @@
   align-items: center;
   min-height: 28px;
   margin-right: 10px;
-  margin-bottom: 16px;
+  margin-bottom: 14px;
   border-radius: 9999px;
-  padding: 6px 16px;
+  padding: 8px 16px;
   color: #ffffff;
   background: var(--color-brand);
-  font-size: 13px;
-  font-weight: 500;
+  font-size: 18px;
+  font-weight: 00;
   line-height: 1.4;
   letter-spacing: 0.06em;
 }

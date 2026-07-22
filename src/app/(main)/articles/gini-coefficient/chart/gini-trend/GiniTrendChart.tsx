@@ -5,7 +5,7 @@ import { ArticleChartCanvas } from "@/components/article/article-chart";
 import giniData from "@/data/gini-japan.json";
 import type { LineCustomSvgLayerProps, LineSeries } from "@nivo/line";
 import styles from "./GiniTrendChart.module.css";
-import { ArticleText } from "@/components/article/article-intro/ArticleIntro";
+import { ArticleText } from "@/components/article/article-text/ArticleText";
 import { ChartIntro } from "@/components/article/article-chart/chart-intro/ChartIntro";
 
 const ResponsiveLine = dynamic(

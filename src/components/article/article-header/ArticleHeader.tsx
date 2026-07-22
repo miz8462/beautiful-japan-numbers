@@ -16,8 +16,8 @@ export function ArticleHeader({ article }: { article: Article }) {
         </time>
       </div>
       <ArticleTags tags={article.tags} />
-      <h1>{article.title}</h1>
-      <p>{article.description}</p>
+      <h1 className={styles.title}>{article.title}</h1>
+      <p className={styles.description}>{article.description}</p>
       <ArticleSource href={article.sourceUrl} label={article.sourceLabel} />
     </header>
   );

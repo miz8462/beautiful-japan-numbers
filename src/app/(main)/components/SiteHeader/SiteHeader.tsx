@@ -38,9 +38,9 @@ export function SiteHeader() {
           <Image
             alt=""
             aria-hidden="true"
-            height={20}
+            height={48}
             src="/icons/icon.svg"
-            width={20}
+            width={48}
           />
           <span>美しい日本の数字</span>
         </Link>

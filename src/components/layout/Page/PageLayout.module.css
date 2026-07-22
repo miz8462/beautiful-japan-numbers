@@ -1,6 +1,6 @@
 .page {
   background: var(--color-background);
-  --page-padding: 5rem;
+  --page-padding: 8.5rem;
   padding-inline: var(--page-padding);
 }
 

@@ -3,9 +3,10 @@ import styles from "./ArticleChart.module.css";
 
 type ArticleChartProps = {
   title: ReactNode;
+  yearRange?: ReactNode;
   source?: string;
   sourceUrl?: string;
-  intro?: ReactNode;   // チャート上に置く文（例：補足説明、単位の注記）
+  intro?: ReactNode;   // チャート上に置く補足説明、
   unitNote?: ReactNode;
   note?: ReactNode;    // チャート下に置く文（例：出典以外の注記、接続の断り書き）
   children: ReactNode;
@@ -22,11 +23,14 @@ type ArticleChartCanvasProps = {
   mobileHeight?: number;
 };
 
-export function ArticleChart({ title, source, sourceUrl, intro, unitNote, note, children }: ArticleChartProps) {
+export function ArticleChart({ title, yearRange, source, sourceUrl, intro, unitNote, note, children }: ArticleChartProps) {
   return (
     <section className={styles.section}>
       <div className={styles.card}>
-        <h2 className={styles.heading}>{title}</h2>
+        <div className={styles.header}>
+          <h2 className={styles.heading}>{title}</h2>
+          {yearRange && <p className={styles.yearRange}>{yearRange}</p>}
+        </div>
         {source && (
           <p className={styles.source}>
             {sourceUrl ? (

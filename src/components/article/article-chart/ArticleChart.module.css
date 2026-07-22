@@ -3,12 +3,31 @@
   gap: 4px;
 }
 
+.card {
+  min-width: 0;
+  margin-top: 12px;
+  padding: 16px;
+  border-radius: 4px;
+  background: var(--color-background-section);
+}
+
+.header {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: baseline;
+}
+
 .heading {
   max-width: 720px;
-  font-size: 22px;
+  font-size: 36px;
   font-weight: 700;
   line-height: 1.5;
   letter-spacing: 0;
+}
+
+.yearRange {
+  font-size: 26px;
+  line-height: 1.7;
 }
 
 .source {
@@ -18,24 +37,18 @@
   line-height: 1.6;
 }
 
-.card {
-  min-width: 0;
-  margin-top: 12px;
-  padding: 16px;
-  border-radius: 4px;
-  background: var(--color-background-section);
-}
+
 
 .intro {
   margin-top: 8px;
   margin-bottom: 8px;
-  font-size: 14px;
+  font-size: 20px;
   line-height: 1.7;
   color: var(--color-text-secondary, #333);
 }
 
 .unitNote {
-  font-size: 11px;
+  font-size: 16px;
   color: var(--color-text-muted);
   font-family: "Roboto Mono", "SFMono-Regular", Consolas, monospace;
   margin-top: 15px;
@@ -48,7 +61,7 @@
 }
 
 .note {
-  font-size: 12px;
+  font-size: 16px;
   line-height: 1.6;
   color: var(--color-text-muted);
 }
@@ -58,16 +71,6 @@
   min-width: 0;
   height: var(--article-chart-height, 260px);
   line-height: 0;
-}
-
-@media (hover: hover) and (pointer: fine) {
-  .card {
-    transition: box-shadow 200ms ease, transform 200ms ease;
-  }
-
-  .card:hover {
-    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
-  }
 }
 
 @media (max-width: 767px) {

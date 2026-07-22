@@ -1,0 +1,10 @@
+.text {
+  font-size: 20px;
+  line-height: 1.8;
+  color: #4a4a4a;
+  margin: 16px 0;
+}
+
+.text p+p {
+  margin-top: 0.5em;
+}

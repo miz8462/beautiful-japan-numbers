@@ -8,6 +8,18 @@
   gap: 6px;
   margin-bottom: 12px;
   color: var(--color-text-muted);
-  font-size: 13px;
+  font-size: 18px;
   line-height: 1.6;
+}
+
+.title {
+  font-size: 36px;
+  line-height: 1.4;
+  margin: 20px 0 50px;
+}
+
+.description {
+  font-size: 20px;
+  line-height: 1.4;
+  margin: 16px 0;
 }
