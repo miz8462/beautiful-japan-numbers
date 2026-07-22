@@ -1,0 +1,542 @@
+[
+  {
+    "year": 1970,
+    "primary_pct": 5.9,
+    "secondary_pct": 43.1,
+    "tertiary_pct": 50.9,
+    "primary_billion_yen": 4488.0,
+    "secondary_billion_yen": 32672.8,
+    "tertiary_billion_yen": 38599.1,
+    "sna_basis": "1990年基準・68SNA"
+  },
+  {
+    "year": 1971,
+    "primary_pct": 5.1,
+    "secondary_pct": 42.7,
+    "tertiary_pct": 52.2,
+    "primary_billion_yen": 4273.8,
+    "secondary_billion_yen": 35591.1,
+    "tertiary_billion_yen": 43499.5,
+    "sna_basis": "1990年基準・68SNA"
+  },
+  {
+    "year": 1972,
+    "primary_pct": 5.3,
+    "secondary_pct": 42.0,
+    "tertiary_pct": 52.8,
+    "primary_billion_yen": 5049.9,
+    "secondary_billion_yen": 40343.7,
+    "tertiary_billion_yen": 50765.4,
+    "sna_basis": "1990年基準・68SNA"
+  },
+  {
+    "year": 1973,
+    "primary_pct": 5.7,
+    "secondary_pct": 42.5,
+    "tertiary_pct": 51.8,
+    "primary_billion_yen": 6675.1,
+    "secondary_billion_yen": 50244.0,
+    "tertiary_billion_yen": 61176.5,
+    "sna_basis": "1990年基準・68SNA"
+  },
+  {
+    "year": 1974,
+    "primary_pct": 5.4,
+    "secondary_pct": 41.3,
+    "tertiary_pct": 53.4,
+    "primary_billion_yen": 7505.9,
+    "secondary_billion_yen": 57802.3,
+    "tertiary_billion_yen": 74754.7,
+    "sna_basis": "1990年基準・68SNA"
+  },
+  {
+    "year": 1975,
+    "primary_pct": 5.3,
+    "secondary_pct": 38.8,
+    "tertiary_pct": 55.9,
+    "primary_billion_yen": 8141.1,
+    "secondary_billion_yen": 59899.5,
+    "tertiary_billion_yen": 86158.0,
+    "sna_basis": "1990年基準・68SNA"
+  },
+  {
+    "year": 1976,
+    "primary_pct": 5.1,
+    "secondary_pct": 38.7,
+    "tertiary_pct": 56.2,
+    "primary_billion_yen": 8870.0,
+    "secondary_billion_yen": 67118.5,
+    "tertiary_billion_yen": 97522.4,
+    "sna_basis": "1990年基準・68SNA"
+  },
+  {
+    "year": 1977,
+    "primary_pct": 4.9,
+    "secondary_pct": 37.7,
+    "tertiary_pct": 57.5,
+    "primary_billion_yen": 9401.6,
+    "secondary_billion_yen": 72364.3,
+    "tertiary_billion_yen": 110405.4,
+    "sna_basis": "1990年基準・68SNA"
+  },
+  {
+    "year": 1978,
+    "primary_pct": 4.5,
+    "secondary_pct": 37.9,
+    "tertiary_pct": 57.6,
+    "primary_billion_yen": 9440.6,
+    "secondary_billion_yen": 80200.1,
+    "tertiary_billion_yen": 121952.2,
+    "sna_basis": "1990年基準・68SNA"
+  },
+  {
+    "year": 1979,
+    "primary_pct": 4.2,
+    "secondary_pct": 37.8,
+    "tertiary_pct": 58.0,
+    "primary_billion_yen": 9623.0,
+    "secondary_billion_yen": 87047.2,
+    "tertiary_billion_yen": 133456.2,
+    "sna_basis": "1990年基準・68SNA"
+  },
+  {
+    "year": 1980,
+    "primary_pct": 3.6,
+    "secondary_pct": 37.8,
+    "tertiary_pct": 58.7,
+    "primary_billion_yen": 8847.2,
+    "secondary_billion_yen": 94101.4,
+    "tertiary_billion_yen": 146102.2,
+    "sna_basis": "1990年基準・68SNA"
+  },
+  {
+    "year": 1981,
+    "primary_pct": 3.4,
+    "secondary_pct": 37.8,
+    "tertiary_pct": 58.8,
+    "primary_billion_yen": 9075.4,
+    "secondary_billion_yen": 100762.1,
+    "tertiary_billion_yen": 156636.2,
+    "sna_basis": "1990年基準・68SNA"
+  },
+  {
+    "year": 1982,
+    "primary_pct": 3.3,
+    "secondary_pct": 37.2,
+    "tertiary_pct": 59.5,
+    "primary_billion_yen": 9238.3,
+    "secondary_billion_yen": 104422.2,
+    "tertiary_billion_yen": 167273.7,
+    "sna_basis": "1990年基準・68SNA"
+  },
+  {
+    "year": 1983,
+    "primary_pct": 3.2,
+    "secondary_pct": 36.1,
+    "tertiary_pct": 60.6,
+    "primary_billion_yen": 9516.4,
+    "secondary_billion_yen": 106092.0,
+    "tertiary_billion_yen": 177893.2,
+    "sna_basis": "1990年基準・68SNA"
+  },
+  {
+    "year": 1984,
+    "primary_pct": 3.2,
+    "secondary_pct": 36.5,
+    "tertiary_pct": 60.3,
+    "primary_billion_yen": 9956.9,
+    "secondary_billion_yen": 114245.8,
+    "tertiary_billion_yen": 188700.2,
+    "sna_basis": "1990年基準・68SNA"
+  },
+  {
+    "year": 1985,
+    "primary_pct": 3.1,
+    "secondary_pct": 36.3,
+    "tertiary_pct": 60.7,
+    "primary_billion_yen": 10213.7,
+    "secondary_billion_yen": 121012.4,
+    "tertiary_billion_yen": 202452.1,
+    "sna_basis": "1990年基準・68SNA"
+  },
+  {
+    "year": 1986,
+    "primary_pct": 2.9,
+    "secondary_pct": 35.6,
+    "tertiary_pct": 61.5,
+    "primary_billion_yen": 10048.5,
+    "secondary_billion_yen": 123923.8,
+    "tertiary_billion_yen": 214069.7,
+    "sna_basis": "1990年基準・68SNA"
+  },
+  {
+    "year": 1987,
+    "primary_pct": 2.7,
+    "secondary_pct": 35.6,
+    "tertiary_pct": 61.7,
+    "primary_billion_yen": 9914.7,
+    "secondary_billion_yen": 129969.2,
+    "tertiary_billion_yen": 225545.6,
+    "sna_basis": "1990年基準・68SNA"
+  },
+  {
+    "year": 1988,
+    "primary_pct": 2.6,
+    "secondary_pct": 36.1,
+    "tertiary_pct": 61.3,
+    "primary_billion_yen": 9974.5,
+    "secondary_billion_yen": 141067.4,
+    "tertiary_billion_yen": 239584.8,
+    "sna_basis": "1990年基準・68SNA"
+  },
+  {
+    "year": 1989,
+    "primary_pct": 2.5,
+    "secondary_pct": 36.3,
+    "tertiary_pct": 61.2,
+    "primary_billion_yen": 10426.1,
+    "secondary_billion_yen": 152628.8,
+    "tertiary_billion_yen": 257677.9,
+    "sna_basis": "1990年基準・68SNA"
+  },
+  {
+    "year": 1990,
+    "primary_pct": 2.4,
+    "secondary_pct": 36.7,
+    "tertiary_pct": 60.9,
+    "primary_billion_yen": 10920.5,
+    "secondary_billion_yen": 165768.0,
+    "tertiary_billion_yen": 275249.1,
+    "sna_basis": "1990年基準・68SNA"
+  },
+  {
+    "year": 1991,
+    "primary_pct": 2.3,
+    "secondary_pct": 36.7,
+    "tertiary_pct": 61.0,
+    "primary_billion_yen": 10844.7,
+    "secondary_billion_yen": 176798.9,
+    "tertiary_billion_yen": 293446.8,
+    "sna_basis": "1990年基準・68SNA"
+  },
+  {
+    "year": 1992,
+    "primary_pct": 2.2,
+    "secondary_pct": 36.0,
+    "tertiary_pct": 61.9,
+    "primary_billion_yen": 10620.2,
+    "secondary_billion_yen": 177604.7,
+    "tertiary_billion_yen": 305472.7,
+    "sna_basis": "1990年基準・68SNA"
+  },
+  {
+    "year": 1993,
+    "primary_pct": 2.0,
+    "secondary_pct": 35.1,
+    "tertiary_pct": 63.0,
+    "primary_billion_yen": 9787.3,
+    "secondary_billion_yen": 173629.4,
+    "tertiary_billion_yen": 311739.0,
+    "sna_basis": "1990年基準・68SNA"
+  },
+  {
+    "year": 1994,
+    "primary_pct": 1.9,
+    "secondary_pct": 31.7,
+    "tertiary_pct": 66.4,
+    "primary_billion_yen": 9667.1,
+    "secondary_billion_yen": 161095.9,
+    "tertiary_billion_yen": 336973.7,
+    "sna_basis": "2015年基準・2008SNA"
+  },
+  {
+    "year": 1995,
+    "primary_pct": 1.7,
+    "secondary_pct": 31.5,
+    "tertiary_pct": 66.9,
+    "primary_billion_yen": 8580.7,
+    "secondary_billion_yen": 162874.7,
+    "tertiary_billion_yen": 345851.3,
+    "sna_basis": "2015年基準・2008SNA"
+  },
+  {
+    "year": 1996,
+    "primary_pct": 1.7,
+    "secondary_pct": 31.5,
+    "tertiary_pct": 66.8,
+    "primary_billion_yen": 8855.7,
+    "secondary_billion_yen": 167156.6,
+    "tertiary_billion_yen": 354822.5,
+    "sna_basis": "2015年基準・2008SNA"
+  },
+  {
+    "year": 1997,
+    "primary_pct": 1.5,
+    "secondary_pct": 30.8,
+    "tertiary_pct": 67.6,
+    "primary_billion_yen": 8304.9,
+    "secondary_billion_yen": 166974.0,
+    "tertiary_billion_yen": 366250.4,
+    "sna_basis": "2015年基準・2008SNA"
+  },
+  {
+    "year": 1998,
+    "primary_pct": 1.6,
+    "secondary_pct": 30.1,
+    "tertiary_pct": 68.3,
+    "primary_billion_yen": 8601.6,
+    "secondary_billion_yen": 161185.1,
+    "tertiary_billion_yen": 366090.3,
+    "sna_basis": "2015年基準・2008SNA"
+  },
+  {
+    "year": 1999,
+    "primary_pct": 1.6,
+    "secondary_pct": 29.4,
+    "tertiary_pct": 69.0,
+    "primary_billion_yen": 8322.7,
+    "secondary_billion_yen": 155678.9,
+    "tertiary_billion_yen": 365447.2,
+    "sna_basis": "2015年基準・2008SNA"
+  },
+  {
+    "year": 2000,
+    "primary_pct": 1.5,
+    "secondary_pct": 29.2,
+    "tertiary_pct": 69.3,
+    "primary_billion_yen": 8127.0,
+    "secondary_billion_yen": 156520.1,
+    "tertiary_billion_yen": 371049.8,
+    "sna_basis": "2015年基準・2008SNA"
+  },
+  {
+    "year": 2001,
+    "primary_pct": 1.4,
+    "secondary_pct": 27.8,
+    "tertiary_pct": 70.8,
+    "primary_billion_yen": 7270.4,
+    "secondary_billion_yen": 146899.1,
+    "tertiary_billion_yen": 374374.4,
+    "sna_basis": "2015年基準・2008SNA"
+  },
+  {
+    "year": 2002,
+    "primary_pct": 1.4,
+    "secondary_pct": 26.9,
+    "tertiary_pct": 71.7,
+    "primary_billion_yen": 7219.4,
+    "secondary_billion_yen": 141122.7,
+    "tertiary_billion_yen": 375779.9,
+    "sna_basis": "2015年基準・2008SNA"
+  },
+  {
+    "year": 2003,
+    "primary_pct": 1.3,
+    "secondary_pct": 26.9,
+    "tertiary_pct": 71.8,
+    "primary_billion_yen": 6806.5,
+    "secondary_billion_yen": 140840.8,
+    "tertiary_billion_yen": 376810.0,
+    "sna_basis": "2015年基準・2008SNA"
+  },
+  {
+    "year": 2004,
+    "primary_pct": 1.2,
+    "secondary_pct": 26.8,
+    "tertiary_pct": 72.0,
+    "primary_billion_yen": 6516.7,
+    "secondary_billion_yen": 142032.5,
+    "tertiary_billion_yen": 381844.6,
+    "sna_basis": "2015年基準・2008SNA"
+  },
+  {
+    "year": 2005,
+    "primary_pct": 1.1,
+    "secondary_pct": 26.8,
+    "tertiary_pct": 72.1,
+    "primary_billion_yen": 5919.6,
+    "secondary_billion_yen": 143270.8,
+    "tertiary_billion_yen": 385760.5,
+    "sna_basis": "2015年基準・2008SNA"
+  },
+  {
+    "year": 2006,
+    "primary_pct": 1.1,
+    "secondary_pct": 26.8,
+    "tertiary_pct": 72.1,
+    "primary_billion_yen": 5793.2,
+    "secondary_billion_yen": 143630.7,
+    "tertiary_billion_yen": 386805.2,
+    "sna_basis": "2015年基準・2008SNA"
+  },
+  {
+    "year": 2007,
+    "primary_pct": 1.1,
+    "secondary_pct": 26.9,
+    "tertiary_pct": 72.0,
+    "primary_billion_yen": 5680.6,
+    "secondary_billion_yen": 145444.4,
+    "tertiary_billion_yen": 389295.1,
+    "sna_basis": "2015年基準・2008SNA"
+  },
+  {
+    "year": 2008,
+    "primary_pct": 1.1,
+    "secondary_pct": 26.2,
+    "tertiary_pct": 72.7,
+    "primary_billion_yen": 5563.8,
+    "secondary_billion_yen": 138567.8,
+    "tertiary_billion_yen": 384212.3,
+    "sna_basis": "2015年基準・2008SNA"
+  },
+  {
+    "year": 2009,
+    "primary_pct": 1.1,
+    "secondary_pct": 24.1,
+    "tertiary_pct": 74.8,
+    "primary_billion_yen": 5356.8,
+    "secondary_billion_yen": 119490.7,
+    "tertiary_billion_yen": 370606.9,
+    "sna_basis": "2015年基準・2008SNA"
+  },
+  {
+    "year": 2010,
+    "primary_pct": 1.1,
+    "secondary_pct": 25.5,
+    "tertiary_pct": 73.4,
+    "primary_billion_yen": 5602.7,
+    "secondary_billion_yen": 128756.3,
+    "tertiary_billion_yen": 371113.2,
+    "sna_basis": "2015年基準・2008SNA"
+  },
+  {
+    "year": 2011,
+    "primary_pct": 1.1,
+    "secondary_pct": 24.5,
+    "tertiary_pct": 74.4,
+    "primary_billion_yen": 5373.8,
+    "secondary_billion_yen": 121112.1,
+    "tertiary_billion_yen": 368340.6,
+    "sna_basis": "2015年基準・2008SNA"
+  },
+  {
+    "year": 2012,
+    "primary_pct": 1.1,
+    "secondary_pct": 24.6,
+    "tertiary_pct": 74.3,
+    "primary_billion_yen": 5619.6,
+    "secondary_billion_yen": 122183.7,
+    "tertiary_billion_yen": 369832.1,
+    "sna_basis": "2015年基準・2008SNA"
+  },
+  {
+    "year": 2013,
+    "primary_pct": 1.1,
+    "secondary_pct": 24.5,
+    "tertiary_pct": 74.4,
+    "primary_billion_yen": 5426.4,
+    "secondary_billion_yen": 124038.1,
+    "tertiary_billion_yen": 375869.7,
+    "sna_basis": "2015年基準・2008SNA"
+  },
+  {
+    "year": 2014,
+    "primary_pct": 1.0,
+    "secondary_pct": 25.0,
+    "tertiary_pct": 74.0,
+    "primary_billion_yen": 5170.5,
+    "secondary_billion_yen": 128469.4,
+    "tertiary_billion_yen": 380991.0,
+    "sna_basis": "2015年基準・2008SNA"
+  },
+  {
+    "year": 2015,
+    "primary_pct": 1.0,
+    "secondary_pct": 25.9,
+    "tertiary_pct": 73.1,
+    "primary_billion_yen": 5563.9,
+    "secondary_billion_yen": 138398.6,
+    "tertiary_billion_yen": 390913.4,
+    "sna_basis": "2015年基準・2008SNA"
+  },
+  {
+    "year": 2016,
+    "primary_pct": 1.1,
+    "secondary_pct": 25.8,
+    "tertiary_pct": 73.0,
+    "primary_billion_yen": 6124.0,
+    "secondary_billion_yen": 140086.6,
+    "tertiary_billion_yen": 396205.2,
+    "sna_basis": "2015年基準・2008SNA"
+  },
+  {
+    "year": 2017,
+    "primary_pct": 1.1,
+    "secondary_pct": 26.1,
+    "tertiary_pct": 72.8,
+    "primary_billion_yen": 6241.1,
+    "secondary_billion_yen": 143534.2,
+    "tertiary_billion_yen": 400790.3,
+    "sna_basis": "2015年基準・2008SNA"
+  },
+  {
+    "year": 2018,
+    "primary_pct": 1.0,
+    "secondary_pct": 26.2,
+    "tertiary_pct": 72.7,
+    "primary_billion_yen": 5812.6,
+    "secondary_billion_yen": 145218.3,
+    "tertiary_billion_yen": 402601.1,
+    "sna_basis": "2015年基準・2008SNA"
+  },
+  {
+    "year": 2019,
+    "primary_pct": 1.0,
+    "secondary_pct": 25.9,
+    "tertiary_pct": 73.1,
+    "primary_billion_yen": 5796.4,
+    "secondary_billion_yen": 143649.6,
+    "tertiary_billion_yen": 405511.9,
+    "sna_basis": "2015年基準・2008SNA"
+  },
+  {
+    "year": 2020,
+    "primary_pct": 1.1,
+    "secondary_pct": 26.0,
+    "tertiary_pct": 73.0,
+    "primary_billion_yen": 5754.7,
+    "secondary_billion_yen": 139484.5,
+    "tertiary_billion_yen": 392236.7,
+    "sna_basis": "2015年基準・2008SNA"
+  },
+  {
+    "year": 2021,
+    "primary_pct": 1.0,
+    "secondary_pct": 26.7,
+    "tertiary_pct": 72.3,
+    "primary_billion_yen": 5588.3,
+    "secondary_billion_yen": 146329.5,
+    "tertiary_billion_yen": 396992.4,
+    "sna_basis": "2015年基準・2008SNA"
+  },
+  {
+    "year": 2022,
+    "primary_pct": 0.9,
+    "secondary_pct": 25.6,
+    "tertiary_pct": 73.5,
+    "primary_billion_yen": 5167.2,
+    "secondary_billion_yen": 142094.9,
+    "tertiary_billion_yen": 407627.7,
+    "sna_basis": "2015年基準・2008SNA"
+  },
+  {
+    "year": 2023,
+    "primary_pct": 0.9,
+    "secondary_pct": 26.1,
+    "tertiary_pct": 72.9,
+    "primary_billion_yen": 5548.9,
+    "secondary_billion_yen": 153503.5,
+    "tertiary_billion_yen": 428790.1,
+    "sna_basis": "2015年基準・2008SNA"
+  }
+]

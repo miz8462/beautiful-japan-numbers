@@ -23,11 +23,34 @@
   margin-top: 12px;
   padding: 16px;
   border-radius: 4px;
-  background: #ffffff;
+  background: var(--color-background-section);
+}
+
+.intro {
+  margin-top: 8px;
+  margin-bottom: 8px;
+  font-size: 14px;
+  line-height: 1.7;
+  color: var(--color-text-secondary, #333);
+}
+
+.unitNote {
+  font-size: 11px;
+  color: var(--color-text-muted);
+  font-family: "Roboto Mono", "SFMono-Regular", Consolas, monospace;
+  margin-top: 15px;
+  display: block;
 }
 
 .body {
+  margin-top: 12px;
   min-width: 0;
+}
+
+.note {
+  font-size: 12px;
+  line-height: 1.6;
+  color: var(--color-text-muted);
 }
 
 .canvas {

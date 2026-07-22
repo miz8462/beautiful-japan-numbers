@@ -1,13 +1,15 @@
 :root {
   --color-brand: #5bbee4;
   --color-brand-dark: #1e7aa8;
+  --color-brand-second: #F19DB5;
+  --color-brand-third: #7F1084;
   --color-text-primary: #222222;
   --color-text-secondary: #555555;
   --color-text-muted: #888888;
-  --color-accent: #f06449;
+  --color-accent: #c0392b;
   --color-border: #e0e0e0;
   --color-background: #ffffff;
-  --color-background-section: #f7f7f3;
+  --color-background-section: #F7F7F3;
   --font-body: "Noto Sans JP", "ヒラギノ角ゴ ProN W3", "游ゴシック体", "メイリオ", "Helvetica Neue", Arial, sans-serif;
   --font-data: "Roboto Mono", "SFMono-Regular", Consolas, monospace;
 }
@@ -31,6 +33,7 @@
 .text-accent {
   color: var(--color-accent);
 }
+
 .bg-primary {
   background: var(--color-background);
 }

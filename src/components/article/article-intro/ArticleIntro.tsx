@@ -5,6 +5,6 @@ type ArticleIntroProps = {
   children: ReactNode;
 };
 
-export function ArticleIntro({ children }: ArticleIntroProps) {
+export function ArticleText({ children }: ArticleIntroProps) {
   return <div className={styles.intro}>{children}</div>;
 }

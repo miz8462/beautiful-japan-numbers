@@ -1,0 +1,39 @@
+.wrapper {
+  position: relative;
+  width: 100%;
+  padding-bottom: 8px;
+}
+
+.unitNote {
+  font-size: 11px;
+  color: #888888;
+  font-family: "Roboto Mono", "SFMono-Regular", Consolas, monospace;
+  margin-bottom: 12px;
+  display: block;
+}
+
+.chartContainer {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.legend {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 16px;
+  font-size: 12px;
+}
+
+.legendItem {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #4a4a4a;
+}
+
+.legendDot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}

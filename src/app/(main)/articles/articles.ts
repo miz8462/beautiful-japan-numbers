@@ -32,6 +32,16 @@ export type Article = {
 
 export const articles: Article[] = [
   {
+    href: "/articles/industry-structure",
+    publishedAt: "2026-07-22",
+    label: "Industrial Structure",
+    title: "日本の産業構造はどう変わったか？",
+    description: "1970年以降の第1次・第2次・第3次産業の構成比推移や、直近30年における16業種の内訳比較から、日本のサービス経済化と製造業などの変化を可視化します。",
+    tags: ["economy"],
+    sourceUrl: "https://www.esri.cao.go.jp/jp/sna/kakuhou/kakuhou_top.html",
+    sourceLabel: "出典: 内閣府「国民経済計算年次推計」",
+  },
+  {
     href: "/articles/gini-coefficient",
     publishedAt: "2026-07-10",
     label: "Gini Coefficient",
