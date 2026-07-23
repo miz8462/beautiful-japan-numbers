@@ -1,15 +1,53 @@
 :root {
+  /* Brand Colors */
   --color-brand: #5bbee4;
   --color-brand-dark: #1e7aa8;
-  --color-brand-second: #F19DB5;
-  --color-brand-third: #7F1084;
+  --color-brand-second: #f19db5;
+  --color-brand-third: #7f1084;
+
+  /* Neutral Colors */
   --color-text-primary: #222222;
   --color-text-secondary: #555555;
   --color-text-muted: #888888;
-  --color-accent: #c0392b;
   --color-border: #e0e0e0;
   --color-background: #ffffff;
-  --color-background-section: #F7F7F3;
+  --color-background-section: #f7f7f3;
+
+  /* Data Visualization Roles */
+  --color-data-primary: #5bbee4;
+  --color-data-secondary: #f06449;
+  --color-data-tertiary: #2e9e6e;
+  --color-data-reference: #aaaaaa;
+  --color-data-positive: #2e7d4f;
+  --color-data-negative: #c0392b;
+  --color-accent: #c0392b;
+
+  /* 10-Series Categorical Palette */
+  --color-palette-civic-sky: #5bbee4;
+  --color-palette-civic-sky-dark: #1e7aa8;
+  --color-palette-coral: #f06449;
+  --color-palette-green: #2e9e6e;
+  --color-palette-gold: #f2b134;
+  --color-palette-purple: #7b6fd6;
+  --color-palette-rose: #c06c84;
+  --color-palette-olive: #8fbf67;
+  --color-palette-brown-gray: #7a5c58;
+  --color-palette-neutral: #aaaaaa;
+
+  /* Radius System */
+  --radius-sharp: 0px;
+  --radius-sm: 4px;
+  --radius-md: 10px;
+  --radius-pill: 9999px;
+
+  /* Layout */
+  --max-width: 1200px;
+  --article-width: 720px;
+  --grid-gap: 24px;
+  --page-padding: 8.5rem;
+  --mobile-padding: 1.25rem;
+
+  /* Fonts */
   --font-body: "Noto Sans JP", "ヒラギノ角ゴ ProN W3", "游ゴシック体", "メイリオ", "Helvetica Neue", Arial, sans-serif;
   --font-data: "Roboto Mono", "SFMono-Regular", Consolas, monospace;
 }

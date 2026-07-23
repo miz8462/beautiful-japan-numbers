@@ -2,7 +2,7 @@
 
 import { useRef, useState, useEffect } from "react";
 import * as d3 from "d3";
-;import { useMediaQuery } from "@/hooks/use-media-query";
+; import { useMediaQuery } from "@/hooks/use-media-query";
 import detailData from "@/data/industry-structure-detail.json";
 import industryLabels from "@/data/industry-structure-labels.json";
 import styles from "./IndustryStructureDetailChart.module.css";
@@ -10,7 +10,7 @@ import styles from "./IndustryStructureDetailChart.module.css";
 // ─── 定数 ────────────────────────────────────────────────────────
 const COLOR_INCREASE = "var(--color-brand)";
 const COLOR_DECREASE = "var(--color-accent)";
-const COLOR_BASE = "#cccccc";       // 1994年基準点
+const COLOR_BASE = "var(--color-text-muted)"; // 1994年基準点
 
 export function IndustryStructureDetailChart() {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -56,12 +56,12 @@ export function IndustryStructureDetailChart() {
   const margin = {
     top: 10,
     right: isMobile ? 120 : 180,
-    left: isMobile ? 110 : 170,
+    left: isMobile ? 170 : 200,
     bottom: 20,
   };
 
   const chartWidth = width - margin.left - margin.right;
-  const rowHeight = 26;
+  const rowHeight = 40;
   const chartHeight = sortedRows.length * rowHeight;
   const svgHeight = chartHeight + margin.top + margin.bottom;
 
@@ -99,10 +99,11 @@ export function IndustryStructureDetailChart() {
                   stroke="#e8e8e8"
                   strokeWidth={1}
                 />
+                {/* X軸 */}
                 <text
-                  y={chartHeight + 14}
+                  y={chartHeight + 24}
                   textAnchor="middle"
-                  fontSize={10}
+                  fontSize={16}
                   fill="#888888"
                   fontFamily='"Roboto Mono", monospace'
                 >
@@ -131,20 +132,31 @@ export function IndustryStructureDetailChart() {
                     strokeWidth={1}
                   />
 
-                  {/* 業種ラベル（左側） */}
-                  <text
-                    x={-10}
-                    y={y}
-                    textAnchor="end"
-                    dominantBaseline="middle"
-                    fontSize={isMobile ? 10 : 11}
-                    fontWeight={500}
-                    fill="#333333"
-                  >
-                    {isMobile && row.label.length > 10
-                      ? `${row.label.slice(0, 9)}…`
-                      : row.label}
-                  </text>
+                  {/* Y軸 業種ラベル（左側） */}
+                  {(() => {
+                    const lines = row.label.split("\n");
+                    return (
+                      <text
+                        x={-10}
+                        y={y}
+                        textAnchor="end"
+                        dominantBaseline="middle"
+                        fontSize={isMobile ? 11 : 16}
+                        fontWeight={400}
+                        fill="#333333"
+                      >
+                        {lines.length > 1 ? (
+                          lines.map((line, idx) => (
+                            <tspan key={idx} x={-10} dy={idx === 0 ? -7 : 16}>
+                              {line}
+                            </tspan>
+                          ))
+                        ) : (
+                          lines[0]
+                        )}
+                      </text>
+                    );
+                  })()}
 
                   {/* 変化を示す線（ダンベルの柄） */}
                   <line
@@ -166,23 +178,28 @@ export function IndustryStructureDetailChart() {
 
                   {/* 数値と差分のテキスト（右側） */}
                   <text
-                    x={chartWidth + 10}
                     y={y}
                     dominantBaseline="middle"
-                    fontSize={11}
-                    fill="#4a4a4a"
+                    fontSize={13}
+                    fontFamily='"Roboto Mono", "SFMono-Regular", Consolas, monospace'
                   >
-                    <tspan fontFamily='"Roboto Mono", monospace'>
-                      {row.val1994.toFixed(1)}% → {row.val2023.toFixed(1)}%
+                    <tspan x={chartWidth + 55} textAnchor="end" fill="#4a4a4a">
+                      {row.val1994.toFixed(1)}%
+                    </tspan>
+                    <tspan x={chartWidth + 70} textAnchor="middle" fill="#aaaaaa">
+                      →
+                    </tspan>
+                    <tspan x={chartWidth + 120} textAnchor="end" fill="#1a1a1a" fontWeight={600}>
+                      {row.val2023.toFixed(1)}%
                     </tspan>
                     <tspan
-                      dx={6}
+                      x={chartWidth + 175}
+                      textAnchor="end"
+                      fill={isIncrease ? COLOR_INCREASE : COLOR_DECREASE}
                       fontWeight={600}
-                      fill={color}
-                      fontFamily='"Roboto Mono", monospace'
                     >
                       {isIncrease ? "+" : ""}
-                      {row.diff.toFixed(1)} pt
+                      {row.diff.toFixed(1)}
                     </tspan>
                   </text>
                 </g>

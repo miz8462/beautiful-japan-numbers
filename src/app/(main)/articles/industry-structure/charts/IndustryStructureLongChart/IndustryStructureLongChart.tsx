@@ -203,9 +203,9 @@ export function IndustryStructureLongChart() {
             {xTicks.map((tick) => (
               <g key={tick} transform={`translate(${xScale(tick)}, 0)`}>
                 <text
-                  y={chartHeight + 18}
+                  y={chartHeight + 22}
                   textAnchor="middle"
-                  fontSize={11}
+                  fontSize={16}
                   fill="#888888"
                   fontFamily='"Roboto Mono", monospace'
                 >
@@ -221,11 +221,11 @@ export function IndustryStructureLongChart() {
                 x={-10}
                 y={yScale(tick) + 4}
                 textAnchor="end"
-                fontSize={11}
+                fontSize={16}
                 fill="#888888"
                 fontFamily='"Roboto Mono", monospace'
               >
-                {tick}%
+                {tick}
               </text>
             ))}
 
@@ -234,7 +234,7 @@ export function IndustryStructureLongChart() {
               x={chartWidth + 8}
               y={labelPositions.tertiary}
               fill={COLOR_TERTIARY}
-              fontSize={isMobile ? 10 : 11}
+              fontSize={isMobile ? 10 : 18}
               fontWeight={600}
               dominantBaseline="middle"
             >
@@ -244,7 +244,7 @@ export function IndustryStructureLongChart() {
               x={chartWidth + 8}
               y={labelPositions.secondary}
               fill={COLOR_SECONDARY}
-              fontSize={isMobile ? 10 : 11}
+              fontSize={isMobile ? 10 : 18}
               fontWeight={600}
               dominantBaseline="middle"
             >
@@ -254,7 +254,7 @@ export function IndustryStructureLongChart() {
               x={chartWidth + 8}
               y={labelPositions.primary}
               fill={COLOR_PRIMARY}
-              fontSize={isMobile ? 10 : 11}
+              fontSize={isMobile ? 10 : 18}
               fontWeight={600}
               dominantBaseline="middle"
             >
@@ -311,7 +311,8 @@ export function IndustryStructureLongChart() {
                   <span>{labels.tertiary}</span>
                 </div>
                 <span className={styles.tooltipValue}>
-                  {hoveredData.tertiary_pct.toFixed(1)}% ({formatAmount(hoveredData.tertiary_billion_yen)})
+                  <span className={styles.tooltipPercent}>{hoveredData.tertiary_pct.toFixed(1)}%</span>
+                  <span className={styles.tooltipAmount}>({formatAmount(hoveredData.tertiary_billion_yen)})</span>
                 </span>
               </div>
               <div className={styles.tooltipRow}>
@@ -320,7 +321,8 @@ export function IndustryStructureLongChart() {
                   <span>{labels.secondary}</span>
                 </div>
                 <span className={styles.tooltipValue}>
-                  {hoveredData.secondary_pct.toFixed(1)}% ({formatAmount(hoveredData.secondary_billion_yen)})
+                  <span className={styles.tooltipPercent}>{hoveredData.secondary_pct.toFixed(1)}%</span>
+                  <span className={styles.tooltipAmount}>({formatAmount(hoveredData.secondary_billion_yen)})</span>
                 </span>
               </div>
               <div className={styles.tooltipRow}>
@@ -329,7 +331,8 @@ export function IndustryStructureLongChart() {
                   <span>{labels.primary}</span>
                 </div>
                 <span className={styles.tooltipValue}>
-                  {hoveredData.primary_pct.toFixed(1)}% ({formatAmount(hoveredData.primary_billion_yen)})
+                  <span className={styles.tooltipPercent}>{hoveredData.primary_pct.toFixed(1)}%</span>
+                  <span className={styles.tooltipAmount}>({formatAmount(hoveredData.primary_billion_yen)})</span>
                 </span>
               </div>
             </div>

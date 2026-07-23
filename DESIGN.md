@@ -10,40 +10,48 @@
 
 ## Brand
 
-* **Civic Sky** (`#5bbee4`)
+* **Civic Sky** (`#5bbee4` / CSS変数: `--color-brand`)
 
   * アクティブ状態・CTA・選択状態
   * ヘッダー上部のブランドバー
 
-* **Civic Sky Dark** (`#1e7aa8`)
+* **Civic Sky Dark** (`#1e7aa8` / CSS変数: `--color-brand-dark`)
 
   * hover / active / focus 補助
+
+* **Civic Sky Pink** (`#f19db5` / CSS変数: `--color-brand-second`)
+
+  * 複数系列チャートの第2系列などの配色補助
+
+* **Civic Sky Purple** (`#7f1084` / CSS変数: `--color-brand-third`)
+
+  * 複数系列チャートの第1系列などの配色補助
 
 ---
 
 ## Neutral
 
-| Role               | Color     |
-| ------------------ | --------- |
-| Text Primary       | `#222222` |
-| Text Secondary     | `#555555` |
-| Text Muted         | `#888888` |
-| Border             | `#e0e0e0` |
-| Background         | `#ffffff` |
-| Background Section | `#f7f7f3` |
+| Role               | Color     | CSS Variable |
+| ------------------ | --------- | ------------ |
+| Text Primary       | `#222222` | `--color-text-primary` |
+| Text Secondary     | `#555555` | `--color-text-secondary` |
+| Text Muted         | `#888888` | `--color-text-muted` |
+| Border             | `#e0e0e0` | `--color-border` |
+| Background         | `#ffffff` | `--color-background` |
+| Background Section | `#f7f7f3` | `--color-background-section` |
 
 ---
 
 ## Data Visualization
 
-| Role      | Color     |
-| --------- | --------- |
-| Primary   | `#5bbee4` |
-| Secondary | `#f06449` |
-| Tertiary  | `#2e9e6e` |
-| Reference | `#aaaaaa` |
-| Positive  | `#2e7d4f` |
-| Negative  | `#c0392b` |
+| Role      | Color     | CSS Variable |
+| --------- | --------- | ------------ |
+| Primary   | `#5bbee4` | `--color-brand` |
+| Secondary | `#f06449` | |
+| Tertiary  | `#2e9e6e` | |
+| Reference | `#aaaaaa` | |
+| Positive  | `#2e7d4f` | |
+| Negative  | `#c0392b` | `--color-accent` |
 
 ### 10系列カテゴリカルパレット
 
@@ -65,9 +73,11 @@ Civic Sky系だけに寄せると判別性が落ちるため、ブランド色�
 
 ### 系列カラーの使い分け
 
-* 単一系列のチャート：Primary（`#5bbee4`）
-* 2系列の対比（名目 vs 実質、貯蓄 vs 負債など）：Primary（`#5bbee4`）＋ Civic Sky Dark（`#1e7aa8`）
-* 負債・マイナス要素・負担率など「望ましくない」方向を示す単一系列：Negative（`#c0392b`）
+* 単一系列のチャート：Primary（`#5bbee4` / `--color-brand`）
+* 2系列の対比（名目 vs 実質、貯蓄 vs 負債など）：Primary（`#5bbee4` / `--color-brand`）＋ Civic Sky Dark（`#1e7aa8` / `--color-brand-dark`）
+* 3系列の構成比（第1次・第2次・第3次産業など）：第1系列に `--color-brand-third` (`#7f1084`)、第2系列に `--color-brand` (`#5bbee4`)、第3系列に `--color-brand-dark` (`#1e7aa8`) を割り当てる
+* 変化を示すチャート（ダンベルチャート等）：基準点（過去）は Neutral Muted（`--color-text-muted` / `#888888`）、増加系列は `--color-brand`（`#5bbee4`）、減少系列は `--color-accent`（`#c0392b`）
+* 負債・マイナス要素・負担率など「望ましくない」方向を示す単一系列：Negative（`#c0392b` / `--color-accent`）
 
 ---
 
@@ -75,7 +85,9 @@ Civic Sky系だけに寄せると判別性が落ちるため、ブランド色�
 
 ## Font Family
 
-### 本文・UI
+CSS設計におけるフォントの指定には、直接記述するほかにグローバル定義された変数（`var(--font-body)` および `var(--font-data)`）の使用を推奨する。
+
+### 本文・UI (`--font-body`)
 
 ```css
 font-family:
@@ -88,7 +100,7 @@ font-family:
   sans-serif;
 ```
 
-### 数値・チャートラベル
+### 数値・チャートラベル (`--font-data`)
 
 ```css
 font-family:
@@ -351,6 +363,22 @@ Source: 厚生労働省「国民生活基礎調査」(2024)
 
 ---
 
+## ArticleChart
+
+チャートを包む共通コンポーネント `ArticleChart` のプロパティは以下の役割で使い分ける。
+
+* **`intro` (導入・解説)**
+  * 一般の読者にとって馴染みが薄い、または理解しづらい専門用語・概念の解説を記述する（例：「名目GDPとは」「SNA基準とは」など）。
+* **`note` (注記・補足)**
+  * データに関する技術的な注釈や但し書きを記述する（例：統計基準の移行に伴う段差の説明、欠損値の扱い、出典以外の技術的な補足など）。
+
+### チャート解説文（本文）の配置ルール
+
+* チャートが示すデータ推移の詳細や、そこから読み取れる背景の分析・解説は、`ArticleChart` 内のプロパティではなく、チャートコンポーネントの直下に配置した **`ArticleText` コンポーネント**を用いて記述する。
+* 複数のチャートがある場合は、各 `ArticleChart`（`styles.charts` クラスでラップしたコンテナ内）の直後に `ArticleText` を配置し、「チャートを見せる」→「そのチャートの解説を読ませる」の流れを交互に繰り返すレイアウトにする。
+
+---
+
 ## Footer
 
 ```css
@@ -389,7 +417,7 @@ color: #ffffff;
 | Rule              | Value  |
 | ----------------- | ------ |
 | Max Width         | 1200px |
-| Page Padding      | 5rem   |
+| Page Padding      | 8.5rem   |
 | Mobile Padding    | 1.25rem |
 | Article Width     | 720px  |
 | Grid Gap          | 24px   |
@@ -417,7 +445,7 @@ Spacing Scale:
 * Hero: 40 → 28px
 * H1: 40 → 28px
 * H2: 22 → 18px
-* Body: 16px fixed
+* Body: 20px fixed
 * Charts: `overflow: hidden`
 * Chart canvas: `min-width: 0`
 * Sankey SVG: `min-width: 480px`
@@ -448,8 +476,14 @@ Spacing Scale:
 * Nivoの`xScale`/`yScale`で`min`/`max`を数値で明示指定する場合は、必ず`nice: false`もセットで指定する
   （`nice`が有効だとキリのいい数値までドメインが自動拡張され、指定範囲の外側に余白ができることがある）
 * 軸ラベル（年表記）は、一番左の数値のみ四桁フル表記（例：1995）、それ以外は西暦下二桁（例：02, 25）。`src/lib/chart-format.ts`の`formatYearShort()`を使用する。ツールチップなど詳細情報の文脈ではフル表記（2002年）を用いる
-* Nivoで表現できない構造（政党系譜図、ネットワーク図など複雑なルーティングを要するもの）は、SVGカスタム実装を許容する。その場合も色・フォントはCSS変数（本ドキュメントのカラーパレット・タイポグラフィ）を流用し、独自の値を持ち込まない
+* Nivoで表現できない構造（政党系譜図、ネットワーク図など複雑なルーティングを要するもの、あるいはインラインでの右端シリーズラベル配置、ダンベルチャート等の変則表現）は、SVG/D3カスタム実装を許容する。その場合も色・フォントはCSS変数（本ドキュメントのカラーパレット・タイポグラフィ）を流用し、独自の値を持ち込まない
 * SVGカスタム実装では「動作する結果」を最優先する。実装方式（draw.io書き出し、React/TSX手書きなど）は手段であり、固定しない
+* SVGカスタム実装におけるレイアウトとレスポンシブ対応方針：
+  * **サイズ監視**: 親コンテナ（`.wrapper`等）に `position: relative; width: 100%` を適用し、React の `ResizeObserver` を用いて動的に横幅（および高さ）を取得する。
+  * **マージンとインラインラベル**: チャート右端などにシリーズ名等をインライン表示する場合、マージン幅を画面サイズ（`useMediaQuery` 等）に応じて動的調整する（例：PC版 `right: 90px`、モバイル版 `right: 70px`）。インラインのフォントサイズもPC版 `18px` からモバイル版 `10px` に縮小させるなどの対応を行う。
+  * **Y軸業種ラベルの折り返し**: Y軸の項目名が長い場合は、改行コード（`\n`）でスプリットし、SVG `<tspan>` を用いて2行で表示（例：1行目 `dy={-7}`, 2行目 `dy={16}`）する。項目名フォントサイズはPC版 `15px` からモバイル版 `11px` に縮小させるなどの対応を行う。
+  * **カスタムツールチップ**: チャートエリアにホバーした際は、ラッパー内に絶対配置（`position: absolute`）する HTML 要素のツールチップを構築する。数値の縦位置アライメントには `tabular-nums` を指定し、ドットなどの凡例色には CSS 変数を使用する。
+  * **横スクロールの適用**: 画面幅に対してチャートの最小幅が規定される場合は、コンテナ（`.chartContainer`）に `overflow-x: auto; -webkit-overflow-scrolling: touch;` を設定してモバイル端末でスクロール可能にする。
 
 ---
 
@@ -488,6 +522,7 @@ Spacing Scale:
 * 数値に `"tnum"` を適用
 * 見出しに `"palt"` を適用
 * 本文 line-height は 1.8
+* クライアント側の寸法計算や `ResizeObserver` / SVGの動的サイズ描画を伴うチャートコンポーネントは、ハイドレーションエラー（SSR時の描画差分）を避けるため、必ず `next/dynamic` を使用して `{ ssr: false }` でインポート・マウントする。
 
 ---
 

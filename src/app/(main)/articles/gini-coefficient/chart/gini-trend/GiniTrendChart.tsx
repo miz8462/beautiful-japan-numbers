@@ -3,9 +3,8 @@
 import dynamic from "next/dynamic";
 import { ArticleChartCanvas } from "@/components/article/article-chart";
 import giniData from "@/data/gini-japan.json";
-import type { LineCustomSvgLayerProps, LineSeries } from "@nivo/line";
+import type { LineSeries } from "@nivo/line";
 import styles from "./GiniTrendChart.module.css";
-import { ArticleText } from "@/components/article/article-text/ArticleText";
 import { ChartIntro } from "@/components/article/article-chart/chart-intro/ChartIntro";
 
 const ResponsiveLine = dynamic(
@@ -113,16 +112,6 @@ function EndLabels({
 export function GiniTrendChart() {
   return (
     <div className={styles.wrapper}>
-      <ChartIntro>
-        <p>
-          当初所得とは、税金や社会保険料を払う前の、給料や事業の儲けなど「働いて得たお金」の合計です。
-          年金や医療費補助といった社会保障からの給付は含まれていません。
-        </p>
-        <p>
-          再分配所得とは、当初所得から税金・社会保険料を差し引き、そこに年金・医療・介護・保育などの給付を加えたものです
-        </p>
-      </ChartIntro>
-
       <ArticleChartCanvas height={400} mobileHeight={320}>
         <ResponsiveLine
           data={CHART_DATA}

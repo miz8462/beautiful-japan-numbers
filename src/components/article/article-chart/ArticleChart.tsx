@@ -31,21 +31,21 @@ export function ArticleChart({ title, yearRange, source, sourceUrl, intro, unitN
           <h2 className={styles.heading}>{title}</h2>
           {yearRange && <p className={styles.yearRange}>{yearRange}</p>}
         </div>
+        {intro && <div className={styles.intro}>{intro}</div>}
+        {unitNote && <div className={styles.unitNote}>{unitNote}</div>}
+        <div className={styles.body}>{children}</div>
+        {note && <div className={styles.note}>{note}</div>}
         {source && (
-          <p className={styles.source}>
+          <div className={styles.source}>
             {sourceUrl ? (
               <a href={sourceUrl} target="_blank" rel="noopener noreferrer">
-                出典：{source}
+                出典：{source} →
               </a>
             ) : (
               source
             )}
-          </p>
+          </div>
         )}
-        {intro && <p className={styles.intro}>{intro}</p>}
-        {unitNote && <p className={styles.unitNote}>{unitNote}</p>}
-        <div className={styles.body}>{children}</div>
-        {note && <p className={styles.note}>{note}</p>}
       </div>
     </section>
   );

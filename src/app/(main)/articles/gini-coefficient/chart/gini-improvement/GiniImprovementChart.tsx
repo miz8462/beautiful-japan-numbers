@@ -97,15 +97,6 @@ function EndLabels({
 export function GiniImprovementChart() {
   return (
     <div className={styles.wrapper}>
-      <ChartIntro>
-        <p>
-          改善度とは、税金と社会保障の仕組みが、格差をどれだけ縮めたかを表したものです。<br />
-          改善度(%) = (当初所得のジニ係数 − 再分配所得のジニ係数) ÷ 当初所得のジニ係数 × 100 <br />
-          たとえば当初所得のジニ係数が0.50、再分配所得のジニ係数が0.35なら、改善度は(0.50−0.35)÷0.50×100=30% <br />
-          税金と社会保障によって、格差が30%縮小したことを意味します。
-          数字が大きいほど、再分配の仕組みが強く効いていることになります。
-        </p>
-      </ChartIntro>
       <ArticleChartCanvas height={400} mobileHeight={320}>
         <ResponsiveLine
           data={CHART_DATA}
