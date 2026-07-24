@@ -47,10 +47,10 @@
 | Role      | Color     | CSS Variable |
 | --------- | --------- | ------------ |
 | Primary   | `#5bbee4` | `--color-brand` |
-| Secondary | `#f06449` | |
-| Tertiary  | `#2e9e6e` | |
-| Reference | `#aaaaaa` | |
-| Positive  | `#2e7d4f` | |
+| Secondary | `#f06449` | `--color-brand-second` |
+| Tertiary  | `#2e9e6e` | `--color-brand-third` |
+| Reference | `#aaaaaa` | `--color-data-reference` |
+| Positive  | `#2e7d4f` | `--color-data-positive` |
 | Negative  | `#c0392b` | `--color-accent` |
 
 ### 10系列カテゴリカルパレット
@@ -74,10 +74,12 @@ Civic Sky系だけに寄せると判別性が落ちるため、ブランド色�
 ### 系列カラーの使い分け
 
 * 単一系列のチャート：Primary（`#5bbee4` / `--color-brand`）
-* 2系列の対比（名目 vs 実質、貯蓄 vs 負債など）：Primary（`#5bbee4` / `--color-brand`）＋ Civic Sky Dark（`#1e7aa8` / `--color-brand-dark`）
+* 2系列の対比（名目 vs 実質、貯蓄 vs 負債など）：Primary（`#5bbee4` / `--color-brand`）＋ Purple（`#7f1084` / `--color-brand-third`）
 * 3系列の構成比（第1次・第2次・第3次産業など）：第1系列に `--color-brand-third` (`#7f1084`)、第2系列に `--color-brand` (`#5bbee4`)、第3系列に `--color-brand-dark` (`#1e7aa8`) を割り当てる
 * 変化を示すチャート（ダンベルチャート等）：基準点（過去）は Neutral Muted（`--color-text-muted` / `#888888`）、増加系列は `--color-brand`（`#5bbee4`）、減少系列は `--color-accent`（`#c0392b`）
 * 負債・マイナス要素・負担率など「望ましくない」方向を示す単一系列：Negative（`#c0392b` / `--color-accent`）
+* 目立たせる必要のない/補助的な系列：新しい色相を導入せず、`--color-brand`と`--color-brand-dark`の間を`color-mix(in srgb, var(--color-brand) X%, white)`で埋めたグラデーションを使う
+* データが欠落・非公表の年/カテゴリ：`--color-text-muted`（#888888）の単色で表現し、他の系列と混同しないようにする
 
 ---
 
@@ -189,7 +191,7 @@ table td,
 * 下スクロールで隠れ、上スクロールで表示される
 
 ```css
-font-size: 14px;
+font-size: 16px;
 font-weight: 500;
 color: #555555;
 ```
@@ -215,7 +217,7 @@ background: #5bbee4;
 color: #ffffff;
 border-radius: 9999px;
 padding: 6px 16px;
-font-size: 13px;
+font-size: 16px;
 font-weight: 500;
 line-height: 1.4;
 letter-spacing: 0.06em;
@@ -236,7 +238,7 @@ align-items: center;
 justify-content: center;
 border-radius: 4px;
 padding: 10px 20px;
-font-size: 14px;
+font-size: 16px;
 font-weight: 500;
 letter-spacing: 0.04em;
 ```
@@ -315,7 +317,7 @@ transition: box-shadow 200ms ease, transform 200ms ease;
 /* テーブル全体 */
 width: 100%;
 border-collapse: collapse;
-font-size: 14px;
+font-size: 16px;
 
 /* ヘッダー行 */
 th {
@@ -471,8 +473,8 @@ Spacing Scale:
 * 色だけで情報を区別しない
 * アニメーションは意味がある場合、または操作状態のフィードバックに限る
 * 折れ線グラフのポイントは非表示（pointSize: 0）
-* 折れ線グラフのシリーズラベルはチャート内の線の右端に直接表示し、凡例（legend）は使わない
-* 利用ライブラリはNivoを基本とする
+* チャート内のシリーズラベルは要素（線の右端・棒の内側など）に直接表示し、凡例（legend）は使わない
+* 積み上げ棒グラフでは、セグメントの高さがラベルを収められる場合のみ内部にラベルを表示する。全期間分は必要なく、直近期間など代表的な1本にラベルがあれば凡例の代替として十分機能する* 利用ライブラリはNivoを基本とする
 * Nivoの`xScale`/`yScale`で`min`/`max`を数値で明示指定する場合は、必ず`nice: false`もセットで指定する
   （`nice`が有効だとキリのいい数値までドメインが自動拡張され、指定範囲の外側に余白ができることがある）
 * 軸ラベル（年表記）は、一番左の数値のみ四桁フル表記（例：1995）、それ以外は西暦下二桁（例：02, 25）。`src/lib/chart-format.ts`の`formatYearShort()`を使用する。ツールチップなど詳細情報の文脈ではフル表記（2002年）を用いる
@@ -484,6 +486,7 @@ Spacing Scale:
   * **Y軸業種ラベルの折り返し**: Y軸の項目名が長い場合は、改行コード（`\n`）でスプリットし、SVG `<tspan>` を用いて2行で表示（例：1行目 `dy={-7}`, 2行目 `dy={16}`）する。項目名フォントサイズはPC版 `15px` からモバイル版 `11px` に縮小させるなどの対応を行う。
   * **カスタムツールチップ**: チャートエリアにホバーした際は、ラッパー内に絶対配置（`position: absolute`）する HTML 要素のツールチップを構築する。数値の縦位置アライメントには `tabular-nums` を指定し、ドットなどの凡例色には CSS 変数を使用する。
   * **横スクロールの適用**: 画面幅に対してチャートの最小幅が規定される場合は、コンテナ（`.chartContainer`）に `overflow-x: auto; -webkit-overflow-scrolling: touch;` を設定してモバイル端末でスクロール可能にする。
+  * チャートの軸ラベル、ツールチップなどのフォントは16px。
 
 ---
 
@@ -506,10 +509,7 @@ Spacing Scale:
 
 ## 出典表記のルール
 
-記事内で使用するデータソースの構成によって、表記位置を分岐する。
-
-* **同一ソースのみで構成される記事**：ページ冒頭に一行でまとめて表記し、各チャート直下の個別表記は省略する。
-* **複数ソースが混在する記事**：各チャート直下にのみ個別表記し、ページ冒頭のまとめは行わない。
+* 各チャート直下に必ず表記する
 
 ---
 

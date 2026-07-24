@@ -1,0 +1,25 @@
+.charts {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+/* ─── Stat Headline ─────────────────────────────────────────── */
+.statHeadline {
+  margin: 32px 0 0;
+}
+
+.statFinding {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.5;
+  color: var(--color-text-primary);
+  font-feature-settings: "palt" 1, "kern" 1;
+  letter-spacing: -0.01em;
+}
+
+@media (max-width: 767px) {
+  .statFinding {
+    font-size: 18px;
+  }
+}

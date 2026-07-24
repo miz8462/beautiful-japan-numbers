@@ -1,0 +1,8 @@
+[
+  { "year": 2019, "total": 156, "jobApplicantShortage": 78, "employeeTurnover": 44, "laborCostIncrease": 34 },
+  { "year": 2021, "total": 56, "jobApplicantShortage": null, "employeeTurnover": null, "laborCostIncrease": null },
+  { "year": 2022, "total": 62, "jobApplicantShortage": null, "employeeTurnover": null, "laborCostIncrease": null },
+  { "year": 2023, "total": 158, "jobApplicantShortage": 58, "employeeTurnover": 41, "laborCostIncrease": 59 },
+  { "year": 2024, "total": 289, "jobApplicantShortage": 114, "employeeTurnover": 71, "laborCostIncrease": 104 },
+  { "year": 2025, "total": 397, "jobApplicantShortage": 135, "employeeTurnover": 110, "laborCostIncrease": 152 }
+]

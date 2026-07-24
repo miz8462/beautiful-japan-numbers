@@ -22,8 +22,8 @@ export type Article = {
   title: string;
   description: string;
   tags: Tag[];
-  sourceUrl: string;
-  sourceLabel: string;
+  sourceUrl?: string;
+  sourceLabel?: string;
 };
 
 // ======================
@@ -31,6 +31,15 @@ export type Article = {
 // ======================
 
 export const articles: Article[] = [
+  {
+    href: "/articles/bankruptcy-trend",
+    publishedAt: "2026-07-24",
+    label: "Bankruptcy",
+    title: "企業の倒産件数の推移",
+    description:
+      "1952年以降の企業倒産件数（負債1,000万円以上）の長期推移と、近年急増する「人手不足」倒産の原因別内訳を可視化します。",
+    tags: ["economy"],
+  },
   {
     href: "/articles/industry-structure",
     publishedAt: "2026-07-22",

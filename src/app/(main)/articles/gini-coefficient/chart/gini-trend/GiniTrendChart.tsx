@@ -21,8 +21,8 @@ type GiniLineSeries = LineSeries & {
 };
 
 // ─── 定数 ────────────────────────────────────────────────────────
-const COLOR_INITIAL = "#1e7aa8"; // Civic Sky Dark
-const COLOR_REDISTRIBUTED = "#5bbee4"; // Civic Sky
+const COLOR_INITIAL = "#7f1084";
+const COLOR_REDISTRIBUTED = "#5bbee4";
 
 const colors: Record<SeriesId, string> = {
   initial: COLOR_INITIAL,
