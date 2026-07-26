@@ -1,13 +1,13 @@
 "use client";
 
-import type { ComponentType } from "react";
 import { ArticleChartCanvas } from "@/components/article/article-chart";
-import { formatYearShort } from "@/lib/chart-format";
 import nationalDebtLongTerm from "@/data/national-debt-long-term.json";
+import { formatYearShort } from "@/lib/chart-format";
 import type { LineCustomSvgLayerProps, LineSeries } from "@nivo/line";
 import { ResponsiveLine } from "@nivo/line";
-import { line as d3Line } from "d3-shape";
 import { scaleLinear } from "d3-scale";
+import { line as d3Line } from "d3-shape";
+import type { ComponentType } from "react";
 import styles from "./NationalDebtBalanceChart.module.css";
 
 // ─── 型定義 ──────────────────────────────────────────────────────
@@ -23,7 +23,7 @@ type DebtRow = (typeof nationalDebtLongTerm)[number];
 // ─── 定数 ────────────────────────────────────────────────────────
 const COLOR_BALANCE = "var(--color-brand)";
 const COLOR_GDP_RATIO =
-  "color-mix(in srgb, var(--color-brand) 42%, white)";
+  "var(--color-brand-dark)";
 
 const BALANCE_LABEL = "普通国債残高";
 const GDP_RATIO_LABEL = "対GDP比";
@@ -56,11 +56,11 @@ type AnnotationDef = {
 };
 
 const ANNOTATIONS: AnnotationDef[] = [
-  { year: 1973, label: "第一次石油危機", labelYOffset: 12 },
-  { year: 1989, label: "消費税導入", labelYOffset: 28 },
-  { year: 1991, label: "バブル崩壊", labelYOffset: 44 },
-  { year: 2008, label: "リーマンショック", labelYOffset: 12 },
-  { year: 2020, label: "コロナ対応", labelYOffset: 28 },
+  { year: 1973, label: "第一次石油危機" },
+  { year: 1989, label: "消費税導入" },
+  { year: 1991, label: "バブル崩壊", labelYOffset: -24 },
+  { year: 2008, label: "リーマンショック" },
+  { year: 2020, label: "コロナ対応" },
 ];
 
 const nivoTheme = {
@@ -88,7 +88,7 @@ function createAnnotationLayer(
   }: LineCustomSvgLayerProps<BalanceLineSeries>) {
     return (
       <>
-        {ANNOTATIONS.map(({ year, label, labelYOffset = 0 }) => {
+        {ANNOTATIONS.map(({ year, label, labelYOffset = -8 }) => {
           const x = xScale(year) as number;
           return (
             <g key={year}>
@@ -105,7 +105,7 @@ function createAnnotationLayer(
               <text
                 x={x}
                 y={labelYOffset}
-                fontSize={10}
+                fontSize={12}
                 fill="#9ca3af"
                 textAnchor="middle"
                 fontFamily='"Noto Sans JP", "游ゴシック体", sans-serif'
@@ -273,7 +273,7 @@ export function NationalDebtBalanceChart() {
       <ArticleChartCanvas height={420} mobileHeight={360}>
         <ResponsiveLine
           data={CHART_DATA}
-          margin={{ top: 52, right: 72, bottom: 48, left: 56 }}
+          margin={{ top: 52, right: 75, bottom: 48, left: 56 }}
           xScale={{ type: "linear", min: X_MIN, max: X_MAX, nice: false }}
           yScale={{
             type: "linear",
