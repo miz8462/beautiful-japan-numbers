@@ -30,7 +30,28 @@ export type Article = {
 // 記事データ
 // ======================
 
-export const articles: Article[] = [
+export const articles: Article[] = [  {
+    href: "/articles/expenditure-breakdown",
+    publishedAt: "2026-07-31",
+    label: "Expenditure",
+    title: "歳出の内訳変化の推移",
+    description:
+      "1967年度から2024年度までの主要経費別歳出の長期推移と、高齢化に伴う社会保障関係費の割合の推移を可視化します。",
+    tags: ["economy", "politics"],
+    sourceUrl: "https://www.mof.go.jp/policy/budget/reference/statistics/data.htm",
+    sourceLabel: "出典: 財務省「財政統計」第20表",
+  },
+  {
+    href: "/articles/tax-revenue-structure",
+    publishedAt: "2026-07-29",
+    label: "Tax Revenue",
+    title: "税収構造の推移",
+    description:
+      "1979年度から2024年度までの日本の税収構造の推移を可視化します。かつては所得税や法人税が主要な税収源でしたが、累次の税制改正や税率引き上げを経て、近年は消費税が税目別で最大となっています。",
+    tags: ["economy", "politics"],
+    sourceUrl: "https://www.mof.go.jp/tax_policy/summary/condition/a03.htm",
+    sourceLabel: "出典: 財務省「税収に関する資料」",
+  },
   {
     href: "/articles/national-debt-trend",
     publishedAt: "2026-07-25",
@@ -199,6 +220,7 @@ export const articles: Article[] = [
       "https://www.mof.go.jp/policy/budget/reference/statistics/data.htm",
     sourceLabel: "出典: 財務省「予算・決算 統計表一覧」",
   },
+
 ];
 
 

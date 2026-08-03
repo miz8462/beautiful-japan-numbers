@@ -1,0 +1,1 @@
+export { SocialSecurityShareChart } from "./SocialSecurityShareChart";

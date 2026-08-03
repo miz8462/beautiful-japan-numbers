@@ -1,0 +1,11 @@
+.chartSection {
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+
+@media (max-width: 767px) {
+  .chartSection {
+    margin-top: 24px;
+    margin-bottom: 24px;
+  }
+}

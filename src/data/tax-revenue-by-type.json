@@ -1,0 +1,370 @@
+[
+  {
+    "fiscalYear": 1979,
+    "totalOku": 237295,
+    "incomeTaxOku": 92720,
+    "corporateTaxOku": 73859,
+    "consumptionTaxOku": 0,
+    "otherOku": 70716
+  },
+  {
+    "fiscalYear": 1980,
+    "totalOku": 268687,
+    "incomeTaxOku": 107996,
+    "corporateTaxOku": 89227,
+    "consumptionTaxOku": 0,
+    "otherOku": 71464
+  },
+  {
+    "fiscalYear": 1981,
+    "totalOku": 289521,
+    "incomeTaxOku": 119804,
+    "corporateTaxOku": 88225,
+    "consumptionTaxOku": 0,
+    "otherOku": 81492
+  },
+  {
+    "fiscalYear": 1982,
+    "totalOku": 305111,
+    "incomeTaxOku": 128455,
+    "corporateTaxOku": 91346,
+    "consumptionTaxOku": 0,
+    "otherOku": 85310
+  },
+  {
+    "fiscalYear": 1983,
+    "totalOku": 323583,
+    "incomeTaxOku": 136428,
+    "corporateTaxOku": 98245,
+    "consumptionTaxOku": 0,
+    "otherOku": 88910
+  },
+  {
+    "fiscalYear": 1984,
+    "totalOku": 349084,
+    "incomeTaxOku": 140638,
+    "corporateTaxOku": 113402,
+    "consumptionTaxOku": 0,
+    "otherOku": 95044
+  },
+  {
+    "fiscalYear": 1985,
+    "totalOku": 381988,
+    "incomeTaxOku": 154350,
+    "corporateTaxOku": 120207,
+    "consumptionTaxOku": 0,
+    "otherOku": 107431
+  },
+  {
+    "fiscalYear": 1986,
+    "totalOku": 418768,
+    "incomeTaxOku": 168267,
+    "corporateTaxOku": 130911,
+    "consumptionTaxOku": 0,
+    "otherOku": 119590
+  },
+  {
+    "fiscalYear": 1987,
+    "totalOku": 467979,
+    "incomeTaxOku": 174371,
+    "corporateTaxOku": 158108,
+    "consumptionTaxOku": 0,
+    "otherOku": 135500
+  },
+  {
+    "fiscalYear": 1988,
+    "totalOku": 508265,
+    "incomeTaxOku": 179538,
+    "corporateTaxOku": 184381,
+    "consumptionTaxOku": 0,
+    "otherOku": 144346
+  },
+  {
+    "fiscalYear": 1989,
+    "totalOku": 549218,
+    "incomeTaxOku": 213815,
+    "corporateTaxOku": 189933,
+    "consumptionTaxOku": 32699,
+    "otherOku": 112771
+  },
+  {
+    "fiscalYear": 1990,
+    "totalOku": 601059,
+    "incomeTaxOku": 259955,
+    "corporateTaxOku": 183836,
+    "consumptionTaxOku": 46227,
+    "otherOku": 111041
+  },
+  {
+    "fiscalYear": 1991,
+    "totalOku": 598204,
+    "incomeTaxOku": 267493,
+    "corporateTaxOku": 165951,
+    "consumptionTaxOku": 49763,
+    "otherOku": 114997
+  },
+  {
+    "fiscalYear": 1992,
+    "totalOku": 544453,
+    "incomeTaxOku": 232314,
+    "corporateTaxOku": 137136,
+    "consumptionTaxOku": 52409,
+    "otherOku": 122594
+  },
+  {
+    "fiscalYear": 1993,
+    "totalOku": 541262,
+    "incomeTaxOku": 236865,
+    "corporateTaxOku": 121379,
+    "consumptionTaxOku": 55865,
+    "otherOku": 127153
+  },
+  {
+    "fiscalYear": 1994,
+    "totalOku": 510300,
+    "incomeTaxOku": 204175,
+    "corporateTaxOku": 123631,
+    "consumptionTaxOku": 56315,
+    "otherOku": 126179
+  },
+  {
+    "fiscalYear": 1995,
+    "totalOku": 519308,
+    "incomeTaxOku": 195151,
+    "corporateTaxOku": 137354,
+    "consumptionTaxOku": 57901,
+    "otherOku": 128902
+  },
+  {
+    "fiscalYear": 1996,
+    "totalOku": 520601,
+    "incomeTaxOku": 189649,
+    "corporateTaxOku": 144833,
+    "consumptionTaxOku": 60568,
+    "otherOku": 125551
+  },
+  {
+    "fiscalYear": 1997,
+    "totalOku": 539415,
+    "incomeTaxOku": 191827,
+    "corporateTaxOku": 134754,
+    "consumptionTaxOku": 93047,
+    "otherOku": 119787
+  },
+  {
+    "fiscalYear": 1998,
+    "totalOku": 494319,
+    "incomeTaxOku": 169961,
+    "corporateTaxOku": 114232,
+    "consumptionTaxOku": 100744,
+    "otherOku": 109382
+  },
+  {
+    "fiscalYear": 1999,
+    "totalOku": 472345,
+    "incomeTaxOku": 154468,
+    "corporateTaxOku": 107951,
+    "consumptionTaxOku": 104471,
+    "otherOku": 105455
+  },
+  {
+    "fiscalYear": 2000,
+    "totalOku": 507125,
+    "incomeTaxOku": 187889,
+    "corporateTaxOku": 117472,
+    "consumptionTaxOku": 98221,
+    "otherOku": 103543
+  },
+  {
+    "fiscalYear": 2001,
+    "totalOku": 479481,
+    "incomeTaxOku": 178065,
+    "corporateTaxOku": 102578,
+    "consumptionTaxOku": 97671,
+    "otherOku": 101167
+  },
+  {
+    "fiscalYear": 2002,
+    "totalOku": 438332,
+    "incomeTaxOku": 148122,
+    "corporateTaxOku": 95234,
+    "consumptionTaxOku": 98115,
+    "otherOku": 96861
+  },
+  {
+    "fiscalYear": 2003,
+    "totalOku": 432824,
+    "incomeTaxOku": 139146,
+    "corporateTaxOku": 101152,
+    "consumptionTaxOku": 97128,
+    "otherOku": 95398
+  },
+  {
+    "fiscalYear": 2004,
+    "totalOku": 455890,
+    "incomeTaxOku": 146705,
+    "corporateTaxOku": 114437,
+    "consumptionTaxOku": 99743,
+    "otherOku": 95005
+  },
+  {
+    "fiscalYear": 2005,
+    "totalOku": 490654,
+    "incomeTaxOku": 155859,
+    "corporateTaxOku": 132736,
+    "consumptionTaxOku": 105834,
+    "otherOku": 96225
+  },
+  {
+    "fiscalYear": 2006,
+    "totalOku": 490691,
+    "incomeTaxOku": 140541,
+    "corporateTaxOku": 149179,
+    "consumptionTaxOku": 104633,
+    "otherOku": 96338
+  },
+  {
+    "fiscalYear": 2007,
+    "totalOku": 510182,
+    "incomeTaxOku": 160800,
+    "corporateTaxOku": 147444,
+    "consumptionTaxOku": 102719,
+    "otherOku": 99219
+  },
+  {
+    "fiscalYear": 2008,
+    "totalOku": 442673,
+    "incomeTaxOku": 149851,
+    "corporateTaxOku": 100106,
+    "consumptionTaxOku": 99689,
+    "otherOku": 93027
+  },
+  {
+    "fiscalYear": 2009,
+    "totalOku": 387331,
+    "incomeTaxOku": 129139,
+    "corporateTaxOku": 63564,
+    "consumptionTaxOku": 98075,
+    "otherOku": 96553
+  },
+  {
+    "fiscalYear": 2010,
+    "totalOku": 414868,
+    "incomeTaxOku": 129844,
+    "corporateTaxOku": 89677,
+    "consumptionTaxOku": 100333,
+    "otherOku": 95014
+  },
+  {
+    "fiscalYear": 2011,
+    "totalOku": 428326,
+    "incomeTaxOku": 134762,
+    "corporateTaxOku": 93514,
+    "consumptionTaxOku": 101946,
+    "otherOku": 98104
+  },
+  {
+    "fiscalYear": 2012,
+    "totalOku": 439314,
+    "incomeTaxOku": 139925,
+    "corporateTaxOku": 97583,
+    "consumptionTaxOku": 103504,
+    "otherOku": 98302
+  },
+  {
+    "fiscalYear": 2013,
+    "totalOku": 469529,
+    "incomeTaxOku": 155308,
+    "corporateTaxOku": 104937,
+    "consumptionTaxOku": 108293,
+    "otherOku": 100991
+  },
+  {
+    "fiscalYear": 2014,
+    "totalOku": 539707,
+    "incomeTaxOku": 167902,
+    "corporateTaxOku": 110316,
+    "consumptionTaxOku": 160290,
+    "otherOku": 101199
+  },
+  {
+    "fiscalYear": 2015,
+    "totalOku": 562854,
+    "incomeTaxOku": 178071,
+    "corporateTaxOku": 108274,
+    "consumptionTaxOku": 174263,
+    "otherOku": 102246
+  },
+  {
+    "fiscalYear": 2016,
+    "totalOku": 554686,
+    "incomeTaxOku": 176111,
+    "corporateTaxOku": 103289,
+    "consumptionTaxOku": 172282,
+    "otherOku": 103004
+  },
+  {
+    "fiscalYear": 2017,
+    "totalOku": 587875,
+    "incomeTaxOku": 188816,
+    "corporateTaxOku": 119953,
+    "consumptionTaxOku": 175139,
+    "otherOku": 103967
+  },
+  {
+    "fiscalYear": 2018,
+    "totalOku": 603564,
+    "incomeTaxOku": 199006,
+    "corporateTaxOku": 123180,
+    "consumptionTaxOku": 176809,
+    "otherOku": 104569
+  },
+  {
+    "fiscalYear": 2019,
+    "totalOku": 584415,
+    "incomeTaxOku": 191707,
+    "corporateTaxOku": 107971,
+    "consumptionTaxOku": 183527,
+    "otherOku": 101210
+  },
+  {
+    "fiscalYear": 2020,
+    "totalOku": 608216,
+    "incomeTaxOku": 191898,
+    "corporateTaxOku": 112346,
+    "consumptionTaxOku": 209714,
+    "otherOku": 94258
+  },
+  {
+    "fiscalYear": 2021,
+    "totalOku": 670379,
+    "incomeTaxOku": 213822,
+    "corporateTaxOku": 136428,
+    "consumptionTaxOku": 218886,
+    "otherOku": 101243
+  },
+  {
+    "fiscalYear": 2022,
+    "totalOku": 711374,
+    "incomeTaxOku": 225217,
+    "corporateTaxOku": 149398,
+    "consumptionTaxOku": 230793,
+    "otherOku": 105966
+  },
+  {
+    "fiscalYear": 2023,
+    "totalOku": 720761,
+    "incomeTaxOku": 220530,
+    "corporateTaxOku": 158606,
+    "consumptionTaxOku": 230923,
+    "otherOku": 110702
+  },
+  {
+    "fiscalYear": 2024,
+    "totalOku": 752321,
+    "incomeTaxOku": 212086,
+    "corporateTaxOku": 179102,
+    "consumptionTaxOku": 250212,
+    "otherOku": 110921
+  }
+]

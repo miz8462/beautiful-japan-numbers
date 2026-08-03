@@ -519,7 +519,7 @@ Spacing Scale:
 # 9. Do's and Don'ts
 
 ## Do
-* 新規記事は/src/app/(main)/articles/articles.tsの一番上に追記する
+* 新規記事は画面の一番上の/src/app/(main)/articles/articles.tsの「記事データarticles[]」の最も上に追加する
 * Stat Headline → Source → Chart の順を守る
 * Source がページヘッダー側にある場合は、チャート直前の Source を省略できる（「出典表記のルール」のうち同一ソース記事の場合）
 * 数値に `"tnum"` を適用
