@@ -1,0 +1,1327 @@
+[
+  {
+    "yearMonth": "2003-10",
+    "maxPercent": 4.05,
+    "minPercent": 2.92
+  },
+  {
+    "yearMonth": "2003-11",
+    "maxPercent": 4.05,
+    "minPercent": 2.9
+  },
+  {
+    "yearMonth": "2003-12",
+    "maxPercent": 3.95,
+    "minPercent": 2.89
+  },
+  {
+    "yearMonth": "2004-01",
+    "maxPercent": 3.95,
+    "minPercent": 2.89
+  },
+  {
+    "yearMonth": "2004-02",
+    "maxPercent": 3.8,
+    "minPercent": 2.94
+  },
+  {
+    "yearMonth": "2004-03",
+    "maxPercent": 3.83,
+    "minPercent": 2.85
+  },
+  {
+    "yearMonth": "2004-04",
+    "maxPercent": 4.0,
+    "minPercent": 2.89
+  },
+  {
+    "yearMonth": "2004-05",
+    "maxPercent": 4.0,
+    "minPercent": 2.95
+  },
+  {
+    "yearMonth": "2004-06",
+    "maxPercent": 4.15,
+    "minPercent": 2.95
+  },
+  {
+    "yearMonth": "2004-07",
+    "maxPercent": 4.5,
+    "minPercent": 3.1
+  },
+  {
+    "yearMonth": "2004-08",
+    "maxPercent": 4.5,
+    "minPercent": 3.17
+  },
+  {
+    "yearMonth": "2004-09",
+    "maxPercent": 4.3,
+    "minPercent": 2.99
+  },
+  {
+    "yearMonth": "2004-10",
+    "maxPercent": 4.2,
+    "minPercent": 2.86
+  },
+  {
+    "yearMonth": "2004-11",
+    "maxPercent": 4.2,
+    "minPercent": 2.83
+  },
+  {
+    "yearMonth": "2004-12",
+    "maxPercent": 4.1,
+    "minPercent": null
+  },
+  {
+    "yearMonth": "2005-01",
+    "maxPercent": 3.58,
+    "minPercent": 2.23
+  },
+  {
+    "yearMonth": "2005-02",
+    "maxPercent": 3.6,
+    "minPercent": 2.23
+  },
+  {
+    "yearMonth": "2005-03",
+    "maxPercent": 3.66,
+    "minPercent": 2.29
+  },
+  {
+    "yearMonth": "2005-04",
+    "maxPercent": 3.61,
+    "minPercent": 2.29
+  },
+  {
+    "yearMonth": "2005-05",
+    "maxPercent": 3.6,
+    "minPercent": 2.15
+  },
+  {
+    "yearMonth": "2005-06",
+    "maxPercent": 3.35,
+    "minPercent": 2.34
+  },
+  {
+    "yearMonth": "2005-07",
+    "maxPercent": 3.3,
+    "minPercent": 2.25
+  },
+  {
+    "yearMonth": "2005-08",
+    "maxPercent": 3.31,
+    "minPercent": 2.27
+  },
+  {
+    "yearMonth": "2005-09",
+    "maxPercent": 3.46,
+    "minPercent": 2.42
+  },
+  {
+    "yearMonth": "2005-10",
+    "maxPercent": 3.42,
+    "minPercent": 2.371
+  },
+  {
+    "yearMonth": "2005-11",
+    "maxPercent": 3.55,
+    "minPercent": 2.501
+  },
+  {
+    "yearMonth": "2005-12",
+    "maxPercent": 3.5,
+    "minPercent": 2.441
+  },
+  {
+    "yearMonth": "2006-01",
+    "maxPercent": 3.57,
+    "minPercent": 2.521
+  },
+  {
+    "yearMonth": "2006-02",
+    "maxPercent": 3.51,
+    "minPercent": 2.461
+  },
+  {
+    "yearMonth": "2006-03",
+    "maxPercent": 3.65,
+    "minPercent": 2.591
+  },
+  {
+    "yearMonth": "2006-04",
+    "maxPercent": 3.8,
+    "minPercent": 2.68
+  },
+  {
+    "yearMonth": "2006-05",
+    "maxPercent": 4.0,
+    "minPercent": 2.87
+  },
+  {
+    "yearMonth": "2006-06",
+    "maxPercent": 3.95,
+    "minPercent": 2.84
+  },
+  {
+    "yearMonth": "2006-07",
+    "maxPercent": 3.74,
+    "minPercent": 2.9
+  },
+  {
+    "yearMonth": "2006-08",
+    "maxPercent": 3.59,
+    "minPercent": 2.93
+  },
+  {
+    "yearMonth": "2006-09",
+    "maxPercent": 3.58,
+    "minPercent": 2.78
+  },
+  {
+    "yearMonth": "2006-10",
+    "maxPercent": 3.75,
+    "minPercent": 2.78
+  },
+  {
+    "yearMonth": "2006-11",
+    "maxPercent": 3.66,
+    "minPercent": 2.95
+  },
+  {
+    "yearMonth": "2006-12",
+    "maxPercent": 3.55,
+    "minPercent": 2.86
+  },
+  {
+    "yearMonth": "2007-01",
+    "maxPercent": 3.53,
+    "minPercent": 2.75
+  },
+  {
+    "yearMonth": "2007-02",
+    "maxPercent": 3.49,
+    "minPercent": 2.82
+  },
+  {
+    "yearMonth": "2007-03",
+    "maxPercent": 3.4,
+    "minPercent": 2.79
+  },
+  {
+    "yearMonth": "2007-04",
+    "maxPercent": 3.42,
+    "minPercent": 2.761
+  },
+  {
+    "yearMonth": "2007-05",
+    "maxPercent": 3.56,
+    "minPercent": 2.771
+  },
+  {
+    "yearMonth": "2007-06",
+    "maxPercent": 3.52,
+    "minPercent": 2.821
+  },
+  {
+    "yearMonth": "2007-07",
+    "maxPercent": 3.45,
+    "minPercent": 2.961
+  },
+  {
+    "yearMonth": "2007-08",
+    "maxPercent": null,
+    "minPercent": 2.921
+  },
+  {
+    "yearMonth": "2007-09",
+    "maxPercent": null,
+    "minPercent": 2.751
+  },
+  {
+    "yearMonth": "2007-10",
+    "maxPercent": 3.5,
+    "minPercent": 2.95
+  },
+  {
+    "yearMonth": "2007-11",
+    "maxPercent": 3.46,
+    "minPercent": 2.83
+  },
+  {
+    "yearMonth": "2007-12",
+    "maxPercent": 3.46,
+    "minPercent": 2.7
+  },
+  {
+    "yearMonth": "2008-01",
+    "maxPercent": 3.46,
+    "minPercent": 2.82
+  },
+  {
+    "yearMonth": "2008-02",
+    "maxPercent": 3.35,
+    "minPercent": 2.76
+  },
+  {
+    "yearMonth": "2008-03",
+    "maxPercent": 3.2,
+    "minPercent": 2.75
+  },
+  {
+    "yearMonth": "2008-04",
+    "maxPercent": 3.35,
+    "minPercent": 2.64
+  },
+  {
+    "yearMonth": "2008-05",
+    "maxPercent": 3.55,
+    "minPercent": 2.95
+  },
+  {
+    "yearMonth": "2008-06",
+    "maxPercent": 4.0,
+    "minPercent": 3.05
+  },
+  {
+    "yearMonth": "2008-07",
+    "maxPercent": 3.93,
+    "minPercent": 2.98
+  },
+  {
+    "yearMonth": "2008-08",
+    "maxPercent": 3.87,
+    "minPercent": 2.92
+  },
+  {
+    "yearMonth": "2008-09",
+    "maxPercent": 3.71,
+    "minPercent": 2.77
+  },
+  {
+    "yearMonth": "2008-10",
+    "maxPercent": 3.84,
+    "minPercent": 2.89
+  },
+  {
+    "yearMonth": "2008-11",
+    "maxPercent": 3.83,
+    "minPercent": 2.88
+  },
+  {
+    "yearMonth": "2008-12",
+    "maxPercent": 3.83,
+    "minPercent": 2.88
+  },
+  {
+    "yearMonth": "2009-01",
+    "maxPercent": 3.93,
+    "minPercent": 3.02
+  },
+  {
+    "yearMonth": "2009-02",
+    "maxPercent": 3.97,
+    "minPercent": 2.98
+  },
+  {
+    "yearMonth": "2009-03",
+    "maxPercent": 3.94,
+    "minPercent": 2.95
+  },
+  {
+    "yearMonth": "2009-04",
+    "maxPercent": 4.02,
+    "minPercent": 3.07
+  },
+  {
+    "yearMonth": "2009-05",
+    "maxPercent": 3.95,
+    "minPercent": 2.99
+  },
+  {
+    "yearMonth": "2009-06",
+    "maxPercent": 3.71,
+    "minPercent": 2.82
+  },
+  {
+    "yearMonth": "2009-07",
+    "maxPercent": 3.64,
+    "minPercent": 2.76
+  },
+  {
+    "yearMonth": "2009-08",
+    "maxPercent": 3.59,
+    "minPercent": 2.69
+  },
+  {
+    "yearMonth": "2009-09",
+    "maxPercent": 3.64,
+    "minPercent": 2.69
+  },
+  {
+    "yearMonth": "2009-10",
+    "maxPercent": 3.55,
+    "minPercent": 2.6
+  },
+  {
+    "yearMonth": "2009-11",
+    "maxPercent": 3.52,
+    "minPercent": 2.57
+  },
+  {
+    "yearMonth": "2009-12",
+    "maxPercent": 3.6,
+    "minPercent": 2.55
+  },
+  {
+    "yearMonth": "2010-04",
+    "maxPercent": 3.58,
+    "minPercent": 2.58
+  },
+  {
+    "yearMonth": "2010-05",
+    "maxPercent": 3.46,
+    "minPercent": 2.51
+  },
+  {
+    "yearMonth": "2010-06",
+    "maxPercent": 3.36,
+    "minPercent": 2.41
+  },
+  {
+    "yearMonth": "2010-07",
+    "maxPercent": 3.28,
+    "minPercent": 2.32
+  },
+  {
+    "yearMonth": "2010-08",
+    "maxPercent": 3.2,
+    "minPercent": 2.23
+  },
+  {
+    "yearMonth": "2010-09",
+    "maxPercent": 3.2,
+    "minPercent": 2.06
+  },
+  {
+    "yearMonth": "2010-10",
+    "maxPercent": 3.2,
+    "minPercent": 2.16
+  },
+  {
+    "yearMonth": "2010-11",
+    "maxPercent": 3.2,
+    "minPercent": 2.15
+  },
+  {
+    "yearMonth": "2010-12",
+    "maxPercent": 3.35,
+    "minPercent": 2.4
+  },
+  {
+    "yearMonth": "2011-01",
+    "maxPercent": 3.4,
+    "minPercent": 2.41
+  },
+  {
+    "yearMonth": "2011-02",
+    "maxPercent": 3.5,
+    "minPercent": 2.55
+  },
+  {
+    "yearMonth": "2011-03",
+    "maxPercent": 3.54,
+    "minPercent": 2.54
+  },
+  {
+    "yearMonth": "2011-04",
+    "maxPercent": 3.58,
+    "minPercent": 2.63
+  },
+  {
+    "yearMonth": "2011-05",
+    "maxPercent": 3.58,
+    "minPercent": 2.63
+  },
+  {
+    "yearMonth": "2011-06",
+    "maxPercent": 3.46,
+    "minPercent": 2.49
+  },
+  {
+    "yearMonth": "2011-07",
+    "maxPercent": 3.39,
+    "minPercent": 2.38
+  },
+  {
+    "yearMonth": "2011-08",
+    "maxPercent": 3.38,
+    "minPercent": 2.35
+  },
+  {
+    "yearMonth": "2011-09",
+    "maxPercent": 3.27,
+    "minPercent": 2.26
+  },
+  {
+    "yearMonth": "2011-10",
+    "maxPercent": 3.2,
+    "minPercent": 2.18
+  },
+  {
+    "yearMonth": "2011-11",
+    "maxPercent": 3.2,
+    "minPercent": 2.2
+  },
+  {
+    "yearMonth": "2011-12",
+    "maxPercent": 3.2,
+    "minPercent": 2.21
+  },
+  {
+    "yearMonth": "2012-01",
+    "maxPercent": 3.2,
+    "minPercent": 2.14
+  },
+  {
+    "yearMonth": "2012-02",
+    "maxPercent": 3.2,
+    "minPercent": 2.18
+  },
+  {
+    "yearMonth": "2012-03",
+    "maxPercent": 3.2,
+    "minPercent": 2.13
+  },
+  {
+    "yearMonth": "2012-04",
+    "maxPercent": 3.2,
+    "minPercent": 2.16
+  },
+  {
+    "yearMonth": "2012-05",
+    "maxPercent": 3.02,
+    "minPercent": 2.07
+  },
+  {
+    "yearMonth": "2012-06",
+    "maxPercent": 2.96,
+    "minPercent": 2.01
+  },
+  {
+    "yearMonth": "2012-07",
+    "maxPercent": 2.89,
+    "minPercent": 1.94
+  },
+  {
+    "yearMonth": "2012-08",
+    "maxPercent": 2.79,
+    "minPercent": 1.84
+  },
+  {
+    "yearMonth": "2012-09",
+    "maxPercent": 2.84,
+    "minPercent": 1.89
+  },
+  {
+    "yearMonth": "2012-10",
+    "maxPercent": 2.83,
+    "minPercent": 1.88
+  },
+  {
+    "yearMonth": "2012-11",
+    "maxPercent": 2.8,
+    "minPercent": 1.85
+  },
+  {
+    "yearMonth": "2012-12",
+    "maxPercent": 2.76,
+    "minPercent": 1.81
+  },
+  {
+    "yearMonth": "2013-01",
+    "maxPercent": 2.94,
+    "minPercent": 1.99
+  },
+  {
+    "yearMonth": "2013-02",
+    "maxPercent": 2.96,
+    "minPercent": 2.01
+  },
+  {
+    "yearMonth": "2013-03",
+    "maxPercent": 2.94,
+    "minPercent": 1.99
+  },
+  {
+    "yearMonth": "2013-04",
+    "maxPercent": 2.75,
+    "minPercent": 1.8
+  },
+  {
+    "yearMonth": "2013-05",
+    "maxPercent": 2.76,
+    "minPercent": 1.81
+  },
+  {
+    "yearMonth": "2013-06",
+    "maxPercent": 2.96,
+    "minPercent": 2.03
+  },
+  {
+    "yearMonth": "2013-07",
+    "maxPercent": 3.0,
+    "minPercent": 2.05
+  },
+  {
+    "yearMonth": "2013-08",
+    "maxPercent": 2.94,
+    "minPercent": 1.99
+  },
+  {
+    "yearMonth": "2013-09",
+    "maxPercent": 2.89,
+    "minPercent": 1.94
+  },
+  {
+    "yearMonth": "2013-10",
+    "maxPercent": 2.88,
+    "minPercent": 1.93
+  },
+  {
+    "yearMonth": "2013-11",
+    "maxPercent": 2.76,
+    "minPercent": 1.81
+  },
+  {
+    "yearMonth": "2013-12",
+    "maxPercent": 2.45,
+    "minPercent": 1.8
+  },
+  {
+    "yearMonth": "2014-01",
+    "maxPercent": 2.48,
+    "minPercent": 1.8
+  },
+  {
+    "yearMonth": "2014-02",
+    "maxPercent": 2.5,
+    "minPercent": 1.79
+  },
+  {
+    "yearMonth": "2014-03",
+    "maxPercent": 2.4,
+    "minPercent": 1.74
+  },
+  {
+    "yearMonth": "2014-04",
+    "maxPercent": 2.43,
+    "minPercent": 1.75
+  },
+  {
+    "yearMonth": "2014-05",
+    "maxPercent": 2.37,
+    "minPercent": 1.73
+  },
+  {
+    "yearMonth": "2014-06",
+    "maxPercent": 2.34,
+    "minPercent": 1.73
+  },
+  {
+    "yearMonth": "2014-07",
+    "maxPercent": 2.33,
+    "minPercent": 1.68
+  },
+  {
+    "yearMonth": "2014-08",
+    "maxPercent": 2.28,
+    "minPercent": 1.65
+  },
+  {
+    "yearMonth": "2014-09",
+    "maxPercent": 2.25,
+    "minPercent": 1.61
+  },
+  {
+    "yearMonth": "2014-10",
+    "maxPercent": 2.19,
+    "minPercent": 1.59
+  },
+  {
+    "yearMonth": "2014-11",
+    "maxPercent": 2.12,
+    "minPercent": 1.47
+  },
+  {
+    "yearMonth": "2014-12",
+    "maxPercent": 2.09,
+    "minPercent": 1.37
+  },
+  {
+    "yearMonth": "2015-01",
+    "maxPercent": 2.09,
+    "minPercent": 1.47
+  },
+  {
+    "yearMonth": "2015-02",
+    "maxPercent": 2.12,
+    "minPercent": 1.54
+  },
+  {
+    "yearMonth": "2015-03",
+    "maxPercent": 2.08,
+    "minPercent": 1.46
+  },
+  {
+    "yearMonth": "2015-04",
+    "maxPercent": 2.15,
+    "minPercent": 1.54
+  },
+  {
+    "yearMonth": "2015-05",
+    "maxPercent": 2.23,
+    "minPercent": 1.61
+  },
+  {
+    "yearMonth": "2015-06",
+    "maxPercent": 2.32,
+    "minPercent": 1.59
+  },
+  {
+    "yearMonth": "2015-07",
+    "maxPercent": 2.23,
+    "minPercent": 1.54
+  },
+  {
+    "yearMonth": "2015-08",
+    "maxPercent": 2.16,
+    "minPercent": 1.5
+  },
+  {
+    "yearMonth": "2015-09",
+    "maxPercent": 2.12,
+    "minPercent": 1.54
+  },
+  {
+    "yearMonth": "2015-10",
+    "maxPercent": 2.1,
+    "minPercent": 1.5
+  },
+  {
+    "yearMonth": "2015-11",
+    "maxPercent": 2.03,
+    "minPercent": 1.48
+  },
+  {
+    "yearMonth": "2015-12",
+    "maxPercent": 1.86,
+    "minPercent": 1.28
+  },
+  {
+    "yearMonth": "2016-04",
+    "maxPercent": 1.82,
+    "minPercent": 1.18
+  },
+  {
+    "yearMonth": "2016-05",
+    "maxPercent": 1.71,
+    "minPercent": 1.06
+  },
+  {
+    "yearMonth": "2016-06",
+    "maxPercent": 1.71,
+    "minPercent": 1.1
+  },
+  {
+    "yearMonth": "2016-07",
+    "maxPercent": 1.58,
+    "minPercent": 0.93
+  },
+  {
+    "yearMonth": "2016-08",
+    "maxPercent": 1.57,
+    "minPercent": 0.9
+  },
+  {
+    "yearMonth": "2016-09",
+    "maxPercent": 1.67,
+    "minPercent": 1.02
+  },
+  {
+    "yearMonth": "2016-10",
+    "maxPercent": 1.81,
+    "minPercent": 1.06
+  },
+  {
+    "yearMonth": "2016-11",
+    "maxPercent": 1.58,
+    "minPercent": 1.03
+  },
+  {
+    "yearMonth": "2016-12",
+    "maxPercent": 1.65,
+    "minPercent": 1.1
+  },
+  {
+    "yearMonth": "2017-01",
+    "maxPercent": 1.69,
+    "minPercent": 1.12
+  },
+  {
+    "yearMonth": "2017-02",
+    "maxPercent": 1.85,
+    "minPercent": 1.1
+  },
+  {
+    "yearMonth": "2017-03",
+    "maxPercent": 1.67,
+    "minPercent": 1.12
+  },
+  {
+    "yearMonth": "2017-04",
+    "maxPercent": 1.67,
+    "minPercent": 1.12
+  },
+  {
+    "yearMonth": "2017-05",
+    "maxPercent": 1.63,
+    "minPercent": 1.06
+  },
+  {
+    "yearMonth": "2017-06",
+    "maxPercent": 1.64,
+    "minPercent": 1.09
+  },
+  {
+    "yearMonth": "2017-07",
+    "maxPercent": 1.84,
+    "minPercent": 1.06
+  },
+  {
+    "yearMonth": "2017-08",
+    "maxPercent": 1.89,
+    "minPercent": 1.12
+  },
+  {
+    "yearMonth": "2017-09",
+    "maxPercent": 1.86,
+    "minPercent": 1.08
+  },
+  {
+    "yearMonth": "2017-10",
+    "maxPercent": 1.97,
+    "minPercent": 1.36
+  },
+  {
+    "yearMonth": "2017-11",
+    "maxPercent": 1.99,
+    "minPercent": 1.31
+  },
+  {
+    "yearMonth": "2017-12",
+    "maxPercent": 1.99,
+    "minPercent": 1.34
+  },
+  {
+    "yearMonth": "2018-01",
+    "maxPercent": 1.99,
+    "minPercent": 1.36
+  },
+  {
+    "yearMonth": "2018-02",
+    "maxPercent": 2.05,
+    "minPercent": 1.4
+  },
+  {
+    "yearMonth": "2018-03",
+    "maxPercent": 2.01,
+    "minPercent": 1.36
+  },
+  {
+    "yearMonth": "2018-04",
+    "maxPercent": 2.01,
+    "minPercent": 1.35
+  },
+  {
+    "yearMonth": "2018-05",
+    "maxPercent": 2.01,
+    "minPercent": 1.37
+  },
+  {
+    "yearMonth": "2018-06",
+    "maxPercent": 2.01,
+    "minPercent": 1.35
+  },
+  {
+    "yearMonth": "2018-07",
+    "maxPercent": 2.07,
+    "minPercent": 1.34
+  },
+  {
+    "yearMonth": "2018-08",
+    "maxPercent": 2.02,
+    "minPercent": 1.34
+  },
+  {
+    "yearMonth": "2018-09",
+    "maxPercent": 2.07,
+    "minPercent": 1.39
+  },
+  {
+    "yearMonth": "2018-10",
+    "maxPercent": 2.07,
+    "minPercent": 1.41
+  },
+  {
+    "yearMonth": "2018-11",
+    "maxPercent": 2.07,
+    "minPercent": 1.45
+  },
+  {
+    "yearMonth": "2018-12",
+    "maxPercent": 1.96,
+    "minPercent": 1.33
+  },
+  {
+    "yearMonth": "2019-01",
+    "maxPercent": 1.96,
+    "minPercent": 1.33
+  },
+  {
+    "yearMonth": "2019-02",
+    "maxPercent": 1.96,
+    "minPercent": 1.31
+  },
+  {
+    "yearMonth": "2019-03",
+    "maxPercent": 1.96,
+    "minPercent": 1.27
+  },
+  {
+    "yearMonth": "2019-04",
+    "maxPercent": 1.87,
+    "minPercent": 1.27
+  },
+  {
+    "yearMonth": "2019-05",
+    "maxPercent": 1.87,
+    "minPercent": 1.18
+  },
+  {
+    "yearMonth": "2019-06",
+    "maxPercent": 1.87,
+    "minPercent": 1.17
+  },
+  {
+    "yearMonth": "2019-07",
+    "maxPercent": 1.87,
+    "minPercent": 1.11
+  },
+  {
+    "yearMonth": "2019-08",
+    "maxPercent": 1.87,
+    "minPercent": 1.11
+  },
+  {
+    "yearMonth": "2019-09",
+    "maxPercent": 1.87,
+    "minPercent": 1.17
+  },
+  {
+    "yearMonth": "2019-10",
+    "maxPercent": 1.94,
+    "minPercent": 1.21
+  },
+  {
+    "yearMonth": "2019-11",
+    "maxPercent": 1.84,
+    "minPercent": 1.26
+  },
+  {
+    "yearMonth": "2019-12",
+    "maxPercent": 2.03,
+    "minPercent": 1.24
+  },
+  {
+    "yearMonth": "2020-01",
+    "maxPercent": 2.03,
+    "minPercent": 1.3
+  },
+  {
+    "yearMonth": "2020-02",
+    "maxPercent": 2.06,
+    "minPercent": 1.3
+  },
+  {
+    "yearMonth": "2020-03",
+    "maxPercent": 2.06,
+    "minPercent": 1.3
+  },
+  {
+    "yearMonth": "2020-04",
+    "maxPercent": 2.06,
+    "minPercent": 1.31
+  },
+  {
+    "yearMonth": "2020-05",
+    "maxPercent": 2.06,
+    "minPercent": 1.3
+  },
+  {
+    "yearMonth": "2020-06",
+    "maxPercent": 2.06,
+    "minPercent": 1.31
+  },
+  {
+    "yearMonth": "2020-07",
+    "maxPercent": 2.06,
+    "minPercent": 1.29
+  },
+  {
+    "yearMonth": "2020-08",
+    "maxPercent": 2.17,
+    "minPercent": 1.32
+  },
+  {
+    "yearMonth": "2020-09",
+    "maxPercent": 2.17,
+    "minPercent": 1.32
+  },
+  {
+    "yearMonth": "2020-10",
+    "maxPercent": 2.17,
+    "minPercent": 1.32
+  },
+  {
+    "yearMonth": "2020-11",
+    "maxPercent": 2.23,
+    "minPercent": 1.35
+  },
+  {
+    "yearMonth": "2021-04",
+    "maxPercent": 2.17,
+    "minPercent": 1.37
+  },
+  {
+    "yearMonth": "2021-05",
+    "maxPercent": 2.16,
+    "minPercent": 1.38
+  },
+  {
+    "yearMonth": "2021-06",
+    "maxPercent": 2.15,
+    "minPercent": 1.35
+  },
+  {
+    "yearMonth": "2021-07",
+    "maxPercent": 2.1,
+    "minPercent": 1.33
+  },
+  {
+    "yearMonth": "2021-08",
+    "maxPercent": 2.08,
+    "minPercent": 1.28
+  },
+  {
+    "yearMonth": "2021-09",
+    "maxPercent": 2.08,
+    "minPercent": 1.28
+  },
+  {
+    "yearMonth": "2021-10",
+    "maxPercent": 2.17,
+    "minPercent": 1.3
+  },
+  {
+    "yearMonth": "2021-11",
+    "maxPercent": 2.21,
+    "minPercent": 1.33
+  },
+  {
+    "yearMonth": "2021-12",
+    "maxPercent": 2.21,
+    "minPercent": 1.33
+  },
+  {
+    "yearMonth": "2022-01",
+    "maxPercent": 2.21,
+    "minPercent": 1.3
+  },
+  {
+    "yearMonth": "2022-02",
+    "maxPercent": 2.27,
+    "minPercent": 1.35
+  },
+  {
+    "yearMonth": "2022-03",
+    "maxPercent": 2.35,
+    "minPercent": 1.43
+  },
+  {
+    "yearMonth": "2022-04",
+    "maxPercent": 2.54,
+    "minPercent": 1.44
+  },
+  {
+    "yearMonth": "2022-05",
+    "maxPercent": 2.54,
+    "minPercent": 1.46
+  },
+  {
+    "yearMonth": "2022-06",
+    "maxPercent": 2.54,
+    "minPercent": 1.48
+  },
+  {
+    "yearMonth": "2022-07",
+    "maxPercent": 2.77,
+    "minPercent": 1.51
+  },
+  {
+    "yearMonth": "2022-08",
+    "maxPercent": 2.77,
+    "minPercent": 1.53
+  },
+  {
+    "yearMonth": "2022-09",
+    "maxPercent": 2.81,
+    "minPercent": 1.52
+  },
+  {
+    "yearMonth": "2022-10",
+    "maxPercent": 2.97,
+    "minPercent": 1.48
+  },
+  {
+    "yearMonth": "2022-11",
+    "maxPercent": 2.99,
+    "minPercent": 1.54
+  },
+  {
+    "yearMonth": "2022-12",
+    "maxPercent": 3.0,
+    "minPercent": 1.85
+  },
+  {
+    "yearMonth": "2023-01",
+    "maxPercent": 3.3,
+    "minPercent": 1.68
+  },
+  {
+    "yearMonth": "2023-02",
+    "maxPercent": 3.27,
+    "minPercent": 1.88
+  },
+  {
+    "yearMonth": "2023-03",
+    "maxPercent": 3.27,
+    "minPercent": 1.96
+  },
+  {
+    "yearMonth": "2023-04",
+    "maxPercent": 3.07,
+    "minPercent": 1.78
+  },
+  {
+    "yearMonth": "2023-05",
+    "maxPercent": 3.09,
+    "minPercent": 1.83
+  },
+  {
+    "yearMonth": "2023-06",
+    "maxPercent": 3.0,
+    "minPercent": 1.72
+  },
+  {
+    "yearMonth": "2023-07",
+    "maxPercent": 3.07,
+    "minPercent": 1.73
+  },
+  {
+    "yearMonth": "2023-08",
+    "maxPercent": 3.06,
+    "minPercent": 1.72
+  },
+  {
+    "yearMonth": "2023-09",
+    "maxPercent": 3.27,
+    "minPercent": 1.8
+  },
+  {
+    "yearMonth": "2023-10",
+    "maxPercent": 3.27,
+    "minPercent": 1.88
+  },
+  {
+    "yearMonth": "2023-11",
+    "maxPercent": 3.31,
+    "minPercent": 1.86
+  },
+  {
+    "yearMonth": "2023-12",
+    "maxPercent": 3.53,
+    "minPercent": 1.97
+  },
+  {
+    "yearMonth": "2024-01",
+    "maxPercent": 3.47,
+    "minPercent": 1.87
+  },
+  {
+    "yearMonth": "2024-02",
+    "maxPercent": 3.47,
+    "minPercent": 1.82
+  },
+  {
+    "yearMonth": "2024-03",
+    "maxPercent": 3.45,
+    "minPercent": 1.84
+  },
+  {
+    "yearMonth": "2024-04",
+    "maxPercent": 3.31,
+    "minPercent": 1.84
+  },
+  {
+    "yearMonth": "2024-05",
+    "maxPercent": 3.28,
+    "minPercent": 1.83
+  },
+  {
+    "yearMonth": "2024-06",
+    "maxPercent": 3.44,
+    "minPercent": 1.85
+  },
+  {
+    "yearMonth": "2024-07",
+    "maxPercent": 3.43,
+    "minPercent": 1.84
+  },
+  {
+    "yearMonth": "2024-08",
+    "maxPercent": 3.41,
+    "minPercent": 1.82
+  },
+  {
+    "yearMonth": "2024-09",
+    "maxPercent": 3.55,
+    "minPercent": 1.82
+  },
+  {
+    "yearMonth": "2024-10",
+    "maxPercent": 3.7,
+    "minPercent": 1.86
+  },
+  {
+    "yearMonth": "2024-11",
+    "maxPercent": 3.55,
+    "minPercent": 1.9
+  },
+  {
+    "yearMonth": "2024-12",
+    "maxPercent": 3.57,
+    "minPercent": 1.94
+  },
+  {
+    "yearMonth": "2025-01",
+    "maxPercent": 3.57,
+    "minPercent": 1.94
+  },
+  {
+    "yearMonth": "2025-02",
+    "maxPercent": 3.69,
+    "minPercent": 1.94
+  },
+  {
+    "yearMonth": "2025-03",
+    "maxPercent": 3.83,
+    "minPercent": 1.94
+  },
+  {
+    "yearMonth": "2025-04",
+    "maxPercent": 3.86,
+    "minPercent": 1.82
+  },
+  {
+    "yearMonth": "2025-05",
+    "maxPercent": 4.01,
+    "minPercent": 1.93
+  },
+  {
+    "yearMonth": "2025-06",
+    "maxPercent": 3.97,
+    "minPercent": 1.87
+  },
+  {
+    "yearMonth": "2025-07",
+    "maxPercent": 4.14,
+    "minPercent": 1.84
+  },
+  {
+    "yearMonth": "2025-08",
+    "maxPercent": 4.28,
+    "minPercent": 1.87
+  },
+  {
+    "yearMonth": "2025-09",
+    "maxPercent": 4.23,
+    "minPercent": 1.89
+  },
+  {
+    "yearMonth": "2025-10",
+    "maxPercent": 4.31,
+    "minPercent": 1.9
+  },
+  {
+    "yearMonth": "2025-11",
+    "maxPercent": 4.51,
+    "minPercent": 1.97
+  },
+  {
+    "yearMonth": "2025-12",
+    "maxPercent": 4.74,
+    "minPercent": 2.08
+  },
+  {
+    "yearMonth": "2026-01",
+    "maxPercent": 4.88,
+    "minPercent": 2.08
+  },
+  {
+    "yearMonth": "2026-02",
+    "maxPercent": 4.96,
+    "minPercent": 2.26
+  },
+  {
+    "yearMonth": "2026-03",
+    "maxPercent": 4.96,
+    "minPercent": 2.48
+  },
+  {
+    "yearMonth": "2026-04",
+    "maxPercent": 5.02,
+    "minPercent": 2.71
+  },
+  {
+    "yearMonth": "2026-05",
+    "maxPercent": 5.15,
+    "minPercent": 3.21
+  },
+  {
+    "yearMonth": "2026-06",
+    "maxPercent": 5.4,
+    "minPercent": 3.14
+  },
+  {
+    "yearMonth": "2026-07",
+    "maxPercent": 5.4,
+    "minPercent": 3.23
+  },
+  {
+    "yearMonth": "2026-08",
+    "maxPercent": 5.57,
+    "minPercent": null
+  }
+]

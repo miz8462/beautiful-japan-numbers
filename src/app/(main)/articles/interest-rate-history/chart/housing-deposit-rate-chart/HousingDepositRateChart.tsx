@@ -2,7 +2,7 @@
 
 import { ArticleChartCanvas } from "@/components/article/article-chart";
 import { formatYearShort } from "@/lib/chart-format";
-import flat35DataRaw from "@/data/flat35_rate_2003_2007.json";
+import flat35DataRaw from "@/data/flat35_rate_full_2003_2026.json";
 import postalDataRaw from "@/data/postal_ordinary_deposit_pre2007.json";
 import yuchoDataRaw from "@/data/yucho_ordinary_deposit_post2007.json";
 import type { LineCustomSvgLayerProps, LineSeries } from "@nivo/line";
@@ -14,7 +14,7 @@ type SeriesId = "flat35_max" | "flat35_min" | "deposit";
 type ChartLineSeries = LineSeries & {
   id: SeriesId;
   color: string;
-  data: { x: number; y: number }[];
+  data: { x: number; y: number | null }[];
 };
 
 const COLOR_BRAND = "var(--color-brand)";
@@ -23,7 +23,7 @@ const COLOR_BRAND_DARK = "var(--color-brand-dark)";
 const X_MIN = 1996;
 const X_MAX = 2026;
 const Y_MIN = 0;
-const Y_MAX = 5.0;
+const Y_MAX = 6.0;
 
 function parseDateToYear(dateStr: string): number {
   const [year, month, day] = dateStr.split("-").map(Number);
@@ -32,8 +32,18 @@ function parseDateToYear(dateStr: string): number {
 }
 
 // 1. Process flat35 data
-const flat35Clean = flat35DataRaw.filter(
-  (d) => d.minPercent !== null && d.maxPercent !== null
+// flat35CleanFull: maxPercent は常に数値、minPercent は null の場合あり
+const flat35CleanFull = flat35DataRaw.filter(
+  (d) => d.maxPercent !== null
+) as {
+  yearMonth: string;
+  maxPercent: number;
+  minPercent: number | null;
+}[];
+
+// エリア描画・下限ライン用: maxPercent・minPercent 両方数値のみ
+const flat35Clean = flat35CleanFull.filter(
+  (d) => d.minPercent !== null
 ) as {
   yearMonth: string;
   maxPercent: number;
@@ -68,7 +78,8 @@ const CHART_DATA: ChartLineSeries[] = [
   {
     id: "flat35_max",
     color: COLOR_BRAND,
-    data: flat35Clean.map((d) => ({
+    // 上限ラインは全データ（minPercentがnullの月も含む）
+    data: flat35CleanFull.map((d) => ({
       x: parseDateToYear(d.yearMonth),
       y: d.maxPercent,
     })),
@@ -76,7 +87,8 @@ const CHART_DATA: ChartLineSeries[] = [
   {
     id: "flat35_min",
     color: COLOR_BRAND,
-    data: flat35Clean.map((d) => ({
+    // 下限ラインはminPercentがnullの点でラインが途切れるよう null を含める
+    data: flat35CleanFull.map((d) => ({
       x: parseDateToYear(d.yearMonth),
       y: d.minPercent,
     })),
@@ -89,7 +101,7 @@ const CHART_DATA: ChartLineSeries[] = [
 ];
 
 const tickYears = [1996, 2000, 2005, 2010, 2015, 2020, 2026];
-const yTickValues = [0, 1, 2, 3, 4, 5];
+const yTickValues = [0, 1, 2, 3, 4, 5, 6];
 
 const nivoTheme = {
   background: "transparent",
@@ -143,7 +155,9 @@ function EndLabel({
   return (
     <>
       {series.map((s) => {
-        const last = s.data.at(-1);
+        // y が null のポイントを除いた最後のポイントを探す
+        const validData = s.data.filter((p: any) => p.data.y !== null);
+        const last = validData.at(-1);
         if (!last) return null;
         let label = "";
         let color = "";
