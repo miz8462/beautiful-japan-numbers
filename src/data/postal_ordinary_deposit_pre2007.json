@@ -1,0 +1,66 @@
+[
+  {
+    "effectiveDate": "1996-04-22",
+    "ordinaryDepositRatePercent": 0.25
+  },
+  {
+    "effectiveDate": "1997-02-03",
+    "ordinaryDepositRatePercent": 0.25
+  },
+  {
+    "effectiveDate": "1998-09-16",
+    "ordinaryDepositRatePercent": 0.2
+  },
+  {
+    "effectiveDate": "1998-09-28",
+    "ordinaryDepositRatePercent": 0.15
+  },
+  {
+    "effectiveDate": "1999-03-23",
+    "ordinaryDepositRatePercent": 0.1
+  },
+  {
+    "effectiveDate": "1999-09-06",
+    "ordinaryDepositRatePercent": 0.08
+  },
+  {
+    "effectiveDate": "2001-03-07",
+    "ordinaryDepositRatePercent": 0.11
+  },
+  {
+    "effectiveDate": "2001-03-26",
+    "ordinaryDepositRatePercent": 0.08
+  },
+  {
+    "effectiveDate": "2001-03-28",
+    "ordinaryDepositRatePercent": 0.04
+  },
+  {
+    "effectiveDate": "2001-04-16",
+    "ordinaryDepositRatePercent": 0.03
+  },
+  {
+    "effectiveDate": "2001-06-04",
+    "ordinaryDepositRatePercent": 0.02
+  },
+  {
+    "effectiveDate": "2002-04-01",
+    "ordinaryDepositRatePercent": 0.01
+  },
+  {
+    "effectiveDate": "2002-06-10",
+    "ordinaryDepositRatePercent": 0.005
+  },
+  {
+    "effectiveDate": "2006-07-31",
+    "ordinaryDepositRatePercent": 0.11
+  },
+  {
+    "effectiveDate": "2007-03-05",
+    "ordinaryDepositRatePercent": 0.21
+  },
+  {
+    "effectiveDate": "2007-06-21",
+    "ordinaryDepositRatePercent": 0.24
+  }
+]

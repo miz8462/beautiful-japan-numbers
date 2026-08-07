@@ -1,0 +1,42 @@
+[
+  {
+    "effectiveDate": "2007-10-01",
+    "ordinaryDepositRatePercent": 0.21
+  },
+  {
+    "effectiveDate": "2008-11-05",
+    "ordinaryDepositRatePercent": 0.13
+  },
+  {
+    "effectiveDate": "2008-12-24",
+    "ordinaryDepositRatePercent": 0.05
+  },
+  {
+    "effectiveDate": "2010-09-13",
+    "ordinaryDepositRatePercent": 0.03
+  },
+  {
+    "effectiveDate": "2016-02-09",
+    "ordinaryDepositRatePercent": 0.02
+  },
+  {
+    "effectiveDate": "2016-02-23",
+    "ordinaryDepositRatePercent": 0.001
+  },
+  {
+    "effectiveDate": "2024-04-08",
+    "ordinaryDepositRatePercent": 0.02
+  },
+  {
+    "effectiveDate": "2024-09-02",
+    "ordinaryDepositRatePercent": 0.1
+  },
+  {
+    "effectiveDate": "2025-03-03",
+    "ordinaryDepositRatePercent": 0.2
+  },
+  {
+    "effectiveDate": "2026-02-09",
+    "ordinaryDepositRatePercent": 0.3
+  }
+]

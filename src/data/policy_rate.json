@@ -1,0 +1,272 @@
+[
+  {
+    "year": 1973,
+    "policyRatePercent": 9.0,
+    "source": "discount_rate"
+  },
+  {
+    "year": 1974,
+    "policyRatePercent": 9.0,
+    "source": "discount_rate"
+  },
+  {
+    "year": 1975,
+    "policyRatePercent": 6.5,
+    "source": "discount_rate"
+  },
+  {
+    "year": 1976,
+    "policyRatePercent": 6.5,
+    "source": "discount_rate"
+  },
+  {
+    "year": 1977,
+    "policyRatePercent": 4.25,
+    "source": "discount_rate"
+  },
+  {
+    "year": 1978,
+    "policyRatePercent": 3.5,
+    "source": "discount_rate"
+  },
+  {
+    "year": 1979,
+    "policyRatePercent": 6.25,
+    "source": "discount_rate"
+  },
+  {
+    "year": 1980,
+    "policyRatePercent": 7.25,
+    "source": "discount_rate"
+  },
+  {
+    "year": 1981,
+    "policyRatePercent": 5.5,
+    "source": "discount_rate"
+  },
+  {
+    "year": 1982,
+    "policyRatePercent": 5.5,
+    "source": "discount_rate"
+  },
+  {
+    "year": 1983,
+    "policyRatePercent": 5.0,
+    "source": "discount_rate"
+  },
+  {
+    "year": 1984,
+    "policyRatePercent": 5.0,
+    "source": "discount_rate"
+  },
+  {
+    "year": 1985,
+    "policyRatePercent": 9.0625,
+    "source": "call_rate_on"
+  },
+  {
+    "year": 1986,
+    "policyRatePercent": 4.5625,
+    "source": "call_rate_on"
+  },
+  {
+    "year": 1987,
+    "policyRatePercent": 4.125,
+    "source": "call_rate_on"
+  },
+  {
+    "year": 1988,
+    "policyRatePercent": 4.375,
+    "source": "call_rate_on"
+  },
+  {
+    "year": 1989,
+    "policyRatePercent": 6.65625,
+    "source": "call_rate_on"
+  },
+  {
+    "year": 1990,
+    "policyRatePercent": 8.34375,
+    "source": "call_rate_on"
+  },
+  {
+    "year": 1991,
+    "policyRatePercent": 5.5625,
+    "source": "call_rate_on"
+  },
+  {
+    "year": 1992,
+    "policyRatePercent": 3.90625,
+    "source": "call_rate_on"
+  },
+  {
+    "year": 1993,
+    "policyRatePercent": 2.4375,
+    "source": "call_rate_on"
+  },
+  {
+    "year": 1994,
+    "policyRatePercent": 2.28125,
+    "source": "call_rate_on"
+  },
+  {
+    "year": 1995,
+    "policyRatePercent": 0.46,
+    "source": "call_rate_on"
+  },
+  {
+    "year": 1996,
+    "policyRatePercent": 0.44,
+    "source": "call_rate_on"
+  },
+  {
+    "year": 1997,
+    "policyRatePercent": 0.47,
+    "source": "call_rate_on"
+  },
+  {
+    "year": 1998,
+    "policyRatePercent": 0.32,
+    "source": "call_rate_on"
+  },
+  {
+    "year": 1999,
+    "policyRatePercent": 0.05,
+    "source": "call_rate_on"
+  },
+  {
+    "year": 2000,
+    "policyRatePercent": 0.2,
+    "source": "call_rate_on"
+  },
+  {
+    "year": 2001,
+    "policyRatePercent": 0.002,
+    "source": "call_rate_on"
+  },
+  {
+    "year": 2002,
+    "policyRatePercent": 0.002,
+    "source": "call_rate_on"
+  },
+  {
+    "year": 2003,
+    "policyRatePercent": 0.001,
+    "source": "call_rate_on"
+  },
+  {
+    "year": 2004,
+    "policyRatePercent": 0.002,
+    "source": "call_rate_on"
+  },
+  {
+    "year": 2005,
+    "policyRatePercent": 0.004,
+    "source": "call_rate_on"
+  },
+  {
+    "year": 2006,
+    "policyRatePercent": 0.275,
+    "source": "call_rate_on"
+  },
+  {
+    "year": 2007,
+    "policyRatePercent": 0.459,
+    "source": "call_rate_on"
+  },
+  {
+    "year": 2008,
+    "policyRatePercent": 0.103,
+    "source": "call_rate_on"
+  },
+  {
+    "year": 2009,
+    "policyRatePercent": 0.094,
+    "source": "call_rate_on"
+  },
+  {
+    "year": 2010,
+    "policyRatePercent": 0.079,
+    "source": "call_rate_on"
+  },
+  {
+    "year": 2011,
+    "policyRatePercent": 0.075,
+    "source": "call_rate_on"
+  },
+  {
+    "year": 2012,
+    "policyRatePercent": 0.076,
+    "source": "call_rate_on"
+  },
+  {
+    "year": 2013,
+    "policyRatePercent": 0.068,
+    "source": "call_rate_on"
+  },
+  {
+    "year": 2014,
+    "policyRatePercent": 0.066,
+    "source": "call_rate_on"
+  },
+  {
+    "year": 2015,
+    "policyRatePercent": 0.038,
+    "source": "call_rate_on"
+  },
+  {
+    "year": 2016,
+    "policyRatePercent": -0.058,
+    "source": "call_rate_on"
+  },
+  {
+    "year": 2017,
+    "policyRatePercent": -0.062,
+    "source": "call_rate_on"
+  },
+  {
+    "year": 2018,
+    "policyRatePercent": -0.055,
+    "source": "call_rate_on"
+  },
+  {
+    "year": 2019,
+    "policyRatePercent": -0.068,
+    "source": "call_rate_on"
+  },
+  {
+    "year": 2020,
+    "policyRatePercent": -0.033,
+    "source": "call_rate_on"
+  },
+  {
+    "year": 2021,
+    "policyRatePercent": -0.018,
+    "source": "call_rate_on"
+  },
+  {
+    "year": 2022,
+    "policyRatePercent": -0.022,
+    "source": "call_rate_on"
+  },
+  {
+    "year": 2023,
+    "policyRatePercent": -0.039,
+    "source": "call_rate_on"
+  },
+  {
+    "year": 2024,
+    "policyRatePercent": 0.227,
+    "source": "call_rate_on"
+  },
+  {
+    "year": 2025,
+    "policyRatePercent": 0.727,
+    "source": "call_rate_on"
+  },
+  {
+    "year": 2026,
+    "policyRatePercent": 0.977,
+    "source": "call_rate_on"
+  }
+]

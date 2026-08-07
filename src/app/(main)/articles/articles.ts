@@ -30,7 +30,19 @@ export type Article = {
 // 記事データ
 // ======================
 
-export const articles: Article[] = [  {
+export const articles: Article[] = [  
+    {
+    href: "/articles/interest-rate-history",
+    publishedAt: "2026-08-07",
+    label: "Interest Rate",
+    title: "金利の歴史と推移",
+    description:
+      "1970年代から現代に至るまでの日本の政策金利、長期金利、国債利率、住宅ローンおよび預金金利の長期推移をたどり、「金利のある世界」への回帰とそのインパクトを可視化します。",
+    tags: ["economy"],
+    sourceUrl: "https://www.boj.or.jp/",
+    sourceLabel: "出典: 日本銀行 / 財務省 / 住宅金融支援機構 / ゆうちょ銀行",
+  },
+  {
     href: "/articles/expenditure-breakdown",
     publishedAt: "2026-07-31",
     label: "Expenditure",
