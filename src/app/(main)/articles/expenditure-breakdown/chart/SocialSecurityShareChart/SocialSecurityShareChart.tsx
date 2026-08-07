@@ -124,7 +124,7 @@ export function SocialSecurityShareChart() {
           }}
           tooltip={({ point }) => (
             <div className={styles.tooltip}>
-              <span className={styles.tooltipYear}>{point.data.x}年度</span>
+              <span className={styles.tooltipYear}>{String(point.data.x)}年度</span>
               <span className={styles.tooltipVal}>
                 割合: <strong>{Number(point.data.y).toFixed(1)}%</strong>
               </span>
