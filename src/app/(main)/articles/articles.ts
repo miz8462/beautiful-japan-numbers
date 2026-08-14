@@ -30,8 +30,19 @@ export type Article = {
 // 記事データ
 // ======================
 
-export const articles: Article[] = [  
-    {
+export const articles: Article[] = [
+  {
+    href: "/articles/japan-economic-history",
+    publishedAt: "2026-08-14",
+    label: "Economic History",
+    title: "日本経済の歩み ― 高度経済成長からバブル、失われた30年へ",
+    description:
+      "戦後日本経済がたどった高度経済成長・バブルの形成と崩壊・長期停滞という3つの時代を、株式市場の時価総額と地価公示の変動率という2つの資産価格データから振り返ります。",
+    tags: ["economy"],
+    sourceUrl: "https://www.jpx.co.jp/markets/statistics-equities/misc/02.html",
+    sourceLabel: "出典: 日本取引所グループ / 国土交通省",
+  },
+  {
     href: "/articles/interest-rate-history",
     publishedAt: "2026-08-07",
     label: "Interest Rate",

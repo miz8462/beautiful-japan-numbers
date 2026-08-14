@@ -1,0 +1,427 @@
+{
+  "title": "地価公示 対前年変動率の推移(全用途平均)",
+  "unit": "%",
+  "source": "国土交通省「地価公示」",
+  "sourceUrl": "https://www.mlit.go.jp/totikensangyo/totikensangyo_fr4_000043.html",
+  "note": "各年1月1日時点の標準地の対前年変動率(単純平均)",
+  "nationwide": [
+    {
+      "year": 1975,
+      "changePct": -9.2
+    },
+    {
+      "year": 1976,
+      "changePct": 0.5
+    },
+    {
+      "year": 1977,
+      "changePct": 1.5
+    },
+    {
+      "year": 1978,
+      "changePct": 2.5
+    },
+    {
+      "year": 1979,
+      "changePct": 5.2
+    },
+    {
+      "year": 1980,
+      "changePct": 10.4
+    },
+    {
+      "year": 1981,
+      "changePct": 10.0
+    },
+    {
+      "year": 1982,
+      "changePct": 7.4
+    },
+    {
+      "year": 1983,
+      "changePct": 4.7
+    },
+    {
+      "year": 1984,
+      "changePct": 3.0
+    },
+    {
+      "year": 1985,
+      "changePct": 2.4
+    },
+    {
+      "year": 1986,
+      "changePct": 2.6
+    },
+    {
+      "year": 1987,
+      "changePct": 7.7
+    },
+    {
+      "year": 1988,
+      "changePct": 21.7
+    },
+    {
+      "year": 1989,
+      "changePct": 8.3
+    },
+    {
+      "year": 1990,
+      "changePct": 16.6
+    },
+    {
+      "year": 1991,
+      "changePct": 11.3
+    },
+    {
+      "year": 1992,
+      "changePct": -4.6
+    },
+    {
+      "year": 1993,
+      "changePct": -8.4
+    },
+    {
+      "year": 1994,
+      "changePct": -5.6
+    },
+    {
+      "year": 1995,
+      "changePct": -3.0
+    },
+    {
+      "year": 1996,
+      "changePct": -4.0
+    },
+    {
+      "year": 1997,
+      "changePct": -2.9
+    },
+    {
+      "year": 1998,
+      "changePct": -2.4
+    },
+    {
+      "year": 1999,
+      "changePct": -4.6
+    },
+    {
+      "year": 2000,
+      "changePct": -4.9
+    },
+    {
+      "year": 2001,
+      "changePct": -4.9
+    },
+    {
+      "year": 2002,
+      "changePct": -5.9
+    },
+    {
+      "year": 2003,
+      "changePct": -6.4
+    },
+    {
+      "year": 2004,
+      "changePct": -6.2
+    },
+    {
+      "year": 2005,
+      "changePct": -5.0
+    },
+    {
+      "year": 2006,
+      "changePct": -2.8
+    },
+    {
+      "year": 2007,
+      "changePct": 0.4
+    },
+    {
+      "year": 2008,
+      "changePct": 1.7
+    },
+    {
+      "year": 2009,
+      "changePct": -3.5
+    },
+    {
+      "year": 2010,
+      "changePct": -4.6
+    },
+    {
+      "year": 2011,
+      "changePct": -3.0
+    },
+    {
+      "year": 2012,
+      "changePct": -2.6
+    },
+    {
+      "year": 2013,
+      "changePct": -1.8
+    },
+    {
+      "year": 2014,
+      "changePct": -0.6
+    },
+    {
+      "year": 2015,
+      "changePct": -0.3
+    },
+    {
+      "year": 2016,
+      "changePct": 0.1
+    },
+    {
+      "year": 2017,
+      "changePct": 0.4
+    },
+    {
+      "year": 2018,
+      "changePct": 0.7
+    },
+    {
+      "year": 2019,
+      "changePct": 1.2
+    },
+    {
+      "year": 2020,
+      "changePct": 1.4
+    },
+    {
+      "year": 2021,
+      "changePct": -0.5
+    },
+    {
+      "year": 2022,
+      "changePct": 0.6
+    },
+    {
+      "year": 2023,
+      "changePct": 1.6
+    },
+    {
+      "year": 2024,
+      "changePct": 2.3
+    },
+    {
+      "year": 2025,
+      "changePct": 2.7
+    },
+    {
+      "year": 2026,
+      "changePct": 2.8
+    }
+  ],
+  "threeMajorMetroAreas": [
+    {
+      "year": 1975,
+      "changePct": -10.5
+    },
+    {
+      "year": 1976,
+      "changePct": 0.4
+    },
+    {
+      "year": 1977,
+      "changePct": 1.4
+    },
+    {
+      "year": 1978,
+      "changePct": 2.7
+    },
+    {
+      "year": 1979,
+      "changePct": 6.7
+    },
+    {
+      "year": 1980,
+      "changePct": 14.3
+    },
+    {
+      "year": 1981,
+      "changePct": 11.9
+    },
+    {
+      "year": 1982,
+      "changePct": 7.5
+    },
+    {
+      "year": 1983,
+      "changePct": 4.3
+    },
+    {
+      "year": 1984,
+      "changePct": 2.9
+    },
+    {
+      "year": 1985,
+      "changePct": 2.5
+    },
+    {
+      "year": 1986,
+      "changePct": 3.5
+    },
+    {
+      "year": 1987,
+      "changePct": 15.0
+    },
+    {
+      "year": 1988,
+      "changePct": 43.8
+    },
+    {
+      "year": 1989,
+      "changePct": 12.2
+    },
+    {
+      "year": 1990,
+      "changePct": 22.1
+    },
+    {
+      "year": 1991,
+      "changePct": 8.5
+    },
+    {
+      "year": 1992,
+      "changePct": -11.6
+    },
+    {
+      "year": 1993,
+      "changePct": -14.7
+    },
+    {
+      "year": 1994,
+      "changePct": -8.8
+    },
+    {
+      "year": 1995,
+      "changePct": -4.8
+    },
+    {
+      "year": 1996,
+      "changePct": -6.4
+    },
+    {
+      "year": 1997,
+      "changePct": -4.3
+    },
+    {
+      "year": 1998,
+      "changePct": -3.2
+    },
+    {
+      "year": 1999,
+      "changePct": -6.4
+    },
+    {
+      "year": 2000,
+      "changePct": -6.6
+    },
+    {
+      "year": 2001,
+      "changePct": -6.1
+    },
+    {
+      "year": 2002,
+      "changePct": -6.9
+    },
+    {
+      "year": 2003,
+      "changePct": -6.8
+    },
+    {
+      "year": 2004,
+      "changePct": -5.9
+    },
+    {
+      "year": 2005,
+      "changePct": -3.9
+    },
+    {
+      "year": 2006,
+      "changePct": -0.9
+    },
+    {
+      "year": 2007,
+      "changePct": 3.8
+    },
+    {
+      "year": 2008,
+      "changePct": 5.3
+    },
+    {
+      "year": 2009,
+      "changePct": -3.8
+    },
+    {
+      "year": 2010,
+      "changePct": -5.0
+    },
+    {
+      "year": 2011,
+      "changePct": -2.0
+    },
+    {
+      "year": 2012,
+      "changePct": -1.5
+    },
+    {
+      "year": 2013,
+      "changePct": -0.6
+    },
+    {
+      "year": 2014,
+      "changePct": 0.7
+    },
+    {
+      "year": 2015,
+      "changePct": 0.7
+    },
+    {
+      "year": 2016,
+      "changePct": 1.1
+    },
+    {
+      "year": 2017,
+      "changePct": 1.1
+    },
+    {
+      "year": 2018,
+      "changePct": 1.5
+    },
+    {
+      "year": 2019,
+      "changePct": 2.0
+    },
+    {
+      "year": 2020,
+      "changePct": 2.1
+    },
+    {
+      "year": 2021,
+      "changePct": -0.7
+    },
+    {
+      "year": 2022,
+      "changePct": 0.7
+    },
+    {
+      "year": 2023,
+      "changePct": 2.1
+    },
+    {
+      "year": 2024,
+      "changePct": 3.5
+    },
+    {
+      "year": 2025,
+      "changePct": 4.3
+    },
+    {
+      "year": 2026,
+      "changePct": 4.6
+    }
+  ]
+}

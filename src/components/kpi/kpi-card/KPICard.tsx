@@ -1,6 +1,7 @@
+import type { ReactNode } from "react";
 import styles from "./KPICard.module.css";
 type Props = {
-  label: string;
+  label: ReactNode;
   value: string;
   caption?: string;
 }

@@ -1,0 +1,3717 @@
+{
+  "title": "株式時価総額の推移(全市場合計)",
+  "unit": "百万円",
+  "source": "日本取引所グループ「市場別時価総額」",
+  "sourceUrl": "https://www.jpx.co.jp/markets/statistics-equities/misc/02.html",
+  "note": "1949年5月〜2022年3月は市場一部・二部・マザーズ等区分の合計、2022年4月以降はプライム・スタンダード・グロース区分の合計(市場区分再編に伴い集計区分が変更)",
+  "data": [
+    {
+      "date": "1949-05",
+      "totalMarketCapMillionYen": 153262
+    },
+    {
+      "date": "1949-06",
+      "totalMarketCapMillionYen": 152995
+    },
+    {
+      "date": "1949-07",
+      "totalMarketCapMillionYen": 119447
+    },
+    {
+      "date": "1949-08",
+      "totalMarketCapMillionYen": 121572
+    },
+    {
+      "date": "1949-09",
+      "totalMarketCapMillionYen": 137688
+    },
+    {
+      "date": "1949-10",
+      "totalMarketCapMillionYen": 131063
+    },
+    {
+      "date": "1949-11",
+      "totalMarketCapMillionYen": 128930
+    },
+    {
+      "date": "1949-12",
+      "totalMarketCapMillionYen": 122061
+    },
+    {
+      "date": "1950-01",
+      "totalMarketCapMillionYen": 116610
+    },
+    {
+      "date": "1950-02",
+      "totalMarketCapMillionYen": 105296
+    },
+    {
+      "date": "1950-03",
+      "totalMarketCapMillionYen": 117933
+    },
+    {
+      "date": "1950-04",
+      "totalMarketCapMillionYen": 114091
+    },
+    {
+      "date": "1950-05",
+      "totalMarketCapMillionYen": 126975
+    },
+    {
+      "date": "1950-06",
+      "totalMarketCapMillionYen": 121751
+    },
+    {
+      "date": "1950-07",
+      "totalMarketCapMillionYen": 118776
+    },
+    {
+      "date": "1950-08",
+      "totalMarketCapMillionYen": 147145
+    },
+    {
+      "date": "1950-09",
+      "totalMarketCapMillionYen": 166501
+    },
+    {
+      "date": "1950-10",
+      "totalMarketCapMillionYen": 154712
+    },
+    {
+      "date": "1950-11",
+      "totalMarketCapMillionYen": 161582
+    },
+    {
+      "date": "1950-12",
+      "totalMarketCapMillionYen": 168883
+    },
+    {
+      "date": "1951-01",
+      "totalMarketCapMillionYen": 157049
+    },
+    {
+      "date": "1951-02",
+      "totalMarketCapMillionYen": 179133
+    },
+    {
+      "date": "1951-03",
+      "totalMarketCapMillionYen": 192075
+    },
+    {
+      "date": "1951-04",
+      "totalMarketCapMillionYen": 192842
+    },
+    {
+      "date": "1951-05",
+      "totalMarketCapMillionYen": 185430
+    },
+    {
+      "date": "1951-06",
+      "totalMarketCapMillionYen": 195743
+    },
+    {
+      "date": "1951-07",
+      "totalMarketCapMillionYen": 195838
+    },
+    {
+      "date": "1951-08",
+      "totalMarketCapMillionYen": 211471
+    },
+    {
+      "date": "1951-09",
+      "totalMarketCapMillionYen": 234321
+    },
+    {
+      "date": "1951-10",
+      "totalMarketCapMillionYen": 241061
+    },
+    {
+      "date": "1951-11",
+      "totalMarketCapMillionYen": 263425
+    },
+    {
+      "date": "1951-12",
+      "totalMarketCapMillionYen": 256863
+    },
+    {
+      "date": "1952-01",
+      "totalMarketCapMillionYen": 282592
+    },
+    {
+      "date": "1952-02",
+      "totalMarketCapMillionYen": 320841
+    },
+    {
+      "date": "1952-03",
+      "totalMarketCapMillionYen": 309525
+    },
+    {
+      "date": "1952-04",
+      "totalMarketCapMillionYen": 306245
+    },
+    {
+      "date": "1952-05",
+      "totalMarketCapMillionYen": 355040
+    },
+    {
+      "date": "1952-06",
+      "totalMarketCapMillionYen": 391582
+    },
+    {
+      "date": "1952-07",
+      "totalMarketCapMillionYen": 432987
+    },
+    {
+      "date": "1952-08",
+      "totalMarketCapMillionYen": 451824
+    },
+    {
+      "date": "1952-09",
+      "totalMarketCapMillionYen": 464495
+    },
+    {
+      "date": "1952-10",
+      "totalMarketCapMillionYen": 495647
+    },
+    {
+      "date": "1952-11",
+      "totalMarketCapMillionYen": 576493
+    },
+    {
+      "date": "1952-12",
+      "totalMarketCapMillionYen": 640884
+    },
+    {
+      "date": "1953-01",
+      "totalMarketCapMillionYen": 631105
+    },
+    {
+      "date": "1953-02",
+      "totalMarketCapMillionYen": 810416
+    },
+    {
+      "date": "1953-03",
+      "totalMarketCapMillionYen": 728674
+    },
+    {
+      "date": "1953-04",
+      "totalMarketCapMillionYen": 571075
+    },
+    {
+      "date": "1953-05",
+      "totalMarketCapMillionYen": 655614
+    },
+    {
+      "date": "1953-06",
+      "totalMarketCapMillionYen": 646229
+    },
+    {
+      "date": "1953-07",
+      "totalMarketCapMillionYen": 685922
+    },
+    {
+      "date": "1953-08",
+      "totalMarketCapMillionYen": 759612
+    },
+    {
+      "date": "1953-09",
+      "totalMarketCapMillionYen": 797978
+    },
+    {
+      "date": "1953-10",
+      "totalMarketCapMillionYen": 882626
+    },
+    {
+      "date": "1953-11",
+      "totalMarketCapMillionYen": 873567
+    },
+    {
+      "date": "1953-12",
+      "totalMarketCapMillionYen": 846713
+    },
+    {
+      "date": "1954-01",
+      "totalMarketCapMillionYen": 763573
+    },
+    {
+      "date": "1954-02",
+      "totalMarketCapMillionYen": 751554
+    },
+    {
+      "date": "1954-03",
+      "totalMarketCapMillionYen": 751352
+    },
+    {
+      "date": "1954-04",
+      "totalMarketCapMillionYen": 702685
+    },
+    {
+      "date": "1954-05",
+      "totalMarketCapMillionYen": 751077
+    },
+    {
+      "date": "1954-06",
+      "totalMarketCapMillionYen": 714438
+    },
+    {
+      "date": "1954-07",
+      "totalMarketCapMillionYen": 775505
+    },
+    {
+      "date": "1954-08",
+      "totalMarketCapMillionYen": 736963
+    },
+    {
+      "date": "1954-09",
+      "totalMarketCapMillionYen": 789804
+    },
+    {
+      "date": "1954-10",
+      "totalMarketCapMillionYen": 774106
+    },
+    {
+      "date": "1954-11",
+      "totalMarketCapMillionYen": 742036
+    },
+    {
+      "date": "1954-12",
+      "totalMarketCapMillionYen": 743204
+    },
+    {
+      "date": "1955-01",
+      "totalMarketCapMillionYen": 838514
+    },
+    {
+      "date": "1955-02",
+      "totalMarketCapMillionYen": 858040
+    },
+    {
+      "date": "1955-03",
+      "totalMarketCapMillionYen": 881031
+    },
+    {
+      "date": "1955-04",
+      "totalMarketCapMillionYen": 853266
+    },
+    {
+      "date": "1955-05",
+      "totalMarketCapMillionYen": 843242
+    },
+    {
+      "date": "1955-06",
+      "totalMarketCapMillionYen": 875907
+    },
+    {
+      "date": "1955-07",
+      "totalMarketCapMillionYen": 885859
+    },
+    {
+      "date": "1955-08",
+      "totalMarketCapMillionYen": 930202
+    },
+    {
+      "date": "1955-09",
+      "totalMarketCapMillionYen": 997230
+    },
+    {
+      "date": "1955-10",
+      "totalMarketCapMillionYen": 1004793
+    },
+    {
+      "date": "1955-11",
+      "totalMarketCapMillionYen": 1086566
+    },
+    {
+      "date": "1955-12",
+      "totalMarketCapMillionYen": 1057673
+    },
+    {
+      "date": "1956-01",
+      "totalMarketCapMillionYen": 1166749
+    },
+    {
+      "date": "1956-02",
+      "totalMarketCapMillionYen": 1162512
+    },
+    {
+      "date": "1956-03",
+      "totalMarketCapMillionYen": 1203828
+    },
+    {
+      "date": "1956-04",
+      "totalMarketCapMillionYen": 1230986
+    },
+    {
+      "date": "1956-05",
+      "totalMarketCapMillionYen": 1292557
+    },
+    {
+      "date": "1956-06",
+      "totalMarketCapMillionYen": 1351362
+    },
+    {
+      "date": "1956-07",
+      "totalMarketCapMillionYen": 1357827
+    },
+    {
+      "date": "1956-08",
+      "totalMarketCapMillionYen": 1439762
+    },
+    {
+      "date": "1956-09",
+      "totalMarketCapMillionYen": 1453828
+    },
+    {
+      "date": "1956-10",
+      "totalMarketCapMillionYen": 1407406
+    },
+    {
+      "date": "1956-11",
+      "totalMarketCapMillionYen": 1484886
+    },
+    {
+      "date": "1956-12",
+      "totalMarketCapMillionYen": 1640408
+    },
+    {
+      "date": "1957-01",
+      "totalMarketCapMillionYen": 1754458
+    },
+    {
+      "date": "1957-02",
+      "totalMarketCapMillionYen": 1830299
+    },
+    {
+      "date": "1957-03",
+      "totalMarketCapMillionYen": 1841939
+    },
+    {
+      "date": "1957-04",
+      "totalMarketCapMillionYen": 1894381
+    },
+    {
+      "date": "1957-05",
+      "totalMarketCapMillionYen": 1892241
+    },
+    {
+      "date": "1957-06",
+      "totalMarketCapMillionYen": 1688230
+    },
+    {
+      "date": "1957-07",
+      "totalMarketCapMillionYen": 1681785
+    },
+    {
+      "date": "1957-08",
+      "totalMarketCapMillionYen": 1614019
+    },
+    {
+      "date": "1957-09",
+      "totalMarketCapMillionYen": 1748275
+    },
+    {
+      "date": "1957-10",
+      "totalMarketCapMillionYen": 1768992
+    },
+    {
+      "date": "1957-11",
+      "totalMarketCapMillionYen": 1733132
+    },
+    {
+      "date": "1957-12",
+      "totalMarketCapMillionYen": 1674886
+    },
+    {
+      "date": "1958-01",
+      "totalMarketCapMillionYen": 1647040
+    },
+    {
+      "date": "1958-02",
+      "totalMarketCapMillionYen": 1824402
+    },
+    {
+      "date": "1958-03",
+      "totalMarketCapMillionYen": 1841372
+    },
+    {
+      "date": "1958-04",
+      "totalMarketCapMillionYen": 1816109
+    },
+    {
+      "date": "1958-05",
+      "totalMarketCapMillionYen": 1919543
+    },
+    {
+      "date": "1958-06",
+      "totalMarketCapMillionYen": 1960579
+    },
+    {
+      "date": "1958-07",
+      "totalMarketCapMillionYen": 2066945
+    },
+    {
+      "date": "1958-08",
+      "totalMarketCapMillionYen": 2042580
+    },
+    {
+      "date": "1958-09",
+      "totalMarketCapMillionYen": 2132659
+    },
+    {
+      "date": "1958-10",
+      "totalMarketCapMillionYen": 2144338
+    },
+    {
+      "date": "1958-11",
+      "totalMarketCapMillionYen": 2248100
+    },
+    {
+      "date": "1958-12",
+      "totalMarketCapMillionYen": 2322678
+    },
+    {
+      "date": "1959-01",
+      "totalMarketCapMillionYen": 2503166
+    },
+    {
+      "date": "1959-02",
+      "totalMarketCapMillionYen": 2601527
+    },
+    {
+      "date": "1959-03",
+      "totalMarketCapMillionYen": 2744674
+    },
+    {
+      "date": "1959-04",
+      "totalMarketCapMillionYen": 2866360
+    },
+    {
+      "date": "1959-05",
+      "totalMarketCapMillionYen": 2835484
+    },
+    {
+      "date": "1959-06",
+      "totalMarketCapMillionYen": 3106109
+    },
+    {
+      "date": "1959-07",
+      "totalMarketCapMillionYen": 3150058
+    },
+    {
+      "date": "1959-08",
+      "totalMarketCapMillionYen": 3274113
+    },
+    {
+      "date": "1959-09",
+      "totalMarketCapMillionYen": 3412459
+    },
+    {
+      "date": "1959-10",
+      "totalMarketCapMillionYen": 3516138
+    },
+    {
+      "date": "1959-11",
+      "totalMarketCapMillionYen": 3638326
+    },
+    {
+      "date": "1959-12",
+      "totalMarketCapMillionYen": 3777018
+    },
+    {
+      "date": "1960-01",
+      "totalMarketCapMillionYen": 3677884
+    },
+    {
+      "date": "1960-02",
+      "totalMarketCapMillionYen": 3846986
+    },
+    {
+      "date": "1960-03",
+      "totalMarketCapMillionYen": 3995730
+    },
+    {
+      "date": "1960-04",
+      "totalMarketCapMillionYen": 4293255
+    },
+    {
+      "date": "1960-05",
+      "totalMarketCapMillionYen": 4499596
+    },
+    {
+      "date": "1960-06",
+      "totalMarketCapMillionYen": 4114488
+    },
+    {
+      "date": "1960-07",
+      "totalMarketCapMillionYen": 4447521
+    },
+    {
+      "date": "1960-08",
+      "totalMarketCapMillionYen": 4650963
+    },
+    {
+      "date": "1960-09",
+      "totalMarketCapMillionYen": 4884255
+    },
+    {
+      "date": "1960-10",
+      "totalMarketCapMillionYen": 5158396
+    },
+    {
+      "date": "1960-11",
+      "totalMarketCapMillionYen": 5295004
+    },
+    {
+      "date": "1960-12",
+      "totalMarketCapMillionYen": 5411360
+    },
+    {
+      "date": "1961-01",
+      "totalMarketCapMillionYen": 5592938
+    },
+    {
+      "date": "1961-02",
+      "totalMarketCapMillionYen": 5983763
+    },
+    {
+      "date": "1961-03",
+      "totalMarketCapMillionYen": 6041119
+    },
+    {
+      "date": "1961-04",
+      "totalMarketCapMillionYen": 6055715
+    },
+    {
+      "date": "1961-05",
+      "totalMarketCapMillionYen": 6281672
+    },
+    {
+      "date": "1961-06",
+      "totalMarketCapMillionYen": 6109424
+    },
+    {
+      "date": "1961-07",
+      "totalMarketCapMillionYen": 6586016
+    },
+    {
+      "date": "1961-08",
+      "totalMarketCapMillionYen": 6529674
+    },
+    {
+      "date": "1961-09",
+      "totalMarketCapMillionYen": 6222345
+    },
+    {
+      "date": "1961-10",
+      "totalMarketCapMillionYen": 6291005
+    },
+    {
+      "date": "1961-11",
+      "totalMarketCapMillionYen": 6160472
+    },
+    {
+      "date": "1961-12",
+      "totalMarketCapMillionYen": 6140195
+    },
+    {
+      "date": "1962-01",
+      "totalMarketCapMillionYen": 6641545
+    },
+    {
+      "date": "1962-02",
+      "totalMarketCapMillionYen": 7323813
+    },
+    {
+      "date": "1962-03",
+      "totalMarketCapMillionYen": 7058402
+    },
+    {
+      "date": "1962-04",
+      "totalMarketCapMillionYen": 6593396
+    },
+    {
+      "date": "1962-05",
+      "totalMarketCapMillionYen": 6645930
+    },
+    {
+      "date": "1962-06",
+      "totalMarketCapMillionYen": 6721349
+    },
+    {
+      "date": "1962-07",
+      "totalMarketCapMillionYen": 7194137
+    },
+    {
+      "date": "1962-08",
+      "totalMarketCapMillionYen": 7122293
+    },
+    {
+      "date": "1962-09",
+      "totalMarketCapMillionYen": 7334203
+    },
+    {
+      "date": "1962-10",
+      "totalMarketCapMillionYen": 6836676
+    },
+    {
+      "date": "1962-11",
+      "totalMarketCapMillionYen": 6933617
+    },
+    {
+      "date": "1962-12",
+      "totalMarketCapMillionYen": 7661226
+    },
+    {
+      "date": "1963-01",
+      "totalMarketCapMillionYen": 7542964
+    },
+    {
+      "date": "1963-02",
+      "totalMarketCapMillionYen": 8005892
+    },
+    {
+      "date": "1963-03",
+      "totalMarketCapMillionYen": 8385388
+    },
+    {
+      "date": "1963-04",
+      "totalMarketCapMillionYen": 9239781
+    },
+    {
+      "date": "1963-05",
+      "totalMarketCapMillionYen": 9299439
+    },
+    {
+      "date": "1963-06",
+      "totalMarketCapMillionYen": 9141668
+    },
+    {
+      "date": "1963-07",
+      "totalMarketCapMillionYen": 9158294
+    },
+    {
+      "date": "1963-08",
+      "totalMarketCapMillionYen": 8121404
+    },
+    {
+      "date": "1963-09",
+      "totalMarketCapMillionYen": 7847821
+    },
+    {
+      "date": "1963-10",
+      "totalMarketCapMillionYen": 8008235
+    },
+    {
+      "date": "1963-11",
+      "totalMarketCapMillionYen": 7842659
+    },
+    {
+      "date": "1963-12",
+      "totalMarketCapMillionYen": 7427531
+    },
+    {
+      "date": "1964-01",
+      "totalMarketCapMillionYen": 7215297
+    },
+    {
+      "date": "1964-02",
+      "totalMarketCapMillionYen": 7982045
+    },
+    {
+      "date": "1964-03",
+      "totalMarketCapMillionYen": 7681486
+    },
+    {
+      "date": "1964-04",
+      "totalMarketCapMillionYen": 7342252
+    },
+    {
+      "date": "1964-05",
+      "totalMarketCapMillionYen": 7422146
+    },
+    {
+      "date": "1964-06",
+      "totalMarketCapMillionYen": 7974812
+    },
+    {
+      "date": "1964-07",
+      "totalMarketCapMillionYen": 8368162
+    },
+    {
+      "date": "1964-08",
+      "totalMarketCapMillionYen": 8211311
+    },
+    {
+      "date": "1964-09",
+      "totalMarketCapMillionYen": 8070573
+    },
+    {
+      "date": "1964-10",
+      "totalMarketCapMillionYen": 7713435
+    },
+    {
+      "date": "1964-11",
+      "totalMarketCapMillionYen": 7374989
+    },
+    {
+      "date": "1964-12",
+      "totalMarketCapMillionYen": 7425132
+    },
+    {
+      "date": "1965-01",
+      "totalMarketCapMillionYen": 8117801
+    },
+    {
+      "date": "1965-02",
+      "totalMarketCapMillionYen": 8110215
+    },
+    {
+      "date": "1965-03",
+      "totalMarketCapMillionYen": 7868371
+    },
+    {
+      "date": "1965-04",
+      "totalMarketCapMillionYen": 7347654
+    },
+    {
+      "date": "1965-05",
+      "totalMarketCapMillionYen": 7595101
+    },
+    {
+      "date": "1965-06",
+      "totalMarketCapMillionYen": 7334040
+    },
+    {
+      "date": "1965-07",
+      "totalMarketCapMillionYen": 7098324
+    },
+    {
+      "date": "1965-08",
+      "totalMarketCapMillionYen": 7609026
+    },
+    {
+      "date": "1965-09",
+      "totalMarketCapMillionYen": 8272348
+    },
+    {
+      "date": "1965-10",
+      "totalMarketCapMillionYen": 7903483
+    },
+    {
+      "date": "1965-11",
+      "totalMarketCapMillionYen": 8213695
+    },
+    {
+      "date": "1965-12",
+      "totalMarketCapMillionYen": 8510927
+    },
+    {
+      "date": "1966-01",
+      "totalMarketCapMillionYen": 9084666
+    },
+    {
+      "date": "1966-02",
+      "totalMarketCapMillionYen": 9488308
+    },
+    {
+      "date": "1966-03",
+      "totalMarketCapMillionYen": 9662830
+    },
+    {
+      "date": "1966-04",
+      "totalMarketCapMillionYen": 9941526
+    },
+    {
+      "date": "1966-05",
+      "totalMarketCapMillionYen": 9879697
+    },
+    {
+      "date": "1966-06",
+      "totalMarketCapMillionYen": 9710899
+    },
+    {
+      "date": "1966-07",
+      "totalMarketCapMillionYen": 9736492
+    },
+    {
+      "date": "1966-08",
+      "totalMarketCapMillionYen": 9769562
+    },
+    {
+      "date": "1966-09",
+      "totalMarketCapMillionYen": 9684815
+    },
+    {
+      "date": "1966-10",
+      "totalMarketCapMillionYen": 9701217
+    },
+    {
+      "date": "1966-11",
+      "totalMarketCapMillionYen": 9698456
+    },
+    {
+      "date": "1966-12",
+      "totalMarketCapMillionYen": 9389677
+    },
+    {
+      "date": "1967-01",
+      "totalMarketCapMillionYen": 10063104
+    },
+    {
+      "date": "1967-02",
+      "totalMarketCapMillionYen": 10258739
+    },
+    {
+      "date": "1967-03",
+      "totalMarketCapMillionYen": 10104588
+    },
+    {
+      "date": "1967-04",
+      "totalMarketCapMillionYen": 10100813
+    },
+    {
+      "date": "1967-05",
+      "totalMarketCapMillionYen": 10573696
+    },
+    {
+      "date": "1967-06",
+      "totalMarketCapMillionYen": 10510891
+    },
+    {
+      "date": "1967-07",
+      "totalMarketCapMillionYen": 10474418
+    },
+    {
+      "date": "1967-08",
+      "totalMarketCapMillionYen": 9634623
+    },
+    {
+      "date": "1967-09",
+      "totalMarketCapMillionYen": 9407343
+    },
+    {
+      "date": "1967-10",
+      "totalMarketCapMillionYen": 9799650
+    },
+    {
+      "date": "1967-11",
+      "totalMarketCapMillionYen": 9214998
+    },
+    {
+      "date": "1967-12",
+      "totalMarketCapMillionYen": 9270610
+    },
+    {
+      "date": "1968-01",
+      "totalMarketCapMillionYen": 9533913
+    },
+    {
+      "date": "1968-02",
+      "totalMarketCapMillionYen": 9783424
+    },
+    {
+      "date": "1968-03",
+      "totalMarketCapMillionYen": 9869831
+    },
+    {
+      "date": "1968-04",
+      "totalMarketCapMillionYen": 10341467
+    },
+    {
+      "date": "1968-05",
+      "totalMarketCapMillionYen": 10555990
+    },
+    {
+      "date": "1968-06",
+      "totalMarketCapMillionYen": 11046213
+    },
+    {
+      "date": "1968-07",
+      "totalMarketCapMillionYen": 11721976
+    },
+    {
+      "date": "1968-08",
+      "totalMarketCapMillionYen": 12547500
+    },
+    {
+      "date": "1968-09",
+      "totalMarketCapMillionYen": 13545662
+    },
+    {
+      "date": "1968-10",
+      "totalMarketCapMillionYen": 12821117
+    },
+    {
+      "date": "1968-11",
+      "totalMarketCapMillionYen": 12683872
+    },
+    {
+      "date": "1968-12",
+      "totalMarketCapMillionYen": 12664542
+    },
+    {
+      "date": "1969-01",
+      "totalMarketCapMillionYen": 13448424
+    },
+    {
+      "date": "1969-02",
+      "totalMarketCapMillionYen": 13224671
+    },
+    {
+      "date": "1969-03",
+      "totalMarketCapMillionYen": 14037608
+    },
+    {
+      "date": "1969-04",
+      "totalMarketCapMillionYen": 14474408
+    },
+    {
+      "date": "1969-05",
+      "totalMarketCapMillionYen": 15529175
+    },
+    {
+      "date": "1969-06",
+      "totalMarketCapMillionYen": 15103147
+    },
+    {
+      "date": "1969-07",
+      "totalMarketCapMillionYen": 14420975
+    },
+    {
+      "date": "1969-08",
+      "totalMarketCapMillionYen": 14863718
+    },
+    {
+      "date": "1969-09",
+      "totalMarketCapMillionYen": 15899735
+    },
+    {
+      "date": "1969-10",
+      "totalMarketCapMillionYen": 16421736
+    },
+    {
+      "date": "1969-11",
+      "totalMarketCapMillionYen": 17234296
+    },
+    {
+      "date": "1969-12",
+      "totalMarketCapMillionYen": 18353404
+    },
+    {
+      "date": "1970-01",
+      "totalMarketCapMillionYen": 18125468
+    },
+    {
+      "date": "1970-02",
+      "totalMarketCapMillionYen": 18360265
+    },
+    {
+      "date": "1970-03",
+      "totalMarketCapMillionYen": 19274262
+    },
+    {
+      "date": "1970-04",
+      "totalMarketCapMillionYen": 16779523
+    },
+    {
+      "date": "1970-05",
+      "totalMarketCapMillionYen": 16513868
+    },
+    {
+      "date": "1970-06",
+      "totalMarketCapMillionYen": 16831579
+    },
+    {
+      "date": "1970-07",
+      "totalMarketCapMillionYen": 17244145
+    },
+    {
+      "date": "1970-08",
+      "totalMarketCapMillionYen": 16962908
+    },
+    {
+      "date": "1970-09",
+      "totalMarketCapMillionYen": 16478046
+    },
+    {
+      "date": "1970-10",
+      "totalMarketCapMillionYen": 16947026
+    },
+    {
+      "date": "1970-11",
+      "totalMarketCapMillionYen": 16248752
+    },
+    {
+      "date": "1970-12",
+      "totalMarketCapMillionYen": 16235545
+    },
+    {
+      "date": "1971-01",
+      "totalMarketCapMillionYen": 17045241
+    },
+    {
+      "date": "1971-02",
+      "totalMarketCapMillionYen": 18070297
+    },
+    {
+      "date": "1971-03",
+      "totalMarketCapMillionYen": 19349805
+    },
+    {
+      "date": "1971-04",
+      "totalMarketCapMillionYen": 20490834
+    },
+    {
+      "date": "1971-05",
+      "totalMarketCapMillionYen": 20578722
+    },
+    {
+      "date": "1971-06",
+      "totalMarketCapMillionYen": 22312162
+    },
+    {
+      "date": "1971-07",
+      "totalMarketCapMillionYen": 22833173
+    },
+    {
+      "date": "1971-08",
+      "totalMarketCapMillionYen": 19858872
+    },
+    {
+      "date": "1971-09",
+      "totalMarketCapMillionYen": 20701858
+    },
+    {
+      "date": "1971-10",
+      "totalMarketCapMillionYen": 19683651
+    },
+    {
+      "date": "1971-11",
+      "totalMarketCapMillionYen": 20969026
+    },
+    {
+      "date": "1971-12",
+      "totalMarketCapMillionYen": 22714990
+    },
+    {
+      "date": "1972-01",
+      "totalMarketCapMillionYen": 24157672
+    },
+    {
+      "date": "1972-02",
+      "totalMarketCapMillionYen": 25705950
+    },
+    {
+      "date": "1972-03",
+      "totalMarketCapMillionYen": 27394268
+    },
+    {
+      "date": "1972-04",
+      "totalMarketCapMillionYen": 28752730
+    },
+    {
+      "date": "1972-05",
+      "totalMarketCapMillionYen": 31282139
+    },
+    {
+      "date": "1972-06",
+      "totalMarketCapMillionYen": 32557856
+    },
+    {
+      "date": "1972-07",
+      "totalMarketCapMillionYen": 35501450
+    },
+    {
+      "date": "1972-08",
+      "totalMarketCapMillionYen": 36333772
+    },
+    {
+      "date": "1972-09",
+      "totalMarketCapMillionYen": 38486651
+    },
+    {
+      "date": "1972-10",
+      "totalMarketCapMillionYen": 39760503
+    },
+    {
+      "date": "1972-11",
+      "totalMarketCapMillionYen": 44534108
+    },
+    {
+      "date": "1972-12",
+      "totalMarketCapMillionYen": 48054587
+    },
+    {
+      "date": "1973-01",
+      "totalMarketCapMillionYen": 48504660
+    },
+    {
+      "date": "1973-02",
+      "totalMarketCapMillionYen": 47039271
+    },
+    {
+      "date": "1973-03",
+      "totalMarketCapMillionYen": 47838167
+    },
+    {
+      "date": "1973-04",
+      "totalMarketCapMillionYen": 43433060
+    },
+    {
+      "date": "1973-05",
+      "totalMarketCapMillionYen": 43880119
+    },
+    {
+      "date": "1973-06",
+      "totalMarketCapMillionYen": 44599469
+    },
+    {
+      "date": "1973-07",
+      "totalMarketCapMillionYen": 47206075
+    },
+    {
+      "date": "1973-08",
+      "totalMarketCapMillionYen": 45875033
+    },
+    {
+      "date": "1973-09",
+      "totalMarketCapMillionYen": 43420652
+    },
+    {
+      "date": "1973-10",
+      "totalMarketCapMillionYen": 43978304
+    },
+    {
+      "date": "1973-11",
+      "totalMarketCapMillionYen": 40653282
+    },
+    {
+      "date": "1973-12",
+      "totalMarketCapMillionYen": 38556416
+    },
+    {
+      "date": "1974-01",
+      "totalMarketCapMillionYen": 40688794
+    },
+    {
+      "date": "1974-02",
+      "totalMarketCapMillionYen": 41102007
+    },
+    {
+      "date": "1974-03",
+      "totalMarketCapMillionYen": 40620921
+    },
+    {
+      "date": "1974-04",
+      "totalMarketCapMillionYen": 42006726
+    },
+    {
+      "date": "1974-05",
+      "totalMarketCapMillionYen": 43409604
+    },
+    {
+      "date": "1974-06",
+      "totalMarketCapMillionYen": 42474156
+    },
+    {
+      "date": "1974-07",
+      "totalMarketCapMillionYen": 41002101
+    },
+    {
+      "date": "1974-08",
+      "totalMarketCapMillionYen": 37745287
+    },
+    {
+      "date": "1974-09",
+      "totalMarketCapMillionYen": 36657772
+    },
+    {
+      "date": "1974-10",
+      "totalMarketCapMillionYen": 33761915
+    },
+    {
+      "date": "1974-11",
+      "totalMarketCapMillionYen": 37065310
+    },
+    {
+      "date": "1974-12",
+      "totalMarketCapMillionYen": 36042112
+    },
+    {
+      "date": "1975-01",
+      "totalMarketCapMillionYen": 37569763
+    },
+    {
+      "date": "1975-02",
+      "totalMarketCapMillionYen": 40715838
+    },
+    {
+      "date": "1975-03",
+      "totalMarketCapMillionYen": 42188379
+    },
+    {
+      "date": "1975-04",
+      "totalMarketCapMillionYen": 42365553
+    },
+    {
+      "date": "1975-05",
+      "totalMarketCapMillionYen": 42218575
+    },
+    {
+      "date": "1975-06",
+      "totalMarketCapMillionYen": 43442496
+    },
+    {
+      "date": "1975-07",
+      "totalMarketCapMillionYen": 41927864
+    },
+    {
+      "date": "1975-08",
+      "totalMarketCapMillionYen": 40462530
+    },
+    {
+      "date": "1975-09",
+      "totalMarketCapMillionYen": 38777998
+    },
+    {
+      "date": "1975-10",
+      "totalMarketCapMillionYen": 42150661
+    },
+    {
+      "date": "1975-11",
+      "totalMarketCapMillionYen": 42340725
+    },
+    {
+      "date": "1975-12",
+      "totalMarketCapMillionYen": 43244888
+    },
+    {
+      "date": "1976-01",
+      "totalMarketCapMillionYen": 45934994
+    },
+    {
+      "date": "1976-02",
+      "totalMarketCapMillionYen": 45853646
+    },
+    {
+      "date": "1976-03",
+      "totalMarketCapMillionYen": 46013928
+    },
+    {
+      "date": "1976-04",
+      "totalMarketCapMillionYen": 46389081
+    },
+    {
+      "date": "1976-05",
+      "totalMarketCapMillionYen": 47073751
+    },
+    {
+      "date": "1976-06",
+      "totalMarketCapMillionYen": 48643937
+    },
+    {
+      "date": "1976-07",
+      "totalMarketCapMillionYen": 47515333
+    },
+    {
+      "date": "1976-08",
+      "totalMarketCapMillionYen": 49011231
+    },
+    {
+      "date": "1976-09",
+      "totalMarketCapMillionYen": 49147634
+    },
+    {
+      "date": "1976-10",
+      "totalMarketCapMillionYen": 48519660
+    },
+    {
+      "date": "1976-11",
+      "totalMarketCapMillionYen": 47757740
+    },
+    {
+      "date": "1976-12",
+      "totalMarketCapMillionYen": 52993930
+    },
+    {
+      "date": "1977-01",
+      "totalMarketCapMillionYen": 52201079
+    },
+    {
+      "date": "1977-02",
+      "totalMarketCapMillionYen": 53263699
+    },
+    {
+      "date": "1977-03",
+      "totalMarketCapMillionYen": 52497928
+    },
+    {
+      "date": "1977-04",
+      "totalMarketCapMillionYen": 53226805
+    },
+    {
+      "date": "1977-05",
+      "totalMarketCapMillionYen": 52987140
+    },
+    {
+      "date": "1977-06",
+      "totalMarketCapMillionYen": 52895892
+    },
+    {
+      "date": "1977-07",
+      "totalMarketCapMillionYen": 52112340
+    },
+    {
+      "date": "1977-08",
+      "totalMarketCapMillionYen": 54577424
+    },
+    {
+      "date": "1977-09",
+      "totalMarketCapMillionYen": 54909116
+    },
+    {
+      "date": "1977-10",
+      "totalMarketCapMillionYen": 53042727
+    },
+    {
+      "date": "1977-11",
+      "totalMarketCapMillionYen": 52013445
+    },
+    {
+      "date": "1977-12",
+      "totalMarketCapMillionYen": 51573887
+    },
+    {
+      "date": "1978-01",
+      "totalMarketCapMillionYen": 54308636
+    },
+    {
+      "date": "1978-02",
+      "totalMarketCapMillionYen": 55754890
+    },
+    {
+      "date": "1978-03",
+      "totalMarketCapMillionYen": 58292135
+    },
+    {
+      "date": "1978-04",
+      "totalMarketCapMillionYen": 58717945
+    },
+    {
+      "date": "1978-05",
+      "totalMarketCapMillionYen": 58878988
+    },
+    {
+      "date": "1978-06",
+      "totalMarketCapMillionYen": 60095975
+    },
+    {
+      "date": "1978-07",
+      "totalMarketCapMillionYen": 61293224
+    },
+    {
+      "date": "1978-08",
+      "totalMarketCapMillionYen": 61786545
+    },
+    {
+      "date": "1978-09",
+      "totalMarketCapMillionYen": 63640615
+    },
+    {
+      "date": "1978-10",
+      "totalMarketCapMillionYen": 64461519
+    },
+    {
+      "date": "1978-11",
+      "totalMarketCapMillionYen": 65153403
+    },
+    {
+      "date": "1978-12",
+      "totalMarketCapMillionYen": 66341464
+    },
+    {
+      "date": "1979-01",
+      "totalMarketCapMillionYen": 68577794
+    },
+    {
+      "date": "1979-02",
+      "totalMarketCapMillionYen": 66595990
+    },
+    {
+      "date": "1979-03",
+      "totalMarketCapMillionYen": 66860676
+    },
+    {
+      "date": "1979-04",
+      "totalMarketCapMillionYen": 67060547
+    },
+    {
+      "date": "1979-05",
+      "totalMarketCapMillionYen": 66789706
+    },
+    {
+      "date": "1979-06",
+      "totalMarketCapMillionYen": 66650545
+    },
+    {
+      "date": "1979-07",
+      "totalMarketCapMillionYen": 66465131
+    },
+    {
+      "date": "1979-08",
+      "totalMarketCapMillionYen": 68069755
+    },
+    {
+      "date": "1979-09",
+      "totalMarketCapMillionYen": 69779758
+    },
+    {
+      "date": "1979-10",
+      "totalMarketCapMillionYen": 67363717
+    },
+    {
+      "date": "1979-11",
+      "totalMarketCapMillionYen": 67733967
+    },
+    {
+      "date": "1979-12",
+      "totalMarketCapMillionYen": 69302928
+    },
+    {
+      "date": "1980-01",
+      "totalMarketCapMillionYen": 70746392
+    },
+    {
+      "date": "1980-02",
+      "totalMarketCapMillionYen": 70792427
+    },
+    {
+      "date": "1980-03",
+      "totalMarketCapMillionYen": 68894824
+    },
+    {
+      "date": "1980-04",
+      "totalMarketCapMillionYen": 70944177
+    },
+    {
+      "date": "1980-05",
+      "totalMarketCapMillionYen": 71037356
+    },
+    {
+      "date": "1980-06",
+      "totalMarketCapMillionYen": 72007257
+    },
+    {
+      "date": "1980-07",
+      "totalMarketCapMillionYen": 71926982
+    },
+    {
+      "date": "1980-08",
+      "totalMarketCapMillionYen": 73230774
+    },
+    {
+      "date": "1980-09",
+      "totalMarketCapMillionYen": 74953673
+    },
+    {
+      "date": "1980-10",
+      "totalMarketCapMillionYen": 76292338
+    },
+    {
+      "date": "1980-11",
+      "totalMarketCapMillionYen": 76375327
+    },
+    {
+      "date": "1980-12",
+      "totalMarketCapMillionYen": 77074778
+    },
+    {
+      "date": "1981-01",
+      "totalMarketCapMillionYen": 79885351
+    },
+    {
+      "date": "1981-02",
+      "totalMarketCapMillionYen": 79627325
+    },
+    {
+      "date": "1981-03",
+      "totalMarketCapMillionYen": 83253463
+    },
+    {
+      "date": "1981-04",
+      "totalMarketCapMillionYen": 88007827
+    },
+    {
+      "date": "1981-05",
+      "totalMarketCapMillionYen": 88071927
+    },
+    {
+      "date": "1981-06",
+      "totalMarketCapMillionYen": 92319251
+    },
+    {
+      "date": "1981-07",
+      "totalMarketCapMillionYen": 93586304
+    },
+    {
+      "date": "1981-08",
+      "totalMarketCapMillionYen": 93695488
+    },
+    {
+      "date": "1981-09",
+      "totalMarketCapMillionYen": 87752569
+    },
+    {
+      "date": "1981-10",
+      "totalMarketCapMillionYen": 88444233
+    },
+    {
+      "date": "1981-11",
+      "totalMarketCapMillionYen": 89113590
+    },
+    {
+      "date": "1981-12",
+      "totalMarketCapMillionYen": 91905691
+    },
+    {
+      "date": "1982-01",
+      "totalMarketCapMillionYen": 94072082
+    },
+    {
+      "date": "1982-02",
+      "totalMarketCapMillionYen": 89706623
+    },
+    {
+      "date": "1982-03",
+      "totalMarketCapMillionYen": 86532166
+    },
+    {
+      "date": "1982-04",
+      "totalMarketCapMillionYen": 88708991
+    },
+    {
+      "date": "1982-05",
+      "totalMarketCapMillionYen": 89097468
+    },
+    {
+      "date": "1982-06",
+      "totalMarketCapMillionYen": 87966780
+    },
+    {
+      "date": "1982-07",
+      "totalMarketCapMillionYen": 86871676
+    },
+    {
+      "date": "1982-08",
+      "totalMarketCapMillionYen": 86960762
+    },
+    {
+      "date": "1982-09",
+      "totalMarketCapMillionYen": 86186885
+    },
+    {
+      "date": "1982-10",
+      "totalMarketCapMillionYen": 89253192
+    },
+    {
+      "date": "1982-11",
+      "totalMarketCapMillionYen": 95198091
+    },
+    {
+      "date": "1982-12",
+      "totalMarketCapMillionYen": 98090217
+    },
+    {
+      "date": "1983-01",
+      "totalMarketCapMillionYen": 97419375
+    },
+    {
+      "date": "1983-02",
+      "totalMarketCapMillionYen": 98349261
+    },
+    {
+      "date": "1983-03",
+      "totalMarketCapMillionYen": 102839502
+    },
+    {
+      "date": "1983-04",
+      "totalMarketCapMillionYen": 105848647
+    },
+    {
+      "date": "1983-05",
+      "totalMarketCapMillionYen": 107289511
+    },
+    {
+      "date": "1983-06",
+      "totalMarketCapMillionYen": 110715036
+    },
+    {
+      "date": "1983-07",
+      "totalMarketCapMillionYen": 113401114
+    },
+    {
+      "date": "1983-08",
+      "totalMarketCapMillionYen": 116366160
+    },
+    {
+      "date": "1983-09",
+      "totalMarketCapMillionYen": 118577691
+    },
+    {
+      "date": "1983-10",
+      "totalMarketCapMillionYen": 117916811
+    },
+    {
+      "date": "1983-11",
+      "totalMarketCapMillionYen": 118691958
+    },
+    {
+      "date": "1983-12",
+      "totalMarketCapMillionYen": 126745965
+    },
+    {
+      "date": "1984-01",
+      "totalMarketCapMillionYen": 134877751
+    },
+    {
+      "date": "1984-02",
+      "totalMarketCapMillionYen": 135397676
+    },
+    {
+      "date": "1984-03",
+      "totalMarketCapMillionYen": 151630628
+    },
+    {
+      "date": "1984-04",
+      "totalMarketCapMillionYen": 149986289
+    },
+    {
+      "date": "1984-05",
+      "totalMarketCapMillionYen": 135280582
+    },
+    {
+      "date": "1984-06",
+      "totalMarketCapMillionYen": 138833116
+    },
+    {
+      "date": "1984-07",
+      "totalMarketCapMillionYen": 133592125
+    },
+    {
+      "date": "1984-08",
+      "totalMarketCapMillionYen": 143529213
+    },
+    {
+      "date": "1984-09",
+      "totalMarketCapMillionYen": 145126148
+    },
+    {
+      "date": "1984-10",
+      "totalMarketCapMillionYen": 152172421
+    },
+    {
+      "date": "1984-11",
+      "totalMarketCapMillionYen": 155141234
+    },
+    {
+      "date": "1984-12",
+      "totalMarketCapMillionYen": 161811857
+    },
+    {
+      "date": "1985-01",
+      "totalMarketCapMillionYen": 165392030
+    },
+    {
+      "date": "1985-02",
+      "totalMarketCapMillionYen": 173618725
+    },
+    {
+      "date": "1985-03",
+      "totalMarketCapMillionYen": 177363936
+    },
+    {
+      "date": "1985-04",
+      "totalMarketCapMillionYen": 172497622
+    },
+    {
+      "date": "1985-05",
+      "totalMarketCapMillionYen": 177712060
+    },
+    {
+      "date": "1985-06",
+      "totalMarketCapMillionYen": 183401151
+    },
+    {
+      "date": "1985-07",
+      "totalMarketCapMillionYen": 177293157
+    },
+    {
+      "date": "1985-08",
+      "totalMarketCapMillionYen": 182518516
+    },
+    {
+      "date": "1985-09",
+      "totalMarketCapMillionYen": 184293146
+    },
+    {
+      "date": "1985-10",
+      "totalMarketCapMillionYen": 185003086
+    },
+    {
+      "date": "1985-11",
+      "totalMarketCapMillionYen": 182461781
+    },
+    {
+      "date": "1985-12",
+      "totalMarketCapMillionYen": 190126635
+    },
+    {
+      "date": "1986-01",
+      "totalMarketCapMillionYen": 189490409
+    },
+    {
+      "date": "1986-02",
+      "totalMarketCapMillionYen": 198473673
+    },
+    {
+      "date": "1986-03",
+      "totalMarketCapMillionYen": 229417604
+    },
+    {
+      "date": "1986-04",
+      "totalMarketCapMillionYen": 227762531
+    },
+    {
+      "date": "1986-05",
+      "totalMarketCapMillionYen": 237452731
+    },
+    {
+      "date": "1986-06",
+      "totalMarketCapMillionYen": 248301994
+    },
+    {
+      "date": "1986-07",
+      "totalMarketCapMillionYen": 261046447
+    },
+    {
+      "date": "1986-08",
+      "totalMarketCapMillionYen": 281957345
+    },
+    {
+      "date": "1986-09",
+      "totalMarketCapMillionYen": 276407452
+    },
+    {
+      "date": "1986-10",
+      "totalMarketCapMillionYen": 257460718
+    },
+    {
+      "date": "1986-11",
+      "totalMarketCapMillionYen": 276108598
+    },
+    {
+      "date": "1986-12",
+      "totalMarketCapMillionYen": 285471490
+    },
+    {
+      "date": "1987-01",
+      "totalMarketCapMillionYen": 322109846
+    },
+    {
+      "date": "1987-02",
+      "totalMarketCapMillionYen": 331829603
+    },
+    {
+      "date": "1987-03",
+      "totalMarketCapMillionYen": 346300118
+    },
+    {
+      "date": "1987-04",
+      "totalMarketCapMillionYen": 384314104
+    },
+    {
+      "date": "1987-05",
+      "totalMarketCapMillionYen": 399662072
+    },
+    {
+      "date": "1987-06",
+      "totalMarketCapMillionYen": 381683218
+    },
+    {
+      "date": "1987-07",
+      "totalMarketCapMillionYen": 379110679
+    },
+    {
+      "date": "1987-08",
+      "totalMarketCapMillionYen": 406276411
+    },
+    {
+      "date": "1987-09",
+      "totalMarketCapMillionYen": 404339671
+    },
+    {
+      "date": "1987-10",
+      "totalMarketCapMillionYen": 364300904
+    },
+    {
+      "date": "1987-11",
+      "totalMarketCapMillionYen": 357313647
+    },
+    {
+      "date": "1987-12",
+      "totalMarketCapMillionYen": 336706604
+    },
+    {
+      "date": "1988-01",
+      "totalMarketCapMillionYen": 376852780
+    },
+    {
+      "date": "1988-02",
+      "totalMarketCapMillionYen": 407364836
+    },
+    {
+      "date": "1988-03",
+      "totalMarketCapMillionYen": 421888238
+    },
+    {
+      "date": "1988-04",
+      "totalMarketCapMillionYen": 432360734
+    },
+    {
+      "date": "1988-05",
+      "totalMarketCapMillionYen": 421218159
+    },
+    {
+      "date": "1988-06",
+      "totalMarketCapMillionYen": 432317963
+    },
+    {
+      "date": "1988-07",
+      "totalMarketCapMillionYen": 445219219
+    },
+    {
+      "date": "1988-08",
+      "totalMarketCapMillionYen": 423586327
+    },
+    {
+      "date": "1988-09",
+      "totalMarketCapMillionYen": 428670073
+    },
+    {
+      "date": "1988-10",
+      "totalMarketCapMillionYen": 433145141
+    },
+    {
+      "date": "1988-11",
+      "totalMarketCapMillionYen": 460293156
+    },
+    {
+      "date": "1988-12",
+      "totalMarketCapMillionYen": 476849798
+    },
+    {
+      "date": "1989-01",
+      "totalMarketCapMillionYen": 500131360
+    },
+    {
+      "date": "1989-02",
+      "totalMarketCapMillionYen": 497313283
+    },
+    {
+      "date": "1989-03",
+      "totalMarketCapMillionYen": 504324089
+    },
+    {
+      "date": "1989-04",
+      "totalMarketCapMillionYen": 510545841
+    },
+    {
+      "date": "1989-05",
+      "totalMarketCapMillionYen": 522478602
+    },
+    {
+      "date": "1989-06",
+      "totalMarketCapMillionYen": 505991291
+    },
+    {
+      "date": "1989-07",
+      "totalMarketCapMillionYen": 543977780
+    },
+    {
+      "date": "1989-08",
+      "totalMarketCapMillionYen": 541515938
+    },
+    {
+      "date": "1989-09",
+      "totalMarketCapMillionYen": 564536488
+    },
+    {
+      "date": "1989-10",
+      "totalMarketCapMillionYen": 565033636
+    },
+    {
+      "date": "1989-11",
+      "totalMarketCapMillionYen": 595973122
+    },
+    {
+      "date": "1989-12",
+      "totalMarketCapMillionYen": 611151873
+    },
+    {
+      "date": "1990-01",
+      "totalMarketCapMillionYen": 584492631
+    },
+    {
+      "date": "1990-02",
+      "totalMarketCapMillionYen": 551710949
+    },
+    {
+      "date": "1990-03",
+      "totalMarketCapMillionYen": 479143892
+    },
+    {
+      "date": "1990-04",
+      "totalMarketCapMillionYen": 477120067
+    },
+    {
+      "date": "1990-05",
+      "totalMarketCapMillionYen": 527563318
+    },
+    {
+      "date": "1990-06",
+      "totalMarketCapMillionYen": 510162749
+    },
+    {
+      "date": "1990-07",
+      "totalMarketCapMillionYen": 493084835
+    },
+    {
+      "date": "1990-08",
+      "totalMarketCapMillionYen": 432599785
+    },
+    {
+      "date": "1990-09",
+      "totalMarketCapMillionYen": 344056144
+    },
+    {
+      "date": "1990-10",
+      "totalMarketCapMillionYen": 406398731
+    },
+    {
+      "date": "1990-11",
+      "totalMarketCapMillionYen": 361263600
+    },
+    {
+      "date": "1990-12",
+      "totalMarketCapMillionYen": 379231113
+    },
+    {
+      "date": "1991-01",
+      "totalMarketCapMillionYen": 373779033
+    },
+    {
+      "date": "1991-02",
+      "totalMarketCapMillionYen": 429125855
+    },
+    {
+      "date": "1991-03",
+      "totalMarketCapMillionYen": 432828655
+    },
+    {
+      "date": "1991-04",
+      "totalMarketCapMillionYen": 431866501
+    },
+    {
+      "date": "1991-05",
+      "totalMarketCapMillionYen": 432087466
+    },
+    {
+      "date": "1991-06",
+      "totalMarketCapMillionYen": 401336886
+    },
+    {
+      "date": "1991-07",
+      "totalMarketCapMillionYen": 409231648
+    },
+    {
+      "date": "1991-08",
+      "totalMarketCapMillionYen": 381010576
+    },
+    {
+      "date": "1991-09",
+      "totalMarketCapMillionYen": 402999748
+    },
+    {
+      "date": "1991-10",
+      "totalMarketCapMillionYen": 415000355
+    },
+    {
+      "date": "1991-11",
+      "totalMarketCapMillionYen": 381039780
+    },
+    {
+      "date": "1991-12",
+      "totalMarketCapMillionYen": 377924363
+    },
+    {
+      "date": "1992-01",
+      "totalMarketCapMillionYen": 359709444
+    },
+    {
+      "date": "1992-02",
+      "totalMarketCapMillionYen": 344309328
+    },
+    {
+      "date": "1992-03",
+      "totalMarketCapMillionYen": 314020599
+    },
+    {
+      "date": "1992-04",
+      "totalMarketCapMillionYen": 291557641
+    },
+    {
+      "date": "1992-05",
+      "totalMarketCapMillionYen": 304775404
+    },
+    {
+      "date": "1992-06",
+      "totalMarketCapMillionYen": 273998725
+    },
+    {
+      "date": "1992-07",
+      "totalMarketCapMillionYen": 269609665
+    },
+    {
+      "date": "1992-08",
+      "totalMarketCapMillionYen": 305880277
+    },
+    {
+      "date": "1992-09",
+      "totalMarketCapMillionYen": 289570676
+    },
+    {
+      "date": "1992-10",
+      "totalMarketCapMillionYen": 282668283
+    },
+    {
+      "date": "1992-11",
+      "totalMarketCapMillionYen": 292305134
+    },
+    {
+      "date": "1992-12",
+      "totalMarketCapMillionYen": 289483458
+    },
+    {
+      "date": "1993-01",
+      "totalMarketCapMillionYen": 287348034
+    },
+    {
+      "date": "1993-02",
+      "totalMarketCapMillionYen": 284442352
+    },
+    {
+      "date": "1993-03",
+      "totalMarketCapMillionYen": 317392394
+    },
+    {
+      "date": "1993-04",
+      "totalMarketCapMillionYen": 359275769
+    },
+    {
+      "date": "1993-05",
+      "totalMarketCapMillionYen": 364121251
+    },
+    {
+      "date": "1993-06",
+      "totalMarketCapMillionYen": 351607663
+    },
+    {
+      "date": "1993-07",
+      "totalMarketCapMillionYen": 368932519
+    },
+    {
+      "date": "1993-08",
+      "totalMarketCapMillionYen": 377118029
+    },
+    {
+      "date": "1993-09",
+      "totalMarketCapMillionYen": 363948897
+    },
+    {
+      "date": "1993-10",
+      "totalMarketCapMillionYen": 366782689
+    },
+    {
+      "date": "1993-11",
+      "totalMarketCapMillionYen": 309475242
+    },
+    {
+      "date": "1993-12",
+      "totalMarketCapMillionYen": 324357466
+    },
+    {
+      "date": "1994-01",
+      "totalMarketCapMillionYen": 367652873
+    },
+    {
+      "date": "1994-02",
+      "totalMarketCapMillionYen": 368472109
+    },
+    {
+      "date": "1994-03",
+      "totalMarketCapMillionYen": 354034586
+    },
+    {
+      "date": "1994-04",
+      "totalMarketCapMillionYen": 363456728
+    },
+    {
+      "date": "1994-05",
+      "totalMarketCapMillionYen": 381099042
+    },
+    {
+      "date": "1994-06",
+      "totalMarketCapMillionYen": 380184077
+    },
+    {
+      "date": "1994-07",
+      "totalMarketCapMillionYen": 372211642
+    },
+    {
+      "date": "1994-08",
+      "totalMarketCapMillionYen": 373105143
+    },
+    {
+      "date": "1994-09",
+      "totalMarketCapMillionYen": 359493926
+    },
+    {
+      "date": "1994-10",
+      "totalMarketCapMillionYen": 362283822
+    },
+    {
+      "date": "1994-11",
+      "totalMarketCapMillionYen": 348039494
+    },
+    {
+      "date": "1994-12",
+      "totalMarketCapMillionYen": 358392468
+    },
+    {
+      "date": "1995-01",
+      "totalMarketCapMillionYen": 335842303
+    },
+    {
+      "date": "1995-02",
+      "totalMarketCapMillionYen": 309545624
+    },
+    {
+      "date": "1995-03",
+      "totalMarketCapMillionYen": 300826056
+    },
+    {
+      "date": "1995-04",
+      "totalMarketCapMillionYen": 306342732
+    },
+    {
+      "date": "1995-05",
+      "totalMarketCapMillionYen": 287944079
+    },
+    {
+      "date": "1995-06",
+      "totalMarketCapMillionYen": 275246049
+    },
+    {
+      "date": "1995-07",
+      "totalMarketCapMillionYen": 307391561
+    },
+    {
+      "date": "1995-08",
+      "totalMarketCapMillionYen": 329448741
+    },
+    {
+      "date": "1995-09",
+      "totalMarketCapMillionYen": 332667487
+    },
+    {
+      "date": "1995-10",
+      "totalMarketCapMillionYen": 326762892
+    },
+    {
+      "date": "1995-11",
+      "totalMarketCapMillionYen": 343067842
+    },
+    {
+      "date": "1995-12",
+      "totalMarketCapMillionYen": 365716093
+    },
+    {
+      "date": "1996-01",
+      "totalMarketCapMillionYen": 374443215
+    },
+    {
+      "date": "1996-02",
+      "totalMarketCapMillionYen": 362413005
+    },
+    {
+      "date": "1996-03",
+      "totalMarketCapMillionYen": 376512466
+    },
+    {
+      "date": "1996-04",
+      "totalMarketCapMillionYen": 398462248
+    },
+    {
+      "date": "1996-05",
+      "totalMarketCapMillionYen": 391636336
+    },
+    {
+      "date": "1996-06",
+      "totalMarketCapMillionYen": 399070441
+    },
+    {
+      "date": "1996-07",
+      "totalMarketCapMillionYen": 370073866
+    },
+    {
+      "date": "1996-08",
+      "totalMarketCapMillionYen": 361422848
+    },
+    {
+      "date": "1996-09",
+      "totalMarketCapMillionYen": 381220016
+    },
+    {
+      "date": "1996-10",
+      "totalMarketCapMillionYen": 364673540
+    },
+    {
+      "date": "1996-11",
+      "totalMarketCapMillionYen": 367453956
+    },
+    {
+      "date": "1996-12",
+      "totalMarketCapMillionYen": 347578361
+    },
+    {
+      "date": "1997-01",
+      "totalMarketCapMillionYen": 324704033
+    },
+    {
+      "date": "1997-02",
+      "totalMarketCapMillionYen": 329109686
+    },
+    {
+      "date": "1997-03",
+      "totalMarketCapMillionYen": 324884123
+    },
+    {
+      "date": "1997-04",
+      "totalMarketCapMillionYen": 340930609
+    },
+    {
+      "date": "1997-05",
+      "totalMarketCapMillionYen": 352345874
+    },
+    {
+      "date": "1997-06",
+      "totalMarketCapMillionYen": 368282933
+    },
+    {
+      "date": "1997-07",
+      "totalMarketCapMillionYen": 366120158
+    },
+    {
+      "date": "1997-08",
+      "totalMarketCapMillionYen": 339505421
+    },
+    {
+      "date": "1997-09",
+      "totalMarketCapMillionYen": 329828029
+    },
+    {
+      "date": "1997-10",
+      "totalMarketCapMillionYen": 305470499
+    },
+    {
+      "date": "1997-11",
+      "totalMarketCapMillionYen": 299325002
+    },
+    {
+      "date": "1997-12",
+      "totalMarketCapMillionYen": 280930040
+    },
+    {
+      "date": "1998-01",
+      "totalMarketCapMillionYen": 303787276
+    },
+    {
+      "date": "1998-02",
+      "totalMarketCapMillionYen": 305357134
+    },
+    {
+      "date": "1998-03",
+      "totalMarketCapMillionYen": 300663918
+    },
+    {
+      "date": "1998-04",
+      "totalMarketCapMillionYen": 294088510
+    },
+    {
+      "date": "1998-05",
+      "totalMarketCapMillionYen": 293896365
+    },
+    {
+      "date": "1998-06",
+      "totalMarketCapMillionYen": 296164610
+    },
+    {
+      "date": "1998-07",
+      "totalMarketCapMillionYen": 303980896
+    },
+    {
+      "date": "1998-08",
+      "totalMarketCapMillionYen": 266968705
+    },
+    {
+      "date": "1998-09",
+      "totalMarketCapMillionYen": 252007641
+    },
+    {
+      "date": "1998-10",
+      "totalMarketCapMillionYen": 258835905
+    },
+    {
+      "date": "1998-11",
+      "totalMarketCapMillionYen": 286463459
+    },
+    {
+      "date": "1998-12",
+      "totalMarketCapMillionYen": 275181104
+    },
+    {
+      "date": "1999-01",
+      "totalMarketCapMillionYen": 285195333
+    },
+    {
+      "date": "1999-02",
+      "totalMarketCapMillionYen": 284625892
+    },
+    {
+      "date": "1999-03",
+      "totalMarketCapMillionYen": 323825461
+    },
+    {
+      "date": "1999-04",
+      "totalMarketCapMillionYen": 343188412
+    },
+    {
+      "date": "1999-05",
+      "totalMarketCapMillionYen": 334023069
+    },
+    {
+      "date": "1999-06",
+      "totalMarketCapMillionYen": 366513699
+    },
+    {
+      "date": "1999-07",
+      "totalMarketCapMillionYen": 384056666
+    },
+    {
+      "date": "1999-08",
+      "totalMarketCapMillionYen": 380579006
+    },
+    {
+      "date": "1999-09",
+      "totalMarketCapMillionYen": 396313042
+    },
+    {
+      "date": "1999-10",
+      "totalMarketCapMillionYen": 411499982
+    },
+    {
+      "date": "1999-11",
+      "totalMarketCapMillionYen": 434731518
+    },
+    {
+      "date": "1999-12",
+      "totalMarketCapMillionYen": 456840848
+    },
+    {
+      "date": "2000-01",
+      "totalMarketCapMillionYen": 454908295
+    },
+    {
+      "date": "2000-02",
+      "totalMarketCapMillionYen": 460216436
+    },
+    {
+      "date": "2000-03",
+      "totalMarketCapMillionYen": 458837468
+    },
+    {
+      "date": "2000-04",
+      "totalMarketCapMillionYen": 444399988
+    },
+    {
+      "date": "2000-05",
+      "totalMarketCapMillionYen": 417494841
+    },
+    {
+      "date": "2000-06",
+      "totalMarketCapMillionYen": 436276295
+    },
+    {
+      "date": "2000-07",
+      "totalMarketCapMillionYen": 398396820
+    },
+    {
+      "date": "2000-08",
+      "totalMarketCapMillionYen": 418125909
+    },
+    {
+      "date": "2000-09",
+      "totalMarketCapMillionYen": 408125665
+    },
+    {
+      "date": "2000-10",
+      "totalMarketCapMillionYen": 385108675
+    },
+    {
+      "date": "2000-11",
+      "totalMarketCapMillionYen": 382125127
+    },
+    {
+      "date": "2000-12",
+      "totalMarketCapMillionYen": 360554727
+    },
+    {
+      "date": "2001-01",
+      "totalMarketCapMillionYen": 366384811
+    },
+    {
+      "date": "2001-02",
+      "totalMarketCapMillionYen": 351806610
+    },
+    {
+      "date": "2001-03",
+      "totalMarketCapMillionYen": 350640749
+    },
+    {
+      "date": "2001-04",
+      "totalMarketCapMillionYen": 390056280
+    },
+    {
+      "date": "2001-05",
+      "totalMarketCapMillionYen": 375070504
+    },
+    {
+      "date": "2001-06",
+      "totalMarketCapMillionYen": 372235283
+    },
+    {
+      "date": "2001-07",
+      "totalMarketCapMillionYen": 340587200
+    },
+    {
+      "date": "2001-08",
+      "totalMarketCapMillionYen": 316552378
+    },
+    {
+      "date": "2001-09",
+      "totalMarketCapMillionYen": 293195255
+    },
+    {
+      "date": "2001-10",
+      "totalMarketCapMillionYen": 304558576
+    },
+    {
+      "date": "2001-11",
+      "totalMarketCapMillionYen": 301899874
+    },
+    {
+      "date": "2001-12",
+      "totalMarketCapMillionYen": 296789027
+    },
+    {
+      "date": "2002-01",
+      "totalMarketCapMillionYen": 281272635
+    },
+    {
+      "date": "2002-02",
+      "totalMarketCapMillionYen": 293439127
+    },
+    {
+      "date": "2002-03",
+      "totalMarketCapMillionYen": 305797491
+    },
+    {
+      "date": "2002-04",
+      "totalMarketCapMillionYen": 314963131
+    },
+    {
+      "date": "2002-05",
+      "totalMarketCapMillionYen": 326782530
+    },
+    {
+      "date": "2002-06",
+      "totalMarketCapMillionYen": 299412659
+    },
+    {
+      "date": "2002-07",
+      "totalMarketCapMillionYen": 282242208
+    },
+    {
+      "date": "2002-08",
+      "totalMarketCapMillionYen": 275511416
+    },
+    {
+      "date": "2002-09",
+      "totalMarketCapMillionYen": 267810717
+    },
+    {
+      "date": "2002-10",
+      "totalMarketCapMillionYen": 252475132
+    },
+    {
+      "date": "2002-11",
+      "totalMarketCapMillionYen": 259263809
+    },
+    {
+      "date": "2002-12",
+      "totalMarketCapMillionYen": 247860649
+    },
+    {
+      "date": "2003-01",
+      "totalMarketCapMillionYen": 241832334
+    },
+    {
+      "date": "2003-02",
+      "totalMarketCapMillionYen": 241369769
+    },
+    {
+      "date": "2003-03",
+      "totalMarketCapMillionYen": 232862134
+    },
+    {
+      "date": "2003-04",
+      "totalMarketCapMillionYen": 235776113
+    },
+    {
+      "date": "2003-05",
+      "totalMarketCapMillionYen": 248211647
+    },
+    {
+      "date": "2003-06",
+      "totalMarketCapMillionYen": 267742515
+    },
+    {
+      "date": "2003-07",
+      "totalMarketCapMillionYen": 278636112
+    },
+    {
+      "date": "2003-08",
+      "totalMarketCapMillionYen": 298656003
+    },
+    {
+      "date": "2003-09",
+      "totalMarketCapMillionYen": 304006910
+    },
+    {
+      "date": "2003-10",
+      "totalMarketCapMillionYen": 312916515
+    },
+    {
+      "date": "2003-11",
+      "totalMarketCapMillionYen": 301174562
+    },
+    {
+      "date": "2003-12",
+      "totalMarketCapMillionYen": 316483544
+    },
+    {
+      "date": "2004-01",
+      "totalMarketCapMillionYen": 319302417
+    },
+    {
+      "date": "2004-02",
+      "totalMarketCapMillionYen": 331504683
+    },
+    {
+      "date": "2004-03",
+      "totalMarketCapMillionYen": 363039332
+    },
+    {
+      "date": "2004-04",
+      "totalMarketCapMillionYen": 369797759
+    },
+    {
+      "date": "2004-05",
+      "totalMarketCapMillionYen": 355932163
+    },
+    {
+      "date": "2004-06",
+      "totalMarketCapMillionYen": 373522261
+    },
+    {
+      "date": "2004-07",
+      "totalMarketCapMillionYen": 357315061
+    },
+    {
+      "date": "2004-08",
+      "totalMarketCapMillionYen": 354988827
+    },
+    {
+      "date": "2004-09",
+      "totalMarketCapMillionYen": 345318226
+    },
+    {
+      "date": "2004-10",
+      "totalMarketCapMillionYen": 341386940
+    },
+    {
+      "date": "2004-11",
+      "totalMarketCapMillionYen": 346771858
+    },
+    {
+      "date": "2004-12",
+      "totalMarketCapMillionYen": 364554898
+    },
+    {
+      "date": "2005-01",
+      "totalMarketCapMillionYen": 365149431
+    },
+    {
+      "date": "2005-02",
+      "totalMarketCapMillionYen": 375260173
+    },
+    {
+      "date": "2005-03",
+      "totalMarketCapMillionYen": 377048547
+    },
+    {
+      "date": "2005-04",
+      "totalMarketCapMillionYen": 362794991
+    },
+    {
+      "date": "2005-05",
+      "totalMarketCapMillionYen": 367402852
+    },
+    {
+      "date": "2005-06",
+      "totalMarketCapMillionYen": 378951426
+    },
+    {
+      "date": "2005-07",
+      "totalMarketCapMillionYen": 388617470
+    },
+    {
+      "date": "2005-08",
+      "totalMarketCapMillionYen": 404619778
+    },
+    {
+      "date": "2005-09",
+      "totalMarketCapMillionYen": 448169054
+    },
+    {
+      "date": "2005-10",
+      "totalMarketCapMillionYen": 467468599
+    },
+    {
+      "date": "2005-11",
+      "totalMarketCapMillionYen": 498944451
+    },
+    {
+      "date": "2005-12",
+      "totalMarketCapMillionYen": 539739508
+    },
+    {
+      "date": "2006-01",
+      "totalMarketCapMillionYen": 558419808
+    },
+    {
+      "date": "2006-02",
+      "totalMarketCapMillionYen": 541670370
+    },
+    {
+      "date": "2006-03",
+      "totalMarketCapMillionYen": 563349135
+    },
+    {
+      "date": "2006-04",
+      "totalMarketCapMillionYen": 560692660
+    },
+    {
+      "date": "2006-05",
+      "totalMarketCapMillionYen": 515619459
+    },
+    {
+      "date": "2006-06",
+      "totalMarketCapMillionYen": 517069865
+    },
+    {
+      "date": "2006-07",
+      "totalMarketCapMillionYen": 510203789
+    },
+    {
+      "date": "2006-08",
+      "totalMarketCapMillionYen": 529696161
+    },
+    {
+      "date": "2006-09",
+      "totalMarketCapMillionYen": 522091421
+    },
+    {
+      "date": "2006-10",
+      "totalMarketCapMillionYen": 526823130
+    },
+    {
+      "date": "2006-11",
+      "totalMarketCapMillionYen": 524069493
+    },
+    {
+      "date": "2006-12",
+      "totalMarketCapMillionYen": 549789371
+    },
+    {
+      "date": "2007-01",
+      "totalMarketCapMillionYen": 562710741
+    },
+    {
+      "date": "2007-02",
+      "totalMarketCapMillionYen": 572615158
+    },
+    {
+      "date": "2007-03",
+      "totalMarketCapMillionYen": 559385088
+    },
+    {
+      "date": "2007-04",
+      "totalMarketCapMillionYen": 555860164
+    },
+    {
+      "date": "2007-05",
+      "totalMarketCapMillionYen": 571020733
+    },
+    {
+      "date": "2007-06",
+      "totalMarketCapMillionYen": 578085739
+    },
+    {
+      "date": "2007-07",
+      "totalMarketCapMillionYen": 555070271
+    },
+    {
+      "date": "2007-08",
+      "totalMarketCapMillionYen": 523675170
+    },
+    {
+      "date": "2007-09",
+      "totalMarketCapMillionYen": 525521197
+    },
+    {
+      "date": "2007-10",
+      "totalMarketCapMillionYen": 530974483
+    },
+    {
+      "date": "2007-11",
+      "totalMarketCapMillionYen": 501770113
+    },
+    {
+      "date": "2007-12",
+      "totalMarketCapMillionYen": 483828936
+    },
+    {
+      "date": "2008-01",
+      "totalMarketCapMillionYen": 438701023
+    },
+    {
+      "date": "2008-02",
+      "totalMarketCapMillionYen": 432877613
+    },
+    {
+      "date": "2008-03",
+      "totalMarketCapMillionYen": 396007536
+    },
+    {
+      "date": "2008-04",
+      "totalMarketCapMillionYen": 440057319
+    },
+    {
+      "date": "2008-05",
+      "totalMarketCapMillionYen": 456997450
+    },
+    {
+      "date": "2008-06",
+      "totalMarketCapMillionYen": 429121627
+    },
+    {
+      "date": "2008-07",
+      "totalMarketCapMillionYen": 422099585
+    },
+    {
+      "date": "2008-08",
+      "totalMarketCapMillionYen": 407086504
+    },
+    {
+      "date": "2008-09",
+      "totalMarketCapMillionYen": 352913566
+    },
+    {
+      "date": "2008-10",
+      "totalMarketCapMillionYen": 283681710
+    },
+    {
+      "date": "2008-11",
+      "totalMarketCapMillionYen": 274578326
+    },
+    {
+      "date": "2008-12",
+      "totalMarketCapMillionYen": 283460244
+    },
+    {
+      "date": "2009-01",
+      "totalMarketCapMillionYen": 262480185
+    },
+    {
+      "date": "2009-02",
+      "totalMarketCapMillionYen": 250818060
+    },
+    {
+      "date": "2009-03",
+      "totalMarketCapMillionYen": 255909477
+    },
+    {
+      "date": "2009-04",
+      "totalMarketCapMillionYen": 276396303
+    },
+    {
+      "date": "2009-05",
+      "totalMarketCapMillionYen": 296148474
+    },
+    {
+      "date": "2009-06",
+      "totalMarketCapMillionYen": 309090699
+    },
+    {
+      "date": "2009-07",
+      "totalMarketCapMillionYen": 317052359
+    },
+    {
+      "date": "2009-08",
+      "totalMarketCapMillionYen": 322692580
+    },
+    {
+      "date": "2009-09",
+      "totalMarketCapMillionYen": 305614371
+    },
+    {
+      "date": "2009-10",
+      "totalMarketCapMillionYen": 301912847
+    },
+    {
+      "date": "2009-11",
+      "totalMarketCapMillionYen": 283310832
+    },
+    {
+      "date": "2009-12",
+      "totalMarketCapMillionYen": 307779708
+    },
+    {
+      "date": "2010-01",
+      "totalMarketCapMillionYen": 306664432
+    },
+    {
+      "date": "2010-02",
+      "totalMarketCapMillionYen": 304152978
+    },
+    {
+      "date": "2010-03",
+      "totalMarketCapMillionYen": 330281003
+    },
+    {
+      "date": "2010-04",
+      "totalMarketCapMillionYen": 338046764
+    },
+    {
+      "date": "2010-05",
+      "totalMarketCapMillionYen": 302075638
+    },
+    {
+      "date": "2010-06",
+      "totalMarketCapMillionYen": 290008573
+    },
+    {
+      "date": "2010-07",
+      "totalMarketCapMillionYen": 292797164
+    },
+    {
+      "date": "2010-08",
+      "totalMarketCapMillionYen": 277924644
+    },
+    {
+      "date": "2010-09",
+      "totalMarketCapMillionYen": 286019621
+    },
+    {
+      "date": "2010-10",
+      "totalMarketCapMillionYen": 279431140
+    },
+    {
+      "date": "2010-11",
+      "totalMarketCapMillionYen": 296696043
+    },
+    {
+      "date": "2010-12",
+      "totalMarketCapMillionYen": 310451626
+    },
+    {
+      "date": "2011-01",
+      "totalMarketCapMillionYen": 314738509
+    },
+    {
+      "date": "2011-02",
+      "totalMarketCapMillionYen": 329337040
+    },
+    {
+      "date": "2011-03",
+      "totalMarketCapMillionYen": 301251452
+    },
+    {
+      "date": "2011-04",
+      "totalMarketCapMillionYen": 295530171
+    },
+    {
+      "date": "2011-05",
+      "totalMarketCapMillionYen": 291462769
+    },
+    {
+      "date": "2011-06",
+      "totalMarketCapMillionYen": 295209753
+    },
+    {
+      "date": "2011-07",
+      "totalMarketCapMillionYen": 292638109
+    },
+    {
+      "date": "2011-08",
+      "totalMarketCapMillionYen": 269080261
+    },
+    {
+      "date": "2011-09",
+      "totalMarketCapMillionYen": 266137922
+    },
+    {
+      "date": "2011-10",
+      "totalMarketCapMillionYen": 267304224
+    },
+    {
+      "date": "2011-11",
+      "totalMarketCapMillionYen": 255132192
+    },
+    {
+      "date": "2011-12",
+      "totalMarketCapMillionYen": 255855334
+    },
+    {
+      "date": "2012-01",
+      "totalMarketCapMillionYen": 264501767
+    },
+    {
+      "date": "2012-02",
+      "totalMarketCapMillionYen": 291587318
+    },
+    {
+      "date": "2012-03",
+      "totalMarketCapMillionYen": 298358937
+    },
+    {
+      "date": "2012-04",
+      "totalMarketCapMillionYen": 282140027
+    },
+    {
+      "date": "2012-05",
+      "totalMarketCapMillionYen": 252923111
+    },
+    {
+      "date": "2012-06",
+      "totalMarketCapMillionYen": 270079135
+    },
+    {
+      "date": "2012-07",
+      "totalMarketCapMillionYen": 258928703
+    },
+    {
+      "date": "2012-08",
+      "totalMarketCapMillionYen": 258049814
+    },
+    {
+      "date": "2012-09",
+      "totalMarketCapMillionYen": 260029538
+    },
+    {
+      "date": "2012-10",
+      "totalMarketCapMillionYen": 261802151
+    },
+    {
+      "date": "2012-11",
+      "totalMarketCapMillionYen": 275030754
+    },
+    {
+      "date": "2012-12",
+      "totalMarketCapMillionYen": 300797167
+    },
+    {
+      "date": "2013-01",
+      "totalMarketCapMillionYen": 329746811
+    },
+    {
+      "date": "2013-02",
+      "totalMarketCapMillionYen": 342720597
+    },
+    {
+      "date": "2013-03",
+      "totalMarketCapMillionYen": 365452214
+    },
+    {
+      "date": "2013-04",
+      "totalMarketCapMillionYen": 411391155
+    },
+    {
+      "date": "2013-05",
+      "totalMarketCapMillionYen": 401419441
+    },
+    {
+      "date": "2013-06",
+      "totalMarketCapMillionYen": 399929238
+    },
+    {
+      "date": "2013-07",
+      "totalMarketCapMillionYen": 414898967
+    },
+    {
+      "date": "2013-08",
+      "totalMarketCapMillionYen": 404857684
+    },
+    {
+      "date": "2013-09",
+      "totalMarketCapMillionYen": 437169144
+    },
+    {
+      "date": "2013-10",
+      "totalMarketCapMillionYen": 438128254
+    },
+    {
+      "date": "2013-11",
+      "totalMarketCapMillionYen": 461935323
+    },
+    {
+      "date": "2013-12",
+      "totalMarketCapMillionYen": 477509792
+    },
+    {
+      "date": "2014-01",
+      "totalMarketCapMillionYen": 450861818
+    },
+    {
+      "date": "2014-02",
+      "totalMarketCapMillionYen": 447328836
+    },
+    {
+      "date": "2014-03",
+      "totalMarketCapMillionYen": 444533773
+    },
+    {
+      "date": "2014-04",
+      "totalMarketCapMillionYen": 430572209
+    },
+    {
+      "date": "2014-05",
+      "totalMarketCapMillionYen": 444952046
+    },
+    {
+      "date": "2014-06",
+      "totalMarketCapMillionYen": 468479261
+    },
+    {
+      "date": "2014-07",
+      "totalMarketCapMillionYen": 479048394
+    },
+    {
+      "date": "2014-08",
+      "totalMarketCapMillionYen": 475001048
+    },
+    {
+      "date": "2014-09",
+      "totalMarketCapMillionYen": 491967229
+    },
+    {
+      "date": "2014-10",
+      "totalMarketCapMillionYen": 496459633
+    },
+    {
+      "date": "2014-11",
+      "totalMarketCapMillionYen": 524482294
+    },
+    {
+      "date": "2014-12",
+      "totalMarketCapMillionYen": 524899634
+    },
+    {
+      "date": "2015-01",
+      "totalMarketCapMillionYen": 528879386
+    },
+    {
+      "date": "2015-02",
+      "totalMarketCapMillionYen": 567328148
+    },
+    {
+      "date": "2015-03",
+      "totalMarketCapMillionYen": 575462849
+    },
+    {
+      "date": "2015-04",
+      "totalMarketCapMillionYen": 591899452
+    },
+    {
+      "date": "2015-05",
+      "totalMarketCapMillionYen": 620339967
+    },
+    {
+      "date": "2015-06",
+      "totalMarketCapMillionYen": 607042764
+    },
+    {
+      "date": "2015-07",
+      "totalMarketCapMillionYen": 619100455
+    },
+    {
+      "date": "2015-08",
+      "totalMarketCapMillionYen": 573460247
+    },
+    {
+      "date": "2015-09",
+      "totalMarketCapMillionYen": 527522405
+    },
+    {
+      "date": "2015-10",
+      "totalMarketCapMillionYen": 580989792
+    },
+    {
+      "date": "2015-11",
+      "totalMarketCapMillionYen": 602454986
+    },
+    {
+      "date": "2015-12",
+      "totalMarketCapMillionYen": 589788804
+    },
+    {
+      "date": "2016-01",
+      "totalMarketCapMillionYen": 547753283
+    },
+    {
+      "date": "2016-02",
+      "totalMarketCapMillionYen": 497814291
+    },
+    {
+      "date": "2016-03",
+      "totalMarketCapMillionYen": 517597959
+    },
+    {
+      "date": "2016-04",
+      "totalMarketCapMillionYen": 514431312
+    },
+    {
+      "date": "2016-05",
+      "totalMarketCapMillionYen": 529918536
+    },
+    {
+      "date": "2016-06",
+      "totalMarketCapMillionYen": 480688673
+    },
+    {
+      "date": "2016-07",
+      "totalMarketCapMillionYen": 508621409
+    },
+    {
+      "date": "2016-08",
+      "totalMarketCapMillionYen": 508722053
+    },
+    {
+      "date": "2016-09",
+      "totalMarketCapMillionYen": 507604081
+    },
+    {
+      "date": "2016-10",
+      "totalMarketCapMillionYen": 534367811
+    },
+    {
+      "date": "2016-11",
+      "totalMarketCapMillionYen": 560393050
+    },
+    {
+      "date": "2016-12",
+      "totalMarketCapMillionYen": 579596623
+    },
+    {
+      "date": "2017-01",
+      "totalMarketCapMillionYen": 580817362
+    },
+    {
+      "date": "2017-02",
+      "totalMarketCapMillionYen": 587023424
+    },
+    {
+      "date": "2017-03",
+      "totalMarketCapMillionYen": 580720220
+    },
+    {
+      "date": "2017-04",
+      "totalMarketCapMillionYen": 586797159
+    },
+    {
+      "date": "2017-05",
+      "totalMarketCapMillionYen": 601132623
+    },
+    {
+      "date": "2017-06",
+      "totalMarketCapMillionYen": 616743946
+    },
+    {
+      "date": "2017-07",
+      "totalMarketCapMillionYen": 619505958
+    },
+    {
+      "date": "2017-08",
+      "totalMarketCapMillionYen": 620136873
+    },
+    {
+      "date": "2017-09",
+      "totalMarketCapMillionYen": 643102610
+    },
+    {
+      "date": "2017-10",
+      "totalMarketCapMillionYen": 677305770
+    },
+    {
+      "date": "2017-11",
+      "totalMarketCapMillionYen": 688669408
+    },
+    {
+      "date": "2017-12",
+      "totalMarketCapMillionYen": 700982591
+    },
+    {
+      "date": "2018-01",
+      "totalMarketCapMillionYen": 710360556
+    },
+    {
+      "date": "2018-02",
+      "totalMarketCapMillionYen": 684628303
+    },
+    {
+      "date": "2018-03",
+      "totalMarketCapMillionYen": 665263688
+    },
+    {
+      "date": "2018-04",
+      "totalMarketCapMillionYen": 686834873
+    },
+    {
+      "date": "2018-05",
+      "totalMarketCapMillionYen": 676271884
+    },
+    {
+      "date": "2018-06",
+      "totalMarketCapMillionYen": 670459427
+    },
+    {
+      "date": "2018-07",
+      "totalMarketCapMillionYen": 677585700
+    },
+    {
+      "date": "2018-08",
+      "totalMarketCapMillionYen": 671161017
+    },
+    {
+      "date": "2018-09",
+      "totalMarketCapMillionYen": 701533766
+    },
+    {
+      "date": "2018-10",
+      "totalMarketCapMillionYen": 634805553
+    },
+    {
+      "date": "2018-11",
+      "totalMarketCapMillionYen": 644449272
+    },
+    {
+      "date": "2018-12",
+      "totalMarketCapMillionYen": 582670408
+    },
+    {
+      "date": "2019-01",
+      "totalMarketCapMillionYen": 612196651
+    },
+    {
+      "date": "2019-02",
+      "totalMarketCapMillionYen": 629274522
+    },
+    {
+      "date": "2019-03",
+      "totalMarketCapMillionYen": 621221305
+    },
+    {
+      "date": "2019-04",
+      "totalMarketCapMillionYen": 631540453
+    },
+    {
+      "date": "2019-05",
+      "totalMarketCapMillionYen": 591994306
+    },
+    {
+      "date": "2019-06",
+      "totalMarketCapMillionYen": 605493316
+    },
+    {
+      "date": "2019-07",
+      "totalMarketCapMillionYen": 612219153
+    },
+    {
+      "date": "2019-08",
+      "totalMarketCapMillionYen": 591067551
+    },
+    {
+      "date": "2019-09",
+      "totalMarketCapMillionYen": 619674025
+    },
+    {
+      "date": "2019-10",
+      "totalMarketCapMillionYen": 649569993
+    },
+    {
+      "date": "2019-11",
+      "totalMarketCapMillionYen": 663398581
+    },
+    {
+      "date": "2019-12",
+      "totalMarketCapMillionYen": 672505335
+    },
+    {
+      "date": "2020-01",
+      "totalMarketCapMillionYen": 657108807
+    },
+    {
+      "date": "2020-02",
+      "totalMarketCapMillionYen": 588090333
+    },
+    {
+      "date": "2020-03",
+      "totalMarketCapMillionYen": 548229285
+    },
+    {
+      "date": "2020-04",
+      "totalMarketCapMillionYen": 573668782
+    },
+    {
+      "date": "2020-05",
+      "totalMarketCapMillionYen": 613258353
+    },
+    {
+      "date": "2020-06",
+      "totalMarketCapMillionYen": 611349745
+    },
+    {
+      "date": "2020-07",
+      "totalMarketCapMillionYen": 587916080
+    },
+    {
+      "date": "2020-08",
+      "totalMarketCapMillionYen": 633674921
+    },
+    {
+      "date": "2020-09",
+      "totalMarketCapMillionYen": 640750477
+    },
+    {
+      "date": "2020-10",
+      "totalMarketCapMillionYen": 623533494
+    },
+    {
+      "date": "2020-11",
+      "totalMarketCapMillionYen": 687716767
+    },
+    {
+      "date": "2020-12",
+      "totalMarketCapMillionYen": 693689759
+    },
+    {
+      "date": "2021-01",
+      "totalMarketCapMillionYen": 695137836
+    },
+    {
+      "date": "2021-02",
+      "totalMarketCapMillionYen": 716274053
+    },
+    {
+      "date": "2021-03",
+      "totalMarketCapMillionYen": 748488519
+    },
+    {
+      "date": "2021-04",
+      "totalMarketCapMillionYen": 728390548
+    },
+    {
+      "date": "2021-05",
+      "totalMarketCapMillionYen": 735256745
+    },
+    {
+      "date": "2021-06",
+      "totalMarketCapMillionYen": 742827521
+    },
+    {
+      "date": "2021-07",
+      "totalMarketCapMillionYen": 724176000
+    },
+    {
+      "date": "2021-08",
+      "totalMarketCapMillionYen": 747110453
+    },
+    {
+      "date": "2021-09",
+      "totalMarketCapMillionYen": 771535519
+    },
+    {
+      "date": "2021-10",
+      "totalMarketCapMillionYen": 762003552
+    },
+    {
+      "date": "2021-11",
+      "totalMarketCapMillionYen": 733682110
+    },
+    {
+      "date": "2021-12",
+      "totalMarketCapMillionYen": 753020281
+    },
+    {
+      "date": "2022-01",
+      "totalMarketCapMillionYen": 713506818
+    },
+    {
+      "date": "2022-02",
+      "totalMarketCapMillionYen": 709728949
+    },
+    {
+      "date": "2022-03",
+      "totalMarketCapMillionYen": 730360259
+    },
+    {
+      "date": "2022-04",
+      "totalMarketCapMillionYen": 711631885
+    },
+    {
+      "date": "2022-05",
+      "totalMarketCapMillionYen": 713690824
+    },
+    {
+      "date": "2022-06",
+      "totalMarketCapMillionYen": 700381258
+    },
+    {
+      "date": "2022-07",
+      "totalMarketCapMillionYen": 727393893
+    },
+    {
+      "date": "2022-08",
+      "totalMarketCapMillionYen": 735680930
+    },
+    {
+      "date": "2022-09",
+      "totalMarketCapMillionYen": 688498205
+    },
+    {
+      "date": "2022-10",
+      "totalMarketCapMillionYen": 723918159
+    },
+    {
+      "date": "2022-11",
+      "totalMarketCapMillionYen": 742652987
+    },
+    {
+      "date": "2022-12",
+      "totalMarketCapMillionYen": 705434137
+    },
+    {
+      "date": "2023-01",
+      "totalMarketCapMillionYen": 735037584
+    },
+    {
+      "date": "2023-02",
+      "totalMarketCapMillionYen": 740539291
+    },
+    {
+      "date": "2023-03",
+      "totalMarketCapMillionYen": 743876721
+    },
+    {
+      "date": "2023-04",
+      "totalMarketCapMillionYen": 761280607
+    },
+    {
+      "date": "2023-05",
+      "totalMarketCapMillionYen": 785092665
+    },
+    {
+      "date": "2023-06",
+      "totalMarketCapMillionYen": 843401730
+    },
+    {
+      "date": "2023-07",
+      "totalMarketCapMillionYen": 855621611
+    },
+    {
+      "date": "2023-08",
+      "totalMarketCapMillionYen": 859025536
+    },
+    {
+      "date": "2023-09",
+      "totalMarketCapMillionYen": 854437277
+    },
+    {
+      "date": "2023-10",
+      "totalMarketCapMillionYen": 829241207
+    },
+    {
+      "date": "2023-11",
+      "totalMarketCapMillionYen": 875016394
+    },
+    {
+      "date": "2023-12",
+      "totalMarketCapMillionYen": 867406177
+    },
+    {
+      "date": "2024-01",
+      "totalMarketCapMillionYen": 931229511
+    },
+    {
+      "date": "2024-02",
+      "totalMarketCapMillionYen": 977208019
+    },
+    {
+      "date": "2024-03",
+      "totalMarketCapMillionYen": 1007704962
+    },
+    {
+      "date": "2024-04",
+      "totalMarketCapMillionYen": 990278430
+    },
+    {
+      "date": "2024-05",
+      "totalMarketCapMillionYen": 993843948
+    },
+    {
+      "date": "2024-06",
+      "totalMarketCapMillionYen": 1004837279
+    },
+    {
+      "date": "2024-07",
+      "totalMarketCapMillionYen": 998888948
+    },
+    {
+      "date": "2024-08",
+      "totalMarketCapMillionYen": 973434314
+    },
+    {
+      "date": "2024-09",
+      "totalMarketCapMillionYen": 950237038
+    },
+    {
+      "date": "2024-10",
+      "totalMarketCapMillionYen": 966852551
+    },
+    {
+      "date": "2024-11",
+      "totalMarketCapMillionYen": 958551668
+    },
+    {
+      "date": "2024-12",
+      "totalMarketCapMillionYen": 996267277
+    },
+    {
+      "date": "2025-01",
+      "totalMarketCapMillionYen": 994445930
+    },
+    {
+      "date": "2025-02",
+      "totalMarketCapMillionYen": 957793075
+    },
+    {
+      "date": "2025-03",
+      "totalMarketCapMillionYen": 947316384
+    },
+    {
+      "date": "2025-04",
+      "totalMarketCapMillionYen": 953183830
+    },
+    {
+      "date": "2025-05",
+      "totalMarketCapMillionYen": 996783098
+    },
+    {
+      "date": "2025-06",
+      "totalMarketCapMillionYen": 1012608272
+    },
+    {
+      "date": "2025-07",
+      "totalMarketCapMillionYen": 1042315715
+    },
+    {
+      "date": "2025-08",
+      "totalMarketCapMillionYen": 1088579351
+    },
+    {
+      "date": "2025-09",
+      "totalMarketCapMillionYen": 1101453224
+    },
+    {
+      "date": "2025-10",
+      "totalMarketCapMillionYen": 1168675044
+    },
+    {
+      "date": "2025-11",
+      "totalMarketCapMillionYen": 1182751518
+    },
+    {
+      "date": "2025-12",
+      "totalMarketCapMillionYen": 1192648298
+    },
+    {
+      "date": "2026-01",
+      "totalMarketCapMillionYen": 1246628623
+    },
+    {
+      "date": "2026-02",
+      "totalMarketCapMillionYen": 1372382436
+    },
+    {
+      "date": "2026-03",
+      "totalMarketCapMillionYen": 1213165267
+    },
+    {
+      "date": "2026-04",
+      "totalMarketCapMillionYen": 1293455736
+    },
+    {
+      "date": "2026-05",
+      "totalMarketCapMillionYen": 1376658797
+    },
+    {
+      "date": "2026-06",
+      "totalMarketCapMillionYen": 1384750323
+    },
+    {
+      "date": "2026-07",
+      "totalMarketCapMillionYen": 1362573525
+    }
+  ]
+}
