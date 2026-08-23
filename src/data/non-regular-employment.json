@@ -1,0 +1,140 @@
+[
+  {
+    "year": 2002,
+    "regular": 3489,
+    "nonregular": 1451,
+    "ratio": 29.4
+  },
+  {
+    "year": 2003,
+    "regular": 3444,
+    "nonregular": 1504,
+    "ratio": 30.4
+  },
+  {
+    "year": 2004,
+    "regular": 3410,
+    "nonregular": 1564,
+    "ratio": 31.4
+  },
+  {
+    "year": 2005,
+    "regular": 3374,
+    "nonregular": 1633,
+    "ratio": 32.6
+  },
+  {
+    "year": 2006,
+    "regular": 3411,
+    "nonregular": 1677,
+    "ratio": 33.0
+  },
+  {
+    "year": 2007,
+    "regular": 3441,
+    "nonregular": 1732,
+    "ratio": 33.5
+  },
+  {
+    "year": 2008,
+    "regular": 3399,
+    "nonregular": 1760,
+    "ratio": 34.1
+  },
+  {
+    "year": 2009,
+    "regular": 3380,
+    "nonregular": 1721,
+    "ratio": 33.7
+  },
+  {
+    "year": 2010,
+    "regular": 3355,
+    "nonregular": 1756,
+    "ratio": 34.4
+  },
+  {
+    "year": 2012,
+    "regular": 3340,
+    "nonregular": 1813,
+    "ratio": 35.2
+  },
+  {
+    "year": 2013,
+    "regular": 3294,
+    "nonregular": 1906,
+    "ratio": 36.7
+  },
+  {
+    "year": 2014,
+    "regular": 3278,
+    "nonregular": 1962,
+    "ratio": 37.4
+  },
+  {
+    "year": 2015,
+    "regular": 3304,
+    "nonregular": 1980,
+    "ratio": 37.5
+  },
+  {
+    "year": 2016,
+    "regular": 3355,
+    "nonregular": 2016,
+    "ratio": 37.5
+  },
+  {
+    "year": 2017,
+    "regular": 3423,
+    "nonregular": 2036,
+    "ratio": 37.3
+  },
+  {
+    "year": 2018,
+    "regular": 3476,
+    "nonregular": 2120,
+    "ratio": 37.9
+  },
+  {
+    "year": 2019,
+    "regular": 3494,
+    "nonregular": 2165,
+    "ratio": 38.3
+  },
+  {
+    "year": 2020,
+    "regular": 3529,
+    "nonregular": 2090,
+    "ratio": 37.2
+  },
+  {
+    "year": 2021,
+    "regular": 3555,
+    "nonregular": 2064,
+    "ratio": 36.7
+  },
+  {
+    "year": 2022,
+    "regular": 3588,
+    "nonregular": 2101,
+    "ratio": 36.9
+  },
+  {
+    "year": 2023,
+    "regular": 3606,
+    "nonregular": 2124,
+    "ratio": 37.1
+  },
+  {
+    "year": 2024,
+    "regular": 3645,
+    "nonregular": 2126,
+    "ratio": 36.8
+  },
+  {
+    "year": 2025,
+    "regular": 3700,
+    "nonregular": 2128,
+    "ratio": 36.5
+  }
+]

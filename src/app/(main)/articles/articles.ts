@@ -32,6 +32,29 @@ export type Article = {
 
 export const articles: Article[] = [
   {
+    href: "/articles/gender-wage-gap",
+    publishedAt: "2026-08-24",
+    label: "Wages",
+    title: "男女別賃金および男女間賃金格差の推移",
+    description:
+      "1976年から2024年までの男女間賃金格差（男性=100）の推移を可視化。長期的傾向と2020年推計方法改定の背景を説明します。",
+    tags: ["society", "economy"],
+    sourceUrl:
+      "https://www.mhlw.go.jp/toukei/itiran/roudou/chingin/kouzou/z2024/index.html",
+    sourceLabel: "出典: 厚生労働省「賃金構造基本統計調査」",
+  },
+  {
+    href: "/articles/non-regular-employment",
+    publishedAt: "2026-08-24",
+    label: "Employment",
+    title: "非正規雇用比率の推移",
+    description:
+      "2002年から2025年までの非正規雇用比率の推移を可視化。2000年代からの上昇と2019年（38.3%）をピークとする直近の推移をたどります。",
+    tags: ["society", "economy"],
+    sourceUrl: "https://www.e-stat.go.jp/dbview?sid=0003006608",
+    sourceLabel: "出典: 総務省統計局「労働力調査 詳細集計」",
+  },
+  {
     href: "/articles/wage-nominal-real",
     publishedAt: "2026-08-24",
     label: "Wages",
