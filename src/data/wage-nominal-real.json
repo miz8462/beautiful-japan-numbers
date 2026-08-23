@@ -1,0 +1,182 @@
+[
+  {
+    "year": 1990,
+    "nominal": 100.3,
+    "real": 111.8
+  },
+  {
+    "year": 1991,
+    "nominal": 104.8,
+    "real": 113.1
+  },
+  {
+    "year": 1992,
+    "nominal": 106.9,
+    "real": 113.5
+  },
+  {
+    "year": 1993,
+    "nominal": 107.1,
+    "real": 112.4
+  },
+  {
+    "year": 1994,
+    "nominal": 108.7,
+    "real": 113.6
+  },
+  {
+    "year": 1995,
+    "nominal": 109.9,
+    "real": 115.1
+  },
+  {
+    "year": 1996,
+    "nominal": 111.1,
+    "real": 116.5
+  },
+  {
+    "year": 1997,
+    "nominal": 112.9,
+    "real": 116.4
+  },
+  {
+    "year": 1998,
+    "nominal": 111.4,
+    "real": 114.1
+  },
+  {
+    "year": 1999,
+    "nominal": 109.7,
+    "real": 112.7
+  },
+  {
+    "year": 2000,
+    "nominal": 109.8,
+    "real": 113.9
+  },
+  {
+    "year": 2001,
+    "nominal": 108.1,
+    "real": 113.2
+  },
+  {
+    "year": 2002,
+    "nominal": 104.9,
+    "real": 111.0
+  },
+  {
+    "year": 2003,
+    "nominal": 104.1,
+    "real": 110.5
+  },
+  {
+    "year": 2004,
+    "nominal": 103.6,
+    "real": 110.0
+  },
+  {
+    "year": 2005,
+    "nominal": 104.3,
+    "real": 111.2
+  },
+  {
+    "year": 2006,
+    "nominal": 104.5,
+    "real": 111.1
+  },
+  {
+    "year": 2007,
+    "nominal": 103.5,
+    "real": 109.9
+  },
+  {
+    "year": 2008,
+    "nominal": 103.3,
+    "real": 107.9
+  },
+  {
+    "year": 2009,
+    "nominal": 99.3,
+    "real": 105.3
+  },
+  {
+    "year": 2010,
+    "nominal": 99.9,
+    "real": 106.8
+  },
+  {
+    "year": 2011,
+    "nominal": 99.7,
+    "real": 106.9
+  },
+  {
+    "year": 2012,
+    "nominal": 98.8,
+    "real": 105.9
+  },
+  {
+    "year": 2013,
+    "nominal": 98.5,
+    "real": 105.1
+  },
+  {
+    "year": 2014,
+    "nominal": 99.0,
+    "real": 102.3
+  },
+  {
+    "year": 2015,
+    "nominal": 99.1,
+    "real": 101.3
+  },
+  {
+    "year": 2016,
+    "nominal": 99.7,
+    "real": 102.0
+  },
+  {
+    "year": 2017,
+    "nominal": 100.2,
+    "real": 101.9
+  },
+  {
+    "year": 2018,
+    "nominal": 101.6,
+    "real": 102.1
+  },
+  {
+    "year": 2019,
+    "nominal": 101.2,
+    "real": 101.2
+  },
+  {
+    "year": 2020,
+    "nominal": 100.0,
+    "real": 100.0
+  },
+  {
+    "year": 2021,
+    "nominal": 100.3,
+    "real": 100.6
+  },
+  {
+    "year": 2022,
+    "nominal": 102.3,
+    "real": 99.6
+  },
+  {
+    "year": 2023,
+    "nominal": 103.5,
+    "real": 97.1
+  },
+  {
+    "year": 2024,
+    "nominal": 109.2,
+    "real": 99.3
+  },
+  {
+    "year": 2025,
+    "nominal": 111.7,
+    "real": 98.0
+  }
+]

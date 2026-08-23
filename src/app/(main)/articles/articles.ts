@@ -32,6 +32,18 @@ export type Article = {
 
 export const articles: Article[] = [
   {
+    href: "/articles/wage-nominal-real",
+    publishedAt: "2026-08-24",
+    label: "Wages",
+    title: "名目vs実質賃金の推移",
+    description:
+      "1990年から2025年までの名目賃金指数と実質賃金指数の36年間の推移を比較し、名目賃金の上昇と物価変動を踏まえた実質賃金の変化を可視化します。",
+    tags: ["economy"],
+    sourceUrl:
+      "https://www.e-stat.go.jp/stat-search/files?toukei=00450071&tstat=000001011791",
+    sourceLabel: "出典: 厚生労働省「毎月勤労統計調査」",
+  },
+  {
     href: "/articles/japan-economic-history",
     publishedAt: "2026-08-14",
     label: "Economic History",

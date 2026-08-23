@@ -1,0 +1,1 @@
+export { NominalRealWageChart } from "./NominalRealWageChart";
