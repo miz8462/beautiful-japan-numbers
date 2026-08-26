@@ -1,0 +1,251 @@
+[
+  {
+    "year": 2010,
+    "ageGroups": [
+      {
+        "ageGroup": "15～19歳",
+        "regular": null,
+        "nonregular": 35,
+        "regularRatio": null
+      },
+      {
+        "ageGroup": "20～24歳",
+        "regular": null,
+        "nonregular": 88,
+        "regularRatio": null
+      },
+      {
+        "ageGroup": "25～29歳",
+        "regular": null,
+        "nonregular": 92,
+        "regularRatio": null
+      },
+      {
+        "ageGroup": "30～34歳",
+        "regular": null,
+        "nonregular": 117,
+        "regularRatio": null
+      },
+      {
+        "ageGroup": "35～39歳",
+        "regular": null,
+        "nonregular": 138,
+        "regularRatio": null
+      },
+      {
+        "ageGroup": "40～44歳",
+        "regular": null,
+        "nonregular": 153,
+        "regularRatio": null
+      },
+      {
+        "ageGroup": "45～49歳",
+        "regular": null,
+        "nonregular": 146,
+        "regularRatio": null
+      },
+      {
+        "ageGroup": "50～54歳",
+        "regular": null,
+        "nonregular": 135,
+        "regularRatio": null
+      },
+      {
+        "ageGroup": "55～59歳",
+        "regular": null,
+        "nonregular": 129,
+        "regularRatio": null
+      },
+      {
+        "ageGroup": "60～64歳",
+        "regular": null,
+        "nonregular": 116,
+        "regularRatio": null
+      },
+      {
+        "ageGroup": "65～69歳",
+        "regular": null,
+        "nonregular": 49,
+        "regularRatio": null
+      },
+      {
+        "ageGroup": "70～74歳",
+        "regular": null,
+        "nonregular": 15,
+        "regularRatio": null
+      },
+      {
+        "ageGroup": "75歳以上",
+        "regular": null,
+        "nonregular": 5,
+        "regularRatio": null
+      }
+    ]
+  },
+  {
+    "year": 2020,
+    "ageGroups": [
+      {
+        "ageGroup": "15～19歳",
+        "regular": 9,
+        "nonregular": 49,
+        "regularRatio": 15.5
+      },
+      {
+        "ageGroup": "20～24歳",
+        "regular": 123,
+        "nonregular": 91,
+        "regularRatio": 57.5
+      },
+      {
+        "ageGroup": "25～29歳",
+        "regular": 164,
+        "nonregular": 70,
+        "regularRatio": 70.1
+      },
+      {
+        "ageGroup": "30～34歳",
+        "regular": 148,
+        "nonregular": 93,
+        "regularRatio": 61.4
+      },
+      {
+        "ageGroup": "35～39歳",
+        "regular": 131,
+        "nonregular": 117,
+        "regularRatio": 52.8
+      },
+      {
+        "ageGroup": "40～44歳",
+        "regular": 146,
+        "nonregular": 156,
+        "regularRatio": 48.3
+      },
+      {
+        "ageGroup": "45～49歳",
+        "regular": 155,
+        "nonregular": 193,
+        "regularRatio": 44.5
+      },
+      {
+        "ageGroup": "50～54歳",
+        "regular": 129,
+        "nonregular": 177,
+        "regularRatio": 42.2
+      },
+      {
+        "ageGroup": "55～59歳",
+        "regular": 97,
+        "nonregular": 147,
+        "regularRatio": 39.8
+      },
+      {
+        "ageGroup": "60～64歳",
+        "regular": 49,
+        "nonregular": 144,
+        "regularRatio": 25.4
+      },
+      {
+        "ageGroup": "65～69歳",
+        "regular": 21,
+        "nonregular": 108,
+        "regularRatio": 16.3
+      },
+      {
+        "ageGroup": "70～74歳",
+        "regular": 13,
+        "nonregular": 59,
+        "regularRatio": 18.1
+      },
+      {
+        "ageGroup": "75歳以上",
+        "regular": 6,
+        "nonregular": 21,
+        "regularRatio": 22.2
+      }
+    ]
+  },
+  {
+    "year": 2025,
+    "ageGroups": [
+      {
+        "ageGroup": "15～19歳",
+        "regular": 7,
+        "nonregular": 61,
+        "regularRatio": 10.3
+      },
+      {
+        "ageGroup": "20～24歳",
+        "regular": 121,
+        "nonregular": 94,
+        "regularRatio": 56.3
+      },
+      {
+        "ageGroup": "25～29歳",
+        "regular": 189,
+        "nonregular": 66,
+        "regularRatio": 74.1
+      },
+      {
+        "ageGroup": "30～34歳",
+        "regular": 179,
+        "nonregular": 82,
+        "regularRatio": 68.6
+      },
+      {
+        "ageGroup": "35～39歳",
+        "regular": 142,
+        "nonregular": 100,
+        "regularRatio": 58.7
+      },
+      {
+        "ageGroup": "40～44歳",
+        "regular": 148,
+        "nonregular": 136,
+        "regularRatio": 52.1
+      },
+      {
+        "ageGroup": "45～49歳",
+        "regular": 153,
+        "nonregular": 163,
+        "regularRatio": 48.4
+      },
+      {
+        "ageGroup": "50～54歳",
+        "regular": 168,
+        "nonregular": 191,
+        "regularRatio": 46.8
+      },
+      {
+        "ageGroup": "55～59歳",
+        "regular": 126,
+        "nonregular": 159,
+        "regularRatio": 44.2
+      },
+      {
+        "ageGroup": "60～64歳",
+        "regular": 62,
+        "nonregular": 169,
+        "regularRatio": 26.8
+      },
+      {
+        "ageGroup": "65～69歳",
+        "regular": 23,
+        "nonregular": 117,
+        "regularRatio": 16.4
+      },
+      {
+        "ageGroup": "70～74歳",
+        "regular": 12,
+        "nonregular": 70,
+        "regularRatio": 14.6
+      },
+      {
+        "ageGroup": "75歳以上",
+        "regular": 10,
+        "nonregular": 42,
+        "regularRatio": 19.2
+      }
+    ]
+  }
+]

@@ -1,0 +1,173 @@
+[
+  {
+    "year": 2010,
+    "ageGroups": [
+      {
+        "ageGroup": "15～19歳",
+        "employmentRate": 14.6
+      },
+      {
+        "ageGroup": "20～24歳",
+        "employmentRate": 63.6
+      },
+      {
+        "ageGroup": "25～29歳",
+        "employmentRate": 72.7
+      },
+      {
+        "ageGroup": "30～34歳",
+        "employmentRate": 64.1
+      },
+      {
+        "ageGroup": "35～39歳",
+        "employmentRate": 62.6
+      },
+      {
+        "ageGroup": "40～44歳",
+        "employmentRate": 68.3
+      },
+      {
+        "ageGroup": "45～49歳",
+        "employmentRate": 72.7
+      },
+      {
+        "ageGroup": "50～54歳",
+        "employmentRate": 70.2
+      },
+      {
+        "ageGroup": "55～59歳",
+        "employmentRate": 61.2
+      },
+      {
+        "ageGroup": "60～64歳",
+        "employmentRate": 44.2
+      },
+      {
+        "ageGroup": "65～69歳",
+        "employmentRate": 26.9
+      },
+      {
+        "ageGroup": "70～74歳",
+        "employmentRate": 16.0
+      },
+      {
+        "ageGroup": "75歳以上",
+        "employmentRate": 5.1
+      }
+    ]
+  },
+  {
+    "year": 2020,
+    "ageGroups": [
+      {
+        "ageGroup": "15～19歳",
+        "employmentRate": 19.6
+      },
+      {
+        "ageGroup": "20～24歳",
+        "employmentRate": 72.2
+      },
+      {
+        "ageGroup": "25～29歳",
+        "employmentRate": 82.6
+      },
+      {
+        "ageGroup": "30～34歳",
+        "employmentRate": 75.3
+      },
+      {
+        "ageGroup": "35～39歳",
+        "employmentRate": 74.3
+      },
+      {
+        "ageGroup": "40～44歳",
+        "employmentRate": 77.8
+      },
+      {
+        "ageGroup": "45～49歳",
+        "employmentRate": 79.2
+      },
+      {
+        "ageGroup": "50～54歳",
+        "employmentRate": 78.1
+      },
+      {
+        "ageGroup": "55～59歳",
+        "employmentRate": 72.8
+      },
+      {
+        "ageGroup": "60～64歳",
+        "employmentRate": 59.7
+      },
+      {
+        "ageGroup": "65～69歳",
+        "employmentRate": 39.9
+      },
+      {
+        "ageGroup": "70～74歳",
+        "employmentRate": 24.7
+      },
+      {
+        "ageGroup": "75歳以上",
+        "employmentRate": 6.8
+      }
+    ]
+  },
+  {
+    "year": 2025,
+    "ageGroups": [
+      {
+        "ageGroup": "15～19歳",
+        "employmentRate": 23.2
+      },
+      {
+        "ageGroup": "20～24歳",
+        "employmentRate": 75.1
+      },
+      {
+        "ageGroup": "25～29歳",
+        "employmentRate": 87.4
+      },
+      {
+        "ageGroup": "30～34歳",
+        "employmentRate": 84.0
+      },
+      {
+        "ageGroup": "35～39歳",
+        "employmentRate": 80.6
+      },
+      {
+        "ageGroup": "40～44歳",
+        "employmentRate": 82.7
+      },
+      {
+        "ageGroup": "45～49歳",
+        "employmentRate": 83.3
+      },
+      {
+        "ageGroup": "50～54歳",
+        "employmentRate": 80.6
+      },
+      {
+        "ageGroup": "55～59歳",
+        "employmentRate": 76.9
+      },
+      {
+        "ageGroup": "60～64歳",
+        "employmentRate": 65.8
+      },
+      {
+        "ageGroup": "65～69歳",
+        "employmentRate": 46.1
+      },
+      {
+        "ageGroup": "70～74歳",
+        "employmentRate": 28.8
+      },
+      {
+        "ageGroup": "75歳以上",
+        "employmentRate": 8.8
+      }
+    ]
+  }
+]

@@ -1,0 +1,132 @@
+[
+    {
+        "year": 2009,
+        "fiscal_year_label": "平成21年度",
+        "kacho_ijo": 6.3,
+        "kakaricho_ijo": 8.0,
+        "yakuin": 13.6,
+        "bucho": 3.1,
+        "kacho": 5.0,
+        "kakaricho": 11.1
+    },
+    {
+        "year": 2011,
+        "fiscal_year_label": "平成23年度",
+        "kacho_ijo": 6.8,
+        "kakaricho_ijo": 8.7,
+        "yakuin": 13.9,
+        "bucho": 4.5,
+        "kacho": 5.5,
+        "kakaricho": 11.9
+    },
+    {
+        "year": 2013,
+        "fiscal_year_label": "平成25年度",
+        "kacho_ijo": 6.6,
+        "kakaricho_ijo": 9.0,
+        "yakuin": 13.1,
+        "bucho": 3.6,
+        "kacho": 6.0,
+        "kakaricho": 12.7
+    },
+    {
+        "year": 2015,
+        "fiscal_year_label": "平成27年度",
+        "kacho_ijo": 7.8,
+        "kakaricho_ijo": 10.2,
+        "yakuin": 16.0,
+        "bucho": 4.3,
+        "kacho": 7.0,
+        "kakaricho": 13.9
+    },
+    {
+        "year": 2016,
+        "fiscal_year_label": "平成28年度",
+        "kacho_ijo": 8.7,
+        "kakaricho_ijo": 10.4,
+        "yakuin": 15.7,
+        "bucho": 5.4,
+        "kacho": 7.9,
+        "kakaricho": 13.8
+    },
+    {
+        "year": 2017,
+        "fiscal_year_label": "平成29年度",
+        "kacho_ijo": 8.9,
+        "kakaricho_ijo": 11.1,
+        "yakuin": 16.0,
+        "bucho": 5.4,
+        "kacho": 8.6,
+        "kakaricho": 14.5
+    },
+    {
+        "year": 2018,
+        "fiscal_year_label": "平成30年度",
+        "kacho_ijo": 8.7,
+        "kakaricho_ijo": 11.4,
+        "yakuin": 15.4,
+        "bucho": 5.1,
+        "kacho": 8.4,
+        "kakaricho": 15.9
+    },
+    {
+        "year": 2019,
+        "fiscal_year_label": "令和元年度",
+        "kacho_ijo": 9.5,
+        "kakaricho_ijo": 12.2,
+        "yakuin": 13.6,
+        "bucho": 5.5,
+        "kacho": 10.3,
+        "kakaricho": 16.6
+    },
+    {
+        "year": 2020,
+        "fiscal_year_label": "令和2年度",
+        "kacho_ijo": 9.7,
+        "kakaricho_ijo": 12.9,
+        "yakuin": 14.6,
+        "bucho": 6.2,
+        "kacho": 10.1,
+        "kakaricho": 17.9
+    },
+    {
+        "year": 2021,
+        "fiscal_year_label": "令和3年度",
+        "kacho_ijo": 9.5,
+        "kakaricho_ijo": 12.8,
+        "yakuin": 16.1,
+        "bucho": 6.1,
+        "kacho": 9.5,
+        "kakaricho": 18.3
+    },
+    {
+        "year": 2022,
+        "fiscal_year_label": "令和4年度",
+        "kacho_ijo": 10.0,
+        "kakaricho_ijo": 12.9,
+        "yakuin": 15.0,
+        "bucho": 6.1,
+        "kacho": 10.5,
+        "kakaricho": 17.8
+    },
+    {
+        "year": 2023,
+        "fiscal_year_label": "令和5年度",
+        "kacho_ijo": 10.4,
+        "kakaricho_ijo": 13.6,
+        "yakuin": 14.0,
+        "bucho": 6.4,
+        "kacho": 11.3,
+        "kakaricho": 18.8
+    },
+    {
+        "year": 2024,
+        "fiscal_year_label": "令和6年度",
+        "kacho_ijo": 10.8,
+        "kakaricho_ijo": 14.3,
+        "yakuin": 16.5,
+        "bucho": 7.1,
+        "kacho": 11.2,
+        "kakaricho": 20.2
+    }
+]

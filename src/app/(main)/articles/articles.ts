@@ -35,9 +35,9 @@ export const articles: Article[] = [
     href: "/articles/gender-wage-gap",
     publishedAt: "2026-08-24",
     label: "Wages",
-    title: "男女別賃金および男女間賃金格差の推移",
+    title: "  ",
     description:
-      "1976年から2024年までの男女間賃金格差（男性=100）の推移を可視化。長期的傾向と2020年推計方法改定の背景を説明します。",
+      "賃金格差、女性管理職比率、年齢階級別の就業率と正規雇用比率をデータで比較。女性の就業機会が広がる一方、賃金やキャリアにはどのような変化と課題が残っているのかを読み解きます。",
     tags: ["society", "economy"],
     sourceUrl:
       "https://www.mhlw.go.jp/toukei/itiran/roudou/chingin/kouzou/z2024/index.html",

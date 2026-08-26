@@ -16,8 +16,44 @@ const GenderWageGapChart = dynamic(
   { ssr: false }
 );
 
-const SOURCE_LABEL = "賃金構造基本統計調査 結果の概況 付表1（厚生労働省）";
-const SOURCE_URL = "https://www.mhlw.go.jp/toukei/itiran/roudou/chingin/kouzou/z2024/index.html";
+const FemaleManagerRatioChart = dynamic(
+  () =>
+    import(
+      "./chart/FemaleManagerRatioChart/FemaleManagerRatioChart"
+    ).then((mod) => mod.FemaleManagerRatioChart),
+  { ssr: false }
+);
+
+const FemaleEmploymentMCurveChart = dynamic(
+  () =>
+    import(
+      "./chart/FemaleEmploymentMCurveChart/FemaleEmploymentMCurveChart"
+    ).then((mod) => mod.FemaleEmploymentMCurveChart),
+  { ssr: false }
+);
+
+const FemaleMLCurveComparisonChart = dynamic(
+  () =>
+    import(
+      "./chart/FemaleMLCurveComparisonChart/FemaleMLCurveComparisonChart"
+    ).then((mod) => mod.FemaleMLCurveComparisonChart),
+  { ssr: false }
+);
+
+const WAGE_GAP_SOURCE_LABEL = "賃金構造基本統計調査 結果の概況 付表1（厚生労働省）";
+const WAGE_GAP_SOURCE_URL = "https://www.mhlw.go.jp/toukei/itiran/roudou/chingin/kouzou/z2024/index.html";
+
+const MANAGER_RATIO_SOURCE_LABEL = "雇用均等基本調査（厚生労働省）";
+const MANAGER_RATIO_SOURCE_URL = "https://www.mhlw.go.jp/toukei/list/71-r6.html";
+
+const M_CURVE_SOURCE_LABEL = "労働力調査 基本集計（総務省統計局）";
+const M_CURVE_SOURCE_URL = "https://www.e-stat.go.jp/dbview?sid=0002060049";
+
+const L_CURVE_SOURCE_LABEL = "労働力調査 詳細集計（総務省統計局）";
+const L_CURVE_SOURCE_URL = "https://www.e-stat.go.jp/dbview?sid=0003006608";
+
+const ML_COMPARISON_SOURCE_LABEL = "労働力調査 基本集計・詳細集計（総務省統計局）";
+const ML_COMPARISON_SOURCE_URL = "https://www.e-stat.go.jp/dbview?sid=0002060049";
 
 export default function Page() {
   const article = articles.find(
@@ -71,8 +107,8 @@ export default function Page() {
         <ArticleChart
           title="男女間賃金格差の推移"
           yearRange="（1976〜2024年）"
-          source={SOURCE_LABEL}
-          sourceUrl={SOURCE_URL}
+          source={WAGE_GAP_SOURCE_LABEL}
+          sourceUrl={WAGE_GAP_SOURCE_URL}
           note="※2020年（令和2年）調査より、調査対象や推計方法の改定が行われています（令和元年データにおいて新旧基準比較の接続処理が実施されています）。"
         >
           <GenderWageGapChart />
@@ -92,6 +128,76 @@ export default function Page() {
           </small>
         </p>
       </ArticleText>
+
+      <ArticleText>
+        <h2>女性管理職比率の推移と構造的要因</h2>
+        <p>
+          男女間の賃金格差を生み出す主要な構造的要因の一つとして、企業内における「<strong>役職登用や昇進の男女差</strong>」が指摘されています。勤続年数の差や配置・キャリア形成の違いが役職者比率の差につながり、それが平均賃金全体の開きへと波及する相互関係が存在します。
+        </p>
+        <p>
+          厚生労働省の「雇用均等基本調査」によると、2009年度から2024年度にかけて「課長相当職以上」および「係長相当職以上」の女性割合は緩やかな上昇傾向をたどっています。
+        </p>
+      </ArticleText>
+
+      <div className={styles.charts}>
+        <ArticleChart
+          title="役職別・女性管理職等割合の推移"
+          yearRange="（2009〜2024年度）"
+          source={MANAGER_RATIO_SOURCE_LABEL}
+          sourceUrl={MANAGER_RATIO_SOURCE_URL}
+          note="※企業規模30人以上の事業所を対象とした調査。一部年次（2010・2012・2014年度等）は調査が実施されていないか非公表のため、グラフ上では計測データ点を直線で接続しています。"
+        >
+          <FemaleManagerRatioChart />
+        </ArticleChart>
+      </div>
+
+      <ArticleText>
+        <p>
+          2024年度時点では、係長相当職以上の女性割合が20.2%に達する一方で、課長相当職以上は10.8%、部長相当職は7.1%にとどまっており、上位の役職ほど女性割合が低い傾向が見られます。
+        </p>
+        <p>
+          管理職比率の向上は、将来的な賃金格差の縮小に向けた重要指標の一つとして位置づけられており、ワークライフバランスの推進やキャリア形成支援、評価・登用制度の見直しなど、多角的な取り組みが継続されています。
+        </p>
+      </ArticleText>
+
+      <ArticleText>
+        <h2>女性の年齢階級別就業率（M字カーブの経年変化）</h2>
+        <p>
+          2010年、2020年、2025年の年齢階級別就業率を比較すると、30代の就業率が大幅に上昇し、M字の「谷」が急速に浅くなっている（台形に近づいている）ことが確認できます。育児休業制度の定着や保育インフラの拡充、共働き世帯の増加などを背景に、ライフイベント期においても就業を継続する女性が増加しています。
+        </p>
+      </ArticleText>
+
+      <div className={styles.charts}>
+        <ArticleChart
+          title="女性の年齢階級別就業率の推移（M字カーブ）"
+          yearRange="（2010・2020・2025年）"
+          source={M_CURVE_SOURCE_LABEL}
+          sourceUrl={M_CURVE_SOURCE_URL}
+        >
+          <FemaleEmploymentMCurveChart />
+        </ArticleChart>
+      </div>
+
+        <ArticleText>
+        <h2>就業率（M字）と正規雇用比率（L字）の構造的ギャップ</h2>
+        <p>
+          近年、女性の就業率におけるM字カーブの「谷」は浅くなり、30代を中心とする労働参加が進んでいます。しかし、同じ年齢階級で「正規雇用比率」のカーブを重ね合わせると、大きなギャップが見えてきます。
+        </p>
+        <p>
+          就業率が高い30代以降の年代であっても、正規雇用比率は20代後半のピーク（74.1%）から年齢が上がるにつれて右肩下がりに低下していきます。つまり、就労している女性の割合自体は高まっているものの、その多くが非正規雇用での就業であることを示しており、「働く女性が増えているが、正規雇用としてのキャリア連続性は必ずしも保たれていない」という構造的な課題を浮き彫りにしています。
+        </p>
+      </ArticleText>
+
+      <div className={styles.charts}>
+        <ArticleChart
+          title="女性の年齢階級別 就業率と正規雇用比率の比較"
+          yearRange="（2025年）"
+          source={ML_COMPARISON_SOURCE_LABEL}
+          sourceUrl={ML_COMPARISON_SOURCE_URL}
+        >
+          <FemaleMLCurveComparisonChart />
+        </ArticleChart>
+      </div>
     </div>
   );
 }
