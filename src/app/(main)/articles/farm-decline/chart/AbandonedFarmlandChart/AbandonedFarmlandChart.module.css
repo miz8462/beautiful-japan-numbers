@@ -1,0 +1,54 @@
+.wrapper {
+  position: relative;
+}
+
+.unitNote {
+  font-size: 14px;
+  color: var(--color-text-muted);
+  font-family: "Roboto Mono", "SFMono-Regular", Consolas, monospace;
+  display: block;
+  margin-bottom: 4px;
+}
+
+.discontinuedNote {
+  margin-top: 8px;
+  font-size: 13px;
+  line-height: 1.6;
+  color: var(--color-text-muted);
+}
+
+.tooltip {
+  background: var(--color-background-section);
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  padding: 10px 14px;
+  font-size: 13px;
+  line-height: 1.6;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.tooltipYear {
+  font-weight: 700;
+  display: block;
+  margin-bottom: 6px;
+  color: var(--color-text-primary);
+}
+
+.tooltipRow {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--color-text-secondary);
+}
+
+.tooltipDot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  display: inline-block;
+  flex-shrink: 0;
+}
+
+.tooltipValue {
+  color: var(--color-text-primary);
+}

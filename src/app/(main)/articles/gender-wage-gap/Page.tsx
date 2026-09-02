@@ -67,8 +67,9 @@ export default function Page() {
 
       <KPISection title="男女間賃金格差の変化（1976〜2024年）">
         <KPIPrimary
-          value="1976年比 +16.2ポイント改善"
-          caption="1976年の58.8から2024年の75.0へと格差が縮小（男性=100）"
+          label="賃金格差の改善（男性=100）"
+          value="+16.2 pt"
+          caption="1976年の58.8から2024年の75.0へと格差が縮小"
         />
         <KPIGrid>
           <KPICard

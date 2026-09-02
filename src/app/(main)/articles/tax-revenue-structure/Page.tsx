@@ -15,7 +15,11 @@ export default function TaxRevenueStructurePage() {
       <ArticleHeader article={article} />
 
       <KPISection title="税収の内訳と主要税目（2024年度）">
-        <KPIPrimary value="消費税収 25.0兆円" caption="2024年度は消費税収25.0兆円が税目最大" />
+        <KPIPrimary
+          label="消費税収（税目別最大）"
+          value="25.0兆円"
+          caption="2024年度一般会計税収 75.2兆円のうち約33%を占める"
+        />
         <KPIGrid>
           <KPICard label="所得税" value="21.2兆円" />
           <KPICard label="法人税" value="17.9兆円" />

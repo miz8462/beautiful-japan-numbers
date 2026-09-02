@@ -14,8 +14,9 @@ export default function InterestRateHistoryPage() {
 
       <KPISection title="金利のある世界への回帰">
         <KPIPrimary
-          value="政策金利 0.98%"
-          caption="2026年現在の政策金利（無担保コール翌日物レート目標値付近）"
+          label="政策金利（無担保コール翌日物）"
+          value="0.98%"
+          caption="2026年現在の政策金利目標値付近"
         />
         <KPIGrid>
           <KPICard

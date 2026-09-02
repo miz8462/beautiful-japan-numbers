@@ -1,0 +1,1 @@
+export { AgeCompositionChart } from "./AgeCompositionChart";

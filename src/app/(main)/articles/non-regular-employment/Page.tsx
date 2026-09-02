@@ -31,8 +31,9 @@ export default function NonRegularEmploymentPage() {
 
       <KPISection title="非正規雇用比率の変化（2002〜2025年）">
         <KPIPrimary
-          value="2002年比 +7.1ポイント"
-          caption="2002年の29.4%から2025年の36.5%への上昇"
+          label="2002年比の上昇幅"
+          value="+7.1 pt"
+          caption="2002年の29.4%から2025年の36.5%へと拡大"
         />
         <KPIGrid>
           <KPICard

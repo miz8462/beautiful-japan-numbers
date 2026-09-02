@@ -1,0 +1,1 @@
+export { AbandonedFarmlandChart } from "./AbandonedFarmlandChart";

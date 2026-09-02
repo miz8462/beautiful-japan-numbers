@@ -32,8 +32,9 @@ export default function WageNominalRealPage() {
 
       <KPISection title="賃金指数の変化（1990年比 / 令和2年平均=100）">
         <KPIPrimary
-          value="名目賃金指数 +11.4%"
-          caption="1990年（100.3）から2025年（111.7）への伸び率"
+          label="名目賃金指数の伸び（1990→2025年）"
+          value="+11.4%"
+          caption="1990年（100.3）から2025年（111.7）への上昇率"
         />
         <KPIGrid>
           <KPICard

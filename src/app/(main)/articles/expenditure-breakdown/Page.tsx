@@ -16,8 +16,9 @@ export default function ExpenditureBreakdownPage() {
 
       <KPISection title="社会保障関係費のインパクト（1967年度 vs 2024年度）">
         <KPIPrimary
-          value="社会保障関係費 35.8兆円"
-          caption="2024年度予算案（または当初計画）における主要経費最大の支出額"
+          label="社会保障関係費（2024年度）"
+          value="35.8兆円"
+          caption="当初予算における主要経費最大の支出額（歳出全体の29.1%）"
         />
         <KPIGrid>
           <KPICard label="1967年度の規模" value="0.73兆円" caption="歳出全体の 14.3%" />

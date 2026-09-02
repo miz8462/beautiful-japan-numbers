@@ -1,0 +1,122 @@
+{
+  "ageComposition": [
+    {
+      "year": 1995,
+      "under30": 1.6,
+      "age30to59": 40.0,
+      "age60plus": 58.4,
+      "basis": "販売農家"
+    },
+    {
+      "year": 2005,
+      "under30": 1.7,
+      "age30to59": 28.4,
+      "age60plus": 69.9,
+      "basis": "販売農家"
+    },
+    {
+      "year": 2015,
+      "under30": 1.4,
+      "age30to59": 19.9,
+      "age60plus": 78.7,
+      "basis": "個人経営体"
+    },
+    {
+      "year": 2025,
+      "under30": 1.2,
+      "age30to59": 20.9,
+      "age60plus": 77.8,
+      "basis": "個人経営体"
+    }
+  ],
+  "abandonedFarmland": [
+    {
+      "year": 1975,
+      "hectares": 131422
+    },
+    {
+      "year": 1980,
+      "hectares": 123078
+    },
+    {
+      "year": 1985,
+      "hectares": 134870
+    },
+    {
+      "year": 1990,
+      "hectares": 216785
+    },
+    {
+      "year": 1995,
+      "hectares": 244314
+    },
+    {
+      "year": 2000,
+      "hectares": 342789
+    },
+    {
+      "year": 2005,
+      "hectares": 385791
+    },
+    {
+      "year": 2010,
+      "hectares": 395981
+    },
+    {
+      "year": 2015,
+      "hectares": 423064
+    }
+  ],
+  "kpi": {
+    "year": 2025,
+    "salesFarmHouseholds": 792808,
+    "declineFromPrevious5Years": 0.229,
+    "coreFarmWorkers": 1036000,
+    "coreFarmWorkersDeclineFromPrevious5Years": 0.24,
+    "averageAge": 67.7
+  },
+  "notes": [
+    "総農家数チャートは販売農家(自給目的でなく実際に農業を営む世帯)のみを対象とし、1985年(新定義)〜2025年の系列で構成。自給的農家を含む「総農家数」概念は1955〜1980年しか単独の系列がなく、1985年以降との接続に難があるため使用しない",
+    "年齢構成は1995・2005年が販売農家ベース、2015・2025年が個人経営体ベース。2015年時点で両ベースの値がほぼ一致(175.4万人 vs 175.7万人)するため接続しても断絶なし",
+    "耕作放棄地は2020年農林業センサスから調査項目自体が廃止(荒廃農地という別の客観調査に切り替え)。データは2015年までしか存在しない"
+  ],
+  "salesFarmHouseholds": [
+    {
+      "year": 1985,
+      "households": 3314931,
+      "note": "新定義(昭和60年)"
+    },
+    {
+      "year": 1990,
+      "households": 2970527
+    },
+    {
+      "year": 1995,
+      "households": 2651403
+    },
+    {
+      "year": 2000,
+      "households": 2336909
+    },
+    {
+      "year": 2005,
+      "households": 1963424
+    },
+    {
+      "year": 2010,
+      "households": 1631206
+    },
+    {
+      "year": 2015,
+      "households": 1329591
+    },
+    {
+      "year": 2020,
+      "households": 1027892
+    },
+    {
+      "year": 2025,
+      "households": 792808
+    }
+  ]
+}

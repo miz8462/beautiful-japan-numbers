@@ -15,7 +15,11 @@ export default function JapanEconomicHistoryPage() {
       <ArticleHeader article={article} />
 
       <KPISection title="日本経済の主要指標（2026年現在）">
-        <KPIPrimary value="株式時価総額 約1250兆円" caption="バブル期ピーク（1989年12月）は約611兆円" />
+        <KPIPrimary
+          label="株式時価総額"
+          value="約1,250兆円"
+          caption="バブル期ピーク（1989年12月：約611兆円）の約2倍に達する水準"
+        />
         <KPIGrid>
           <KPICard label={<>地価変動率<br />（三大都市圏・2026）</>} value="+3.5%" />
           <KPICard label={<>バブル期地価上昇ピーク<br />（三大都市圏・1988年）</>} value="+43.8%" />

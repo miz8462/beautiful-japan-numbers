@@ -1,6 +1,5 @@
 import { getAllSlugs, getArticleBySlug } from "@/app/(main)/articles/articles";
 import { ArticleShell } from "@/components/layout/ArticleShell";
-import { PageLayout } from "@/components/layout/Page";
 import { notFound } from "next/navigation";
 
 type Props = { params: Promise<{ slug: string }> }
@@ -32,10 +31,8 @@ export default async function ArticlePage({ params }: Props) {
   }
 
   return (
-    <PageLayout>
-      <ArticleShell title={article.title}>
-        <PageComponent />
-      </ArticleShell>
-    </PageLayout>
+    <ArticleShell title={article.title}>
+      <PageComponent />
+    </ArticleShell>
   );
 }

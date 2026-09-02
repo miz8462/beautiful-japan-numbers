@@ -12,7 +12,11 @@ export default function DietMembersPage() {
       <div className="container">
         <ArticleHeader article={article} />
         <KPISection title="女性比率と当選率・年齢構成（最新・2026年衆院選）">
-          <KPIPrimary value="14.6%" caption="女性当選者の割合" />
+          <KPIPrimary
+            label="女性当選者の割合"
+            value="14.6%"
+            caption="2026年衆院選における全当選者に占める比率"
+          />
           <KPIGrid>
             <KPICard label="女性候補者の割合" value="24.4%" />
             <KPICard label="女性候補者の当選率" value="21.7%" />

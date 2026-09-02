@@ -1,0 +1,23 @@
+{
+  "source": "農林水産省「食料需給表」",
+  "sourceUrl": "https://www.maff.go.jp/j/zyukyu/zikyu_ritu/012.html",
+  "year": 2025,
+  "note": "2025年度(令和7年度)概算値、重量ベース",
+  "items": [
+    { "name": "鶏卵", "value": 96 },
+    { "name": "米", "value": 95 },
+    { "name": "きのこ類", "value": 88 },
+    { "name": "野菜", "value": 77 },
+    { "name": "いも類", "value": 68 },
+    { "name": "海藻類", "value": 66 },
+    { "name": "牛乳・乳製品", "value": 65 },
+    { "name": "肉類(鯨肉を除く)", "value": 53 },
+    { "name": "魚介類", "value": 53 },
+    { "name": "果実", "value": 38 },
+    { "name": "砂糖類", "value": 32 },
+    { "name": "小麦", "value": 16 },
+    { "name": "油脂類", "value": 14 },
+    { "name": "大麦・はだか麦", "value": 12 },
+    { "name": "豆類", "value": 8 }
+  ]
+}

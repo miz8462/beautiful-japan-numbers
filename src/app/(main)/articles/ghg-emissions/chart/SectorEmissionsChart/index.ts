@@ -1,0 +1,1 @@
+export { SectorEmissionsChart } from "./SectorEmissionsChart";

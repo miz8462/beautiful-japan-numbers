@@ -1,0 +1,1 @@
+export { EmissionsTrendChart } from "./EmissionsTrendChart";

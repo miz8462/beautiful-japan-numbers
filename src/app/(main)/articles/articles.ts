@@ -32,10 +32,54 @@ export type Article = {
 
 export const articles: Article[] = [
   {
+    href: "/articles/pollution-improvement",
+    publishedAt: "2026-09-02",
+    label: "polution",
+    title: "大気・水質汚染の改善推移",
+    description:
+      "公害の時代から現在まで、大気汚染・水質汚染の環境基準達成率がどう改善してきたかをデータで見る。",
+    tags: ["environment"],
+    sourceUrl: "https://www.env.go.jp/doc/toukei.html",
+    sourceLabel: "環境省「環境統計集」",
+  },
+  {
+    href: "/articles/ghg-emissions",
+    publishedAt: "2026-09-02",
+    label: "Greenhouse Gas",
+    title: "温室効果ガス排出量の推移",
+    description:
+      "日本の温室効果ガス排出量が1990年度以降どう変化してきたかを、総量・ガス種別・部門別・一人当たりの切り口で可視化。ピークからの削減動向と構造的変化を読み解きます。",
+    tags: ["environment", "society"],
+    sourceUrl: "https://www.nies.go.jp/gio/archive/ghgdata/index.html",
+    sourceLabel: "国立環境研究所（温室効果ガスインベントリオフィス）",
+  },
+  {
+    href: "/articles/farm-decline",
+    publishedAt: "2026-08-28",
+    label: "Agriculture",
+    title: "農家数・耕作放棄地の推移",
+    description:
+      "農家数の長期的な減少と基幹的農業従事者の高齢化、それに伴う耕作放棄地の増加を農林業センサスのデータで可視化。日本農業が直面する構造的な課題を読み解きます。",
+    tags: ["society", "economy"],
+    sourceUrl: "https://www.maff.go.jp/j/tokei/kouhyou/noucen/index.html",
+    sourceLabel: "農林水産省「農林業センサス」",
+  },
+  {
+    href: "/articles/food-self-sufficiency",
+    publishedAt: "2026-08-28",
+    label: "Food Security",
+    title: "食料自給率の推移",
+    description:
+      "1965年度から2025年度までのカロリーベース・生産額ベースの食料自給率の推移と、品目別の自給率の違いを可視化。食生活の変化と自給率の動向を読み解きます。",
+    tags: ["society", "economy"],
+    sourceUrl: "https://www.maff.go.jp/j/zyukyu/zikyu_ritu/012.html",
+    sourceLabel: "農林水産省",
+  },
+  {
     href: "/articles/gender-wage-gap",
     publishedAt: "2026-08-24",
     label: "Wages",
-    title: "  ",
+    title: "日本の女性は働きやすくなったのか",
     description:
       "賃金格差、女性管理職比率、年齢階級別の就業率と正規雇用比率をデータで比較。女性の就業機会が広がる一方、賃金やキャリアにはどのような変化と課題が残っているのかを読み解きます。",
     tags: ["society", "economy"],
