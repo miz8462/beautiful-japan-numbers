@@ -8,7 +8,7 @@
   font-size: 0.8rem;
   color: var(--color-text-secondary, #666666);
   margin-bottom: 0.5rem;
-  text-align: right;
+  text-align: left;
 }
 
 .tooltip {

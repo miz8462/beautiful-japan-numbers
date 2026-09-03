@@ -7,7 +7,7 @@
   display: block;
   font-size: 0.8rem;
   color: var(--color-text-muted, #888888);
-  text-align: right;
+  text-align: left;
   margin-bottom: 0.5rem;
 }
 

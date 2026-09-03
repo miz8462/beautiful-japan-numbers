@@ -71,13 +71,13 @@
 
 .tooltipPercent {
   min-width: 46px;
-  text-align: right;
+  text-align: left;
   font-variant-numeric: tabular-nums;
 }
 
 .tooltipAmount {
   min-width: 95px;
-  text-align: right;
+  text-align: left;
   font-variant-numeric: tabular-nums;
 }
 

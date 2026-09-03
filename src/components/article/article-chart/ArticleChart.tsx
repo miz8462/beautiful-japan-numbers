@@ -3,6 +3,7 @@ import styles from "./ArticleChart.module.css";
 
 type ArticleChartProps = {
   title: ReactNode;
+  subtitle?: ReactNode;
   yearRange?: ReactNode;
   source?: string;
   sourceUrl?: string;
@@ -23,12 +24,13 @@ type ArticleChartCanvasProps = {
   mobileHeight?: number;
 };
 
-export function ArticleChart({ title, yearRange, source, sourceUrl, intro, unitNote, note, children }: ArticleChartProps) {
+export function ArticleChart({ title, subtitle, yearRange, source, sourceUrl, intro, unitNote, note, children }: ArticleChartProps) {
   return (
     <section className={styles.section}>
       <div className={styles.card}>
         <div className={styles.header}>
           <h2 className={styles.heading}>{title}</h2>
+          {subtitle && <p className={styles.subtitle}>{subtitle}</p>}
           {yearRange && <p className={styles.yearRange}>{yearRange}</p>}
         </div>
         {intro && <div className={styles.intro}>{intro}</div>}

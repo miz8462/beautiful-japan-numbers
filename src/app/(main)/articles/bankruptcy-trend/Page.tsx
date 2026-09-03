@@ -3,7 +3,6 @@
 import { articles } from "@/app/(main)/articles/articles";
 import { ArticleChart } from "@/components/article/article-chart";
 import { ArticleHeader } from "@/components/article/article-header/ArticleHeader";
-import { ArticleSource } from "@/components/article/article-source/ArticleSource";
 import { ArticleText } from "@/components/article/article-text/ArticleText";
 import dynamic from "next/dynamic";
 import styles from "./page.module.css";

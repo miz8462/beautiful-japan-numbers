@@ -1,6 +1,8 @@
 .wrapper {
   position: relative;
+
   width: 100%;
+
 }
 
 .unitNote {
@@ -12,7 +14,7 @@
 }
 
 .tooltip {
-  background: rgba(255, 255, 255, 0.96);
+  background: rgba(255, 255, 255,  .9 );
   border: 1px solid var(--color-border, #e0e0e0);
   padding: 8px 12px;
   border-radius: 6px;
@@ -23,11 +25,17 @@
 
 .tooltipYear {
   font-weight: bold;
-  color: var(--color-text-primary, #222222);
+  color: var(--color-text-primary);
   margin-bottom: 6px;
   padding-bottom: 4px;
   border-bottom: 1px solid var(--color-border, #e5e7eb);
   display: block;
+}
+
+.tooltipRows {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
 }
 
 .tooltipRow {
@@ -38,9 +46,9 @@
 }
 
 .tooltipDot {
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
+  width:  ​8px;
+  height:  ​8px;
+  border-radius:  50;
   display: inline-block;
   flex-shrink: 0;
 }
@@ -48,4 +56,10 @@
 .tooltipValue {
   font-weight: 600;
   margin-left: auto;
+}
+
+.tooltipTotal {
+  margin-top:  ​4px;
+  padding-top:  ​4px;
+  border-top:  ​1px solid var(--color-border, #e5e7eb);
 }

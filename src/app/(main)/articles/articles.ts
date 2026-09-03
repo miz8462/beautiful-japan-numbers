@@ -32,6 +32,17 @@ export type Article = {
 
 export const articles: Article[] = [
   {
+    href: "/articles/social-security-spending",
+    publishedAt: "2026-09-03",
+    label: "Social Security",
+    title: "135.5兆円のゆくえ：数字でたどる年金・医療・福祉の膨張",
+    description:
+      "1990年度の51.4兆円から135.5兆円へと約2.6倍に拡大した日本の社会保障給付費。年金・医療・福祉の推移をデータで紐解きます。",
+    tags: ["society", "economy"],
+    sourceUrl: "https://www.mhlw.go.jp/",
+    sourceLabel: "厚生労働省「社会保障費用統計」",
+  },
+  {
     href: "/articles/renewable-energy-mix",
     publishedAt: "2026-09-03",
     label: "Power Mix & Renewables",

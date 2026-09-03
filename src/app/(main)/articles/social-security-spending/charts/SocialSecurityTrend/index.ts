@@ -1,0 +1,1 @@
+export { SocialSecurityTrend } from "./SocialSecurityTrend";

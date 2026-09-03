@@ -1,0 +1,23 @@
+{
+  "kpi": {
+    "totalBenefit": "135.5兆円",
+    "pensionShare": "41.6%",
+    "medicalShare": "33.6%",
+    "welfareShare": "24.8%"
+  },
+  "trend": [
+    { "year": "1990", "pension": 25.1, "medical": 19.6, "welfare": 6.7, "total": 51.4 },
+    { "year": "1995", "pension": 33.3, "medical": 23.8, "welfare": 10.1, "total": 67.2 },
+    { "year": "2000", "pension": 41.2, "medical": 26.0, "welfare": 11.2, "total": 78.4 },
+    { "year": "2005", "pension": 45.7, "medical": 27.9, "welfare": 15.0, "total": 88.6 },
+    { "year": "2010", "pension": 52.3, "medical": 32.2, "welfare": 20.9, "total": 105.4 },
+    { "year": "2015", "pension": 54.3, "medical": 36.3, "welfare": 24.6, "total": 115.2 },
+    { "year": "2020", "pension": 55.7, "medical": 38.3, "welfare": 38.2, "total": 132.2 },
+    { "year": "2023", "pension": 56.4, "medical": 45.5, "welfare": 33.6, "total": 135.5 }
+  ],
+  "composition2023": [
+    { "id": "年金", "label": "年金給付", "value": 56.4, "percentage": 41.6 },
+    { "id": "医療", "label": "医療給付", "value": 45.5, "percentage": 33.6 },
+    { "id": "福祉・その他", "label": "福祉・介護・その他", "value": 33.6, "percentage": 24.8 }
+  ]
+}

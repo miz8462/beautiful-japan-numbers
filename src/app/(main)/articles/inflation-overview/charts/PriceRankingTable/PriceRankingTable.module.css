@@ -60,7 +60,7 @@
   color: var(--color-text-muted);
   font-size: 12px;
   font-weight: 700;
-  text-align: right;
+  text-align: left;
   white-space: nowrap;
 }
 
@@ -100,7 +100,7 @@
 
 .rank {
   color: var(--color-text-muted);
-  text-align: right;
+  text-align: left;
   white-space: nowrap;
 }
 
@@ -116,7 +116,7 @@
 .value {
   color: var(--color-text-primary);
   font-variant-numeric: tabular-nums;
-  text-align: right;
+  text-align: left;
   white-space: nowrap;
 }
 
