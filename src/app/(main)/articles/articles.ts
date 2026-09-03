@@ -32,6 +32,16 @@ export type Article = {
 
 export const articles: Article[] = [
   {
+    href: "/articles/renewable-energy-mix",
+    publishedAt: "2026-09-03",
+    label: "Power Mix & Renewables",
+    title: "電源構成・再生可能エネルギーの比率推移",
+    description: "1952年度から現在までの電源構成の変化と、再生可能エネルギーの急拡大を追う",
+    tags: ["environment", "economy"],
+    sourceUrl: "https://www.enecho.meti.go.jp/about/whitepaper/",
+    sourceLabel: "資源エネルギー庁「エネルギー白書」「エネルギー需給実績」",
+  },
+  {
     href: "/articles/pollution-improvement",
     publishedAt: "2026-09-02",
     label: "polution",
