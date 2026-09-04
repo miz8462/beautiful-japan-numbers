@@ -1,0 +1,60 @@
+.wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.unitNote {
+  display: block;
+  font-size: 0.8rem;
+  color: var(--color-text-muted, #888888);
+  text-align: left;
+  margin-bottom: 0.5rem;
+}
+
+.tooltip {
+  background: rgba(255, 255, 255, 0.95);
+  border: 1px solid var(--color-border, #e0e0e0);
+  padding: 10px 14px;
+  border-radius: 6px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+  font-size: 0.85rem;
+  line-height: 1.5;
+  color: var(--color-text-primary, #222222);
+}
+
+.tooltipYear {
+  font-weight: 700;
+  color: var(--color-text-primary, #222222);
+  margin-bottom: 6px;
+  padding-bottom: 4px;
+  border-bottom: 1px solid var(--color-border, #e0e0e0);
+  display: block;
+  font-family: var(--font-data, monospace);
+}
+
+.tooltipRows {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.tooltipRow {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  white-space: nowrap;
+}
+
+.tooltipDot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  display: inline-block;
+  flex-shrink: 0;
+}
+
+.tooltipValue {
+  font-weight: 700;
+  margin-left: auto;
+  font-family: var(--font-data, monospace);
+}

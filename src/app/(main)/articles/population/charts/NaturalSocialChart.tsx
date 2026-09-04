@@ -15,14 +15,14 @@ const data = [
 
 export default function NaturalSocialChart() {
   return (
-    <ArticleChartCanvas height={260} mobileHeight={240}>
+    <ArticleChartCanvas height={280} mobileHeight={240}>
       <ResponsiveBar
         data={data}
         keys={["社会増", "自然減"]}
         indexBy="year"
-        margin={{ top: 10, right: 20, bottom: 40, left: 56 }}
+        margin={{ top: 16, right: 20, bottom: 40, left: 56 }}
         groupMode="stacked"
-        valueScale={{ type: "linear", min: -100, max: 40 }}
+        valueScale={{ type: "linear", min: -100, max: 40, nice: false }}
         axisBottom={{
           tickSize: 0,
           tickPadding: 10,
@@ -39,31 +39,38 @@ export default function NaturalSocialChart() {
           {
             axis: "y",
             value: 0,
-            lineStyle: { stroke: "#AAAAAA", strokeWidth: 1 },
+            lineStyle: { stroke: "var(--color-border, #e0e0e0)", strokeWidth: 1.5 },
           },
         ]}
-        colors={["#2E9E6E", "#F06449"]}
+        colors={["var(--color-brand, #5bbee4)", "var(--color-accent, #c0392b)"]}
         borderRadius={2}
         enableLabel={false}
         enableGridX={false}
         theme={{
           background: "transparent",
-          grid: { line: { stroke: "#E0E0E0", strokeWidth: 1 } },
-          axis: { ticks: { text: { fontSize: 11, fill: "#888888" } } },
+          text: {
+            fontFamily: "var(--font-data, monospace)",
+            fontSize: 11,
+            fill: "var(--color-text-muted, #888888)",
+          },
+          grid: { line: { stroke: "var(--color-border, #e0e0e0)", strokeWidth: 1 } },
+          axis: {
+            domain: { line: { stroke: "transparent" } },
+            ticks: { line: { stroke: "transparent" }, text: { fill: "var(--color-text-muted, #888888)", fontSize: 11 } },
+          },
         }}
         tooltip={({ id, value, indexValue }) => (
           <div style={{
             background: "#FFFFFF",
-            border: "1px solid #E0E0E0",
-            padding: "6px 10px",
+            border: "1px solid var(--color-border, #e0e0e0)",
+            padding: "8px 12px",
             fontSize: 12,
-            color: "#1A1A1A",
-            lineHeight: 1.6,
-            whiteSpace: "nowrap",
-
+            color: "var(--color-text-primary, #222222)",
+            borderRadius: 4,
+            boxShadow: "0 4px 12px rgba(0,0,0,0.08)",
           }}>
-            {indexValue}年<br />
-            {id}：{value}万人
+            <strong>{indexValue}年</strong><br />
+            {id}：<strong>{value}万人</strong>
           </div>
         )}
         layers={[
@@ -75,7 +82,7 @@ export default function NaturalSocialChart() {
             const lastYear = "2023";
             const targets = bars.filter((bar) => bar.data.indexValue === lastYear);
             return (
-              <>
+              <g>
                 {targets.map((bar) => (
                   <text
                     key={bar.key}
@@ -84,13 +91,14 @@ export default function NaturalSocialChart() {
                     textAnchor="middle"
                     dominantBaseline="central"
                     fontWeight={700}
-                    fontSize={14}
+                    fontSize={12}
                     fill="#FFFFFF"
+                    fontFamily="var(--font-body)"
                   >
                     {String(bar.data.id)}
                   </text>
                 ))}
-              </>
+              </g>
             );
           },
         ]}

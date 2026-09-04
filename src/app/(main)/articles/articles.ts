@@ -32,6 +32,16 @@ export type Article = {
 
 export const articles: Article[] = [
   {
+    href: "/articles/social-security-balance",
+    publishedAt: "2026-09-04",
+    label: "Social Security",
+    title: "社会保障の「給付」と「負担」：30年間の推移と144兆円の内訳",
+    description: "1990年度から2026年度までの社会保障給付費と負担（保険料・公費）の変遷を検証。膨らむ給付費と財源バランスの現実をデータで示します。",
+    tags: ["society", "economy"],
+    sourceUrl: "https://www.mhlw.go.jp/stf/newpage_21509.html",
+    sourceLabel: "厚生労働省",
+  },
+  {
     href: "/articles/social-security-spending",
     publishedAt: "2026-09-03",
     label: "Social Security",

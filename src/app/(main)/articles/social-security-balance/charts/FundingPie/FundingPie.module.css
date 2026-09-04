@@ -1,0 +1,88 @@
+.wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.unitNote {
+  display: block;
+  font-size: 0.8rem;
+  color: var(--color-text-muted, #888888);
+  text-align: left;
+  margin-bottom: 0.75rem;
+}
+
+.legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem 1.5rem;
+  margin-bottom: 1.25rem;
+}
+
+.legendItem {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.85rem;
+  color: var(--color-text-secondary, #555555);
+}
+
+.legendDot {
+  width: 10px;
+  height: 10px;
+  border-radius: 2px;
+  flex-shrink: 0;
+}
+
+.cardGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin-top: 1.25rem;
+}
+
+@media (max-width: 640px) {
+  .cardGrid {
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+  }
+}
+
+.card {
+  padding: 1rem;
+  border-radius: var(--radius-md, 10px);
+  background: var(--color-background-section, #f7f7f3);
+  border: 1px solid var(--color-border, #e0e0e0);
+  border-left-width: 4px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.cardLabel {
+  font-size: 0.85rem;
+  color: var(--color-text-secondary, #555555);
+  font-weight: 500;
+}
+
+.cardValue {
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: var(--color-text-primary, #222222);
+  font-family: var(--font-data, monospace);
+}
+
+.cardMeta {
+  font-size: 0.8rem;
+  color: var(--color-text-muted, #888888);
+  font-family: var(--font-data, monospace);
+}
+
+.tooltip {
+  background: rgba(255, 255, 255, 0.95);
+  border: 1px solid var(--color-border, #e0e0e0);
+  padding: 8px 12px;
+  border-radius: 6px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  font-size: 0.85rem;
+  color: var(--color-text-primary, #222222);
+}

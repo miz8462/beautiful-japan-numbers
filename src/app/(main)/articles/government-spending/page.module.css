@@ -1,37 +1,14 @@
-.visualization {
-  display: grid;
-  gap: 16px;
-}
-
-.statHeadline {
-  font-size: 22px;
-  font-weight: 700;
-  line-height: 1.5;
-  letter-spacing: 0;
+.charts {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  margin: 2rem 0;
 }
 
 .chartBand {
-  margin-inline: calc(var(--page-padding) * -1);
-  border: 1px solid var(--color-border);
-  border-radius: 4px;
+  border: 1px solid var(--color-border, #e0e0e0);
+  border-radius: var(--radius-md, 10px);
   overflow: hidden;
   background: #1b1b1b;
-}
-
-.sourceNote {
-  color: var(--color-text-muted);
-  font-size: 12px;
-  line-height: 1.6;
-}
-
-.sourceNote a {
-  color: var(--color-text-secondary);
-  text-decoration: underline;
-  text-underline-offset: 3px;
-}
-
-@media (max-width: 767px) {
-  .statHeadline {
-    font-size: 18px;
-  }
+  width: 100%;
 }
