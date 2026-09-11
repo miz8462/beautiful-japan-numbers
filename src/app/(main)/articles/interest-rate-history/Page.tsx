@@ -1,8 +1,12 @@
 import { articles } from "@/app/(main)/articles/articles";
 import { ArticleHeader } from "@/components/article/article-header/ArticleHeader";
+import { ArticleSource } from "@/components/article/article-source/ArticleSource";
 import { ArticleText } from "@/components/article/article-text/ArticleText";
 import { KPICard, KPIGrid, KPIPrimary, KPISection } from "@/components/kpi";
 import InterestRateCharts from "./InterestRateCharts";
+
+const SOURCE_LABEL = "出典: 日本銀行 / 財務省 / 住宅金融支援機構 / ゆうちょ銀行";
+const SOURCE_URL = "https://www.boj.or.jp/";
 
 export default function InterestRateHistoryPage() {
   const article = articles.find((a) => a.href === "/articles/interest-rate-history");
@@ -12,7 +16,7 @@ export default function InterestRateHistoryPage() {
     <div className="container">
       <ArticleHeader article={article} />
 
-      <KPISection title="金利のある世界への回帰">
+      <KPISection title="金利のある世界への回帰（主要指標）">
         <KPIPrimary
           label="政策金利（無担保コール翌日物）"
           value="0.98%"
@@ -62,6 +66,8 @@ export default function InterestRateHistoryPage() {
           この変化をただ恐れるのではなく、データを通じて金利の歴史的な位置づけを把握し、新しい経済環境へ適応していくことが求められています。
         </p>
       </ArticleText>
+
+      <ArticleSource href={article.sourceUrl || SOURCE_URL} label={article.sourceLabel || SOURCE_LABEL} />
     </div>
   );
 }

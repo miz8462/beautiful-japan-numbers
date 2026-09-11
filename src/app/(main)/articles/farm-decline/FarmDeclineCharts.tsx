@@ -38,7 +38,7 @@ export default function FarmDeclineCharts() {
       <div className={styles.charts}>
         <ArticleChart
           title="販売農家数の推移"
-          yearRange="（1985〜2025年）"
+          subtitle="1985年〜2025年（単位: 万戸）"
           source={SOURCE_LABEL}
           sourceUrl={SOURCE_URL}
         >
@@ -58,7 +58,7 @@ export default function FarmDeclineCharts() {
       <div className={styles.charts}>
         <ArticleChart
           title="基幹的農業従事者の年齢構成の変化"
-          yearRange="（1995〜2025年、10年ごと）"
+          subtitle="1995年〜2025年（10年ごと、単位: %）"
           source={SOURCE_LABEL}
           sourceUrl={SOURCE_URL}
         >
@@ -79,9 +79,10 @@ export default function FarmDeclineCharts() {
       <div className={styles.charts}>
         <ArticleChart
           title="耕作放棄地面積の推移"
-          yearRange="（1975〜2015年）"
+          subtitle="1975年〜2015年（単位: 万ha）"
           source={SOURCE_LABEL}
           sourceUrl={SOURCE_URL}
+          note="※2020年センサス以降は耕作放棄地調査が廃止され荒廃農地調査等へ移行。"
         >
           <AbandonedFarmlandChart />
         </ArticleChart>

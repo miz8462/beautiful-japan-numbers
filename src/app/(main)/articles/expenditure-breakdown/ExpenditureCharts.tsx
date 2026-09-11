@@ -31,7 +31,7 @@ export default function ExpenditureCharts({ sourceLabel, sourceUrl }: Props) {
       <div className={styles.chartSection}>
         <ArticleChart
           title="主要経費別歳出の推移"
-          yearRange="（1967〜2024年度）"
+          subtitle="1967年度〜2024年度（単位: 兆円）"
           source={sourceLabel}
           sourceUrl={sourceUrl}
         >
@@ -42,6 +42,7 @@ export default function ExpenditureCharts({ sourceLabel, sourceUrl }: Props) {
       <div className={styles.chartSection}>
         <ArticleChart
           title="社会保障関係費の歳出全体に占める割合の推移"
+          subtitle="1967年度〜2024年度（単位: %）"
           source={sourceLabel}
           sourceUrl={sourceUrl}
         >

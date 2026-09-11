@@ -20,7 +20,7 @@ export default function TaxRevenueCharts() {
     <div className={styles.charts}>
       <ArticleChart
         title="一般会計税収の税目別内訳の推移"
-        yearRange="（1979〜2024年度）"
+        subtitle="1979年度〜2024年度（単位: 兆円）"
         source={SOURCE_LABEL}
         sourceUrl={SOURCE_URL}
       >

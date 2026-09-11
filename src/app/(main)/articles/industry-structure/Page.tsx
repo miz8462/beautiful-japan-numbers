@@ -1,79 +1,104 @@
-"use client";
-
 import { articles } from "@/app/(main)/articles/articles";
 import { ArticleChart } from "@/components/article/article-chart";
 import { ArticleHeader } from "@/components/article/article-header/ArticleHeader";
+import { ArticleSource } from "@/components/article/article-source/ArticleSource";
 import { ArticleText } from "@/components/article/article-text/ArticleText";
-import dynamic from "next/dynamic";
+import {
+  KPICard,
+  KPIGrid,
+  KPIPrimary,
+  KPISection,
+} from "@/components/kpi";
+import { IndustryStructureDetailChart } from "./charts/IndustryStructureDetailChart/IndustryStructureDetailChart";
+import { IndustryStructureLongChart } from "./charts/IndustryStructureLongChart/IndustryStructureLongChart";
 import styles from "./page.module.css";
 
-const IndustryStructureLongChart = dynamic(
-  () => import("./charts/IndustryStructureLongChart/IndustryStructureLongChart").then(
-    (mod) => mod.IndustryStructureLongChart
-  ),
-  { ssr: false }
-);
-
-const IndustryStructureDetailChart = dynamic(
-  () => import("./charts/IndustryStructureDetailChart/IndustryStructureDetailChart").then(
-    (mod) => mod.IndustryStructureDetailChart
-  ),
-  { ssr: false }
-);
-
 export default function IndustryStructurePage() {
-  const article = articles.find((a) => a.href === "/articles/industry-structure");
+  const article = articles.find(
+    (a) => a.href === "/articles/industry-structure"
+  );
   if (!article) return null;
 
   return (
     <div className="container">
       <ArticleHeader article={article} />
 
-      <ArticleText>
-        日本のGDP（国内総生産）のうち、モノを作る製造業などの「工業」と、サービスを提供する「サービス業」、どちらの規模が大きいと思いますか？
-        戦後の高度経済成長期を経て、私たちの生活や社会が豊かになるにつれ、経済の主役はモノづくりからサービスや情報の提供へとシフトしてきました。
-        この「サービス経済化」と呼ばれる産業構造の歴史的な変化を、半世紀にわたるデータからひも解いてみましょう。
-      </ArticleText>
+      <KPISection title="産業構造のサービス経済化（主要指標）">
+        <KPIPrimary
+          label="2023年の第3次産業（サービス等）比率"
+          value="71.1%"
+          caption="1970年（50.9%）から+20.2ポイント拡大"
+        />
+        <KPIGrid>
+          <KPICard
+            label="第2次産業（製造業・建設業等）"
+            value="28.1%"
+            caption="1970年（43.1%）から縮小"
+          />
+          <KPICard
+            label="第1次産業（農林水産業）"
+            value="0.9%"
+            caption="1970年（6.0%）から減少"
+          />
+          <KPICard
+            label="医療・福祉のシェア拡大"
+            value="+3.9pt"
+            caption="1994年 4.0% → 2023年 7.9%"
+          />
+          <KPICard
+            label="製造業のシェア変化"
+            value="-2.9pt"
+            caption="1994年 23.6% → 2023年 20.7%"
+          />
+        </KPIGrid>
+      </KPISection>
 
-      <div className={styles.charts}>
+      <div className={styles.content}>
+        <ArticleText>
+          <p>
+            日本のGDP（国内総生産）のうち、モノを作る製造業などの「工業」と、サービスを提供する「サービス業」、どちらの規模が大きいでしょうか。
+            戦後の高度経済成長期を経て、社会が成熟するにつれて経済の主役はモノづくりからサービスや情報の提供へとシフトしてきました。
+          </p>
+          <p>
+            高度経済成長期の1970年時点では、製造業や建設業などの第2次産業が全体の43.1%を占めていましたが、2023年には28.1%まで低下しました。一方で、情報通信や医療・福祉・専門サービス等を含む第3次産業は50.9%から71.1%へと拡大し、日本経済の7割以上を占めるようになっています。
+          </p>
+        </ArticleText>
+
         <ArticleChart
-          title="産業別構成比の推移"
-          yearRange="（1970〜2023）"
-          unitNote="単位：名目GDPに占める構成比（%）"
-          note="※1994年を境に、内閣府国民経済計算の算出基準が「1990年基準・68SNA（1970〜1993年）」から「2015年基準・2008SNA（1994〜2023年）」へと移行しています。1994年前後の境界では、産業分類改定の影響により、第2次産業の比率が見かけ上約2%前後変化する段差が含まれます。"
+          title="産業別構成比の推移（3大産業）"
+          subtitle="1970年〜2023年（名目GDPに占める構成比、単位: %）"
+          source="内閣府「国民経済計算年次推計」"
+          sourceUrl="https://www.esri.cao.go.jp/jp/sna/kakuhou/kakuhou_top.html"
         >
           <IndustryStructureLongChart />
         </ArticleChart>
-      </div>
-      <ArticleText>
-        <p>
-          1970年代から直近の2023年までを俯瞰すると、日本経済が「モノづくり（第2次産業）」中心から、「サービスや情報（第3次産業）」中心のサービス経済化へと大きく移行してきたことが分かります。
-        </p>
-        <p>
-          高度経済成長の勢いを引き継ぐ1970年時点では、製造業や建設業などを含む第2次産業が全体の43.1%を占めていましたが、2023年には20%台後半まで減少。一方で、情報通信、小売、不動産、医療福祉などを含む第3次産業は、50.9%から71.1%へと拡大しました。農業・林業・水産業などの第1次産業は1.0%未満となっています。
-        </p>
-      </ArticleText>
-      <div className={styles.charts}>
+
+        <ArticleText>
+          <p>
+            直近約30年間の16業種別データ（1994年〜2023年）を比較すると、「サービス経済化」の具体的な中身がより鮮明に見えてきます。
+          </p>
+          <p>
+            最も大きくシェアを伸ばしたのは少子高齢化を背景とする<strong>保健衛生・社会事業（医療・福祉・介護など）</strong>で、4.0%から7.9%へと倍増（+3.9ポイント）しました。また、IT化に伴う<strong>情報通信業</strong>（+1.5ポイント）や、コンサルティング等の<strong>専門・科学技術、業務支援サービス業</strong>（+4.4ポイント）が成長を牽引しています。
+          </p>
+          <p>
+            一方で、<strong>製造業</strong>は23.6%から20.7%へ（-2.9ポイント）、<strong>建設業</strong>は7.9%から5.3%へ（-2.6ポイント）それぞれシェアを縮小させています。
+          </p>
+        </ArticleText>
 
         <ArticleChart
-          title="業種別構成比の変化"
-          yearRange="（1994→2023）"
-          unitNote="単位：GDPに占める構成比（%）"
+          title="業種別構成比の変化（16業種）"
+          subtitle="1994年 vs 2023年（名目GDPに占める構成比、単位: %）"
+          source="内閣府「国民経済計算年次推計」"
+          sourceUrl="https://www.esri.cao.go.jp/jp/sna/kakuhou/kakuhou_top.html"
         >
           <IndustryStructureDetailChart />
         </ArticleChart>
+
+        <ArticleSource
+          label="出典: 内閣府「国民経済計算年次推計」"
+          href="https://www.esri.cao.go.jp/jp/sna/kakuhou/kakuhou_top.html"
+        />
       </div>
-      <ArticleText>
-        <p>
-          直近の約30年間における16業種ごとのGDPシェア変化を見ると、単なる「サービス経済化」の中身がより鮮明になります。
-        </p>
-        <p>
-          最もシェアを縮小させたのは<strong>製造業</strong>で、1994年の23.6%から2023年には20.7%へと2.9ポイント低下しました。また、公共事業の縮小などに伴い<strong>建設業</strong>も7.9%から5.3%へ低下しています。
-        </p>
-        <p>
-          一方で大きくシェアを伸ばしたのが、少子高齢化を背景に急拡大した<strong>保健衛生・社会事業（医療・福祉・介護など）</strong>で、4.0%から7.9%へとほぼ倍増（+3.9ポイント）しました。その他、IT化の進展を反映した<strong>情報通信業</strong>（+1.5ポイント）や、研究開発・コンサルティングなどを含む<strong>専門・科学技術、業務支援サービス業</strong>（+4.4ポイント）が成長を牽引しています。
-        </p>
-      </ArticleText>
     </div>
   );
 }

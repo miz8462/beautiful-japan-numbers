@@ -3,7 +3,6 @@
 import { ArticleChart } from "@/components/article/article-chart";
 import dynamic from "next/dynamic";
 import styles from "./page.module.css";
-import renewableEnergyData from "@/data/renewable-energy-mix.json";
 
 const PowerSourceMixChart = dynamic(
   () =>
@@ -37,7 +36,7 @@ export default function RenewableEnergyMixCharts() {
     <div className={styles.charts}>
       <ArticleChart
         title="電源構成の推移"
-        yearRange="（1952〜2024年度）"
+        subtitle="1952年度〜2024年度（単位: %）"
         source={SOURCE_LABEL}
         sourceUrl={SOURCE_URL}
         note="1952〜2009年度は資源エネルギー庁「電源開発の概要」等を基にエネルギー白書2023がまとめた数値、2010〜2024年度は資源エネルギー庁「エネルギー需給実績(確報)」の数値。2010年度を境に算出方法が異なるため接続には注意。"
@@ -47,7 +46,7 @@ export default function RenewableEnergyMixCharts() {
 
       <ArticleChart
         title="非化石電源比率の推移"
-        yearRange="（1952〜2024年度）"
+        subtitle="1952年度〜2024年度（単位: %）"
         source={SOURCE_LABEL}
         sourceUrl={SOURCE_URL}
       >
@@ -56,7 +55,7 @@ export default function RenewableEnergyMixCharts() {
 
       <ArticleChart
         title="再生可能エネルギー内訳の推移"
-        yearRange="（2010〜2024年度）"
+        subtitle="2010年度〜2024年度（単位: %）"
         source={SOURCE_LABEL}
         sourceUrl={SOURCE_URL}
       >

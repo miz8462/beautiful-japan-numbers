@@ -1,22 +1,13 @@
-"use client";
-
 import { articles } from "@/app/(main)/articles/articles";
 import { ArticleChart } from "@/components/article/article-chart";
 import { ArticleHeader } from "@/components/article/article-header/ArticleHeader";
+import { ArticleSource } from "@/components/article/article-source/ArticleSource";
 import { ArticleText } from "@/components/article/article-text/ArticleText";
 import { KPICard, KPIGrid, KPIPrimary, KPISection } from "@/components/kpi";
-import dynamic from "next/dynamic";
+import { NominalRealWageChart } from "./chart/NominalRealWageChart/NominalRealWageChart";
 import styles from "./page.module.css";
 
-const NominalRealWageChart = dynamic(
-  () =>
-    import("./chart/NominalRealWageChart/NominalRealWageChart").then(
-      (mod) => mod.NominalRealWageChart
-    ),
-  { ssr: false }
-);
-
-const SOURCE_LABEL = "毎月勤労統計調査（厚生労働省）";
+const SOURCE_LABEL = "出典: 厚生労働省「毎月勤労統計調査」";
 const SOURCE_URL =
   "https://www.e-stat.go.jp/stat-search/files?toukei=00450071&tstat=000001011791";
 
@@ -72,7 +63,7 @@ export default function WageNominalRealPage() {
       <div className={styles.charts}>
         <ArticleChart
           title="名目賃金と実質賃金の推移"
-          yearRange="（1990〜2025年）"
+          subtitle="1990年〜2025年（令和2年=100）"
           source={SOURCE_LABEL}
           sourceUrl={SOURCE_URL}
         >
@@ -85,9 +76,11 @@ export default function WageNominalRealPage() {
           名目賃金は2010年代半ばから緩やかな増加ペースを保ち、近年では物価高に伴う賃上げの動きも重なって指数の上昇が見られます。
         </p>
         <p>
-          一方で実質賃金の推移においては、消費税率の改定や世界的な原材料高、為替の変動などに伴う物価上昇局面で, 賃金の伸びが物価の上昇に追いつかない期間が生じるなど、購買力としての賃金水準の維持には多様な経済要因が影響を及ぼしています。
+          一方で実質賃金の推移においては、消費税率の改定や世界的な原材料高、為替の変動などに伴う物価上昇局面で、賃金の伸びが物価の上昇に追いつかない期間が生じるなど、購買力としての賃金水準の維持には多様な経済要因が影響を及ぼしています。
         </p>
       </ArticleText>
+
+      <ArticleSource href={SOURCE_URL} label={SOURCE_LABEL} />
     </div>
   );
 }

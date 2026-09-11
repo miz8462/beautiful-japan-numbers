@@ -1,38 +1,21 @@
-"use client";
-
 import { articles } from "@/app/(main)/articles/articles";
 import { ArticleChart } from "@/components/article/article-chart";
 import { ArticleHeader } from "@/components/article/article-header/ArticleHeader";
+import { ArticleSource } from "@/components/article/article-source/ArticleSource";
 import { ArticleText } from "@/components/article/article-text/ArticleText";
-import { KPIPrimary, KPISection } from "@/components/kpi";
-import dynamic from "next/dynamic";
+import {
+  KPICard,
+  KPIGrid,
+  KPIPrimary,
+  KPISection,
+} from "@/components/kpi";
+import { NationalDebtBalanceChart } from "./chart/NationalDebtBalanceChart/NationalDebtBalanceChart";
+import { NationalDebtInterestRateChart } from "./chart/NationalDebtInterestRateChart/NationalDebtInterestRateChart";
 import styles from "./page.module.css";
 
-const NationalDebtBalanceChart = dynamic(
-  () =>
-    import("./chart/NationalDebtBalanceChart/NationalDebtBalanceChart").then(
-      (mod) => mod.NationalDebtBalanceChart
-    ),
-  { ssr: false }
-);
-
-const NationalDebtInterestRateChart = dynamic(
-  () =>
-    import(
-      "./chart/NationalDebtInterestRateChart/NationalDebtInterestRateChart"
-    ).then((mod) => mod.NationalDebtInterestRateChart),
-  { ssr: false }
-);
-
 const SOURCE_LABEL =
-  "財務省「国債発行額の推移（実績ベース）」・「普通国債の利率加重平均の各年ごとの推移」";
+  "出典: 財務省「国債発行額の推移（実績ベース）」・「普通国債の利率加重平均の各年ごとの推移」";
 const SOURCE_URL = "https://www.mof.go.jp/jgbs/reference/national_debt/index.htm";
-
-// ─── KPIデータ ───────────────────────────────────────────────────
-const kpiData = {
-  title: "普通国債残高（2026年度見込）",
-  main: "1,145兆円",
-};
 
 export default function NationalDebtTrendPage() {
   const article = articles.find(
@@ -44,68 +27,78 @@ export default function NationalDebtTrendPage() {
     <div className="container">
       <ArticleHeader article={article} />
 
-      <KPISection title={kpiData.title}>
-        <KPIPrimary value={kpiData.main} />
+      <KPISection title="普通国債残高と金利環境（主要指標）">
+        <KPIPrimary
+          label="普通国債残高（2026年度見込）"
+          value="1,145兆円"
+          caption="1975年（15.0兆円）から約76倍に拡大"
+        />
+        <KPIGrid>
+          <KPICard
+            label="対GDP比（2026年度見込）"
+            value="165.5%"
+            caption="1975年（9.6%）から大幅上昇"
+          />
+          <KPICard
+            label="利率加重平均（2025年）"
+            value="0.98%"
+            caption="2022年の底（0.76%）から反転上昇"
+          />
+          <KPICard
+            label="1975年の利率加重平均"
+            value="7.43%"
+            caption="過去最高水準の金利環境"
+          />
+          <KPICard
+            label="コロナ禍の対GDP比ピーク"
+            value="175.7%"
+            caption="2020年度の緊急財政出動期"
+          />
+        </KPIGrid>
       </KPISection>
 
-      <ArticleText>
-        <p>
-          ここで扱う<strong>「普通国債」</strong>とは、国が発行する借入証券のうち、
-          建設国債・特例国債・復興債などを合わせた残高です。
-          政府全体の借入金（国債・借入金・政府関係機関債など）すべてを指すわけではなく、
-          財務省が公表する普通国債残高に限定した指標です。
-        </p>
-      </ArticleText>
+      <div className={styles.content}>
+        <ArticleText>
+          <p>
+            ここで扱う<strong>「普通国債」</strong>とは、国が発行する借入証券のうち、建設国債・特例国債（赤字国債）・復興債などを合わせた残高です。政府全体の借入金（借入金や政府保証債など）すべてを指すわけではなく、一般会計の歳入不足を補うために発行されてきた借金の中核をなす指標です。
+          </p>
+          <p>
+            1965年度に戦後初めて赤字国債が発行されて以降、1973年の石油危機を契機に特例国債の定常的な発行が始まりました。1990年代初頭のバブル崩壊後は税収の低迷と高齢化に伴う社会保障関係費の増大により残高が急拡大し、2026年度末には約1,145兆円（対GDP比165.5%）に達する見込みです。
+          </p>
+        </ArticleText>
 
-      <div className={styles.charts}>
         <ArticleChart
-          title="普通国債残高の推移"
-          yearRange="（1965〜2026）"
-          source={SOURCE_LABEL}
+          title="普通国債残高と対GDP比の推移"
+          subtitle="1965年度〜2026年度見込（左軸: 残高[兆円]、右軸: 対GDP比[%]）"
+          source="財務省「国債発行額の推移（実績ベース）」"
           sourceUrl={SOURCE_URL}
-          note="※左軸は普通国債残高（兆円）、右軸は対GDP比（%）。2026年は見込みを含む。"
         >
           <NationalDebtBalanceChart />
         </ArticleChart>
-      </div>
 
-      <ArticleText>
-        <p>
-          1960年代後半までは普通国債残高はGDP比でも数パーセント台にとどまっていましたが、
-          1973年の第一次石油危機以降、景気対策と歳出拡大に伴い増加ペースが上がり始めます。
-          1980年代のバブル期には対GDP比が一時的に横ばいから緩やかな低下に転じましたが、
-          1991年のバブル崩壊後は税収の伸び悩みと社会保障費の増加を背景に、残高と対GDP比の双方が再び急拡大しました。
-        </p>
-        <p>
-          2008年のリーマンショックでは景気対策国債の発行が増え、2010年代も高い水準が続きました。
-          2020年のコロナ対応でさらに一時的に対GDP比が170%台まで上昇。
-          2026年（見込み）の普通国債残高は約1,145兆円、対GDP比は165.5%と、
-          いずれも過去最高水準の一角を占めています。
-        </p>
-      </ArticleText>
+        <ArticleText>
+          <p>
+            国債残高が巨額に膨張する一方で、国が支払う「利払い費」の急増を抑えてきたのが長期金利の歴史的な低下です。
+          </p>
+          <p>
+            既発国債全体の利率の重み付け平均である「普通国債の利率加重平均」は、1975年の7.43%から日本銀行の大規模金融緩和などを背景に低下し続け、2022年には過去最低の0.76%まで低下しました。
+          </p>
+          <p>
+            しかし、2023年以降の金融政策正常化に伴い、2025年には0.98%へと反転上昇しています。残高が1,000兆円を超える規模に達している現在、わずかな金利上昇であっても利払い費に大きな影響を及ぼすため、今後の金利動向と財政運営の持続可能性が注目されています。
+          </p>
+        </ArticleText>
 
-      <div className={styles.charts}>
         <ArticleChart
           title="普通国債の利率加重平均の推移"
-          yearRange="（1975〜2025）"
-          source={SOURCE_LABEL}
+          subtitle="1975年度〜2025年度（単位: %）"
+          source="財務省「普通国債の利率加重平均の各年ごとの推移」"
           sourceUrl={SOURCE_URL}
         >
           <NationalDebtInterestRateChart />
         </ArticleChart>
-      </div>
 
-      <ArticleText>
-        <p>
-          普通国債の利率加重平均は、1975年の7.43%をピークに長期間で低下し続け、
-          2022年には0.76%まで下がりました。その後2年間で0.98%（2025年）まで反転上昇しています。
-        </p>
-        <p>
-          残高そのものは半世紀以上にわたって増え続けている一方で、
-          借入コストを左右する金利が大幅に下がったことが、国債利払い費の伸びを抑える要因のひとつになってきました。
-          直近の金利上昇が今後の財政運営にどう効いてくるかが、残高の推移とあわせて注目点です。
-        </p>
-      </ArticleText>
+        <ArticleSource href={SOURCE_URL} label={SOURCE_LABEL} />
+      </div>
     </div>
   );
 }

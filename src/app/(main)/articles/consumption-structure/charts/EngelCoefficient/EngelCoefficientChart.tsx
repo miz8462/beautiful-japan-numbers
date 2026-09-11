@@ -29,18 +29,11 @@ const chartData: EngelLineSeries[] = [
 export function EngelCoefficientChart() {
   return (
     <div className={styles.wrapper}>
-      <span className={styles.unitNote}>エンゲル係数 = 食費 / 消費支出合計 × 100</span>
-      <p>
-        エンゲル係数が高いのは、消費のうち食費が締める割合が高いことを示します。
-      </p>
-      <p>
-        一般に25％を越えると生活のゆとりが少なくなり、
-        30％以上になると生活が苦しいと感じる家庭が多くなります。
-      </p>
+      <span className={styles.unitNote}>※ エンゲル係数 = 食費 ÷ 消費支出合計 × 100</span>
       <ArticleChartCanvas height={360} mobileHeight={300}>
         <ResponsiveLine
           data={chartData}
-          margin={{ top: 28, right: 24, bottom: 42, left: 48 }}
+          margin={{ top: 28, right: 40, bottom: 42, left: 48 }}
           xScale={{ type: "linear", min: 2000, max: 2025, nice: false }}
           yScale={{ type: "linear", min: 22, max: 30, nice: false }}
           axisBottom={{

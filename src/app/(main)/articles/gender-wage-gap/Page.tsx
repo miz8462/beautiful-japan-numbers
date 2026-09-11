@@ -1,61 +1,28 @@
-"use client";
-
 import { articles } from "@/app/(main)/articles/articles";
 import { ArticleChart } from "@/components/article/article-chart";
 import { ArticleHeader } from "@/components/article/article-header/ArticleHeader";
+import { ArticleSource } from "@/components/article/article-source/ArticleSource";
 import { ArticleText } from "@/components/article/article-text/ArticleText";
 import { KPICard, KPIGrid, KPIPrimary, KPISection } from "@/components/kpi";
-import dynamic from "next/dynamic";
+import { FemaleEmploymentMCurveChart } from "./chart/FemaleEmploymentMCurveChart/FemaleEmploymentMCurveChart";
+import { FemaleManagerRatioChart } from "./chart/FemaleManagerRatioChart/FemaleManagerRatioChart";
+import { FemaleMLCurveComparisonChart } from "./chart/FemaleMLCurveComparisonChart/FemaleMLCurveComparisonChart";
+import { GenderWageGapChart } from "./chart/GenderWageGapChart/GenderWageGapChart";
 import styles from "./page.module.css";
 
-const GenderWageGapChart = dynamic(
-  () =>
-    import(
-      "./chart/GenderWageGapChart/GenderWageGapChart"
-    ).then((mod) => mod.GenderWageGapChart),
-  { ssr: false }
-);
-
-const FemaleManagerRatioChart = dynamic(
-  () =>
-    import(
-      "./chart/FemaleManagerRatioChart/FemaleManagerRatioChart"
-    ).then((mod) => mod.FemaleManagerRatioChart),
-  { ssr: false }
-);
-
-const FemaleEmploymentMCurveChart = dynamic(
-  () =>
-    import(
-      "./chart/FemaleEmploymentMCurveChart/FemaleEmploymentMCurveChart"
-    ).then((mod) => mod.FemaleEmploymentMCurveChart),
-  { ssr: false }
-);
-
-const FemaleMLCurveComparisonChart = dynamic(
-  () =>
-    import(
-      "./chart/FemaleMLCurveComparisonChart/FemaleMLCurveComparisonChart"
-    ).then((mod) => mod.FemaleMLCurveComparisonChart),
-  { ssr: false }
-);
-
-const WAGE_GAP_SOURCE_LABEL = "賃金構造基本統計調査 結果の概況 付表1（厚生労働省）";
+const WAGE_GAP_SOURCE_LABEL = "厚生労働省「賃金構造基本統計調査」";
 const WAGE_GAP_SOURCE_URL = "https://www.mhlw.go.jp/toukei/itiran/roudou/chingin/kouzou/z2024/index.html";
 
-const MANAGER_RATIO_SOURCE_LABEL = "雇用均等基本調査（厚生労働省）";
+const MANAGER_RATIO_SOURCE_LABEL = "厚生労働省「雇用均等基本調査」";
 const MANAGER_RATIO_SOURCE_URL = "https://www.mhlw.go.jp/toukei/list/71-r6.html";
 
-const M_CURVE_SOURCE_LABEL = "労働力調査 基本集計（総務省統計局）";
+const M_CURVE_SOURCE_LABEL = "総務省統計局「労働力調査 基本集計」";
 const M_CURVE_SOURCE_URL = "https://www.e-stat.go.jp/dbview?sid=0002060049";
 
-const L_CURVE_SOURCE_LABEL = "労働力調査 詳細集計（総務省統計局）";
-const L_CURVE_SOURCE_URL = "https://www.e-stat.go.jp/dbview?sid=0003006608";
-
-const ML_COMPARISON_SOURCE_LABEL = "労働力調査 基本集計・詳細集計（総務省統計局）";
+const ML_COMPARISON_SOURCE_LABEL = "総務省統計局「労働力調査 基本集計・詳細集計」";
 const ML_COMPARISON_SOURCE_URL = "https://www.e-stat.go.jp/dbview?sid=0002060049";
 
-export default function Page() {
+export default function GenderWageGapPage() {
   const article = articles.find(
     (a) => a.href === "/articles/gender-wage-gap"
   );
@@ -107,7 +74,7 @@ export default function Page() {
       <div className={styles.charts}>
         <ArticleChart
           title="男女間賃金格差の推移"
-          yearRange="（1976〜2024年）"
+          subtitle="1976年〜2024年（男性一般労働者=100とした女性の比率）"
           source={WAGE_GAP_SOURCE_LABEL}
           sourceUrl={WAGE_GAP_SOURCE_URL}
           note="※2020年（令和2年）調査より、調査対象や推計方法の改定が行われています（令和元年データにおいて新旧基準比較の接続処理が実施されています）。"
@@ -122,11 +89,6 @@ export default function Page() {
         </p>
         <p>
           直近の傾向を見ると、2020年代に入ってからも75ポイント前後の水準を維持・緩やかに上昇しており、職種構成や役職階位の違い、短時間労働者の比率など多様な要因を背景に、格差縮小のペースや要因をめぐり多角的な議論が続けられています。
-        </p>
-        <p>
-          <small style={{ color: "var(--color-text-muted, #888888)" }}>
-            ※注: 男性一般労働者の所定内給与額を100とした女性の所定内給与額の比率。厚生労働省「賃金構造基本統計調査」の各年結果より作成。
-          </small>
         </p>
       </ArticleText>
 
@@ -143,10 +105,10 @@ export default function Page() {
       <div className={styles.charts}>
         <ArticleChart
           title="役職別・女性管理職等割合の推移"
-          yearRange="（2009〜2024年度）"
+          subtitle="2009年度〜2024年度（単位: %）"
           source={MANAGER_RATIO_SOURCE_LABEL}
           sourceUrl={MANAGER_RATIO_SOURCE_URL}
-          note="※企業規模30人以上の事業所を対象とした調査。一部年次（2010・2012・2014年度等）は調査が実施されていないか非公表のため、グラフ上では計測データ点を直線で接続しています。"
+          note="※企業規模30人以上の事業所を対象とした調査。一部年次は調査が実施されていないか非公表のため直線接続しています。"
         >
           <FemaleManagerRatioChart />
         </ArticleChart>
@@ -171,7 +133,7 @@ export default function Page() {
       <div className={styles.charts}>
         <ArticleChart
           title="女性の年齢階級別就業率の推移（M字カーブ）"
-          yearRange="（2010・2020・2025年）"
+          subtitle="2010年・2020年・2025年（単位: %）"
           source={M_CURVE_SOURCE_LABEL}
           sourceUrl={M_CURVE_SOURCE_URL}
         >
@@ -179,7 +141,7 @@ export default function Page() {
         </ArticleChart>
       </div>
 
-        <ArticleText>
+      <ArticleText>
         <h2>就業率（M字）と正規雇用比率（L字）の構造的ギャップ</h2>
         <p>
           近年、女性の就業率におけるM字カーブの「谷」は浅くなり、30代を中心とする労働参加が進んでいます。しかし、同じ年齢階級で「正規雇用比率」のカーブを重ね合わせると、大きなギャップが見えてきます。
@@ -192,13 +154,15 @@ export default function Page() {
       <div className={styles.charts}>
         <ArticleChart
           title="女性の年齢階級別 就業率と正規雇用比率の比較"
-          yearRange="（2025年）"
+          subtitle="2025年（単位: %）"
           source={ML_COMPARISON_SOURCE_LABEL}
           sourceUrl={ML_COMPARISON_SOURCE_URL}
         >
           <FemaleMLCurveComparisonChart />
         </ArticleChart>
       </div>
+
+      <ArticleSource href={article.sourceUrl || WAGE_GAP_SOURCE_URL} label={article.sourceLabel || "出典: 厚生労働省「賃金構造基本統計調査」"} />
     </div>
   );
 }

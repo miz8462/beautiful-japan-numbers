@@ -1,131 +1,103 @@
-"use client";
-
 import { articles } from "@/app/(main)/articles/articles";
 import { ArticleChart } from "@/components/article/article-chart";
 import { ArticleHeader } from "@/components/article/article-header/ArticleHeader";
+import { ArticleSource } from "@/components/article/article-source/ArticleSource";
 import { ArticleText } from "@/components/article/article-text/ArticleText";
-import dynamic from "next/dynamic";
+import {
+  KPICard,
+  KPIGrid,
+  KPIPrimary,
+  KPISection,
+} from "@/components/kpi";
+import { BankruptcyCausesChart } from "./chart/BankruptcyCausesChart/BankruptcyCausesChart";
+import { BankruptcyTrendChart } from "./chart/BankruptcyTrendChart/BankruptcyTrendChart";
 import styles from "./page.module.css";
 
-// ResizeObserver を伴うチャートは SSR 無効で動的インポート
-const BankruptcyTrendChart = dynamic(
-  () =>
-    import("./chart/BankruptcyTrendChart/BankruptcyTrendChart").then(
-      (mod) => mod.BankruptcyTrendChart
-    ),
-  { ssr: false }
-);
-
-const BankruptcyCausesChart = dynamic(
-  () =>
-    import("./chart/BankruptcyCausesChart/BankruptcyCausesChart").then(
-      (mod) => mod.BankruptcyCausesChart
-    ),
-  { ssr: false }
-);
-
-// ─── 出典情報 ────────────────────────────────────────────────────
-const SOURCE_LABEL = "東京商工リサーチ";
-const SOURCE_URL = "https://www.tsr-net.co.jp/";
-
 export default function BankruptcyTrendPage() {
-  const article = articles.find((a) => a.href === "/articles/bankruptcy-trend");
+  const article = articles.find(
+    (a) => a.href === "/articles/bankruptcy-trend"
+  );
   if (!article) return null;
 
   return (
     <div className="container">
       <ArticleHeader article={article} />
 
+      <KPISection title="企業倒産の現在地と動向（2025年）">
+        <KPIPrimary
+          label="2025年の企業倒産件数"
+          value="10,300件"
+          caption="2013年以来12年ぶりに1万件台へ到達"
+        />
+        <KPIGrid>
+          <KPICard
+            label="人手不足倒産（2025年）"
+            value="397件"
+            caption="過去最多を更新（前年比+26.8%）"
+          />
+          <KPICard
+            label="人件費高騰による倒産"
+            value="152件"
+            caption="人手不足倒産の約38%を占める"
+          />
+          <KPICard
+            label="コロナ禍の最少期（2021年）"
+            value="6,030件"
+            caption="ゼロゼロ融資等の公的支援期"
+          />
+          <KPICard
+            label="過去最多記録（1984年）"
+            value="20,841件"
+            caption="オイルショック後・構造不況期"
+          />
+        </KPIGrid>
+      </KPISection>
 
-      {/* ①  Stat Headline */}
-      <div className={styles.statHeadline}>
-        <p className={styles.statFinding}>
-          2025年の企業倒産件数は10,300件、2013年以来の水準に
-        </p>
-      </div>
+      <div className={styles.content}>
+        <ArticleText>
+          <p>
+            ここで集計する「倒産」とは、<strong>負債総額1,000万円以上</strong>の企業が、裁判所を通じた法的整理（破産・民事再生など）または債権者との合意による私的整理（銀行取引停止処分など）に至った件数です。東京商工リサーチ（TSR）の基準に基づき集計されており、小規模廃業や休業は含まれません。
+          </p>
+          <p>
+            戦後から現在までの70年余りの推移をたどると、1964年東京五輪後の反動不況や1970年代のオイルショック、1990年代バブル崩壊後の金融危機など、経済構造の転換期ごとに倒産の波が押し寄せてきた歴史が分かります。
+          </p>
+        </ArticleText>
 
-      {/* ② ArticleIntro: 「倒産」の定義 */}
-      <ArticleText>
-        <p>
-          ここで集計する「倒産」とは、<strong>負債総額1,000万円以上</strong>の企業が、
-          裁判所を通じた破産・民事再生などの法的整理、または債権者との合意による私的整理（特定調停・銀行取引停止など）に
-          至った件数です。東京商工リサーチ（TSR）の独自基準にもとづき集計されており、
-          負債1,000万円未満の小規模廃業や休業は含まれません。
-        </p>
-      </ArticleText>
-
-      {/* ③ メインチャート: 長期推移 */}
-      <div className={styles.charts}>
         <ArticleChart
-          title="企業倒産件数の推移"
-          yearRange="（1952〜2025年）"
-          source={SOURCE_LABEL}
-          sourceUrl={SOURCE_URL}
-          note="※負債1,000万円以上 / 法的・私的整理含む"
+          title="企業倒産件数の長期推移"
+          subtitle="1952年〜2025年（負債1,000万円以上、単位: 件）"
+          source="東京商工リサーチ"
+          sourceUrl="https://www.tsr-net.co.jp/"
         >
           <BankruptcyTrendChart />
         </ArticleChart>
-      </div>
 
-      {/* ④ ArticleText: 長期推移の解説 */}
-      <ArticleText>
-        <p>
-          高度成長期の1950年代〜60年代前半は年間1,000〜2,000件台と低水準でしたが、
-          1964年の東京五輪後の景気後退・過剰投資の整理に伴い急増し、1965年には6,141件に達しました。
-        </p>
-        <p>
-          1973年のオイルショック後は原材料コストの急騰・需要急減が直撃し、
-          1977年にかけて1万5,000〜1万8,000件台で高止まりしました。
-          バブル景気の1980年代後半には一時的に1万件を下回りましたが、
-          1991年のバブル崩壊以降は金融機関の不良債権処理の遅れを背景に再び増加しました。
-        </p>
-        <p>
-          その後は企業の過剰債務解消・中小企業向け支援策などを経て減少傾向が続き、
-          新型コロナウイルス禍の2021年には<strong>6,030件と統計開始以来最少</strong>を更新。
-          ゼロゼロ融資（無利子・無担保融資）などの政策支援が倒産を抑制しました。
-          しかし2022年以降は支援の終了・借入返済の本格化・物価高騰が重なり
-          <strong>4年連続で増加</strong>、2025年は10,300件と2013年以来の水準に達しています。
-        </p>
-      </ArticleText>
+        <ArticleText>
+          <p>
+            2020年のコロナ禍においては、実質無利子・無担保の「ゼロゼロ融資」や各種給付金などの手厚い政策支援により、2021年には6,030件と統計開始以来の最少を記録しました。
+          </p>
+          <p>
+            しかし、2022年以降は支援終了に伴う借入金返済の本格化、原材料・エネルギー価格の高騰、人手不足が重なり、4年連続で倒産が増加。2025年には10,300件と12年ぶりに1万件を突破しました。
+          </p>
+          <p>
+            特に近年顕著なのが「人手不足倒産」の急増です。2025年には過去最多の397件に達し、その内訳では賃上げ競争による「人件費高騰」（152件）とキーパーソン離脱による「従業員退職」（110件）が全体の過半を占め、労働集約型の中小企業における事業継続の課題が浮き彫りとなっています。
+          </p>
+        </ArticleText>
 
-      {/* ⑤ サブチャート: 人手不足倒産の原因別推移 */}
-      <div className={styles.charts}>
         <ArticleChart
-          title={<>「人手不足」倒産の<br />原因別推移</>}
-          yearRange="（2019・2021〜2025年）"
-          source={SOURCE_LABEL}
-          sourceUrl={SOURCE_URL}
-          note={
-            <>
-              <p>
-                ※ 2021・2022年は内訳（求人難・従業員退職・人件費高騰）が非公表のため、合計のみ表示。
-              </p>
-              <p>
-                ※ 2020年は集計方法の移行期にあたり公式な通年確定値がないため欠番。
-              </p>
-              <p>
-                ※ 後継者難は人手不足倒産の定義から除外。
-              </p>
-            </>
-          }
+          title="「人手不足」倒産の要因別推移"
+          subtitle="2019年・2021年〜2025年（単位: 件）"
+          source="東京商工リサーチ"
+          sourceUrl="https://www.tsr-net.co.jp/"
         >
           <BankruptcyCausesChart />
         </ArticleChart>
-      </div>
 
-      {/* ⑥ ArticleText: 人手不足倒産の解説 */}
-      <ArticleText>
-        <p>
-          「人手不足」を直接の引き金とした倒産は、コロナ禍の2021年に一時的に56件まで落ち込みました。
-          これは経済活動の縮小により採用需要そのものが低下したためです。
-        </p>
-        <p>
-          しかし2022年以降は急速に増加し、2025年には<strong>397件と過去最多</strong>を更新しました。
-          内訳では<strong>人件費高騰</strong>（152件）と<strong>従業員退職</strong>（110件）が全体をけん引しています。
-          最低賃金の引き上げ・エネルギーコスト上昇に伴う人件費の増大が特に中小・零細企業の収益を圧迫し、
-          従業員の確保・定着に苦しむ労働集約型産業（飲食・建設・介護など）で倒産が相次いでいます。
-        </p>
-      </ArticleText>
+        <ArticleSource
+          label="出典: 東京商工リサーチ「全国企業倒産状況」"
+          href="https://www.tsr-net.co.jp/"
+        />
+      </div>
     </div>
   );
 }

@@ -30,8 +30,8 @@ export default function JapanEconomicHistoryCharts() {
   return (
     <div className={styles.charts}>
       <ArticleChart
-        title="株式時価総額の推移"
-        yearRange="（1949〜202）"
+        title="株式時価総額の長期推移"
+        subtitle="1949年〜2026年（単位: 兆円）"
         source={SOURCE_LABEL}
         sourceUrl={SOURCE_URL}
       >
@@ -40,7 +40,7 @@ export default function JapanEconomicHistoryCharts() {
 
       <ArticleChart
         title="地価公示 対前年変動率の推移"
-        yearRange="（1975〜2026）"
+        subtitle="1975年〜2026年（単位: %）"
         source={LAND_PRICE_SOURCE_LABEL}
         sourceUrl={LAND_PRICE_SOURCE_URL}
       >

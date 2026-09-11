@@ -1,8 +1,12 @@
 import { articles } from "@/app/(main)/articles/articles";
 import { ArticleHeader } from "@/components/article/article-header/ArticleHeader";
+import { ArticleSource } from "@/components/article/article-source/ArticleSource";
 import { ArticleText } from "@/components/article/article-text/ArticleText";
 import { KPICard, KPIGrid, KPIPrimary, KPISection } from "@/components/kpi";
 import TaxRevenueCharts from "./TaxRevenueCharts";
+
+const SOURCE_LABEL = "出典: 財務省「税収に関する資料」";
+const SOURCE_URL = "https://www.mof.go.jp/tax_policy/summary/condition/a03.htm";
 
 export default function TaxRevenueStructurePage() {
   const article = articles.find(
@@ -21,10 +25,10 @@ export default function TaxRevenueStructurePage() {
           caption="2024年度一般会計税収 75.2兆円のうち約33%を占める"
         />
         <KPIGrid>
-          <KPICard label="所得税" value="21.2兆円" />
-          <KPICard label="法人税" value="17.9兆円" />
-          <KPICard label="その他" value="11.1兆円" />
-          <KPICard label="税収合計" value="75.2兆円" />
+          <KPICard label="所得税" value="21.2兆円" caption="全体の約28.2%" />
+          <KPICard label="法人税" value="17.9兆円" caption="全体の約23.8%" />
+          <KPICard label="その他税収" value="11.1兆円" caption="揮発油税・たばこ税等" />
+          <KPICard label="税収合計" value="75.2兆円" caption="過去最高水準を更新" />
         </KPIGrid>
       </KPISection>
 
@@ -44,9 +48,11 @@ export default function TaxRevenueStructurePage() {
         </p>
         <p>
           2024年度の決算（または予算見込み）では、消費税の税収が<strong>約25.0兆円</strong>に達し、所得税（約21.2兆円）や法人税（約17.9兆円）を抑えて最も規模の大きい税目となっています。
-          少子高齢化に伴う社会保障費の増大にともない、安定財源としての消費税への依存が強まった結果、日本の歳入構造は「直間比率（直接税と間接税の比率）」の見直しを経て、消費課税を中心とする構造へ移行したことが推移から確認できます。
+          少子高齢化に伴う社会保障費の増大にともない、安定財源としての消費税への依存が強まった結果、日本の歳入構造は直接税中心から消費課税を中心とする構造へ大きくシフトしたことが推移から確認できます。
         </p>
       </ArticleText>
+
+      <ArticleSource href={SOURCE_URL} label={SOURCE_LABEL} />
     </div>
   );
 }

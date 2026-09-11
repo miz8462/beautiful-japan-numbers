@@ -47,7 +47,7 @@ export default function GHGEmissionsCharts() {
       <div className={styles.charts}>
         <ArticleChart
           title="温室効果ガス総排出量の推移"
-          yearRange="（1990〜2024年度）"
+          subtitle="1990年度〜2024年度（単位: 万トン CO2換算）"
           source={SOURCE_LABEL}
           sourceUrl={SOURCE_URL}
         >
@@ -73,7 +73,7 @@ export default function GHGEmissionsCharts() {
       <div className={styles.charts}>
         <ArticleChart
           title="ガス種別の構成比推移"
-          yearRange="（1990〜2024年度）"
+          subtitle="1990年度〜2024年度（単位: %）"
           source={SOURCE_LABEL}
           sourceUrl={SOURCE_URL}
         >
@@ -99,7 +99,7 @@ export default function GHGEmissionsCharts() {
       <div className={styles.charts}>
         <ArticleChart
           title="部門別CO2排出量の推移（電気・熱配分後）"
-          yearRange="（1990〜2024年度）"
+          subtitle="1990年度〜2024年度（単位: 万トン CO2）"
           source={SOURCE_LABEL}
           sourceUrl={SOURCE_URL}
         >
@@ -126,7 +126,7 @@ export default function GHGEmissionsCharts() {
       <div className={styles.charts}>
         <ArticleChart
           title="一人当たり温室効果ガス排出量の推移"
-          yearRange="（1990〜2024年度）"
+          subtitle="1990年度〜2024年度（単位: トン CO2換算/人）"
           source={SOURCE_LABEL}
           sourceUrl={SOURCE_URL}
         >

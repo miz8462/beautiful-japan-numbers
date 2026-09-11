@@ -21,8 +21,8 @@ const WaterQualityAchievementChart = dynamic(
   { ssr: false }
 );
 
-const SPM_SOURCE_LABEL = "環境統計集(令和7年版) 6章大気環境「浮遊粒子状物質環境基準達成状況の推移」";
-const WATER_SOURCE_LABEL = "環境統計集(令和7年版) 5章水環境「環境基準達成率の推移(BODまたはCOD)」";
+const SPM_SOURCE_LABEL = "環境省「環境統計集」浮遊粒子状物質環境基準達成状況の推移";
+const WATER_SOURCE_LABEL = "環境省「環境統計集」環境基準達成率の推移(BODまたはCOD)";
 const SOURCE_URL = "https://www.env.go.jp/doc/toukei.html";
 
 export default function PollutionImprovementCharts() {
@@ -32,7 +32,7 @@ export default function PollutionImprovementCharts() {
       <div className={styles.charts}>
         <ArticleChart
           title="浮遊粒子状物質（SPM）環境基準達成率の推移"
-          yearRange="（1985〜2023年度）"
+          subtitle="1985年度〜2023年度（単位: %）"
           source={SPM_SOURCE_LABEL}
           sourceUrl={SOURCE_URL}
         >
@@ -59,7 +59,7 @@ export default function PollutionImprovementCharts() {
       <div className={styles.charts}>
         <ArticleChart
           title="公共用水域の環境基準達成率の推移（BOD/COD）"
-          yearRange="（1974〜2023年度）"
+          subtitle="1974年度〜2023年度（単位: %）"
           source={WATER_SOURCE_LABEL}
           sourceUrl={SOURCE_URL}
         >

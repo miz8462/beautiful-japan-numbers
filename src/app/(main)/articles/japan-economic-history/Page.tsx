@@ -1,8 +1,12 @@
 import { articles } from "@/app/(main)/articles/articles";
 import { ArticleHeader } from "@/components/article/article-header/ArticleHeader";
+import { ArticleSource } from "@/components/article/article-source/ArticleSource";
 import { ArticleText } from "@/components/article/article-text/ArticleText";
 import { KPICard, KPIGrid, KPIPrimary, KPISection } from "@/components/kpi";
 import JapanEconomicHistoryCharts from "./JapanEconomicHistoryCharts";
+
+const SOURCE_LABEL = "出典: 日本取引所グループ / 国土交通省";
+const SOURCE_URL = "https://www.jpx.co.jp/markets/statistics-equities/misc/02.html";
 
 export default function JapanEconomicHistoryPage() {
   const article = articles.find(
@@ -16,14 +20,26 @@ export default function JapanEconomicHistoryPage() {
 
       <KPISection title="日本経済の主要指標（2026年現在）">
         <KPIPrimary
-          label="株式時価総額"
+          label="株式時価総額（2026年）"
           value="約1,250兆円"
           caption="バブル期ピーク（1989年12月：約611兆円）の約2倍に達する水準"
         />
         <KPIGrid>
-          <KPICard label={<>地価変動率<br />（三大都市圏・2026）</>} value="+3.5%" />
-          <KPICard label={<>バブル期地価上昇ピーク<br />（三大都市圏・1988年）</>} value="+43.8%" />
-          <KPICard label={<>バブル崩壊後最大下落<br />（三大都市圏・1993年）</>} value="-14.7%" />
+          <KPICard
+            label={<>地価変動率<br />（三大都市圏・2026）</>}
+            value="+3.5%"
+            caption="緩やかな回復基調が継続"
+          />
+          <KPICard
+            label={<>バブル期地価上昇ピーク<br />（三大都市圏・1988年）</>}
+            value="+43.8%"
+            caption="前年比で異常な高騰を記録"
+          />
+          <KPICard
+            label={<>バブル崩壊後最大下落<br />（三大都市圏・1993年）</>}
+            value="-14.7%"
+            caption="資産デフレへの転落"
+          />
         </KPIGrid>
       </KPISection>
 
@@ -56,6 +72,8 @@ export default function JapanEconomicHistoryPage() {
           株式時価総額もバブル期のピークを超え、2026年には約1250兆円に達していますが、これは企業収益の改善や株価の上昇によるもので、バブル期のような異常な投機熱を反映したものではありません。
         </p>
       </ArticleText>
+
+      <ArticleSource href={article.sourceUrl || SOURCE_URL} label={article.sourceLabel || SOURCE_LABEL} />
     </div>
   );
 }

@@ -1,8 +1,12 @@
 import { articles } from "@/app/(main)/articles/articles";
 import { ArticleHeader } from "@/components/article/article-header/ArticleHeader";
+import { ArticleSource } from "@/components/article/article-source/ArticleSource";
 import { ArticleText } from "@/components/article/article-text/ArticleText";
 import { KPICard, KPIGrid, KPIPrimary, KPISection } from "@/components/kpi";
 import PollutionImprovementCharts from "./chart/PollutionImprovementCharts";
+
+const SOURCE_LABEL = "出典: 環境省「環境統計集」";
+const SOURCE_URL = "https://www.env.go.jp/doc/toukei.html";
 
 export default function PollutionImprovementPage() {
   const article = articles.find((a) => a.href === "/articles/pollution-improvement");
@@ -29,6 +33,11 @@ export default function PollutionImprovementPage() {
             label="河川水質達成率（BOD）"
             value="93.8%"
             caption="1974年 51.3% から大幅改善"
+          />
+          <KPICard
+            label="海域水質達成率（COD）"
+            value="79.8%"
+            caption="8割前後の水準を維持"
           />
           <KPICard
             label="湖沼水質達成率（COD）"
@@ -71,6 +80,8 @@ export default function PollutionImprovementPage() {
           過去の公害克服の経験を礎としつつ、新たな環境リスクへの科学的かつ継続的なモニタリングが求められています。
         </p>
       </ArticleText>
+
+      <ArticleSource href={article.sourceUrl || SOURCE_URL} label={article.sourceLabel || SOURCE_LABEL} />
     </div>
   );
 }

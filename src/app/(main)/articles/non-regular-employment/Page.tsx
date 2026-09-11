@@ -1,22 +1,13 @@
-"use client";
-
 import { articles } from "@/app/(main)/articles/articles";
 import { ArticleChart } from "@/components/article/article-chart";
 import { ArticleHeader } from "@/components/article/article-header/ArticleHeader";
+import { ArticleSource } from "@/components/article/article-source/ArticleSource";
 import { ArticleText } from "@/components/article/article-text/ArticleText";
 import { KPICard, KPIGrid, KPIPrimary, KPISection } from "@/components/kpi";
-import dynamic from "next/dynamic";
+import { NonRegularEmploymentChart } from "./chart/NonRegularEmploymentChart/NonRegularEmploymentChart";
 import styles from "./page.module.css";
 
-const NonRegularEmploymentChart = dynamic(
-  () =>
-    import(
-      "./chart/NonRegularEmploymentChart/NonRegularEmploymentChart"
-    ).then((mod) => mod.NonRegularEmploymentChart),
-  { ssr: false }
-);
-
-const SOURCE_LABEL = "労働力調査 詳細集計（総務省統計局）";
+const SOURCE_LABEL = "出典: 総務省統計局「労働力調査 詳細集計」";
 const SOURCE_URL = "https://www.e-stat.go.jp/dbview?sid=0003006608";
 
 export default function NonRegularEmploymentPage() {
@@ -71,10 +62,9 @@ export default function NonRegularEmploymentPage() {
       <div className={styles.charts}>
         <ArticleChart
           title="非正規雇用比率の推移"
-          yearRange="（2002〜2025年）"
+          subtitle="2002年〜2025年（役員を除く雇用者全体に占める割合、単位: %）"
           source={SOURCE_LABEL}
           sourceUrl={SOURCE_URL}
-          note="※2011年は東日本大震災の影響により、岩手県、宮城県及び福島県において調査が一部未実施となったため、全国結果の補完推計・欠測扱いとなっています。"
         >
           <NonRegularEmploymentChart />
         </ArticleChart>
@@ -87,12 +77,9 @@ export default function NonRegularEmploymentPage() {
         <p>
           一方、2019年以降の推移においては、労働需給の逼迫に伴う正規雇用の採用拡大や感染症拡大期における雇用調整の影響など複眼的な要因が指摘されており、雇用形態の多様化と安定性のバランスをめぐる議論が続いています。
         </p>
-        <p>
-          <small style={{ color: "var(--color-text-muted, #888888)" }}>
-            ※注: 2011年の数値は東日本大震災の影響で補完推計対象または調査未実施のため公表データ上の欠測となっており、グラフでは2010年と2012年の間を直接補完して表示しています。
-          </small>
-        </p>
       </ArticleText>
+
+      <ArticleSource href={SOURCE_URL} label={SOURCE_LABEL} />
     </div>
   );
 }

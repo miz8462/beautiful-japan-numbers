@@ -1,8 +1,12 @@
 import { articles } from "@/app/(main)/articles/articles";
 import { ArticleHeader } from "@/components/article/article-header/ArticleHeader";
+import { ArticleSource } from "@/components/article/article-source/ArticleSource";
 import { ArticleText } from "@/components/article/article-text/ArticleText";
 import { KPICard, KPIGrid, KPIPrimary, KPISection } from "@/components/kpi";
 import GHGEmissionsCharts from "./GHGEmissionsCharts";
+
+const SOURCE_LABEL = "出典: 国立環境研究所（温室効果ガスインベントリオフィス）";
+const SOURCE_URL = "https://www.nies.go.jp/gio/archive/ghgdata/index.html";
 
 export default function GHGEmissionsPage() {
   const article = articles.find((a) => a.href === "/articles/ghg-emissions");
@@ -13,7 +17,7 @@ export default function GHGEmissionsPage() {
       <ArticleHeader article={article} />
 
       {/* 1. KPIセクション */}
-      <KPISection title="2024年度 温室効果ガス排出状況（速報値）">
+      <KPISection title="2024年度 温室効果ガス排出状況（主要指標）">
         <KPIPrimary
           label="温室効果ガス総排出量"
           value="10億4,641万トン"
@@ -24,6 +28,21 @@ export default function GHGEmissionsPage() {
             label="ピーク（2013年度）比"
             value="▲24.9%"
             caption="11年連続で減少傾向"
+          />
+          <KPICard
+            label="一人当たり排出量"
+            value="8.45トン"
+            caption="ピーク（1996年 11.00t）比 ▲23.2%"
+          />
+          <KPICard
+            label="CO2の構成比"
+            value="92.8%"
+            caption="エネルギー起源CO2が中核"
+          />
+          <KPICard
+            label="2030年度政府目標"
+            value="▲46%"
+            caption="2013年度比の削減目標"
           />
         </KPIGrid>
       </KPISection>
@@ -58,6 +77,8 @@ export default function GHGEmissionsPage() {
           2050年カーボンニュートラルの達成に向けては、産業構造のさらなる脱炭素化や電源構成の転換が引き続き重要な焦点となっています。
         </p>
       </ArticleText>
+
+      <ArticleSource href={article.sourceUrl || SOURCE_URL} label={article.sourceLabel || SOURCE_LABEL} />
     </div>
   );
 }

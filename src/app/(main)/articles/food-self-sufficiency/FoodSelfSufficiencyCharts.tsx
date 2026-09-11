@@ -30,7 +30,7 @@ export default function FoodSelfSufficiencyCharts() {
       <div className={styles.charts}>
         <ArticleChart
           title="食料自給率の長期推移"
-          yearRange="（1965〜2025年度）"
+          subtitle="1965年度〜2025年度（単位: %）"
           source={SOURCE_LABEL}
           sourceUrl={SOURCE_URL}
           note="※2025年度の数値は概算値。"
@@ -47,8 +47,8 @@ export default function FoodSelfSufficiencyCharts() {
 
       <div className={styles.charts}>
         <ArticleChart
-          title={<>品目別食料自給率の比較<br />（ベスト5・ワースト5）</>}
-          yearRange="（2025年度概算値）"
+          title="品目別食料自給率の比較（ベスト5・ワースト5）"
+          subtitle="2025年度概算値（重量ベース、単位: %）"
           source={SOURCE_LABEL}
           sourceUrl={SOURCE_URL}
           note="※重量ベースでの概算値。上位5品目（ベスト5）と下位5品目（ワースト5）を表示。"

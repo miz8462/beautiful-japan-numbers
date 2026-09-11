@@ -1,8 +1,16 @@
 import { articles } from "@/app/(main)/articles/articles";
 import { ArticleChart } from "@/components/article/article-chart";
 import { ArticleHeader } from "@/components/article/article-header/ArticleHeader";
-import { GiniTrendChart } from "./chart/gini-trend/GiniTrendChart";
+import { ArticleSource } from "@/components/article/article-source/ArticleSource";
+import { ArticleText } from "@/components/article/article-text/ArticleText";
+import {
+  KPICard,
+  KPIGrid,
+  KPIPrimary,
+  KPISection,
+} from "@/components/kpi";
 import { GiniImprovementChart } from "./chart/gini-improvement/GiniImprovementChart";
+import { GiniTrendChart } from "./chart/gini-trend/GiniTrendChart";
 import styles from "./page.module.css";
 
 export default function GiniCoefficientPage() {
@@ -12,43 +20,78 @@ export default function GiniCoefficientPage() {
   return (
     <div className="container">
       <ArticleHeader article={article} />
-      <div className={styles.charts}>
+
+      <KPISection title="日本の所得格差と再分配効果（2023年）">
+        <KPIPrimary
+          label="2023年の所得再分配による格差改善度"
+          value="34.7%"
+          caption="税・社会保障により格差が約3.5割縮小"
+        />
+        <KPIGrid>
+          <KPICard
+            label="当初所得ジニ係数（2023年）"
+            value="0.5855"
+            caption="1981年（0.3491）から高齢化等で上昇"
+          />
+          <KPICard
+            label="再分配後ジニ係数（2023年）"
+            value="0.3825"
+            caption="給付と税により0.38台に抑制"
+          />
+          <KPICard
+            label="当初と再分配後の格差ギャップ"
+            value="0.2030"
+            caption="過去最大の是正幅を記録"
+          />
+          <KPICard
+            label="1981年の改善度"
+            value="10.0%"
+            caption="当初0.3491 → 再分配後0.3143"
+          />
+        </KPIGrid>
+      </KPISection>
+
+      <div className={styles.content}>
+        <ArticleText>
+          <p>
+            ジニ係数は、社会における所得分配の不平等さを0から1の範囲で数値化する代表的な指標です。数値が0に近いほど全員の所得が平等であり、1に近いほど一握りの世帯に所得が集中していることを意味します。
+          </p>
+          <p>
+            厚生労働省の「所得再分配調査」では、給与や事業収入など市場で得た生の収入を示す「当初所得」と、税金・社会保険料を差し引き、年金や医療・介護・子育て支援などの公的給付を加えた「再分配所得」の2つを比較しています。
+          </p>
+        </ArticleText>
+
         <ArticleChart
           title="当初所得と再分配所得のジニ係数推移"
-          yearRange="（1962〜2023）"
-          intro={
-            <>
-              <p> ジニ係数とは、社会の中で、所得(収入)がどれくらい均等に分かれているかを表す指標です。
-                0〜1の数字で表され、全員の所得が同じなら0、一人が独占していれば1に近づきます。
-                0に近いほど格差が小さく、1に近いほど格差が大きい、という数字です。</p>
-              <p>
-                当初所得とは、税金や社会保険料を払う前の、給料や事業の儲けなど「働いて得たお金」の合計です。
-                年金や医療費補助といった社会保障からの給付は含まれていません。
-              </p>
-              <p>
-                再分配所得とは、当初所得から税金・社会保険料を差し引き、そこに年金・医療・介護・保育などの給付を加えたものです。
-              </p>
-            </>
-          }
+          subtitle="1962年度〜2023年度（世帯単位）"
+          source="厚生労働省「所得再分配調査」"
+          sourceUrl="https://www.e-stat.go.jp/statistics/00450422"
         >
           <GiniTrendChart />
         </ArticleChart>
 
+        <ArticleText>
+          <p>
+            日本の当初所得ジニ係数は、1980年代初頭の0.34前後から一貫して上昇を続け、2023年度には過去最高の0.5855に達しました。この背景には、年金受給世代である無職の高齢者世帯の急増という人口動態の構造変化があります。
+          </p>
+          <p>
+            一方で、年金や医療などの社会保障給付を中心とした再分配機能が強く作用しており、再分配後のジニ係数は0.37〜0.38台でほぼ横ばいを維持。税・社会保障による格差改善度は1980年代の約10%から2023年には34.7%へと大幅に拡大しています。
+          </p>
+        </ArticleText>
+
         <ArticleChart
-          title="所得再分配による改善度の推移"
-          yearRange="（1962〜2023）"
-          intro={
-            <p>
-              改善度とは、税金と社会保障の仕組みが、格差をどれだけ縮めたかを表したものです。<br />
-              改善度(%) = (当初所得のジニ係数 − 再分配所得のジニ係数) ÷ 当初所得のジニ係数 × 100 <br />
-              たとえば当初所得のジニ係数が0.50、再分配所得のジニ係数が0.35なら、改善度は(0.50−0.35)÷0.50×100=30% <br />
-              税金と社会保障によって、格差が30%縮小したことを意味します。
-              数字が大きいほど、再分配の仕組みが強く効いていることになります。
-            </p>
-          }
+          title="所得再分配による格差改善度の推移"
+          subtitle="1962年度〜2023年度（単位: %）"
+          source="厚生労働省「所得再分配調査」"
+          sourceUrl="https://www.e-stat.go.jp/statistics/00450422"
         >
           <GiniImprovementChart />
         </ArticleChart>
+
+        <ArticleSource
+          label="出典: 厚生労働省「所得再分配調査」"
+          href="https://www.e-stat.go.jp/statistics/00450422"
+        />
       </div>
     </div>
   );
