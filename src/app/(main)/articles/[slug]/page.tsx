@@ -1,5 +1,6 @@
 import { getAllSlugs, getArticleBySlug } from "@/app/(main)/articles/articles";
 import { ArticleShell } from "@/components/layout/ArticleShell";
+import { Metadata } from "next";
 import { notFound } from "next/navigation";
 
 type Props = { params: Promise<{ slug: string }> }
@@ -8,12 +9,24 @@ export function generateStaticParams() {
   return getAllSlugs().map((slug) => ({ slug }));
 }
 
-export async function generateMetadata({ params }: Props) {
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
   const article = getArticleBySlug(slug);
   if (!article) return {};
+
   return {
-    title: article.title,
+    title: `${article.title} | 美しい日本の数字`,
+    description: article.description,
+    openGraph: {
+      title: article.title,
+      description: article.description,
+      images: [`/articles/${slug}/opengraph-image`],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: article.title,
+      description: article.description,
+    },
   };
 }
 
