@@ -17,7 +17,6 @@ export function ArticleHeader({ article }: { article: Article }) {
       </div>
       <ArticleTags tags={article.tags} />
       <h1 className={styles.title}>{article.title}</h1>
-      <p className={styles.description}>{article.description}</p>
       {article.sourceUrl && article.sourceLabel && (
         <ArticleSource href={article.sourceUrl} label={article.sourceLabel} />
       )}

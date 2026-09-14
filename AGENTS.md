@@ -14,6 +14,13 @@
 * **[CRITICAL]** 新規記事を追加する際は、必ず `/src/app/(main)/articles/articles.ts` 内の `articles` 配列の**先頭（最初の要素）**に追加・登録すること（末尾追加は厳禁）。
 * **[CRITICAL]** `articles.ts` 内の `label` プロパティは、必ず**英語表記**（例: `"Social Security"`, `"Demographics"`）とする。
 
+## 2.5 Article Description Rules（一覧カード用 description のルール）
+* `articles.ts` の `description` は、トップページのトピック一覧カードに表示される。
+* 「〜を可視化します」「〜を読み解きます」のような手段の説明で終わる書き方は禁止。
+* 結論となる数字を先に言い切り、意外性・対比（ギャップ）を含めることで引きを作る。
+  * 例（Before）: 「歳入から歳出までの流れを追い、社会保障・防衛・公共事業など主要項目の構造をひも解きます。」
+  * 例（After）: 「一般会計115.2兆円のうち、自由に使えるのは3分の1だけ。」
+
 ---
 
 ## 3. Directory & File Structures（ディレクトリ・ファイル構造）

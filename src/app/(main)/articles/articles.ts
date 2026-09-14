@@ -345,9 +345,8 @@ export const articles: Article[] = [
     href: "/articles/government-spending",
     publishedAt: "2026-06-13",
     label: "Government spending",
-    title: "税金はどこへ消えているのか？",
-    description:
-      "歳入から歳出までの流れを追い、社会保障・防衛・公共事業など主要項目の構造をひも解きます。",
+    title: "税金は何に使われているのか？",
+    description: "一般会計115.2兆円のうち、自由に使えるのは3分の1だけ。",
     tags: ["politics", "economy"],
     sourceUrl:
       "https://www.mof.go.jp/policy/budget/reference/statistics/data.htm",

@@ -4,13 +4,14 @@ type Props = {
   label: ReactNode;
   value: string;
   caption?: string;
+  valueColor?: string;
 }
 
-export function KPICard({ label, value, caption }: Props) {
+export function KPICard({ label, value, caption, valueColor }: Props) {
   return (
     <div className={styles.kpiCard}>
       <p>{label}</p>
-      <strong>{value}</strong>
+      <strong style={valueColor ? { color: valueColor } : undefined}>{value}</strong>
       {caption && <span className={styles.caption}>{caption}</span>}
     </div>
   );
