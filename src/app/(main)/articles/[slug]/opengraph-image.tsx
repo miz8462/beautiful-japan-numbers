@@ -10,6 +10,7 @@ export default async function OGImage({ params }: Props) {
   const { slug } = await params;
   const article = getArticleBySlug(slug);
   const title = article?.title ?? "美しい日本の数字";
+  const description = article?.description;
 
   return new ImageResponse(
     (
@@ -27,6 +28,19 @@ export default async function OGImage({ params }: Props) {
         <div style={{ color: "#ffffff", fontSize: 52, fontWeight: 500, lineHeight: 1.3, marginBottom: 24 }}>
           {title}
         </div>
+        {description && (
+          <div
+            style={{
+              color: "rgba(255,255,255,0.85)",
+              fontSize: 26,
+              lineHeight: 1.6,
+              marginBottom: 32,
+              maxWidth: 900,
+            }}
+          >
+            {description}
+          </div>
+        )}
         <div style={{ width: 40, height: 2, background: "rgba(255,255,255,0.4)", marginBottom: 16 }} />
         <div style={{ color: "rgba(255,255,255,0.7)", fontSize: 18, letterSpacing: "0.1em" }}>
           美しい日本の数字
