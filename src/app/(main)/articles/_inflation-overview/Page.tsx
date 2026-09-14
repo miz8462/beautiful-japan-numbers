@@ -1,9 +1,9 @@
 import { articles } from "@/app/(main)/articles/articles";
-import { CpiIndexChart } from "@/app/(main)/articles/inflation-overview/charts/CpiIndexChart";
-import { CpiYoyChart } from "@/app/(main)/articles/inflation-overview/charts/CpiYoyChart";
+import { CpiIndexChart } from "@/app/(main)/articles/_inflation-overview/charts/CpiIndexChart";
+import { CpiYoyChart } from "@/app/(main)/articles/_inflation-overview/charts/CpiYoyChart";
 import {
   type PriceRankingComparison
-} from "@/app/(main)/articles/inflation-overview/charts/PriceRankingTable/PriceRankingTable";
+} from "@/app/(main)/articles/_inflation-overview/charts/PriceRankingTable/PriceRankingTable";
 import { ArticleChart } from "@/components/article/article-chart";
 import { ArticleHeader } from "@/components/article/article-header/ArticleHeader";
 import { ArticleSource } from "@/components/article/article-source/ArticleSource";
