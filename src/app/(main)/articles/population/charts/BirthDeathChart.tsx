@@ -91,6 +91,7 @@ export default function BirthDeathChart() {
             color: "var(--color-text-primary, #222222)",
             lineHeight: 1.5,
             boxShadow: "0 4px 12px rgba(0,0,0,0.08)",
+            whiteSpace: "nowrap",
           }}>
             <strong>{point.data.x}年</strong><br />
             {point.seriesId}：<strong>{Number(point.data.y).toLocaleString()}万人</strong>

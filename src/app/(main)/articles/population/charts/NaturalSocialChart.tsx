@@ -59,20 +59,27 @@ export default function NaturalSocialChart() {
             ticks: { line: { stroke: "transparent" }, text: { fill: "var(--color-text-muted, #888888)", fontSize: 11 } },
           },
         }}
-        tooltip={({ id, value, indexValue }) => (
-          <div style={{
-            background: "#FFFFFF",
-            border: "1px solid var(--color-border, #e0e0e0)",
-            padding: "8px 12px",
-            fontSize: 12,
-            color: "var(--color-text-primary, #222222)",
-            borderRadius: 4,
-            boxShadow: "0 4px 12px rgba(0,0,0,0.08)",
-          }}>
-            <strong>{indexValue}年</strong><br />
-            {id}：<strong>{value}万人</strong>
-          </div>
-        )}
+        tooltip={({ indexValue }) => {
+          const row = data.find((d) => d.year === indexValue);
+          if (!row) return null;
+          return (
+            <div style={{
+              background: "#FFFFFF",
+              border: "1px solid var(--color-border, #e0e0e0)",
+              padding: "8px 12px",
+              fontSize: 12,
+              color: "var(--color-text-primary, #222222)",
+              borderRadius: 4,
+              boxShadow: "0 4px 12px rgba(0,0,0,0.08)",
+              whiteSpace: "nowrap",
+              lineHeight: 1.5, 
+            }}>
+              <strong>{indexValue}年</strong><br />
+              自然減：<strong>{row.自然減}万人</strong><br />
+              社会増：<strong>{row.社会増}万人</strong>
+            </div>
+          );
+        }}
         layers={[
           "grid",
           "axes",

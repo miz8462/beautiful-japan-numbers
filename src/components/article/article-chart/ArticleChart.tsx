@@ -30,7 +30,9 @@ export function ArticleChart({ title, subtitle, yearRange, source, sourceUrl, in
       <div className={styles.card}>
         <div className={styles.header}>
           <h2 className={styles.heading}>{title}</h2>
-          {subtitle && <p className={styles.subtitle}>{subtitle}</p>}
+          <div className={styles.headerRight}>
+            {subtitle && <p className={styles.subtitle}>{subtitle}</p>}
+          </div>
           {yearRange && <p className={styles.yearRange}>{yearRange}</p>}
         </div>
         {intro && <div className={styles.intro}>{intro}</div>}

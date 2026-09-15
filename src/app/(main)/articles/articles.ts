@@ -330,17 +330,17 @@ export const articles: Article[] = [
   //   sourceUrl: "https://www.soumu.go.jp/senkyo/senkyo_s/data/index.html",
   //   sourceLabel: "出典: 総務省 選挙関連資料",
   // },
-  // {
-  //   href: "/articles/population",
-  //   label: "Population",
-  //   publishedAt: "2026-06-13",
-  //   title: "人口はどれだけ減ってるの？",
-  //   description:
-  //     "総人口・出生・死亡・国際移動の変化を並べ、人口減少の“中身”を分解して見ていきます。",
-  //   tags: ["society"],
-  //   sourceUrl: "https://www.stat.go.jp/data/jinsui/2.html",
-  //   sourceLabel: "出典: 総務省統計局 人口推計",
-  // },
+  {
+    href: "/articles/population",
+    label: "Population",
+    publishedAt: "2026-09-15",
+    title: "日本の人口はどれだけ減ってるの？",
+    description:
+      "1年で58万人減、仙台市なら2年足らずで消える規模。",
+    tags: ["society"],
+    sourceUrl: "https://www.stat.go.jp/data/jinsui/2.html",
+    sourceLabel: "出典: 総務省統計局 人口推計",
+  },
   {
     href: "/articles/government-spending",
     publishedAt: "2026-09-14",

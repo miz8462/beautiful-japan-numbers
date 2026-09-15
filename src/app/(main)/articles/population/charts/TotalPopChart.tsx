@@ -28,9 +28,9 @@ export default function TotalPopChart() {
     <ArticleChartCanvas height={280} mobileHeight={240}>
       <ResponsiveLine
         data={data}
-        margin={{ top: 20, right: 60, bottom: 44, left: 56 }}
+        margin={{ top: 20, right: 80, bottom: 44, left: 56 }}
         xScale={{ type: "linear", min: 1980, max: 2024, nice: false }}
-        yScale={{ type: "linear", min: 11000, max: 13000, nice: false }}
+        yScale={{ type: "linear", min: 11500, max: 13000, nice: false }}
         axisBottom={{
           tickSize: 0,
           tickPadding: 10,
@@ -40,8 +40,8 @@ export default function TotalPopChart() {
         axisLeft={{
           tickSize: 0,
           tickPadding: 10,
-          tickValues: [11000, 11500, 12000, 12500, 13000],
-          format: (v) => `${(v / 10000).toFixed(1)}億`,
+          tickValues: [11500, 12000, 12500, 13000],
+          format: (v) => `${(v / 10000).toFixed(2)}億`,
         }}
         layers={[
           "grid",
@@ -115,6 +115,7 @@ export default function TotalPopChart() {
             color: "var(--color-text-primary, #222222)",
             lineHeight: 1.5,
             boxShadow: "0 4px 12px rgba(0,0,0,0.08)",
+            whiteSpace: "nowrap",
           }}>
             <strong>{point.data.x}年</strong><br />
             総人口：<strong>{Number(point.data.y).toLocaleString()}万人</strong>
