@@ -1,6 +1,5 @@
 import { articles } from "@/app/(main)/articles/articles";
 import { ArticleHeader } from "@/components/article/article-header/ArticleHeader";
-import { ArticleSource } from "@/components/article/article-source/ArticleSource";
 import { ArticleText } from "@/components/article/article-text/ArticleText";
 import { KPICard, KPIGrid, KPIPrimary, KPISection } from "@/components/kpi";
 import DietMembersCharts from "./DietMembersCharts";
@@ -38,12 +37,12 @@ export default function DietMembersPage() {
           <KPICard
             label="60代以上の議員割合"
             value="40.1%"
-            caption="国会議員の高齢化傾向が継続"
+            caption="戦後最高の高齢割合"
           />
           <KPICard
             label="20〜30代の議員割合"
-            value="10.8%"
-            caption="若手議員は全体の約1割にとどまる"
+            value="6.2%"
+            caption="若手議員は全体の1割にすら満たない"
           />
         </KPIGrid>
       </KPISection>
@@ -51,19 +50,15 @@ export default function DietMembersPage() {
       {/* 導入解説 */}
       <ArticleText>
         <p>
-          国の法律や予算を決定する最高機関である国会（衆議院）。
-          その構成メンバーである国会議員の「ジェンダー」と「年齢」は、戦後から現在に至る約80年間でどのように変化してきたのでしょうか。
+          国会議員の「ジェンダー」と「年齢」は、戦後から現在に至る約80年間でどのように変化してきたのでしょうか。
         </p>
         <p>
-          1946年の第22回衆院選から2026年の第51回衆院選までの公的統計をもとに、女性候補者数・議員数・当選率の推移と、当選議員の年代別構成比の変遷をデータから紐解きます。
+          1946年の第22回衆院選から2026年の第51回衆院選までの公的統計をもとに、女性候補者数・議員数・当選率の推移と、当選議員の年代別構成比の変遷を見ていきます。
         </p>
       </ArticleText>
 
       {/* チャート群 */}
       <DietMembersCharts />
-
-      {/* 出典 */}
-      <ArticleSource href={SOURCE_URL} label={SOURCE_LABEL} />
     </div>
   );
 }

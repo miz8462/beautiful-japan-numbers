@@ -48,7 +48,7 @@ export default function TurnoutLineChart() {
     <ArticleChartCanvas height={420} mobileHeight={340}>
       <ResponsiveLine
         data={data}
-        margin={{ top: 28, right: isMobile ? 55 : 70, bottom: 52, left: 48 }}
+        margin={{ top: 35, right: isMobile ? 55 : 70, bottom: 52, left: 48 }}
         xScale={{ type: "linear", min: 1967, max: 2024, nice: false }}
         yScale={{ type: "linear", min: 30, max: 90, nice: false }}
         axisBottom={{

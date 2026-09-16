@@ -306,37 +306,35 @@ export const articles: Article[] = [
   //   sourceUrl: "https://www.soumu.go.jp/senkyo/senkyo_s/data/index.html",
   //   sourceLabel: "出典: 総務省「衆議院議員総選挙結果調」",
   // },
-
-  // {
-  //   href: "/articles/diet-members",
-  //   publishedAt: "2026-06-19",
-  //   label: "Diet members",
-  //   title: "国会議員の女性比率と年齢はどう変わった？",
-  //   description:
-  //     "衆議院議員選挙の当選者の年齢構成と女性議員比率・男女別の当選率の推移を整理し、国会の“姿”がどのように変化してきたのかを可視化します。",
-  //   tags: ["politics"],
-  //   sourceUrl: "https://www.soumu.go.jp/senkyo/senkyo_s/data/index.html",
-  //   sourceLabel: "出典: 総務省「衆議院議員総選挙結果調」",
-  // },
-
-  // {
-  //   href: "/articles/voter-turnout",
-  //   publishedAt: "2026-06-16",
-  //   label: "Voter turnout",
-  //   title: "選挙の投票率ってどれくらい？",
-  //   description:
-  //     "衆議院選挙の投票率を全体・年代別に整理し、どこで“投票が失われているのか”を可視化します。",
-  //   tags: ["politics"],
-  //   sourceUrl: "https://www.soumu.go.jp/senkyo/senkyo_s/data/index.html",
-  //   sourceLabel: "出典: 総務省 選挙関連資料",
-  // },
+  {
+    href: "/articles/diet-members",
+    publishedAt: "2026-09-17",
+    label: "Diet members",
+    title: "国会議員の女性比率と年齢はどう変わった？",
+    description:
+      "60代以上の議員が40.1%で戦後最高。女性議員は14.6%にとどまる。",
+    tags: ["politics"],
+    sourceUrl: "https://www.soumu.go.jp/senkyo/senkyo_s/data/index.html",
+    sourceLabel: "出典: 総務省「衆議院議員総選挙結果調」",
+  },
+  {
+    href: "/articles/voter-turnout",
+    publishedAt: "2026-09-16",
+    label: "Voter turnout",
+    title: "選挙の投票率ってどれくらい？",
+    description:
+      "衆議院選挙の投票率を全体・年代別に整理し、どこで“投票が失われているのか”を可視化します。",
+    tags: ["politics"],
+    sourceUrl: "https://www.soumu.go.jp/senkyo/senkyo_s/data/index.html",
+    sourceLabel: "出典: 総務省 選挙関連資料",
+  },
   {
     href: "/articles/population",
     label: "Population",
     publishedAt: "2026-09-15",
     title: "日本の人口はどれだけ減ってるの？",
     description:
-      "1年で58万人減、仙台市なら2年足らずで消える規模。",
+      "1年で58万人減。ほんの2年足らずで仙台が消える規模。",
     tags: ["society"],
     sourceUrl: "https://www.stat.go.jp/data/jinsui/2.html",
     sourceLabel: "出典: 総務省統計局 人口推計",

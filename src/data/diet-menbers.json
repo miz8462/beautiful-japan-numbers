@@ -251,6 +251,18 @@
     ],
     "age": [
         {
+            "election": 22,
+            "year": 1946,
+            "scope": "total",
+            "u30": 10,
+            "30s": 82,
+            "40s": 196,
+            "50s": 134,
+            "60s": 40,
+            "o70": 4,
+            "total": 466
+        },
+        {
             "election": 23,
             "year": 1947,
             "scope": "total",

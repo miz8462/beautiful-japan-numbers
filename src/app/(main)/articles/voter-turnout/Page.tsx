@@ -28,6 +28,7 @@ export default function VoterTurnoutPage() {
           <KPICard
             label="20代の投票率"
             value="34.62%"
+            valueColor="var(--color-data-negative)"
             caption="若年層の約3人に1人のみ投票"
           />
           <KPICard
@@ -38,6 +39,7 @@ export default function VoterTurnoutPage() {
           <KPICard
             label="小選挙区の死票率"
             value="48.0%"
+            valueColor="var(--color-data-negative)"
             caption="投じられた票の約半分が落選者に"
           />
           <KPICard
@@ -51,19 +53,16 @@ export default function VoterTurnoutPage() {
       {/* 導入解説 */}
       <ArticleText>
         <p>
-          「若者の政治離れ」や「投票率の低下」が叫ばれて久しい日本。
-          実際の投票率は過去半世紀でどのように推移し、世代間でどれほどの格差が生じているのでしょうか。
+          2024年衆議院選挙の投票率は53.85%。
+          有権者のほぼ半数が投票に行っていません。
+          20代に限れば34.62%と、60代(68.02%)の半分にとどまります。
         </p>
         <p>
-          1967年から2024年までの年代別投票率データと、2026年衆院選における「死票（議席に結びつかなかった票）」の検証を通じて、有権者の意思がどのように反映されているのかを数字でたどります。
-        </p>
+          この記事では、1967年から2024年までの年代別投票率の推移と、2026年衆院選における「死票」(議席に結びつかなかった票)の実態を通じて、有権者の意思がどれだけ国政に届いているのかを数字でたどります。        </p>
       </ArticleText>
 
       {/* チャート群 */}
       <VoterTurnoutCharts />
-
-      {/* 出典 */}
-      <ArticleSource href={SOURCE_URL} label={SOURCE_LABEL} />
     </div>
   );
 }
