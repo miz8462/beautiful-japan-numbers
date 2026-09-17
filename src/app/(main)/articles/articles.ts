@@ -295,17 +295,17 @@ export const articles: Article[] = [
   //   sourceUrl: "",
   //   sourceLabel: "出典: 各種報道および党史をもとに作成",
   // },
-  // {
-  //   href: "/articles/election-smd-vs-pr",
-  //   publishedAt: "2026-06-23",
-  //   label: "Election system",
-  //   title: "比例での政党への投票率は小選挙区での結果にどれほど反映されているか？",
-  //   description:
-  //     "衆議院選挙において小選挙区の獲得議席割合と比例代表の得票率がどれほど乖離しているかを、自民党と民主・立憲系それぞれの推移を通じて可視化します。",
-  //   tags: ["politics"],
-  //   sourceUrl: "https://www.soumu.go.jp/senkyo/senkyo_s/data/index.html",
-  //   sourceLabel: "出典: 総務省「衆議院議員総選挙結果調」",
-  // },
+  {
+    href: "/articles/election-smd-vs-pr",
+    publishedAt: "2026-09-18",
+    label: "Election system",
+    title: "比例での政党への投票率は小選挙区での結果にどれほど反映されているか？",
+    description:
+      "わずか37％の比例支持で、86％もの小選挙区議席を獲得する怪。",
+    tags: ["politics"],
+    sourceUrl: "https://www.soumu.go.jp/senkyo/senkyo_s/data/index.html",
+    sourceLabel: "出典: 総務省「衆議院議員総選挙結果調」",
+  },
   {
     href: "/articles/diet-members",
     publishedAt: "2026-09-17",
