@@ -95,33 +95,36 @@ const PARTY_BOXES: PartyBox[] = [
   { id: 'reiwa', name: 'れいわ新選組', col: 5, row: 17, color: COLORS.reiwa, label: '19.4' },
   { id: 'sansei', name: '参政党', col: 6, row: 17, color: COLORS.sansei, label: '20.4' },
   { id: 'cdp_new', name: '立憲民主党', col: 2, row: 18, color: COLORS.democratic, label: '20.9' },
-  { id: 'chudo_kaikaku', name: '中道改革連合', col: 1, row: 19, color: COLORS.chudo, label: '26.1 合併' },
+  { id: 'chudo_kaikaku', name: '中道改革連合', col: 2, row: 19, color: COLORS.chudo, label: '26.1 合併' },
+  { id: 'minshu_kaikaku', name: '民主改革の会', col: 2, row: 20, color: COLORS.democratic, label: '26.9' },
+  { id: 'komeito_new', name: '公明党', col: 1, row: 20, color: COLORS.komeito, label: '26.9 分裂' },
 
-  // === Row 19: Bottom Headers (Existing / Final status) ===
-  { id: 'jcp_bot', name: '共産党', col: 0, row: 20, color: COLORS.jcp },
-  { id: 'chudo_bot', name: '中道改革連合', col: 1, row: 20, color: COLORS.chudo },
-  { id: 'dpfp_bot', name: '国民民主党', col: 4, row: 20, color: COLORS.dpfp },
-  { id: 'reiwa', name: 'れいわ新選組', col: 5, row: 20, color: COLORS.reiwa},
-  { id: 'sansei', name: '参政党', col: 6, row: 20, color: COLORS.sansei },
-  { id: 'jip_bot', name: '日本維新の会', col: 7, row: 20, color: COLORS.ishin },
-  { id: 'ldp_bot', name: '自民党', col: 9, row: 20, color: COLORS.ldp },
+  // === Row 21: Bottom Headers (Existing / Final status) ===
+  { id: 'jcp_bot', name: '共産党', col: 0, row: 21, color: COLORS.jcp },
+  { id: 'komeito_bot', name: '公明党', col: 1, row: 21, color: COLORS.komeito },
+  { id: 'minshu_kaikaku_bot', name: '民主改革の会', col: 2, row: 21, color: COLORS.democratic },
+  { id: 'dpfp_bot', name: '国民民主党', col: 4, row: 21, color: COLORS.dpfp },
+  { id: 'reiwa_bot', name: 'れいわ新選組', col: 5, row: 21, color: COLORS.reiwa },
+  { id: 'sansei_bot', name: '参政党', col: 6, row: 21, color: COLORS.sansei },
+  { id: 'jip_bot', name: '日本維新の会', col: 7, row: 21, color: COLORS.ishin },
+  { id: 'ldp_bot', name: '自民党', col: 9, row: 21, color: COLORS.ldp },
 ];
 
 // 2. Define the main vertical lines representing each lane's lifespan
 const VERTICAL_LINES: VerticalLine[] = [
-  { col: 0, rowStart: 0, rowEnd: 20 }, // 共産党
-  { col: 1, rowStart: 0, rowEnd: 18 }, // 公明党 (Ends at Row 18 merger)
-  { col: 1, rowStart: 18, rowEnd: 20 }, // 中道改革連合 (Starts at Row 18 merger)
-  { col: 2, rowStart: 0, rowEnd: 19 }, // 民主党/民進党/立憲民主党 (Ends at Row 18 merger)
+  { col: 0, rowStart: 0, rowEnd: 21 }, // 共産党
+  { col: 1, rowStart: 0, rowEnd: 19 }, // 公明党 (Ends at Row 19 merger into Col 2)
+  { col: 1, rowStart: 20, rowEnd: 21 }, // 公明党 (Resumes at Row 20 after split from Col 2)
+  { col: 2, rowStart: 0, rowEnd: 21 }, // 民主党/民進党/立憲民主党 -> 中道改革連合 -> 民主改革の会 (Main vertical line)
   { col: 3, rowStart: 4, rowEnd: 16 }, // 生活系 (19.4に国民民主党へ合流)
-  { col: 4, rowStart: 15, rowEnd: 20 }, // 希望/国民民主党
+  { col: 4, rowStart: 15, rowEnd: 21 }, // 希望/国民民主党
   { col: 5, rowStart: 11, rowEnd: 15 }, // 元気にする会 (15.1〜17.10に希望の党へ合流)
-  { col: 5, rowStart: 17, rowEnd: 20 }, // れいわ新選組
+  { col: 5, rowStart: 17, rowEnd: 21 }, // れいわ新選組
   { col: 6, rowStart: 1, rowEnd: 14 }, // 改革クラブ/新党改革 (16.7解散)
-  { col: 6, rowStart: 17, rowEnd: 20 }, // 参政党
-  { col: 7, rowStart: 2, rowEnd: 20 }, // みんなの党/維新系
+  { col: 6, rowStart: 17, rowEnd: 21 }, // 参政党
+  { col: 7, rowStart: 2, rowEnd: 21 }, // みんなの党/維新系
   { col: 8, rowStart: 5, rowEnd: 16 }, // 日本維新の会(旧)/次世代/日本のこころ (18.11に自民党へ)
-  { col: 9, rowStart: 0, rowEnd: 20 }, // 自民党
+  { col: 9, rowStart: 0, rowEnd: 21 }, // 自民党
 ];
 
 // 3. Define the connections (splits/merges) with row index of occurrence
@@ -158,8 +161,10 @@ const CONNECTIONS: Connection[] = [
   { fromCol: 4, toCol: 5, row: 17, targetBoxId: 'reiwa'},
   // 立憲民主党 + 国民民主党 -> 立憲民主党/国民民主党 (Row 17)
   { fromCol: 4, toCol: 2, row: 18, targetBoxId: 'cdp_new', label: '20.9' },
-  // 立憲民主党 -> 中道改革連合 (Row 18)
-  { fromCol: 2, toCol: 1, row: 19, targetBoxId: 'chudo_kaikaku', label: '合流' },
+  // 公明党 -> 中道改革連合 (Row 19)
+  { fromCol: 1, toCol: 2, row: 19, targetBoxId: 'chudo_kaikaku', label: '合流' },
+  // 中道改革連合 -> 公明党 (Row 20)
+  { fromCol: 2, toCol: 1, row: 20, targetBoxId: 'komeito_new', label: '26.9 分裂' },
 ];
 
 // 4. Dissolution marks for parties that dissolved without merging
@@ -188,7 +193,7 @@ const PoliticalPartyTimelineChartBase = () => {
     return () => observer.disconnect();
   }, []);
 
-  const totalHeight = MARGIN.top + 20 * ROW_HEIGHT + MARGIN.bottom;
+  const totalHeight = MARGIN.top + 21 * ROW_HEIGHT + MARGIN.bottom;
 
   const getY = (row: number) => {
     return MARGIN.top + row * ROW_HEIGHT;

@@ -284,17 +284,17 @@ export const articles: Article[] = [
   //     "https://www.e-stat.go.jp/stat-search/files?toukei=00200573&tstat=000001150147",
   //   sourceLabel: "出典: 総務省統計局「消費者物価指数」2020年基準",
   // },
-  // {
-  //   href: "/articles/political-party-changes",
-  //   publishedAt: "2026-06-27",
-  //   label: "Political Parties",
-  //   title: "近年の政党再編はどのように進んできたか？",
-  //   description:
-  //     "主要政党の結党・解散・合流・分裂の歴史を可視化し、政治勢力の変遷を俯瞰します。",
-  //   tags: ["politics"],
-  //   sourceUrl: "",
-  //   sourceLabel: "出典: 各種報道および党史をもとに作成",
-  // },
+  {
+    href: "/articles/political-party-changes",
+    publishedAt: "2026-09-21",
+    label: "Political Parties",
+    title: "近年の政党再編はどのように進んできたか？",
+    description:
+      "2009年の政権交代以降、日本の政党は結成・合流・分裂を繰り返してきた。",
+    tags: ["politics"],
+    sourceUrl: "",
+    sourceLabel: "出典: 各種報道および党史をもとに作成",
+  },
   {
     href: "/articles/election-smd-vs-pr",
     publishedAt: "2026-09-18",
@@ -323,7 +323,7 @@ export const articles: Article[] = [
     label: "Voter turnout",
     title: "選挙の投票率ってどれくらい？",
     description:
-      "衆議院選挙の投票率を全体・年代別に整理し、どこで“投票が失われているのか”を可視化します。",
+      "2024年の衆院選、20代の投票率は34.6%。60代の68.0%の約半分だった。",
     tags: ["politics"],
     sourceUrl: "https://www.soumu.go.jp/senkyo/senkyo_s/data/index.html",
     sourceLabel: "出典: 総務省 選挙関連資料",

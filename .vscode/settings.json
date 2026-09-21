@@ -1,0 +1,7 @@
+{
+  "scm.diffDecorations": "none",
+  "diffEditor.hover.enabled": false,
+  "git.decorations.enabled": false,
+  "gitlens.hovers.enabled": false,
+  "editor.stickyScroll.enabled": false
+}
