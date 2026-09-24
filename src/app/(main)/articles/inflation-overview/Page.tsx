@@ -1,9 +1,9 @@
 import { articles } from "@/app/(main)/articles/articles";
-import { CpiIndexChart } from "@/app/(main)/articles/_inflation-overview/charts/CpiIndexChart";
-import { CpiYoyChart } from "@/app/(main)/articles/_inflation-overview/charts/CpiYoyChart";
+import { CpiIndexChart } from "@/app/(main)/articles/inflation-overview/charts/CpiIndexChart";
+import { CpiYoyChart } from "@/app/(main)/articles/inflation-overview/charts/CpiYoyChart";
 import {
   type PriceRankingComparison
-} from "@/app/(main)/articles/_inflation-overview/charts/PriceRankingTable/PriceRankingTable";
+} from "@/app/(main)/articles/inflation-overview/charts/PriceRankingTable/PriceRankingTable";
 import { ArticleChart } from "@/components/article/article-chart";
 import { ArticleHeader } from "@/components/article/article-header/ArticleHeader";
 import { ArticleSource } from "@/components/article/article-source/ArticleSource";
@@ -68,10 +68,10 @@ export default function InflationOverviewPage() {
       {/* 導入解説 */}
       <ArticleText>
         <p>
-          「失われた30年」と呼ばれた長期デフレ・低インフレ期を経て、日本経済は2022年以降、急速な物価高局面へと大きく舵を切りました。
+          消費者物価指数（CPI）は、家計が購入する商品やサービスの価格水準を指数化したもので、「総合」から天候要因で変動しやすい生鮮食品を除いたものが「コア」、さらにエネルギーも除いて基調的な物価変化を見やすくしたものが「コアコア」です。
         </p>
         <p>
-          1990年から2025年までの35年間にわたる消費者物価指数（CPI）の長期データから、「総合」「コア（生鮮食品除く）」「コアコア（生鮮食品及びエネルギー除く）」の3系列の推移と、直近の品目別インフレの動向を可視化します。
+          1990年代半ばから2010年代初頭にかけて、これら3系列はいずれも95〜98前後の狭いレンジで横ばいが続いていました。しかし2022年以降は一転し、総合CPIは2020年の100.0から2025年には111.9へと上昇しています。30年以上経験してこなかったペースで、モノやサービスの価格が動いています。
         </p>
       </ArticleText>
 
@@ -126,10 +126,10 @@ export default function InflationOverviewPage() {
       {/* 解説2 */}
       <ArticleText>
         <p>
-          前年比の変動率（インフレ率）を見ると、過去にプラスとなった局面は消費税率引き上げ時（1997年の5%化、2014年の8%化）や2008年の資源高など一時的な外的要因に限られていました。
+          前年比の変動率（インフレ率）を見ると、過去にプラスとなった局面は消費税率引き上げ時（1997年の5%化、2014年の8%化）や2008年の資源高など一時的な外的要因に限られていました。  %化、2014年の8%化）や2008年の資源高など一時的な外的要因に限られていました。
         </p>
         <p>
-          これに対し、2022年（+2.5%）、2023年（+3.2%）、2024年（+2.7%）、2025年（+3.2%）と<strong>4年連続で2%を超えるインフレ率が定着</strong>している点は、過去30年間にない歴史的な転換点といえます。
+          これに対し、2022年（+2.5%）、2023年（+3.2%）、2024年（+2.7%）、2025年（+3.2%）と<strong>4年連続で2%を超えるインフレ率</strong>続いています。
         </p>
       </ArticleText>
 
@@ -150,10 +150,13 @@ export default function InflationOverviewPage() {
       {/* まとめ解説 */}
       <ArticleText>
         <p>
-          品目別の詳細を見ると、エネルギーや食品・日用品などの生活必需品が大幅に上昇する一方、デジタル家電や通信料など技術革新・政策によって価格が下落した品目も存在します。
+          品目別の変動を見ると、直近5年（2020〜2025年）はうるち米やコーヒー豆など食品を中心に上昇が目立つのに対し、35年（1990〜2025年）で見ると電気冷蔵庫やカメラなど家電製品が9割以上値下がりしています
         </p>
         <p>
-          物価の上昇が持続的な賃金上昇を伴う「好循環」へと結びつくのか、それとも実質的な購買力の目減りをもたらすのか。物価統計は日本の生活水準と経済構造を捉える最も身近な羅針盤です。
+          ただし、この「9割値下がり」は少し注意が必要です。昔の冷蔵庫と今の冷蔵庫は、省エネ性能も容量も別物です。統計では、こうした性能アップの分を価格から差し引いて計算しているため、指数上は大きく下がって見えます。実際の店頭価格が10万円から1万円になったわけではなく、同じお金でより高性能なものが買えるようになった、という意味です。
+        </p>
+        <p>
+          たとえば冷蔵庫は、本体の値段も電気代も大きく下がっています。同じ容量でも、35年前よりはるかに省エネ性能が上がっているため、電気代の面でも家計の負担は軽くなっています。見た目の指数だけでなく、使い続けたときの総コストで見ても、家電は本当に「安くなった」品目だといえます。
         </p>
       </ArticleText>
 
