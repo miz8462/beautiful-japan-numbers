@@ -159,9 +159,6 @@ export default function InflationOverviewPage() {
           たとえば冷蔵庫は、本体の値段も電気代も大きく下がっています。同じ容量でも、35年前よりはるかに省エネ性能が上がっているため、電気代の面でも家計の負担は軽くなっています。見た目の指数だけでなく、使い続けたときの総コストで見ても、家電は本当に「安くなった」品目だといえます。
         </p>
       </ArticleText>
-
-      {/* 出典 */}
-      <ArticleSource href={SOURCE_URL} label={SOURCE_LABEL} />
     </div>
   );
 }

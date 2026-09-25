@@ -261,17 +261,17 @@ export const articles: Article[] = [
   //     "https://www.stat.go.jp/data/kakei/longtime/index.html",
   //   sourceLabel: "総務省統計局「家計調査」",
   // },
-  // {
-  //   href: "/articles/savings",
-  //   publishedAt: "2026-07-03",
-  //   label: "Savings",
-  //   title: "日本人はどれだけ貯金しているのか？",
-  //   description:
-  //     "家計の貯蓄率の年度推移と、年齢階級別の貯蓄・負債残高を可視化します。",
-  //   tags: ["economy"],
-  //   sourceUrl: "",
-  //   sourceLabel: "",
-  // },
+  {
+    href: "/articles/savings",
+    publishedAt: "2026-09-26",
+    label: "Savings",
+    title: "日本人はどれだけ貯金しているのか？",
+    description:
+      "家計貯蓄率は1990年代の10%超から現在は0%台まで低下。30代の平均負債額は20年で約2.6倍に急増。",
+    tags: ["economy"],
+    sourceUrl: "",
+    sourceLabel: "",
+  },
   {
     href: "/articles/inflation-overview",
     publishedAt: "2026-09-25",
