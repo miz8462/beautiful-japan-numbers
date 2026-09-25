@@ -32,11 +32,6 @@ export default function SavingsPage() {
         />
         <KPIGrid>
           <KPICard
-            label="60代の平均貯蓄額"
-            value="2,843万円"
-            caption="2025年（負債234万円）"
-          />
-          <KPICard
             label="70歳以上の平均貯蓄額"
             value="2,471万円"
             caption="2025年（負債81万円）"
@@ -44,12 +39,7 @@ export default function SavingsPage() {
           <KPICard
             label="30代の平均負債額"
             value="1,940万円"
-            caption="2025年（住宅ローン等を中心に急増）"
-          />
-          <KPICard
-            label="40代の平均負債額"
-            value="1,483万円"
-            caption="2002年の876万円から約1.7倍"
+            caption="2025年（住宅ローンの急騰）"
           />
         </KPIGrid>
       </KPISection>
