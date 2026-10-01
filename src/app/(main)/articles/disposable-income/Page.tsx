@@ -26,7 +26,7 @@ export default function DisposableIncomePage() {
         <KPIPrimary
           label="実質可処分所得（2020年基準）"
           value="48.2万円"
-          caption="1990年（49.2万円）を下回る水準（-2.0%）"
+          caption="1989年（48.5万円）を下回る水準（-0.6%）"
         />
         <KPIGrid>
           <KPICard
