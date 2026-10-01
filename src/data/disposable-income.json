@@ -14,11 +14,11 @@
       "nonConsumption": 74415.0,
       "consumption": 316489.0,
       "engelCoefficient": 24.3,
-      "cpiTotal": null,
-      "incomeReal2020": null,
-      "disposableReal2020": null,
+      "cpiTotal": 86.9,
+      "incomeReal2020": 570597.2,
+      "disposableReal2020": 484965.5,
       "source": "1989-2005",
-      "disposableRealIndex1990": null
+      "disposableRealIndex1990": 98.6
     },
     {
       "year": 1990,

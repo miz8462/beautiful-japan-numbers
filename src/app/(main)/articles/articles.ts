@@ -249,18 +249,18 @@ export const articles: Article[] = [
   //   sourceLabel:
   //     "出典: 総務省統計局「家計調査」家計収支編 二人以上の世帯 用途分類",
   // },
-  // {
-  //   href: "/articles/disposable-income",
-  //   publishedAt: "2026-07-04",
-  //   label: "Disposable Income",
-  //   title: "実質可処分所得は30年でどう変わったか？",
-  //   description:
-  //     "勤労者世帯の可処分所得について、名目値と実質値（2020年基準）の推移を比較し、物価上昇によって家計の実質的な購買力がどれほど目減りしてきたかを可視化します。",
-  //   tags: ["economy"],
-  //   sourceUrl:
-  //     "https://www.stat.go.jp/data/kakei/longtime/index.html",
-  //   sourceLabel: "総務省統計局「家計調査」",
-  // },
+  {
+    href: "/articles/disposable-income",
+    publishedAt: "2026-10-01",
+    label: "Disposable Income",
+    title: "実質可処分所得は35年でどう変わったか？",
+    description:
+      "額面は14.0万円上昇するも、買えるものは減少。",
+    tags: ["economy"],
+    sourceUrl:
+      "https://www.stat.go.jp/data/kakei/longtime/index.html",
+    sourceLabel: "総務省統計局「家計調査」",
+  },
   {
     href: "/articles/savings",
     publishedAt: "2026-09-26",

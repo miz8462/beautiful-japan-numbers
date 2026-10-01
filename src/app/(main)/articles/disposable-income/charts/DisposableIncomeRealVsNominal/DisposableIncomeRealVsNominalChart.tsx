@@ -35,7 +35,7 @@ const labels: Record<SeriesId, string> = {
 // ─── データ整形 ───────────────────────────────────────────────────
 // 1989年は disposableReal2020 が null のため除外
 const filtered = disposableIncomeData.series.filter(
-  (d) => d.year >= 1990 && d.disposableReal2020 !== null
+  (d) => d.year >= 1989 && d.disposableReal2020 !== null
 );
 
 const CHART_DATA: IncomeLineSeries[] = [
@@ -56,7 +56,7 @@ const CHART_DATA: IncomeLineSeries[] = [
 ];
 
 // ─── 軸 tick ─────────────────────────────────────────────────────
-const tickYears = [1990, 1995, 2000, 2005, 2010, 2015, 2020, 2024];
+const tickYears = [1989, 1995, 2000, 2005, 2010, 2015, 2020, 2024];
 const yTickValues = [35, 40, 45, 50, 55];
 
 // ─── Nivo テーマ ──────────────────────────────────────────────────
@@ -144,26 +144,24 @@ export function DisposableIncomeRealVsNominalChart() {
   return (
     <div className={styles.wrapper}>
       <p className={styles.chartNote}>
-        <strong>名目値</strong>は、給料明細に書かれている金額そのもの。
-        物価が上がったことは考慮しない、ただの「数字」。
+        <strong>名目値</strong>とは、給料明細に書かれている金額そのものです。
+        物価の変化は考えに入れません。
       </p>
       <p className={styles.chartNote}>
-        <strong>実質値</strong>は、物価の上昇分を差し引いて「実際に何がどれだけ買えるか」で測り直した金額。
-        たとえば給料が10万円増えても、その間に物価も10万円分上がっていれば、
-        生活水準はまったく変わっていない。
+        <strong>実質値</strong>とは、物価の上昇分を取り除き、「実際にどれだけ買えるか」で測り直した金額です。
+        たとえば手取りが10万円増えても、物価が上がって同じ暮らしに10万円多くかかるようになれば、生活は少しも楽になっていません。
       </p>
       <p className={styles.chartNote}>
-        名目が伸びていても実質が伸びていなければ、手取りは増えたように見えても、
-        買えるものは増えていない。例えば基準年である2020年の名目と実質はともに49.9万円で、
-        2024年には名目は52.3万円、実質は48.2万円となっており、
-        給料は2.4万円も増えたが実際に買えるものは1.7万円分も減っている。
-      </p>
+        名目が増えても実質が増えなければ、手取りの数字は大きくなっても、買えるものは増えていないのです。
+        基準の2020年は、名目も実質も49.9万円でした。
+        ところが2024年は、名目が52.3万円と2.4万円増えた一方で、実質は48.2万円と、2020年より1.7万円減っています。
+        手取りの金額は増えたのに、買えるものは減ったことになります。      </p>
       <span className={styles.unitNote}>単位：万円（1世帯当たり月平均）</span>
       <ArticleChartCanvas height={380} mobileHeight={300}>
         <ResponsiveLine
           data={CHART_DATA}
           margin={{ top: 0, right: 88, bottom: 40, left: 52 }}
-          xScale={{ type: "linear", min: 1990, max: 2024 }}
+          xScale={{ type: "linear", min: 1989, max: 2024, nice: false }}
           yScale={{ type: "linear", min: 33, max: 58 }}
           axisBottom={{
             tickSize: 0,
