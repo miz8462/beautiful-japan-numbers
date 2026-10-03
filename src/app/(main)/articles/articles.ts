@@ -237,18 +237,18 @@ export const articles: Article[] = [
   //   sourceUrl: "https://www.esri.cao.go.jp/jp/sna/kakuhou/kakuhou_top.html",
   //   sourceLabel: "出典: 内閣府「国民経済計算年次推計」",
   // },
-  // {
-  //   href: "/articles/consumption-structure",
-  //   publishedAt: "2026-07-06",
-  //   label: "Consumption",
-  //   title: "消費支出の構造はどう変わったか？",
-  //   description:
-  //     "二人以上の世帯の消費支出について、費目別シェアとエンゲル係数の推移を可視化し、家計の使い道の変化を見ます。",
-  //   tags: ["economy"],
-  //   sourceUrl: "https://www.stat.go.jp/data/kakei/longtime/index.html",
-  //   sourceLabel:
-  //     "出典: 総務省統計局「家計調査」家計収支編 二人以上の世帯 用途分類",
-  // },
+  {
+    href: "/articles/consumption-structure",
+    publishedAt: "2026-10-03",
+    label: "Consumption",
+    title: "消費支出の構造はどう変わったか？",
+    description:
+      "食費の割合は25年で5.3ポイント上昇。衣服は5.1%から3.1%に。",
+    tags: ["economy"],
+    sourceUrl: "https://www.stat.go.jp/data/kakei/longtime/index.html",
+    sourceLabel:
+      "出典: 総務省統計局「家計調査」家計収支編 二人以上の世帯 用途分類",
+  },
   {
     href: "/articles/disposable-income",
     publishedAt: "2026-10-01",
