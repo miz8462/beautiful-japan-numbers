@@ -1,6 +1,6 @@
 "use client";
 
-import { ArticleChartCanvas } from "@/components/article/article-chart";
+import { ArticleChartCanvas, ChartNote } from "@/components/article/article-chart";
 import { formatYearShort } from "@/lib/chart-format";
 import type {
   LineCustomSvgLayerProps,
@@ -143,19 +143,20 @@ function EndLabels({
 export function DisposableIncomeRealVsNominalChart() {
   return (
     <div className={styles.wrapper}>
-      <p className={styles.chartNote}>
+      <ChartNote>
         <strong>名目値</strong>とは、給料明細に書かれている金額そのものです。
         物価の変化は考えに入れません。
-      </p>
-      <p className={styles.chartNote}>
+      </ChartNote>
+      <ChartNote>
         <strong>実質値</strong>とは、物価の上昇分を取り除き、「実際にどれだけ買えるか」で測り直した金額です。
         たとえば手取りが10万円増えても、物価が上がって同じ暮らしに10万円多くかかるようになれば、生活は少しも楽になっていません。
-      </p>
-      <p className={styles.chartNote}>
+      </ChartNote>
+      <ChartNote>
         名目が増えても実質が増えなければ、手取りの数字は大きくなっても、買えるものは増えていないのです。
         基準の2020年は、名目も実質も49.9万円でした。
         ところが2024年は、名目が52.3万円と2.4万円増えた一方で、実質は48.2万円と、2020年より1.7万円減っています。
-        手取りの金額は増えたのに、買えるものは減ったことになります。      </p>
+        手取りの金額は増えたのに、買えるものは減ったことになります。
+      </ChartNote>
       <span className={styles.unitNote}>単位：万円（1世帯当たり月平均）</span>
       <ArticleChartCanvas height={380} mobileHeight={300}>
         <ResponsiveLine

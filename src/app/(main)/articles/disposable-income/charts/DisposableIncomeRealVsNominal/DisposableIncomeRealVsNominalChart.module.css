@@ -5,26 +5,7 @@
   width: 100%;
 }
 
-/* グラフ前の説明文 */
-.chartNote {
-  padding: 0 4px;
-  font-size: 13px;
-  line-height: 1.8;
-  color: #555555;
-  font-family: "Noto Sans JP", "游ゴシック体", sans-serif;
-  max-width: 720px;
-}
 
-.chartNote strong {
-  font-weight: 700;
-  color: #222222;
-}
-
-@media (max-width: 767px) {
-  .chartNote {
-    font-size: 13px;
-  }
-}
 
 .unitNote {
   margin-top: 16px;

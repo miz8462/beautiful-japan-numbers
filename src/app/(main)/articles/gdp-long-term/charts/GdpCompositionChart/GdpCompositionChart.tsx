@@ -1,6 +1,6 @@
 "use client";
 
-import { ArticleChartCanvas } from "@/components/article/article-chart";
+import { ArticleChartCanvas, ChartNote } from "@/components/article/article-chart";
 import { formatYearShort } from "@/lib/chart-format";
 import gdpData from "@/data/gdp-1980-2024.json";
 import type { BarCustomLayerProps, BarDatum } from "@nivo/bar";
@@ -75,6 +75,20 @@ function ZeroLine({ yScale, innerWidth }: BarCustomLayerProps<GdpBarDatum>) {
 export function GdpCompositionChart() {
   return (
     <div className={styles.wrapper}>
+      <ChartNote>
+        <strong>グラフの見方:100%を超える年があるのはなぜ?  </strong>
+      </ChartNote>
+      <ChartNote>
+        日本全体で使われたもの(消費・政府支出・投資)には、輸入品も含まれているからです。
+        たとえば、日本全体で101個のものが使われたとします。そのうち1個が輸入品なら、日本で作られたのは100個です。
+      </ChartNote>
+      <ChartNote>
+        GDPは「日本で作られたもの」の合計なので、輸入の1個を引いた100個になります。
+      </ChartNote>
+      <ChartNote>
+        引く前の101個は、GDPの101%にあたります。これがグラフで100%を超えている部分です。
+      </ChartNote>
+
       <span className={styles.unitNote}>単位：名目GDPに占める構成比（%）</span>
       <ArticleChartCanvas height={430} mobileHeight={390}>
         <ResponsiveBar

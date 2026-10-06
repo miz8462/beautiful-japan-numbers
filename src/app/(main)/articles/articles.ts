@@ -227,16 +227,17 @@ export const articles: Article[] = [
   //   sourceUrl: "https://www.e-stat.go.jp/statistics/00450422",
   //   sourceLabel: "出典: 厚生労働省「所得再分配調査」",
   // },
-  // {
-  //   href: "/articles/gdp-long-term",
-  //   publishedAt: "2026-07-06",
-  //   label: "GDP",
-  //   title: "GDPの長期推移",
-  //   description: "1980年度以降の名目GDPと実質GDPの長期推移を可視化し、バブル崩壊後の変化を分析します。",
-  //   tags: ["economy"],
-  //   sourceUrl: "https://www.esri.cao.go.jp/jp/sna/kakuhou/kakuhou_top.html",
-  //   sourceLabel: "出典: 内閣府「国民経済計算年次推計」",
-  // },
+  {
+    href: "/articles/gdp-long-term",
+    publishedAt: "2026-10-06",
+    label: "GDP",
+    title: "GDPの長期推移",
+    description:
+      "名目GDPは上昇するも、実質は横ばい。投資のシェアは35.1%から27.8%に低下。",
+    tags: ["economy"],
+    sourceUrl: "https://www.esri.cao.go.jp/jp/sna/kakuhou/kakuhou_top.html",
+    sourceLabel: "出典: 内閣府「国民経済計算年次推計」",
+  },
   {
     href: "/articles/consumption-structure",
     publishedAt: "2026-10-03",
