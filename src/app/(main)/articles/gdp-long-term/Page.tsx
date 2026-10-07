@@ -91,11 +91,6 @@ export default function GdpLongTermPage() {
         >
           <GdpCompositionChart />
         </ArticleChart>
-
-        <ArticleSource
-          label="出典: 内閣府「国民経済計算年次推計」"
-          href="https://www.esri.cao.go.jp/jp/sna/kakuhou/kakuhou_top.html"
-        />
       </div>
     </div>
   );

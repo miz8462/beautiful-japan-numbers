@@ -216,17 +216,17 @@ export const articles: Article[] = [
   //   sourceUrl: "https://www.esri.cao.go.jp/jp/sna/kakuhou/kakuhou_top.html",
   //   sourceLabel: "出典: 内閣府「国民経済計算年次推計」",
   // },
-  // {
-  //   href: "/articles/gini-coefficient",
-  //   publishedAt: "2026-07-10",
-  //   label: "Gini Coefficient",
-  //   title: "日本の所得格差はどうなっているのか？",
-  //   description:
-  //     "当初所得と再分配所得のジニ係数の推移から、日本の所得格差の現状と、社会保障や税による再分配機能の改善度を可視化します。",
-  //   tags: ["economy", "society"],
-  //   sourceUrl: "https://www.e-stat.go.jp/statistics/00450422",
-  //   sourceLabel: "出典: 厚生労働省「所得再分配調査」",
-  // },
+  {
+    href: "/articles/gini-coefficient",
+    publishedAt: "2026-10-07",
+    label: "Gini Coefficient",
+    title: "日本の所得格差はどうなっているのか？",
+    description:
+      "格差0.5855、過去最高。でも再分配後は0.3825。差を埋めているのは、税と社会保障。",
+    tags: ["economy", "society"],
+    sourceUrl: "https://www.e-stat.go.jp/statistics/00450422",
+    sourceLabel: "出典: 厚生労働省「所得再分配調査」",
+  },
   {
     href: "/articles/gdp-long-term",
     publishedAt: "2026-10-06",
