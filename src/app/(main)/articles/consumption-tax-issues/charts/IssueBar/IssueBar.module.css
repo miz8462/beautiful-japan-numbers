@@ -1,0 +1,41 @@
+.wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.tooltip {
+  background: rgba(255, 255, 255, 0.95);
+  border: 1px solid var(--color-border, #e0e0e0);
+  padding: 8px 12px;
+  border-radius: 6px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  font-size: 0.85rem;
+  color: var(--color-text-primary, #222222);
+  width: max-content;
+  min-width: 180px;
+  max-width: min(300px, 80vw);
+  white-space: nowrap;
+  word-break: keep-all;
+  overflow-wrap: normal;
+}
+
+.tooltipTitle {
+  font-weight: 700;
+  margin-bottom: 0.35rem;
+  color: var(--color-text-primary, #222222);
+}
+
+.tooltipRow {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  font-size: 0.8rem;
+  line-height: 1.5;
+  color: var(--color-text-secondary, #555555);
+  white-space: nowrap;
+}
+
+.tooltipRow strong {
+  font-family: var(--font-data, monospace);
+  color: var(--color-text-primary, #222222);
+}

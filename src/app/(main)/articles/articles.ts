@@ -31,6 +31,15 @@ export type Article = {
 // ======================
 
 export const articles: Article[] = [
+  // 保留中（即公開防止）: 消費税の論点記事
+  // {
+  //   href: "/articles/consumption-tax-issues",
+  //   publishedAt: "2026-10-14",
+  //   label: "Consumption Tax",
+  //   title: "消費税をめぐって、国会では何が論じられたか",
+  //   description: "直近1年の本会議で消費税が語られた発言を、論点ごとに分類。",
+  //   tags: ["politics", "economy"],
+  // },
   // {
   //   href: "/articles/social-security-balance",
   //   publishedAt: "2026-09-04",
