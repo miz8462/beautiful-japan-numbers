@@ -197,15 +197,15 @@ export const articles: Article[] = [
   //   sourceLabel:
   //     "出典: 財務省「国債発行額の推移（実績ベース）」・「普通国債の利率加重平均の各年ごとの推移」",
   // },
-  // {
-  //   href: "/articles/bankruptcy-trend",
-  //   publishedAt: "2026-07-24",
-  //   label: "Bankruptcy",
-  //   title: "企業の倒産件数の推移",
-  //   description:
-  //     "1952年以降の企業倒産件数（負債1,000万円以上）の長期推移と、近年急増する「人手不足」倒産の原因別内訳を可視化します。",
-  //   tags: ["economy"],
-  // },
+  {
+    href: "/articles/bankruptcy-trend",
+    publishedAt: "2026-10-14",
+    label: "Bankruptcy",
+    title: "企業の倒産件数の推移",
+    description:
+      "倒産は2021年の6,030件から2025年に10,300件へ。人手不足倒産は過去最多の397件。",
+    tags: ["economy"],
+  },
   {
     href: "/articles/industry-structure",
     publishedAt: "2026-10-09",
