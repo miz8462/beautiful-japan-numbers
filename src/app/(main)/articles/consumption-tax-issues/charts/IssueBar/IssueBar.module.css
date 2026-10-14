@@ -4,38 +4,82 @@
 }
 
 .tooltip {
-  background: rgba(255, 255, 255, 0.95);
-  border: 1px solid var(--color-border, #e0e0e0);
-  padding: 8px 12px;
-  border-radius: 6px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-  font-size: 0.85rem;
-  color: var(--color-text-primary, #222222);
   width: max-content;
-  min-width: 180px;
+  min-width: 220px;
   max-width: min(300px, 80vw);
+  padding: 12px 16px 14px;
+  background: var(--color-background, #ffffff);
+  border: 1px solid var(--color-border, #e0e0e0);
+  border-radius: 10px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  color: var(--color-text-primary, #222222);
   white-space: nowrap;
-  word-break: keep-all;
-  overflow-wrap: normal;
+  pointer-events: none;
 }
 
 .tooltipTitle {
+  font-size: 0.9rem;
   font-weight: 700;
-  margin-bottom: 0.35rem;
-  color: var(--color-text-primary, #222222);
+  padding-bottom: 8px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid var(--color-border, #e0e0e0);
 }
 
-.tooltipRow {
+.tooltipBody {
   display: flex;
-  justify-content: space-between;
+  align-items: stretch;
   gap: 16px;
-  font-size: 0.8rem;
-  line-height: 1.5;
-  color: var(--color-text-secondary, #555555);
-  white-space: nowrap;
 }
 
-.tooltipRow strong {
+.tooltipCol {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  flex: 1;
+}
+
+.tooltipColLabel {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.72rem;
+  color: var(--color-text-muted, #888888);
+}
+
+.tooltipDot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--color-brand, #5bbee4);
+  flex-shrink: 0;
+}
+
+.tooltipDotGov {
+  background: var(--color-text-secondary, #555555);
+}
+
+.tooltipValue {
   font-family: var(--font-data, monospace);
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 1.2;
   color: var(--color-text-primary, #222222);
+}
+
+.tooltipUnit {
+  margin-left: 2px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--color-text-secondary, #555555);
+}
+
+.tooltipSub {
+  font-family: var(--font-data, monospace);
+  font-size: 0.75rem;
+  color: var(--color-text-muted, #888888);
+}
+
+.tooltipDivider {
+  width: 1px;
+  background: var(--color-border, #e0e0e0);
 }

@@ -34,6 +34,7 @@ type IssueBarDatum = {
   speakers: number;
   govResponses: number;
   memberParagraphs: number;
+  govParagraphs: number;
   [key: string]: string | number;
 };
 
@@ -62,6 +63,7 @@ const CHART_DATA: IssueBarDatum[] = [...ORDERED_ISSUES].reverse().map((issue) =>
   speakers: issue.member.speakers,
   govResponses: issue.gov.responses,
   memberParagraphs: issue.member.paragraphs,
+  govParagraphs: issue.gov.paragraphs,
 }));
 
 function GovernmentResponsesAndDividersLayer({
@@ -229,6 +231,7 @@ export function IssueBar() {
     <div className={styles.wrapper}>
       <ArticleChartCanvas height={560} mobileHeight={520}>
         <ResponsiveBar<IssueBarDatum>
+          animate={false}
           data={CHART_DATA}
           keys={["speakers"]}
           indexBy="label"
@@ -294,17 +297,30 @@ export function IssueBar() {
           tooltip={({ data: datum }) => (
             <div className={styles.tooltip}>
               <div className={styles.tooltipTitle}>{datum.label}</div>
-              <div className={styles.tooltipRow}>
-                <span>議員の発言者数:</span>
-                <strong>{datum.speakers}人</strong>
-              </div>
-              <div className={styles.tooltipRow}>
-                <span>議員の段落数:</span>
-                <strong>{datum.memberParagraphs}段落</strong>
-              </div>
-              <div className={styles.tooltipRow}>
-                <span>政府の応答回数:</span>
-                <strong>{datum.govResponses}回</strong>
+              <div className={styles.tooltipBody}>
+                <div className={styles.tooltipCol}>
+                  <span className={styles.tooltipColLabel}>
+                    <span className={styles.tooltipDot} />
+                    議員の発言者
+                  </span>
+                  <span className={styles.tooltipValue}>
+                    {datum.speakers}
+                    <span className={styles.tooltipUnit}>人</span>
+                  </span>
+                  <span className={styles.tooltipSub}>{datum.memberParagraphs}段落</span>
+                </div>
+                <div className={styles.tooltipDivider} />
+                <div className={styles.tooltipCol}>
+                  <span className={styles.tooltipColLabel}>
+                    <span className={`${styles.tooltipDot} ${styles.tooltipDotGov}`} />
+                    政府の応答
+                  </span>
+                  <span className={styles.tooltipValue}>
+                    {datum.govResponses}
+                    <span className={styles.tooltipUnit}>回</span>
+                  </span>
+                  <span className={styles.tooltipSub}>{datum.govParagraphs}段落</span>
+                </div>
               </div>
             </div>
           )}
