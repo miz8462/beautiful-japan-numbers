@@ -194,18 +194,18 @@ export const articles: Article[] = [
   //   sourceUrl: "https://www.mof.go.jp/tax_policy/summary/condition/a03.htm",
   //   sourceLabel: "出典: 財務省「税収に関する資料」",
   // },
-  // {
-  //   href: "/articles/national-debt-trend",
-  //   publishedAt: "2026-07-25",
-  //   label: "National Debt",
-  //   title: "国債残高の推移",
-  //   description:
-  //     "1965年度以降の普通国債残高と対GDP比の長期推移、および普通国債の利率加重平均の変化から、日本の国債残高の拡大と金利環境を可視化します。",
-  //   tags: ["economy", "politics"],
-  //   sourceUrl: "https://www.mof.go.jp/jgbs/reference/national_debt/index.htm",
-  //   sourceLabel:
-  //     "出典: 財務省「国債発行額の推移（実績ベース）」・「普通国債の利率加重平均の各年ごとの推移」",
-  // },
+  {
+    href: "/articles/national-debt-trend",
+    publishedAt: "2026-10-16",
+    label: "National Debt",
+    title: "国債残高の推移",
+    description:
+      "国債残高は1,145兆円、対GDP比165.5%。下がり続けて平均金利は3年で0.76%から0.98%に上昇。",
+    tags: ["economy", "politics"],
+    sourceUrl: "https://www.mof.go.jp/jgbs/reference/national_debt/index.htm",
+    sourceLabel:
+      "出典: 財務省「国債発行額の推移（実績ベース）」・「普通国債の利率加重平均の各年ごとの推移」",
+  },
   {
     href: "/articles/bankruptcy-trend",
     publishedAt: "2026-10-14",
