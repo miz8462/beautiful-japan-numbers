@@ -33,8 +33,8 @@ export type Article = {
 export const articles: Article[] = [
   // 保留中（即公開防止）: 消費税の論点記事
   // {
-  //   href: "/articles/consumption-tax-issues",
-  //   publishedAt: "2026-10-14",
+  //   href: "/articles/kokkai/consumption-tax-issues",
+  //   publishedAt: "2026-10-16",
   //   label: "Consumption Tax",
   //   title: "消費税をめぐって、国会では何が論じられたか",
   //   description: "直近1年の本会議で消費税が語られた発言を、論点ごとに分類。",
@@ -183,17 +183,17 @@ export const articles: Article[] = [
   //   sourceUrl: "https://www.mof.go.jp/policy/budget/reference/statistics/data.htm",
   //   sourceLabel: "出典: 財務省「財政統計」第20表",
   // },
-  // {
-  //   href: "/articles/tax-revenue-structure",
-  //   publishedAt: "2026-07-29",
-  //   label: "Tax Revenue",
-  //   title: "税収構造の推移",
-  //   description:
-  //     "1979年度から2024年度までの日本の税収構造の推移を可視化します。かつては所得税や法人税が主要な税収源でしたが、累次の税制改正や税率引き上げを経て、近年は消費税が税目別で最大となっています。",
-  //   tags: ["economy", "politics"],
-  //   sourceUrl: "https://www.mof.go.jp/tax_policy/summary/condition/a03.htm",
-  //   sourceLabel: "出典: 財務省「税収に関する資料」",
-  // },
+  {
+    href: "/articles/tax-revenue-structure",
+    publishedAt: "2026-10-17",
+    label: "Tax Revenue",
+    title: "税収構造の推移",
+    description:
+      "2024年度の税収は消費税25.0兆円、所得税21.2兆円、法人税17.9兆円。飲食料品減税による税収減は年4.3兆円の見込み。",
+    tags: ["economy", "politics"],
+    sourceUrl: "https://www.mof.go.jp/tax_policy/summary/condition/a03.htm",
+    sourceLabel: "出典: 財務省「税収に関する資料」",
+  },
   {
     href: "/articles/national-debt-trend",
     publishedAt: "2026-10-16",
