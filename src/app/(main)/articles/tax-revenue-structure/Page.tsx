@@ -59,8 +59,6 @@ export default function TaxRevenueStructurePage() {
           飲食料品に限った減税とはいえ、最大の税収源である消費税の税率を下げる以上、その財源をどう手当てするかが、今後の税収構造を左右する論点になります。
         </p>
       </ArticleText>
-
-      <ArticleSource href={SOURCE_URL} label={SOURCE_LABEL} />
     </div>
   );
 }

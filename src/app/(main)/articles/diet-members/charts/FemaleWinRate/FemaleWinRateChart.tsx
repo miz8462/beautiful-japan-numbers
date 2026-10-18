@@ -112,7 +112,6 @@ export default function FemaleWinRateChart() {
                         "axes",
                         "lines",
                         "points",
-                        "crosshair",
                         "mesh",
                         "legends",
                         SeriesLabels,

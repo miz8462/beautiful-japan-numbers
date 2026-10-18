@@ -172,17 +172,17 @@ export const articles: Article[] = [
   //   sourceUrl: "https://www.boj.or.jp/",
   //   sourceLabel: "出典: 日本銀行 / 財務省 / 住宅金融支援機構 / ゆうちょ銀行",
   // },
-  // {
-  //   href: "/articles/expenditure-breakdown",
-  //   publishedAt: "2026-07-31",
-  //   label: "Expenditure",
-  //   title: "歳出の内訳変化の推移",
-  //   description:
-  //     "1967年度から2024年度までの主要経費別歳出の長期推移と、高齢化に伴う社会保障関係費の割合の推移を可視化します。",
-  //   tags: ["economy", "politics"],
-  //   sourceUrl: "https://www.mof.go.jp/policy/budget/reference/statistics/data.htm",
-  //   sourceLabel: "出典: 財務省「財政統計」第20表",
-  // },
+  {
+    href: "/articles/expenditure-breakdown",
+    publishedAt: "2026-10-19",
+    label: "Expenditure",
+    title: "歳出の内訳変化の推移",
+    description:
+      "歳出に占める社会保障関係費の割合は、14.3%から29.1%へ倍増。金額では0.73兆円から35.8兆円、約49倍。",
+    tags: ["economy", "politics"],
+    sourceUrl: "https://www.mof.go.jp/policy/budget/reference/statistics/data.htm",
+    sourceLabel: "出典: 財務省「財政統計」第20表",
+  },
   {
     href: "/articles/tax-revenue-structure",
     publishedAt: "2026-10-17",
