@@ -66,101 +66,102 @@ const CHART_DATA: IssueBarDatum[] = [...ORDERED_ISSUES].reverse().map((issue) =>
   govParagraphs: issue.gov.paragraphs,
 }));
 
-function GovernmentResponsesAndDividersLayer({
+function DividersLayer({
   bars,
   innerWidth,
-  margin,
 }: BarCustomLayerProps<IssueBarDatum>) {
   if (bars.length === 0) return null;
 
-  // margin.right: PC 80 / モバイル 62
-  const isMobile = margin.right < 75;
-  const colX = innerWidth + (isMobile ? 54 : 70);
-  const dividerRight = innerWidth + (isMobile ? 58 : 74);
+  // 各論点ごとのバーをまとめる
+  type BarItem = (typeof bars)[number];
+  const barsByIssue = new Map<string, BarItem[]>();
+  for (const bar of bars) {
+    const issueId = bar.data.data.id;
+    const list = barsByIssue.get(issueId) ?? [];
+    list.push(bar);
+    barsByIssue.set(issueId, list);
+  }
 
-  // 画面上で最上段のバー（yが最小のバー）
-  const topBar = bars.reduce(
-    (prev, curr) => (curr.y < prev.y ? curr : prev),
-    bars[0]
-  );
+  const getIssueBottom = (issueId: string) => {
+    const list = barsByIssue.get(issueId);
+    if (!list || list.length === 0) return null;
+    return Math.max(...list.map((b) => b.y + b.height));
+  };
 
-  // グループ境界（GROUP_1 | GROUP_2 | GROUP_3）
-  const barMap = new Map(bars.map((b) => [b.data.data.id, b]));
-  const barG1End = barMap.get(GROUP_1[GROUP_1.length - 1]);
-  const barG2Start = barMap.get(GROUP_2[0]);
-  const barG2End = barMap.get(GROUP_2[GROUP_2.length - 1]);
-  const barG3Start = barMap.get(GROUP_3[0]);
+  const getIssueTop = (issueId: string) => {
+    const list = barsByIssue.get(issueId);
+    if (!list || list.length === 0) return null;
+    return Math.min(...list.map((b) => b.y));
+  };
 
+  const g1EndBottom = getIssueBottom(GROUP_1[GROUP_1.length - 1]);
+  const g2StartTop = getIssueTop(GROUP_2[0]);
   const divider1Y =
-    barG1End && barG2Start
-      ? (barG1End.y + barG1End.height + barG2Start.y) / 2
+    g1EndBottom !== null && g2StartTop !== null
+      ? (g1EndBottom + g2StartTop) / 2
       : null;
+
+  const g2EndBottom = getIssueBottom(GROUP_2[GROUP_2.length - 1]);
+  const g3StartTop = getIssueTop(GROUP_3[0]);
   const divider2Y =
-    barG2End && barG3Start
-      ? (barG2End.y + barG2End.height + barG3Start.y) / 2
+    g2EndBottom !== null && g3StartTop !== null
+      ? (g2EndBottom + g3StartTop) / 2
       : null;
 
   return (
     <g>
-      {/* 列見出し: 最上段の上に配置 */}
-      {topBar && (
-        <text
-          x={colX}
-          y={topBar.y - 14}
-          textAnchor="end"
-          dominantBaseline="central"
-          fill="var(--color-text-secondary, #555555)"
-          fontFamily="var(--font-data, monospace)"
-          fontSize={isMobile ? 10 : 11}
-          fontWeight={600}
-        >
-          政府の応答(回)
-        </text>
-      )}
-
-      {/* 各行の政府応答回数 */}
-      {bars.map((bar) => {
-        const datum = bar.data.data;
-        const y = bar.y + bar.height / 2;
-        return (
-          <text
-            key={`gov-${bar.key}`}
-            x={colX}
-            y={y}
-            textAnchor="end"
-            dominantBaseline="central"
-            fill="var(--color-text-secondary, #555555)"
-            fontFamily="var(--font-data, monospace)"
-            fontSize={12}
-          >
-            {datum.govResponses}回
-          </text>
-        );
-      })}
-
-      {/* グループ1と2の間の区切り線 */}
       {divider1Y !== null && (
         <line
           x1={0}
-          x2={dividerRight}
+          x2={innerWidth}
           y1={divider1Y}
           y2={divider1Y}
           stroke="var(--color-border, #e0e0e0)"
           strokeWidth={1}
         />
       )}
-
-      {/* グループ2と3の間の区切り線 */}
       {divider2Y !== null && (
         <line
           x1={0}
-          x2={dividerRight}
+          x2={innerWidth}
           y1={divider2Y}
           y2={divider2Y}
           stroke="var(--color-border, #e0e0e0)"
           strokeWidth={1}
         />
       )}
+    </g>
+  );
+}
+
+function BarLabelsLayer({
+  bars,
+}: BarCustomLayerProps<IssueBarDatum>) {
+  return (
+    <g>
+      {bars.map((bar) => {
+        const isSpeaker = bar.data.id === "speakers";
+        const unit = isSpeaker ? "人" : "回";
+        const val = bar.data.value;
+        const x = bar.x + bar.width + 6;
+        const y = bar.y + bar.height / 2;
+
+        return (
+          <text
+            key={`label-${bar.key}`}
+            x={x}
+            y={y}
+            textAnchor="start"
+            dominantBaseline="central"
+            fill="var(--color-text-secondary, #555555)"
+            fontFamily="var(--font-data, monospace)"
+            fontSize={11}
+            fontWeight={500}
+          >
+            {val}{unit}
+          </text>
+        );
+      })}
     </g>
   );
 }
@@ -229,33 +230,47 @@ export function IssueBar() {
 
   return (
     <div className={styles.wrapper}>
-      <ArticleChartCanvas height={560} mobileHeight={520}>
+      {/* 凡例 */}
+      <div className={styles.legend}>
+        <span className={styles.legendItem}>
+          <span className={styles.legendColorSpeakers} />
+          議員の発言者数
+        </span>
+        <span className={styles.legendItem}>
+          <span className={styles.legendColorGov} />
+          政府の応答回数
+        </span>
+      </div>
+
+      <ArticleChartCanvas height={660} mobileHeight={620}>
         <ResponsiveBar<IssueBarDatum>
           animate={false}
           data={CHART_DATA}
-          keys={["speakers"]}
+          keys={["speakers", "govResponses"]}
+          groupMode="grouped"
           indexBy="label"
           layout="horizontal"
           margin={{
-            top: 28,
-            right: isMobile ? 62 : 80,
+            top: 12,
+            right: isMobile ? 44 : 52,
             bottom: 36,
             left: isMobile ? 105 : 130,
           }}
-          valueScale={{ type: "linear", min: 0, max: 26, nice: false }}
+          valueScale={{ type: "linear", min: 0, max: 32, nice: false }}
           indexScale={{ type: "band", round: true }}
-          colors="var(--color-brand, #5bbee4)"
-          padding={0.3}
-          borderRadius={3}
+          colors={({ id }) => (id === "speakers" ? "#5bbee4" : "#1e7aa8")}
+          padding={0.28}
+          innerPadding={3}
+          borderRadius={2}
           enableGridX={true}
           enableGridY={false}
-          gridXValues={[0, 5, 10, 15, 20, 25]}
+          gridXValues={[0, 5, 10, 15, 20, 25, 30]}
           axisTop={null}
           axisRight={null}
           axisBottom={{
             tickSize: 0,
             tickPadding: 8,
-            tickValues: [0, 5, 10, 15, 20, 25],
+            tickValues: [0, 5, 10, 15, 20, 25, 30],
             format: (v) => `${v}`,
           }}
           axisLeft={{
@@ -263,15 +278,13 @@ export function IssueBar() {
             tickPadding: 10,
             renderTick,
           }}
-          enableLabel={true}
-          label={(d) => `${d.value}人`}
-          labelTextColor="var(--color-text-primary, #222222)"
-          labelSkipWidth={0}
+          enableLabel={false}
           layers={[
             "grid",
             "axes",
             "bars",
-            GovernmentResponsesAndDividersLayer,
+            DividersLayer,
+            BarLabelsLayer,
           ]}
           theme={{
             background: "transparent",

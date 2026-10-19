@@ -60,9 +60,41 @@
 }
 
 .filled {
+    padding: 0;
     color: var(--color-text-primary, #222222);
     background: color-mix(in srgb, var(--color-brand, #5bbee4) 28%, white);
     border-radius: 3px;
+}
+
+.cellButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    min-height: 28px;
+    padding: 6px 2px;
+    margin: 0;
+    border: none;
+    background: transparent;
+    font-family: inherit;
+    font-size: 13px;
+    font-weight: 500;
+    color: inherit;
+    cursor: pointer;
+    border-radius: 3px;
+    box-sizing: border-box;
+    transition: background-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.cellButton:hover,
+.cellButtonActive {
+    background: color-mix(in srgb, var(--color-brand, #5bbee4) 50%, white);
+}
+
+.cellButton:focus-visible {
+    outline: none;
+    box-shadow: 0 0 0 2px var(--color-brand, #5bbee4);
 }
 
 .empty {
@@ -74,4 +106,84 @@
     padding: 0;
     background: linear-gradient(var(--color-border, #e0e0e0),
             var(--color-border, #e0e0e0)) center / 100% 1px no-repeat;
+}
+
+.tooltip {
+    position: fixed;
+    z-index: 1000;
+    min-width: 140px;
+    max-width: 260px;
+    padding: 8px 10px;
+    background: #1e2229;
+    color: #ffffff;
+    border-radius: 6px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.22), 0 1px 3px rgba(0, 0, 0, 0.12);
+    font-family: var(--font-body, sans-serif);
+    font-size: 12px;
+    line-height: 1.4;
+    pointer-events: none;
+    box-sizing: border-box;
+    transition: opacity 0.12s ease;
+}
+
+.tooltipHeader {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 8px;
+    margin-bottom: 2px;
+}
+
+.tooltipParty {
+    font-weight: 600;
+    font-size: 12px;
+    color: #ffffff;
+}
+
+.tooltipCount {
+    font-family: var(--font-data, monospace);
+    font-size: 11px;
+    font-weight: 600;
+    color: var(--color-brand, #5bbee4);
+}
+
+.tooltipIssue {
+    font-size: 11px;
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 6px;
+    padding-bottom: 4px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.tooltipSpeakers {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+}
+
+.speakerTag {
+    display: inline-block;
+    padding: 2px 6px;
+    background: rgba(255, 255, 255, 0.12);
+    border-radius: 3px;
+    font-size: 11px;
+    color: #f5f5f5;
+    white-space: nowrap;
+}
+
+.tooltipArrow {
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background: #1e2229;
+    transform: rotate(45deg);
+    pointer-events: none;
+}
+
+.tooltipAbove .tooltipArrow {
+    bottom: -4px;
+}
+
+.tooltipBelow .tooltipArrow {
+    top: -4px;
 }

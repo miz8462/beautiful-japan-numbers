@@ -54,8 +54,40 @@
   flex-shrink: 0;
 }
 
+.legend {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 16px;
+  margin-bottom: 8px;
+  padding-right: 4px;
+  font-family: var(--font-body, sans-serif);
+  font-size: 11px;
+  color: var(--color-text-secondary, #555555);
+}
+
+.legendItem {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.legendColorSpeakers {
+  width: 12px;
+  height: 10px;
+  border-radius: 2px;
+  background: var(--color-brand, #5bbee4);
+}
+
+.legendColorGov {
+  width: 12px;
+  height: 10px;
+  border-radius: 2px;
+  background: #1e7aa8;
+}
+
 .tooltipDotGov {
-  background: var(--color-text-secondary, #555555);
+  background: #1e7aa8;
 }
 
 .tooltipValue {

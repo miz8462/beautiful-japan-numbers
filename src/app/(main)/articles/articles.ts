@@ -31,15 +31,6 @@ export type Article = {
 // ======================
 
 export const articles: Article[] = [
-  // 保留中（即公開防止）: 消費税の論点記事
-  // {
-  //   href: "/articles/kokkai/consumption-tax-issues",
-  //   publishedAt: "2026-10-16",
-  //   label: "Consumption Tax",
-  //   title: "消費税をめぐって、国会では何が論じられたか",
-  //   description: "直近1年の本会議で消費税が語られた発言を、論点ごとに分類。",
-  //   tags: ["politics", "economy"],
-  // },
   // {
   //   href: "/articles/social-security-balance",
   //   publishedAt: "2026-09-04",
@@ -172,6 +163,16 @@ export const articles: Article[] = [
   //   sourceUrl: "https://www.boj.or.jp/",
   //   sourceLabel: "出典: 日本銀行 / 財務省 / 住宅金融支援機構 / ゆうちょ銀行",
   // },
+  {
+    href: "/articles/kokkai/consumption-tax-issues",
+    publishedAt: "2026-10-19",
+    label: "Consumption Tax(Kokkai)",
+    title: "消費税をめぐって、国会では何が論じられたか",
+    description: "議員の発言が最多は物価高の23人。政府の応答が最多は食料品ゼロと税額控除の各28回。",
+    tags: ["politics", "economy"],
+    sourceUrl: "https://kokkai.ndl.go.jp/",
+    sourceLabel: "出典: 国会会議録検索システム(国立国会図書館)",
+  },
   {
     href: "/articles/expenditure-breakdown",
     publishedAt: "2026-10-19",
