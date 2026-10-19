@@ -158,7 +158,7 @@ export const articles: Article[] = [
     label: "Interest Rate",
     title: "金利の歴史と推移",
     description:
-      "1970年代から現代に至るまでの日本の政策金利、長期金利、国債利率、住宅ローンおよび預金金利の長期推移をたどり、「金利のある世界」への回帰とそのインパクトを可視化します。",
+      "マイナス金利の解除から2年半、10年国債利回りは2.80%、政策金利は0.98%に。",
     tags: ["economy"],
     sourceUrl: "https://www.boj.or.jp/",
     sourceLabel: "出典: 日本銀行 / 財務省 / 住宅金融支援機構 / ゆうちょ銀行",
