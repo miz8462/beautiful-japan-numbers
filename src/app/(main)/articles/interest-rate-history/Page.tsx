@@ -1,6 +1,5 @@
 import { articles } from "@/app/(main)/articles/articles";
 import { ArticleHeader } from "@/components/article/article-header/ArticleHeader";
-import { ArticleSource } from "@/components/article/article-source/ArticleSource";
 import { ArticleText } from "@/components/article/article-text/ArticleText";
 import { KPICard, KPIGrid, KPIPrimary, KPISection } from "@/components/kpi";
 import InterestRateCharts from "./InterestRateCharts";
@@ -20,18 +19,18 @@ export default function InterestRateHistoryPage() {
         <KPIPrimary
           label="政策金利（無担保コール翌日物）"
           value="0.98%"
-          caption="2026年現在の政策金利目標値付近"
+          caption="2026年の水準"
         />
         <KPIGrid>
           <KPICard
             label="マイナス金利解除"
             value="2024年3月"
-            caption="17年ぶりの利上げでマイナス金利を脱却"
+            caption="2024年3月に解除。利上げは17年ぶり"
           />
           <KPICard
             label="10年国債利回り"
             value="2.80%"
-            caption="2026年の市場取引利回り（長期金利指標）"
+            caption="新規発行10年債の2026年の利回り"
           />
           <KPICard
             label="国債平均金利"
@@ -49,9 +48,10 @@ export default function InterestRateHistoryPage() {
       {/* 1. 導入 */}
       <ArticleText>
         <p>
-          日本経済は今、「金利のない世界」から「金利のある世界」へと大きな転換期を迎えています。
-          日本銀行は2016年から続いていたマイナス金利政策を2024年3月に解除し、実に17年ぶりの利上げへとかじを切りました。
-          デフレ脱却と経済の正常化を目指すこの決定は、長らくゼロ金利環境に慣れ親しんできた企業や個人、そして国家の財政運営に新たなインパクトを与えつつあります。
+          日本銀行は2024年3月、2016年から続いたマイナス金利政策を解除しました。
+          利上げは2007年以来、17年ぶりです。
+          2026年の政策金利は0.98%、10年国債利回りは2.80%。
+          通常貯金金利も0.30%に改定されています。
         </p>
       </ArticleText>
 
@@ -61,13 +61,13 @@ export default function InterestRateHistoryPage() {
       {/* 6. まとめ */}
       <ArticleText>
         <p>
-          四半世紀にわたって続いた日本の「超低金利時代」は歴史的な転換を遂げ、「金利のある世界」へと戻りつつあります。
-          金利の復活は、預金者にとっては資産形成へのささやかな追い風となる一方、住宅ローン借入者には負担増のリスクをもたらし、国にとっては利払い負担という財政的プレッシャーを強めることになります。
-          この変化をただ恐れるのではなく、データを通じて金利の歴史的な位置づけを把握し、新しい経済環境へ適応していくことが求められています。
+          5つの指標は、いずれも直近の底から上昇しました。
+          政策金利は2019年の-0.07%から2026年の0.98%へ。
+          10年国債利回りは2019年の-0.015%から2.80%へ。
+          国債の利率加重平均は2022年度の0.76%から2025年度の0.98%へ。
+          通常貯金金利は2016年の0.001%から0.30%へ。フラット35の下限は2016年8月の0.90%から3.29%へ。
         </p>
       </ArticleText>
-
-      <ArticleSource href={article.sourceUrl || SOURCE_URL} label={article.sourceLabel || SOURCE_LABEL} />
     </div>
   );
 }

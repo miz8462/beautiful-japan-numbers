@@ -152,17 +152,17 @@ export const articles: Article[] = [
   //   sourceUrl: "https://www.jpx.co.jp/markets/statistics-equities/misc/02.html",
   //   sourceLabel: "出典: 日本取引所グループ / 国土交通省",
   // },
-  // {
-  //   href: "/articles/interest-rate-history",
-  //   publishedAt: "2026-08-07",
-  //   label: "Interest Rate",
-  //   title: "金利の歴史と推移",
-  //   description:
-  //     "1970年代から現代に至るまでの日本の政策金利、長期金利、国債利率、住宅ローンおよび預金金利の長期推移をたどり、「金利のある世界」への回帰とそのインパクトを可視化します。",
-  //   tags: ["economy"],
-  //   sourceUrl: "https://www.boj.or.jp/",
-  //   sourceLabel: "出典: 日本銀行 / 財務省 / 住宅金融支援機構 / ゆうちょ銀行",
-  // },
+  {
+    href: "/articles/interest-rate-history",
+    publishedAt: "2026-10-20",
+    label: "Interest Rate",
+    title: "金利の歴史と推移",
+    description:
+      "1970年代から現代に至るまでの日本の政策金利、長期金利、国債利率、住宅ローンおよび預金金利の長期推移をたどり、「金利のある世界」への回帰とそのインパクトを可視化します。",
+    tags: ["economy"],
+    sourceUrl: "https://www.boj.or.jp/",
+    sourceLabel: "出典: 日本銀行 / 財務省 / 住宅金融支援機構 / ゆうちょ銀行",
+  },
   {
     href: "/articles/kokkai/consumption-tax-issues",
     publishedAt: "2026-10-19",
