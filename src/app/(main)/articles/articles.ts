@@ -118,17 +118,17 @@ export const articles: Article[] = [
   //     "https://www.mhlw.go.jp/toukei/itiran/roudou/chingin/kouzou/z2024/index.html",
   //   sourceLabel: "出典: 厚生労働省「賃金構造基本統計調査」",
   // },
-  // {
-  //   href: "/articles/non-regular-employment",
-  //   publishedAt: "2026-08-24",
-  //   label: "Employment",
-  //   title: "非正規雇用比率の推移",
-  //   description:
-  //     "2002年から2025年までの非正規雇用比率の推移を可視化。2000年代からの上昇と2019年（38.3%）をピークとする直近の推移をたどります。",
-  //   tags: ["society", "economy"],
-  //   sourceUrl: "https://www.e-stat.go.jp/dbview?sid=0003006608",
-  //   sourceLabel: "出典: 総務省統計局「労働力調査 詳細集計」",
-  // },
+  {
+    href: "/articles/non-regular-employment",
+    publishedAt: "2026-10-26",
+    label: "Employment",
+    title: "非正規雇用の推移",
+    description:
+      "非正規雇用比率は2002年の29.4%から2019年の38.3%まで上昇し、2025年は36.5%。雇用者の3人に1人以上が非正規。",
+    tags: ["society", "economy"],
+    sourceUrl: "https://www.e-stat.go.jp/dbview?sid=0003006608",
+    sourceLabel: "出典: 総務省統計局「労働力調査 詳細集計」",
+  },
   {
     href: "/articles/wage-nominal-real",
     publishedAt: "2026-10-21",
