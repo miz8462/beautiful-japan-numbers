@@ -95,29 +95,29 @@ export const articles: Article[] = [
   //   sourceUrl: "https://www.maff.go.jp/j/tokei/kouhyou/noucen/index.html",
   //   sourceLabel: "農林水産省「農林業センサス」",
   // },
-  // {
-  //   href: "/articles/food-self-sufficiency",
-  //   publishedAt: "2026-08-28",
-  //   label: "Food Security",
-  //   title: "食料自給率の推移",
-  //   description:
-  //     "1965年度から2025年度までのカロリーベース・生産額ベースの食料自給率の推移と、品目別の自給率の違いを可視化。食生活の変化と自給率の動向を読み解きます。",
-  //   tags: ["society", "economy"],
-  //   sourceUrl: "https://www.maff.go.jp/j/zyukyu/zikyu_ritu/012.html",
-  //   sourceLabel: "農林水産省",
-  // },
-  // {
-  //   href: "/articles/gender-wage-gap",
-  //   publishedAt: "2026-08-24",
-  //   label: "Wages",
-  //   title: "日本の女性は働きやすくなったのか",
-  //   description:
-  //     "賃金格差、女性管理職比率、年齢階級別の就業率と正規雇用比率をデータで比較。女性の就業機会が広がる一方、賃金やキャリアにはどのような変化と課題が残っているのかを読み解きます。",
-  //   tags: ["society", "economy"],
-  //   sourceUrl:
-  //     "https://www.mhlw.go.jp/toukei/itiran/roudou/chingin/kouzou/z2024/index.html",
-  //   sourceLabel: "出典: 厚生労働省「賃金構造基本統計調査」",
-  // },
+  {
+    href: "/articles/food-self-sufficiency",
+    publishedAt: "2026-10-29",
+    label: "Food Security",
+    title: "食料自給率の推移",
+    description:
+      "カロリーベース自給率は1965年度の73%から37%へほぼ半減。小麦16%、大豆6%。",
+    tags: ["society", "economy"],
+    sourceUrl: "https://www.maff.go.jp/j/zyukyu/zikyu_ritu/012.html",
+    sourceLabel: "農林水産省",
+  },
+  {
+    href: "/articles/gender-wage-gap",
+    publishedAt: "2026-10-28",
+    label: "Wages",
+    title: "日本の女性は働きやすくなったのか",
+    description:
+      "男性を100とした女性の賃金は、1976年の58.8から2024年の75.0へ。課長相当職以上10.8%、部長相当職7.1%、正規雇用比率は25〜29歳の74.1%をピークに低下。男女間の働き方の質の差が大きく残る。",
+    tags: ["society", "economy"],
+    sourceUrl:
+      "https://www.mhlw.go.jp/toukei/itiran/roudou/chingin/kouzou/z2024/index.html",
+    sourceLabel: "出典: 厚生労働省「賃金構造基本統計調査」",
+  },
   {
     href: "/articles/non-regular-employment",
     publishedAt: "2026-10-26",

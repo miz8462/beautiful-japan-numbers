@@ -18,11 +18,11 @@ export function ItemRankingChart() {
 
   return (
     <div className={styles.wrapper}>
-      <span className={styles.unitNote}>単位：%（2025年度概算値）</span>
+      <span className={styles.unitNote}>単位：%(重量ベースでの概算値)</span>
       <div className={styles.tables}>
         {/* ベスト5 */}
         <div className={styles.tableSection}>
-          <h3 className={styles.tableTitle}>自給率が高い品目（ベスト5）</h3>
+          <h3 className={styles.tableTitle}>自給率が高い品目</h3>
           <table className={styles.table}>
             <tbody>
               {top5.map((item, index) => (
@@ -38,7 +38,7 @@ export function ItemRankingChart() {
 
         {/* ワースト5 */}
         <div className={styles.tableSection}>
-          <h3 className={styles.tableTitle}>自給率が低い品目（ワースト5）</h3>
+          <h3 className={styles.tableTitle}>自給率が低い品目</h3>
           <table className={styles.table}>
             <tbody>
               {bottom5.map((item, index) => (

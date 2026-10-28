@@ -12,35 +12,40 @@
 }
 
 .tooltip {
-  background: rgba(255, 255, 255, 0.95);
-  border: 1px solid var(--color-border, #e2e8f0);
-  padding: 0.6rem 0.8rem;
-  border-radius: 6px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  background: var(--color-background, #ffffff);
+  border: 1px solid var(--color-border, #e0e0e0);
+  padding: 8px 12px;
+  border-radius: var(--radius-sm, 4px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
   font-size: 0.85rem;
-  color: var(--color-text-main, #333333);
+  line-height: 1.5;
+  color: var(--color-text-primary, #222222);
 }
 
 .tooltipYear {
   font-weight: 700;
-  margin-bottom: 0.3rem;
+  font-size: 0.85rem;
+  line-height: 1.4;
+  margin-bottom: 6px;
   display: block;
-  color: var(--color-text-main, #111827);
-  border-bottom: 1px solid var(--color-border, #e5e7eb);
-  padding-bottom: 0.25rem;
+  color: var(--color-text-primary, #222222);
+  border-bottom: 1px solid var(--color-border, #e0e0e0);
+  padding-bottom: 4px;
 }
 
 .tooltipRows {
   display: flex;
   flex-direction: column;
-  gap: 0.25rem;
-  margin-top: 0.3rem;
+  gap: 6px;
 }
 
 .tooltipRow {
   display: flex;
   align-items: center;
-  gap: 0.4rem;
+  gap: 8px;
+  font-size: 0.85rem;
+  line-height: 1.4;
+  color: var(--color-text-primary, #222222);
   white-space: nowrap;
 }
 
@@ -49,9 +54,13 @@
   height: 8px;
   border-radius: 50%;
   display: inline-block;
+  flex-shrink: 0;
 }
 
 .tooltipValue {
   margin-left: auto;
   font-family: var(--font-data, monospace);
+  font-feature-settings: "tnum" 1, "lnum" 1;
+  font-variant-numeric: tabular-nums lining-nums;
+  font-weight: 700;
 }
