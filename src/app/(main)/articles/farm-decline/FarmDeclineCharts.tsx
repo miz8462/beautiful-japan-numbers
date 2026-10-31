@@ -35,10 +35,19 @@ const SOURCE_URL = "https://www.maff.go.jp/j/tokei/kouhyou/noucen/index.html";
 export default function FarmDeclineCharts() {
   return (
     <>
+      <ArticleText>
+        <p>
+販売農家は、調査のたびに減っています。1985年の331万戸が、1995年に265万戸、2005年に196万戸、2015年に133万戸、2025年に79万戸。
+        </p>
+        <p>
+          5年あたりの減少数は、1990年の34.4万戸から2025年の23.5万戸へ縮小しました。一方、減少率は10.4%から22.9%に上がっています。
+        </p>
+      </ArticleText>
+
       <div className={styles.charts}>
         <ArticleChart
           title="販売農家数の推移"
-          subtitle="1985年〜2025年（単位: 万戸）"
+          subtitle="1985年〜2025年"
           source={SOURCE_LABEL}
           sourceUrl={SOURCE_URL}
         >
@@ -48,17 +57,17 @@ export default function FarmDeclineCharts() {
 
       <ArticleText>
         <p>
-          農家の減少とともに深刻化しているのが、農業に従事する人々の<strong>高齢化</strong>です。
-          基幹的農業従事者の年齢構成を見ると、1995年には60歳以上の割合が約58%でしたが、
-          その後も一貫して増加し続けています。高齢の農業者が離農する一方で、
-          若い世代の農業への新規参入は限られており、従事者の平均年齢は上昇し続けています。
+          基幹的農業従事者のうち、60歳以上の割合は1995年の58.4%から2015年の78.7%へ上がりました。2025年は77.8%で、10年前をわずかに下回ります。
+        </p>
+        <p>
+          30〜59歳は40.0%から20.9%へ、30歳未満は1.6%から1.2%へ。2025年の実数では、30歳未満が1.3万人、80歳以上が16.7万人です。
         </p>
       </ArticleText>
 
       <div className={styles.charts}>
         <ArticleChart
           title="基幹的農業従事者の年齢構成の変化"
-          subtitle="1995年〜2025年（10年ごと、単位: %）"
+          subtitle="1995年〜2025年"
           source={SOURCE_LABEL}
           sourceUrl={SOURCE_URL}
         >
@@ -68,21 +77,19 @@ export default function FarmDeclineCharts() {
 
       <ArticleText>
         <p>
-          農業者の高齢化が進み、後継者がいないまま農業を辞めると、
-          それまで耕されていた農地が放置されてしまいます。こうして生まれるのが<strong>耕作放棄地</strong>です。
-          1975年には約13万haだった耕作放棄地は、農家数の減少と高齢化が加速した1990年代以降、
-          急激に増加しました。農地の荒廃は、食料生産能力の低下だけでなく、
-          農村景観の変化や生態系への影響という点でも社会的な問題となっています。
+          耕作放棄地は、1975年の13.1万haから2015年の42.3万haへ、40年で3.2倍になりました。
+        </p>
+        <p>
+          2020年の調査から、耕作放棄地の項目は廃止されています。以降は「荒廃農地」を対象とする別の調査に移ったため、この系列のデータは2015年までです。
         </p>
       </ArticleText>
 
       <div className={styles.charts}>
         <ArticleChart
           title="耕作放棄地面積の推移"
-          subtitle="1975年〜2015年（単位: 万ha）"
+          subtitle="1975年〜2015年"
           source={SOURCE_LABEL}
           sourceUrl={SOURCE_URL}
-          note="※2020年センサス以降は耕作放棄地調査が廃止され荒廃農地調査等へ移行。"
         >
           <AbandonedFarmlandChart />
         </ArticleChart>

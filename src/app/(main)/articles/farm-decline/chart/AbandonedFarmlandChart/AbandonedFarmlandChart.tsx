@@ -135,9 +135,6 @@ export function AbandonedFarmlandChart() {
           }}
         />
       </ArticleChartCanvas>
-      <p className={styles.discontinuedNote}>
-        ※2020年農林業センサスから耕作放棄地の調査項目が廃止されたため、データは2015年までとなります。
-      </p>
     </div>
   );
 }

@@ -84,17 +84,17 @@ export const articles: Article[] = [
   //   sourceUrl: "https://www.nies.go.jp/gio/archive/ghgdata/index.html",
   //   sourceLabel: "国立環境研究所（温室効果ガスインベントリオフィス）",
   // },
-  // {
-  //   href: "/articles/farm-decline",
-  //   publishedAt: "2026-08-28",
-  //   label: "Agriculture",
-  //   title: "農家数・耕作放棄地の推移",
-  //   description:
-  //     "農家数の長期的な減少と基幹的農業従事者の高齢化、それに伴う耕作放棄地の増加を農林業センサスのデータで可視化。日本農業が直面する構造的な課題を読み解きます。",
-  //   tags: ["society", "economy"],
-  //   sourceUrl: "https://www.maff.go.jp/j/tokei/kouhyou/noucen/index.html",
-  //   sourceLabel: "農林水産省「農林業センサス」",
-  // },
+  {
+    href: "/articles/farm-decline",
+    publishedAt: "2026-10-31",
+    label: "Agriculture",
+    title: "農家数・耕作放棄地の推移",
+    description:
+      "農家は40年で76%減。基幹的農業従事者の78%が60歳以上。30歳未満は1.2%",
+    tags: ["society", "economy"],
+    sourceUrl: "https://www.maff.go.jp/j/tokei/kouhyou/noucen/index.html",
+    sourceLabel: "農林水産省「農林業センサス」",
+  },
   {
     href: "/articles/food-self-sufficiency",
     publishedAt: "2026-10-29",

@@ -42,6 +42,7 @@ export function AgeCompositionChart() {
 
   return (
     <div className={styles.wrapper}>
+      <span className={styles.unitNote}>単位：%</span>
       <div className={styles.legend}>
         {KEYS.map((key) => (
           <div key={key} className={styles.legendItem}>
@@ -134,8 +135,8 @@ export function AgeCompositionChart() {
         />
       </ArticleChartCanvas>
       <p className={styles.basisNote}>
-        ※1995・2005年は販売農家ベース、2015・2025年は個人経営体ベース。
-        両ベースは2015年時点でほぼ一致するため、系列の接続は統計的に妥当。
+        ※1995・2005年は販売農家、2015・2025年は個人経営体の数字。
+        2015年は両ベースでほぼ一致(175.4万人・175.7万人)。
       </p>
     </div>
   );
